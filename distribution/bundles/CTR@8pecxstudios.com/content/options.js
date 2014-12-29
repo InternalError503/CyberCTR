@@ -4,7 +4,7 @@ if (!classicthemerestorerjso.ctr) {classicthemerestorerjso.ctr = {};};
 
 Components.utils.import("resource://gre/modules/AddonManager.jsm");
 Components.utils.import("resource:///modules/CustomizableUI.jsm");
-
+var  contexts = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("browser.context.");
 classicthemerestorerjso.ctr = {
 
   prefs:			Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.classicthemerestorer."),
@@ -54,7 +54,11 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_notabfog').disabled = true;
 		document.getElementById('ctraddon_pw_notabbg').disabled = true;
 		document.getElementById('ctraddon_pw_noaddonbarbg').disabled = true;
-		document.getElementById('ctraddon_pw_noconicons').disabled = true;
+		
+		if (contexts.getBoolPref("classic")){}else{
+			document.getElementById('ctraddon_pw_noconicons').disabled = true;
+		}
+		
 		document.getElementById('ctraddon_pw_closeonleft').disabled = true;
 		document.getElementById('ctraddon_pw_closealt').disabled = true;
 
@@ -87,7 +91,11 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_nonavtbborder').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_nobookbarbg').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_noaddonbarbg').style.visibility = 'collapse';
-		document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
+		
+		if (contexts.getBoolPref("classic")){}else{
+			document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
+		}
+		
 		document.getElementById('ctraddon_pw_closeonleft').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_closealt').style.visibility = 'collapse';
 	} else {
@@ -176,7 +184,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_closetab_pw_sta').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_closetab_pw_end').style.visibility = 'collapse';
 	}
-	if (this.appversion < 32) {
+	if (this.appversion < 32) {	
 	  document.getElementById('ctraddon_pw_noconicons').disabled = true;
 	  document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
 	}
@@ -287,7 +295,18 @@ classicthemerestorerjso.ctr = {
 	}
 
 	this.onCtrPanelSelect();
-
+		
+		if (contexts.getBoolPref("classic")){
+			document.getElementById('ctraddon_pw_noconicons').disabled = true;
+		}else{
+			document.getElementById('ctraddon_pw_noconicons').disabled = false;
+		}
+		if (!this.oswindows){
+			document.getElementById('ctraddon_titleintitlebar').disabled = true;
+		} else {
+			document.getElementById('ctraddon_titleintitlebar').disabled = false;
+		}
+		
   },
   
   /* If an option, which requires a restart, was altered, a prompt to restart Fx will appear
@@ -511,8 +530,10 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setBoolPref("bmanimation",true);
 	this.prefs.setBoolPref("pananimation",true);
 	this.prefs.setBoolPref("feedinurl",true);
-	this.prefs.setBoolPref("noconicons",true);
-	this.prefs.setBoolPref("alt_newtabp",true);
+	
+	if (contexts.getBoolPref("classic")){}else{
+		this.prefs.setBoolPref("noconicons",true);
+	}
 	
 	if (this.oswindows) this.prefs.setBoolPref("dblclnewtab",true);
 	

@@ -1,19 +1,18 @@
 "use strict";
 /*
-	There are a few "timeouts" on this document. In almost all cases they are needed to
-	make sure a 'get' call looks only for items already in DOM. 
- 
-	Components.classes: Cc
-	Components.interfaces: Ci
-	Components.utils: Cu
+ There are a few "timeouts" on this document. In almost all cases they are needed to
+ make sure a 'get' call looks only for items already on DOM.  
 */
+XPCOMUtils.defineLazyGetter(this, "gPrefService", function() {
+  return Services.prefs;
+});
 
 Cu.import("resource:///modules/CustomizableUI.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
 
 if (typeof classicthemerestorerjs == "undefined") {var classicthemerestorerjs = {};};
 if (!classicthemerestorerjs.ctr) {classicthemerestorerjs.ctr = {};};
-
+window.addEventListener("load", function () { classicthemerestorerjs.ctr.customCTRPrefSettings(); }, false); 
 classicthemerestorerjs.ctr = {
  
   // initialize custom sheets for tab color settings
@@ -3334,6 +3333,26 @@ classicthemerestorerjs.ctr = {
 		  }
 		}
 		window.open(optionsURL,'', 'chrome').focus();	
+  },
+  
+  customCTRPrefSettings: function(e){  
+  
+  				Application.prefs.get("browser.context.classic").events.addListener("change", function(aEvent){
+
+					if (Services.prefs.getBoolPref("browser.context.classic")){
+						Services.prefs.setBoolPref("extensions.classicthemerestorer.noconicons", false);
+					}
+					
+				});		
+				
+				Application.prefs.get("extensions.classicthemerestorer.noconicons").events.addListener("change", function(aEvent){
+
+					if (Services.prefs.getBoolPref("browser.context.classic")){
+						Services.prefs.setBoolPref("extensions.classicthemerestorer.noconicons", false);
+					}
+					
+				});	
+  
   },
 	
   // hides/shows CTRs add-on bar
