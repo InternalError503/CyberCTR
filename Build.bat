@@ -1,0 +1,1 @@
+"%systemDrive%\Program Files\WinRAR\rar.exe" a -r0 -sfx CyberCTRUpdatePackage -z"%~DP0xfs.conf" "distribution\*.*"
