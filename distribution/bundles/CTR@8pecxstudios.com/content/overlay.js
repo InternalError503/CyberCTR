@@ -155,7 +155,9 @@ classicthemerestorerjs.ctr = {
 				CustomizableUI.addWidgetToArea("ctraddon_puib_separator", CustomizableUI.AREA_NAVBAR);
 				CustomizableUI.addWidgetToArea("ctraddon_panelui-button", CustomizableUI.AREA_NAVBAR);
 				CustomizableUI.addWidgetToArea("ctraddon_window-controls", CustomizableUI.AREA_NAVBAR);
-				CustomizableUI.addWidgetToArea("ctraddon_bookmarks-menu-toolbar-button", CustomizableUI.AREA_BOOKMARKS);						
+				
+				//Remove this to stop creating 2 bookmark buttons on first run
+				//CustomizableUI.addWidgetToArea("ctraddon_bookmarks-menu-toolbar-button", CustomizableUI.AREA_BOOKMARKS);						
 
 				var tabsintitlebar = Cc["@mozilla.org/preferences-service;1"]
 									  .getService(Ci.nsIPrefService)
