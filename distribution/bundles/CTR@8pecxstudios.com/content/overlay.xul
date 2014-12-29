@@ -206,6 +206,10 @@
 					label="&newPrivateWindow.label;"
 					class="menuitem-iconic"
 					command="Tools:PrivateBrowsing"/>
+      <menuitem id="appmenu_minimizeMemoryUsage"
+				        class="menuitem-iconic menuitem-iconic-tooltip"
+				        label="&minimizeMemoryCache.label;"
+				        oncommand="Cu.forceGC();"/>					
 			<menuseparator/>
 
 			<hbox id="ctraddon_appmenubox_edit" label="&editMenu.label;">
@@ -379,6 +383,9 @@
 					  observes="sync-setup-state"
 					  oncommand="gSyncUI.openSetup()"
 					  class="menuitem-iconic"/>
+	  <menuitem id="appmenu_restartBrowser"
+				        label="&restartBrowser.label;"
+				        oncommand="gCyberfoxCustom.restartBrowser();"/>					  
 			<menuitem id="appmenu-quit"
 					  class="menuitem-iconic ctraddon_windowsonly"
 					  label="&quitApplicationCmdWin.label;"
