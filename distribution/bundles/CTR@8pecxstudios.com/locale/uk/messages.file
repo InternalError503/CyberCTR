@@ -3,3 +3,7 @@ popup.msg.restart=Cyberfox треба перезапустити, щоб зад�
 import.error=ПОМИЛКА: Знайдено неправильний або модифікований файл!\nНічого не може бути імпортовано!
 ctr_extrabar=Додаткова панель
 ctr_actthrobber=Індикатор активності
+notification_msg_firstrun=CTRpreferences has been found select restart to apply
+notification_button_firstrun=Restart
+notification_msg_change=Your pre-set CTRpreferences has been modified 
+notification_button_change=Options

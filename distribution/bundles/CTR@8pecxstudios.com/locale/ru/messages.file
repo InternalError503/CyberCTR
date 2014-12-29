@@ -3,3 +3,7 @@ popup.msg.restart=Cyberfox должен быть перезапущен для �
 import.error=ОШИБКА: Найден неправильный или изменённый файл\nНичего не может быть импортировано!
 ctr_extrabar=Дополнительная панель
 ctr_actthrobber=Activity Indicator
+notification_msg_firstrun=CTRpreferences has been found select restart to apply
+notification_button_firstrun=Restart
+notification_msg_change=Your pre-set CTRpreferences has been modified 
+notification_button_change=Options

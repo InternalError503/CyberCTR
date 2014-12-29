@@ -3,3 +3,7 @@ popup.msg.restart=Cyberfox musi zostać zerestartowany, aby zmiany przyniosły e
 import.error=BŁĄD: Znaleziono błędny albo zmodyfikowany plik!\nNic nie zostało zaimportowane!
 ctr_extrabar=Dodatkowy pasek narzędzi
 ctr_actthrobber=Wskaźnik aktywności
+notification_msg_firstrun=CTRpreferences has been found select restart to apply
+notification_button_firstrun=Restart
+notification_msg_change=Your pre-set CTRpreferences has been modified 
+notification_button_change=Options

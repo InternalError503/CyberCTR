@@ -12,6 +12,8 @@ var browserAppInformation = Components.classes["@mozilla.org/xre/app-info;1"]
 
 Cu.import("resource:///modules/CustomizableUI.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
+Cu.import("resource://gre/modules/FileUtils.jsm");
+Cu.import("resource://gre/modules/NetUtil.jsm");
 
 if (typeof classicthemerestorerjs == "undefined") {var classicthemerestorerjs = {};};
 if (!classicthemerestorerjs.ctr) {classicthemerestorerjs.ctr = {};};
@@ -3606,10 +3608,144 @@ switch (appButtonState){
 
 }
 	}
-		}					
+		},
+		
+   /* import CTR settings */
+ importLocalCTRpreferences: function() {
   
-  },
+	var pattern = loadFromLocalFile();
+
+	if (!pattern) return false;
+	   
+	if(pattern[0]!="CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers") {
+	  alert(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("import.error"));
+	  return false;
+	}
+
+	var i, prefName, prefValue;
+	   
+	for (i=1; i<pattern.length; i++){
+	  var index1 = pattern[i].indexOf("="); // for finding booleans
+	  var index2 = pattern[i].indexOf(":"); // for finding strings
+	  var index3 = pattern[i].indexOf("~"); // for finding integers
+	  
+	  if (index1 > 0){ // find boolean
+		 prefName  = pattern[i].substring(0,index1);
+		 prefValue = pattern[i].substring(index1+1,pattern[i].length);
+		 
+		 // if prefValue string is "true" -> true, else -> false
+		 this.prefs.setBoolPref(''+prefName+'',(prefValue === 'true'));
+	  }
+	  else if (index2 > 0){ // find string
+		 prefName  = pattern[i].substring(0,index2);
+		 prefValue = pattern[i].substring(index2+1,pattern[i].length);
+		 
+		 this.prefs.setCharPref(''+prefName+'',''+prefValue+'');
+	  }
+	  else if (index3 > 0){ // find integer
+		 prefName  = pattern[i].substring(0,index3);
+		 prefValue = pattern[i].substring(index3+1,pattern[i].length);
+		 
+		 this.prefs.setIntPref(''+prefName+'',prefValue);
+	  }
+	}
+	   	
+	function loadFromLocalFile() {
+
+	var localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
 	
+
+	if (localeSettingsFile.exists()){	  
+
+	var _ThisFile = localeSettingsFile;
+		var lastmod = new Date(_ThisFile.lastModifiedTime);
+
+		if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
+		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+			console.log("no change");
+			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
+			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
+				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
+				  _contentIOStream.init(_contentStream);
+			var input = _contentIOStream.read(_contentStream.available());
+				  _contentIOStream.close();
+				  _contentStream.close();
+			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+			return input.split(linebreak);
+			
+		}else{
+		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
+		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
+			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
+				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
+				  _contentIOStream.init(_contentStream);
+			var input = _contentIOStream.read(_contentStream.available());
+				  _contentIOStream.close();
+				  _contentStream.close();
+			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];			
+			return input.split(linebreak);
+		
+			}
+		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
+			Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+			console.log("modified " + lastmod);
+		}else{	
+		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
+		window.setTimeout(function(){
+		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false)
+		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun");
+		var nb = gBrowser.getNotificationBox();
+		var button = [{
+			label: classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
+			accessKey: 'R',
+			callback: function(){classicthemerestorerjs.ctr.ctrPrefRestart();}
+						  }];
+
+		const priority = nb.PRIORITY_INFO_LOW;
+			nb.appendNotification(message, 'CTRpreferences', 'chrome://browser/skin/Info.png', priority, button);
+			
+			},4000);
+			
+			
+		}else{
+		
+		window.setTimeout(function(){
+		
+		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod;
+		var nb = gBrowser.getNotificationBox();
+		var button = [{
+			label: classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
+			accessKey: 'O',
+			popup: 'ApplyCTRpreferences',
+			callback: null
+						  }];
+
+		const priority = nb.PRIORITY_INFO_LOW;
+			nb.appendNotification(message, 'CTRpreferences', 'chrome://browser/skin/Info.png', priority, button);
+			
+			},4000);
+			
+				}
+			}
+		}
+	
+	}else{
+		return null;
+	}	
+	   return null;
+	}	
+	
+	return true;
+  },
+  
+  ctrPrefRestart: function(){
+	  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", true);
+	  gCyberfoxCustom.restartBrowser();
+  },
+  
   // hides/shows CTRs add-on bar
   toggleCtrAddonBar: function() {
     
@@ -3619,5 +3755,5 @@ switch (appButtonState){
   }
   
 };
-
+classicthemerestorerjs.ctr.importLocalCTRpreferences();
 classicthemerestorerjs.ctr.init();

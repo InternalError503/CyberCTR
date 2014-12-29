@@ -3,3 +3,7 @@ popup.msg.restart=変更を有効にするためにはCyberfoxを再起動する
 import.error=エラー：誤りが見つかったかファイルが修正されています。\nインポートされませんでした。
 ctr_extrabar=追加のツールバー
 ctr_actthrobber=Activity Indicator
+notification_msg_firstrun=CTRpreferences has been found select restart to apply
+notification_button_firstrun=Restart
+notification_msg_change=Your pre-set CTRpreferences has been modified 
+notification_button_change=Options
