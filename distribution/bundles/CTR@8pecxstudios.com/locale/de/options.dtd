@@ -134,7 +134,7 @@
 <!ENTITY Ctr_tab_tf_info1	"Textfelder akzeptieren Farbnamen sowie RGB(A), HSL(A) und hexadezimale Eingaben.">
 <!ENTITY Ctr_tab_tf_info2	"Eingegebene Werte werden nicht überprüft!">
 <!ENTITY Ctr_tabact_t		"aktiv">
-<!ENTITY Ctr_tabhov_t		"hover">
+<!ENTITY Ctr_tabhov_t		"über">
 <!ENTITY Ctr_tabnor_t		"normal">
 <!ENTITY Ctr_tabpen_t		"ungeladen">
 <!ENTITY Ctr_tabunr_t		"ungelesen">
@@ -143,12 +143,12 @@
 <!ENTITY Ctr_ctext			"Text">
 <!ENTITY Ctr_ctextsh		"Textschatten">
 <!ENTITY Ctr_tabnor			"Tab (normal)">
-<!ENTITY Ctr_tabhov			"Tab (hover)">
+<!ENTITY Ctr_tabhov			"Tab (über)">
 <!ENTITY Ctr_tabact			"Tab (aktiv)">
 <!ENTITY Ctr_tabpen			"Tab (ungeladen)">
 <!ENTITY Ctr_tabunr			"Tab (ungelesen)">
 <!ENTITY Ctr_ntabnor		"Neuer Tab (normal)">
-<!ENTITY Ctr_ntabhov		"Neuer Tab (hover)">
+<!ENTITY Ctr_ntabhov		"Neuer Tab (über)">
 <!ENTITY Ctr_bold			"Fett">
 <!ENTITY Ctr_italic			"Kursiv">
 <!ENTITY Ctr_notabhov		"Aktivierte Einstellungen ersetzen 'Hover-Einstellungen'">

@@ -1,4 +1,4 @@
-﻿popup.title=Customize Cyberfox
+popup.title=Customize Cyberfox
 popup.msg.restart=Cyberfox musi zostać zerestartowany, aby zmiany przyniosły efekt.\nZrestartować teraz?
 import.error=BŁĄD: Znaleziono błędny albo zmodyfikowany plik!\nNic nie zostało zaimportowane!
 ctr_extrabar=Dodatkowy pasek narzędzi
