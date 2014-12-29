@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Extraleisten">
 <!ENTITY Ctr_extrabar0		"Extraleiste(n)">
 <!ENTITY Ctr_extrabar1		"Extraleiste">
-<!ENTITY Ctr_extrabarinfo	"Der Wechsel zwischen 'Tabs oben' und 'Tabs unten' kann die Reihenfolge der Extraleisten zufällig ändern. Ein Firefox-Neustart stellt die richtige Reihenfolge wieder her.">
+<!ENTITY Ctr_extrabarinfo	"Der Wechsel zwischen 'Tabs oben' und 'Tabs unten' kann die Reihenfolge der Extraleisten zufällig ändern. Ein Cyberfox-Neustart stellt die richtige Reihenfolge wieder her.">
 
 <!ENTITY Ctr_invicons		"Invertierte Symbole">
 <!ENTITY Ctr_menubar		"Menüleiste">

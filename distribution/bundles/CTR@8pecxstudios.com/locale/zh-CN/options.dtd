@@ -234,7 +234,7 @@
 
 <!ENTITY Ctr_special_font	"只有默认主题才能设置背景颜色!">
 <!ENTITY Ctr_special_info	"一些视觉变化选项只会在当前的实例中起效!">
-<!ENTITY Ctr_special_info2	"有些设置只能在 Firefox 默认主题中生效，第三方主题可能无法起效!">
+<!ENTITY Ctr_special_info2	"有些设置只能在 Cyberfox 默认主题中生效，第三方主题可能无法起效!">
 <!ENTITY Ctr_support		"支持讨论区">
 <!ENTITY Ctr_newversion		"有新版本?">
 
