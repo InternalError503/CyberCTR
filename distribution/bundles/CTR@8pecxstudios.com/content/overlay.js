@@ -12,7 +12,8 @@ Cu.import("resource://gre/modules/AddonManager.jsm");
 
 if (typeof classicthemerestorerjs == "undefined") {var classicthemerestorerjs = {};};
 if (!classicthemerestorerjs.ctr) {classicthemerestorerjs.ctr = {};};
-window.addEventListener("load", function () { classicthemerestorerjs.ctr.customCTRPrefSettings(); }, false); 
+window.addEventListener("load", function () { classicthemerestorerjs.ctr.customCTRPrefSettings(); }, false);  
+var treeStyleCompatMode;
 classicthemerestorerjs.ctr = {
  
   // initialize custom sheets for tab color settings
@@ -199,10 +200,14 @@ classicthemerestorerjs.ctr = {
 				  },1000);
 			  }catch(e){}
 			  
-			  // TreeStyleTabs add-on works better with tabs not on top, so this is eanbled on reset/first run
+			  // TreeStyleTabs add-on works better with tabs not on top, so this is enabled on reset/first run
 			  AddonManager.getAddonByID('treestyletab@piro.sakura.ne.jp', function(addon) {
-				if(addon && addon.isActive && classicthemerestorerjs.ctr.osstring=="WINNT")
-				  classicthemerestorerjs.ctr.prefs.setCharPref('tabsontop','false');
+			if(addon && addon.isActive && classicthemerestorerjs.ctr.osstring=="WINNT"){
+				classicthemerestorerjs.ctr.prefs.setCharPref('tabsontop','false');
+				classicthemerestorerjs.ctr.fixThatTreeStyleBro();			
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);											
+					}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);}
+				
 			  });
 			  
 			  // set 'first run' & 'ctrreset' to false
@@ -338,17 +343,18 @@ classicthemerestorerjs.ctr = {
 
 		  // Appbutton
 		  case "appbutton":
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1wt',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2wt2',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io2',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_pm',false);
-		
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1wt',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2wt2',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io2',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_pm',false);
+				classicthemerestorerjs.ctr.fixThatTreeStyleBro();
 			if (branch.getCharPref("appbutton")!="appbutton_off"){
-			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbutton"),true);
-			  classicthemerestorerjs.ctr.checkAppbuttonOnNavbar();
+				  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbutton"),true);
+				  classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+				  classicthemerestorerjs.ctr.checkAppbuttonOnNavbar();
 			}
 
 		  break;
@@ -2256,6 +2262,7 @@ classicthemerestorerjs.ctr = {
 		case "bmarkoinpw":			manageCSS("ctraddon_bmark_oinpw.css");	break;
 		
 		case "spaces_extra": 		manageCSS("spaces_extra.css");			break;
+		case "tree_style_fix": 		manageCSS("tree_style_fix.css");	break;
 
 		case "tabcolor_def":
 
@@ -3338,8 +3345,103 @@ classicthemerestorerjs.ctr = {
   },
   
   customCTRPrefSettings: function(e){  
-  
-  				Application.prefs.get("browser.context.classic").events.addListener("change", function(aEvent){
+  				
+  document.getElementById("ctraddon_appbutton2")
+        .addEventListener("DOMContentLoaded", function (e) {
+		
+try{		
+		
+classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+		}catch (e){ alert(e)
+
+	}	
+			
+  }, false);
+
+ //Add listener for tree style tab  
+window.addEventListener("DOMWindowCreated", function load(event){ 
+	window.removeEventListener("DOMWindowCreated", load, false);
+
+   AddonManager.getAddonByID('treestyletab@piro.sakura.ne.jp', function(addon) {
+				if(addon && addon.isActive) {
+
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);
+				classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+					//console.log("Compatibility mode (Tree Style Tab)");			
+					}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);
+					//console.loh("No compatibility mode (Tree Style Tab)");
+					}
+			  });			
+								  					 			  
+			  		},false); 
+					
+Application.prefs.get("extensions.classicthemerestorer.appbutton").events.addListener("change", function(aEvent){
+
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle")){return;}else{
+	
+var newAppButtonState = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
+var menutoolbarHasAttribute = document.getElementById("toolbar-menubar");				
+switch (newAppButtonState){
+
+		case "appbutton_off":
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
+			if (menutoolbarHasAttribute.getAttribute('autohide', true)){
+			if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
+			}
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+		break;
+	
+		case "appbutton_v1": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
+		break;
+
+		case "appbutton_v1wt": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
+		break;
+
+		case "appbutton_v2wt2":  
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+		break;
+	
+		case "appbutton_v2": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+		
+		case "appbutton_v2io": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
+		break;
+
+		case "appbutton_v2io2": 
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+		break;
+		
+		case "appbutton_pm": 
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+		break;
+
+	
+
+}
+   }
+		}
+   
+);	
+
+				Application.prefs.get("browser.context.classic").events.addListener("change", function(aEvent){
 
 					if (Services.prefs.getBoolPref("browser.context.classic")){
 						Services.prefs.setBoolPref("extensions.classicthemerestorer.noconicons", false);
@@ -3354,6 +3456,70 @@ classicthemerestorerjs.ctr = {
 					}
 					
 				});	
+
+	fixThatTreeStyleBro: function(){
+	
+if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle")){	
+	var appButtonState = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
+				var menutoolbarHasAttribute = document.getElementById("toolbar-menubar");			
+switch (appButtonState){
+
+		case "appbutton_off":
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
+			//menutoolbarHasAttribute.setAttribute('autohide', false);	
+			if (menutoolbarHasAttribute.getAttribute('autohide', true)){
+			if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
+			}	
+		break;
+	
+		case "appbutton_v1": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+		
+		case "appbutton_v1wt": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+
+		case "appbutton_v2wt2": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+		
+		case "appbutton_v2": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+		
+		case "appbutton_v2io": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+
+
+		case "appbutton_v2io2": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+		
+		case "appbutton_pm": 
+			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
+			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+		break;
+
+	
+
+}
+	}
+		}					
   
   },
 	

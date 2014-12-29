@@ -187,5 +187,11 @@ pref("extensions.classicthemerestorer.tabc_hov_unl",false);
 // first run/reset preference
 pref("extensions.classicthemerestorer.ctrreset",true);
 
+//Compatibility 
+
+//Tree Style Tab
+pref("extensions.classicthemerestorer.compatibility.treestyle",false);
+pref("extensions.classicthemerestorer.compatibility.treestyle.disable",false);
+
 //CyberCTR version
 pref("extensions.classicthemerestorer.version", "1.1.9");
