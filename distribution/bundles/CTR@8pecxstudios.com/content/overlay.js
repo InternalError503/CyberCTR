@@ -3343,9 +3343,42 @@ classicthemerestorerjs.ctr = {
 		}
 		window.open(optionsURL,'', 'chrome').focus();	
   },
+
+  //Appmenu Items Clean Ram | Restart Browser | About:config
+customCTRPrefSettings: function(e){  
+ document.getElementById("appmenu-popup")
+        .addEventListener("popupshowing", function (e) {
+		
+try{		
+		
+	//R.M.F	
+	if (Services.prefs.getBoolPref("browser.restart.enabled")){
+			document.getElementById("appmenu_restartBrowser").removeAttribute('hidden', false);
+	}else{
+			document.getElementById("appmenu_restartBrowser").setAttribute('hidden', true);		
+	}	
+	
+	//R.A.M
+	if (Services.prefs.getBoolPref("clean.ram.cache")){
+		document.getElementById("appmenu_minimizeMemoryUsage").removeAttribute('hidden');
+	}else{
+		document.getElementById("appmenu_minimizeMemoryUsage").setAttribute('hidden', true);
+    }	
+	
+	//About:con
+	if (Services.prefs.getBoolPref("browser.menu.aboutconfig")){ 
+			document.getElementById("ctraddon_appmenu_aboutc").removeAttribute('hidden');
+	}else{
+			document.getElementById("ctraddon_appmenu_aboutc").setAttribute('hidden', true);
+	}		
+
+		}catch (e){
+			//Catch any nasty errors and output to dialogue and console
+			alert("Were sorry something has gone wrong removing Appmenu Items" + e);
+	}	
+			
+  }, false);	
   
-  customCTRPrefSettings: function(e){  
-  				
   document.getElementById("ctraddon_appbutton2")
         .addEventListener("DOMContentLoaded", function (e) {
 		
@@ -3357,8 +3390,8 @@ classicthemerestorerjs.ctr.fixThatTreeStyleBro();
 	}	
 			
   }, false);
-
- //Add listener for tree style tab  
+  
+//Add listener for tree style tab  
 window.addEventListener("DOMWindowCreated", function load(event){ 
 	window.removeEventListener("DOMWindowCreated", load, false);
 
@@ -3373,7 +3406,7 @@ window.addEventListener("DOMWindowCreated", function load(event){
 					}
 			  });			
 								  					 			  
-			  		},false); 
+			  		},false);
 					
 Application.prefs.get("extensions.classicthemerestorer.appbutton").events.addListener("change", function(aEvent){
 
