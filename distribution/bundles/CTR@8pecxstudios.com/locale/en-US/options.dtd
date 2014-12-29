@@ -63,9 +63,9 @@
 <!ENTITY Ctr_appbutton1wt	"Button on toolbar (text only)">
 <!ENTITY Ctr_appbutton2		"Button on [Cyberfox] titlebar">
 <!ENTITY Ctr_appbutton2io	"Button on [Cyberfox] titlebar (icon only)">
-<!ENTITY Ctr_paneluibtweak	"Orange panel menu button on tabs toolbar">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
-<!ENTITY Ctr_appbuttonc_o	"Orange button color (default)">
+<!ENTITY Ctr_paneluibtweak	"Orange panel menu button on tabs toolbar">
+<!ENTITY Ctr_appbuttonc_o	"Orange button color">
 <!ENTITY Ctr_appbuttonc_a	"Blue button color (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Black button color (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Transparent button">
