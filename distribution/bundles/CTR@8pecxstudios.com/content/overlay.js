@@ -6,6 +6,9 @@
 XPCOMUtils.defineLazyGetter(this, "gPrefService", function() {
   return Services.prefs;
 });
+//Browser Information			
+var browserAppInformation = Components.classes["@mozilla.org/xre/app-info;1"]
+			.getService(Components.interfaces.nsIXULAppInfo);
 
 Cu.import("resource:///modules/CustomizableUI.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
@@ -97,6 +100,12 @@ classicthemerestorerjs.ctr = {
 	this.moveStarAndFeedButtonIntoUrbar();
 	
 	// handle max/min tab-width for every new window
+	window.addEventListener("DOMWindowCreated", function load(event){
+		window.removeEventListener("DOMWindowCreated", load, false);
+		classicthemerestorerjs.ctr.updateTabWidth();  
+	},false);
+
+	// handle max/min tab-width for every new window
 	this.updateTabWidth();
 	
 	// move menubar to other toolbars
@@ -104,6 +113,19 @@ classicthemerestorerjs.ctr = {
 
 	// not all CTR features are suitable for third party themes
 	this.disableSettingsforThemes();
+	
+	treeStyleCompatMode = Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle.disable");
+		//Check if browser Firefox (Added just in-case users decide to install in firefox reported: https://8pecxstudios.com/Forums/viewtopic.php?f=3&t=475&p=4368#p4366)
+		if (browserAppInformation.name.toLowerCase() === "Firefox".toLowerCase()) {
+			Services.prefs.setBoolPref("browser.restart.enabled", false);	
+			Services.prefs.setBoolPref("clean.ram.cache", false);
+			Services.prefs.setBoolPref("browser.menu.aboutconfig", false);
+			Services.prefs.setBoolPref("browser.context.classic", false);			
+		}
+		if (browserAppInformation.name.toLowerCase() === "Cyberfox".toLowerCase() && this.appversion <= 34) {
+				Services.prefs.setBoolPref("browser.menu.aboutconfig", true);
+		}
+		
 	
 	// style CTRs 'customize-ui' option buttons
 	this.loadUnloadCSS('cui_buttons',true);
@@ -3510,7 +3532,18 @@ switch (newAppButtonState){
 					}
 					
 				});	
-
+				
+			  AddonManager.getAddonByID('CompactMenuCE@Merci.chao', function(addon) {
+				if(addon && addon.isActive) { 
+												alert("Compatibility issues detected (Personal Menu) \n Please uninstall (CyberCTR) or (Personal Menu)!");
+						//console.log("Compatibility issues detected (Personal Menu) \n Please uninstall (CyberCTR) or (Personal Menu)!");
+					}else{//console.log("No compatibility issues detected (Personal Menu)");
+					}
+				
+			  });	
+			  					
+  },
+  
 	fixThatTreeStyleBro: function(){
 	
 if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle")){	

@@ -193,6 +193,9 @@ pref("extensions.classicthemerestorer.ctrreset",true);
 pref("extensions.classicthemerestorer.compatibility.treestyle",false);
 pref("extensions.classicthemerestorer.compatibility.treestyle.disable",false);
 
+//Tab Mix Plus, Not implemented yet!
+pref("extensions.classicthemerestorer.compatibility.tabmix",false);
+
 //CyberCTR Add tab title to titlebar
 pref("extensions.classicthemerestorer.titleintitlebar", false);
 
