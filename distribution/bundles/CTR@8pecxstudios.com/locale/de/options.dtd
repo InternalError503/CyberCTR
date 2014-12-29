@@ -245,5 +245,8 @@
 
 
 <!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_classic_elements		"Klassische Elemente">
 <!ENTITY Ctr_pw_set_preaust		"Australis-Vorgaben">
+<!ENTITY ctr_Support_forums	"Supportforum">
+<!ENTITY ctr_help_features	"Funktionen &amp; Informationen">
 <!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">

@@ -243,5 +243,8 @@
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
 <!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_classic_elements		"Классическое оформление">
 <!ENTITY Ctr_pw_set_preaust		"Интерфейс Australis">
+<!ENTITY ctr_Support_forums	"Форум поддержки">
+<!ENTITY ctr_help_features	"Информация о возможностях &amp;">
 <!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">

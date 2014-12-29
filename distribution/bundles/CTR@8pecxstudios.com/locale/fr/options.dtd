@@ -244,5 +244,8 @@
 <!ENTITY appMenuGettingStarted.label	"Getting started">
 
 <!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_classic_elements		"Préréglage classique">
 <!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">
+<!ENTITY ctr_Support_forums	"Forum d’assistance">
+<!ENTITY ctr_help_features	"Fonctionnalités et renseignements">
 <!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">
