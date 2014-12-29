@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"附加组件栏">
 <!ENTITY Ctr_statusbar		"状态栏">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"侧边栏">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"需要重启 Firefox!">
+<!ENTITY Ctr_rr				"需要重启 Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"按钮">
 <!ENTITY Ctr_cuibutnormal	"标准">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"新增工具栏">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"颠倒图标">
 <!ENTITY Ctr_menubar		"菜单栏">
@@ -195,7 +195,7 @@
 <!ENTITY Ctr_alttabstb		"替代的背景颜色">
 
 <!ENTITY Ctr_altmenubar		"添加背景颜色 (OS 标题栏)">
-<!ENTITY Ctr_altmenubarpos	"替代位置 (在 Firefox 标题栏下方)">
+<!ENTITY Ctr_altmenubarpos	"替代位置 (在 Cyberfox 标题栏下方)">
 <!ENTITY Ctr_menubarnofog	"移除背景颜色/模糊 (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_hidenavbar		"隐藏工具栏">

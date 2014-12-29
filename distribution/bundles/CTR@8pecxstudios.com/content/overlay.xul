@@ -135,17 +135,20 @@
 	<!--### CTR entry in menubars 'Tools' menu popup ###-->
 	<menupopup id="menu_ToolsPopup">
 	  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-		label="Classic Theme Restorer"
+		label="&Ctr_title;"
 		class="menuitem-iconic"
 		id="ctraddon_tools_menu_entry"/>
 	</menupopup>
 	
-	<menupopup id="toolbar-context-menu">
-	  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-		label="Classic Theme Restorer"
-		class="menuitem-iconic"
-		id="ctraddon_context_menu_entry"/>
-	</menupopup>
+ 	<!--### Add additional access too in-ctr via toolbar context will be optional ###-->
+	 <menupopup id="toolbar-context-menu">
+		
+		<menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
+						  label="&Ctr_title;"
+						  class="menuitem-iconic"
+						  insertafter="viewToolbarsMenuSeparator"
+						  id="ctraddon_context_menu_entry"/>
+    </menupopup>
 
 	<!--### CTRs appmenu popup
 		!!!! IMPORTANT for AMO Editors !!!
@@ -547,13 +550,12 @@
 							accesskey="&viewCustomizeToolbar.accesskey;"
 							label="&viewCustomizeToolbar.label;"/>
 				  <menuseparator id="ctraddon_appmenu_sep" collapsed="true"/>
-				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-							label="Classic Theme Restorer"
-							class="menuitem-iconic"
-							id="ctraddon_appmenu_ctr"/>
+
 			  </menupopup>
 			</menu>
-
+ 				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
+								label="&Ctr_title;"							
+							id="ctraddon_appmenu_ctr2"/>
 			<!-- MacOSX/Linux/Unix version of the options menu with MacOSX/Linux/Unix specific labels -->
 			<menu id="appmenu_customizeUnix"
 					label="&preferencesCmdUnix.label;"
@@ -575,7 +577,7 @@
 							label="&viewCustomizeToolbar.label;"/>
 				  <menuseparator id="ctraddon_appmenu_sep2" collapsed="true"/>
 				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-							label="Classic Theme Restorer"
+							label="&Ctr_title;"
 							class="menuitem-iconic"
 							id="ctraddon_appmenu_ctr2"/>
 			  </menupopup>
@@ -587,55 +589,41 @@
 					onclick="if(classicthemerestorerjs.ctr.prefs.getBoolPref('appbclmmenus')
 								&amp;&amp; event.button=='0'
 								&amp;&amp; event.originalTarget.getAttribute('splitmenu')=='true')
-								{openHelpLink('firefox-help');document.getElementById('appmenu-popup').hidePopup();}"
+								{openHelpLink('/index.php');document.getElementById('appmenu-popup').hidePopup();}"
 					class="menu-iconic">
-			  <menupopup id="appmenu_helpMenupopup" onpopupshowing="buildHelpMenu();">
-				<menuitem id="appmenu_openHelp"
-						  oncommand="openHelpLink('firefox-help')"
-						  onclick="checkForMiddleClick(this, event);"
-						  label="&productHelp.label;"
-						  accesskey="&productHelp.accesskey;"/>
-				<menuitem id="appmenu_gettingStarted"
-						  label="&appMenuGettingStarted.label;"
-						  oncommand="gBrowser.loadOneTab('https://www.mozilla.org/firefox/central/', {inBackground: false});"
-						  onclick="checkForMiddleClick(this, event);"/>
-				<menuitem id="appmenu_openTour"
-						  oncommand="openTourPage();"
-						  label="&helpShowTour.label;"
-						  accesskey="&helpShowTour.accesskey;"/>
-				<menuitem id="appmenu_keyboardShortcuts"
-						  oncommand="openHelpLink('keyboard-shortcuts')"
-						  onclick="checkForMiddleClick(this, event);"
-						  label="&helpKeyboardShortcuts.label;"
-						  accesskey="&helpKeyboardShortcuts.accesskey;"/>
-				<menuitem id="appmenu_healthReport"
-						  label="&healthReport.label;"
-						  accesskey="&healthReport.accesskey;"
-						  oncommand="openHealthReport()"
-						  onclick="checkForMiddleClick(this, event);"/>
-				<menuitem id="appmenu_troubleshootingInfo"
-						  accesskey="&helpTroubleshootingInfo.accesskey;"
-						  label="&helpTroubleshootingInfo.label;"
-						  oncommand="openTroubleshootingPage()"
-						  onclick="checkForMiddleClick(this, event);"/>
-				<menuitem id="appmenu_feedbackPage"
-						  accesskey="&helpFeedbackPage.accesskey;"
-						  label="&helpFeedbackPage.label;"
-						  oncommand="openFeedbackPage()"
-						  onclick="checkForMiddleClick(this, event);"/>
-				<menuseparator/>
-				<menuitem id="appmenu_safeMode"
-						  accesskey="&helpSafeMode.accesskey;"
-						  label="&helpSafeMode.label;"
-						  oncommand="safeModeRestart();"/>
-				<menuseparator/>
-				<menuitem id="appmenu_about"
-						  accesskey="&aboutProduct.accesskey;"
-						  label="&aboutProduct.label;"
-						  oncommand="openAboutDialog();"/>
-			  </menupopup>
-			</menu>
-			
+				  <menupopup id="appmenu_helpMenupopup" onpopupshowing="buildHelpMenu();">
+					<menuitem id="appmenu_openHelp"
+							  oncommand="openHelpLink('/index.php')"
+							  onclick="checkForMiddleClick(this, event);"
+							  label="&productHelp.label;"
+							  accesskey="&productHelp.accesskey;"/>
+					<menuitem id="appmenu_gettingStarted"
+							  label="&appMenuGettingStarted.label;"
+							  oncommand="gBrowser.loadOneTab('https://8pecxstudios.com/', {inBackground: false});"
+							  onclick="checkForMiddleClick(this, event);"/>
+					<menuitem id="appmenu_troubleshootingInfo"
+							  accesskey="&helpTroubleshootingInfo.accesskey;"
+							  label="&helpTroubleshootingInfo.label;"
+							  oncommand="openTroubleshootingPage()"
+							  onclick="checkForMiddleClick(this, event);"/>
+					<menuitem id="appmenu_feedbackPage"
+							  accesskey="&helpFeedbackPage.accesskey;"
+							  label="&helpFeedbackPage.label;"
+							  oncommand="openFeedbackPage()"
+							  onclick="checkForMiddleClick(this, event);"/>
+					<menuseparator/>
+					<menuitem id="appmenu_safeMode"
+							  accesskey="&helpSafeMode.accesskey;"
+							  label="&helpSafeMode.label;"
+							  oncommand="safeModeRestart();"/>
+					<menuseparator/>
+					<menuitem id="appmenu_about"
+							  accesskey="&aboutProduct.accesskey;"
+							  label="&aboutProduct.label;"
+							  oncommand="openAboutDialog();"/>
+				  </menupopup>
+				</menu>
+ 
 		  </vbox>
 		</hbox>
 		
@@ -653,7 +641,7 @@
                      persist="class"
                      removable="true"
                      type="menu"
-                     label="Firefox"
+                     label="Customize"
 					 popup="appmenu-popup"
 					 onmousedown="classicthemerestorerjs.ctr.openCtrAppmenuPopup();">
 	  </toolbarbutton>
@@ -785,11 +773,11 @@
 	  
 	  <!--### creates a CTR preference button ###-->
 	  <toolbarbutton id="ctraddon_ctr-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
-					 label="CTR"
+					 label="&Ctr_title;"
 					 persist="class"
 					 cui-areatype="toolbar"
-					 oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-                     tooltiptext="Classic Theme Restorer"/>
+					 oncommand="classicthemerestorerjs.ctr.openCTRPreferences(this);"
+                     tooltiptext="&Ctr_title;"/>
 
 	  <!--### creates a bookmarks sidebar button ###-->
 	  <toolbarbutton id="ctraddon_bookmarks-button" class="toolbarbutton-1 chromeclass-toolbar-additional"

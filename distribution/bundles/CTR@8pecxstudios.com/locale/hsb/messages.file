@@ -1,5 +1,5 @@
-popup.title=Classic Theme Restorer
-popup.msg.restart=Firefox dyrbi so znowa startować, zo bychu so změny wuskutkowali.\nNětko znowa startować?
+popup.title=Customize Cyberfox
+popup.msg.restart=Cyberfox dyrbi so znowa startować, zo bychu so změny wuskutkowali.\nNětko znowa startować?
 import.error=ZMYLK: Wopačna abo změnjena dataja namakana!\nJe móžno, zo so ničo njeimportuje!
 ctr_extrabar=Přidatna symbolowa lajsta
 ctr_actthrobber=Activity Indicator

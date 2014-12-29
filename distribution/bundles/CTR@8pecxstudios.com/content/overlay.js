@@ -401,7 +401,7 @@ classicthemerestorerjs.ctr = {
 			// if nav-bar current and CTRs selected attribute are both 'small', CTR does not need to change nav-bars attribute
 			if(currentAttribute=="small" && selectedAttribute=="small") {return;}
 			else {
-				// needs a delay or Firefox may override attribute in some cases
+				// needs a delay or Cyberfox may override attribute in some cases
 				setTimeout(function(){
 				  try {
 					document.getElementById("nav-bar").setAttribute('iconsize',classicthemerestorerjs.ctr.prefs.getCharPref("nbiconsize"));
@@ -411,7 +411,7 @@ classicthemerestorerjs.ctr = {
 				window.addEventListener("load", function setCTRnavbariconsize(event){
 					window.removeEventListener("load", setCTRnavbariconsize, false);
 
-					// needs a delay or Firefox may override attribute in some cases
+					// needs a delay or Cyberfox may override attribute in some cases
 					setTimeout(function(){
 					  try {
 						document.getElementById("nav-bar").setAttribute('iconsize',classicthemerestorerjs.ctr.prefs.getCharPref("nbiconsize"));
@@ -1348,7 +1348,7 @@ classicthemerestorerjs.ctr = {
 	// this button can only be places on Firefox titlebar using Windows OS
 	if(classicthemerestorerjs.ctr.osstring == "WINNT"){
 	
-		var buttontitle = "Firefox"; // init with default title
+		var buttontitle = "Cyberfox"; // init with default title
 		var custombuttontitle = classicthemerestorerjs.ctr.prefs.getCharPref('appbuttontxt');
 		
 		if(custombuttontitle!='') buttontitle = custombuttontitle;
@@ -3324,17 +3324,16 @@ classicthemerestorerjs.ctr = {
   },
   
   openCTRPreferences: function(currentWindow) {
-	AddonManager.getAddonByID("ClassicThemeRestorer@ArisT2Noia4dev", function(aAddon) {
 	  let windows = Services.wm.getEnumerator(null);
+	  let optionsURL = "chrome://classic_theme_restorer/content/options.xul"
 		while (windows.hasMoreElements()) {
 		  let win = windows.getNext();
-		  if (win.document.documentURI == aAddon.optionsURL) {
+		  if (win.document.documentURI == optionsURL) {
 			win.focus();
 			return;
 		  }
 		}
-		window.open(aAddon.optionsURL,'', 'chrome').focus();
-	});
+		window.open(optionsURL,'', 'chrome').focus();	
   },
 	
   // hides/shows CTRs add-on bar

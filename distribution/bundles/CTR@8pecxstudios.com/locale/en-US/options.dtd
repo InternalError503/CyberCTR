@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Add-on Bar">
 <!ENTITY Ctr_statusbar		"Status Bar">
@@ -24,7 +24,7 @@
 <!ENTITY Ctr_tabcolors_t	"Tab colors &amp; text">
 
 <!ENTITY Ctr_tabs			"Tabs">
-<!ENTITY Ctr_tabs0			"Curved tabs (Firefox default)">
+<!ENTITY Ctr_tabs0			"Curved tabs (Australis default)">
 <!ENTITY Ctr_tabs1			"Squared tabs (classic)">
 <!ENTITY Ctr_tabs1m			"Squared tabs (australized)">
 <!ENTITY Ctr_tabs2			"Curved tabs (alternative)">
@@ -35,7 +35,8 @@
 <!ENTITY Ctr_tabsontop2		"Tabs not on top - set [tabsontop=false]">
 <!ENTITY Ctr_tabsontop3		"Tabs not on top (v2) - set [tabsontop=false]">
 <!ENTITY Ctr_tabsontopI1	"Adds attribute [tabsontop=true/false] to">
-<!ENTITY Ctr_tabsintitlebar	"Firefox titlebar (about:config preference)">
+
+<!ENTITY Ctr_tabsintitlebar	"Cyberfox titlebar (about:config preference)">
 <!ENTITY Ctr_tabwidthdef	"(default)">
 <!ENTITY Ctr_tabwidthcla	"(classic)">
 <!ENTITY Ctr_tabmaxwidth	"Max-width:">
@@ -60,8 +61,8 @@
 <!ENTITY Ctr_appbutton0		"Button disabled">
 <!ENTITY Ctr_appbutton1		"Button on toolbar">
 <!ENTITY Ctr_appbutton1wt	"Button on toolbar (text only)">
-<!ENTITY Ctr_appbutton2		"Button on [Firefox] titlebar">
-<!ENTITY Ctr_appbutton2io	"Button on [Firefox] titlebar (icon only)">
+<!ENTITY Ctr_appbutton2		"Button on [Cyberfox] titlebar">
+<!ENTITY Ctr_appbutton2io	"Button on [Cyberfox] titlebar (icon only)">
 <!ENTITY Ctr_paneluibtweak	"Orange panel menu button on tabs toolbar">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Orange button color (default)">
@@ -75,7 +76,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Purple button color">
 <!ENTITY Ctr_appbuttonc_wh	"White button color">
 <!ENTITY Ctr_appbuttonI1	"Restart recommended">
-<!ENTITY Ctr_appbuttonI1e	"Not visible on Windows OS titlebar, only on Firefox titlebar!">
+<!ENTITY Ctr_appbuttonI1e	"Not visible on Windows OS titlebar, only on Cyberfox titlebar!">
 <!ENTITY Ctr_appbuttonI2	"Button colors are only visible on titlebar and tabs toolbar!">
 <!ENTITY Ctr_alttbappb		"Alternative icons without dropmarker">
 <!ENTITY Ctr_appbutmhi		"Higher position (if on tabs toolbar)">
@@ -122,7 +123,7 @@
 <!ENTITY Ctr_pmhidelabels	"Panel menu popup: hide button labels">
 <!ENTITY Ctr_menupopupscr	"Menupopups: show scrollbars instead of scroll arrows">
 
-<!ENTITY Ctr_fxmockup		"Firefox Mockup">
+<!ENTITY Ctr_fxmockup		"Cyberfox Mockup">
 <!ENTITY Ctr_tabmokcolor	"White color for tab buttons (close, new, groups, list all)">
 <!ENTITY Ctr_tabmokcolor2	"White color and dark shadow for text on non-active tabs">
 <!ENTITY Ctr_tabmokcolor3	"White color for tab separators">
@@ -173,7 +174,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"Additional Toolbar">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"Inverted icons">
 <!ENTITY Ctr_menubar		"Menubar">
@@ -195,7 +196,7 @@
 <!ENTITY Ctr_alttabstb		"Alternative background color">
 
 <!ENTITY Ctr_altmenubar		"Add background color (OS titlebar)">
-<!ENTITY Ctr_altmenubarpos	"Alternative position (below Firefox titlebar)">
+<!ENTITY Ctr_altmenubarpos	"Alternative position (below Cyberfox titlebar)">
 <!ENTITY Ctr_menubarnofog	"Remove background color/fog (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_hidenavbar		"Navigation toolbar: hide toolbar">

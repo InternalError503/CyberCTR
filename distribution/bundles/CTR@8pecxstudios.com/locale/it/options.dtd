@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title 			"Classic Theme Restorer">
+<!ENTITY Ctr_title 			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Barra dei componenti aggiuntivi">
 <!ENTITY Ctr_statusbar		"Barra di stato">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"Sidebar">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"Riavviare Firefox!">
+<!ENTITY Ctr_rr				"Riavviare Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"Pulsanti">
 <!ENTITY Ctr_cuibutnormal	"Normali">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"Barra degli strumenti aggiuntiva">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"Icone invertite">
 <!ENTITY Ctr_menubar		"Barra dei menu">

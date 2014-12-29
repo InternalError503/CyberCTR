@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Barra de complementos">
 <!ENTITY Ctr_statusbar		"Barra de estado">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"Barra lateral">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"¡Requiere reiniciar Firefox!">
+<!ENTITY Ctr_rr				"¡Requiere reiniciar Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"Botones">
 <!ENTITY Ctr_cuibutnormal	"Normal">
@@ -60,8 +60,8 @@
 <!ENTITY Ctr_appbutton0		"Botón deshabilitado">
 <!ENTITY Ctr_appbutton1		"Botón en la barra de herramientas">
 <!ENTITY Ctr_appbutton1wt	"Botón en la barra de herramientas (sólo texto)">
-<!ENTITY Ctr_appbutton2		"Botón en la barra de título [de Firefox]">
-<!ENTITY Ctr_appbutton2io	"Botón en la barra de título [de Firefox] (sólo icono)">
+<!ENTITY Ctr_appbutton2		"Botón en la barra de título [de Cyberfox]">
+<!ENTITY Ctr_appbutton2io	"Botón en la barra de título [de Cyberfox] (sólo icono)">
 <!ENTITY Ctr_paneluibtweak	"Botón de menú de panel naranja en la barra de pestañas">
 <!ENTITY Ctr_appbuttonc_o	"Color de botón naranja (por defecto)">
 <!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
@@ -75,7 +75,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Color de botón púrpura">
 <!ENTITY Ctr_appbuttonc_wh	"Color de botón blanco">
 <!ENTITY Ctr_appbuttonI1	"Se recomienda reiniciar">
-<!ENTITY Ctr_appbuttonI1e	"¡No es visible en la barra de título de SO de Windows, sólo en la barra de título de Firefox!">
+<!ENTITY Ctr_appbuttonI1e	"¡No es visible en la barra de título de SO de Windows, sólo en la barra de título de Cyberfox!">
 <!ENTITY Ctr_appbuttonI2	"¡Los colores del botón sólo son visibles en la barra de título y la barra de pestañas!">
 <!ENTITY Ctr_alttbappb		"Iconos alternativos">
 <!ENTITY Ctr_appbutmhi		"Posición más alta (si está en la barra de pestañas)">
@@ -122,7 +122,7 @@
 <!ENTITY Ctr_pmhidelabels	"Menú de panel emergente: ocultar etiquetas de los botones">
 <!ENTITY Ctr_menupopupscr	"Menús emergentes: mostrar barras de desplazamiento en lugar de flechas">
 
-<!ENTITY Ctr_fxmockup		"Prototipo (mockup) de Firefox">
+<!ENTITY Ctr_fxmockup		"Prototipo (mockup) de Cyberfox">
 <!ENTITY Ctr_tabmokcolor	"Color blanco para botones de pestaña (cerrar, nueva, grupos, listar todas)">
 <!ENTITY Ctr_tabmokcolor2	"Color blanco y sombreado oscuro para el texto en pestañas no activas">
 <!ENTITY Ctr_tabmokcolor3	"Color blanco para separadores de pestañas">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"Barra de herramientas adicional">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"Iconos invertidos">
 <!ENTITY Ctr_menubar		"Barra de menús">
@@ -195,7 +195,7 @@
 <!ENTITY Ctr_alttabstb		"Color de fondo alternativo">
 
 <!ENTITY Ctr_altmenubar		"Añadir color de fondo (barra de título del SO)">
-<!ENTITY Ctr_altmenubarpos	"Posición alternativa (debajo de la barra de título de Firefox)">
+<!ENTITY Ctr_altmenubarpos	"Posición alternativa (debajo de la barra de título de Cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Eliminar color/niebla de fondo (Windows 8/Aeroglass)">
 
 <!ENTITY Ctr_hidenavbar		"Ocultar barra de navegación">

@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Панель додатків">
 <!ENTITY Ctr_statusbar		"Панель статусу">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Індикатор активності">
 <!ENTITY Ctr_sidebarbutton	"Бокова панель">
 <!ENTITY Ctr_windowcontrols	"мін/макс/закрити (Повний екран)">
-<!ENTITY Ctr_rr				"Перезапустіть Firefox!">
+<!ENTITY Ctr_rr				"Перезапустіть Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"Кнопки">
 <!ENTITY Ctr_cuibutnormal	"Нормальні">
@@ -35,7 +35,7 @@
 <!ENTITY Ctr_tabsontop2		"Вкладки не нагорі - встановлено [tabsontop=false]">
 <!ENTITY Ctr_tabsontop3		"Вкладки не нагорі (v2) - встановлено [tabsontop=false]">
 <!ENTITY Ctr_tabsontopI1	"Додає атрибут [tabsontop=true/false] для">
-<!ENTITY Ctr_tabsintitlebar	"Панель заголовку Firefox (about:config preference)">
+<!ENTITY Ctr_tabsintitlebar	"Панель заголовку cyberfox (about:config preference)">
 <!ENTITY Ctr_tabwidthdef	"(типово)">
 <!ENTITY Ctr_tabwidthcla	"(класичний)">
 <!ENTITY Ctr_tabmaxwidth	"Макс.ширина:">
@@ -60,8 +60,8 @@
 <!ENTITY Ctr_appbutton0		"Кнопка вимкнена">
 <!ENTITY Ctr_appbutton1		"Кнопка на панелі">
 <!ENTITY Ctr_appbutton1wt	"Кнопка на панелі (тільки текст)">
-<!ENTITY Ctr_appbutton2		"Кнопка на [Firefox] панелі заголовку">
-<!ENTITY Ctr_appbutton2io	"Кнопка на [Firefox] панелі заголовку (тільки іконка)">
+<!ENTITY Ctr_appbutton2		"Кнопка на [cyberfox] панелі заголовку">
+<!ENTITY Ctr_appbutton2io	"Кнопка на [cyberfox] панелі заголовку (тільки іконка)">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Оранжева кнопка меню на панелі вкладок">
 <!ENTITY Ctr_appbuttonc_o	"Оранжева кнопка (за умовчанням)">
@@ -75,7 +75,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Фіолетова кнопка">
 <!ENTITY Ctr_appbuttonc_wh	"Біла кнопка">
 <!ENTITY Ctr_appbuttonI1	"рекомендовано перезапуск">
-<!ENTITY Ctr_appbuttonI1e	"Не видно в рядку заголовку Windows OS, тільки в Firefox заголовку!">
+<!ENTITY Ctr_appbuttonI1e	"Не видно в рядку заголовку Windows OS, тільки в cyberfox заголовку!">
 <!ENTITY Ctr_appbuttonI2	"Кольори кнопок видимі тільки на панелях заголовку і вкладок!">
 <!ENTITY Ctr_alttbappb		"Альтернативні іконки">
 <!ENTITY Ctr_appbutmhi		"Вища позиція (якщо на панелі вкладок)">
@@ -122,7 +122,7 @@
 <!ENTITY Ctr_pmhidelabels	"Спливаюче вікно панелі меню: приховати написи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Спливаючі вікна меню: показувати полоси прокручування замість стрілки прокручування">
 
-<!ENTITY Ctr_fxmockup		"Firefox макет">
+<!ENTITY Ctr_fxmockup		"Cyberfox макет">
 <!ENTITY Ctr_tabmokcolor	"Білий колір для кнопок вкладок (закрити, нова, групи, список усіх)">
 <!ENTITY Ctr_tabmokcolor2	"Білий колір і темна тінь для тексту на неактивній вкладці">
 <!ENTITY Ctr_tabmokcolor3	"Білий колір для розділювачів вкладок">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Додаткові панелі інструментів">
 <!ENTITY Ctr_extrabar0		"Додаткова панель(і)">
 <!ENTITY Ctr_extrabar1		"Додаткова панель">
-<!ENTITY Ctr_extrabarinfo	"Перемикання між способами 'вкладки нагорі' і 'вкладки не нагорі' змінює розташування додаткових панелей. Firefox повинен бути перезапущений, щоб вирішити цю проблему.">
+<!ENTITY Ctr_extrabarinfo	"Перемикання між способами 'вкладки нагорі' і 'вкладки не нагорі' змінює розташування додаткових панелей. Cyberfox повинен бути перезапущений, щоб вирішити цю проблему.">
 
 <!ENTITY Ctr_invicons		"Інвертовані іконки">
 <!ENTITY Ctr_menubar		"Панель меню">
@@ -195,7 +195,7 @@
 <!ENTITY Ctr_alttabstb		"Альтернативний колір тла">
 
 <!ENTITY Ctr_altmenubar		"Додати колір тла (рядок заголовку Windows)">
-<!ENTITY Ctr_altmenubarpos	"Альтернативна позиція (нижче рядку заголовку Firefox)">
+<!ENTITY Ctr_altmenubarpos	"Альтернативна позиція (нижче рядку заголовку Cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Прибрати затуманення/колір тла (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_hidenavbar		"Панель навігації: приховати панель">
@@ -235,7 +235,7 @@
 
 <!ENTITY Ctr_special_font	"Налаштування кольору тла - тільки для типової теми!">
 <!ENTITY Ctr_special_info	"Деякі параметри не можуть запропонувати візуальні зміни в усіх випадках">
-<!ENTITY Ctr_special_info2	"Налаштування зроблені для типової теми Firefox і не можуть працювати з усіма сторонніми темами!">
+<!ENTITY Ctr_special_info2	"Налаштування зроблені для типової теми Cyberfox і не можуть працювати з усіма сторонніми темами!">
 <!ENTITY Ctr_support		"Форум підтримки">
 <!ENTITY Ctr_newversion		"Нова версія?">
 

@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Επαναφορέας κλασικού θέματος">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Εργαλειοθήκη πρόσθετων">
 <!ENTITY Ctr_statusbar		"Γραμμή κατάστασης">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Ενδείκτης δραστηριότητας">
 <!ENTITY Ctr_sidebarbutton	"(Πλευρική στήλη)">
 <!ENTITY Ctr_windowcontrols	"Ελαχιστοποίηση/επαναφορά/κλείσιμο (Πλήρης οθόνη)">
-<!ENTITY Ctr_rr				"Επανεκκινήστε τον Firefox!">
+<!ENTITY Ctr_rr				"Επανεκκινήστε τον Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"Κουμπιά">
 <!ENTITY Ctr_cuibutnormal	"Κανονικά">
@@ -24,7 +24,7 @@
 <!ENTITY Ctr_tabcolors_t	"Χρώματα καρτελών &amp; κειμένου">
 
 <!ENTITY Ctr_tabs			"Καρτέλες">
-<!ENTITY Ctr_tabs0			"Καμπυλόγραμμες καρτέλες (προεπιλογή Firefox)">
+<!ENTITY Ctr_tabs0			"Καμπυλόγραμμες καρτέλες (προεπιλογή Australis)">
 <!ENTITY Ctr_tabs1			"Τετραγωνισμένες καρτέλες (κλασική τεχνοτροπία)">
 <!ENTITY Ctr_tabs1m			"Τετραγωνισμένες καρτέλες (τεχνοτροπία Australis)">
 <!ENTITY Ctr_tabs2			"Καμπυλόγραμμες καρτέλες (εναλλακτική τεχνοτροπία)">
@@ -35,7 +35,7 @@
 <!ENTITY Ctr_tabsontop2		"Καρτέλες όχι στο πάνω μέρος - ορισμός [tabsontop=false]">
 <!ENTITY Ctr_tabsontop3		"Καρτέλες όχι στο πάνω μέρος (v2) - ορισμός [tabsontop=false]">
 <!ENTITY Ctr_tabsontopI1	"Προσθέτει χαρακτηριστικό [tabsontop=true/false] σε">
-<!ENTITY Ctr_tabsintitlebar	"Γραμμή τίτλου Firefox (προτίμηση about:config)">
+<!ENTITY Ctr_tabsintitlebar	"Γραμμή τίτλου cyberfox (προτίμηση about:config)">
 <!ENTITY Ctr_tabwidthdef	"(προεπιλογή)">
 <!ENTITY Ctr_tabwidthcla	"(κλασικό)">
 <!ENTITY Ctr_tabmaxwidth	"Μέγιστο εύρος:">
@@ -60,8 +60,8 @@
 <!ENTITY Ctr_appbutton0		"Απενεργοποιημένο">
 <!ENTITY Ctr_appbutton1		"Στην εργαλειοθήκη">
 <!ENTITY Ctr_appbutton1wt	"Στην εργαλειοθήκη (μόνο κείμενο)">
-<!ENTITY Ctr_appbutton2		"Στη γραμμή τίτλου [Firefox]">
-<!ENTITY Ctr_appbutton2io	"Στη γραμμή τίτλου [Firefox] (μόνο εικονίδιο)">
+<!ENTITY Ctr_appbutton2		"Στη γραμμή τίτλου [cyberfox]">
+<!ENTITY Ctr_appbutton2io	"Στη γραμμή τίτλου [cyberfox] (μόνο εικονίδιο)">
 <!ENTITY Ctr_paneluibtweak	"Πορτοκαλί κουμπί μενού πίνακα στην εργαλειοθήκη καρτελών">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Πορτοκαλί χρώμα κουμπιού (προεπιλογή)">
@@ -75,7 +75,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Πορφυρό χρώμα κουμπιού">
 <!ENTITY Ctr_appbuttonc_wh	"Άσπρο χρώμα κουμπιού">
 <!ENTITY Ctr_appbuttonI1	"Συνιστάται επανεκκίνηση">
-<!ENTITY Ctr_appbuttonI1e	"Δεν είναι ορατό στη γραμμή τίτλου του Λ.Σ. Windows, μόνο στη γραμμή τίτλου του Firefox!">
+<!ENTITY Ctr_appbuttonI1e	"Δεν είναι ορατό στη γραμμή τίτλου του Λ.Σ. Windows, μόνο στη γραμμή τίτλου του Cyberfox!">
 <!ENTITY Ctr_appbuttonI2	"Τα χρώματα του κουμπιού είναι ορατά μόνο στη γραμμή τίτλου και στην εργαλειοθήκη καρτελών!">
 <!ENTITY Ctr_alttbappb		"Εναλλακτικά εικονίδια χωρίς δείκτη ανάπτυξης">
 <!ENTITY Ctr_appbutmhi		"Υψηλότερη θέση (εάν είναι στην εργαλειοθήκη καρτελών)">
@@ -122,7 +122,7 @@
 <!ENTITY Ctr_pmhidelabels	"Μενού πίνακα: απόκρυψη ετικετών κουμπιών">
 <!ENTITY Ctr_menupopupscr	"Αναδυόμενα μενού: εμφάνιση γραμμών κύλισης αντί για βέλη κύλισης">
 
-<!ENTITY Ctr_fxmockup		"Μακέτα Firefox">
+<!ENTITY Ctr_fxmockup		"Μακέτα cyberfox">
 <!ENTITY Ctr_tabmokcolor	"Άσπρο χρώμα κουμπιών καρτελών (κλείσιμο, νέα, ομάδες, λίστα όλων)">
 <!ENTITY Ctr_tabmokcolor2	"Άσπρο χρώμα και σκοτεινή σκιά κειμένου μη ενεργών καρτελών">
 <!ENTITY Ctr_tabmokcolor3	"Άσπρο χρώμα διαχωριστικών καρτελών">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Επιπρόσθετες εργαλειοθήκες">
 <!ENTITY Ctr_extrabar0		"Επιπρόσθετη/ες εργαλειοθήκη/ες">
 <!ENTITY Ctr_extrabar1		"Επιπρόσθετη εργαλειοθήκη">
-<!ENTITY Ctr_extrabarinfo	"Η εναλλαγή λειτουργιών «Καρτέλες στο πάνω μέρος» και «Καρτέλες όχι στο πάνω μέρος», αλλάζει τυχαία τη σειρά των επιπρόσθετων εργαλειοθηκών. Ο Firefox πρέπει να επανεκκινηθεί για αντιμετώπιση αυτού του θέματος.">
+<!ENTITY Ctr_extrabarinfo	"Η εναλλαγή λειτουργιών «Καρτέλες στο πάνω μέρος» και «Καρτέλες όχι στο πάνω μέρος», αλλάζει τυχαία τη σειρά των επιπρόσθετων εργαλειοθηκών. Ο Cyberfox πρέπει να επανεκκινηθεί για αντιμετώπιση αυτού του θέματος.">
 
 <!ENTITY Ctr_invicons		"Ανεστραμμένα εικονίδια">
 <!ENTITY Ctr_menubar		"Εργαλειοθήκη μενού">
@@ -195,7 +195,7 @@
 <!ENTITY Ctr_alttabstb		"Εναλλακτικό χρώμα φόντου">
 
 <!ENTITY Ctr_altmenubar		"Προσθήκη χρώματος φόντου (γραμμή τίτλου Λ.Σ.)">
-<!ENTITY Ctr_altmenubarpos	"Εναλλακτική θέση (παρακάτω από τη γραμμή τίτλου του Firefox)">
+<!ENTITY Ctr_altmenubarpos	"Εναλλακτική θέση (παρακάτω από τη γραμμή τίτλου του cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Αφαίρεση χρώματος/ομίχλης φόντου (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_hidenavbar		"Εργαλειοθήκη πλοήγησης: απόκρυψη εργαλειοθήκης">
@@ -235,7 +235,7 @@
 
 <!ENTITY Ctr_special_font	"Οι ρυθμίσεις χρώματος φόντου είναι για το προεπιλεγμένο θέμα μόνο!">
 <!ENTITY Ctr_special_info	"Ορισμένες επιλογές ενδέχεται να μην προσφέρουν ορατές αλλαγές σε όλες τις περιπτώσεις">
-<!ENTITY Ctr_special_info2	"Οι ρυθμίσεις έχουν σχεδιαστεί για το προεπιλεγμένο θέμα του Firefox και ενδέχεται να μη λειτουργούν με όλα τα θέματα τρίτων!">
+<!ENTITY Ctr_special_info2	"Οι ρυθμίσεις έχουν σχεδιαστεί για το προεπιλεγμένο θέμα του Cyberfox και ενδέχεται να μη λειτουργούν με όλα τα θέματα τρίτων!">
 <!ENTITY Ctr_support		"Φόρουμ υποστήριξης">
 <!ENTITY Ctr_newversion		"Νέα έκδοση;">
 

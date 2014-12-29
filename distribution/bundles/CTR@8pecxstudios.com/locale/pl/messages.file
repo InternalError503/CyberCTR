@@ -1,5 +1,5 @@
-﻿popup.title=Classic Theme Restorer
-popup.msg.restart=Firefox musi zostać zerestartowany, aby zmiany przyniosły efekt.\nZrestartować teraz?
+﻿popup.title=Customize Cyberfox
+popup.msg.restart=Cyberfox musi zostać zerestartowany, aby zmiany przyniosły efekt.\nZrestartować teraz?
 import.error=BŁĄD: Znaleziono błędny albo zmodyfikowany plik!\nNic nie zostało zaimportowane!
 ctr_extrabar=Dodatkowy pasek narzędzi
 ctr_actthrobber=Wskaźnik aktywności

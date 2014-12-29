@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Панель дополнений">
 <!ENTITY Ctr_statusbar		"Статус панель">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"Боковая панель">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"Перезапустите Firefox!">
+<!ENTITY Ctr_rr				"Перезапустите Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"Кнопки:">
 <!ENTITY Ctr_cuibutnormal	"Обычные">
@@ -122,7 +122,7 @@
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
 
-<!ENTITY Ctr_fxmockup		"Другие настройки для Firefox">
+<!ENTITY Ctr_fxmockup		"Другие настройки для Cyberfox">
 <!ENTITY Ctr_tabmokcolor	"Белый цвет для кнопок вкладок (закрыть, новая, группы, список всех)">
 <!ENTITY Ctr_tabmokcolor2	"Белый цвет и темная тень для текста на неактивной вкладке">
 <!ENTITY Ctr_tabmokcolor3	"Белый цвет для разделителей на панели вкладок">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"Дополнительная панель">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"Перекрашенные наоборот значки">
 <!ENTITY Ctr_menubar		"Панель меню">
@@ -195,7 +195,7 @@
 <!ENTITY Ctr_alttabstb		"Заменить цвет фона">
 
 <!ENTITY Ctr_altmenubar		"Добавить цвет фона в строку заголовка операционной системы">
-<!ENTITY Ctr_altmenubarpos	"Изменить расположение (ниже строки заголовка Firefox)">
+<!ENTITY Ctr_altmenubarpos	"Изменить расположение (ниже строки заголовка Cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Удалить туман из фона меню (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_hidenavbar		"Скрыть панель навигации">
@@ -235,7 +235,7 @@
 
 <!ENTITY Ctr_special_font	"Настройки цвета фона — только для темы по умолчанию!">
 <!ENTITY Ctr_special_info	"Некоторые варианты могут предложить визуальные изменения только в определенных случаях!">
-<!ENTITY Ctr_special_info2	"Настройки сделаны для темы Firefox по умолчанию и не могут работать со всеми сторонними темами!">
+<!ENTITY Ctr_special_info2	"Настройки сделаны для темы Cyberfox по умолчанию и не могут работать со всеми сторонними темами!">
 <!ENTITY Ctr_support		"Форум поддержки">
 <!ENTITY Ctr_newversion		"Новая версия?">
 

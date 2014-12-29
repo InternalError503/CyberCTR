@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"附加元件列">
 <!ENTITY Ctr_statusbar		"狀態列">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"側邊欄">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"需重啟 Firefox!">
+<!ENTITY Ctr_rr				"需重啟 Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"按鈕">
 <!ENTITY Ctr_cuibutnormal	"標準圖示">
@@ -121,7 +121,7 @@
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
 <!ENTITY Ctr_pmhidelabels	"面板選單: 隱藏按鈕文字標籤">
 <!ENTITY Ctr_menupopupscr	"彈出式選單: 用捲軸取代捲動箭頭">
-<!ENTITY Ctr_fxmockup		"Firefox 樣式">
+<!ENTITY Ctr_fxmockup		"Cyberfox 樣式">
 <!ENTITY Ctr_tabmokcolor	"白色分頁按鈕 (關閉、新增、分頁群組、列出所有分頁)">
 <!ENTITY Ctr_tabmokcolor2	"非目前的分頁，其字型使用白色文字，並加上文字陰影">
 <!ENTITY Ctr_tabmokcolor3	"白色分頁分隔線">
@@ -172,7 +172,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"新增工具列">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"圖示反相">
 <!ENTITY Ctr_menubar		"選單列">
@@ -215,9 +215,9 @@
 <!ENTITY Ctr_tabanimation	"分頁關閉/開啟的動畫 (about:config)">
 <!ENTITY Ctr_dlanimation	"「下載通知」 動畫 (about:config)">
 
-<!ENTITY Ctr_toolsitem		"工具選單中顯示 Classic Theme Restorer 項目">
-<!ENTITY Ctr_appmenuitem	"火狐橙選單中顯示 Classic Theme Restorer 項目">
-<!ENTITY Ctr_contextitem	"工具列右鍵選單中顯示 Classic Theme Restorer 項目">
+<!ENTITY Ctr_toolsitem		"工具選單中顯示 Customize Cyberfox 項目">
+<!ENTITY Ctr_appmenuitem	"火狐橙選單中顯示 Customize Cyberfox 項目">
+<!ENTITY Ctr_contextitem	"工具列右鍵選單中顯示 Customize Cyberfox 項目">
 <!ENTITY Ctr_puictrbutton	"Button in main panel menu">
 
 <!ENTITY Ctr_otherctroptns	"Other settings">
@@ -234,7 +234,7 @@
 
 <!ENTITY Ctr_special_font	"背景色彩設定僅生效於預設佈景主題!">
 <!ENTITY Ctr_special_info	"部份選項僅在某些情況下提供視覺上的變化!">
-<!ENTITY Ctr_special_info2	"設定僅在 Firefox 的預設佈景主題下測試，因此可能不生效於第三方佈景主題!">
+<!ENTITY Ctr_special_info2	"設定僅在 Cyberfox 的預設佈景主題下測試，因此可能不生效於第三方佈景主題!">
 <!ENTITY Ctr_support		"技術支援討論區">
 <!ENTITY Ctr_newversion		"有新版本?">
 

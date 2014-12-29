@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title			"Customize Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Barra de Complementos">
 <!ENTITY Ctr_statusbar		"Barra de Status">
@@ -9,7 +9,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"Barra Lateral">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"Reinicie o Firefox!">
+<!ENTITY Ctr_rr				"Reinicie o Cyberfox!">
 
 <!ENTITY Ctr_cuibuttons		"Botões">
 <!ENTITY Ctr_cuibutnormal	"Normais">
@@ -35,7 +35,7 @@
 <!ENTITY Ctr_tabsontop2		"Guias embaixo - definida [guiasnotopo=falso]">
 <!ENTITY Ctr_tabsontop3		"Guias embaixo (v2) - definida [guiasnotopo=falso]">
 <!ENTITY Ctr_tabsontopI1	"Adicionar atributo [guiasnotopo=verdadeiro/falso] para">
-<!ENTITY Ctr_tabsintitlebar	"Barra de título do Firefox (about:config)">
+<!ENTITY Ctr_tabsintitlebar	"Barra de título do Cyberfox (about:config)">
 <!ENTITY Ctr_tabwidthdef	"(padrão)">
 <!ENTITY Ctr_tabwidthcla	"(clássica)">
 <!ENTITY Ctr_tabmaxwidth	"Largura Máxima:">
@@ -60,8 +60,8 @@
 <!ENTITY Ctr_appbutton0		"Botão desativado">
 <!ENTITY Ctr_appbutton1		"Botão na barra de ferramentas">
 <!ENTITY Ctr_appbutton1wt	"Botão na barra de ferramentas (só o texto)">
-<!ENTITY Ctr_appbutton2		"Botão na [Firefox] barra de título">
-<!ENTITY Ctr_appbutton2io	"Botão na [Firefox] barra de título (só o ícone)">
+<!ENTITY Ctr_appbutton2		"Botão na [Cyberfox] barra de título">
+<!ENTITY Ctr_appbutton2io	"Botão na [Cyberfox] barra de título (só o ícone)">
 <!ENTITY Ctr_paneluibtweak	"Botão do menú do painel na barra de guias na cor laranja">
 <!ENTITY Ctr_appbuttonc_o	"Botão laranja (padrão)">
 <!ENTITY Ctr_appbuttonc_a	"Botão azul (Aurora)">
@@ -122,7 +122,7 @@
 <!ENTITY Ctr_pmhidelabels	"Menu do painel: ocultar as etiquetas do botão">
 <!ENTITY Ctr_menupopupscr	"Popups do menu: exibir as barras de rolagem em vez das setas de rolagem">
 
-<!ENTITY Ctr_fxmockup		"Modelo do Firefox">
+<!ENTITY Ctr_fxmockup		"Modelo do Cyberfox">
 <!ENTITY Ctr_tabmokcolor	"Botões da guia na cor branca (fechar, nova, grupos, listar tudo)">
 <!ENTITY Ctr_tabmokcolor2	"Texto na cor branca e sombra escura nas guias inativas">
 <!ENTITY Ctr_tabmokcolor3	"Separadores para as guias na cor branca">
@@ -173,7 +173,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"Barra de Ferramentas Adicional">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Firefox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"Ícones invertidos">
 <!ENTITY Ctr_menubar		"Barra de menus">

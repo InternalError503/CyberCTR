@@ -891,19 +891,7 @@
   <hbox align="center" flex="1" style="padding-top:5px;">
     <button label="&Ctr_pw_settings;" popup="ctr_pw_settingsPopup"/>
 	<spacer flex="1" />
-	<label value="Classic Toolbar Buttons" onclick="if(event.button == 0) {
-		window.close(); window.opener.openURL('https://addons.mozilla.org/addon/cstbb/versions/');
-		};"
-		class="text-link ctraddon_windowsonly"/>
-	<label value="&Ctr_support;" onclick="if(event.button == 0) {
-		window.close(); window.opener.openURL('http://forums.mozillazine.org/viewtopic.php?t=2827985');
-		};"
-		class="text-link" id="ctraddon_support"/>
-	<label value="&Ctr_newversion;" onclick="if(event.button == 0) {
-		window.close(); window.opener.openURL('https://addons.mozilla.org/addon/classicthemerestorer/versions/');
-		};"
-		class="text-link" id="ctraddon_newversion"/>
-	<spacer flex="1" />
+
 	<button dlgtype="accept" id="ctraddon_pw_okbutton"/>
   </hbox> 
 

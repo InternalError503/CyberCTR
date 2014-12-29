@@ -158,16 +158,6 @@ classicthemerestorerjso.ctr = {
 	  }
 	});
 	
-	
-	AddonManager.getAddonByID('ClassicThemeRestorer@ArisT2Noia4dev', function(addon) {
-	  
-	  var currentAttribute = document.getElementById("ClassicTRoptions").getAttribute("title");
-	  var newAttribute = currentAttribute + ' - ' + addon.version;
-	  document.getElementById("ClassicTRoptions").setAttribute('title',newAttribute);
-	  
-	});
-	
-	
 	// disable bookmark animation checkbox, if 'star button in urlbar' is used
 	if (this.prefs.getBoolPref('starinurl')) document.getElementById('ctraddon_pw_bmanimation').disabled = true;
 	

@@ -1,5 +1,5 @@
-popup.title=Classic Theme Restorer
-popup.msg.restart=変更を有効にするためにはFirefoxを再起動する必要があります。\今すぐ再起動しますか？
+popup.title=Customize Cyberfox
+popup.msg.restart=変更を有効にするためにはCyberfoxを再起動する必要があります。\今すぐ再起動しますか？
 import.error=エラー：誤りが見つかったかファイルが修正されています。\nインポートされませんでした。
 ctr_extrabar=追加のツールバー
 ctr_actthrobber=Activity Indicator

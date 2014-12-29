@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Classic Theme Restorer">
+<!ENTITY Ctr_title      	"Cyberfox anpassen">
 
 <!ENTITY Ctr_addonbar		"Addonleiste">
 <!ENTITY Ctr_statusbar		"Statusleiste">
@@ -24,7 +24,7 @@
 <!ENTITY Ctr_tabcolors_t	"Tab Farben / Zeichensatz">
 
 <!ENTITY Ctr_tabs			"Tabs">
-<!ENTITY Ctr_tabs0			"Gerundete Tabs (Firefox-Standard)">
+<!ENTITY Ctr_tabs0			"Gerundete Tabs (Australis-Vorgabe)">
 <!ENTITY Ctr_tabs1			"Quadratische Tabs (klassisch)">
 <!ENTITY Ctr_tabs1m			"Quadratische Tabs (australisiert)">
 <!ENTITY Ctr_tabs2			"Gerundete Tabs (alternativ)">
@@ -35,7 +35,7 @@
 <!ENTITY Ctr_tabsontop2		"Tabs unten - '[tabsontop=false]' Attribut gesetzt">
 <!ENTITY Ctr_tabsontop3		"Tabs unten (v2) - '[tabsontop=false]' Attribut gesetzt">
 <!ENTITY Ctr_tabsontopI1	"Setzt Attribut [tabsontop=true/false] für">
-<!ENTITY Ctr_tabsintitlebar	"Firefox Titelleiste (about:config Einstellung)">
+<!ENTITY Ctr_tabsintitlebar	"Cyberfox-Titelleiste (about:config-Einstellung)">
 <!ENTITY Ctr_tabwidthdef	"(Standard)">
 <!ENTITY Ctr_tabwidthcla	"(klassisch)">
 <!ENTITY Ctr_tabmaxwidth	"Maximalbreite:">
@@ -56,12 +56,12 @@
 <!ENTITY Ctr_closeonleft	"Am Anfang des Tabs">
 <!ENTITY Ctr_close_wwltab	"Schließt Fenster mit nur einem sichtbaren Tab (about:config)">
 
-<!ENTITY Ctr_appbutton		"Firefox-Schaltfläche">
+<!ENTITY Ctr_appbutton		"Cyberfox-Schaltfläche">
 <!ENTITY Ctr_appbutton0		"Deaktiviert">
 <!ENTITY Ctr_appbutton1		"Auf den Symbolleisten">
 <!ENTITY Ctr_appbutton1wt	"Auf den Symbolleisten (nur Text)">
-<!ENTITY Ctr_appbutton2		"Auf der Firefox Titelleiste">
-<!ENTITY Ctr_appbutton2io	"Auf der Firefox Titelleiste (nur Symbol)">
+<!ENTITY Ctr_appbutton2		"Auf der Cyberfox Titelleiste">
+<!ENTITY Ctr_appbutton2io	"Auf der Cyberfox Titelleiste (nur Symbol)">
 <!ENTITY Ctr_paneluibtweak	"Orangene Menüschaltfläche auf der Tableiste">
 <!ENTITY Ctr_appbuttonc_o	"Farbe: Orange (Standard)">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
@@ -74,14 +74,14 @@
 <!ENTITY Ctr_appbuttonc_gr	"Farbe: Grau">
 <!ENTITY Ctr_appbuttonc_pu	"Farbe: Lila">
 <!ENTITY Ctr_appbuttonc_wh	"Farbe: weiß">
-<!ENTITY Ctr_appbuttonI1	"Nach einer Änderung wird ein Neustart empfohlen.">
-<!ENTITY Ctr_appbuttonI1e	"Die Firefox-Schaltfläche ist auf der Windows Titelleiste nicht sichtbar!">
+<!ENTITY Ctr_appbuttonI1	"Nach Änderungen wird ein Neustart empfohlen.">
+<!ENTITY Ctr_appbuttonI1e	"Die Cyberfox-Schaltfläche ist auf der Windows-Titelleiste nicht sichtbar!">
 <!ENTITY Ctr_appbuttonI2	"Die Farbe ist nur auf der Titelleiste und der Tableiste sichtbar!">
 <!ENTITY Ctr_alttbappb		"Alternative Symbole">
 <!ENTITY Ctr_appbutmhi		"Höhere Position (wenn auf der Tableiste)">
 <!ENTITY Ctr_appbutbdl		"Entferne Ränder und Hintergrundfarbe">
 <!ENTITY Ctr_dblclclosefx	"Doppelklick schließt aktuelles Fenster">
-<!ENTITY Ctr_appbclmmenus	"Klickbare Menüs im Firefox-Menü (Neuer Tab, Drucken...)">
+<!ENTITY Ctr_appbclmmenus	"Klickbare Menüs im Cyberfox-Menü (Neuer Tab, Drucken...)">
 <!ENTITY Ctr_appbutonclab	"Titel">
 <!ENTITY Ctr_appbutonclab2	"Titel eintragen oder leer lassen">
 
@@ -122,7 +122,7 @@
 <!ENTITY Ctr_pmhidelabels	"Menüschaltflächen-Aufklappmenü: verstecke Schaltflächen-Text">
 <!ENTITY Ctr_menupopupscr	"Aufklappmenüs: ersetze Navigationspfeile durch Bildlaufleisten">
 
-<!ENTITY Ctr_fxmockup		"Firefox Entwürfe">
+<!ENTITY Ctr_fxmockup		"Cyberfox-Entwürfe">
 <!ENTITY Ctr_tabmokcolor	"Weiße Schaltflächen (Neu, Schließen, Gruppen, Listen)">
 <!ENTITY Ctr_tabmokcolor2	"Weißer Tabtext und dunkler Schatten für nicht aktive Tabs">
 <!ENTITY Ctr_tabmokcolor3	"Weiße Trennlinien zwischen den Tabs">
@@ -154,8 +154,8 @@
 <!ENTITY Ctr_notabhov		"Aktivierte Einstellungen ersetzen 'Hover-Einstellungen'">
 
 <!ENTITY Ctr_urlbar			"Adressleiste">
-<!ENTITY Ctr_starinurl		"'Lesezeichen-Stern'">
-<!ENTITY Ctr_feedinurl		"'Feed abonnieren'">
+<!ENTITY Ctr_starinurl		"'Lesezeichen-Stern' (Cyberfox neustarten)">
+<!ENTITY Ctr_feedinurl		"'Feed abonnieren' (Cyberfox neustarten)">
 <!ENTITY Ctr_hideurelstop	"Entferne 'Stopp' &amp; 'Neu laden'">
 <!ENTITY Ctr_urlbardropm	"Verschiebe die 'Schaltfläche' ans Ende der Adressleiste">
 <!ENTITY Ctr_hideprbutton	"Verstecke 'Infosymbol' (wenn ein Popup-Fenster blockiert wurde)">
@@ -195,7 +195,7 @@
 <!ENTITY Ctr_alttabstb		"Alternative Hintergrundfarbe">
 
 <!ENTITY Ctr_altmenubar		"Hintergrundfarbe hinzufügen ('System Titelleiste')">
-<!ENTITY Ctr_altmenubarpos	"Alternative Position (unter der Firefox Titelleiste)">
+<!ENTITY Ctr_altmenubarpos	"Alternative Position (unter der Cyberfox Titelleiste)">
 <!ENTITY Ctr_menubarnofog	"Hintergrundfarbe/-nebel entfernen (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_hidenavbar		"Navigationsleiste verstecken">
@@ -217,7 +217,7 @@
 <!ENTITY Ctr_dlanimation	"'Download gestartet und beendet' (about:config Einstellung)">
 
 <!ENTITY Ctr_toolsitem		"Eintrag im Menü 'Extras'">
-<!ENTITY Ctr_appmenuitem	"Eintrag im Einstellungsuntermenü der Firefox-Schaltfläche">
+<!ENTITY Ctr_appmenuitem	"Eintrag im Optionsuntermenü der Cyberfox-Schaltfläche">
 <!ENTITY Ctr_contextitem	"Eintrag im Leisten-Kontextmenü">
 <!ENTITY Ctr_puictrbutton	"Eintrag in der Hauptmenüschaltfläche">
 
