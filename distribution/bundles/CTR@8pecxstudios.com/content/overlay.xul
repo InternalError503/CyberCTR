@@ -574,7 +574,9 @@
 							accesskey="&viewCustomizeToolbar.accesskey;"
 							label="&viewCustomizeToolbar.label;"/>
 				  <menuseparator id="ctraddon_appmenu_sep" collapsed="true"/>
-
+	<menuitem id="ctraddon_appmenu_aboutc"
+                label="About:Config"
+				        oncommand="openUILinkIn('about:config', 'tab');"/>
 			  </menupopup>
 			</menu>
  				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
