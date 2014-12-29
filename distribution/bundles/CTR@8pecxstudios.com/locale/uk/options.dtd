@@ -62,13 +62,14 @@
 <!ENTITY Ctr_appbutton1wt	"Кнопка на панелі (тільки текст)">
 <!ENTITY Ctr_appbutton2		"Кнопка на [Firefox] панелі заголовку">
 <!ENTITY Ctr_appbutton2io	"Кнопка на [Firefox] панелі заголовку (тільки іконка)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Оранжева кнопка меню на панелі вкладок">
-<!ENTITY Ctr_appbuttonc_o	"Оранжева кнопка (типово)">
+<!ENTITY Ctr_appbuttonc_o	"Оранжева кнопка (за умовчанням)">
 <!ENTITY Ctr_appbuttonc_a	"Синя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Чорна кнопка (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозора кнопка">
-<!ENTITY Ctr_appbuttonc_p	"Блакитна кнопка (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Червона кнопка">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Зелена кнопка">
 <!ENTITY Ctr_appbuttonc_gr	"Сіра кнопка">
 <!ENTITY Ctr_appbuttonc_pu	"Фіолетова кнопка">

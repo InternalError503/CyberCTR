@@ -63,12 +63,13 @@
 <!ENTITY Ctr_appbutton2		"Tłocašk na titelowej rědce [Firefox]">
 <!ENTITY Ctr_appbutton2io	"Tłocašk na titelowej rědce [Firefox] (jano symbol)">
 <!ENTITY Ctr_paneluibtweak	"Oranžowy menijowy tłocašk na rejtarkowej rědce">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Tłocaškowa barwa: Oranžowy (standard)">
 <!ENTITY Ctr_appbuttonc_a	"Tłocaškkowa barwa: Módry (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Tłocaškowa barwa: Carny (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Transparentny tłocašk">
-<!ENTITY Ctr_appbuttonc_p	"Tłocaškowa barwa: Módry (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Tłocaškowa barwa: Cerwjeny">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Tłocaškowa barwa: Zeleny">
 <!ENTITY Ctr_appbuttonc_gr	"Tłocaškowa barwa: Šery">
 <!ENTITY Ctr_appbuttonc_pu	"Tłocaškowa barwa: Purpur">

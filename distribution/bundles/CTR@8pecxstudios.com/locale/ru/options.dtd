@@ -67,8 +67,9 @@
 <!ENTITY Ctr_appbuttonc_a	"Синяя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Черная кнопка (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозрачная кнопка">
-<!ENTITY Ctr_appbuttonc_p	"Голубая кнопка (Palemoon)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_r	"Красная кнопка">
+<!ENTITY Ctr_appbuttonc_s	"Цвет кнопки Salmon">
 <!ENTITY Ctr_appbuttonc_g	"Зеленая кнопка">
 <!ENTITY Ctr_appbuttonc_gr	"Серая кнопка">
 <!ENTITY Ctr_appbuttonc_pu	"Фиолетовая кнопка">

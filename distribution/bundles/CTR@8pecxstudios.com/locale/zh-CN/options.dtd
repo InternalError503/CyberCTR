@@ -64,11 +64,12 @@
 <!ENTITY Ctr_appbutton2io	"在标题栏上显示 (图标)">
 <!ENTITY Ctr_paneluibtweak	"在标签页栏上显示橙色面板菜单按钮">
 <!ENTITY Ctr_appbuttonc_o	"橙色按钮 (默认)">
+<!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
 <!ENTITY Ctr_appbuttonc_a	"蓝色按钮 (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"黑色按钮 (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"透明按钮">
-<!ENTITY Ctr_appbuttonc_p	"蓝色按钮 (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"红色按钮">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"绿色按钮">
 <!ENTITY Ctr_appbuttonc_gr	"灰色按钮">
 <!ENTITY Ctr_appbuttonc_pu	"紫色按钮">

@@ -582,16 +582,21 @@
 
 		<menulist preference="ctraddon_appbuttonc" id="ctraddon_appbutcolor_list">
 			<menupopup>
-				<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;"/>
-				<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;"/>
-				<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;"/>
-				<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;"/>
-				<menuitem value="appbuttonc_palemo"  label="&Ctr_appbuttonc_p;"/>
-				<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;"/>
-				<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;"/>
-				<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;"/>
-				<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;"/>
-				<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;"/>
+						<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;"/>
+						<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;"/>	
+						<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; (Light)"/>						
+						<menuitem value="appbuttonc_default"	 label="&Ctr_appbuttonc_d;"/>
+						<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;"/>						
+						<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;"/>	
+						<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  (Dark)"/>						
+						<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;"/>
+						<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  (Dark)"/>
+						<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;"/>
+						<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;"/>
+						<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; (Dark)"/>	
+						<menuitem value="appbuttonc_salmon"	 label="&Ctr_appbuttonc_s;"/>						
+						<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;"/>
+						<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;"/>
 			</menupopup>
 		</menulist>
 		

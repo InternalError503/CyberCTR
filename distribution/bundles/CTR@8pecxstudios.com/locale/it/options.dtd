@@ -65,10 +65,11 @@
 <!ENTITY Ctr_paneluibtweak	"Pulsante pannello menu arancione nella barra delle schede">
 <!ENTITY Ctr_appbuttonc_o	"Pulsante arancione (predefinito)">
 <!ENTITY Ctr_appbuttonc_a	"Pulsante blu (Aurora)">
+<!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
 <!ENTITY Ctr_appbuttonc_n	"Pulsante nero (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Pulsante trasparente">
-<!ENTITY Ctr_appbuttonc_p	"Pulsante azzurro (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Pulsante rosso">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Pulsante verde">
 <!ENTITY Ctr_appbuttonc_gr	"Pulsante grigio">
 <!ENTITY Ctr_appbuttonc_pu	"Pulsante viola">

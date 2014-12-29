@@ -63,12 +63,13 @@
 <!ENTITY Ctr_appbutton2		"Tłóčatko na titulnej lajsće [Firefox]">
 <!ENTITY Ctr_appbutton2io	"Tłóčatko na titulnej lajsće [Firefox] (jenož symbol)">
 <!ENTITY Ctr_paneluibtweak	"Oranžowe menijowe tłóčatko na rajtarkowej lajsće">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Tłóčatkowa barba: Oranžowy (standard)">
 <!ENTITY Ctr_appbuttonc_a	"Tłóčatkowa barba: Módry (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Tłóčatkowa barba: Čorny (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Transparentne tłóčatko">
-<!ENTITY Ctr_appbuttonc_p	"Tłóčatkowa barba: Módry (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Tłóčatkowa barba: Čerwjeny">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Tłóčatkowa barba: Zeleny">
 <!ENTITY Ctr_appbuttonc_gr	"Tłóčatkowa barba: Šěry">
 <!ENTITY Ctr_appbuttonc_pu	"Tłóčatkowa barba: Purpur">

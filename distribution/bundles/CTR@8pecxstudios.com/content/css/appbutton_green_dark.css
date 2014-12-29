@@ -1,35 +1,35 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-@-moz-document url(chrome://browser/content/browser.xul){
+@-moz-document url(chrome://browser/content/browser.xul) {
 
 	#ctraddon_appbutton2:not(:hover):not(:active):not([open]){
-	  background-image: linear-gradient(rgb(82,182,247), rgb(10,98,215) 95%) !important;
-	  border-color: rgba(6,42,83,.9) !important;
-	  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset,
-				  0 0 0 1px rgba(255,255,255,.25) inset !important;
+	  background-image: linear-gradient(rgb(42,111,2), rgb(50,127,4) 45%, rgb(31,79,2)) !important;
+	  border-color: hsla(210,59%,13%,.9) !important;
+	  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,
+				  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;
 	}
 	#TabsToolbar #ctraddon_appbutton{
-	  background: linear-gradient(rgb(82,182,247), rgb(10,98,215) 95%) !important;
-	  border-color: rgba(6,42,83,.9) !important;
-	  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset,
-				  0 0 0 1px rgba(255,255,255,.25) inset !important;
+	  background-image: linear-gradient(rgb(42,111,2), rgb(50,127,4) 45%, rgb(31,79,2)) !important;
+	  border-color: hsla(210,59%,13%,.9) !important;
+	  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,
+				  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;
 	}
 	#TabsToolbar #ctraddon_appbutton:hover:not(:active):not([open]),
 	#ctraddon_appbutton2:hover:not(:active):not([open]){
-	  background-image: radial-gradient(farthest-side at bottom, rgba(89,240,252,.5) 10%, rgba(89,240,252,0) 70%),
-						radial-gradient(farthest-side at bottom, rgb(60,68,236), rgba(172,229,255,0)),
-						linear-gradient(rgb(69,170,246), rgb(30,40,209) 95%) !important;
-	  border-color: rgba(6,42,83,.9) !important;
-	  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,
-				  0 0 2px 1px rgba(169,234,250,.7) inset,
-				  0 -1px 0 rgba(169,234,250,.5) inset !important;
+	  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),
+						radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),
+						linear-gradient(rgb(64,131,25) 45%, rgb(52,97,26)) !important;
+	  border-color: hsla(210,59%,13%,.9) !important;
+	  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,
+				  0 0 2px 1px hsla(210,48%,90%,.4) inset,
+				  0 -1px 0 hsla(210,48%,90%,.2) inset !important;
 	}
 
 	#TabsToolbar #ctraddon_appbutton:hover:active,
 	#TabsToolbar #ctraddon_appbutton[open],
 	#ctraddon_appbutton2:hover:active,
 	#ctraddon_appbutton2[open] {
-	  background-image: linear-gradient(rgb(69,170,246), rgb(0,74,209) 95%) !important;
+	  background-image: linear-gradient(rgb(42,111,2), rgb(50,127,4) 45%, rgb(31,79,2)) !important;
 	  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
 				  0 1px 1px rgba(0,0,0,.2) inset !important;
 	}

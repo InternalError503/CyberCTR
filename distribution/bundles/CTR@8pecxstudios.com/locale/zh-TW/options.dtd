@@ -58,6 +58,7 @@
 
 <!ENTITY Ctr_appbutton		"應用程式按鈕 (火狐橙按鈕)">
 <!ENTITY Ctr_appbutton0		"不顯示">
+<!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
 <!ENTITY Ctr_appbutton1		"顯示在工具列">
 <!ENTITY Ctr_appbutton1wt	"顯示在工具列 (僅文字)">
 <!ENTITY Ctr_appbutton2		"顯示在標題列">
@@ -67,8 +68,8 @@
 <!ENTITY Ctr_appbuttonc_a	"藍色按鈕 (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"黑色按鈕 (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"透明按鈕">
-<!ENTITY Ctr_appbuttonc_p	"藍色按鈕 (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"紅色按鈕">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"綠色按鈕">
 <!ENTITY Ctr_appbuttonc_gr	"灰色按鈕">
 <!ENTITY Ctr_appbuttonc_pu	"紫色按鈕">

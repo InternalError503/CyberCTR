@@ -63,12 +63,13 @@
 <!ENTITY Ctr_appbutton2		"Στη γραμμή τίτλου [Firefox]">
 <!ENTITY Ctr_appbutton2io	"Στη γραμμή τίτλου [Firefox] (μόνο εικονίδιο)">
 <!ENTITY Ctr_paneluibtweak	"Πορτοκαλί κουμπί μενού πίνακα στην εργαλειοθήκη καρτελών">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Πορτοκαλί χρώμα κουμπιού (προεπιλογή)">
 <!ENTITY Ctr_appbuttonc_a	"Μπλε χρώμα κουμπιού (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Μαύρο χρώμα κουμπιού (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Διαφανές κουμπί">
-<!ENTITY Ctr_appbuttonc_p	"Μπλε χρώμα κουμπιού (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Κόκκινο χρώμα κουμπιού">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Πράσινο χρώμα κουμπιού">
 <!ENTITY Ctr_appbuttonc_gr	"Γκρι χρώμα κουμπιού">
 <!ENTITY Ctr_appbuttonc_pu	"Πορφυρό χρώμα κουμπιού">

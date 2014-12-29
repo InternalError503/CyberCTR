@@ -63,12 +63,13 @@
 <!ENTITY Ctr_appbutton2		"Button on [Firefox] titlebar">
 <!ENTITY Ctr_appbutton2io	"Button on [Firefox] titlebar (icon only)">
 <!ENTITY Ctr_paneluibtweak	"Orange panel menu button on tabs toolbar">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Orange button color (default)">
 <!ENTITY Ctr_appbuttonc_a	"Blue button color (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Black button color (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Transparent button">
-<!ENTITY Ctr_appbuttonc_p	"Blue button color (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Red button color">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Green button color">
 <!ENTITY Ctr_appbuttonc_gr	"Gray button color">
 <!ENTITY Ctr_appbuttonc_pu	"Purple button color">

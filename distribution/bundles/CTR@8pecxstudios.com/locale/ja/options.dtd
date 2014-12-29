@@ -67,8 +67,9 @@
 <!ENTITY Ctr_appbuttonc_a	"青色 (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"黒色 (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"透過色">
-<!ENTITY Ctr_appbuttonc_p	"青色 (Palemoon)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox (Default)">
 <!ENTITY Ctr_appbuttonc_r	"赤色">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"緑色">
 <!ENTITY Ctr_appbuttonc_gr	"灰色">
 <!ENTITY Ctr_appbuttonc_pu	"紫色">

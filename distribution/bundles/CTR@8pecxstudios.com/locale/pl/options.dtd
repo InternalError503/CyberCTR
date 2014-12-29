@@ -65,10 +65,11 @@
 <!ENTITY Ctr_paneluibtweak	"Pomarańczowy przycisk menu panelu na pasku kart">
 <!ENTITY Ctr_appbuttonc_o	"Pomarańczowy kolor przycisku (domyślny)">
 <!ENTITY Ctr_appbuttonc_a	"Błękitny kolor przycisku (Aurora)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_n	"Czarny kolor przycisku (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Przezroczysty przycisk">
-<!ENTITY Ctr_appbuttonc_p	"Błękitny kolor przycisku (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Czerwony kolor przycisku">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Zielony kolor przycisku">
 <!ENTITY Ctr_appbuttonc_gr	"Szary kolor przycisku">
 <!ENTITY Ctr_appbuttonc_pu	"Fioletowy kolor przycisku">

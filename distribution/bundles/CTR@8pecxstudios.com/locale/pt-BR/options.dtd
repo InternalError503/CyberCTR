@@ -67,8 +67,9 @@
 <!ENTITY Ctr_appbuttonc_a	"Botão azul (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Botão preto (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Botão transparente">
-<!ENTITY Ctr_appbuttonc_p	"Botão azul (Palemoon)">
+<!ENTITY Ctr_appbuttonc_d	"Cyebrfox (Default)">
 <!ENTITY Ctr_appbuttonc_r	"Botão vermelho">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Botão verde">
 <!ENTITY Ctr_appbuttonc_gr	"Botão cinza">
 <!ENTITY Ctr_appbuttonc_pu	"Botão púrpura">

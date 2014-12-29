@@ -353,15 +353,20 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "appbuttonc":
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_aurora',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_nightly',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_transp',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_palemo',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_aurora',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_cyan',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_default',false);		  
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_gray',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green_dark',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange_dark',false);			
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_purple',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red_dark',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_salmon',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_transp',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_white',false);
 
 			if (branch.getCharPref("appbuttonc")!="off"){
@@ -2148,15 +2153,20 @@ classicthemerestorerjs.ctr = {
 			if(this.fxdefaulttheme) manageCSS("mode_icons_big.css");
 		
 		break;
-		
+
+		case "appbuttonc_default":	manageCSS("appbutton_default.css");		break;		
 		case "appbuttonc_orange":	manageCSS("appbutton_orange.css");		break;
+		case "appbuttonc_orange_dark":	manageCSS("appbutton_orange_dark.css");		break;		
 		case "appbuttonc_aurora":	manageCSS("appbutton_aurora.css");		break;
+		case "appbuttonc_cyan":	manageCSS("appbutton_cyan.css");		break;		
 		case "appbuttonc_nightly":	manageCSS("appbutton_nightly.css");		break;
 		case "appbuttonc_transp":	manageCSS("appbutton_transparent.css");	break;
-		case "appbuttonc_palemo":	manageCSS("appbutton_palemoon.css");	break;
 		case "appbuttonc_red":		manageCSS("appbutton_red.css");			break;
+		case "appbuttonc_red_dark":		manageCSS("appbutton_red_dark.css");			break;		
 		case "appbuttonc_green":	manageCSS("appbutton_green.css");		break;
+		case "appbuttonc_green_dark":	manageCSS("appbutton_green_dark.css");		break;		
 		case "appbuttonc_gray":		manageCSS("appbutton_gray.css");		break;
+		case "appbuttonc_salmon":		manageCSS("appbutton_salmon.css");		break;		
 		case "appbuttonc_purple":	manageCSS("appbutton_purple.css");		break;
 		case "appbuttonc_white":	manageCSS("appbutton_white.css");		break;
 

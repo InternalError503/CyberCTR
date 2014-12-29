@@ -64,11 +64,12 @@
 <!ENTITY Ctr_appbutton2io	"Botón en la barra de título [de Firefox] (sólo icono)">
 <!ENTITY Ctr_paneluibtweak	"Botón de menú de panel naranja en la barra de pestañas">
 <!ENTITY Ctr_appbuttonc_o	"Color de botón naranja (por defecto)">
+<!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
 <!ENTITY Ctr_appbuttonc_a	"Color de botón azul (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Color de botón negro (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Botón transparente">
-<!ENTITY Ctr_appbuttonc_p	"Color de botón azul (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Color de botón rojo">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Color de botón verde">
 <!ENTITY Ctr_appbuttonc_gr	"Color de botón gris">
 <!ENTITY Ctr_appbuttonc_pu	"Color de botón púrpura">

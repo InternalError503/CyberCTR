@@ -63,15 +63,16 @@
 <!ENTITY Ctr_appbutton2		"Auf der Firefox Titelleiste">
 <!ENTITY Ctr_appbutton2io	"Auf der Firefox Titelleiste (nur Symbol)">
 <!ENTITY Ctr_paneluibtweak	"Orangene Menüschaltfläche auf der Tableiste">
-<!ENTITY Ctr_appbuttonc_o	"Farbe: orange (Standard)">
-<!ENTITY Ctr_appbuttonc_a	"Farbe: blau (Aurora)">
-<!ENTITY Ctr_appbuttonc_n	"Farbe: schwarz (Nightly)">
-<!ENTITY Ctr_appbuttonc_t	"Farbe: transparent">
-<!ENTITY Ctr_appbuttonc_p	"Farbe: blau (Palemoon)">
-<!ENTITY Ctr_appbuttonc_r	"Farbe: rot">
-<!ENTITY Ctr_appbuttonc_g	"Farbe: grün">
-<!ENTITY Ctr_appbuttonc_gr	"Farbe: grau">
-<!ENTITY Ctr_appbuttonc_pu	"Farbe: lila">
+<!ENTITY Ctr_appbuttonc_o	"Farbe: Orange (Standard)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
+<!ENTITY Ctr_appbuttonc_a	"Farbe: Blau (Aurora)">
+<!ENTITY Ctr_appbuttonc_n	"Farbe: Schwarz (Nightly)">
+<!ENTITY Ctr_appbuttonc_t	"Farbe: Transparent">
+<!ENTITY Ctr_appbuttonc_r	"Farbe: Rot">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+<!ENTITY Ctr_appbuttonc_g	"Farbe: Grün">
+<!ENTITY Ctr_appbuttonc_gr	"Farbe: Grau">
+<!ENTITY Ctr_appbuttonc_pu	"Farbe: Lila">
 <!ENTITY Ctr_appbuttonc_wh	"Farbe: weiß">
 <!ENTITY Ctr_appbuttonI1	"Nach einer Änderung wird ein Neustart empfohlen.">
 <!ENTITY Ctr_appbuttonI1e	"Die Firefox-Schaltfläche ist auf der Windows Titelleiste nicht sichtbar!">

@@ -63,12 +63,13 @@
 <!ENTITY Ctr_appbutton2		"Bouton sur la barre de titre [Firefox]">
 <!ENTITY Ctr_appbutton2io	"Bouton sur la barre de titre [Firefox] (icône seule)">
 <!ENTITY Ctr_paneluibtweak	"Bouton orange sur la barre d'onglets">
-<!ENTITY Ctr_appbuttonc_o	"Bouton orange (par défaut)">
+<!ENTITY Ctr_appbuttonc_o	"Bouton orange">
+<!ENTITY Ctr_appbuttonc_d	"Bouton Cyberfox (par défaut)">
 <!ENTITY Ctr_appbuttonc_a	"Bouton bleu (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Bouton noir (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Bouton transparent">
-<!ENTITY Ctr_appbuttonc_p	"Bouton bleu (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Bouton rouge">
+<!ENTITY Ctr_appbuttonc_s	"Bouton saumon">
 <!ENTITY Ctr_appbuttonc_g	"Bouton vert">
 <!ENTITY Ctr_appbuttonc_gr	"Bouton gris">
 <!ENTITY Ctr_appbuttonc_pu	"Bouton pourpre">

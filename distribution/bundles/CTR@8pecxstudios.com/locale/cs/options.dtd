@@ -58,6 +58,7 @@
 
 <!ENTITY Ctr_appbutton		"Tlačítko aplikace">
 <!ENTITY Ctr_appbutton0		"Tlačítko zakázáno">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbutton1		"Tlačítko na nástrojové liště">
 <!ENTITY Ctr_appbutton1wt	"Tlačítko na nástrojové liště (pouze text)">
 <!ENTITY Ctr_appbutton2		"Tlačítko v záhlaví okna [Firefox]">
@@ -67,8 +68,8 @@
 <!ENTITY Ctr_appbuttonc_a	"Modré tlačítko (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Černé tlačítko (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Průhledné tlačítko">
-<!ENTITY Ctr_appbuttonc_p	"Modré tlačítko (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Červené tlačítko">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Zelené tlačítko">
 <!ENTITY Ctr_appbuttonc_gr	"Šedé tlačítko">
 <!ENTITY Ctr_appbuttonc_pu	"Fialové tlačítko">
