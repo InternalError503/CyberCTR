@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
 <?xml-stylesheet href="chrome://classic_theme_restorer/content/overlay.css" type="text/css"?>
 
 <!--### most code taken from nightlys default browser.xul ###-->
@@ -219,11 +220,16 @@
 						  class="menuitem-iconic"
 						  flex="1"/>
 				<toolbarbutton id="appmenu-cut"
-							   command="cmd_cut"/>
+							   command="cmd_cut"
+							   class="menuitem-iconic"/>
 				<toolbarbutton id="appmenu-copy"
-							   command="cmd_copy"/>
+								image="chrome://classic_theme_restorer/content/images/appmenu_copy.png"
+							   command="cmd_copy"
+							   class="menuitem-iconic"/>
 				<toolbarbutton id="appmenu-paste"
-							   command="cmd_paste"/>
+								image="chrome://classic_theme_restorer/content/images/appmenu_paste.png"
+							   command="cmd_paste"
+							   class="menuitem-iconic"/>
 
 				<menu id="appmenu-editmenu"
 								label=""
@@ -238,34 +244,40 @@
 						<menuitem id="appmenu-editmenu-copy"
 								  label="&copyCmd.label;"
 								  class="menuitem-iconic"
+								  image="chrome://classic_theme_restorer/content/images/appmenu_copy.png"
 								  key="key_copy"
 								  accesskey="&copyCmd.accesskey;"
 								  command="cmd_copy"/>
 						<menuitem id="appmenu-editmenu-paste"
 								  label="&pasteCmd.label;"
+								image="chrome://classic_theme_restorer/content/images/appmenu_paste.png"								  
 								  class="menuitem-iconic"
 								  key="key_paste"
 								  accesskey="&pasteCmd.accesskey;"
 								  command="cmd_paste"/>
 						<menuseparator/>
 						<menuitem id="appmenu-editmenu-undo"
+								  class="menuitem-iconic"
 								  label="&undoCmd.label;"
 								  key="key_undo"
 								  accesskey="&undoCmd.accesskey;"
 								  command="cmd_undo"/>
 						<menuitem id="appmenu-editmenu-redo"
+								  class="menuitem-iconic"						
 								  label="&redoCmd.label;"
 								  key="key_redo"
 								  accesskey="&redoCmd.accesskey;"
 								  command="cmd_redo"/>
 						<menuseparator/>
 						<menuitem id="appmenu-editmenu-selectAll"
+								  class="menuitem-iconic"						
 								  label="&selectAllCmd.label;"
 								  key="key_selectAll"
 								  accesskey="&selectAllCmd.accesskey;"
 								  command="cmd_selectAll"/>
 						<menuseparator/>
 						<menuitem id="appmenu-editmenu-delete"
+								  class="menuitem-iconic"						
 								  label="&deleteCmd.label;"
 								  key="key_delete"
 								  accesskey="&deleteCmd.accesskey;"
@@ -275,17 +287,17 @@
 			</hbox>
 			
 			<menuitem id="appmenu_find"
+					  class="menuitem-iconic"			
 					  label="&findOnCmd.label;"
-					  class="menuitem-iconic"
 					  command="cmd_find"/>
 			<menuseparator/>
 			<menuitem id="appmenu_savePage"
+					  class="menuitem-iconic"				
 					  label="&savePageCmd.label;"
-					  class="menuitem-iconic"
 					  command="Browser:SavePage"/>
 			<menuitem id="appmenu_sendLink"
+					  class="menuitem-iconic"			
 					  label="&emailPageCmd.label;"
-					  class="menuitem-iconic"
 					  command="Browser:SendLink"/>
 
 			<menu id="appmenu_print"
@@ -300,15 +312,18 @@
 					<menuitem id="appmenu_print_popup"
 							  label="&printCmd.label;"
 							  class="menuitem-iconic"
+                image="chrome://classic_theme_restorer/content/images/appmenu_print.png"
 							  accesskey="&printCmd.accesskey;"
 							  key="printKb"
 							  command="cmd_print"/>
 					<menuitem id="appmenu_printPreview"
 							  label="&printPreviewCmd.label;"
+                class="menuitem-iconic"
 							  accesskey="&printPreviewCmd.accesskey;"
 							  command="cmd_printPreview"/>
 					<menuitem id="appmenu_printSetup"
 							  label="&printSetupCmd.label;"
+                class="menuitem-iconic"
 							  accesskey="&printSetupCmd.accesskey;"
 							  command="cmd_pageSetup"/>
 				</menupopup>
@@ -414,31 +429,33 @@
 							{PlacesCommandHook.showPlacesOrganizer('AllBookmarks');document.getElementById('appmenu-popup').hidePopup();}"
 				  class="menu-iconic">
 
-				<menupopup id="appmenu_bookmarksPopup"
-						   placespopup="true"
-						   context="placesContext"
-						   openInTabs="children"
-						   oncommand="BookmarksEventHandler.onCommand(event, this.parentNode._placesView);"
-						   onclick="BookmarksEventHandler.onClick(event, this.parentNode._placesView);"
-						   onpopupshowing="PlacesCommandHook.updateBookmarkAllTabsCommand();
-										   if (!this.parentNode._placesView)
-											new PlacesMenu(event, 'place:folder=BOOKMARKS_MENU');"
-						   tooltip="bhTooltip" popupsinherittooltip="true">
-				  <menuitem id="appmenu_showAllBookmarks"
-							label="&showAllBookmarks2.label;"
-							command="Browser:ShowAllBookmarks"
-							key="manBookmarkKb"/>
-				  <menuseparator/>
-				  <menuitem id="appmenu_bookmarkThisPage"
-							label="&bookmarkThisPageCmd.label;"
-							command="Browser:AddBookmarkAs"
-							key="addBookmarkAsKb"/>
-				  <menuitem id="appmenu_subscribeToPage"
-							label="&subscribeToPageMenuitem.label;"
-							oncommand="return FeedHandler.subscribeToFeed(null, event);"
-							onclick="checkForMiddleClick(this, event);"
-							observes="singleFeedMenuitemState"/>
-				  <menu id="appmenu_subscribeToPageMenu"
+					<menupopup id="appmenu_bookmarksPopup"
+							   placespopup="true"
+							   context="placesContext"
+							   openInTabs="children"
+							   oncommand="BookmarksEventHandler.onCommand(event, this.parentNode._placesView);"
+							   onclick="BookmarksEventHandler.onClick(event, this.parentNode._placesView);"
+							   onpopupshowing="PlacesCommandHook.updateBookmarkAllTabsCommand();
+											   if (!this.parentNode._placesView)
+												 new PlacesMenu(event, 'place:folder=BOOKMARKS_MENU');"
+							   tooltip="bhTooltip" popupsinherittooltip="true">
+					  <menuitem id="appmenu_showAllBookmarks"
+								label="&showAllBookmarks2.label;"
+								command="Browser:ShowAllBookmarks"
+								key="manBookmarkKb"/>
+					  <menuseparator/>
+					  <menuitem id="appmenu_bookmarkThisPage"
+				                class="menuitem-iconic"					  
+								label="&bookmarkThisPageCmd.label;"
+								command="Browser:AddBookmarkAs"
+								key="addBookmarkAsKb"/>
+					  <menuitem id="appmenu_subscribeToPage"
+								class="menuitem-iconic"
+								label="&subscribeToPageMenuitem.label;"
+								oncommand="return FeedHandler.subscribeToFeed(null, event);"
+								onclick="checkForMiddleClick(this, event);"
+								observes="singleFeedMenuitemState"/>
+					  <menu id="appmenu_subscribeToPageMenu"
 							class="menu-iconic"
 							label="&subscribeToPageMenupopup.label;"
 							observes="multipleFeedsMenuState">
@@ -884,9 +901,11 @@
         <toolbarbutton id="minimize-button"
                        tooltiptext="&fullScreenMinimize.tooltip;"
                        oncommand="window.minimize();"/>
+
         <toolbarbutton id="restore-button"
                        tooltiptext="&fullScreenRestore.tooltip;"
                        oncommand="BrowserFullScreen();"/>
+
         <toolbarbutton id="close-button"
                        tooltiptext="&fullScreenClose.tooltip;"
                        oncommand="BrowserTryToCloseWindow();"/>
