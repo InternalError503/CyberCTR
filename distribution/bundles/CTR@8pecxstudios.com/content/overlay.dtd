@@ -114,3 +114,11 @@
 <!ENTITY helpShowTour.label				"Firefox Tour">
 <!ENTITY helpShowTour.accesskey			"o">
 <!ENTITY eyedropper.accesskey			"y">
+
+<!-- Purge RAM browser tweak -->
+<!ENTITY minimizeMemoryCache.label "Clean Ram Cache">
+<!-- End Purge RAM browser tweak -->
+
+<!-- Restart Browser Tweak -->
+<!ENTITY restartBrowser.label "Restart Browser">
+<!-- End Restart Browser Tweak -->
