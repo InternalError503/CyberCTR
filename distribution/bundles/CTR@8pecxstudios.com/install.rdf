@@ -3,7 +3,7 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description rdf:about="urn:mozilla:install-manifest">
-		<em:id>ClassicThemeRestorer@ArisT2Noia4dev</em:id>
+		<em:id>CTR@8pecxstudios.com</em:id>
 		<em:name>Classic Theme Restorer</em:name>
 		<em:version>1.2.6.1</em:version>
 		<em:type>2</em:type>
