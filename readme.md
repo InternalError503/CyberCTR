@@ -43,7 +43,7 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 
 Plus many under the hood changes and many more visual changes to come.
 
-## Main features (on options window):
+### Main features (on options window):
 
 
 - Tab appearance: Squared classic tabs
@@ -80,7 +80,7 @@ Plus many under the hood changes and many more visual changes to come.
 - Tool-bar settings to alter colors, sizes, borders
 - Disable unneeded animations
 
-## Features (not on options window):
+### Features (not on options window):
 
 - Enable/disable 'Add-on Bar' (tool-bar context menu)
 - Toggle 'Add-on Bar' using 'Ctrl + /' btw. 'Cmd + /'
@@ -176,9 +176,10 @@ Hovering the option on preference window to get extra information. Tool-bar: [so
 These tool-bar items appear in customizing mode and can be moved to tool-bars like on previous Firefox versions.
 
 Quoted from [original addons page] (https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer#addon-description) 
+
 Note: This list was current at the time of quoting and may have changed during this time.
 
-## Credits:
+### Credits:
 
 Built from popular open source addon.
 * Classic Theme Restorer by ([Aris](https://addons.mozilla.org/en-US/firefox/user/aris-t2/))
