@@ -193,5 +193,8 @@ pref("extensions.classicthemerestorer.ctrreset",true);
 pref("extensions.classicthemerestorer.compatibility.treestyle",false);
 pref("extensions.classicthemerestorer.compatibility.treestyle.disable",false);
 
+//CyberCTR Add tab title to titlebar
+pref("extensions.classicthemerestorer.titleintitlebar", false);
+
 //CyberCTR version
 pref("extensions.classicthemerestorer.version", "1.1.9");

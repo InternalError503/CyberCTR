@@ -290,6 +290,26 @@ classicthemerestorerjs.ctr = {
 			
 		  break;
 		  
+		  // Tabs title in titlebar
+		  case "titleintitlebar":
+			try {
+					if (branch.getBoolPref("titleintitlebar") && 
+						branch.getCharPref("appbutton")!="appbutton_off" &&
+						branch.getCharPref("appbutton")!="appbutton_v1" &&
+						branch.getCharPref("appbutton")!="appbutton_v1wt" &&
+						branch.getCharPref("appbutton")!="appbutton_v2wt2" &&
+						branch.getCharPref("appbutton")!="appbutton_v2io" &&
+						branch.getCharPref("appbutton")!="appbutton_v2io2" &&
+						branch.getCharPref("appbutton")!="appbutton_pm" && 
+						classicthemerestorerjs.ctr.osstring=="WINNT"){
+							classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",true);
+							console.log("Tabs titles in title-bar is now active!");
+					} else {
+						classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);
+					}	
+				} catch(e){console.log("We are sorry something has gone wrong with Tabs titles in title-bar " + e);}			
+		  break;		  
+		  
 		  case "ctabwidth": case "ctabmwidth":
 			
 			classicthemerestorerjs.ctr._updateTabWidth();
@@ -2263,7 +2283,8 @@ classicthemerestorerjs.ctr = {
 		
 		case "spaces_extra": 		manageCSS("spaces_extra.css");			break;
 		case "tree_style_fix": 		manageCSS("tree_style_fix.css");	break;
-
+		case "tabs_titlebar": 		manageCSS("tabs_titlebar.css");	break;
+		
 		case "tabcolor_def":
 
 			removeOldSheet(this.ctabsheet_def);

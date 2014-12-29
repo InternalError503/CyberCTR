@@ -245,3 +245,4 @@
 
 <!-- Extra CyberCTR Additions -->
 <!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">
+<!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">
