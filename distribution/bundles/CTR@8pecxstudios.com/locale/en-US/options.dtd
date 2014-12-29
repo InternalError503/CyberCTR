@@ -235,7 +235,7 @@
 
 <!ENTITY Ctr_special_font	"Background color settings are for default theme only!">
 <!ENTITY Ctr_special_info	"Some options may not offer visible changes in all cases">
-<!ENTITY Ctr_special_info2	"Settings are made for Firefox default theme and may not work with all third party themes!">
+<!ENTITY Ctr_special_info2	"Settings are made for Cyberfox default theme and may not work with all third party themes!">
 <!ENTITY Ctr_support		"Support Forum">
 <!ENTITY Ctr_newversion		"New version?">
 

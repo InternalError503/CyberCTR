@@ -234,7 +234,7 @@
 
 <!ENTITY Ctr_special_font	"¡Las configuraciones de color de fondo son sólo para el tema de decoración predeterminado!">
 <!ENTITY Ctr_special_info	"¡Algunas opciones podrían no ofrecer cambios visuales en todos los casos!">
-<!ENTITY Ctr_special_info2	"Las configuraciones se realizan para el tema de decoración predeterminado de Firefox, y puede que no funcionen con todos los temas de terceros!">
+<!ENTITY Ctr_special_info2	"Las configuraciones se realizan para el tema de decoración predeterminado de Cyberfox, y puede que no funcionen con todos los temas de terceros!">
 <!ENTITY Ctr_support		"Foro de soporte">
 <!ENTITY Ctr_newversion		"¿Nueva versión?">
 
