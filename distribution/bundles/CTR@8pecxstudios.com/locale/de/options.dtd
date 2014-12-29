@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Einstellungen">
 <!ENTITY Ctr_pw_set_reset	"Standard wiederherstellen">
 <!ENTITY Ctr_pw_set_predef	"Klassische Vorgabe">
-<!ENTITY Ctr_pw_set_preaus	"Firefox Vorgabe">
 <!ENTITY Ctr_pw_set_export	"Exportiere Einstellungen">
 <!ENTITY Ctr_pw_set_import	"Importiere Einstellungen">
 
@@ -243,3 +242,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"In neuem privaten Fenster öffnen">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Erste Schritte">
+
+
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis-Vorgaben">

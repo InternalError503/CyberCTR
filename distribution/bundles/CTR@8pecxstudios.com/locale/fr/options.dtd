@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Réglages">
 <!ENTITY Ctr_pw_set_reset	"Restaurer les réglages par défaut">
 <!ENTITY Ctr_pw_set_predef	"Préréglage classique">
-<!ENTITY Ctr_pw_set_preaus	"Préréglage Firefox">
 <!ENTITY Ctr_pw_set_export	"Exporter les préférences">
 <!ENTITY Ctr_pw_set_import	"Importer les préférences">
 
@@ -243,3 +242,6 @@
 <!ENTITY Ctr_openInPrivateWindow	"Open in a New Private Window">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
+
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">

@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Налаштування">
 <!ENTITY Ctr_pw_set_reset	"Скинути налаштування">
 <!ENTITY Ctr_pw_set_predef	"Класичні налаштунки">
-<!ENTITY Ctr_pw_set_preaus	"Firefox налаштунок">
 <!ENTITY Ctr_pw_set_export	"Експорт налаштувань">
 <!ENTITY Ctr_pw_set_import	"Імпорт налаштувань">
 
@@ -243,3 +242,5 @@
 <!ENTITY Ctr_openInPrivateWindow	"Відкрити в новому приватному вікні">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Початок роботи">
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

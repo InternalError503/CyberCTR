@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"設定">
 <!ENTITY Ctr_pw_set_reset	"デフォルトに戻す">
 <!ENTITY Ctr_pw_set_predef	"クラシックプリセット">
-<!ENTITY Ctr_pw_set_preaus	"Firefox preset">
 <!ENTITY Ctr_pw_set_export	"設定をエクスポート">
 <!ENTITY Ctr_pw_set_import	"設定をインポート">
 
@@ -243,3 +242,5 @@
 <!ENTITY Ctr_openInPrivateWindow	"Open in a New Private Window">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

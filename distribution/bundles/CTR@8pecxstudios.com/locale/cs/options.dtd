@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Možnosti">
 <!ENTITY Ctr_pw_set_reset	"Obnovit výchozí">
 <!ENTITY Ctr_pw_set_predef	"Nastavit klasické">
-<!ENTITY Ctr_pw_set_preaus	"Firefox preset">
 <!ENTITY Ctr_pw_set_export	"Exportovat nastavení">
 <!ENTITY Ctr_pw_set_import	"Importovat nastavení">
 
@@ -243,3 +242,6 @@
 <!ENTITY Ctr_openInPrivateWindow	"Open in a New Private Window">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
+
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

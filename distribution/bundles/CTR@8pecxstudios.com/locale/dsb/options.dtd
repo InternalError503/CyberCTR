@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Nastajenja">
 <!ENTITY Ctr_pw_set_reset	"Standard wótnowiś">
 <!ENTITY Ctr_pw_set_predef	"Klasiske standardne gódnoty">
-<!ENTITY Ctr_pw_set_preaus	"Firefox preset">
 <!ENTITY Ctr_pw_set_export	"Nastajenja eksportěrowaś">
 <!ENTITY Ctr_pw_set_import	"Nastajenja importěrowaś">
 
@@ -243,3 +242,6 @@
 <!ENTITY Ctr_openInPrivateWindow	"Open in a New Private Window">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
+
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

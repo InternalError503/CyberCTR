@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"设置">
 <!ENTITY Ctr_pw_set_reset	"恢复默认">
 <!ENTITY Ctr_pw_set_predef	"经典主题预设">
-<!ENTITY Ctr_pw_set_preaus	"Firefox preset">
 <!ENTITY Ctr_pw_set_export	"导出偏好设置">
 <!ENTITY Ctr_pw_set_import	"导入偏好设置">
 
@@ -243,3 +242,5 @@
 <!ENTITY Ctr_openInPrivateWindow	"Open in a New Private Window">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Ρυθμίσεις">
 <!ENTITY Ctr_pw_set_reset	"Επαναφορά προεπιλογών">
 <!ENTITY Ctr_pw_set_predef	"Προκαθορισμένες κλασικές">
-<!ENTITY Ctr_pw_set_preaus	"Προκαθορισμένες Firefox">
 <!ENTITY Ctr_pw_set_export	"Εξαγωγή προτιμήσεων">
 <!ENTITY Ctr_pw_set_import	"Εισαγωγή προτιμήσεων">
 
@@ -243,3 +242,5 @@
 <!ENTITY Ctr_openInPrivateWindow	"Άνοιγμα σε νέο παράθυρο ιδιωτικής περιήγησης">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"θ">
 <!ENTITY appMenuGettingStarted.label	"Ξεκινώντας">
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

@@ -229,7 +229,6 @@
 <!ENTITY Ctr_pw_settings	"Ustawienia">
 <!ENTITY Ctr_pw_set_reset	"Przywróć domyślne">
 <!ENTITY Ctr_pw_set_predef	"Klasyczne ustawienia">
-<!ENTITY Ctr_pw_set_preaus	"Ustawienia Firefoksa">
 <!ENTITY Ctr_pw_set_export	"Eksportuj ustawienia">
 <!ENTITY Ctr_pw_set_import	"Importuj ustawienia">
 
@@ -243,3 +242,6 @@
 <!ENTITY Ctr_openInPrivateWindow	"Otwórz w nowym oknie prywatnym">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Pierwsze kroki">
+
+<!-- Extra CyberCTR Additions -->
+<!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">

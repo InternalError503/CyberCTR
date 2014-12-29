@@ -21,6 +21,7 @@ classicthemerestorerjso.ctr = {
 		  else document.getElementById("ClassicTRoptionsPane").removeAttribute('defaultfxtheme');
 	} catch(e){}
 	
+	
 	// restore last selected categories/tabs
 	document.getElementById("CtrRadioGroup").selectedIndex = this.prefs.getIntPref('pref_actindx');
 	document.getElementById("ctraddon_tabcolor_tabs").selectedIndex = this.prefs.getIntPref('pref_actindx2');
@@ -484,7 +485,8 @@ classicthemerestorerjso.ctr = {
 	}
 	
 	this.initprefwindow();
-	
+	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
+	CustomizableUI.removeWidgetFromArea("feed-button", CustomizableUI.TYPE_TOOLBAR);
 	this.needsBrowserRestart();
   },
 
@@ -513,22 +515,17 @@ classicthemerestorerjso.ctr = {
 	this.needsBrowserRestart();
 
   },
-  
-  australisCTRpreferences: function() {
-	this.resetCTRpreferences();
-	
-	this.prefs.setCharPref("tabs",'tabs_default');
-	this.prefs.setCharPref("appbutton",'appbutton_off');
-	
-	this.prefs.setBoolPref("statusbar",false);
-	this.prefs.setBoolPref("activndicat",false);
-	this.prefs.setBoolPref("toolsitem",false);
-	this.prefs.setBoolPref("cuibuttons",false);
-	
-	if (this.oswindows) this.prefs.setBoolPref("dblclnewtab",true);
-	
-	this.needsBrowserRestart();
 
+  // 'Australis' preset
+  AustralisCTRpreferences: function() {
+	this.resetCTRpreferences();
+	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);
+	this.prefs.setCharPref("appbutton",'appbutton_off');	
+	this.prefs.setCharPref("tabs",'tabs_default');
+    Components.classes["@mozilla.org/preferences-service;1"]
+		 .getService(Components.interfaces.nsIPrefService)
+		   .getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
+	this.needsBrowserRestart();
   },
 
   /* export CTR settings */
