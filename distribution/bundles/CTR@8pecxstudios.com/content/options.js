@@ -26,6 +26,10 @@ classicthemerestorerjso.ctr = {
 	document.getElementById("CtrRadioGroup").selectedIndex = this.prefs.getIntPref('pref_actindx');
 	document.getElementById("ctraddon_tabcolor_tabs").selectedIndex = this.prefs.getIntPref('pref_actindx2');
 	
+		// Append CyberCTR Version To Window Title extensions.classicthemerestorer.version
+		var newTitle = document.title + " " + this.prefs.getCharPref('version');
+		document.title = newTitle;
+	
 	// disable and hide items not usable on third party themes
 	if (!this.fxdefaulttheme) {
 		document.getElementById('ctraddon_pw_tabmenulist').disabled = true;

@@ -186,3 +186,6 @@ pref("extensions.classicthemerestorer.tabc_hov_unl",false);
 
 // first run/reset preference
 pref("extensions.classicthemerestorer.ctrreset",true);
+
+//CyberCTR version
+pref("extensions.classicthemerestorer.version", "1.1.9");
