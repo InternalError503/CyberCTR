@@ -530,7 +530,10 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setBoolPref("bmanimation",true);
 	this.prefs.setBoolPref("pananimation",true);
 	this.prefs.setBoolPref("feedinurl",true);
-	
+/*		
+We already have this built in to cyberfox, This conflicts with the built in so we will disable it.  
+	this.prefs.setBoolPref("alt_newtabp",true);
+*/	
 	if (contexts.getBoolPref("classic")){}else{
 		this.prefs.setBoolPref("noconicons",true);
 	}

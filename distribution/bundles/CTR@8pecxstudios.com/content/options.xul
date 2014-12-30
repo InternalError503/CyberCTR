@@ -145,7 +145,10 @@
 		<preference id="ctraddon_emptyfavicon2"	name="extensions.classicthemerestorer.emptyfavicon2" type="bool"	instantApply="true"/>
 		<preference id="ctraddon_noemptypticon"	name="extensions.classicthemerestorer.noemptypticon" type="bool"	instantApply="true"/>
 		<preference id="ctraddon_hidezoomres"	name="extensions.classicthemerestorer.hidezoomres"	 type="bool"	instantApply="true"/>
-		<preference id="ctraddon_alt_newtabp"	name="extensions.classicthemerestorer.alt_newtabp"	 type="bool"	instantApply="true"/>
+		<!--
+    We already have this built in to cyberfox, This conflicts with the built in so we will disable it.
+    <preference id="ctraddon_alt_newtabp"	name="extensions.classicthemerestorer.alt_newtabp"	 type="bool"	instantApply="true"/> 
+    -->
 		<preference id="ctraddon_pmhidelabels"	name="extensions.classicthemerestorer.pmhidelabels"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_menupopupscr"	name="extensions.classicthemerestorer.menupopupscr"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_hideprivmask"	name="extensions.classicthemerestorer.hideprivmask"	 type="bool"	instantApply="true"/>
@@ -649,7 +652,10 @@
 		<checkbox label="&Ctr_pmhidelabels;"	preference="ctraddon_pmhidelabels"/>
 		<checkbox label="&Ctr_menupopupscr;"	preference="ctraddon_menupopupscr"/>
 		<checkbox label="&Ctr_hidezoomres;"		preference="ctraddon_hidezoomres"/>
+<!--
+    We already have this built in to cyberfox, This conflicts with the built in so we will disable it.
 		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp"/>
+-->
 	  </groupbox>
  
 	  <groupbox>

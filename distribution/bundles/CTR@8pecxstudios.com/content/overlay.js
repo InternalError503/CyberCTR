@@ -1086,12 +1086,13 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("hidezoomres")) classicthemerestorerjs.ctr.loadUnloadCSS("hidezoomres",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("hidezoomres",false);
 		  break;
-		  
+/*		
+We already have this built in to cyberfox, This conflicts with the built in so we will disable it.  
 		  case "alt_newtabp":
 			if (branch.getBoolPref("alt_newtabp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",false);
 		  break;
-
+*/
 		  case "pmhidelabels":
 			if (branch.getBoolPref("pmhidelabels")) classicthemerestorerjs.ctr.loadUnloadCSS("pmhidelabels",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("pmhidelabels",false);
@@ -2263,7 +2264,10 @@ classicthemerestorerjs.ctr = {
 		case "emptyfavicon2": 		manageCSS("empty_favicon2.css");		break;
 		case "noemptypticon": 		manageCSS("empty_favicon_pt.css");		break;
 		case "hidezoomres": 		manageCSS("hide_zoomreset.css");		break;
+/*
+We already have this built in to cyberfox, This conflicts with the built in so we will disable it.
 		case "alt_newtabp": 		manageCSS("alt_newtabpage.css");		break;
+*/
 		case "pmhidelabels": 		manageCSS("panelmenu_nolabels.css");	break;
 		case "menupopupscr": 		manageCSS("menupopupscrollbar.css");	break;
 		case "verifiedcolors": 		manageCSS("verifiedcolors.css");		break;
