@@ -31,20 +31,23 @@
 <!ENTITY Ctr_tabs3			"Onglets arrondis (alternatifs Aero)">
 <!ENTITY Ctr_tabforminfo	"L’aspect des onglets est déterminé par le thème sélectionné.">
 <!ENTITY Ctr_tabsontop0		"Onglets en haut (valeur par défaut)">
-<!ENTITY Ctr_tabsontop1		"Onglets en haut - [réglage tabsontop=true]">
-<!ENTITY Ctr_tabsontop2		"Onglets position basse - [réglage tabsontop=false]">
-<!ENTITY Ctr_tabsontop3		"Onglets position basse (v2) - [réglage tabsontop=false]">
+<!ENTITY Ctr_tabsontop1		"Onglets en haut --- réglage [tabsontop=true]">
+<!ENTITY Ctr_tabsontop2		"Onglets position basse (v1) --- réglage [tabsontop=false]">
+<!ENTITY Ctr_tabsontop3		"Onglets position basse (v2) --- réglage [tabsontop=false]">
+<!ENTITY Ctr_tabsontopW1	"v2 is for some add-ons and complete themes only!">
 <!ENTITY Ctr_tabsontopI1	"L’attribut [tabsontop=true/false] est assigné à">
 <!ENTITY Ctr_tabsintitlebar	"Barre de titre Cyberfox (about:config)">
 <!ENTITY Ctr_tabwidthdef	"(défaut)">
 <!ENTITY Ctr_tabwidthcla	"(classique)">
-<!ENTITY Ctr_tabmaxwidth	"Largeur maximale:">
-<!ENTITY Ctr_tabminwidth	"Largeur minimale:">
+<!ENTITY Ctr_tabminheight	"Hauteur :">
+<!ENTITY Ctr_tabmaxwidth	"Largeur maximale :">
+<!ENTITY Ctr_tabminwidth	"Largeur minimale :">
 <!ENTITY Ctr_tabwidthinfo	"Onglets : les largeurs mini et maxi sont controlées par TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Onglets : les largeurs mini et maxi sont controlées par TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Les valeurs en dessous de 48px causent des problèmes dans la majorité des cas!">
 <!ENTITY Ctr_emptyfavicon	"Restaurer le favicon vide sur les onglets (sites ne possédant pas de favicon)">
 <!ENTITY Ctr_noemptypticon	"Enlever les favicons vides des onglets épinglés">
+<!ENTITY Ctr_e10stab_notd	"E10s tabs: remove underline">
 <!ENTITY Ctr_closetab_0		"Bouton de fermeture">
 <!ENTITY Ctr_closetab_1		"Onglet actif uniquement">
 <!ENTITY Ctr_closetab_2		"Aucun">
@@ -74,6 +77,7 @@
 <!ENTITY Ctr_appbuttonc_gr	"Bouton gris">
 <!ENTITY Ctr_appbuttonc_pu	"Bouton pourpre">
 <!ENTITY Ctr_appbuttonc_wh	"Bouton blanc">
+<!ENTITY Ctr_appbuttonc_cu	"Bouton avec couleurs personnalisées">
 <!ENTITY Ctr_appbuttonI1	"Redémarrage recommandé">
 <!ENTITY Ctr_appbuttonI1e	"Non visible sur la barre de titre de l'OS">
 <!ENTITY Ctr_appbuttonI2	"Bouton coloré uniquement sur la barre de titre ou sur la barre d'onglets!">
@@ -90,9 +94,11 @@
 <!ENTITY Ctr_smallnavbut	"Petits boutons sur la barre de navigation">
 <!ENTITY Ctr_bfurlbarfix 	"Corriger le rayon de courbure de la barre d’adresse">
 <!ENTITY Ctr_backforward	"Bouton avancer / reculer déplaçable">
+<!ENTITY Ctr_nbcompact		"Diminuer la hauteur des barres de navigations">
 <!ENTITY Ctr_hide_bf_popup	"Cacher le menu historique lors du clic droit">
 <!ENTITY Ctr_bf_space		"Réduire l’espacement des boutons (si possible)">
 <!ENTITY Ctr_noconicons		"Remplacer les icônes du menu contextuel de la page par du texte (Page précédente, Page suivante, Arrêter/Actualiser, Marquer cette page)">
+<!ENTITY Ctr_svgfilters		"SVG colors for default toolbar button icons">
 <!ENTITY Ctr_wincontrols	"Plein écran : boutons « Réduire - Restaurer - Fermer » déplaçables">
 <!ENTITY Ctr_emptyfavicon2	"Remplacer le favicon générique (vide avec pointillés) par un favicon ayant l’aspect d’une feuille de papier">
 <!ENTITY Ctr_mstatusbar		"Barre d’état déplaçable">
@@ -152,13 +158,14 @@
 <!ENTITY Ctr_bold			"Gras">
 <!ENTITY Ctr_italic			"Italique">
 <!ENTITY Ctr_notabhov		"Les valeurs paramétrées supplantent celles « au survol »">
+<!ENTITY Ctr_tabc_act_tb	"Couleur de fond pour les barres d'outils">
 
 <!ENTITY Ctr_urlbar			"La barre d'adresse">
 <!ENTITY Ctr_starinurl		"Bouton des marque-pages">
 <!ENTITY Ctr_feedinurl		"Bouton d'abonnement">
 <!ENTITY Ctr_hideurelstop	"Masquer 'stop-actualiser'">
-<!ENTITY Ctr_urlbardropm	"Move dropmarker to urlbars end">
-<!ENTITY Ctr_hideprbutton	"Hide notification icon when a popup gets blocked">
+<!ENTITY Ctr_urlbardropm	"Placer le dropmarker à la fin de la barre d'adresse">
+<!ENTITY Ctr_hideprbutton	"Masquer l'icône de notification quand un pop-up est bloqué">
 <!ENTITY Ctr_urlbar_ib		"Bouton d'identité">
 <!ENTITY Ctr_verifiedcolors	"Couleurs alternatives pour les sites web vérifiés">
 <!ENTITY Ctr_faviconurl		"Afficher le favicon dans la barre d'adresse">
@@ -169,21 +176,21 @@
 <!ENTITY Ctr_padlock_ext	"Icônes de sécurité">
 <!ENTITY Ctr_icopageinfo	"Cliquer sur l’icône affiche la fenêtre d’informations sur la page">
 
-<!ENTITY Ctr_menubar_items	"Menu items position">
-<!ENTITY Ctr_extrabar		"Additional Toolbars">
-<!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
+<!ENTITY Ctr_menubar_items	"Position de la barre de menus">
+<!ENTITY Ctr_extrabar		"Barres d'outils supplémentaires">
+<!ENTITY Ctr_extrabar0		"Barre(s) d'outil(s) supplémentaire(s)">
 <!ENTITY Ctr_extrabar1		"Barre d'outils supplémentaire">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"En basculant entre 'onglets en haut' et 'onglets position basse' l'ordre des barres d'outils peut de temps en temps être altéré. Cyberfox doit être redémarré pour remédier à ce problème.">
 
 <!ENTITY Ctr_invicons		"Icônes inversées">
 <!ENTITY Ctr_menubar		"Barre de menus">
 <!ENTITY Ctr_tabstoolbar	"Barre d’onglets">
 <!ENTITY Ctr_navbar			"Barre de navigation">
 <!ENTITY Ctr_bookbar		"Barre personnelle">
-<!ENTITY Ctr_notoolbar		"Hidden (do not show menu items)">
+<!ENTITY Ctr_notoolbar		"Caché (ne pas montrer les éléments de la barre de menus)">
 
-<!ENTITY Ctr_mbarforceleft	"First element">
-<!ENTITY Ctr_mbarforceright	"Last element">
+<!ENTITY Ctr_mbarforceleft	"Premier élément">
+<!ENTITY Ctr_mbarforceright	"Dernier élément">
 
 <!ENTITY Ctr_toolbars		"Barres d’outils">
 <!ENTITY Ctr_dblclnewtab	"Double-cliquer pour ouvrir un nouvel onglet (browser.newtab.url)">
@@ -198,13 +205,14 @@
 <!ENTITY Ctr_altmenubarpos	"Position alternative (sous la barre de titre Cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Enlever l’effet de flou/l’arrière-plan des éléments (Windows AeroGlass / Win8)">
 
+<!ENTITY Ctr_aerocolors		"Blue Aero colors for main toolbars and tabs">
 <!ENTITY Ctr_hidenavbar		"Masquer la barre de navigation">
 <!ENTITY Ctr_nobookbarbg	"Barre personnelle : enlever l’arrière-plan">
 <!ENTITY Ctr_nonavbarbg		"Barre de navigation : enlever l’arrière-plan">
 <!ENTITY Ctr_nonavborder	"Barre personnelle : ajouter une bordure en haut de la barre">
 <!ENTITY Ctr_nonavtbborder	"Barres d’outils en haut : enlever les bordures">
-<!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">
-<!ENTITY Ctr_chevronfix		"Navigation toolbar: hide double arrow ('chevron') at toolbars end">
+<!ENTITY Ctr_hidesbclose	"Panneaux latéraux : masquer le bouton de fermeture">
+<!ENTITY Ctr_chevronfix		"Barre de navigation : masquer le chevron à la fin de la barre">
 
 <!ENTITY Ctr_closeabarbut	"Masquer le bouton de fermeture">
 <!ENTITY Ctr_highaddonsbar	"Augmenter la hauteur">
@@ -224,6 +232,11 @@
 <!ENTITY Ctr_otherctroptns	"Autres paramètres">
 <!ENTITY Ctr_cuibotbuttons	"Boutons d’options en mode personnalisation">
 <!ENTITY Ctr_bookmarkoinpw	"Ajouter l’entrée « Ouvrir dans une nouvelle fenêtre de navigation privée » au menu contextuel des onglets">
+
+<!ENTITY Ctr_experttweaks	"Expert">
+<!ENTITY Ctr_fx33layers		"Gecko 33+ introduit de nouvelles possibilités de rendu responsables actuellement de bugs avec les onglets sur certains systèmes (pas de réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
+<!ENTITY Ctr_fx34search		"Gecko 34+ introduit une nouvelle barre de recherche. Si cette option est décochée, l'ancienne barre de recherche est activée.">
+<!ENTITY Ctr_fx34loop		"Gecko 34+ introduit la possibilité d'inviter quelqu'un à discuter. Cette possibilité est desactivée en décochant cette option.">
 
 
 <!ENTITY Ctr_pw_settings	"Réglages">
