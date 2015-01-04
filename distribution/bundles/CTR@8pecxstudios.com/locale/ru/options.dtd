@@ -1,4 +1,4 @@
-<!ENTITY Ctr_title			"Customize Cyberfox">
+<!ENTITY Ctr_title			"Настройка Cyberfox">
 
 <!ENTITY Ctr_addonbar		"Панель дополнений">
 <!ENTITY Ctr_statusbar		"Статус панель">
@@ -98,7 +98,7 @@
 <!ENTITY Ctr_hide_bf_popup	"Не показывать меню истории при нажатии мыши">
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"На странице, в контекстном меню, заменить значки метками (назад, вперёд, остановить, обновить, страница закладок)">
-<!ENTITY Ctr_svgfilters		"SVG colors for default toolbar button icons">
+<!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_emptyfavicon2	"Установить общий значок (пустой и пунктирный)">
 <!ENTITY Ctr_mstatusbar		"Подвижная строка состояния">
@@ -205,7 +205,7 @@
 <!ENTITY Ctr_altmenubarpos	"Изменить расположение (ниже строки заголовка Cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Удалить туман из фона меню (Windows AeroGlass / Win8)">
 
-<!ENTITY Ctr_aerocolors		"Blue Aero colors for main toolbars and tabs">
+<!ENTITY Ctr_aerocolors		"Голубая цветовая схема Aero для основных вкладок и панелей инструментов">
 <!ENTITY Ctr_hidenavbar		"Скрыть панель навигации">
 <!ENTITY Ctr_nobookbarbg	"Панель закладок: удалить цвет фона">
 <!ENTITY Ctr_nonavbarbg		"Панель навигации: удалить цвет фона">
@@ -260,4 +260,4 @@
 <!ENTITY Ctr_pw_set_preaust		"Интерфейс Australis">
 <!ENTITY ctr_Support_forums	"Форум поддержки">
 <!ENTITY ctr_help_features	"Информация о возможностях &amp;">
-<!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">
+<!ENTITY ctr_tabtitleintitlebar	"Добавить название вкладки в заголовок окна">
