@@ -1618,7 +1618,6 @@ classicthemerestorerjs.ctr = {
 		
 		// add button to titlebar
 		document.getElementById("titlebar-content").appendChild(ctr_titlebarbutton);
-		
 	}
 
   },
@@ -3950,8 +3949,18 @@ window.addEventListener("DOMWindowCreated", function load(event){
 				classicthemerestorerjs.ctr.fixThatTreeStyleBro();
 					//console.log("Compatibility mode (Tree Style Tab)");			
 					}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);
-					//console.loh("No compatibility mode (Tree Style Tab)");
+					//console.log("No compatibility mode (Tree Style Tab)");
 					}
+					//If a user disables the AppMenu button then restarts the menu tool-bar disapears, Lets trigger it to be created,
+          //However the user may have to manually toggle the menu-tool-bar to remove the draw delay	from adding it here.
+					if(addon && addon.isActive 
+						&& !treeStyleCompatMode 
+						&& Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton") === "appbutton_off" 
+						&& document.getElementById("toolbar-menubar").getAttribute('autohide', true)){
+							document.getElementById("toolbar-menubar").setAttribute('autohide', false);
+							classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+					}
+					
 			  });			
 								  					 			  
 			  		},false);
