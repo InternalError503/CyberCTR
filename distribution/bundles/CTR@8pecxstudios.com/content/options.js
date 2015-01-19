@@ -913,6 +913,62 @@ classicthemerestorerjso.ctr = {
       let pane = document.getElementById(radioItem.value);
       pane.setAttribute("selected", (radioItem.selected)? "true" : "false");
     }
-  }
+  },
+  
+ 	ReuseFeaturesTab: function (attrName, url) {
+	
+	try{
+			  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+								 .getService(Components.interfaces.nsIWindowMediator);
+			  for (var found = false, index = 0, tabbrowser = wm.getEnumerator('navigator:browser').getNext().gBrowser;
+				   index < tabbrowser.tabContainer.childNodes.length && !found;
+				   index++) {
+
+				// Get the next tab
+				var currentTab = tabbrowser.tabContainer.childNodes[index];
+			  
+				// Does this tab contain our custom attribute?
+				if (currentTab.hasAttribute(attrName)) {
+
+				  // Yes--select and focus it.
+				  tabbrowser.selectedTab = currentTab;
+
+				  // Focus *this* browser window in case another one is currently focused
+				  tabbrowser.ownerDocument.defaultView.focus();
+				  found = true;
+				}
+			  }
+
+			  if (!found) {
+				// Our tab isn't open. Open it now.
+				var browserEnumerator = wm.getEnumerator("navigator:browser");
+				var tabbrowser = browserEnumerator.getNext().gBrowser;
+			  
+				// Create tab
+				var newTab = tabbrowser.addTab(url);
+				newTab.setAttribute(attrName, "cyberctrfeatures");
+			  
+				// Focus tab
+				tabbrowser.selectedTab = newTab;
+				
+				// Focus *this* browser window in case another one is currently focused
+				tabbrowser.ownerDocument.defaultView.focus();
+			  }
+			  
+		}catch (e){
+			//Catch any nasty errors and output to dialogue
+			alert("We are sorry but something has gone wrong! " + e);	
+		}
+			  
+	},
+	
+	showFeaturesTab	: function(){
+	try{	
+			this.ReuseFeaturesTab("cyberctrfeatruestab", "chrome://classic_theme_restorer/content/compatibility/features.html");
+		}catch (e){
+			//Catch any nasty errors and output to dialogue
+			alert("We are sorry but something has gone wrong! " + e);	
+		}		
+	}
   
 };
