@@ -31,6 +31,14 @@
 	   <command id="CtrExtension:ToggleCtrAddonBar" oncommand="classicthemerestorerjs.ctr.toggleCtrAddonBar();"/>
 	</commandset>
 	
+	<!-- CyberCTR Feature -->
+	 <popupset>
+	  <menupopup  id="ApplyCTRpreferences">
+		<menuitem label="&restartBrowser.label;" oncommand="classicthemerestorerjs.ctr.ctrPrefRestart();" accesskey="R"/>
+	  </menupopup>
+	</popupset>	
+	<!-- CyberCTR Feature -->
+	
 	<keyset id="mainKeyset">
 	  <key id="ctraddon_key_toggleCtrAddonBar" command="CtrExtension:ToggleCtrAddonBar" key="/" modifiers="accel"/>
 	</keyset>
