@@ -241,7 +241,7 @@
 
 <!ENTITY Ctr_pw_settings	"Настройки">
 <!ENTITY Ctr_pw_set_reset	"Сбросить настройки">
-<!ENTITY Ctr_pw_set_predef	"Классические предустановки">
+<!ENTITY Ctr_pw_set_predef	"Классическое оформление">
 <!ENTITY Ctr_pw_set_export	"Экспорт настроек">
 <!ENTITY Ctr_pw_set_import	"Импорт настроек">
 
@@ -258,7 +258,7 @@
 
 <!-- Extra CyberCTR Additions -->
 <!ENTITY Ctr_classic_elements		"Классическое оформление">
-<!ENTITY Ctr_pw_set_preaust		"Интерфейс Australis">
+<!ENTITY Ctr_pw_set_preaust		"Оформление Australis">
 <!ENTITY ctr_Support_forums	"Форум поддержки">
 <!ENTITY ctr_help_features	"Информация о возможностях &amp;">
 <!ENTITY ctr_tabtitleintitlebar	"Добавить название вкладки в заголовок окна">
