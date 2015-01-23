@@ -262,3 +262,6 @@
 <!ENTITY ctr_Support_forums	"Destek Forumu">
 <!ENTITY ctr_help_features	"Özellikler &amp; Bilgi">
 <!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">
+
+<!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
+<!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">

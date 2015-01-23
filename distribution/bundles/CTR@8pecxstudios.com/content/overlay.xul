@@ -34,15 +34,16 @@
 	<!-- CyberCTR Feature -->
 	 <popupset>
 	  <menupopup  id="ApplyCTRpreferences">
-		<menuitem label="&restartBrowser.label;" oncommand="classicthemerestorerjs.ctr.ctrPrefRestart();" accesskey="R"/>
+		<menuitem label="&ctr_applyCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.ctrPrefRestart();"/>
+		<menuitem label="&ctr_restoreCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.restoreBackupCTRpreferences();"/>
 	  </menupopup>
 	</popupset>	
-	<!-- CyberCTR Feature -->
+	<!-- CyberCTR Feature -->	
 	
 	<keyset id="mainKeyset">
 	  <key id="ctraddon_key_toggleCtrAddonBar" command="CtrExtension:ToggleCtrAddonBar" key="/" modifiers="accel"/>
 	</keyset>
- 
+
 	<!--### add new buttons to customizing area ###-->
 	<hbox id="customization-container">
 	  <vbox id="customization-palette-container">

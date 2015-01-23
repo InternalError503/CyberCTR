@@ -4122,9 +4122,9 @@ switch (appButtonState){
 	}
 		},
 		
-   /* import CTR settings */
+  /* import CTR settings */
  importLocalCTRpreferences: function() {
-  
+ 
 	var pattern = loadFromLocalFile();
 
 	if (!pattern) return false;
@@ -4165,7 +4165,7 @@ switch (appButtonState){
 	function loadFromLocalFile() {
 
 	var localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
-	
+	var backupSettingsFile = [];
 
 	if (localeSettingsFile.exists()){	  
 
@@ -4183,6 +4183,17 @@ switch (appButtonState){
 				  _contentIOStream.close();
 				  _contentStream.close();
 			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+
+			if (Services.prefs.getPrefType('extensions.classicthemerestorer.ctrpref.lastmod.backup') && 
+					Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
+					
+						backupSettingsFile.push(input.split(linebreak));
+						Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup", backupSettingsFile);
+						Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
+						console.log("key updated!");		
+						
+			}	
+			
 			return input.split(linebreak);
 			
 		}else{
@@ -4196,7 +4207,14 @@ switch (appButtonState){
 			var input = _contentIOStream.read(_contentStream.available());
 				  _contentIOStream.close();
 				  _contentStream.close();
-			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];			
+			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+
+			if (!Services.prefs.getPrefType('extensions.classicthemerestorer.ctrpref.lastmod.backup')){
+			    backupSettingsFile.push(input.split(linebreak));
+				Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup", backupSettingsFile);
+				console.log("key created!");					
+			}
+			
 			return input.split(linebreak);
 		
 			}
@@ -4252,6 +4270,37 @@ switch (appButtonState){
 	
 	return true;
   },
+  
+   /* restore CTR settings */ 
+   restoreBackupCTRpreferences: function() {
+  
+	  var newLocaleSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
+	  var _ThisFile = newLocaleSettingsFile;
+	  var lastmod = new Date(newLocaleSettingsFile.lastModifiedTime);
+	  var patterns = Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup");
+	  var newPatterns = patterns.split(',').join('\n');
+ 
+	saveToFile(newPatterns);
+	  
+	function saveToFile(iPatterns) {
+
+	  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
+
+		let file = newLocaleSettingsFile;
+		if (file.exists())
+		  file.remove(true);
+		file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
+		stream.init(file, 0x02, 0x200, null);		
+		stream.write(iPatterns, iPatterns.length);		
+		stream.close();	  
+	}
+	
+	Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
+	Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", true)
+	classicthemerestorerjs.ctr.ctrPrefRestart();
+	  
+	return true;
+  }, 
   
   ctrPrefRestart: function(){
 	  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", true);

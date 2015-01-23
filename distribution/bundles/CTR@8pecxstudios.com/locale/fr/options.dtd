@@ -258,9 +258,13 @@
 
 <!ENTITY helpMenu.label		"Aide">
 <!ENTITY helpMenuWin.label		"Aide">
+
 <!-- Extra CyberCTR Additions -->
 <!ENTITY Ctr_classic_elements		"Préréglage classique">
 <!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">
 <!ENTITY ctr_Support_forums	"Forum d’assistance">
 <!ENTITY ctr_help_features	"Fonctionnalités et renseignements">
 <!ENTITY ctr_tabtitleintitlebar	"Afficher le titre de l’onglet dans la barre de titre">
+
+<!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
+<!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">

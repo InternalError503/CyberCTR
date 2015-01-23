@@ -263,3 +263,6 @@
 <!ENTITY ctr_Support_forums	"Supportforum">
 <!ENTITY ctr_help_features	"Funktionen &amp; Informationen">
 <!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">
+
+<!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
+<!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">
