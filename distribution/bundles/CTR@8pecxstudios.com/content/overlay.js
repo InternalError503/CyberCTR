@@ -4274,9 +4274,6 @@ switch (appButtonState){
    /* restore CTR settings */ 
    restoreBackupCTRpreferences: function() {
   
-	  var newLocaleSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
-	  var _ThisFile = newLocaleSettingsFile;
-	  var lastmod = new Date(newLocaleSettingsFile.lastModifiedTime);
 	  var patterns = Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup");
 	  var newPatterns = patterns.split(',').join('\n');
  
@@ -4284,20 +4281,29 @@ switch (appButtonState){
 	  
 	function saveToFile(iPatterns) {
 
+	  const nsIFilePicker = Components.interfaces.nsIFilePicker;
+	  var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 	  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
 
-		let file = newLocaleSettingsFile;
-		if (file.exists())
-		  file.remove(true);
-		file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
-		stream.init(file, 0x02, 0x200, null);		
-		stream.write(iPatterns, iPatterns.length);		
-		stream.close();	  
+	  fp.init(window, null, nsIFilePicker.modeSave);
+	  fp.defaultExtension = "txt";
+	  fp.defaultString = "CTRpreferences.txt";
+	  fp.appendFilters(nsIFilePicker.filterText);
+	  
+		  if (fp.show() != nsIFilePicker.returnCancel) {
+			let file = fp.file;
+			if (!/\.txt$/.test(file.leafName.toLowerCase()))
+			  file.leafName += ".txt";
+			if (file.exists())
+			  file.remove(true);
+			file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
+			stream.init(file, 0x02, 0x200, null);		
+			stream.write(iPatterns, iPatterns.length);		
+			stream.close();
+		}
 	}
 	
-	Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 	Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", true)
-	classicthemerestorerjs.ctr.ctrPrefRestart();
 	  
 	return true;
   }, 
