@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"图标">
 <!ENTITY Ctr_cuiicotxt		"图标和文本">
 <!ENTITY Ctr_cuitxt			"文本">
+<!ENTITY Ctr_cuitabsnontop	"标签栏不在顶部">
 
 <!ENTITY Ctr_tnot			"(标签栏不在顶部)">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(默认)">
 <!ENTITY Ctr_tabwidthcla	"(经典)">
 <!ENTITY Ctr_tabminheight	"Height:">
+<!ENTITY Ctr_tabheightinfo	"Low values will cause glitches in maximized mode!">
 <!ENTITY Ctr_tabmaxwidth	"最大宽度:">
 <!ENTITY Ctr_tabminwidth	"最小宽度:">
 <!ENTITY Ctr_tabwidthinfo	"标签页的最小宽度和最大宽度由 TabMixPlus 所控制">
 <!ENTITY Ctr_tabwidthinfo2	"标签页的最小宽度和最大宽度由 TabUtilities 所控制">
 <!ENTITY Ctr_tabwidthinfo3	"Values below 48px will cause glitches in most cases!">
+<!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config)">
 <!ENTITY Ctr_emptyfavicon	"使用空白网站小图标 (如果网站没有提供)">
 <!ENTITY Ctr_noemptypticon	"为固定的标签页移除小图标">
 <!ENTITY Ctr_e10stab_notd	"E10s tabs: remove underline">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"更紧凑的面板菜单 (书签、历史等等)">
 <!ENTITY Ctr_hidezoomres	"当缩放控制按钮在工具栏上时: 隐藏重置缩放按钮">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
+<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"面板菜单: 隐藏按钮标签">
 <!ENTITY Ctr_menupopupscr	"弹出式菜单: 用滚动栏代替滚动箭头">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"移除背景颜色 (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"减少工具栏上方空间 (如果可以)">
 <!ENTITY Ctr_alttabstb		"替代的背景颜色">
+<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"添加背景颜色 (OS 标题栏)">
 <!ENTITY Ctr_altmenubarpos	"替代位置 (在 Cyberfox 标题栏下方)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"隐藏附加组件栏关闭按钮">
 <!ENTITY Ctr_highaddonsbar	"增加附加组件栏高度">
+<!ENTITY Ctr_addonbarfs		"In fullscreen mode">
 
 <!ENTITY Ctr_animation		"动画">
 <!ENTITY Ctr_throbberalt	"使用替代的动画效果">
@@ -235,12 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Other settings">
 <!ENTITY Ctr_cuibotbuttons	"在界面自定义模式中显示更多按钮">
 <!ENTITY Ctr_bookmarkoinpw	"'Open in a new private window' entry in bookmarks context menu">
+<!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"Advanced">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ introduced 'new render features' currently responsible for 'hanging tabs' on some systems. Unchecking this preference resolves this issue.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ introduced a 'new seach ui'. Unchecking this preference returns the 'old seach ui'.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ introduced 'calling and conversation' features. Unchecking this preference removes them.">
-
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 <!ENTITY Ctr_pw_settings	"设置">
 <!ENTITY Ctr_pw_set_reset	"恢复默认">

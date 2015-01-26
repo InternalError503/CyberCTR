@@ -18,8 +18,9 @@
 <!ENTITY Ctr_cuiico			"Ikony">
 <!ENTITY Ctr_cuiicotxt		"Ikony vedle textu">
 <!ENTITY Ctr_cuitxt			"Text">
+<!ENTITY Ctr_cuitabsnontop	"Panely pod adresním řádkem">
 
-<!ENTITY Ctr_tnot			"(panely navrchu)">
+<!ENTITY Ctr_tnot			"(panely pod adresním řádkem)">
 
 <!ENTITY Ctr_tabcolors_t	"Barvy panelů &amp; textu">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(výchozí)">
 <!ENTITY Ctr_tabwidthcla	"(klasický)">
 <!ENTITY Ctr_tabminheight	"Height:">
+<!ENTITY Ctr_tabheightinfo	"Low values will cause glitches in maximized mode!">
 <!ENTITY Ctr_tabmaxwidth	"Max-width:">
 <!ENTITY Ctr_tabminwidth	"Min-width:">
 <!ENTITY Ctr_tabwidthinfo	"Šířka panelů (min-width a max-width) je určena doplňkem TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Šířka panelů (min-width a max-width) je určena doplňkem TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Values below 48px will cause glitches in most cases!">
+<!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Obnovit prázdnou faviconu (pokud stránka nemá vlastní)">
 <!ENTITY Ctr_noemptypticon	"Odebrat prázdnou faviconu z připnutého panelu">
 <!ENTITY Ctr_e10stab_notd	"E10s tabs: remove underline">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"Nabídky panelů: kompaktní zobrazení (záložky, historie atd.)">
 <!ENTITY Ctr_hidezoomres	"Přiblížit prvky na liště: skrýt tlačítko pro obnovení lupy">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
+<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"Tlačítko nabídky: skrýt texty u ikon">
 <!ENTITY Ctr_menupopupscr	"Nabídky: zobrazit rolovací lištu místo šipek">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"Odstranit barvu pozadí (Windows AeroGlass/8)">
 <!ENTITY Ctr_hightabpos		"Zmenšit prostor nad lištou nástrojů (pokud lze)">
 <!ENTITY Ctr_alttabstb		"Alternativní barva pozadí">
+<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"Přidat barvu pozadí (lišta záhlaví OS)">
 <!ENTITY Ctr_altmenubarpos	"Alternativní umístění (pod lištou záhlaví Cyberfox)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"Skrýt tlačítko zavření lišty doplňků">
 <!ENTITY Ctr_highaddonsbar	"Zvětšit výšku">
+<!ENTITY Ctr_addonbarfs		"In fullscreen mode">
 
 <!ENTITY Ctr_animation		"Animace">
 <!ENTITY Ctr_throbberalt	"Alternativní animace načítání panelu">
@@ -235,12 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Other settings">
 <!ENTITY Ctr_cuibotbuttons	"Vlastní tlačítka v režimu 'přizpůsobení'">
 <!ENTITY Ctr_bookmarkoinpw	"'Open in a new private window' entry in bookmarks context menu">
+<!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"Advanced">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ introduced 'new render features' currently responsible for 'hanging tabs' on some systems. Unchecking this preference resolves this issue.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ introduced a 'new seach ui'. Unchecking this preference returns the 'old seach ui'.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ introduced 'calling and conversation' features. Unchecking this preference removes them.">
-
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 <!ENTITY Ctr_pw_settings	"Možnosti">
 <!ENTITY Ctr_pw_set_reset	"Obnovit výchozí">

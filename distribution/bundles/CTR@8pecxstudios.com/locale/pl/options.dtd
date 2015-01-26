@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"Ikony">
 <!ENTITY Ctr_cuiicotxt		"Ikony i tekst">
 <!ENTITY Ctr_cuitxt			"Tekst">
+<!ENTITY Ctr_cuitabsnontop	"Karty nie na górze">
 
 <!ENTITY Ctr_tnot			"(karty nie na górze)">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(domyślne)">
 <!ENTITY Ctr_tabwidthcla	"(klasyczne)">
 <!ENTITY Ctr_tabminheight	"Wysokość:">
+<!ENTITY Ctr_tabheightinfo	"Niskie wartości spowodują błędy w trybie zmaksymalizowanym!">
 <!ENTITY Ctr_tabmaxwidth	"Maksymalna szerokość:">
 <!ENTITY Ctr_tabminwidth	"Minimalna szerokość:">
 <!ENTITY Ctr_tabwidthinfo	"Szerokość karty jest kontrolowana przez TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Szerokość karty jest kontrolowana przez TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Wartości poniżej 48 pikseli w większości przypadków spowodują błędy!">
+<!ENTITY Ctr_tabinsertion	"Wstaw powiązaną kartę za kartą bieżącą (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Przywróć pustą ikonę ulubionych (jeżeli strona nie zaoferuje żadnej)">
 <!ENTITY Ctr_noemptypticon	"Usuń pustą ikonę ulubionych z przypiętej karty">
 <!ENTITY Ctr_e10stab_notd	"Karty E10s: usuń podkreślenie">
@@ -57,7 +60,7 @@
 <!ENTITY Ctr_closetab_hfot	"Ukryj na jednej widocznej karcie">
 <!ENTITY Ctr_closealt		"Ikona alternatywna">
 <!ENTITY Ctr_closeonleft	"Alternatywna pozycja na karcie">
-<!ENTITY Ctr_close_wwltab	"Zamykaj okno z ostatnią, widoczną kartą (about:config)">
+<!ENTITY Ctr_close_wwltab	"Zamykaj okno z ostatnią widoczną kartą (about:config)">
 
 <!ENTITY Ctr_appbutton		"Przycisk aplikacji">
 <!ENTITY Ctr_appbutton0		"Przycisk wyłączony">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"Menu panelu: widok kompaktowy (zakładki, historia itp.)">
 <!ENTITY Ctr_hidezoomres	"Kontrolki powiększenia na pasku narzędzi: ukryj przycisk resetu powiększenia">
 <!ENTITY Ctr_alt_newtabp	"Strona nowej karty: wygląd alternatywny">
+<!ENTITY Ctr_noresizerxp	"Usuń zmieniacz rozmiaru (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"Wyskakujące okno menu panelu: ukryj etykiety przycisku">
 <!ENTITY Ctr_menupopupscr	"Menu kontekstowe: pokaż pasek przewijania zamiast strzałek przewijania">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"Usuń kolor tła (Windows AeroGlass/8)">
 <!ENTITY Ctr_hightabpos		"Zredukuj przestrzeń powyżej paska narzędzi (jeżeli możliwe)">
 <!ENTITY Ctr_alttabstb		"Alternatywny kolor tła">
+<!ENTITY Ctr_alttabstb2		"W trybie zmaksymalizowanym (karty na górze)">
 
 <!ENTITY Ctr_altmenubar		"Dodaj kolor tła (systemowy pasek tytuły)">
 <!ENTITY Ctr_altmenubarpos	"Alternatywna pozycja (poniżej paska tytułu Cyberfoksa)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"Usuń przycisk zamknięcia paska dodatków">
 <!ENTITY Ctr_highaddonsbar	"Zwiększ wysokość">
+<!ENTITY Ctr_addonbarfs		"W trybie pełnoekranowym">
 
 <!ENTITY Ctr_animation		"Animacje">
 <!ENTITY Ctr_throbberalt	"Alternatywna animacja ładowania wskaźnika aktywności karty">
@@ -235,12 +241,15 @@
 <!ENTITY Ctr_otherctroptns	"Inne ustawienia">
 <!ENTITY Ctr_cuibotbuttons	"Dodatkowe przyciski w trybie 'dostosowywania'">
 <!ENTITY Ctr_bookmarkoinpw	"Pozycja 'Otwórz w nowym oknie prywatnym' w menu kontekstowym zakładek">
+<!ENTITY Ctr_nodevtheme		"Zapobiegaj włączeniu 'motywu twórcy'">
 
 
 <!ENTITY Ctr_experttweaks	"Poprawki eksperckie">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ wprowadził 'nowe funkcje renderowania' odpowiedzialne obecnie za 'zawieszanie się kart' w niektórych systemach. Odznaczenie tego ustawienia rozwiązuje ten problem.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ wprowadził 'nowy interfejs wyszukiwania'. Odznaczenie tego ustawienia przywraca 'stary interfejs wyszukiwania'.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ wprowadził funkcje 'dzwonienia i konwersacji'. Odznaczenie tego ustawienia usunie je.">
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ wprowadził nowy 'motyw twórcy'. Odznaczenie tych ustawień wyłącza 'motyw twórcy' oraz jego przycisk w trybie dostosowywania.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ wprowadził opcje w karcie. Odznaczenie tego ustawienia przywraca stare okno opcji.">
 
 
 <!ENTITY Ctr_pw_settings	"Ustawienia">

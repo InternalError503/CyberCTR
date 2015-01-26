@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"Іконки">
 <!ENTITY Ctr_cuiicotxt		"Іконки + Текст">
 <!ENTITY Ctr_cuitxt			"Текст">
+<!ENTITY Ctr_cuitabsnontop	"Вкладки не нагорі">
 
 <!ENTITY Ctr_tnot			"(вкладки не нагорі)">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(типово)">
 <!ENTITY Ctr_tabwidthcla	"(класичний)">
 <!ENTITY Ctr_tabminheight	"Висота:">
+<!ENTITY Ctr_tabheightinfo	"Низькі значення викличуть збої у розгорнутому режимі!">
 <!ENTITY Ctr_tabmaxwidth	"Макс.ширина:">
 <!ENTITY Ctr_tabminwidth	"Мін.ширина:">
 <!ENTITY Ctr_tabwidthinfo	"Мінімальна та максимальна ширина вкладок контролюються за допомогою TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Мінімальна та максимальна ширина вкладок контролюються за допомогою TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Значення нижче 48пікс викличе збої в більшості випадків!">
+<!ENTITY Ctr_tabinsertion	"Вставити відповідну вкладку після поточної вкладки (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Відновити порожній значок сайту (якщо сайт не пропонує його)">
 <!ENTITY Ctr_noemptypticon	"Прибрати порожній значок адреси з прикріпленої вкладки">
 <!ENTITY Ctr_e10stab_notd	"E10s вкладки: видалити підкреслення">
@@ -64,7 +67,7 @@
 <!ENTITY Ctr_appbutton1		"Кнопка на панелі">
 <!ENTITY Ctr_appbutton1wt	"Кнопка на панелі (тільки текст)">
 <!ENTITY Ctr_appbutton2		"Кнопка на [cyberfox] панелі заголовку">
-<!ENTITY Ctr_appbutton2h	"Кнопка на [cyberfox] панелі заголовку (hidden)">
+<!ENTITY Ctr_appbutton2h	"Кнопка на [cyberfox] панелі заголовку (прихована)">
 <!ENTITY Ctr_appbutton2io	"Кнопка на [cyberfox] панелі заголовку (тільки іконка)">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Оранжева кнопка меню на панелі вкладок">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"Панель меню: компактний вигляд (закладки, історія тощо)">
 <!ENTITY Ctr_hidezoomres	"Управління масштабом на панелі: приховати кнопку скидання масштабу">
 <!ENTITY Ctr_alt_newtabp	"Сторінка нової вкладки: альтернативний вигляд">
+<!ENTITY Ctr_noresizerxp	"Приховати «Індикатор зміни розміру» (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"Спливаюче вікно панелі меню: приховати написи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Спливаючі вікна меню: показувати полоси прокручування замість стрілки прокручування">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"Прибрати колір тла (Windows AeroGlass/8)">
 <!ENTITY Ctr_hightabpos		"Зменшити простір над панеллю інструментів (якщо можливо)">
 <!ENTITY Ctr_alttabstb		"Альтернативний колір тла">
+<!ENTITY Ctr_alttabstb2		"У розширеному режимі (вкладки нагорі)">
 
 <!ENTITY Ctr_altmenubar		"Додати колір тла (рядок заголовку Windows)">
 <!ENTITY Ctr_altmenubarpos	"Альтернативна позиція (нижче рядку заголовку Cyberfox)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"Приховати кнопку закривання панелі додатків">
 <!ENTITY Ctr_highaddonsbar	"Збільшити висоту">
+<!ENTITY Ctr_addonbarfs		"У повноекранному режимі">
 
 <!ENTITY Ctr_animation		"Анімація">
 <!ENTITY Ctr_throbberalt	"Альтернативна анімація">
@@ -235,11 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Інші налаштування">
 <!ENTITY Ctr_cuibotbuttons	"Свої кнопки в «ручному» режимі">
 <!ENTITY Ctr_bookmarkoinpw	"Напис «Відкрити в новому приватному вікні» в контекстному меню закладок">
+<!ENTITY Ctr_nodevtheme		"Запобігти увімкненню «Теми розробника»">
 
 <!ENTITY Ctr_experttweaks	"Розширені опції">
 <!ENTITY Ctr_fx33layers		"В Gecko 33+ введено «нові візуальні особливості», які в даний час відповідають за «зависання» вкладок на деяких системах. Вимкнення цього параметра вирішує цю проблему.">
 <!ENTITY Ctr_fx34search		"В Gecko 34+ введено «новий пошуковий інтерфейс». Вимкнення цього параметра поверне  «старий пошуковий інтерфейс».">
 <!ENTITY Ctr_fx34loop		"В Gecko 34+ введені особливості «виклику та сеансу зв’язку». Вимкнення цього параметру видалить їх.">
+<!ENTITY Ctr_fx35devtheme	"В Gecko 35+ введено нову «тему» від розробника. Вимкнення цих налаштувань вимикає цю «тему» і її кнопку в ручному режимі налаштувань.">
+<!ENTITY Ctr_fx36prefs		"В Gecko 36+ введено нове налаштування у вкладці. Вимкнення цього пункту відновлює вікно зі старими налаштуванням.">
 
 
 <!ENTITY Ctr_pw_settings	"Налаштування">

@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"İkonlar">
 <!ENTITY Ctr_cuiicotxt		"İkonlar + Yazı">
 <!ENTITY Ctr_cuitxt			"Yazı">
+<!ENTITY Ctr_cuitabsnontop	"Tabs not on top">
 
 <!ENTITY Ctr_tnot			"(sekme tepede değilken)">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(varsayılan)">
 <!ENTITY Ctr_tabwidthcla	"(klasik)">
 <!ENTITY Ctr_tabminheight	"Height:">
+<!ENTITY Ctr_tabheightinfo	"Low values will cause glitches in maximized mode!">
 <!ENTITY Ctr_tabmaxwidth	"Max-genişlik:">
 <!ENTITY Ctr_tabminwidth	"Min-genişlik:">
-<!ENTITY Ctr_tabwidthinfo	"Sekmelerin min-genişlik ve max-genişlik leri TabUtilities tarafından kontrol ediliyor">
+<!ENTITY Ctr_tabwidthinfo	"Tab width is controlled by TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Tab width is controlled by TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Values below 48px will cause glitches in most cases!">
+<!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config preference)">
 <!ENTITY Ctr_emptyfavicon	"Restore empty favicon (if a site does not offer one)">
 <!ENTITY Ctr_noemptypticon	"Remove empty favicon from pinned tab">
 <!ENTITY Ctr_e10stab_notd	"E10s tabs: remove underline">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"Panel menu: tümleşik görünüm (yerimleri, geçmiş vb.)">
 <!ENTITY Ctr_hidezoomres	"Araç çubuğunda zoom kontrolü: zoom-reset butonu gizle">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
+<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"Panel menu uyarısı: buton etikeitini gizle">
 <!ENTITY Ctr_menupopupscr	"Menu uyarısı: kaydırma okları yerine kaydırma çubuklarını göster">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"Arkaplan rengini kaldır (Windows AeroGlass/8)">
 <!ENTITY Ctr_hightabpos		"Araç çubuğunun üstündeki yer azalt (mümkünse)">
 <!ENTITY Ctr_alttabstb		"Alternatif arkaplan rengi">
+<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"Arkaplan rengi ekle (OS başlıkçubuğunda)">
 <!ENTITY Ctr_altmenubarpos	"Alternatif pozisyon (Cyberfox başlık çubuğunda altında)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"Eklenti çubuğu kapatma düğmesini sakla">
 <!ENTITY Ctr_highaddonsbar	"Yüksekliği Artır">
+<!ENTITY Ctr_addonbarfs		"In fullscreen mode">
 
 <!ENTITY Ctr_animation		"Animasyon">
 <!ENTITY Ctr_throbberalt	"Alternatif throbber sekme yüklenme animasyonu">
@@ -235,12 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Other settings">
 <!ENTITY Ctr_cuibotbuttons	"Extra buttons in 'customizing' mode">
 <!ENTITY Ctr_bookmarkoinpw	"'Open in a new private window' entry in bookmarks context menu">
+<!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"Advanced">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ introduced 'new render features' currently responsible for 'hanging tabs' on some systems. Unchecking this preference resolves this issue.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ introduced a 'new seach ui'. Unchecking this preference returns the 'old seach ui'.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ introduced 'calling and conversation' features. Unchecking this preference removes them.">
-
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 
 <!ENTITY Ctr_pw_settings	"Ayarlar">

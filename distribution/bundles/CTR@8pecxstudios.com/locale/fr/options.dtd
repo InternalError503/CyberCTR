@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"Icônes">
 <!ENTITY Ctr_cuiicotxt		"Icônes et texte">
 <!ENTITY Ctr_cuitxt			"Texte">
+<!ENTITY Ctr_cuitabsnontop	"Onglets position basse">
 
 <!ENTITY Ctr_tnot			"(onglets position basse)">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(défaut)">
 <!ENTITY Ctr_tabwidthcla	"(classique)">
 <!ENTITY Ctr_tabminheight	"Hauteur :">
+<!ENTITY Ctr_tabheightinfo	"Low values will cause glitches in maximized mode!">
 <!ENTITY Ctr_tabmaxwidth	"Largeur maximale :">
 <!ENTITY Ctr_tabminwidth	"Largeur minimale :">
 <!ENTITY Ctr_tabwidthinfo	"Onglets : les largeurs mini et maxi sont controlées par TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Onglets : les largeurs mini et maxi sont controlées par TabUtilities">
-<!ENTITY Ctr_tabwidthinfo3	"Les valeurs en dessous de 48px causent des problèmes dans la majorité des cas.">
+<!ENTITY Ctr_tabwidthinfo3	"Les valeurs en dessous de 48px causent des problèmes dans la majorité des cas!">
+<!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Restaurer le favicon vide sur les onglets (sites ne possédant pas de favicon)">
 <!ENTITY Ctr_noemptypticon	"Enlever les favicons vides des onglets épinglés">
 <!ENTITY Ctr_e10stab_notd	"Onglets e10 : enlever le soulignement">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
+<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"Menu du panneau latéral : icônes seules">
 <!ENTITY Ctr_menupopupscr	"Menus pop-up : afficher des ascenseurs au lieu des flèches de défilement">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"Enlever l’arrière-plan (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"Réduire l’espace supérieur (si possible)">
 <!ENTITY Ctr_alttabstb		"Arrière plan alternatif">
+<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"Ajouter un arrière-plan (barre de titre de l’OS visible)">
 <!ENTITY Ctr_altmenubarpos	"Position alternative (sous la barre de titre Cyberfox)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"Masquer le bouton de fermeture">
 <!ENTITY Ctr_highaddonsbar	"Augmenter la hauteur">
+<!ENTITY Ctr_addonbarfs		"In fullscreen mode">
 
 <!ENTITY Ctr_animation		"Animation">
 <!ENTITY Ctr_throbberalt	"Icône animée alternative lors du chargement des onglets">
@@ -235,11 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Autres paramètres">
 <!ENTITY Ctr_cuibotbuttons	"Boutons d’options en mode personnalisation">
 <!ENTITY Ctr_bookmarkoinpw	"Ajouter l’entrée « Ouvrir dans une nouvelle fenêtre de navigation privée » au menu contextuel des onglets">
+<!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"Expert">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ introduit de nouvelles possibilités de rendu responsables actuellement de bugs avec les onglets sur certains systèmes (pas de réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ introduit une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ introduit la possibilité d’inviter quelqu’un à discuter. Cette possibilité est desactivée en décochant cette option.">
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 
 <!ENTITY Ctr_pw_settings	"Réglages">

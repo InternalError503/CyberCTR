@@ -51,6 +51,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_nonavborder').disabled = true;
 		document.getElementById('ctraddon_pw_nonavtbborder').disabled = true;
 		document.getElementById('ctraddon_pw_alttabstb').disabled = true;
+		document.getElementById('ctraddon_pw_alttabstb2').disabled = true;
 		document.getElementById('ctraddon_pw_verifiedcolors').disabled = true;
 		document.getElementById('ctraddon_pw_colors_ntab_t').disabled = true;
 		document.getElementById('ctraddon_pw_notabfog').disabled = true;
@@ -88,6 +89,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_mockupoptions').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_invertedicons').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_alttabstb').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_alttabstb2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_verifiedcolors').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_notabfog').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_notabbg').style.visibility = 'collapse';
@@ -115,9 +117,15 @@ classicthemerestorerjso.ctr = {
 	//pref e10s tabs
 	document.getElementById('ctraddon_pw_e10stab_notd').disabled = true;
 	document.getElementById('ctraddon_pw_e10stab_notd').style.visibility = 'collapse';
+	document.getElementById('ctraddon_pw_e10stabs').disabled = true;
+	document.getElementById('ctraddon_pw_e10stabs').style.visibility = 'collapse';
+	document.getElementById('ctraddon_pw_e10stabsdescr').style.visibility = 'collapse';
 
+	// radio restart label
 	document.getElementById('ctraddon_pw_radiorestart').style.visibility = 'collapse';
 	
+	// tab height/width
+	document.getElementById('ctraddon_pw_tabheightinfo').style.visibility = 'collapse';
 	document.getElementById('ctraddon_pw_tabwidthinfo').style.visibility = 'collapse';
 	document.getElementById('ctraddon_pw_tabwidthinfo2').style.visibility = 'collapse';
 	document.getElementById('ctraddon_pw_tabwidthinfo3').style.visibility = 'collapse';
@@ -217,7 +225,40 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_noconicons').disabled = true;
 	  document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
 	}
-	
+	if (this.appversion < 33) {
+	  document.getElementById('ctraddon_experttweakstab').style.visibility = 'collapse';
+	  
+	  document.getElementById('ctraddon_pw_f33layers').disabled = true;
+	  document.getElementById('ctraddon_pw_f33layers').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_f33layersdescr').disabled = true;
+	  document.getElementById('ctraddon_pw_f33layersdescr').style.visibility = 'collapse';
+	}
+	if (this.appversion < 34) {
+	  document.getElementById('ctraddon_pw_oldsearch').disabled = true;
+	  document.getElementById('ctraddon_pw_oldsearch').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_oldsearchdescr').disabled = true;
+	  document.getElementById('ctraddon_pw_oldsearchdescr').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_loopcall').disabled = true;
+	  document.getElementById('ctraddon_pw_loopcall').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_loopcalldescr').disabled = true;
+	  document.getElementById('ctraddon_pw_loopcalldescr').style.visibility = 'collapse';
+	}
+	if (this.appversion < 35) {
+	  document.getElementById('ctraddon_pw_devtheme').disabled = true;
+	  document.getElementById('ctraddon_pw_devtheme').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_devthemeb').disabled = true;
+	  document.getElementById('ctraddon_pw_devthemeb').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_devthemedescr').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_nodevtheme').disabled = true;
+	  document.getElementById('ctraddon_nodevtheme').style.visibility = 'collapse';
+	}
+	if (this.appversion < 36) {
+	  document.getElementById('ctraddon_pw_oldprefs').disabled = true;
+	  document.getElementById('ctraddon_pw_oldprefs').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_oldprefsdescr').disabled = true;
+	  document.getElementById('ctraddon_pw_oldprefsdescr').style.visibility = 'collapse';
+	}
+
 	function PrefListener(branch_name, callback) {
 	  // Keeping a reference to the observed preference branch or it will get
 	  // garbage collected.
@@ -289,6 +330,15 @@ classicthemerestorerjso.ctr = {
 			  document.getElementById('ctraddon_pw_tabwidthinfo3').style.visibility = 'collapse';
 		  
 		  break;
+		  
+		  case "ctabheightcb":
+		  
+		    if(branch.getBoolPref("ctabheightcb"))
+			  document.getElementById('ctraddon_pw_tabheightinfo').style.visibility = 'visible';
+			else
+			  document.getElementById('ctraddon_pw_tabheightinfo').style.visibility = 'collapse';
+		  
+		  break;
 
 		}
 	  }
@@ -305,7 +355,10 @@ classicthemerestorerjso.ctr = {
 	this.ctrpwBFextra(this.prefs.getBoolPref("backforward"));
 	this.ctrpwSNextra(!this.prefs.getBoolPref('smallnavbut'));
 	this.ctrpwHidetbwotExtra(this.prefs.getBoolPref("hidetbwot"));
+	this.altTabsToolbarBgExtra(this.prefs.getBoolPref("alttabstb"));
 	this.ctrpwModeextra(this.prefs.getCharPref("nav_txt_ico"));
+	this.ctrpwDisableDevThemePrefsExtra(this.prefs.getBoolPref("nodevtheme"));
+	this.ctrShowE10sPrefForWindowPrefs();
 
 	
 	var closetab_value = this.prefs.getCharPref("closetab");
@@ -351,7 +404,8 @@ classicthemerestorerjso.ctr = {
 		} else {
 			document.getElementById('ctraddon_titleintitlebar').disabled = false;
 		}
-		
+
+			this.hideThemeInfoForTabs();
   },
   
   /* If an option, which requires a restart, was altered, a prompt to restart Fx will appear
@@ -387,6 +441,62 @@ classicthemerestorerjso.ctr = {
   needsBrowserRestart: function(){
 	this.needsRestart = true;
 	document.getElementById('ctraddon_pw_radiorestart').style.visibility = 'visible';
+  },
+  
+  resetPrefsForDevTheme: function(){
+	var currenttabs=this.prefs.getCharPref('tabs');
+	
+	// reset Tab appearance, but keep last knows preference
+	setTimeout(function(){
+	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs','tabs_default');
+	},50);
+	setTimeout(function(){
+	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs',currenttabs);
+	},100);
+	
+	// disable aeroblue toolbars preference
+	if(this.prefs.getBoolPref('aerocolors'))
+	  this.prefs.setBoolPref('aerocolors',false);
+  
+	this.hideThemeInfoForTabs();
+
+  },
+  
+  ctrShowE10sPrefForWindowPrefs: function() {
+	try{
+	setTimeout(function(){
+	  if(Components.classes["@mozilla.org/preferences-service;1"]
+		.getService(Components.interfaces.nsIPrefService)
+		  .getBranch("app.update.").getCharPref("channel")=='nightly'
+			&& Components.classes["@mozilla.org/preferences-service;1"]
+			  .getService(Components.interfaces.nsIPrefService)
+				.getBranch("browser.preferences.").getBoolPref("inContent")==false) {
+		document.getElementById('ctraddon_pw_e10stabs').disabled = false;
+		document.getElementById('ctraddon_pw_e10stabs').style.visibility = 'visible';
+		document.getElementById('ctraddon_pw_e10stabsdescr').style.visibility = 'visible';
+	  } else {
+		document.getElementById('ctraddon_pw_e10stabs').disabled = true;
+		document.getElementById('ctraddon_pw_e10stabs').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_e10stabsdescr').style.visibility = 'collapse';
+	  }
+	},100);
+	} catch(e) {}
+  },
+  
+  hideThemeInfoForTabs: function(){
+	setTimeout(function(){
+		try {
+		  if(Components.classes["@mozilla.org/preferences-service;1"]
+			.getService(Components.interfaces.nsIPrefService)
+				.getBranch("browser.devedition.theme.").getBoolPref('enabled')!=false){
+			document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'visible';
+			document.getElementById('ctraddon_pw_tabmenulist').disabled = true;
+		  } else if(classicthemerestorerjso.ctr.fxdefaulttheme) {
+			  document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
+			  document.getElementById('ctraddon_pw_tabmenulist').disabled = false;
+		  }
+		} catch(e) {}
+	},100);
   },
   
   unsetTabColorsAndMore: function() {
@@ -434,6 +544,20 @@ classicthemerestorerjso.ctr = {
   ctrpwHidetbwotExtra: function(which) {
     if(which==true) which=false; else which=true;
     document.getElementById('ctraddon_pw_hidetbwote').disabled = which;
+  },
+  
+  ctrpwDisableDevThemePrefsExtra: function(which) {
+	if (this.appversion >= 35) {
+	  document.getElementById('ctraddon_pw_devtheme').disabled = which;
+	  document.getElementById('ctraddon_pw_devthemeb').disabled = which;
+	}
+  },
+  
+  altTabsToolbarBgExtra: function(which) {
+	if (this.fxdefaulttheme) {
+	  if(which==true) which=false; else which=true;
+      document.getElementById('ctraddon_pw_alttabstb2').disabled = which;
+	}
   },
   
   ctrpwTabcloseextra: function(which) {
@@ -575,6 +699,10 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_feedinurl').disabled = false;
 		document.getElementById("ctraddon_pw_starinurl").style.listStyleImage="unset";
 		document.getElementById("ctraddon_pw_feedinurl").style.listStyleImage="unset";
+		
+		if (classicthemerestorerjso.ctr.prefs.getBoolPref('starinurl'))
+		  document.getElementById('ctraddon_pw_bmanimation').disabled = true;
+		else document.getElementById('ctraddon_pw_bmanimation').disabled = false;
 	},1350);
   },
   
@@ -822,6 +950,13 @@ classicthemerestorerjso.ctr = {
 	patterns[153]="cappbutc2:"+this.prefs.getCharPref("cappbutc2");
 	patterns[154]="svgfilters="+this.prefs.getBoolPref("svgfilters");
 	patterns[155]="aerocolors="+this.prefs.getBoolPref("aerocolors");
+	patterns[156]="addonbarfs="+this.prefs.getBoolPref("addonbarfs");
+	patterns[157]="alttabstb2="+this.prefs.getBoolPref("alttabstb2");
+	patterns[158]="nodevtheme="+this.prefs.getBoolPref("nodevtheme");
+	patterns[159]="e10stab_notd="+this.prefs.getBoolPref("e10stab_notd");
+	patterns[160]="nbcompact="+this.prefs.getBoolPref("nbcompact");
+	patterns[161]="icopageinfo="+this.prefs.getBoolPref("icopageinfo");
+
 
 	saveToFile(patterns);
 	  

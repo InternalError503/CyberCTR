@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"Icons">
 <!ENTITY Ctr_cuiicotxt		"Icons + Text">
 <!ENTITY Ctr_cuitxt			"Text">
+<!ENTITY Ctr_cuitabsnontop	"Tabs not on top">
 
 <!ENTITY Ctr_tnot			"(tabs not on top)">
 
@@ -40,11 +41,13 @@
 <!ENTITY Ctr_tabwidthdef	"(default)">
 <!ENTITY Ctr_tabwidthcla	"(classic)">
 <!ENTITY Ctr_tabminheight	"Height:">
+<!ENTITY Ctr_tabheightinfo	"Low values will cause glitches in maximized mode!">
 <!ENTITY Ctr_tabmaxwidth	"Max-width:">
 <!ENTITY Ctr_tabminwidth	"Min-width:">
 <!ENTITY Ctr_tabwidthinfo	"Tab width is controlled by TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Tab width is controlled by TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Values below 48px will cause glitches in most cases!">
+<!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config preference)">
 <!ENTITY Ctr_emptyfavicon	"Restore empty favicon (if a site does not offer one)">
 <!ENTITY Ctr_noemptypticon	"Remove empty favicon from pinned tabs">
 <!ENTITY Ctr_e10stab_notd	"E10s tabs: remove underline">
@@ -57,7 +60,7 @@
 <!ENTITY Ctr_closetab_hfot	"Hide for one visible tab">
 <!ENTITY Ctr_closealt		"Red close icon">
 <!ENTITY Ctr_closeonleft	"Alternative position on tab">
-<!ENTITY Ctr_close_wwltab	"Close window with last visible tab (about:config)">
+<!ENTITY Ctr_close_wwltab	"Close window with last visible tab (about:config preference)">
 
 <!ENTITY Ctr_appbutton		"Application button">
 <!ENTITY Ctr_appbutton0		"Button disabled">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"Panel menus: compact view (bookmarks, history etc.)">
 <!ENTITY Ctr_hidezoomres	"Zoom controls on toolbar: hide zoom-reset button">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
+<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"Panel menu popup: hide button labels">
 <!ENTITY Ctr_menupopupscr	"Menupopups: show scrollbars instead of scroll arrows">
 
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"Remove background color (Windows AeroGlass/8)">
 <!ENTITY Ctr_hightabpos		"Reduce space above toolbar (if possible)">
 <!ENTITY Ctr_alttabstb		"Alternative background color">
+<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"Add background color (OS titlebar)">
 <!ENTITY Ctr_altmenubarpos	"Alternative position (below Cyberfox titlebar)">
@@ -219,9 +224,10 @@
 
 <!ENTITY Ctr_closeabarbut	"Hide add-on bars close button">
 <!ENTITY Ctr_highaddonsbar	"Increase height">
+<!ENTITY Ctr_addonbarfs		"In fullscreen mode">
 
 <!ENTITY Ctr_animation		"Animation">
-<!ENTITY Ctr_throbberalt	"Alternative loading animation on tabs">
+<!ENTITY Ctr_throbberalt	"Alternative loading appearance">
 <!ENTITY Ctr_bmanimation	"Bookmarking animation">
 <!ENTITY Ctr_pananimation	"Panel opening animation">
 <!ENTITY Ctr_tabanimation	"Tab closing/opening animation (about:config preference)">
@@ -235,11 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Other settings">
 <!ENTITY Ctr_cuibotbuttons	"Extra buttons in 'customizing' mode">
 <!ENTITY Ctr_bookmarkoinpw	"'Open in a new private window' entry in bookmarks context menu">
+<!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"Advanced">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ introduced 'new render features' currently responsible for 'hanging tabs' on some systems. Unchecking this preference resolves this issue.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ introduced a 'new seach ui'. Unchecking this preference returns the 'old seach ui'.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ introduced 'calling and conversation' features. Unchecking this preference removes them.">
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 
 <!ENTITY Ctr_pw_settings	"Settings">

@@ -18,6 +18,7 @@
 <!ENTITY Ctr_cuiico			"アイコン">
 <!ENTITY Ctr_cuiicotxt		"アイコン+テキスト">
 <!ENTITY Ctr_cuitxt			"テキスト">
+<!ENTITY Ctr_cuitabsnontop	"タブを下にする">
 
 <!ENTITY Ctr_tnot			"(タブを上にする)">
 
@@ -39,12 +40,14 @@
 <!ENTITY Ctr_tabsintitlebar	"Cyberfoxタイトルバー (about:config設定)">
 <!ENTITY Ctr_tabwidthdef	"(デフォルト)">
 <!ENTITY Ctr_tabwidthcla	"(クラシック)">
-<!ENTITY Ctr_tabminheight	"Height:">
-<!ENTITY Ctr_tabmaxwidth	"max-width:">
-<!ENTITY Ctr_tabminwidth	"min-width:">
-<!ENTITY Ctr_tabwidthinfo	"タブのmin-widthとmax-widthはTabMixPlusで制御されます。">
-<!ENTITY Ctr_tabwidthinfo2	"タブのmin-widthとmax-widthはTabUtilitiesで制御されます。">
+<!ENTITY Ctr_tabminheight	"高さ:">
+<!ENTITY Ctr_tabheightinfo	"Low values will cause glitches in maximized mode!">
+<!ENTITY Ctr_tabmaxwidth	"最大幅:">
+<!ENTITY Ctr_tabminwidth	"最小幅:">
+<!ENTITY Ctr_tabwidthinfo	"タブの最小幅と最大幅は Tab Mix Plus で制御されます。">
+<!ENTITY Ctr_tabwidthinfo2	"タブの最小幅と最大幅は Tab Utilities で制御されます。">
 <!ENTITY Ctr_tabwidthinfo3	"Values below 48px will cause glitches in most cases!">
+<!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config)">
 <!ENTITY Ctr_emptyfavicon	"空 favicon を表示する (サイトが提供しない場合)">
 <!ENTITY Ctr_noemptypticon	"ピン止めタブから空ファビコンを取り除く">
 <!ENTITY Ctr_e10stab_notd	"E10s tabs: remove underline">
@@ -53,7 +56,7 @@
 <!ENTITY Ctr_closetab_2		"表示しない">
 <!ENTITY Ctr_closetab_3		"ツールバーの最後に表示">
 <!ENTITY Ctr_closetab_4		"ツールバーの最初に表示">
-<!ENTITY Ctr_closetab_5		"全タブ (強制)">
+<!ENTITY Ctr_closetab_5		"全てのタブ (強制)">
 <!ENTITY Ctr_closetab_hfot	"可視タブに対して隠す">
 <!ENTITY Ctr_closealt		"別バージョンのアイコンにする">
 <!ENTITY Ctr_closeonleft	"別の位置に表示">
@@ -78,7 +81,7 @@
 <!ENTITY Ctr_appbuttonc_gr	"灰色">
 <!ENTITY Ctr_appbuttonc_pu	"紫色">
 <!ENTITY Ctr_appbuttonc_wh	"白色">
-<!ENTITY Ctr_appbuttonc_cu	"Custom button color">
+<!ENTITY Ctr_appbuttonc_cu	"任意の色">
 <!ENTITY Ctr_appbuttonI1	"再起動を推奨">
 <!ENTITY Ctr_appbuttonI1e	"WindowsのOSタイトルバーには表示されません。Cyberfoxタイトルバー上のみです。">
 <!ENTITY Ctr_appbuttonI2	"ボタン色はタイトルバーとタブツールバーのみに表示されます。">
@@ -87,8 +90,8 @@
 <!ENTITY Ctr_appbutbdl		"ボーダーと背景色を隠す">
 <!ENTITY Ctr_dblclclosefx	"ダブルクリックで現在のウィンドウを閉じる">
 <!ENTITY Ctr_appbclmmenus	"Clickable menus inside button menu (New Tab, Print...)">
-<!ENTITY Ctr_appbutonclab	"Title">
-<!ENTITY Ctr_appbutonclab2	"Add title or leave empty">
+<!ENTITY Ctr_appbutonclab	"タイトル">
+<!ENTITY Ctr_appbutonclab2	"タイトルを入力するか、空欄のままにしてください">
 
 <!ENTITY Ctr_ui				"UI 一般">
 <!ENTITY Ctr_nbiconsize0	"ナビゲーションツールバー属性の設定">
@@ -97,7 +100,7 @@
 <!ENTITY Ctr_backforward	"戻る-進むボタンを移動可にする">
 <!ENTITY Ctr_nbcompact		"Reduce navigation toolbars height">
 <!ENTITY Ctr_hide_bf_popup	"マウスを押す時に履歴メニューを隠す">
-<!ENTITY Ctr_bf_space		"Reduce space between buttons (if possible)">
+<!ENTITY Ctr_bf_space		"(可能であれば) ボタン間のスペースを減らす">
 <!ENTITY Ctr_noconicons		"ラベル(戻る、進む、停止、ブックマーク)をもつページコンテキストメニューアイコンを置換する">
 <!ENTITY Ctr_svgfilters		"SVG colors for default toolbar button icons">
 <!ENTITY Ctr_wincontrols	"フルスクリーンウィンドウ制御を移動可にする">
@@ -126,6 +129,7 @@
 <!ENTITY Ctr_cpanelmenus	"パネルメニュー：コンパクトビュー (ブックマーク、履歴など)">
 <!ENTITY Ctr_hidezoomres	"ツールバーのズームコントロール: ズームリセットボタンを隠す">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
+<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"パネルメニューポップアップ：ボタンのラベルを隠す">
 <!ENTITY Ctr_menupopupscr	"メニューポップアップ: 矢印の代わりにスクロールバーを表示する">
 
@@ -136,13 +140,13 @@
 <!ENTITY Ctr_tabmokcolor4	"White color for empty dotted tab favicon">
 
 <!ENTITY Ctr_navthrobber1	"Clicking activity indicator opens specified url:">
-<!ENTITY Ctr_navthrobber2	"Add url or leave empty">
+<!ENTITY Ctr_navthrobber2	"URL を入力するか、空欄のままにしてください">
 
 <!ENTITY Ctr_tab_tf_info1	"色名、16 進コード、rgb(a)、hsl(a) の値をサポートします。">
 <!ENTITY Ctr_tab_tf_info2	"入力値は検証されません。">
-<!ENTITY Ctr_tabact_t		"active">
+<!ENTITY Ctr_tabact_t		"アクティブ">
 <!ENTITY Ctr_tabhov_t		"hover">
-<!ENTITY Ctr_tabnor_t		"default">
+<!ENTITY Ctr_tabnor_t		"デフォルト">
 <!ENTITY Ctr_tabpen_t		"未読み込み">
 <!ENTITY Ctr_tabunr_t		"未読">
 <!ENTITY Ctr_ntab_t			"新しいタブ">
@@ -161,9 +165,9 @@
 <!ENTITY Ctr_notabhov		"Enabled settings override 'hovered' settings">
 <!ENTITY Ctr_tabc_act_tb	"Background color on toolbars">
 
-<!ENTITY Ctr_urlbar			"Urlbar">
-<!ENTITY Ctr_starinurl		"URLバーにスターボタンを表示する">
-<!ENTITY Ctr_feedinurl		"URLバーにフィードボタンを表示する">
+<!ENTITY Ctr_urlbar			"URL バー">
+<!ENTITY Ctr_starinurl		"URL バーにスターボタンを表示する">
+<!ENTITY Ctr_feedinurl		"URL バーにフィードボタンを表示する">
 <!ENTITY Ctr_hideurelstop	"URL バーの中止&amp;再読み込みボタンを隠す">
 <!ENTITY Ctr_urlbardropm	"Move dropmarker to urlbars end">
 <!ENTITY Ctr_hideprbutton	"Hide notification icon when a popup gets blocked">
@@ -201,6 +205,7 @@
 <!ENTITY Ctr_notabbg		"背景色を取り除く (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"ツールバーの上の間隔を減らす (可能ならば)">
 <!ENTITY Ctr_alttabstb		"別の背景色にする">
+<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"背景色を加える (OS タイトルバー)">
 <!ENTITY Ctr_altmenubarpos	"別の位置 Cyberfoxタイトルバーの下)">
@@ -219,6 +224,7 @@
 
 <!ENTITY Ctr_closeabarbut	"アドオンバーの閉じるボタンを隠す">
 <!ENTITY Ctr_highaddonsbar	"高さを増やす">
+<!ENTITY Ctr_addonbarfs		"In fullscreen mode">
 
 <!ENTITY Ctr_animation		"アニメーション">
 <!ENTITY Ctr_throbberalt	"別バージョンのタブ読み込みアイコンアニメーションにする">
@@ -235,11 +241,14 @@
 <!ENTITY Ctr_otherctroptns	"Other settings">
 <!ENTITY Ctr_cuibotbuttons	"'カスタマイズ'モードの追加ボタンを表示する">
 <!ENTITY Ctr_bookmarkoinpw	"'Open in a new private window' entry in bookmarks context menu">
+<!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
-<!ENTITY Ctr_experttweaks	"Advanced">
+<!ENTITY Ctr_experttweaks	"拡張設定">
 <!ENTITY Ctr_fx33layers		"Gecko 33+ introduced 'new render features' currently responsible for 'hanging tabs' on some systems. Unchecking this preference resolves this issue.">
 <!ENTITY Ctr_fx34search		"Gecko 34+ introduced a 'new seach ui'. Unchecking this preference returns the 'old seach ui'.">
 <!ENTITY Ctr_fx34loop		"Gecko 34+ introduced 'calling and conversation' features. Unchecking this preference removes them.">
+<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 
 <!ENTITY Ctr_pw_settings	"設定">
