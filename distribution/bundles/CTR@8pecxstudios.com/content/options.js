@@ -4,9 +4,10 @@ if (!classicthemerestorerjso.ctr) {classicthemerestorerjso.ctr = {};};
 
 Components.utils.import("resource://gre/modules/AddonManager.jsm");
 Components.utils.import("resource:///modules/CustomizableUI.jsm");
-var  contexts = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("browser.context.");
-//Make prefService Global or getChildList and getPrefType can't be accessed in e10s.
-var prefService = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
+
+// make ctraddon_prefService "global" or 'getChildList' and 'getPrefType' required
+// by import/export (json) functions can not be accessed in e10s.
+var ctraddon_prefService = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
 
 classicthemerestorerjso.ctr = {
 
@@ -211,7 +212,7 @@ classicthemerestorerjso.ctr = {
 	// disable bookmark animation checkbox, if 'star button in urlbar' is used
 	if (this.prefs.getBoolPref('starinurl')) document.getElementById('ctraddon_pw_bmanimation').disabled = true;
 	
-	// hide settings for unsupported Firefox versions 
+	// hide settings, if unsupported by Cyberfox versions
 	if (this.appversion < 31) {
 	  document.getElementById('ctraddon_pw_pananimation').disabled = true;
 	  document.getElementById('ctraddon_pw_pananimation').style.visibility = 'collapse';
@@ -345,7 +346,6 @@ classicthemerestorerjso.ctr = {
 	);
 	
 	ctrSettingsListenerW_forCTR.register(true);
-	
 	
 	// update sub settings
 	this.ctrpwAppbuttonextra(this.prefs.getCharPref("appbutton"),false);
@@ -1067,55 +1067,45 @@ classicthemerestorerjso.ctr = {
     /* import CTR settings JSON*/
  importCTRpreferencesJSON: function() {
  
-	var stringBundle = Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService)
-	                    .createBundle("chrome://classic_theme_restorer/locale/messages.file");
-  
+	var stringBundle = Components.classes["@mozilla.org/intl/stringbundle;1"]
+						.getService(Components.interfaces.nsIStringBundleService)
+							.createBundle("chrome://classic_theme_restorer/locale/messages.file");
+
 	var parjson = loadFromFile();
 
 	if (!parjson) return false;
 	
-		function setPrefValue(pref, val){
+	function setPrefValue(pref, val){
 
-		switch (prefService.getPrefType(pref)){
-						
-				case 32:
-					return prefService.setCharPref(pref, val);						
-				break;
-								
-				case 64:
-					return prefService.setIntPref(pref, val);
-				break;
-								
-				case 128:
-					return prefService.setBoolPref(pref, val);		
-				break;	
+	  switch (ctraddon_prefService.getPrefType(pref)){
+		case 32:	return ctraddon_prefService.setCharPref(pref, val);	break;
+		case 64:	return ctraddon_prefService.setIntPref(pref, val);	break;
+		case 128:	return ctraddon_prefService.setBoolPref(pref, val);	break;	
+	  }
+
+	}
 			
-			}
+	for (var i=0; i<parjson.length; i++) {					  
+	  try {
 
+		if(parjson[i].preference.match(/extensions.classicthemerestorer./g)){
+			setPrefValue(parjson[i].preference, parjson[i].value);
 		}
-			
-			for (var i = 0; i < parjson.length ; i++) {						  
-				  try {	
 
-						if(parjson[i].preference.match(/extensions.classicthemerestorer./g)){
-							setPrefValue(parjson[i].preference, parjson[i].value);
-						}
-						
-				  } catch(e) {
-						//Catch any nasty errors and output to dialogue
-						Components.utils.reportError(e);
-				  }
-			}	
+	  } catch(e) {
+		//Catch any nasty errors and output to dialogue
+		Components.utils.reportError(e);
+	  }
+	}	
 
-		//Need to check if json is valid, If json not valid don't continue and show error.
-		function IsJsonValid(text) {
-			try {
-				JSON.parse(text);
-			} catch (e) {
-				return false;
-				}
-			return true;
-		}				
+	//Need to check if json is valid, If json not valid don't continue and show error.
+	function IsJsonValid(text) {
+
+	  try { JSON.parse(text); }
+	  catch (e) { return false; }
+	  return true;
+
+	}				
 	 
 	function loadFromFile() {
 
@@ -1137,11 +1127,11 @@ classicthemerestorerjso.ctr = {
 		  stream.close();
 
 		 var text = input;
-		 		  
+
 		  if(!IsJsonValid(text)){
 			  alert(stringBundle.GetStringFromName("import.errorJSON"));
 			  return false;
-		  }else{
+		  } else{
 			return JSON.parse(input);
 		  }
 	   }
@@ -1158,17 +1148,13 @@ classicthemerestorerjso.ctr = {
 
 	var preflist = prefService.getChildList("extensions.classicthemerestorer.");
 
-		let preferenceArray = {
-			preference: [],
-			value: []
-		};
-		
+	let preferenceArray = {
+	  preference: [],
+	  value: []
+	};
+
 		//Preference Filter all preferences we don't want to export\import..
 		let blacklist = [
-		"extensions.classicthemerestorer.e10stab_notd",
-		"extensions.classicthemerestorer.nbcompact",
-		"extensions.classicthemerestorer.icopageinfo",
-		"extensions.classicthemerestorer.mbarpositionl",
 		"extensions.classicthemerestorer.pref_actindx",
 		"extensions.classicthemerestorer.pref_actindx2",
 		"extensions.classicthemerestorer.ctrreset",
@@ -1184,50 +1170,39 @@ classicthemerestorerjso.ctr = {
 		"extensions.classicthemerestorer.features.firstrun",
 		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
 		];
-		
-		function prefValue(pref){
 
-		switch (prefService.getPrefType(pref)){
-						
-				case 32:
-					return prefService.getCharPref(pref);
-				break;
-								
-				case 64:
-					return prefService.getIntPref(pref);
-				break;
-								
-				case 128:
-					return prefService.getBoolPref(pref);		
-				break;
-				
-			}
+	function prefValue(pref){
 
-		}	
-			
-			for (var i = 0; i < preflist.length ; i++) {
-						  
-				  try {	
-				  
-						//Run Blacklist filter, Here we filter out all preferences we don't want exported|imported.
-						var index = preflist.indexOf(blacklist[i]);
-							
-						if (index > -1) {
-							preflist.splice(index, 1);
-						}
-							
-						preferenceArray.preference.push({
-							"preference" : preflist[i],
-							"value" : prefValue(preflist[i])
-						});
-														
-				  } catch(e) {
-						//Catch any nasty errors and output to dialogue
-						Components.utils.reportError(e);
-				  }
-			}
-				
-				
+	  switch (ctraddon_prefService.getPrefType(pref)){
+		case 32:	return ctraddon_prefService.getCharPref(pref);	break;
+		case 64:	return ctraddon_prefService.getIntPref(pref);	break;
+		case 128:	return ctraddon_prefService.getBoolPref(pref);	break;	
+	  }
+
+	}
+
+	for (var i=0; i < preflist.length; i++) {
+
+	  try {
+		//Run Blacklist filter, Here we filter out all preferences we don't want exported|imported.
+		var index = preflist.indexOf(blacklist[i]);
+
+		if (index > -1) {
+		  preflist.splice(index, 1);
+		}
+
+		preferenceArray.preference.push({
+		  "preference" : preflist[i],
+		  "value" : prefValue(preflist[i])
+		});
+
+	  } catch(e) {
+		//Catch any nasty errors and output to dialogue
+		Components.utils.reportError(e);
+	  }
+
+	}
+
 	saveToFile(preferenceArray);
 	  
 	function saveToFile(patterns) {
@@ -1251,15 +1226,15 @@ classicthemerestorerjso.ctr = {
 		stream.init(file, 0x02, 0x200, null);
 
 		var patternItems = JSON.stringify(patterns.preference);
-	
-			stream.write(patternItems, patternItems.length)
+
+		stream.write(patternItems, patternItems.length)
 
 		stream.close();
 	  }
 	}
-	  
-	return true;			
-	  
+
+	return true;
+
   }, 
  
   onCtrPanelSelect: function() {
@@ -1267,7 +1242,7 @@ classicthemerestorerjso.ctr = {
     let selectedPanel = document.getElementById(ctrAddonPrefBoxTab.value);
     selectedPanel.parentNode.selectedPanel = selectedPanel;
 
-    for (let i = 0; i < ctrAddonPrefBoxTab.itemCount; i++) {
+    for (let i=0; i < ctrAddonPrefBoxTab.itemCount; i++) {
       let radioItem = ctrAddonPrefBoxTab.getItemAtIndex(i);
       let pane = document.getElementById(radioItem.value);
       pane.setAttribute("selected", (radioItem.selected)? "true" : "false");

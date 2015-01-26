@@ -868,6 +868,7 @@
 						 onmousedown="classicthemerestorerjs.ctr.ctrBackMenuShow(this);"
 						 onclick="checkForMiddleClick(this, event);"
                          tooltip="back-button-tooltip"
+						 wrap="true"
                          context="backForwardMenu"/>
           <toolbarbutton id="ctraddon_forward-button" class="toolbarbutton-1 chromeclass-toolbar-additional ctraddon-toolbarbutton"
                          label="&forwardCmd.label;"
@@ -875,6 +876,7 @@
 						 onmousedown="classicthemerestorerjs.ctr.ctrBackMenuShow(this);"
 						 onclick="checkForMiddleClick(this, event);"
                          tooltip="forward-button-tooltip"
+						 wrap="true"
                          context="backForwardMenu"/>
       </toolbaritem>
 	  
