@@ -24,7 +24,6 @@ classicthemerestorerjso.ctr = {
 		  else document.getElementById("ClassicTRoptionsPane").removeAttribute('defaultfxtheme');
 	} catch(e){}
 	
-	
 	// restore last selected categories/tabs
 	document.getElementById("CtrRadioGroup").selectedIndex = this.prefs.getIntPref('pref_actindx');
 	document.getElementById("ctraddon_tabcolor_tabs").selectedIndex = this.prefs.getIntPref('pref_actindx2');
@@ -177,6 +176,23 @@ classicthemerestorerjso.ctr = {
 	  }
 	});
 	
+	AddonManager.getAddonByID('thefoxonlybetter@quicksaver', function(addon) {
+	  if(addon && addon.isActive) {
+		document.getElementById('ctraddon_pw_nonavbarbg2').style.visibility = 'visible';
+	  } else{
+		document.getElementById('ctraddon_pw_nonavbarbg2').style.visibility = 'collapse';
+	  }
+	});
+	var TFOBListener = {
+	   onEnabled: function(addon) {
+		  if(addon.id == 'thefoxonlybetter@quicksaver') { document.getElementById('ctraddon_pw_nonavbarbg2').style.visibility = 'visible'; }
+	   },
+	   onDisabled: function(addon) {
+		  if(addon.id == 'thefoxonlybetter@quicksaver') { document.getElementById('ctraddon_pw_nonavbarbg2').style.visibility = 'collapse'; }
+	   }
+	};
+	AddonManager.addAddonListener(TFOBListener);
+	
 	AddonManager.getAddonByID('the-addon-bar@GeekInTraining-GiT', function(addon) {
 	  if(addon && addon.isActive) {
 		document.getElementById('ctraddon_pw_statusbar').disabled = true;
@@ -197,7 +213,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_closetab_pw_sta').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_closetab_pw_end').style.visibility = 'collapse';
 	}
-	if (this.appversion < 32) {	
+	if (this.appversion < 32) {
 	  document.getElementById('ctraddon_pw_noconicons').disabled = true;
 	  document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
 	}
@@ -490,7 +506,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = true;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
-	} else if (which=="appbutton_off" || which=="appbutton_pm"){
+	} else if (which=="appbutton_off" || which=="appbutton_pm" || which=="appbutton_v2h"){
 	  document.getElementById('ctraddon_alt_abicons').disabled = true;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
 	  document.getElementById('ctraddon_appbutbdl').disabled = true;
@@ -619,10 +635,14 @@ classicthemerestorerjso.ctr = {
 	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);
 	this.prefs.setCharPref("appbutton",'appbutton_off');	
 	this.prefs.setCharPref("tabs",'tabs_default');
+  this.prefs.setBoolPref("cuibuttons",false);
+	this.prefs.setBoolPref("statusbar",false);
+	this.prefs.setBoolPref("activndicat",false);
     Components.classes["@mozilla.org/preferences-service;1"]
 		 .getService(Components.interfaces.nsIPrefService)
 		   .getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
 	this.needsBrowserRestart();
+
   },
 
   /* export CTR settings */

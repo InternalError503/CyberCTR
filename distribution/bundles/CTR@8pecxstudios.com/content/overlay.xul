@@ -43,7 +43,7 @@
 	<keyset id="mainKeyset">
 	  <key id="ctraddon_key_toggleCtrAddonBar" command="CtrExtension:ToggleCtrAddonBar" key="/" modifiers="accel"/>
 	</keyset>
-
+ 
 	<!--### add new buttons to customizing area ###-->
 	<hbox id="customization-container">
 	  <vbox id="customization-palette-container">

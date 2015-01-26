@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"Botón en la barra de herramientas">
 <!ENTITY Ctr_appbutton1wt	"Botón en la barra de herramientas (sólo texto)">
 <!ENTITY Ctr_appbutton2		"Botón en la barra de título [de Cyberfox]">
+<!ENTITY Ctr_appbutton2h	"Botón en la barra de título [de Cyberfox] (hidden)">
 <!ENTITY Ctr_appbutton2io	"Botón en la barra de título [de Cyberfox] (sólo icono)">
 <!ENTITY Ctr_paneluibtweak	"Botón de menú de panel naranja en la barra de pestañas">
 <!ENTITY Ctr_appbuttonc_o	"Color de botón naranja (por defecto)">
@@ -208,6 +209,8 @@
 <!ENTITY Ctr_hidenavbar		"Ocultar barra de navegación">
 <!ENTITY Ctr_nobookbarbg	"Barra de marcadores: eliminar color de fondo">
 <!ENTITY Ctr_nonavbarbg		"Barra de navegación: eliminar color de fondo">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"Añadir borde superior a la barra de marcadores">
 <!ENTITY Ctr_nonavtbborder	"Barras de herramientas en la parte superior: eliminar bordes de barra de herramientas">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"Button on toolbar">
 <!ENTITY Ctr_appbutton1wt	"Button on toolbar (text only)">
 <!ENTITY Ctr_appbutton2		"Button on [Cyberfox] titlebar">
+<!ENTITY Ctr_appbutton2h	"Button on [Cyberfox] titlebar (hidden)">
 <!ENTITY Ctr_appbutton2io	"Button on [Cyberfox] titlebar (icon only)">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Orange panel menu button on tabs toolbar">
@@ -77,6 +78,7 @@
 <!ENTITY Ctr_appbuttonc_gr	"Gray button color">
 <!ENTITY Ctr_appbuttonc_pu	"Purple button color">
 <!ENTITY Ctr_appbuttonc_wh	"White button color">
+<!ENTITY Ctr_appbuttonc_cu	"Custom button color">
 <!ENTITY Ctr_appbuttonI1	"Restart recommended">
 <!ENTITY Ctr_appbuttonI1e	"Not visible on Windows OS titlebar, only on Cyberfox titlebar!">
 <!ENTITY Ctr_appbuttonI2	"Button colors are only visible on titlebar and tabs toolbar!">
@@ -208,6 +210,8 @@
 <!ENTITY Ctr_hidenavbar		"Navigation toolbar: hide toolbar">
 <!ENTITY Ctr_nobookbarbg	"Bookmarks toolbar: remove background color">
 <!ENTITY Ctr_nonavbarbg		"Navigation toolbar: remove background color">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"Bookmarks toolbar: add top border to toolbar">
 <!ENTITY Ctr_nonavtbborder	"Top toolbars: remove toolbar borders">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

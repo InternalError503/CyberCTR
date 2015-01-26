@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"Araç çubuğunda buton">
 <!ENTITY Ctr_appbutton1wt	"Araç çubuğunda buton (sadece yazı)">
 <!ENTITY Ctr_appbutton2		"[Cyberfox] başlığında buton">
+<!ENTITY Ctr_appbutton2h	"Button on [Cyberfox] titlebar (hidden)">
 <!ENTITY Ctr_appbutton2io	"[Cyberfox] başlığında buton (sadece ikon)">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox buton rengi (varsayılan)">
 <!ENTITY Ctr_paneluibtweak	"Sekme çubuğunda turuncu panel menü butonu">
@@ -77,6 +78,7 @@
 <!ENTITY Ctr_appbuttonc_gr	"Gri Buton Rengi">
 <!ENTITY Ctr_appbuttonc_pu	"Mor Buton Rengi">
 <!ENTITY Ctr_appbuttonc_wh	"Beyaz Buton Rengi">
+<!ENTITY Ctr_appbuttonc_cu	"Custom button color">
 <!ENTITY Ctr_appbuttonI1	"Yeniden başlatma tavsiye edilir">
 <!ENTITY Ctr_appbuttonI1e	"Windows başlık çubuğunda görünür değil!">
 <!ENTITY Ctr_appbuttonI2	"Sadece buton renkleri görünür">
@@ -208,6 +210,8 @@
 <!ENTITY Ctr_hidenavbar		"Gezinti Araç çubuğu: Çubuğu gizle">
 <!ENTITY Ctr_nobookbarbg	"Yerimi araç çubuğu: Arkaplan rengini kaldır">
 <!ENTITY Ctr_nonavbarbg		"Gezinti Araç çubuğu: Arkaplan rengini kaldır">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"Yerimi araç çubuğu: Araç çubuğuna üst sınır ekle">
 <!ENTITY Ctr_nonavtbborder	"Tepedeki sekmeler: Araç çubuğu sınırları kaldır">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

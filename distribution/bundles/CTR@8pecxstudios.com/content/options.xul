@@ -261,7 +261,8 @@
 				<description class="ctraddon_font1">&Ctr_tabsontopW1;</description>
 				<label value=" "/>
 				<description class="ctraddon_font1">&Ctr_tabsontopI1;</description>
-				<description>#main-window, #navigator-toolbox, #nav-bar, #TabsToolbar, #PersonalToolbar</description>
+				<description>#main-window, #navigator-toolbox, #nav-bar,</description>
+				<description>#TabsToolbar, #PersonalToolbar</description>
 			</menupopup>
 		</menulist>
 		
@@ -584,6 +585,7 @@
 				<menuitem value="appbutton_v2wt2" label="&Ctr_appbutton2; (v2)"		oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonextra('appbutton_v2wt2',true)"/>
 				<menuitem value="appbutton_v2io"  label="&Ctr_appbutton2io;"		oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonextra('appbutton_v2io',true)"/>
 				<menuitem value="appbutton_v2io2" label="&Ctr_appbutton2io; (v2)"	oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonextra('appbutton_v2io2',true)"/>
+				<menuitem value="appbutton_v2h"	  label="&Ctr_appbutton2h;"			oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonextra('appbutton_v2h',true)"/>
 				<menuitem value="appbutton_pm" 	  label="&Ctr_paneluibtweak;"		oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonextra('appbutton_pm',true)"/>
 				<label value=" "/>
 				<description class="ctraddon_font1">&Ctr_appbuttonI1;</description>
@@ -602,21 +604,22 @@
 
 		<menulist preference="ctraddon_appbuttonc" id="ctraddon_appbutcolor_list">
 			<menupopup>
-						<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;"/>
-						<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;"/>	
-						<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; (Light)"/>						
-						<menuitem value="appbuttonc_default"	 label="&Ctr_appbuttonc_d;"/>
-						<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;"/>						
-						<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;"/>	
-						<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  (Dark)"/>						
-						<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;"/>
-						<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  (Dark)"/>
-						<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;"/>
-						<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;"/>
-						<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; (Dark)"/>	
-						<menuitem value="appbuttonc_salmon"	 label="&Ctr_appbuttonc_s;"/>						
-						<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;"/>
-						<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;"/>
+						<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_nightly')"/>
+						<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_aurora')"/>	
+						<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; (Light)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_cyan')"/>						
+						<menuitem value="appbuttonc_default"	 label="&Ctr_appbuttonc_d;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_default')"/>
+						<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_gray')"/>						
+						<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green')"/>	
+						<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green_dark')"/>						
+						<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange')"/>
+						<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange_dark')"/>
+						<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_purple')"/>
+						<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red')"/>
+						<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red_dark')"/>	
+						<menuitem value="appbuttonc_salmon"	 label="&Ctr_appbuttonc_s;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_salmon')"/>						
+						<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_transp')"/>
+						<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_white')"/>				
+				        <menuitem value="appbuttonc_custom"	 label="&Ctr_appbuttonc_cu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom')"/>
 			</menupopup>
 		</menulist>
 		
@@ -798,8 +801,10 @@
 	    <caption  label="&Ctr_toolbars;" class="ctraddon_topic"/>
 		<checkbox label="&Ctr_aerocolors;"				 preference="ctraddon_aerocolors" id="ctraddon_pw_aerocolors"/>
 		<checkbox label="&Ctr_hidenavbar;"				 preference="ctraddon_hidenavbar"/>
-		<checkbox label="&Ctr_nonavbarbg;"	 			 preference="ctraddon_nonavbarbg" id="ctraddon_pw_nonavbarbg"/>
 		<checkbox label="&Ctr_chevronfix;"				 preference="ctraddon_chevronfix"/>
+		<checkbox label="&Ctr_nonavbarbg;"	 			 preference="ctraddon_nonavbarbg" id="ctraddon_pw_nonavbarbg"/>
+		<description id="ctraddon_pw_nonavbarbg1" class="ctraddonsuboption">&Ctr_nonavbarbg1;</description>
+		<description id="ctraddon_pw_nonavbarbg2" class="ctraddonsuboption">&Ctr_nonavbarbg2;</description>
 		<checkbox label="&Ctr_nobookbarbg;"	 			 preference="ctraddon_nobookbarbg" id="ctraddon_pw_nobookbarbg"/>
 		<checkbox label="&Ctr_nonavborder; &Ctr_tnot;"	 preference="ctraddon_nonavborder" class="ctraddon_windowsonly" id="ctraddon_pw_nonavborder"/>
 		<checkbox label="&Ctr_nonavtbborder; &Ctr_tnot;" preference="ctraddon_nonavtbborder" id="ctraddon_pw_nonavtbborder"/>

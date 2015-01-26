@@ -65,6 +65,7 @@
 <!ENTITY Ctr_appbutton1		"Tlačítko na nástrojové liště">
 <!ENTITY Ctr_appbutton1wt	"Tlačítko na nástrojové liště (pouze text)">
 <!ENTITY Ctr_appbutton2		"Tlačítko v záhlaví okna [Cyberfox]">
+<!ENTITY Ctr_appbutton2h	"Tlačítko v záhlaví okna [Cyberfox] (hidden)">
 <!ENTITY Ctr_appbutton2io	"Tlačítko v záhlaví okna [Cyberfox] (pouze ikona)">
 <!ENTITY Ctr_paneluibtweak	"Oranžový panel jako tlačítko na liště s panely">
 <!ENTITY Ctr_appbuttonc_o	"Oranžové tlačítko (výchozí)">
@@ -209,6 +210,8 @@
 <!ENTITY Ctr_hidenavbar		"Navigační lišta: skrýt lištu">
 <!ENTITY Ctr_nobookbarbg	"Lišta záložek: odstranit barvu pozadí">
 <!ENTITY Ctr_nonavbarbg		"Navigační lišta: odstranit barvu pozadí">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"Lišta záložek: přidat horní okraj lišty">
 <!ENTITY Ctr_nonavtbborder	"Vrchní lišty: odstranit okraje lišt">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

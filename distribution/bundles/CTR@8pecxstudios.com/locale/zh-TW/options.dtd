@@ -65,6 +65,7 @@
 <!ENTITY Ctr_appbutton1		"顯示在工具列">
 <!ENTITY Ctr_appbutton1wt	"顯示在工具列 (僅文字)">
 <!ENTITY Ctr_appbutton2		"顯示在標題列">
+<!ENTITY Ctr_appbutton2h	"顯示在標題列 (hidden)">
 <!ENTITY Ctr_appbutton2io	"顯示在標題列 (僅圖示)">
 <!ENTITY Ctr_paneluibtweak	"橘色面板選單按鈕顯示在分頁列">
 <!ENTITY Ctr_appbuttonc_o	"橙色按鈕 (預設值)">
@@ -208,6 +209,8 @@
 <!ENTITY Ctr_hidenavbar		"隱藏瀏覽工具列">
 <!ENTITY Ctr_nobookbarbg	"書籤列: 移除背景色彩">
 <!ENTITY Ctr_nonavbarbg		"瀏覽工具列: 移除背景色彩">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"書籤列: 顯示上邊框">
 <!ENTITY Ctr_nonavtbborder	"上方工具列: 移除工具列邊框">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

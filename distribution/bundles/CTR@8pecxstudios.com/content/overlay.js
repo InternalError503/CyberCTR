@@ -409,14 +409,15 @@ classicthemerestorerjs.ctr = {
 
 		  // Appbutton
 		  case "appbutton":
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1wt',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2wt2',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io2',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_pm',false);
-				classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v1wt',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2wt2',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io2',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2h',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_pm',false);
+		  classicthemerestorerjs.ctr.fixThatTreeStyleBro();
 			if (branch.getCharPref("appbutton")!="appbutton_off"){
 				  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbutton"),true);
 				  classicthemerestorerjs.ctr.fixThatTreeStyleBro();
@@ -441,6 +442,7 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_salmon',false);			
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_transp',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_white',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom',false);
 
 			if (branch.getCharPref("appbuttonc")!="off"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbuttonc"),true);
@@ -642,30 +644,40 @@ classicthemerestorerjs.ctr = {
 
 				// 'timeout' prevents issues with add-ons, which also insert own (h-)boxes/items into urlbar.
 				// If "bookmarks-menu-button" can not be found on ui, it gets added to nav-bar first and
-				// moved to urlbar afterwards (workaround for Australis UI issues).
-				setTimeout(function(){
-				  if (branch.getBoolPref("starinurl")) {
-					try{
-						CustomizableUI.addWidgetToArea("bookmarks-menu-button", CustomizableUI.AREA_NAVBAR);
-						CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",0);
+				// moved to urlbar afterwards (workaround because of some Australis UI issues).
+				try{
+				  setTimeout(function(){
+					if (branch.getBoolPref("starinurl")) {
+					  try{
+						if(CustomizableUI.getPlacementOfWidget("bookmarks-menu-button")==null) {
+							CustomizableUI.addWidgetToArea("bookmarks-menu-button", CustomizableUI.AREA_NAVBAR);
+							CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",0);
+						} else if(CustomizableUI.getPlacementOfWidget("bookmarks-menu-button").area=="nav-bar") {
+							CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",0);
+						} else {
+							CustomizableUI.addWidgetToArea("bookmarks-menu-button", CustomizableUI.AREA_NAVBAR);
+							CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",0);
+						}
 
 						var urlbaricons = document.getElementById("urlbar-icons");
 						
+						// keep default order, if star and feed button are both in location bar
 						if (branch.getBoolPref("feedinurl") && urlbaricons.firstChild.id=="feed-button")
 							urlbaricons.insertBefore(document.getElementById("bookmarks-menu-button"), urlbaricons.firstChild.nextSibling);
 						else
 							urlbaricons.insertBefore(document.getElementById("bookmarks-menu-button"), urlbaricons.firstChild);
-					} catch(e){}
-				  }
+					  } catch(e){}
+					}
 
-				},1000);
-			} else {
+				  },1000);
+				} catch(e){}
+			  } else {
 			  
 			  if (classicthemerestorerjs.ctr.moveStarIntoUrlbar==true) {
 			  
 			    classicthemerestorerjs.ctr.moveStarIntoUrlbar = false;
-				
-				setTimeout(function(){
+				try{
+				  setTimeout(function(){
 					try{
 						if(document.getElementById("bookmarks-menu-button").parentNode.id=="urlbar-icons") {
 							CustomizableUI.removeWidgetFromArea("bookmarks-menu-button");
@@ -674,8 +686,8 @@ classicthemerestorerjs.ctr = {
 							classicthemerestorerjs.ctr.loadUnloadCSS("starinurl",false);
 						}
 					} catch(e){}
-				},1000);
-				
+				  },1000);
+				} catch(e){}
 			  }
 
 			}
@@ -689,21 +701,24 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS("feedinurl",true);
 				
 				// 'timeout' prevents issues with add-ons, which also insert own (h-)boxes/items into urlbar.
-				// If "feed-button" can not be found on ui, it gets added to nav-bar first and
-				// moved to urlbar afterwards (workaround for Australis UI issues).
-				setTimeout(function(){
-				  if (branch.getBoolPref("feedinurl")) {
-					try{
-						CustomizableUI.addWidgetToArea("feed-button", CustomizableUI.AREA_NAVBAR);
-						CustomizableUI.moveWidgetWithinArea("feed-button",0);
+				// If "feed-button" can not be found on ui, it gets added to tabs toolbar first and
+				// moved to urlbar afterwards (workaround because of some Australis UI issues).
+				try{
+				  setTimeout(function(){
+					if (branch.getBoolPref("feedinurl")) {
+					  try{
+						if(CustomizableUI.getPlacementOfWidget("feed-button")==null) {
+						  CustomizableUI.addWidgetToArea("feed-button", CustomizableUI.AREA_TABSTRIP);
+						} else if(CustomizableUI.getPlacementOfWidget("feed-button").area!="TabsToolbar") {
+						  CustomizableUI.addWidgetToArea("feed-button", CustomizableUI.AREA_TABSTRIP);
+						} 
 
 						var urlbaricons = document.getElementById("urlbar-icons");
 						urlbaricons.insertBefore(document.getElementById("feed-button"), urlbaricons.firstChild);
-					} catch(e){}
-					
-				  }
-
-				},1300);
+					  } catch(e){}
+					}
+				  },1300);
+				} catch(e){}
 
 			} else {
 			
@@ -711,15 +726,17 @@ classicthemerestorerjs.ctr = {
 			  
 			    classicthemerestorerjs.ctr.moveFeedIntoUrlbar = false;
 				
-				setTimeout(function(){
+				try{
+				  setTimeout(function(){
 					try{
 						if(document.getElementById("feed-button").parentNode.id=="urlbar-icons") {
-							CustomizableUI.addWidgetToArea("feed-button", CustomizableUI.AREA_NAVBAR);
-							classicthemerestorerjs.ctr.loadUnloadCSS("feedinurl",false);
-
+						  //document.getElementById("nav-bar-customization-target").appendChild(document.getElementById("feed-button"));
+						  CustomizableUI.addWidgetToArea("feed-button", CustomizableUI.AREA_NAVBAR);
+						  classicthemerestorerjs.ctr.loadUnloadCSS("feedinurl",false);
 						}
 					} catch(e){}
-				},1300);
+				  },1300);
+				} catch(e){}
 			
 			  }
 
@@ -1618,6 +1635,7 @@ classicthemerestorerjs.ctr = {
 		
 		// add button to titlebar
 		document.getElementById("titlebar-content").appendChild(ctr_titlebarbutton);
+		
 	}
 
   },
@@ -1974,7 +1992,7 @@ classicthemerestorerjs.ctr = {
   
   updateTabWidth: function() {
   	window.addEventListener("DOMWindowCreated", function load(event){
-		window.removeEventListener("DOMWindowCreated", load, false);
+		//window.removeEventListener("DOMWindowCreated", load, false);
 		classicthemerestorerjs.ctr._updateTabWidth();  
 	},false);
   },
@@ -2290,6 +2308,7 @@ classicthemerestorerjs.ctr = {
 		case "appbutton_v2wt2":		manageCSS("appbutton2wt2.css");			break;
 		case "appbutton_v2io":		manageCSS("appbutton2io.css");			break;
 		case "appbutton_v2io2":		manageCSS("appbutton2io2.css");			break;
+		case "appbutton_v2h":		manageCSS("appbutton2hidden.css");		break;
 		case "appbutton_pm": 		manageCSS("paneluibutton_tweak.css");	break;
 		
 		case "appbutton_on_nav":	manageCSS("appbutton_on_navbar.css");	break;

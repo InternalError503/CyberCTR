@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"Tłóčatko na symbolowej lajsće">
 <!ENTITY Ctr_appbutton1wt	"Tłóčatko na symbolowej lajsće (jenož tekst)">
 <!ENTITY Ctr_appbutton2		"Tłóčatko na titulnej lajsće [Cyberfox]">
+<!ENTITY Ctr_appbutton2h	"Tłóčatko na titulnej lajsće [Cyberfox] (hidden)">
 <!ENTITY Ctr_appbutton2io	"Tłóčatko na titulnej lajsće [Cyberfox] (jenož symbol)">
 <!ENTITY Ctr_paneluibtweak	"Oranžowe menijowe tłóčatko na rajtarkowej lajsće">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
@@ -209,6 +210,8 @@
 <!ENTITY Ctr_hidenavbar		"Nawigacisku lajstu schować">
 <!ENTITY Ctr_nobookbarbg	"Lajsta zapołožkow: pozadkowu barbu wotstronić">
 <!ENTITY Ctr_nonavbarbg		"Nawigaciska lajsta: pozadkowu barbu wotstronić">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"Lajsta zapołožkow: horni ramik symbolowej lajsće přidać">
 <!ENTITY Ctr_nonavtbborder	"Hornje symbolowe lajsty: ramiki symboloweje lajsty wotstronić">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

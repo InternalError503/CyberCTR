@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"Przycisk na pasku narzędzi">
 <!ENTITY Ctr_appbutton1wt	"Przycisk na pasku narzędzi (tylko tekst)">
 <!ENTITY Ctr_appbutton2		"Przycisk na pasku narzędzi [Cyberfox]">
+<!ENTITY Ctr_appbutton2h	"Przycisk na pasku narzędzi [Cyberfox] (ukryty)">
 <!ENTITY Ctr_appbutton2io	"Przycisk na pasku narzędzi [Cyberfox] (tylko ikona)">
 <!ENTITY Ctr_paneluibtweak	"Pomarańczowy przycisk menu panelu na pasku kart">
 <!ENTITY Ctr_appbuttonc_o	"Pomarańczowy kolor przycisku (domyślny)">
@@ -182,7 +183,7 @@
 <!ENTITY Ctr_extrabar1		"Dodatkowy pasek narzędzi">
 <!ENTITY Ctr_extrabarinfo	"Przełączanie pomiędzy trybami 'karty na górze' a 'karty nie na górze' losowo zmienia układ dodatkowych pasków narzędzi. Cyberfox musi zostać zrestartowany, aby rozwiązać ten problem.">
 
-<!ENTITY Ctr_invicons		"Ikony odwrócone">
+<!ENTITY Ctr_invicons		"Odwrócone kolory ikon">
 <!ENTITY Ctr_menubar		"Pasek menu">
 <!ENTITY Ctr_tabstoolbar	"Pasek kart">
 <!ENTITY Ctr_navbar			"Pasek nawigacji">
@@ -205,10 +206,12 @@
 <!ENTITY Ctr_altmenubarpos	"Alternatywna pozycja (poniżej paska tytułu Cyberfoksa)">
 <!ENTITY Ctr_menubarnofog	"Usuń kolor tła i mgłę (Windows AeroGlass/8)">
 
-<!ENTITY Ctr_aerocolors		"Blue Aero colors for main toolbars and tabs">
+<!ENTITY Ctr_aerocolors		"Niebieskie kolory Aero głównych pasków narzędzi i kart">
 <!ENTITY Ctr_hidenavbar		"Pasek nawigacji: ukryj pasek narzędzi">
 <!ENTITY Ctr_nobookbarbg	"Pasek zakładek: usuń kolor tła">
 <!ENTITY Ctr_nonavbarbg		"Pasek nawigacji: usuń kolor tła">
+<!ENTITY Ctr_nonavbarbg1	"Dotyczy dodatkowych pasków narzędzi tego dodatku oraz innych górnych pasków narzędzi.">
+<!ENTITY Ctr_nonavbarbg2	"Dotyczy wszystkich pasków narzędzi Slim Chrome z dodatku 'The Fox, Only Better'.">
 <!ENTITY Ctr_nonavborder	"Pasek zakładek: dodaj obramowanie na górze paska">
 <!ENTITY Ctr_nonavtbborder	"Górne paski: usuń obramowanie paska">
 <!ENTITY Ctr_hidesbclose	"Paski boczne: ukryj przycisk zamknięcia paska bocznego">

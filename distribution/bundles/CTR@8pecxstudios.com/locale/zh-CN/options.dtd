@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"在工具栏上显示">
 <!ENTITY Ctr_appbutton1wt	"在工具栏上显示 (纯文本)">
 <!ENTITY Ctr_appbutton2		"在标题栏上显示">
+<!ENTITY Ctr_appbutton2h	"在标题栏上显示 (hidden)">
 <!ENTITY Ctr_appbutton2io	"在标题栏上显示 (图标)">
 <!ENTITY Ctr_paneluibtweak	"在标签页栏上显示橙色面板菜单按钮">
 <!ENTITY Ctr_appbuttonc_o	"橙色按钮 (默认)">
@@ -209,6 +210,8 @@
 <!ENTITY Ctr_hidenavbar		"隐藏工具栏">
 <!ENTITY Ctr_nobookbarbg	"书签栏: 移除背景颜色">
 <!ENTITY Ctr_nonavbarbg		"导航栏: 移除背景颜色">
+<!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"书签栏: 添加上边框">
 <!ENTITY Ctr_nonavtbborder	"顶部工具栏: 移除工具栏边框">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

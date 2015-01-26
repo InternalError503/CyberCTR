@@ -64,6 +64,7 @@
 <!ENTITY Ctr_appbutton1		"Кнопка на панелі">
 <!ENTITY Ctr_appbutton1wt	"Кнопка на панелі (тільки текст)">
 <!ENTITY Ctr_appbutton2		"Кнопка на [cyberfox] панелі заголовку">
+<!ENTITY Ctr_appbutton2h	"Кнопка на [cyberfox] панелі заголовку (hidden)">
 <!ENTITY Ctr_appbutton2io	"Кнопка на [cyberfox] панелі заголовку (тільки іконка)">
 <!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Оранжева кнопка меню на панелі вкладок">
@@ -98,7 +99,7 @@
 <!ENTITY Ctr_hide_bf_popup	"Приховати меню історії при натисканні миші">
 <!ENTITY Ctr_bf_space		"Зменшити відстань між кнопками (якщо це можливо)">
 <!ENTITY Ctr_noconicons		"Замінити іконки контекстного меню сторінки написами (назад, вперед, стоп, перезавантажити, сторінка закладок)">
-<!ENTITY Ctr_svgfilters		"SVG colors for default toolbar button icons">
+<!ENTITY Ctr_svgfilters		"SVG кольори для типових іконок кнопок панелі інструментів">
 <!ENTITY Ctr_wincontrols	"Рухоме управління повноекранним режимом">
 <!ENTITY Ctr_emptyfavicon2	"Замінити загальний значок сайту (порожній і пунктирний)">
 <!ENTITY Ctr_mstatusbar		"Рухомий рядок стану">
@@ -205,10 +206,12 @@
 <!ENTITY Ctr_altmenubarpos	"Альтернативна позиція (нижче рядку заголовку Cyberfox)">
 <!ENTITY Ctr_menubarnofog	"Прибрати затуманення/колір тла (Windows AeroGlass/8)">
 
-<!ENTITY Ctr_aerocolors		"Blue Aero colors for main toolbars and tabs">
+<!ENTITY Ctr_aerocolors		"Кольори Blue Aero для основних панелей і вкладок">
 <!ENTITY Ctr_hidenavbar		"Панель навігації: приховати панель">
 <!ENTITY Ctr_nobookbarbg	"Панель закладок: прибрати колір тла">
 <!ENTITY Ctr_nonavbarbg		"Панель навігації: прибрати колір тла">
+<!ENTITY Ctr_nonavbarbg1	"Ця функція на додаткових панелях та інших верхніх панелях пошкоджена іншим додатком.">
+<!ENTITY Ctr_nonavbarbg2	"Всі панелі Slim Chrome додатку 'The Fox, Only Better' пошкоджено.">
 <!ENTITY Ctr_nonavborder	"Панель закладок: додати верхню межу для панелі інструментів">
 <!ENTITY Ctr_nonavtbborder	"Верхні панелі інструментів: прибрати межі панелі">
 <!ENTITY Ctr_hidesbclose	"Бокові панелі: приховати кнопку «Закрити» бокової панелі">
