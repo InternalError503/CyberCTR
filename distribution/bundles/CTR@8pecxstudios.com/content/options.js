@@ -593,6 +593,9 @@ classicthemerestorerjso.ctr = {
 	}
 	
 	this.initprefwindow();
+
+  this.ctrpwStarFeedDelay();
+
 	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
 	CustomizableUI.removeWidgetFromArea("feed-button", CustomizableUI.TYPE_TOOLBAR);
 	this.needsBrowserRestart();
