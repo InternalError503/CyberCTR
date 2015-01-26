@@ -981,7 +981,7 @@ classicthemerestorerjso.ctr = {
 		 var text = input;
 		 		  
 		  if(!IsJsonValid(text)){
-			  alert(stringBundle.GetStringFromName("import.error"));
+			  alert(stringBundle.GetStringFromName("import.errorJSON"));
 			  return false;
 		  }else{
 			return JSON.parse(input);
