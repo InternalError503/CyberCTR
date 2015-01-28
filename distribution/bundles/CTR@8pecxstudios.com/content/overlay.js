@@ -4086,7 +4086,7 @@ try{
 		document.getElementById("appmenu_minimizeMemoryUsage").setAttribute('hidden', true);
     }	
 	
-	//About:con
+	//About:config
 	if (Services.prefs.getBoolPref("browser.menu.aboutconfig")){ 
 			document.getElementById("ctraddon_appmenu_aboutc").removeAttribute('hidden');
 	}else{
@@ -4118,15 +4118,13 @@ window.addEventListener("DOMWindowCreated", function load(event){
 
    AddonManager.getAddonByID('treestyletab@piro.sakura.ne.jp', function(addon) {
 				if(addon && addon.isActive) {
-
-				Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);
-				classicthemerestorerjs.ctr.fixThatTreeStyleBro();
-					//console.log("Compatibility mode (Tree Style Tab)");			
-					}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);
-					//console.log("No compatibility mode (Tree Style Tab)");
-					}
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);
+					classicthemerestorerjs.ctr.fixThatTreeStyleBro();		
+				}else{ 
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);
+				}
 					//If a user disables the AppMenu button then restarts the menu tool-bar disapears, Lets trigger it to be created,
-          //However the user may have to manually toggle the menu-tool-bar to remove the draw delay	from adding it here.
+					//However the user may have to manually toggle the menu-tool-bar to remove the draw delay	from adding it here.
 					if(addon && addon.isActive 
 						&& !treeStyleCompatMode 
 						&& Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton") === "appbutton_off" 
@@ -4150,7 +4148,7 @@ switch (newAppButtonState){
 		case "appbutton_off":
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
 			if (menutoolbarHasAttribute.getAttribute('autohide', true)){
-			if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
+				if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
 			}
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
 			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
@@ -4196,8 +4194,6 @@ switch (newAppButtonState){
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
 			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
 		break;
-
-	
 
 }
    }
@@ -4277,7 +4273,6 @@ switch (appButtonState){
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 
-
 		case "appbutton_v2io2": 
 			menutoolbarHasAttribute.setAttribute('autohide', false);		
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
@@ -4289,8 +4284,6 @@ switch (appButtonState){
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
-
-	
 
 }
 	}
