@@ -1611,6 +1611,7 @@ classicthemerestorerjs.ctr = {
 	// SettingSanity add-on uses 'defaultDrawInTitlebar' pref, that breaks the default
 	// 'drawInTitlebar' provided by Firefox and required by CTR. Basically it does not
 	// switch default pref back when it should. This fixes the problem.
+	// fixed in latest SettingSanity version?
 	var ctrSettingsListener_forSetSan = new PrefListener(
 	  "browser.tabs.",
 	  function(branch, name) {
