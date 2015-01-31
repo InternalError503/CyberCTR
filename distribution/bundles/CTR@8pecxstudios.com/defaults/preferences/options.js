@@ -25,7 +25,9 @@ pref("extensions.classicthemerestorer.appbclmmenus",true);
 pref("extensions.classicthemerestorer.appbuttontxt",'');
 
 pref("extensions.classicthemerestorer.cappbutc1",'#00FF00');
+pref("extensions.classicthemerestorer.cappbutcm",'#00D600');
 pref("extensions.classicthemerestorer.cappbutc2",'#007700');
+pref("extensions.classicthemerestorer.cappbutcpercent", 75);
 
 //General UI
 pref("extensions.classicthemerestorer.smallnavbut",false);

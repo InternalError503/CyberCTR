@@ -476,14 +476,16 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_transp',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_white',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom1',false);
 
 			if (branch.getCharPref("appbuttonc")!="off"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbuttonc"),true);
 			}
 		  break;
 		  
-		  case "cappbutc1": case "cappbutc2":
+		  case "cappbutc1": case "cappbutcm": case "cappbutc2": case "cappbutcpercent":
 			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",true);
+			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom1") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom1",true);
 		  break;
 		  
 		  case "alttbappb":
@@ -2814,6 +2816,8 @@ classicthemerestorerjs.ctr = {
 		case "appbuttonc_custom":
 		
 			removeOldSheet(this.appbutton_color);
+			//Here we are using 2 colors with percentage control			
+			var newColor = this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' '+ this.prefs.getIntPref('cappbutcpercent') +'%';
 			
 			if(enable==true && this.prefs.getCharPref('appbuttonc')=='appbuttonc_custom') {
 			
@@ -2821,13 +2825,13 @@ classicthemerestorerjs.ctr = {
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
 						#ctraddon_appbutton2:not(:hover):not(:active):not([open]){\
-						  background-image: linear-gradient('+this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' 95%) !important;\
+						  background-image: linear-gradient('+newColor+') !important;\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;\
 						}\
 						#TabsToolbar #ctraddon_appbutton{\
-						  background: linear-gradient('+this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' 95%) !important;\
+						  background: linear-gradient('+newColor+') !important;\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;\
@@ -2836,7 +2840,7 @@ classicthemerestorerjs.ctr = {
 						#ctraddon_appbutton2:hover:not(:active):not([open]){\
 						  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),\
 											radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),\
-											linear-gradient('+this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' 95%) !important;\
+											linear-gradient('+newColor+') !important;\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(210,48%,90%,.4) inset,\
@@ -2846,7 +2850,78 @@ classicthemerestorerjs.ctr = {
 						#TabsToolbar #ctraddon_appbutton[open],\
 						#ctraddon_appbutton2:hover:active,\
 						#ctraddon_appbutton2[open] {\
-						  background-image: linear-gradient('+this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' 95%) !important;\
+						  background-image: linear-gradient('+newColor+') !important;\
+						  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,\
+									  0 1px 1px rgba(0,0,0,.2) inset !important;\
+						}\
+						#main-window[privatebrowsingmode=temporary] #TabsToolbar #ctraddon_appbutton,\
+						#main-window[privatebrowsingmode=temporary] #ctraddon_appbutton2{\
+						  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;\
+						  border-color: rgba(43,8,65,.9) !important;\
+						}\
+						#main-window[privatebrowsingmode=temporary] #TabsToolbar #ctraddon_appbutton:hover:not(:active):not([open]),\
+						#main-window[privatebrowsingmode=temporary] #ctraddon_appbutton2:hover:not(:active):not([open]){\
+						  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),\
+											radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),\
+											linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;\
+						  border-color: rgba(43,8,65,.9) !important;\
+						  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,\
+									  0 0 2px 1px rgba(240,193,255,.7) inset,\
+									  0 -1px 0 rgba(240,193,255,.5) inset !important;\
+						}\
+						#main-window[privatebrowsingmode=temporary] #TabsToolbar #ctraddon_appbutton:hover:active,\
+						#main-window[privatebrowsingmode=temporary] #TabsToolbar #ctraddon_appbutton[open],\
+						#main-window[privatebrowsingmode=temporary] #ctraddon_appbutton2:hover:active,\
+						#main-window[privatebrowsingmode=temporary]  #ctraddon_appbutton2[open] {\
+						  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;\
+						}\
+					}\
+				'), null, null);
+			
+				applyNewSheet(this.appbutton_color);
+			
+			}
+		
+		break;
+		
+		case "appbuttonc_custom1":
+		
+			removeOldSheet(this.appbutton_color);
+			//Here we are using 3 colors with percentage control
+			var newColor = this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutcm')+', '+this.prefs.getCharPref('cappbutc2')+' '+ this.prefs.getIntPref('cappbutcpercent') +'%';
+			
+			if(enable==true && this.prefs.getCharPref('appbuttonc')=='appbuttonc_custom1') {
+			
+				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
+					@-moz-document url(chrome://browser/content/browser.xul) {\
+						#ctraddon_appbutton2:not(:hover):not(:active):not([open]){\
+						  background-image: linear-gradient('+newColor+') !important;\
+						  border-color: hsla(210,59%,13%,.9) !important;\
+						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
+									  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;\
+						}\
+						#TabsToolbar #ctraddon_appbutton{\
+						  background: linear-gradient('+newColor+') !important;\
+						  border-color: hsla(210,59%,13%,.9) !important;\
+						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
+									  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;\
+						}\
+						#TabsToolbar #ctraddon_appbutton:hover:not(:active):not([open]),\
+						#ctraddon_appbutton2:hover:not(:active):not([open]){\
+						  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),\
+											radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),\
+											linear-gradient('+newColor+') !important;\
+						  border-color: hsla(210,59%,13%,.9) !important;\
+						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
+									  0 0 2px 1px hsla(210,48%,90%,.4) inset,\
+									  0 -1px 0 hsla(210,48%,90%,.2) inset !important;\
+						}\
+						#TabsToolbar #ctraddon_appbutton:hover:active,\
+						#TabsToolbar #ctraddon_appbutton[open],\
+						#ctraddon_appbutton2:hover:active,\
+						#ctraddon_appbutton2[open] {\
+						  background-image: linear-gradient('+newColor+') !important;\
 						  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,\
 									  0 1px 1px rgba(0,0,0,.2) inset !important;\
 						}\

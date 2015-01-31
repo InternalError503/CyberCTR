@@ -661,14 +661,31 @@ classicthemerestorerjso.ctr = {
     if(which=="appbuttonc_custom") {
 	  document.getElementById('ctraddon_pw_cappbutc1').disabled = false;
 	  document.getElementById('ctraddon_pw_cappbutc1cp').disabled = false;
+	  document.getElementById('ctraddon_pw_cappbutcm').hidden = true;
+	  document.getElementById('ctraddon_pw_cappbutcmcp').hidden = true;	  
 	  document.getElementById('ctraddon_pw_cappbutc2').disabled = false;
-	  document.getElementById('ctraddon_pw_cappbutc2cp').disabled = false;
-	} else {
-	  document.getElementById('ctraddon_pw_cappbutc1').disabled = true;
-	  document.getElementById('ctraddon_pw_cappbutc1cp').disabled = true;
-	  document.getElementById('ctraddon_pw_cappbutc2').disabled = true;
-	  document.getElementById('ctraddon_pw_cappbutc2cp').disabled = true;
+	  document.getElementById('ctraddon_pw_cappbutc2cp').disabled = false;  
 	}
+	if(which=="appbuttonc_custom1") {
+			document.getElementById('ctraddon_pw_cappbutc1').disabled = false;
+			document.getElementById('ctraddon_pw_cappbutc1cp').disabled = false;		
+			document.getElementById('ctraddon_pw_cappbutcm').hidden = false;
+			document.getElementById('ctraddon_pw_cappbutcmcp').hidden = false;
+			document.getElementById('ctraddon_pw_cappbutc2').disabled = false;
+			document.getElementById('ctraddon_pw_cappbutc2cp').disabled = false;	  			
+	}
+		
+		if (which=="appbuttonc_custom" || which=="appbuttonc_custom1"){
+			document.getElementById('ctraddon_cappbutcPercentnp').disabled = false;	
+		}else{
+			document.getElementById('ctraddon_cappbutcPercentnp').disabled = true;	
+			document.getElementById('ctraddon_pw_cappbutc1').disabled = true;
+			document.getElementById('ctraddon_pw_cappbutc1cp').disabled = true; 		
+			document.getElementById('ctraddon_pw_cappbutcm').hidden = true;
+			document.getElementById('ctraddon_pw_cappbutcmcp').hidden = true;
+			document.getElementById('ctraddon_pw_cappbutc2').disabled = true;			
+			document.getElementById('ctraddon_pw_cappbutc2cp').disabled = true;			
+		}
   
   },
   
@@ -913,7 +930,9 @@ classicthemerestorerjso.ctr = {
 	"ctabheightcb="+this.prefs.getBoolPref("ctabheightcb"),
 	"tabc_act_tb="+this.prefs.getBoolPref("tabc_act_tb"),
 	"cappbutc1:"+this.prefs.getCharPref("cappbutc1"),
+	"cappbutcm:"+this.prefs.getCharPref("cappbutcm"),	
 	"cappbutc2:"+this.prefs.getCharPref("cappbutc2"),
+	"cappbutcpercent:"+this.prefs.getCharPref("cappbutcpercent"),	
 	"svgfilters="+this.prefs.getBoolPref("svgfilters"),
 	"aerocolors="+this.prefs.getBoolPref("aerocolors"),
 	"addonbarfs="+this.prefs.getBoolPref("addonbarfs"),

@@ -57,7 +57,9 @@
 		<preference id="ctraddon_appbuttontxt"	name="extensions.classicthemerestorer.appbuttontxt" type="string"	instantApply="true"/>
 		
 		<preference id="ctraddon_cappbutc1"		name="extensions.classicthemerestorer.cappbutc1"	type="string"	instantApply="true"/>
+		<preference id="ctraddon_cappbutcm"		name="extensions.classicthemerestorer.cappbutcm"	type="string"	instantApply="true"/>
 		<preference id="ctraddon_cappbutc2"		name="extensions.classicthemerestorer.cappbutc2"	type="string"	instantApply="true"/>
+		<preference id="ctraddon_cappbutcPercent"		name="extensions.classicthemerestorer.cappbutcpercent"	type="int"	instantApply="true"/>
 
 		<preference id="ctraddon_nbisizedelay"	name="extensions.classicthemerestorer.nbisizedelay" type="int"		instantApply="true"/>
 		<preference id="ctraddon_smallnavbut"	name="extensions.classicthemerestorer.smallnavbut"	type="bool"		instantApply="true"/>
@@ -632,14 +634,21 @@
 						<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_transp')"/>
 						<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_white')"/>				
 				        <menuitem value="appbuttonc_custom"	 label="&Ctr_appbuttonc_cu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom')"/>
+						<menuitem value="appbuttonc_custom1"	 label="&Ctr_appbuttonc_cu; 3 colors" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom1')"/>
 			</menupopup>
 		</menulist>
 		
 		<hbox>
-			<textbox preference="ctraddon_cappbutc1" id="ctraddon_pw_cappbutc1"/>
+			<textbox preference="ctraddon_cappbutc1" id="ctraddon_pw_cappbutc1" width="70px"/>
 			<colorpicker preference="ctraddon_cappbutc1" type="button" id="ctraddon_pw_cappbutc1cp"/>
-			<textbox preference="ctraddon_cappbutc2" id="ctraddon_pw_cappbutc2"/>
+			<textbox preference="ctraddon_cappbutcm" id="ctraddon_pw_cappbutcm" width="70px" hidden="true"/>
+			<colorpicker preference="ctraddon_cappbutcm" type="button" id="ctraddon_pw_cappbutcmcp"  hidden="true"/>			
+			<textbox preference="ctraddon_cappbutc2" id="ctraddon_pw_cappbutc2" width="70px"/>
 			<colorpicker preference="ctraddon_cappbutc2" type="button" id="ctraddon_pw_cappbutc2cp"/>
+				<hbox>
+					<textbox id="ctraddon_cappbutcPercentnp" size="3" maxlength="3" max="200" preference="ctraddon_cappbutcPercent" type="number"/>
+					<label value="%"/>
+				</hbox>			
 		</hbox>
 		
 		<description>&Ctr_appbuttonI2;</description>
