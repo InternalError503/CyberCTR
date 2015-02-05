@@ -1,4 +1,8 @@
-<!ENTITY Ctr_title			"Настройка Cyberfox">
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  
+<!ENTITY Ctr_title			"Настройка &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"Панель дополнений">
 <!ENTITY Ctr_statusbar		"Статус панель">
@@ -9,7 +13,7 @@
 <!ENTITY Ctr_navthrobber	"Индикатор активности">
 <!ENTITY Ctr_sidebarbutton	"Боковая панель">
 <!ENTITY Ctr_windowcontrols	"Свернуть/развернуть/закрыть (В полноэкранном режиме)">
-<!ENTITY Ctr_rr				"Перезапустите Cyberfox!">
+<!ENTITY Ctr_rr				"Перезапустите &brandShortName;!">
 
 <!ENTITY Ctr_cuibuttons		"Кнопки:">
 <!ENTITY Ctr_cuibutnormal	"Обычные">
@@ -74,7 +78,7 @@
 <!ENTITY Ctr_appbuttonc_a	"Синяя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Черная кнопка (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозрачная кнопка">
-<!ENTITY Ctr_appbuttonc_d	"Cyberfox (по умолчанию)">
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_r	"Красная кнопка">
 <!ENTITY Ctr_appbuttonc_s	"Цвет кнопки Salmon">
 <!ENTITY Ctr_appbuttonc_g	"Зеленая кнопка">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
 
-<!ENTITY Ctr_fxmockup		"Другие настройки для Cyberfox">
+<!ENTITY Ctr_fxmockup		"Другие настройки для &brandShortName;">
 <!ENTITY Ctr_tabmokcolor	"Белый цвет для кнопок вкладок (закрыть, новая, группы, список всех)">
 <!ENTITY Ctr_tabmokcolor2	"Белый цвет и темная тень для текста на неактивной вкладке">
 <!ENTITY Ctr_tabmokcolor3	"Белый цвет для разделителей на панели вкладок">
@@ -185,7 +189,7 @@
 <!ENTITY Ctr_extrabar		"Дополнительные панели инструментов">
 <!ENTITY Ctr_extrabar0		"Дополнительная панель(и)">
 <!ENTITY Ctr_extrabar1		"Дополнительная панель">
-<!ENTITY Ctr_extrabarinfo	"Переключение между режимами 'вкладки вверху' and 'вкладки не вверху' в случайном порядке изменяет расположение панелей инструментов. Для решения проблемы требуется перезапуск Cyberfox.">
+<!ENTITY Ctr_extrabarinfo	"Переключение между режимами 'вкладки вверху' and 'вкладки не вверху' в случайном порядке изменяет расположение панелей инструментов. Для решения проблемы требуется перезапуск &brandShortName;.">
 
 <!ENTITY Ctr_invicons		"Значки перекрашены наоборот ">
 <!ENTITY Ctr_menubar		"Панель меню">
@@ -208,7 +212,7 @@
 <!ENTITY Ctr_alttabstb2		"В развернутом режиме (вкладки сверху)">
 
 <!ENTITY Ctr_altmenubar		"Добавить цвет фона в строку заголовка операционной системы">
-<!ENTITY Ctr_altmenubarpos	"Изменить расположение (ниже строки заголовка Cyberfox)">
+<!ENTITY Ctr_altmenubarpos	"Изменить расположение (ниже строки заголовка &brandShortName;)">
 <!ENTITY Ctr_menubarnofog	"Удалить туман из фона меню (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Цвета Blue Aero для основных панелей и вкладок">
@@ -259,7 +263,7 @@
 
 <!ENTITY Ctr_special_font	"Настройки цвета фона — только для темы по умолчанию!">
 <!ENTITY Ctr_special_info	"Некоторые варианты могут предложить визуальные изменения только в определенных случаях!">
-<!ENTITY Ctr_special_info2	"Настройки сделаны для темы Cyberfox по умолчанию и не могут работать со всеми сторонними темами!">
+<!ENTITY Ctr_special_info2	"Настройки сделаны для темы &brandShortName; по умолчанию и не могут работать со всеми сторонними темами!">
 <!ENTITY Ctr_support		"Форум поддержки">
 <!ENTITY Ctr_newversion		"Новая версия?">
 

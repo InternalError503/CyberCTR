@@ -1,4 +1,8 @@
-<!ENTITY Ctr_title			"Customize Cyberfox">
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  
+<!ENTITY Ctr_title			"Customize &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"Lajsta přidatkow">
 <!ENTITY Ctr_statusbar		"Statusowa lajsta">
@@ -9,7 +13,7 @@
 <!ENTITY Ctr_navthrobber	"Wozjewjenje aktiwity">
 <!ENTITY Ctr_sidebarbutton	"Bočnica">
 <!ENTITY Ctr_windowcontrols	"Min./maks./začinić (połna wobrazowka)">
-<!ENTITY Ctr_rr				"Startujće Cyberfox znowa!">
+<!ENTITY Ctr_rr				"Startujće &brandShortName; znowa!">
 
 <!ENTITY Ctr_cuibuttons		"Tłóčatka">
 <!ENTITY Ctr_cuibutnormal	"Normalny">
@@ -37,7 +41,7 @@
 <!ENTITY Ctr_tabsontop3		"Rajtarki nic horjeka (v2) --- stajće [tabsontop=false]">
 <!ENTITY Ctr_tabsontopW1	"v2 je jenož za někotre přidatki a dospołne drasty!">
 <!ENTITY Ctr_tabsontopI1	"Přidawa atribut [tabsontop=true/false] na">
-<!ENTITY Ctr_tabsintitlebar	"Titulna lajsta Cyberfox (about:config)">
+<!ENTITY Ctr_tabsintitlebar	"Titulna lajsta &brandShortName; (about:config)">
 <!ENTITY Ctr_tabwidthdef	"(standard)">
 <!ENTITY Ctr_tabwidthcla	"(klasiski)">
 <!ENTITY Ctr_tabminheight	"Wysokosć:">
@@ -66,11 +70,11 @@
 <!ENTITY Ctr_appbutton0		"Tłóčatko znjemóžnjeny">
 <!ENTITY Ctr_appbutton1		"Tłóčatko na symbolowej lajsće">
 <!ENTITY Ctr_appbutton1wt	"Tłóčatko na symbolowej lajsće (jenož tekst)">
-<!ENTITY Ctr_appbutton2		"Tłóčatko na titulnej lajsće [Cyberfox]">
-<!ENTITY Ctr_appbutton2h	"Tłóčatko na titulnej lajsće [Cyberfox] (schowane)">
-<!ENTITY Ctr_appbutton2io	"Tłóčatko na titulnej lajsće [Cyberfox] (jenož symbol)">
+<!ENTITY Ctr_appbutton2		"Tłóčatko na titulnej lajsće [&brandShortName;]">
+<!ENTITY Ctr_appbutton2h	"Tłóčatko na titulnej lajsće [&brandShortName;] (schowane)">
+<!ENTITY Ctr_appbutton2io	"Tłóčatko na titulnej lajsće [&brandShortName;] (jenož symbol)">
 <!ENTITY Ctr_paneluibtweak	"Oranžowe menijowe tłóčatko na rajtarkowej lajsće">
-<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Tłóčatkowa barba: Oranžowy (standard)">
 <!ENTITY Ctr_appbuttonc_a	"Tłóčatkowa barba: Módry (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Tłóčatkowa barba: Čorny (Nightly)">
@@ -83,7 +87,7 @@
 <!ENTITY Ctr_appbuttonc_wh	"Tłóčatkowa barba: Běły">
 <!ENTITY Ctr_appbuttonc_cu	"Swójska tłóčatkowa barba">
 <!ENTITY Ctr_appbuttonI1	"Nowy start doporučeny">
-<!ENTITY Ctr_appbuttonI1e	"Njeje widźomny w titulnej lajsće Windows, jenož w titulnej lajsće Cyberfox!">
+<!ENTITY Ctr_appbuttonI1e	"Njeje widźomny w titulnej lajsće Windows, jenož w titulnej lajsće &brandShortName;!">
 <!ENTITY Ctr_appbuttonI2	"Tłóčatkowe barby su jenož widźomne na titulnej lajsće a rajtarkowej lajsće!">
 <!ENTITY Ctr_alttbappb		"Alternatiwne symbole">
 <!ENTITY Ctr_appbutmhi		"Wyša pozicija (jeli je na rajtarkowej lajsće)">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_pmhidelabels	"Pólny meni: Tekst tłóčatkow schować">
 <!ENTITY Ctr_menupopupscr	"Wuskakowace menije: suwanske lajsty město suwanskich šipkow pokazać">
 
-<!ENTITY Ctr_fxmockup		"Naćisk Cyberfox">
+<!ENTITY Ctr_fxmockup		"Naćisk &brandShortName;">
 <!ENTITY Ctr_tabmokcolor	"Běła barba za rajtarkowe tłóčatka (začinić, nowy, skupiny, wšě nalistować)">
 <!ENTITY Ctr_tabmokcolor2	"Běła barba a ćmowy sćin za tekst na njeaktiwnych rajtarkach">
 <!ENTITY Ctr_tabmokcolor3	"Běła barba za rajtarkowe dźělatka">
@@ -185,7 +189,7 @@
 <!ENTITY Ctr_extrabar		"Přidatne symbolowe lajsty">
 <!ENTITY Ctr_extrabar0		"Přidatne symbolowe lajsty">
 <!ENTITY Ctr_extrabar1		"Přidatna symbolowa lajsta">
-<!ENTITY Ctr_extrabarinfo	"Přešaltowanje mjez 'rajtarki horjeka' a 'rajtarki deleka' měnja připadnje porjad přidatnych symbolowych lajstow. Firefox dyrbi so znowa startować, zo by so tutón problem rozrisał.">
+<!ENTITY Ctr_extrabarinfo	"Přešaltowanje mjez 'rajtarki horjeka' a 'rajtarki deleka' měnja připadnje porjad přidatnych symbolowych lajstow. &brandShortName; dyrbi so znowa startować, zo by so tutón problem rozrisał.">
 
 <!ENTITY Ctr_invicons		"Inwertowane symbole">
 <!ENTITY Ctr_menubar		"Menijowa lajsta">
@@ -208,7 +212,7 @@
 <!ENTITY Ctr_alttabstb2		"W maksiměrowanym napohledźe (rajtarki horjeka)">
 
 <!ENTITY Ctr_altmenubar		"Pozadkowu barbu přidać (titulna lajsta dźěłoweho systema)">
-<!ENTITY Ctr_altmenubarpos	"Alternatiwna pozicijia (pod titulnej lajstu Cyberfox)">
+<!ENTITY Ctr_altmenubarpos	"Alternatiwna pozicijia (pod titulnej lajstu &brandShortName;)">
 <!ENTITY Ctr_menubarnofog	"Pozadkowu barbu/młu wotstronić (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Barby 'Blue Aero' za hłowne lajsty a rajtarki">

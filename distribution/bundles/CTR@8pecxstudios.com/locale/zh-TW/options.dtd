@@ -1,4 +1,8 @@
-<!ENTITY Ctr_title			"Customize Cyberfox">
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  
+<!ENTITY Ctr_title			"Customize &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"附加元件列">
 <!ENTITY Ctr_statusbar		"狀態列">
@@ -9,7 +13,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"側邊欄">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"需重啟 Cyberfox!">
+<!ENTITY Ctr_rr				"需重啟 &brandShortName;!">
 
 <!ENTITY Ctr_cuibuttons		"按鈕">
 <!ENTITY Ctr_cuibutnormal	"標準圖示">
@@ -64,7 +68,7 @@
 
 <!ENTITY Ctr_appbutton		"應用程式按鈕 (火狐橙按鈕)">
 <!ENTITY Ctr_appbutton0		"不顯示">
-<!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
 <!ENTITY Ctr_appbutton1		"顯示在工具列">
 <!ENTITY Ctr_appbutton1wt	"顯示在工具列 (僅文字)">
 <!ENTITY Ctr_appbutton2		"顯示在標題列">
@@ -132,7 +136,7 @@
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
 <!ENTITY Ctr_pmhidelabels	"面板選單: 隱藏按鈕文字標籤">
 <!ENTITY Ctr_menupopupscr	"彈出式選單: 用捲軸取代捲動箭頭">
-<!ENTITY Ctr_fxmockup		"Cyberfox 樣式">
+<!ENTITY Ctr_fxmockup		"&brandShortName; 樣式">
 <!ENTITY Ctr_tabmokcolor	"白色分頁按鈕 (關閉、新增、分頁群組、列出所有分頁)">
 <!ENTITY Ctr_tabmokcolor2	"非目前的分頁，其字型使用白色文字，並加上文字陰影">
 <!ENTITY Ctr_tabmokcolor3	"白色分頁分隔線">
@@ -184,7 +188,7 @@
 <!ENTITY Ctr_extrabar		"新增工具列">
 <!ENTITY Ctr_extrabar0		"新增工具列">
 <!ENTITY Ctr_extrabar1		"新增工具列">
-<!ENTITY Ctr_extrabarinfo	"在「分頁列置頂」、「分頁列不置頂」兩模式間切換，會隨機排列「新增工具列」的順序。重啟 Cyberfox 方可解決這問題。">
+<!ENTITY Ctr_extrabarinfo	"在「分頁列置頂」、「分頁列不置頂」兩模式間切換，會隨機排列「新增工具列」的順序。重啟 &brandShortName; 方可解決這問題。">
 
 <!ENTITY Ctr_invicons		"圖示反相">
 <!ENTITY Ctr_menubar		"選單列">
@@ -232,10 +236,10 @@
 <!ENTITY Ctr_tabanimation	"分頁關閉/開啟的動畫 (about:config)">
 <!ENTITY Ctr_dlanimation	"「下載通知」 動畫 (about:config)">
 
-<!ENTITY Ctr_toolsitem		"工具選單中顯示 Customize Cyberfox 項目">
-<!ENTITY Ctr_appmenuitem	"火狐橙選單中顯示 Customize Cyberfox 項目">
-<!ENTITY Ctr_contextitem	"工具列右鍵選單中顯示 Customize Cyberfox 項目">
-<!ENTITY Ctr_puictrbutton	"面板選單中顯示 Customize Cyberfox 按鈕">
+<!ENTITY Ctr_toolsitem		"工具選單中顯示 Customize &brandShortName; 項目">
+<!ENTITY Ctr_appmenuitem	"火狐橙選單中顯示 Customize &brandShortName; 項目">
+<!ENTITY Ctr_contextitem	"工具列右鍵選單中顯示 Customize &brandShortName; 項目">
+<!ENTITY Ctr_puictrbutton	"面板選單中顯示 Customize &brandShortName; 按鈕">
 
 <!ENTITY Ctr_otherctroptns	"其他設定">
 <!ENTITY Ctr_cuibotbuttons	"介面自訂模式中，更豐富的按鈕自訂選項">
@@ -258,7 +262,7 @@
 
 <!ENTITY Ctr_special_font	"背景色彩設定僅生效於預設佈景主題!">
 <!ENTITY Ctr_special_info	"部份選項僅在某些情況下提供視覺上的變化!">
-<!ENTITY Ctr_special_info2	"設定僅在 Cyberfox 的預設佈景主題下測試，因此可能不生效於第三方佈景主題!">
+<!ENTITY Ctr_special_info2	"設定僅在 &brandShortName; 的預設佈景主題下測試，因此可能不生效於第三方佈景主題!">
 <!ENTITY Ctr_support		"技術支援討論區">
 <!ENTITY Ctr_newversion		"有新版本?">
 

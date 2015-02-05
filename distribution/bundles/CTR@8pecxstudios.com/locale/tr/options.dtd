@@ -1,4 +1,8 @@
-<!ENTITY Ctr_title			"Cyberfox'u Özelleştir">
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  
+<!ENTITY Ctr_title			"&brandShortName;'u Özelleştir">
 
 <!ENTITY Ctr_addonbar		"Eklenti Çubuğu">
 <!ENTITY Ctr_statusbar		"Durum Çubuğu">
@@ -37,7 +41,7 @@
 <!ENTITY Ctr_tabsontop3		"Sekmeler Tepede Değil - ayarla [tabsontop=false]">
 <!ENTITY Ctr_tabsontopW1	"v2 sadece bazı eklentiler ve tam temalar içindir!">
 <!ENTITY Ctr_tabsontopI1	"Öznitelik Ekler [tabsontop=true/false] to">
-<!ENTITY Ctr_tabsintitlebar	"Cyberfox başlık çubuğu (about:config)">
+<!ENTITY Ctr_tabsintitlebar	"&brandShortName; başlık çubuğu (about:config)">
 <!ENTITY Ctr_tabwidthdef	"(varsayılan)">
 <!ENTITY Ctr_tabwidthcla	"(klasik)">
 <!ENTITY Ctr_tabminheight	"Yükseklik:">
@@ -62,14 +66,14 @@
 <!ENTITY Ctr_closeonleft	"Sekme üstünde alternatif pozisyon">
 <!ENTITY Ctr_close_wwltab	"Son görülebilir sekmeyle sencereyi kapat (about:config)">
 
-<!ENTITY Ctr_appbutton		"Cyberfox Butonu">
+<!ENTITY Ctr_appbutton		"&brandShortName; Butonu">
 <!ENTITY Ctr_appbutton0		"Buton devre-dışı">
 <!ENTITY Ctr_appbutton1		"Araç çubuğunda buton">
 <!ENTITY Ctr_appbutton1wt	"Araç çubuğunda buton (sadece yazı)">
-<!ENTITY Ctr_appbutton2		"[Cyberfox] başlığında buton">
-<!ENTITY Ctr_appbutton2h	"Button on [Cyberfox] titlebar (hidden)">
-<!ENTITY Ctr_appbutton2io	"[Cyberfox] başlığında buton (sadece ikon)">
-<!ENTITY Ctr_appbuttonc_d	"Cyberfox buton rengi (varsayılan)">
+<!ENTITY Ctr_appbutton2		"[&brandShortName;] başlığında buton">
+<!ENTITY Ctr_appbutton2h	"Button on [&brandShortName;] titlebar (hidden)">
+<!ENTITY Ctr_appbutton2io	"[&brandShortName;] başlığında buton (sadece ikon)">
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; buton rengi (varsayılan)">
 <!ENTITY Ctr_paneluibtweak	"Sekme çubuğunda turuncu panel menü butonu">
 <!ENTITY Ctr_appbuttonc_o	"Turuncu renk butonu">
 <!ENTITY Ctr_appbuttonc_a	"Mavi renk butonu (Aurora)">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_pmhidelabels	"Panel menu uyarısı: buton etikeitini gizle">
 <!ENTITY Ctr_menupopupscr	"Menu uyarısı: kaydırma okları yerine kaydırma çubuklarını göster">
 
-<!ENTITY Ctr_fxmockup		"Cyberfox Taklit Modeli">
+<!ENTITY Ctr_fxmockup		"&brandShortName; Taklit Modeli">
 <!ENTITY Ctr_tabmokcolor	"Sekme butonları için beyaz renk (kapat, yeni, gruplar, tümünü listele)">
 <!ENTITY Ctr_tabmokcolor2	"Yazılar ve aktif olmayan sekmeler için beyaz renk ve karanlık gölge">
 <!ENTITY Ctr_tabmokcolor3	"Sekme ayırıcıları için Beyaz renk kullan">
@@ -185,7 +189,7 @@
 <!ENTITY Ctr_extrabar		"Ek Araç Çubuğu">
 <!ENTITY Ctr_extrabar0		"Ek Araç Çubuk(ları)">
 <!ENTITY Ctr_extrabar1		"Ek Araç Çubuğu">
-<!ENTITY Ctr_extrabarinfo	"'Sekmeler yukarıda' ve 'Sekmeler yukarıda olmadığı' modlar arası değişmek, bazen araç çubuklarını bozabilir. Cyberfox bu sorunu çözmek için yeniden başlatılması gerekir.">
+<!ENTITY Ctr_extrabarinfo	"'Sekmeler yukarıda' ve 'Sekmeler yukarıda olmadığı' modlar arası değişmek, bazen araç çubuklarını bozabilir. &brandShortName; bu sorunu çözmek için yeniden başlatılması gerekir.">
 
 <!ENTITY Ctr_invicons		"Ters çevrilmiş simgeler">
 <!ENTITY Ctr_menubar		"Menu çubuğu">
@@ -208,7 +212,7 @@
 <!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"Arkaplan rengi ekle (OS başlıkçubuğunda)">
-<!ENTITY Ctr_altmenubarpos	"Alternatif pozisyon (Cyberfox başlık çubuğunda altında)">
+<!ENTITY Ctr_altmenubarpos	"Alternatif pozisyon (&brandShortName; başlık çubuğunda altında)">
 <!ENTITY Ctr_menubarnofog	"Arkaplan bulanıklığı/rengi kaldır (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_aerocolors		"Blue Aero colors for toolbars (and tabs)">
@@ -259,7 +263,7 @@
 
 <!ENTITY Ctr_special_font	"Arka plan renk ayarları varsayılan tema içindir!">
 <!ENTITY Ctr_special_info	"Bazı seçenekler, yalnızca belirli durumlarda görsel değişiklikler yapabilir!">
-<!ENTITY Ctr_special_info2	"Ayarlar Cyberfox varsayılan teması için yapılmıştır ve diğer üçüncü parti temalar ile çalışmayabilir!">
+<!ENTITY Ctr_special_info2	"Ayarlar &brandShortName; varsayılan teması için yapılmıştır ve diğer üçüncü parti temalar ile çalışmayabilir!">
 <!ENTITY Ctr_support		"Destek Forumu">
 <!ENTITY Ctr_newversion		"Yeni versiyon?">
 

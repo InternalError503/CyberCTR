@@ -1,4 +1,8 @@
-<!ENTITY Ctr_title			"Customize Cyberfox">
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  
+<!ENTITY Ctr_title			"Customize &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"Tilføjelseslinje">
 <!ENTITY Ctr_statusbar		"Statuslinje">
@@ -37,7 +41,7 @@
 <!ENTITY Ctr_tabsontop3		"Faneblade skal ikke være øverst (v2) --- [tabsontop=false] attribut">
 <!ENTITY Ctr_tabsontopW1	"v2 er kun til nogle tilføjelser og komplette temaer!">
 <!ENTITY Ctr_tabsontopI1	"Attributten [tabsontop=true/false] bliver tilføjet">
-<!ENTITY Ctr_tabsintitlebar	"Cyberfox i titellinjen (about:config)">
+<!ENTITY Ctr_tabsintitlebar	"&brandShortName; i titellinjen (about:config)">
 <!ENTITY Ctr_tabwidthdef	"(standard)">
 <!ENTITY Ctr_tabwidthcla	"(klassisk)">
 <!ENTITY Ctr_tabminheight	"Højde:">
@@ -62,14 +66,14 @@
 <!ENTITY Ctr_closeonleft	"Alternativ placering på faneblad">
 <!ENTITY Ctr_close_wwltab	"Luk vindue med det sidste synlige faneblad (about:config)">
 
-<!ENTITY Ctr_appbutton		"Firefox-menuknap">
+<!ENTITY Ctr_appbutton		"&brandShortName;-menuknap">
 <!ENTITY Ctr_appbutton0		"Deaktiver knap">
 <!ENTITY Ctr_appbutton1		"Knap på værktøjslinje">
 <!ENTITY Ctr_appbutton1wt	"Knap på værktøjslinje (kun tekst)">
-<!ENTITY Ctr_appbutton2		"Knap på [Cyberfox] titellinje">
-<!ENTITY Ctr_appbutton2h	"Knap på [Cyberfox] titellinje (skjul)">
-<!ENTITY Ctr_appbutton2io	"Knap på [Cyberfox] titellinje (kun ikon)">
-<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
+<!ENTITY Ctr_appbutton2		"Knap på [&brandShortName;] titellinje">
+<!ENTITY Ctr_appbutton2h	"Knap på [&brandShortName;] titellinje (skjul)">
+<!ENTITY Ctr_appbutton2io	"Knap på [&brandShortName;] titellinje (kun ikon)">
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Orange panelmenu knap på fanebladslinjen">
 <!ENTITY Ctr_appbuttonc_o	"Orange knap (standard)">
 <!ENTITY Ctr_appbuttonc_a	"Blå knap (Aurora)">
@@ -83,7 +87,7 @@
 <!ENTITY Ctr_appbuttonc_wh	"Hvid knap">
 <!ENTITY Ctr_appbuttonc_cu	"Tilpas knap">
 <!ENTITY Ctr_appbuttonI1	"Genstart anbefales">
-<!ENTITY Ctr_appbuttonI1e	"Ikke synlig i Windows OS titellinjen, kun i Cyberfox titellinjen!">
+<!ENTITY Ctr_appbuttonI1e	"Ikke synlig i Windows OS titellinjen, kun i &brandShortName; titellinjen!">
 <!ENTITY Ctr_appbuttonI2	"Farverne på knapperne er kun synlige i titellinjen og fanebladslinjen!">
 <!ENTITY Ctr_alttbappb		"Alternative ikoner uden rullemenu-pil">
 <!ENTITY Ctr_appbutmhi		"Højere placering (hvis på fanebladslinje)">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_pmhidelabels	"Panelmenu popup: skjul mærkater på knapper">
 <!ENTITY Ctr_menupopupscr	"Menupopups: vis rullepaneler i stedet for rullepile">
 
-<!ENTITY Ctr_fxmockup		"Cyberfox model">
+<!ENTITY Ctr_fxmockup		"&brandShortName; model">
 <!ENTITY Ctr_tabmokcolor	"Hvid farve til fanebladsknapper (luk, nyt, grupper, list alle)">
 <!ENTITY Ctr_tabmokcolor2	"Hvid farve og sort skygge til tekst på ikke-aktive faneblade">
 <!ENTITY Ctr_tabmokcolor3	"Hvid farve til fanebladesseparatorer">
@@ -185,7 +189,7 @@
 <!ENTITY Ctr_extrabar		"Yderligere værktøjslinjer">
 <!ENTITY Ctr_extrabar0		"Yderligere værktøjslinje(r)">
 <!ENTITY Ctr_extrabar1		"Yderligere værktøjslinje">
-<!ENTITY Ctr_extrabarinfo	"Skifte mellem 'faneblade øverst' og 'faneblade skal ikke være øverst' ændre tilfældigt på rækkefølgen af yderligere værktøjslinjer. Cyberfox skal genstartes for at løse dette problem.">
+<!ENTITY Ctr_extrabarinfo	"Skifte mellem 'faneblade øverst' og 'faneblade skal ikke være øverst' ændre tilfældigt på rækkefølgen af yderligere værktøjslinjer. &brandShortName; skal genstartes for at løse dette problem.">
 
 <!ENTITY Ctr_invicons		"Omvendt farvede ikoner">
 <!ENTITY Ctr_menubar		"Menulinje">
@@ -208,7 +212,7 @@
 <!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
 
 <!ENTITY Ctr_altmenubar		"Tilføj baggrundsfarve (OS titellinje)">
-<!ENTITY Ctr_altmenubarpos	"Alternativ placering (under Firefox titellinje)">
+<!ENTITY Ctr_altmenubarpos	"Alternativ placering (under &brandShortName; titellinje)">
 <!ENTITY Ctr_menubarnofog	"Fjern baggrundsfarve/tåge (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_aerocolors		"Blå Aero farver til værktøjslinjer (og faneblade)">
@@ -259,7 +263,7 @@
 
 <!ENTITY Ctr_special_font	"Indstillinger til baggrundsfarve gælder kun til standard tema!">
 <!ENTITY Ctr_special_info	"Nogle valgmuligheder giver måske ikke altid synlige ændringer">
-<!ENTITY Ctr_special_info2	"Indstillinger foretages til Cyberfox standard tema og virker måske ikke med alle tredjeparts temaer!">
+<!ENTITY Ctr_special_info2	"Indstillinger foretages til &brandShortName; standard tema og virker måske ikke med alle tredjeparts temaer!">
 <!ENTITY Ctr_support		"Supportforum">
 <!ENTITY Ctr_newversion		"Ny version?">
 

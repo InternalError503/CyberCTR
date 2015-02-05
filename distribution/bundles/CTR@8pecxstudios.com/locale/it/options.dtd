@@ -1,4 +1,8 @@
-<!ENTITY Ctr_title 			"Customize Cyberfox">
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  
+<!ENTITY Ctr_title 			"Customize &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"Barra dei componenti aggiuntivi">
 <!ENTITY Ctr_statusbar		"Barra di stato">
@@ -9,7 +13,7 @@
 <!ENTITY Ctr_navthrobber	"Activity Indicator">
 <!ENTITY Ctr_sidebarbutton	"Sidebar">
 <!ENTITY Ctr_windowcontrols	"Min/max/close (Fullscreen)">
-<!ENTITY Ctr_rr				"Riavviare Cyberfox!">
+<!ENTITY Ctr_rr				"Riavviare &brandShortName;!">
 
 <!ENTITY Ctr_cuibuttons		"Pulsanti">
 <!ENTITY Ctr_cuibutnormal	"Normali">
@@ -72,7 +76,7 @@
 <!ENTITY Ctr_paneluibtweak	"Pulsante pannello menu arancione nella barra delle schede">
 <!ENTITY Ctr_appbuttonc_o	"Pulsante arancione (predefinito)">
 <!ENTITY Ctr_appbuttonc_a	"Pulsante blu (Aurora)">
-<!ENTITY Ctr_appbuttonc_d	"cyberfox button color (Default)">
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
 <!ENTITY Ctr_appbuttonc_n	"Pulsante nero (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Pulsante trasparente">
 <!ENTITY Ctr_appbuttonc_r	"Pulsante rosso">
@@ -185,7 +189,7 @@
 <!ENTITY Ctr_extrabar		"Additional Toolbars">
 <!ENTITY Ctr_extrabar0		"Additional Toolbar(s)">
 <!ENTITY Ctr_extrabar1		"Barra degli strumenti aggiuntiva">
-<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. Cyberfox has to be restarted to solve this issue.">
+<!ENTITY Ctr_extrabarinfo	"Switching between 'tabs on top' and 'tabs not on top' modes randomly alters additional toolbars order. &brandShortName; has to be restarted to solve this issue.">
 
 <!ENTITY Ctr_invicons		"Icone invertite">
 <!ENTITY Ctr_menubar		"Barra dei menu">
