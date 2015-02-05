@@ -940,7 +940,8 @@ classicthemerestorerjso.ctr = {
 	"nodevtheme="+this.prefs.getBoolPref("nodevtheme"),
 	"e10stab_notd="+this.prefs.getBoolPref("e10stab_notd"),
 	"nbcompact="+this.prefs.getBoolPref("nbcompact"),
-	"icopageinfo="+this.prefs.getBoolPref("icopageinfo")];
+	"icopageinfo="+this.prefs.getBoolPref("icopageinfo"),
+	"personanoshadow="+this.prefs.getBoolPref("personanoshadow")];
 
 
 	saveToFile(patterns);
