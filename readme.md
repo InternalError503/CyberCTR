@@ -39,7 +39,10 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 
 - Pre-Configure CyberCTR Settings [FAQ article] (https://8pecxstudios.com/Forums/viewtopic.php?f=8&t=672)
 - Pre-Configure CyberCTR Settings file change detection & notification.
+- Pre-Configure CyberCTR Settings backup and backup restore.
 - Tab text in title-bar.
+- Import\Export preferences in JSON file format.
+- Remove text shadow from persona themes.
 
 Plus many under the hood changes and many more visual changes to come.
 
@@ -178,6 +181,10 @@ These tool-bar items appear in customizing mode and can be moved to tool-bars li
 Quoted from [original addons page] (https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer#addon-description) 
 
 Note: This list was current at the time of quoting and may have changed during this time.
+
+### Localization:
+
+Dedicated thread for [CyberCTR Localization] (https://8pecxstudios.com/Forums/viewtopic.php?f=13&t=536)
 
 ### Credits:
 
