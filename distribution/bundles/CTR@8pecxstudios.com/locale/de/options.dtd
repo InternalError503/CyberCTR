@@ -1,7 +1,15 @@
+<!-- LOCALIZATION NOTE (<!ENTITY % brandDTD) must not be edited as it  
+	   controls the use of (&brandShortName;) this gets replaced at run time
+	   with the browsers name so in cyberfox (&brandShortName;) says cyberfox
+	   in firefox (&brandShortName;) says firefox, This item can not be edited or
+	   errors may occur.
+-->
+<!-- Do not edit -->
 <!ENTITY % brandDTD
     SYSTEM "chrome://branding/locale/brand.dtd">
   %brandDTD;
-  
+<!-- Do not edit above this message-->  
+
 <!ENTITY Ctr_title      	"&brandShortName; anpassen">
 
 <!ENTITY Ctr_addonbar		"Addonleiste">
