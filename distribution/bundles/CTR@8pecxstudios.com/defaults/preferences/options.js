@@ -222,6 +222,9 @@ pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
 //CyberCTR Add tab title to titlebar
 pref("extensions.classicthemerestorer.titleintitlebar", false);
 
+//CyberCTR No text shadow on persona themes.
+pref("extensions.classicthemerestorer.personanoshadow", false);
+
 //CyberCTR version
 pref("extensions.classicthemerestorer.version", "1.2.1");
 

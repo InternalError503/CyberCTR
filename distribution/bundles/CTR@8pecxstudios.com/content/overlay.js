@@ -380,6 +380,17 @@ classicthemerestorerjs.ctr = {
 					}	
 				} catch(e){console.log("We are sorry something has gone wrong with Tabs titles in title-bar " + e);}			
 		  break;
+		  
+		  case "personanoshadow":
+			try {
+					if (branch.getBoolPref("personanoshadow")){
+							classicthemerestorerjs.ctr.loadUnloadCSS("persona_no_shadow",true);
+							console.log("No Text Shadow For Personas  Themes Is Now Active!");
+					} else {
+						classicthemerestorerjs.ctr.loadUnloadCSS("persona_no_shadow",false);
+					}	
+				} catch(e){console.log("We are sorry something has gone wrong with no text shadow on persona themes " + e);}		  
+		  break;
       		  
 		  case "ctabheightcb":
 			if (branch.getBoolPref("ctabheightcb")) classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",true);
@@ -2574,6 +2585,7 @@ classicthemerestorerjs.ctr = {
 		case "spaces_extra": 		manageCSS("spaces_extra.css");			break;
 		case "tree_style_fix": 		manageCSS("tree_style_fix.css");	break;
 		case "tabs_titlebar": 		manageCSS("tabs_titlebar.css");	break;
+		case "persona_no_shadow": 		manageCSS("personanoshadow.css");	break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
