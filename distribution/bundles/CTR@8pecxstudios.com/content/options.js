@@ -122,14 +122,13 @@ classicthemerestorerjso.ctr = {
 		var isButton = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
 		if (isButton ==="appbutton_off" || 
 			isButton ==="appbutton_v1" ||
-			isButton ==="appbutton_v2io" || 
-			isButton ==="appbutton_v2io2" || 
+			isButton ==="appbutton_v1wt" ||
 			isButton ==="appbutton_v2h" || 
 			isButton ==="appbutton_pm"){
-					document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
-					document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
-					document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
-					document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;						
+				document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
+				document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
+				document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
+				document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;		
 	}});
 	Application.prefs.get("extensions.classicthemerestorer.appbuttonc").events.addListener("change", function(aEvent){
 		
