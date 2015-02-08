@@ -997,7 +997,11 @@ classicthemerestorerjso.ctr = {
 	"e10stab_notd="+this.prefs.getBoolPref("e10stab_notd"),
 	"nbcompact="+this.prefs.getBoolPref("nbcompact"),
 	"icopageinfo="+this.prefs.getBoolPref("icopageinfo"),
-	"personanoshadow="+this.prefs.getBoolPref("personanoshadow")];
+	"personanoshadow="+this.prefs.getBoolPref("personanoshadow"),
+	"cappbutcm="+this.prefs.getBoolPref("cappbutcm"),
+	"cappbuttxtc="+this.prefs.getBoolPref("cappbuttxtc"),
+	"cappbutcpercent="+this.prefs.getBoolPref("cappbutcpercent"),
+	"cappbutnotxtsh="+this.prefs.getBoolPref("cappbutnotxtsh")];
 
 
 	saveToFile(patterns);
