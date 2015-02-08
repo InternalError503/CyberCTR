@@ -43,6 +43,10 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 - Tab text in title-bar.
 - Import\Export preferences in JSON file format.
 - Remove text shadow from persona themes.
+- Control gradient percentage on custom button color.
+- Custom button color with 3 colors.
+- Set custom button color text color.
+- Remove custom button color text shadow.
 
 Plus many under the hood changes and many more visual changes to come.
 
