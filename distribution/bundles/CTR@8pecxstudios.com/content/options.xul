@@ -59,8 +59,10 @@
 		<preference id="ctraddon_cappbutc1"		name="extensions.classicthemerestorer.cappbutc1"	type="string"	instantApply="true"/>
 		<preference id="ctraddon_cappbutcm"		name="extensions.classicthemerestorer.cappbutcm"	type="string"	instantApply="true"/>
 		<preference id="ctraddon_cappbutc2"		name="extensions.classicthemerestorer.cappbutc2"	type="string"	instantApply="true"/>
+		<preference id="ctraddon_cappbutctc"		name="extensions.classicthemerestorer.cappbuttxtc"	type="string"	instantApply="true"/>
 		<preference id="ctraddon_cappbutcPercent"		name="extensions.classicthemerestorer.cappbutcpercent"	type="int"	instantApply="true"/>
-
+		<preference id="ctraddon_cappbutnotxtshp"		name="extensions.classicthemerestorer.cappbutnotxtsh"	type="bool"	instantApply="true"/>
+		
 		<preference id="ctraddon_nbisizedelay"	name="extensions.classicthemerestorer.nbisizedelay" type="int"		instantApply="true"/>
 		<preference id="ctraddon_smallnavbut"	name="extensions.classicthemerestorer.smallnavbut"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_hide_bf_popup"	name="extensions.classicthemerestorer.hide_bf_popup" type="bool"	instantApply="true"/>
@@ -650,6 +652,12 @@
 					<textbox id="ctraddon_cappbutcPercentnp" size="3" maxlength="3" max="200" preference="ctraddon_cappbutcPercent" type="number"/>
 					<label value="%"/>
 				</hbox>			
+		</hbox>
+		<hbox>
+			<label value="&ctr_appbuttoncusttextcolor;" id="ctraddon_pw_cappbutctcl"/>
+			<textbox preference="ctraddon_cappbutctc" id="ctraddon_pw_cappbutctct" width="70px"/>
+			<colorpicker preference="ctraddon_cappbutctc" type="button" id="ctraddon_pw_cappbutctcc"/>
+			<checkbox label="&ctr_appbuttoncusttextshadow;" preference="ctraddon_cappbutnotxtshp" id="ctraddon_cappbutnotxtsh"/>
 		</hbox>
 		
 		<description>&Ctr_appbuttonI2;</description>

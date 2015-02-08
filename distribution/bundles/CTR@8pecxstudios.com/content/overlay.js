@@ -494,7 +494,7 @@ classicthemerestorerjs.ctr = {
 			}
 		  break;
 		  
-		  case "cappbutc1": case "cappbutcm": case "cappbutc2": case "cappbutcpercent":
+		  case "cappbutc1": case "cappbutcm": case "cappbutc2": case "cappbutcpercent": case "cappbuttxtc": case "cappbutnotxtsh":
 			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",true);
 			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom1") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom1",true);
 		  break;
@@ -2829,8 +2829,11 @@ classicthemerestorerjs.ctr = {
 		
 			removeOldSheet(this.appbutton_color);
 			//Here we are using 2 colors with percentage control			
-			var newColor = this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' '+ this.prefs.getIntPref('cappbutcpercent') +'%';
-			
+			var newColor = this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutc2')+' '+ this.prefs.getIntPref('cappbutcpercent') +'%';	
+			var buttonTextShadow = "";
+			if(this.prefs.getBoolPref('cappbutnotxtsh')){
+				buttonTextShadow = "text-shadow:none!important;";
+			}	
 			if(enable==true && this.prefs.getCharPref('appbuttonc')=='appbuttonc_custom') {
 			
 				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
@@ -2838,6 +2841,8 @@ classicthemerestorerjs.ctr = {
 					@-moz-document url(chrome://browser/content/browser.xul) {\
 						#ctraddon_appbutton2:not(:hover):not(:active):not([open]){\
 						  background-image: linear-gradient('+newColor+') !important;\
+						  color:'+this.prefs.getCharPref('cappbuttxtc')+'!important;\
+						  '+buttonTextShadow+'\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;\
@@ -2853,6 +2858,8 @@ classicthemerestorerjs.ctr = {
 						  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),\
 											radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),\
 											linear-gradient('+newColor+') !important;\
+						  color:'+this.prefs.getCharPref('cappbuttxtc')+'!important;\
+						  '+buttonTextShadow+'\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(210,48%,90%,.4) inset,\
@@ -2863,6 +2870,8 @@ classicthemerestorerjs.ctr = {
 						#ctraddon_appbutton2:hover:active,\
 						#ctraddon_appbutton2[open] {\
 						  background-image: linear-gradient('+newColor+') !important;\
+						  color:'+this.prefs.getCharPref('cappbuttxtc')+'!important;\
+						  '+buttonTextShadow+'\
 						  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,\
 									  0 1px 1px rgba(0,0,0,.2) inset !important;\
 						}\
@@ -2901,7 +2910,10 @@ classicthemerestorerjs.ctr = {
 			removeOldSheet(this.appbutton_color);
 			//Here we are using 3 colors with percentage control
 			var newColor = this.prefs.getCharPref('cappbutc1')+', '+this.prefs.getCharPref('cappbutcm')+', '+this.prefs.getCharPref('cappbutc2')+' '+ this.prefs.getIntPref('cappbutcpercent') +'%';
-			
+			var buttonTextShadow = "";
+			if(this.prefs.getBoolPref('cappbutnotxtsh')){
+				buttonTextShadow = "text-shadow:none!important;";
+			}			
 			if(enable==true && this.prefs.getCharPref('appbuttonc')=='appbuttonc_custom1') {
 			
 				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
@@ -2909,6 +2921,8 @@ classicthemerestorerjs.ctr = {
 					@-moz-document url(chrome://browser/content/browser.xul) {\
 						#ctraddon_appbutton2:not(:hover):not(:active):not([open]){\
 						  background-image: linear-gradient('+newColor+') !important;\
+						  color:'+this.prefs.getCharPref('cappbuttxtc')+'!important;\
+						  '+buttonTextShadow+'\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;\
@@ -2924,6 +2938,8 @@ classicthemerestorerjs.ctr = {
 						  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),\
 											radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),\
 											linear-gradient('+newColor+') !important;\
+						  color:'+this.prefs.getCharPref('cappbuttxtc')+'!important;\
+						  '+buttonTextShadow+'\
 						  border-color: hsla(210,59%,13%,.9) !important;\
 						  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,\
 									  0 0 2px 1px hsla(210,48%,90%,.4) inset,\
@@ -2934,6 +2950,8 @@ classicthemerestorerjs.ctr = {
 						#ctraddon_appbutton2:hover:active,\
 						#ctraddon_appbutton2[open] {\
 						  background-image: linear-gradient('+newColor+') !important;\
+						  color:'+this.prefs.getCharPref('cappbuttxtc')+'!important;\
+						  '+buttonTextShadow+'\
 						  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,\
 									  0 1px 1px rgba(0,0,0,.2) inset !important;\
 						}\

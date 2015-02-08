@@ -294,3 +294,5 @@
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurer la copie de sauvegarde">
 
 <!ENTITY ctr_personanoshadow	"Remove text shadow on persona themes">
+<!ENTITY ctr_appbuttoncusttextcolor	"AppButton text color.">
+<!ENTITY ctr_appbuttoncusttextshadow	"Remove AppButton text shadow">

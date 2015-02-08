@@ -116,6 +116,39 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_special_font').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
 	};
+
+	//Custom Button Color Text Color
+	Application.prefs.get("extensions.classicthemerestorer.appbutton").events.addListener("change", function(aEvent){
+		var isButton = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
+		if (isButton ==="appbutton_off" || 
+			isButton ==="appbutton_v1" ||
+			isButton ==="appbutton_v2io" || 
+			isButton ==="appbutton_v2io2" || 
+			isButton ==="appbutton_v2h" || 
+			isButton ==="appbutton_pm"){
+					document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
+					document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
+					document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
+					document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;						
+	}});
+	Application.prefs.get("extensions.classicthemerestorer.appbuttonc").events.addListener("change", function(aEvent){
+		
+	if (Services.prefs.getCharPref("extensions.classicthemerestorer.appbuttonc") === "appbuttonc_custom" || 
+		Services.prefs.getCharPref("extensions.classicthemerestorer.appbuttonc") === "appbuttonc_custom1"){
+		document.getElementById('ctraddon_pw_cappbutctcl').disabled = false;
+		document.getElementById('ctraddon_pw_cappbutctct').disabled = false;
+		document.getElementById('ctraddon_pw_cappbutctcc').disabled = false;
+		document.getElementById('ctraddon_cappbutnotxtsh').disabled = false;		
+	}else{
+		document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
+		document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
+		document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
+		document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;
+	}});	
+	document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
+	document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
+	document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
+	document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;
 	
 	//pref e10s tabs
 	document.getElementById('ctraddon_pw_e10stab_notd').disabled = true;
@@ -677,6 +710,29 @@ classicthemerestorerjso.ctr = {
 		
 		if (which=="appbuttonc_custom" || which=="appbuttonc_custom1"){
 			document.getElementById('ctraddon_cappbutcPercentnp').disabled = false;	
+
+			switch(this.prefs.getCharPref("appbutton")){
+			
+				case "appbutton_v1wt": 
+					document.getElementById('ctraddon_pw_cappbutctcl').disabled = false;
+					document.getElementById('ctraddon_pw_cappbutctct').disabled = false; 
+					document.getElementById('ctraddon_pw_cappbutctcc').disabled = false;
+					document.getElementById('ctraddon_cappbutnotxtsh').disabled = false;					
+				break;
+				case "appbutton_v2": 
+					document.getElementById('ctraddon_pw_cappbutctcl').disabled = false;
+					document.getElementById('ctraddon_pw_cappbutctct').disabled = false; 
+					document.getElementById('ctraddon_pw_cappbutctcc').disabled = false; 
+					document.getElementById('ctraddon_cappbutnotxtsh').disabled = false;		
+				break;
+				case "appbutton_v2wt2": 
+					document.getElementById('ctraddon_pw_cappbutctcl').disabled = false;
+					document.getElementById('ctraddon_pw_cappbutctct').disabled = false; 
+					document.getElementById('ctraddon_cappbutnotxtsh').disabled = false;		
+				break;
+
+			}			
+			
 		}else{
 			document.getElementById('ctraddon_cappbutcPercentnp').disabled = true;	
 			document.getElementById('ctraddon_pw_cappbutc1').disabled = true;
