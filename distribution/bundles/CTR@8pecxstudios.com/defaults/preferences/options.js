@@ -24,10 +24,10 @@ pref("extensions.classicthemerestorer.appbclmmenus",true);
 
 pref("extensions.classicthemerestorer.appbuttontxt",'');
 
-pref("extensions.classicthemerestorer.cappbutc1",'#00FF00');
-pref("extensions.classicthemerestorer.cappbutcm",'#00D600');
-pref("extensions.classicthemerestorer.cappbutc2",'#007700');
-pref("extensions.classicthemerestorer.cappbuttxtc",'#FFFFFF');
+pref("extensions.classicthemerestorer.cappbutc1",'#818181');
+pref("extensions.classicthemerestorer.cappbutcm",'#5c5c5c');
+pref("extensions.classicthemerestorer.cappbutc2",'#383838');
+pref("extensions.classicthemerestorer.cappbuttxtc",'#efefef');
 pref("extensions.classicthemerestorer.cappbutcpercent", 75);
 pref("extensions.classicthemerestorer.cappbutnotxtsh", false);
 
