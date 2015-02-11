@@ -987,7 +987,7 @@ classicthemerestorerjso.ctr = {
 	"cappbutc1:"+this.prefs.getCharPref("cappbutc1"),
 	"cappbutcm:"+this.prefs.getCharPref("cappbutcm"),	
 	"cappbutc2:"+this.prefs.getCharPref("cappbutc2"),
-	"cappbutcpercent:"+this.prefs.getCharPref("cappbutcpercent"),	
+	"cappbutcpercent:"+this.prefs.getIntPref("cappbutcpercent"),	
 	"svgfilters="+this.prefs.getBoolPref("svgfilters"),
 	"aerocolors="+this.prefs.getBoolPref("aerocolors"),
 	"addonbarfs="+this.prefs.getBoolPref("addonbarfs"),
@@ -997,9 +997,7 @@ classicthemerestorerjso.ctr = {
 	"nbcompact="+this.prefs.getBoolPref("nbcompact"),
 	"icopageinfo="+this.prefs.getBoolPref("icopageinfo"),
 	"personanoshadow="+this.prefs.getBoolPref("personanoshadow"),
-	"cappbutcm="+this.prefs.getBoolPref("cappbutcm"),
-	"cappbuttxtc="+this.prefs.getBoolPref("cappbuttxtc"),
-	"cappbutcpercent="+this.prefs.getBoolPref("cappbutcpercent"),
+	"cappbuttxtc="+this.prefs.getCharPref("cappbuttxtc"),
 	"cappbutnotxtsh="+this.prefs.getBoolPref("cappbutnotxtsh")];
 
 
