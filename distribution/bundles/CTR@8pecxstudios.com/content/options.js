@@ -851,7 +851,6 @@ classicthemerestorerjso.ctr = {
 		"extensions.classicthemerestorer.ctrpref.lastmod",
 		"extensions.classicthemerestorer.ctrpref.lastmodapply",
 		"extensions.classicthemerestorer.ctrpref.updatekey",
-		"extensions.classicthemerestorer.titleintitlebar",
 		"extensions.classicthemerestorer.version",
 		"extensions.classicthemerestorer.features.firstrun",
 		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
@@ -1112,7 +1111,6 @@ classicthemerestorerjso.ctr = {
 		"extensions.classicthemerestorer.ctrpref.lastmod",
 		"extensions.classicthemerestorer.ctrpref.lastmodapply",
 		"extensions.classicthemerestorer.ctrpref.updatekey",
-		"extensions.classicthemerestorer.titleintitlebar",
 		"extensions.classicthemerestorer.version",
 		"extensions.classicthemerestorer.features.firstrun",
 		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
