@@ -828,181 +828,84 @@ classicthemerestorerjso.ctr = {
 
   },
 
-  /* export CTR settings */
+  /* export CTR settings Text */
   exportCTRpreferences: function() {
+	  
+	  
+	var preflist = Services.prefs.getChildList("extensions.classicthemerestorer.");
 
-	var patterns = [	  
-	"CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers",
-	"tabs:"+this.prefs.getCharPref("tabs"),
-	"tabsontop:"+this.prefs.getCharPref("tabsontop"),
-	"ctabwidth~"+this.prefs.getIntPref("ctabwidth"),
-	"ctabmwidth~"+this.prefs.getIntPref("ctabmwidth"),
-	"closetab:"+this.prefs.getCharPref("closetab"),
-	"appbutton:"+this.prefs.getCharPref("appbutton"),
-	"appbuttonc:"+this.prefs.getCharPref("appbuttonc"),
-	"alttbappb="+this.prefs.getBoolPref("alttbappb"),
-	"appbutmhi="+this.prefs.getBoolPref("appbutmhi"),
-	"appbutbdl="+this.prefs.getBoolPref("appbutbdl"),	
-	"nbiconsize:"+this.prefs.getCharPref("nbiconsize"),
-	"smallnavbut="+this.prefs.getBoolPref("smallnavbut"),
-	"hidenavbar="+this.prefs.getBoolPref("hidenavbar"),
-	"backforward="+this.prefs.getBoolPref("backforward"),
-	"wincontrols="+this.prefs.getBoolPref("wincontrols"),
-	"starinurl="+this.prefs.getBoolPref("starinurl"),
-	"statusbar="+this.prefs.getBoolPref("statusbar"),
-	"hideurelstop="+this.prefs.getBoolPref("hideurelstop"),
-	"combrelstop="+this.prefs.getBoolPref("combrelstop"),
-	"panelmenucol="+this.prefs.getBoolPref("panelmenucol"),
-	"verifiedcolors="+this.prefs.getBoolPref("verifiedcolors"),
-	"findbar:"+this.prefs.getCharPref("findbar"),
-	"nav_txt_ico:"+this.prefs.getCharPref("nav_txt_ico"),		
-	"ctab1:"+this.prefs.getCharPref("ctab1"),
-	"ctab2:"+this.prefs.getCharPref("ctab2"),
-	"ctabhov1:"+this.prefs.getCharPref("ctabhov1"),
-	"ctabhov2:"+this.prefs.getCharPref("ctabhov2"),
-	"ctabact1:"+this.prefs.getCharPref("ctabact1"),
-	"ctabact2:"+this.prefs.getCharPref("ctabact2"),
-	"ctabpen1:"+this.prefs.getCharPref("ctabpen1"),
-	"ctabpen2:"+this.prefs.getCharPref("ctabpen2"),
-	"ctabunr1:"+this.prefs.getCharPref("ctabunr1"),
-	"ctabunr2:"+this.prefs.getCharPref("ctabunr2"),
-	"cntab1:"+this.prefs.getCharPref("cntab1"),
-	"cntab2:"+this.prefs.getCharPref("cntab2"),
-	"cntabhov1:"+this.prefs.getCharPref("cntabhov1"),
-	"cntabhov2:"+this.prefs.getCharPref("cntabhov2"),
-	"ctabt:"+this.prefs.getCharPref("ctabt"),
-	"ctabhovt:"+this.prefs.getCharPref("ctabhovt"),
-	"ctabactt:"+this.prefs.getCharPref("ctabactt"),
-	"ctabpent:"+this.prefs.getCharPref("ctabpent"),
-	"ctabunrt:"+this.prefs.getCharPref("ctabunrt"),
-	"ctabtsh:"+this.prefs.getCharPref("ctabtsh"),
-	"ctabhovtsh:"+this.prefs.getCharPref("ctabhovtsh"),
-	"ctabacttsh:"+this.prefs.getCharPref("ctabacttsh"),
-	"ctabpentsh:"+this.prefs.getCharPref("ctabpentsh"),
-	"ctabunrtsh:"+this.prefs.getCharPref("ctabunrtsh"),		
-	"tabcolor_def="+this.prefs.getBoolPref("tabcolor_def"),
-	"tabtextc_def="+this.prefs.getBoolPref("tabtextc_def"),
-	"tabtextsh_def="+this.prefs.getBoolPref("tabtextsh_def"),
-	"tabcolor_act="+this.prefs.getBoolPref("tabcolor_act"),
-	"tabtextc_act="+this.prefs.getBoolPref("tabtextc_act"),
-	"tabtextsh_act="+this.prefs.getBoolPref("tabtextsh_act"),
-	"tabcolor_hov="+this.prefs.getBoolPref("tabcolor_hov"),
-	"tabtextc_hov="+this.prefs.getBoolPref("tabtextc_hov"),
-	"tabtextsh_hov="+this.prefs.getBoolPref("tabtextsh_hov"),
-	"tabcolor_pen="+this.prefs.getBoolPref("tabcolor_pen"),
-	"tabtextc_pen="+this.prefs.getBoolPref("tabtextc_pen"),
-	"tabtextsh_pen="+this.prefs.getBoolPref("tabtextsh_pen"),
-	"tabcolor_unr="+this.prefs.getBoolPref("tabcolor_unr"),
-	"tabtextc_unr="+this.prefs.getBoolPref("tabtextc_unr"),
-	"tabtextsh_unr="+this.prefs.getBoolPref("tabtextsh_unr"),
-	"ntabcolor_def="+this.prefs.getBoolPref("ntabcolor_def"),
-	"ntabcolor_hov="+this.prefs.getBoolPref("ntabcolor_hov"),		
-	"tabfbold_def="+this.prefs.getBoolPref("tabfbold_def"),
-	"tabfbold_act="+this.prefs.getBoolPref("tabfbold_act"),
-	"tabfbold_pen="+this.prefs.getBoolPref("tabfbold_pen"),
-	"tabfbold_unr="+this.prefs.getBoolPref("tabfbold_unr"),
-	"tabfbold_hov="+this.prefs.getBoolPref("tabfbold_hov"),
-	"tabfita_def="+this.prefs.getBoolPref("tabfita_def"),
-	"tabfita_act="+this.prefs.getBoolPref("tabfita_act"),
-	"tabfita_pen="+this.prefs.getBoolPref("tabfita_pen"),
-	"tabfita_unr="+this.prefs.getBoolPref("tabfita_unr"),
-	"tabfita_hov="+this.prefs.getBoolPref("tabfita_hov"),		
-	"highaddonsbar="+this.prefs.getBoolPref("highaddonsbar"),
-	"hightabpososx="+this.prefs.getBoolPref("hightabpososx"),
-	"altmenubar="+this.prefs.getBoolPref("altmenubar"),
-	"altmenubarpos="+this.prefs.getBoolPref("altmenubarpos"),
-	"altmenubarpos2="+this.prefs.getBoolPref("altmenubarpos2"),
-	"menubarnofog="+this.prefs.getBoolPref("menubarnofog"),
-	"noaddonbarbg="+this.prefs.getBoolPref("noaddonbarbg"),
-	"notabfog="+this.prefs.getBoolPref("notabfog"),
-	"notabbg="+this.prefs.getBoolPref("notabbg"),
-	"nobookbarbg="+this.prefs.getBoolPref("nobookbarbg"),
-	"nonavbarbg="+this.prefs.getBoolPref("nonavbarbg"),
-	"nonavborder="+this.prefs.getBoolPref("nonavborder"),
-	"nonavtbborder="+this.prefs.getBoolPref("nonavtbborder"),
-	"alttabstb="+this.prefs.getBoolPref("alttabstb"),
-	"cpanelmenus="+this.prefs.getBoolPref("cpanelmenus"),
-	"bfurlbarfix="+this.prefs.getBoolPref("bfurlbarfix"),
-	"emptyfavicon="+this.prefs.getBoolPref("emptyfavicon"),
-	"emptyfavicon2="+this.prefs.getBoolPref("emptyfavicon2"),
-	"hidezoomres="+this.prefs.getBoolPref("hidezoomres"),
-	"pmhidelabels="+this.prefs.getBoolPref("pmhidelabels"),
-	"menupopupscr="+this.prefs.getBoolPref("menupopupscr"),
-	"hideprivmask="+this.prefs.getBoolPref("hideprivmask"),		
-	"invicomenubar="+this.prefs.getBoolPref("invicomenubar"),
-	"invicotabsbar="+this.prefs.getBoolPref("invicotabsbar"),
-	"inviconavbar="+this.prefs.getBoolPref("inviconavbar"),
-	"invicoextrabar="+this.prefs.getBoolPref("invicoextrabar"),
-	"invicobookbar="+this.prefs.getBoolPref("invicobookbar"),
-	"invicoaddonbar="+this.prefs.getBoolPref("invicoaddonbar"),		
-	"tabmokcolor="+this.prefs.getBoolPref("tabmokcolor"),
-	"tabmokcolor2="+this.prefs.getBoolPref("tabmokcolor2"),
-	"tabmokcolor3="+this.prefs.getBoolPref("tabmokcolor3"),
-	"dblclnewtab="+this.prefs.getBoolPref("dblclnewtab"),
-	"hidetbwot="+this.prefs.getBoolPref("hidetbwot"),
-	"faviconurl="+this.prefs.getBoolPref("faviconurl"),
-	"padlock:"+this.prefs.getCharPref("padlock"),
-	"dblclclosefx="+this.prefs.getBoolPref("dblclclosefx"),
-	"hide_bf_popup="+this.prefs.getBoolPref("hide_bf_popup"),		
-	"throbberalt="+this.prefs.getBoolPref("throbberalt"),
-	"bmanimation="+this.prefs.getBoolPref("bmanimation"),
-	"pananimation="+this.prefs.getBoolPref("pananimation"),		
-	"closeabarbut="+this.prefs.getBoolPref("closeabarbut"),
-	"toolsitem="+this.prefs.getBoolPref("toolsitem"),
-	"appmenuitem="+this.prefs.getBoolPref("appmenuitem"),
-	"contextitem="+this.prefs.getBoolPref("contextitem"),
-	"cuibuttons="+this.prefs.getBoolPref("cuibuttons"),	
-	"padlockex="+this.prefs.getBoolPref("padlockex"),
-	"closetabhfl="+this.prefs.getBoolPref("closetabhfl"),
-	"noemptypticon="+this.prefs.getBoolPref("noemptypticon"),
-	"feedinurl="+this.prefs.getBoolPref("feedinurl"),
-	"noconicons="+this.prefs.getBoolPref("noconicons"),
-	"closealt="+this.prefs.getBoolPref("closealt"),
-	"closeonleft="+this.prefs.getBoolPref("closeonleft"),
-	"hidetbwote="+this.prefs.getBoolPref("hidetbwote"),
-	"puictrbutton="+this.prefs.getBoolPref("puictrbutton"),
-	"hideprbutton="+this.prefs.getBoolPref("hideprbutton"),
-	"hidesbclose="+this.prefs.getBoolPref("hidesbclose"),
-	"athrobberurl:"+this.prefs.getCharPref("athrobberurl"),
-	"bmarkoinpw="+this.prefs.getBoolPref("bmarkoinpw"),
-	"appbclmmenus="+this.prefs.getBoolPref("appbclmmenus"),
-	"chevronfix="+this.prefs.getBoolPref("chevronfix"),
-	"bf_space="+this.prefs.getBoolPref("bf_space"),
-	"tabc_hov_unr="+this.prefs.getBoolPref("tabc_hov_unr"),
-	"tabc_hov_unl="+this.prefs.getBoolPref("tabc_hov_unl"),
-	"iat_notf_vt="+this.prefs.getBoolPref("iat_notf_vt"),
-	"tabmokcolor4="+this.prefs.getBoolPref("tabmokcolor4"),
-	"am_extrabars~"+this.prefs.getIntPref("am_extrabars"),
-	"activndicat="+this.prefs.getBoolPref("activndicat"),
-	"urlbardropm="+this.prefs.getBoolPref("urlbardropm"),
-	"mbarposition:"+this.prefs.getCharPref("mbarposition"),
-	"nbisizedelay~"+this.prefs.getIntPref("nbisizedelay"),
-	"appbuttontxt:"+this.prefs.getCharPref("appbuttontxt"),
-	"alt_newtabp="+this.prefs.getBoolPref("alt_newtabp"),
-	"mbarforceleft="+this.prefs.getBoolPref("mbarforceleft"),
-	"mbarforceright="+this.prefs.getBoolPref("mbarforceright"),
-	"ctabheight~"+this.prefs.getIntPref("ctabheight"),
-	"ctabheightcb="+this.prefs.getBoolPref("ctabheightcb"),
-	"tabc_act_tb="+this.prefs.getBoolPref("tabc_act_tb"),
-	"cappbutc1:"+this.prefs.getCharPref("cappbutc1"),
-	"cappbutcm:"+this.prefs.getCharPref("cappbutcm"),	
-	"cappbutc2:"+this.prefs.getCharPref("cappbutc2"),
-	"cappbutcpercent~"+this.prefs.getIntPref("cappbutcpercent"),	
-	"svgfilters="+this.prefs.getBoolPref("svgfilters"),
-	"aerocolors="+this.prefs.getBoolPref("aerocolors"),
-	"addonbarfs="+this.prefs.getBoolPref("addonbarfs"),
-	"alttabstb2="+this.prefs.getBoolPref("alttabstb2"),
-	"nodevtheme="+this.prefs.getBoolPref("nodevtheme"),
-	"e10stab_notd="+this.prefs.getBoolPref("e10stab_notd"),
-	"nbcompact="+this.prefs.getBoolPref("nbcompact"),
-	"icopageinfo="+this.prefs.getBoolPref("icopageinfo"),
-	"personanoshadow="+this.prefs.getBoolPref("personanoshadow"),
-	"cappbuttxtc:"+this.prefs.getCharPref("cappbuttxtc"),
-	"titleintitlebar="+this.prefs.getBoolPref("titleintitlebar"),
-	"cappbutnotxtsh="+this.prefs.getBoolPref("cappbutnotxtsh")];
+	let preferenceArray = [];
+		 
+	//Add filter header
+	preferenceArray.push("CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers");	
 
+		//Preference Filter all preferences we don't want to export\import..
+		let blacklist = [
+		"extensions.classicthemerestorer.pref_actindx",
+		"extensions.classicthemerestorer.pref_actindx2",
+		"extensions.classicthemerestorer.ctrreset",
+		"extensions.classicthemerestorer.compatibility.treestyle",
+		"extensions.classicthemerestorer.compatibility.treestyle.disable",
+		"extensions.classicthemerestorer.compatibility.tabmix",
+		"extensions.classicthemerestorer.ctrpref.firstrun",
+		"extensions.classicthemerestorer.ctrpref.lastmod",
+		"extensions.classicthemerestorer.ctrpref.lastmodapply",
+		"extensions.classicthemerestorer.ctrpref.updatekey",
+		"extensions.classicthemerestorer.titleintitlebar",
+		"extensions.classicthemerestorer.version",
+		"extensions.classicthemerestorer.features.firstrun",
+		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
+		];
 
-	saveToFile(patterns);
+	//Filter preference type and return its value.
+	function prefValue(pref){
+
+	  switch (Services.prefs.getPrefType(pref)){
+		case 32:	return Services.prefs.getCharPref(pref);	break;
+		case 64:	return Services.prefs.getIntPref(pref);	break;
+		case 128:	return Services.prefs.getBoolPref(pref);	break;	
+	  }
+
+	}	
+	
+	//Filter preference type and return its filter value.	
+	function prefType(pref){
+
+	  switch (Services.prefs.getPrefType(pref)){
+		case 32:	return ":";	break;
+		case 64:	return "~";	break;
+		case 128:	return "=";	break;	
+	  }
+
+	}
+
+	for (var i=0; i < preflist.length; i++) {
+
+	  try {
+		//Run Blacklist filter, Here we filter out all preferences we don't want exported|imported.
+		var index = preflist.indexOf(blacklist[i]);
+
+		if (index > -1) {
+		  preflist.splice(index, 1);
+		}
+
+		//Filter extensions.classicthemerestorer.
+		var sliceNdice = preflist[i].replace("extensions.classicthemerestorer.", "");
+		
+		//Populate array	
+		preferenceArray.push(
+		  sliceNdice+prefType(preflist[i])+prefValue(preflist[i]) 
+		);
+
+	  } catch(e) {
+		//Catch any nasty errors and output to dialogue
+		Components.utils.reportError(e);
+	  }
+
+	}	  
+	  
+	//Use new less bulky export for text.
+	saveToFile(preferenceArray);
 	  
 	function saveToFile(patterns) {
 
