@@ -49,7 +49,7 @@
 <!ENTITY Ctr_tabsontop3		"Karty nie na górze (v2) --- atrybut [tabsontop=false]">
 <!ENTITY Ctr_tabsontopW1	"v2 jest tylko dla niektórych dodatków i kompletnych motywów!">
 <!ENTITY Ctr_tabsontopI1	"Dodaje atrybut [tabsontop=true/false] do:">
-<!ENTITY Ctr_tabsintitlebar	"Pasek tytułu Cyberfoksa (ustawienie about:config)">
+<!ENTITY Ctr_tabsintitlebar	"Pasek tytułu &brandShortName; (ustawienie about:config)">
 <!ENTITY Ctr_tabwidthdef	"(domyślne)">
 <!ENTITY Ctr_tabwidthcla	"(klasyczne)">
 <!ENTITY Ctr_tabminheight	"Wysokość:">
@@ -95,7 +95,7 @@
 <!ENTITY Ctr_appbuttonc_wh	"Biały kolor przycisku">
 <!ENTITY Ctr_appbuttonc_cu	"Niestandardowy kolor przycisku">
 <!ENTITY Ctr_appbuttonI1	"Zalecany restart">
-<!ENTITY Ctr_appbuttonI1e	"Niewidoczny na systemowym pasku tytułu, tylko na pasku tytułu Cyberfoksa!">
+<!ENTITY Ctr_appbuttonI1e	"Niewidoczny na systemowym pasku tytułu, tylko na pasku tytułu &brandShortName;!">
 <!ENTITY Ctr_appbuttonI2	"Kolory przycisku są tylko widoczne na pasku tytułu oraz pasku kart!">
 <!ENTITY Ctr_alttbappb		"Ikony alternatywne">
 <!ENTITY Ctr_appbutmhi		"Wyższa pozycja (jeżeli na pasku kart)">
@@ -145,7 +145,7 @@
 <!ENTITY Ctr_pmhidelabels	"Wyskakujące okno menu panelu: ukryj etykiety przycisku">
 <!ENTITY Ctr_menupopupscr	"Menu kontekstowe: pokaż pasek przewijania zamiast strzałek przewijania">
 
-<!ENTITY Ctr_fxmockup		"Makieta Cyberfoksa">
+<!ENTITY Ctr_fxmockup		"Makieta &brandShortName;">
 <!ENTITY Ctr_tabmokcolor	"Biały kolor przycisków karty (zamknij, nowa, grupy, lista wszystkich)">
 <!ENTITY Ctr_tabmokcolor2	"Biały kolor i ciemny cień tekstu na nieaktywnych kartach">
 <!ENTITY Ctr_tabmokcolor3	"Biały kolor separatorów kart">
@@ -220,7 +220,7 @@
 <!ENTITY Ctr_alttabstb2		"W trybie zmaksymalizowanym (karty na górze)">
 
 <!ENTITY Ctr_altmenubar		"Dodaj kolor tła (systemowy pasek tytuły)">
-<!ENTITY Ctr_altmenubarpos	"Alternatywna pozycja (poniżej paska tytułu Cyberfoksa)">
+<!ENTITY Ctr_altmenubarpos	"Alternatywna pozycja (poniżej paska tytułu &brandShortName;)">
 <!ENTITY Ctr_menubarnofog	"Usuń kolor tła i mgłę (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_aerocolors		"Niebieskie kolory Aero głównych pasków narzędzi i kart">
@@ -272,7 +272,7 @@
 
 <!ENTITY Ctr_special_font	"Ustawienia koloru tła są tylko dla domyślnego stylu!">
 <!ENTITY Ctr_special_info	"Niektóre opcje mogą nie oferować widocznych zmian we wszystkich przypadkach">
-<!ENTITY Ctr_special_info2	"Ustawienia są stworzone dla domyślnego stylu Cyberfoksa i mogą nie działać z innymi stylami!">
+<!ENTITY Ctr_special_info2	"Ustawienia są stworzone dla domyślnego stylu &brandShortName; i mogą nie działać z innymi stylami!">
 <!ENTITY Ctr_support		"Forum wsparcia">
 <!ENTITY Ctr_newversion		"Nowa wersja?">
 

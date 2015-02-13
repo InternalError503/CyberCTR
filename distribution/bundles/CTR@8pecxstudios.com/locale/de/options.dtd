@@ -178,8 +178,8 @@
 <!ENTITY Ctr_tabc_act_tb	"Tab-Hintergrundfarbe auf Leisten">
 
 <!ENTITY Ctr_urlbar			"Adressleiste">
-<!ENTITY Ctr_starinurl		"'Lesezeichen-Stern' (&brandShortName; neustarten)">
-<!ENTITY Ctr_feedinurl		"'Feed abonnieren' (&brandShortName; neustarten)">
+<!ENTITY Ctr_starinurl		"'Lesezeichen-Stern'">
+<!ENTITY Ctr_feedinurl		"'Feed abonnieren'">
 <!ENTITY Ctr_hideurelstop	"Entferne 'Stopp' &amp; 'Neu laden'">
 <!ENTITY Ctr_urlbardropm	"Verschiebe die 'Schaltfläche' ans Ende der Adressleiste">
 <!ENTITY Ctr_hideprbutton	"Verstecke 'Infosymbol' (wenn ein Popup-Fenster blockiert wurde)">

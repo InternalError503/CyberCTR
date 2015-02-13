@@ -206,8 +206,8 @@
 <!ENTITY Ctr_bookbar		"Barra de Favoritos">
 <!ENTITY Ctr_notoolbar		"Ocultar (Não Exibir os Itens do Menu)">
 
-<!ENTITY Ctr_mbarforceleft	"First element">
-<!ENTITY Ctr_mbarforceright	"Last element">
+<!ENTITY Ctr_mbarforceleft	"Primeiro Elemento">
+<!ENTITY Ctr_mbarforceright	"Último Elemento">
 
 <!ENTITY Ctr_toolbars		"Barras de Ferramentas">
 <!ENTITY Ctr_dblclnewtab	"Clicar Duas Vezes para Abrir a 'Nova' Aba (Usando navegador.novaguia.URL)">
