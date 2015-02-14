@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Evitar Habilitar o 'Tema do Desenvolvedor'">
 
 <!ENTITY Ctr_experttweaks	"Avançado">
-<!ENTITY Ctr_fx33layers		"O Gecko 33+ Introduziu 'Novos Recursos de Renderização', Atualmente Responsáveis por 'Suspender Abas' em Alguns Sistemas. Desmarque esta Opção para Resolver este Problema.">
-<!ENTITY Ctr_fx34search		"O Gecko 34+ Introduziu uma 'Nova Interface de Usuário de Pesquisa'. Desmarque esta Opção para Retornar à 'Antiga Interface de Usuário de Pesquisa'.">
-<!ENTITY Ctr_fx34loop		"O Gecko 34+ Introduziu Recursos de 'Chamada e Conversação'. Desmarque esta Opção para Removê-los.">
-<!ENTITY Ctr_fx35devtheme	"O Gecko 35+ Introduziu um Novo 'Tema do Desenvolvedor'. Desmarque estas Opções para Desabilitar o 'Tema do Desenvolvedor' e o seu Botão em Modo de Personalização.">
-<!ENTITY Ctr_fx36prefs		"O Gecko 36+ Introduziu as Preferências em uma Nova Aba. Desmarque esta Opção para Retornar à Antiga Janela de Preferências.">
+<!ENTITY Ctr_fx33layers		"O &brandShortName; 33+ Introduziu 'Novos Recursos de Renderização', Atualmente Responsáveis por 'Suspender Abas' em Alguns Sistemas. Desmarque esta Opção para Resolver este Problema.">
+<!ENTITY Ctr_fx34search		"O &brandShortName; 34+ Introduziu uma 'Nova Interface de Usuário de Pesquisa'. Desmarque esta Opção para Retornar à 'Antiga Interface de Usuário de Pesquisa'.">
+<!ENTITY Ctr_fx34loop		"O &brandShortName; 34+ Introduziu Recursos de 'Chamada e Conversação'. Desmarque esta Opção para Removê-los.">
+<!ENTITY Ctr_fx35devtheme	"O &brandShortName; 35+ Introduziu um Novo 'Tema do Desenvolvedor'. Desmarque estas Opções para Desabilitar o 'Tema do Desenvolvedor' e o seu Botão em Modo de Personalização.">
+<!ENTITY Ctr_fx36prefs		"O &brandShortName; 36+ Introduziu as Preferências em uma Nova Aba. Desmarque esta Opção para Retornar à Antiga Janela de Preferências.">
 
 
 <!ENTITY Ctr_pw_settings	"Configurações">

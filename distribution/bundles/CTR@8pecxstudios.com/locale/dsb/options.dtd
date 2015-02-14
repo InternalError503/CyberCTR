@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Zmóžnjenjeju 'wuwijarskeje drastwy' zajźowaś">
 
 <!ENTITY Ctr_experttweaks	"Rozšyrjone">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ jo 'nowe kresleńske funkcije' zawjadł, kótarež su tuchylu zagronite za 'njereagěrujuce rejtarki' na někotarych systemach. Gaž znjemóžnijośo toś to nastajenje, rozwěžośo toś ten problem.">
-<!ENTITY Ctr_fx34search		"Gecko 34+ jo 'nowy pytański pówjerch' zawjadł. Gaž znjemóžnijośo toś to nastajenje, wótnowijośo 'stary pytański pówjerch'.">
-<!ENTITY Ctr_fx34loop		"Gecko 34+ jo 'telefoněrowańske a konwersaciske' funkcije zawjadł. Gaž znjemóžnijośo toś to nastajenje, se wótpóraju.">
-<!ENTITY Ctr_fx35devtheme	"Gecko 35+ jo nowu 'wuwijarsku drastwu' zawjadł. Gaž znjemóžnijośo toś te nastajenja, se 'wuwijarska drastwa' a jeje tłocašk w pśiměrjeńskem modusu znjemóžnjatej.">
-<!ENTITY Ctr_fx36prefs		"Gecko 36+ jo nastajenja w rejtarku zawjadł. Gaž znjemóžnijośo toś to nastajenje, se stare wokno nastajenjow wótnowijo..">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ jo 'nowe kresleńske funkcije' zawjadł, kótarež su tuchylu zagronite za 'njereagěrujuce rejtarki' na někotarych systemach. Gaž znjemóžnijośo toś to nastajenje, rozwěžośo toś ten problem.">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ jo 'nowy pytański pówjerch' zawjadł. Gaž znjemóžnijośo toś to nastajenje, wótnowijośo 'stary pytański pówjerch'.">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ jo 'telefoněrowańske a konwersaciske' funkcije zawjadł. Gaž znjemóžnijośo toś to nastajenje, se wótpóraju.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ jo nowu 'wuwijarsku drastwu' zawjadł. Gaž znjemóžnijośo toś te nastajenja, se 'wuwijarska drastwa' a jeje tłocašk w pśiměrjeńskem modusu znjemóžnjatej.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ jo nastajenja w rejtarku zawjadł. Gaž znjemóžnijośo toś to nastajenje, se stare wokno nastajenjow wótnowijo..">
 
 
 <!ENTITY Ctr_pw_settings	"Nastajenja">

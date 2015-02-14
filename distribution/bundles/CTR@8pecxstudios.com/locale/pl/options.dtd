@@ -259,11 +259,11 @@
 
 
 <!ENTITY Ctr_experttweaks	"Poprawki eksperckie">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ wprowadził 'nowe funkcje renderowania' odpowiedzialne obecnie za 'zawieszanie się kart' w niektórych systemach. Odznaczenie tego ustawienia rozwiązuje ten problem.">
-<!ENTITY Ctr_fx34search		"Gecko 34+ wprowadził 'nowy interfejs wyszukiwania'. Odznaczenie tego ustawienia przywraca 'stary interfejs wyszukiwania'.">
-<!ENTITY Ctr_fx34loop		"Gecko 34+ wprowadził funkcje 'dzwonienia i konwersacji'. Odznaczenie tego ustawienia usunie je.">
-<!ENTITY Ctr_fx35devtheme	"Gecko 35+ wprowadził nowy 'motyw twórcy'. Odznaczenie tych ustawień wyłącza 'motyw twórcy' oraz jego przycisk w trybie dostosowywania.">
-<!ENTITY Ctr_fx36prefs		"Gecko 36+ wprowadził opcje w karcie. Odznaczenie tego ustawienia przywraca stare okno opcji.">
+<!ENTITY Ctr_fx33layers		"&brandShortName;sa 33+ wprowadził 'nowe funkcje renderowania' odpowiedzialne obecnie za 'zawieszanie się kart' w niektórych systemach. Odznaczenie tego ustawienia rozwiązuje ten problem.">
+<!ENTITY Ctr_fx34search		"&brandShortName;sa 34+ wprowadził 'nowy interfejs wyszukiwania'. Odznaczenie tego ustawienia przywraca 'stary interfejs wyszukiwania'.">
+<!ENTITY Ctr_fx34loop		"&brandShortName;sa 34+ wprowadził funkcje 'dzwonienia i konwersacji'. Odznaczenie tego ustawienia usunie je.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName;sa 35+ wprowadził nowy 'motyw twórcy'. Odznaczenie tych ustawień wyłącza 'motyw twórcy' oraz jego przycisk w trybie dostosowywania.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName;sa 36+ wprowadził opcje w karcie. Odznaczenie tego ustawienia przywraca stare okno opcji.">
 
 
 <!ENTITY Ctr_pw_settings	"Ustawienia">

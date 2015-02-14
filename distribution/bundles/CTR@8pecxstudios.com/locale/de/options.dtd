@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Verhindere die Aktivierung des 'Entwickler Themas'">
 
 <!ENTITY Ctr_experttweaks	"Erweitert">
-<!ENTITY Ctr_fx33layers		"Mit Gecko 33+ wurden neue 'Render-Funktionen' eingeführt, die zurzeit für 'nicht reagierende und einfrierende Tabs' auf einigen Systemen sorgen. Das Deaktivieren dieser Option löst das Problem.">
-<!ENTITY Ctr_fx34search		"Mit Gecko 34+ wurde eine neue 'Suchoberfläche' eingeführt. Das Deaktivieren dieser Option stellt die 'alte Suchoberfläche' wieder her.">
-<!ENTITY Ctr_fx34loop		"Mit Gecko 34+ wurden 'Anruf- und Konversations-Funktionen' eingeführt. Das Deaktivieren dieser Option entfernt diese Funktionen.">
-<!ENTITY Ctr_fx35devtheme	"Mit Gecko 35+ wurde ein neues 'Entwickler-Thema' eingeführt. Das Deaktivieren dieser Optionen enfernt es und die zugehörige Schaltfläche im 'Anpassen' Modus.">
-<!ENTITY Ctr_fx36prefs		"Mit Gecko 36+ wurden 'Einstellungen im Tab' eingeführt. Das Deaktivieren dieser Option stellt das alte Einstellungsfenster wieder her.">
+<!ENTITY Ctr_fx33layers		"Mit &brandShortName; 33+ wurden neue 'Render-Funktionen' eingeführt, die zurzeit für 'nicht reagierende und einfrierende Tabs' auf einigen Systemen sorgen. Das Deaktivieren dieser Option löst das Problem.">
+<!ENTITY Ctr_fx34search		"Mit &brandShortName; 34+ wurde eine neue 'Suchoberfläche' eingeführt. Das Deaktivieren dieser Option stellt die 'alte Suchoberfläche' wieder her.">
+<!ENTITY Ctr_fx34loop		"Mit &brandShortName; 34+ wurden 'Anruf- und Konversations-Funktionen' eingeführt. Das Deaktivieren dieser Option entfernt diese Funktionen.">
+<!ENTITY Ctr_fx35devtheme	"Mit &brandShortName; 35+ wurde ein neues 'Entwickler-Thema' eingeführt. Das Deaktivieren dieser Optionen enfernt es und die zugehörige Schaltfläche im 'Anpassen' Modus.">
+<!ENTITY Ctr_fx36prefs		"Mit &brandShortName; 36+ wurden 'Einstellungen im Tab' eingeführt. Das Deaktivieren dieser Option stellt das alte Einstellungsfenster wieder her.">
 
 <!ENTITY Ctr_pw_settings	"Einstellungen">
 <!ENTITY Ctr_pw_set_reset	"Standard wiederherstellen">

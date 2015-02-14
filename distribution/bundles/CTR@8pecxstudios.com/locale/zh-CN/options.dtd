@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"阻止“开发者主题”被启用">
 
 <!ENTITY Ctr_experttweaks	"高级">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ 引入“新渲染器功能”目前可能是某些系统“标签页卡死”的主要原因。不选中此项以解决该问题。">
-<!ENTITY Ctr_fx34search		"Gecko 34+ 引入“新搜索界面”。不选中此项以恢复“旧搜索界面”。">
-<!ENTITY Ctr_fx34loop		"Gecko 34+ 引入“呼叫和通话”功能。不选中此项以移除它们。">
-<!ENTITY Ctr_fx35devtheme	"Gecko 35+ 引入新的“开发者主题”。不选中此项以禁用“开发者主题”以及定制模式下它的一些按钮。">
-<!ENTITY Ctr_fx36prefs		"Gecko 36+ 引入在标签页中显示选项设置。不选中此项以使用旧选项窗口。">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ 引入“新渲染器功能”目前可能是某些系统“标签页卡死”的主要原因。不选中此项以解决该问题。">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ 引入“新搜索界面”。不选中此项以恢复“旧搜索界面”。">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ 引入“呼叫和通话”功能。不选中此项以移除它们。">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ 引入新的“开发者主题”。不选中此项以禁用“开发者主题”以及定制模式下它的一些按钮。">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ 引入在标签页中显示选项设置。不选中此项以使用旧选项窗口。">
 
 
 <!ENTITY Ctr_pw_settings	"设置">

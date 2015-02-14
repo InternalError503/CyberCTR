@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Empêche l’activation du « thème développeur »">
 
 <!ENTITY Ctr_experttweaks	"Expert">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ introduit de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (pas de réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
-<!ENTITY Ctr_fx34search		"Gecko 34+ introduit une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
-<!ENTITY Ctr_fx34loop		"Gecko 34+ introduit la possibilité d’inviter quelqu’un à discuter. Cette possibilité est desactivée en décochant cette option.">
-<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduit un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
-<!ENTITY Ctr_fx36prefs		"Gecko 36+ place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ introduit de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (pas de réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ introduit une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ introduit la possibilité d’inviter quelqu’un à discuter. Cette possibilité est desactivée en décochant cette option.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ introduit un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
 
 
 <!ENTITY Ctr_pw_settings	"Réglages">

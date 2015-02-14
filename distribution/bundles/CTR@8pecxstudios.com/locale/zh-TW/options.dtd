@@ -257,11 +257,11 @@
 <!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"進階">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ 啟用了「OMTC」，目的是改善瀏覽器響應速度，但某些硬體組合環境下可能造成故障。取消勾選這個核取方塊 ，可解決相關問題。">
-<!ENTITY Ctr_fx34search		"Gecko  34+ 引入了「新搜尋列介面」。取消勾選這個核取方塊 ，則可恢復為「舊式搜尋列介面」。">
-<!ENTITY Ctr_fx34loop		"Gecko  34+ 實作了「Gecko  Hello 即時通訊」功能。取消勾選這個核取方塊 ，則可移除這項功能。">
-<!ENTITY Ctr_fx35devtheme	"Gecko  35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
-<!ENTITY Ctr_fx36prefs		"Gecko  36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ 啟用了「OMTC」，目的是改善瀏覽器響應速度，但某些硬體組合環境下可能造成故障。取消勾選這個核取方塊 ，可解決相關問題。">
+<!ENTITY Ctr_fx34search		"&brandShortName;  34+ 引入了「新搜尋列介面」。取消勾選這個核取方塊 ，則可恢復為「舊式搜尋列介面」。">
+<!ENTITY Ctr_fx34loop		"&brandShortName;  34+ 實作了「&brandShortName;  Hello 即時通訊」功能。取消勾選這個核取方塊 ，則可移除這項功能。">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName;  35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName;  36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 
 <!ENTITY Ctr_pw_settings	"設定">

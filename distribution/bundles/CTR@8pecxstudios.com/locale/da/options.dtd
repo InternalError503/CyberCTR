@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Prevent 'Developer Theme' from being enabled">
 
 <!ENTITY Ctr_experttweaks	"Avanceret">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ introducerede 'nye renderingsfunktioner' som i øjeblikket er skyld i 'faneblade som hænger' på nogle systemer. Fjern markeringen for at rette problem.">
-<!ENTITY Ctr_fx34search		"Gecko 34+ introducerede 'en ny brugerflade til søgning'. Fjern markeringen for at vende tilbage til den 'gamle brugerflade'.">
-<!ENTITY Ctr_fx34loop		"Gecko 34+ introducerede 'opkald og samtaler'. Fjern markeringen ved denne indstilling for at fjerne funktionen.">
-<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
-<!ENTITY Ctr_fx36prefs		"Gecko 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ introducerede 'nye renderingsfunktioner' som i øjeblikket er skyld i 'faneblade som hænger' på nogle systemer. Fjern markeringen for at rette problem.">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ introducerede 'en ny brugerflade til søgning'. Fjern markeringen for at vende tilbage til den 'gamle brugerflade'.">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ introducerede 'opkald og samtaler'. Fjern markeringen ved denne indstilling for at fjerne funktionen.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ introduced preferences in a tab. Unchecking this preference restores the old preference window.">
 
 
 <!ENTITY Ctr_pw_settings	"Indstillinger">

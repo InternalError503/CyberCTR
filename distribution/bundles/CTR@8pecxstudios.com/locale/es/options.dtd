@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Prevenir que se habilite el 'tema de decoración de desarrollador'">
 
 <!ENTITY Ctr_experttweaks	"Avanzadas">
-<!ENTITY Ctr_fx33layers		"Gecko 33+ introdujo 'nuevas características de renderizado' responsables en la actualidad de 'colgar pestañas' en algunos sistemas. Desmarcar esta preferencia resuelve el problema.">
-<!ENTITY Ctr_fx34search		"Gecko 34+ introdujo una 'nueva interfaz de usuario de búsqueda'. Desmarcando esta preferencia vuelve a la 'antigua interfaz de usuario de búsqueda'.">
-<!ENTITY Ctr_fx34loop		"Gecko 34+ introdujo características de 'llamada y conversación'. Desmarcar esto las retira.">
-<!ENTITY Ctr_fx35devtheme	"Gecko 35+ introdujo un nuevo 'tema de decoración de desarrollador'. Desmarcar estas preferencias deshabilita el 'tema de desarrollador' y su botón en el modo Personalizar.">
-<!ENTITY Ctr_fx36prefs		"Gecko 36+ introdujo las Opciones (about:preferences) en una pestaña. Desmarcar esta preferencia restaura la antigua ventana de Opciones.">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ introdujo 'nuevas características de renderizado' responsables en la actualidad de 'colgar pestañas' en algunos sistemas. Desmarcar esta preferencia resuelve el problema.">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ introdujo una 'nueva interfaz de usuario de búsqueda'. Desmarcando esta preferencia vuelve a la 'antigua interfaz de usuario de búsqueda'.">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ introdujo características de 'llamada y conversación'. Desmarcar esto las retira.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ introdujo un nuevo 'tema de decoración de desarrollador'. Desmarcar estas preferencias deshabilita el 'tema de desarrollador' y su botón en el modo Personalizar.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ introdujo las Opciones (about:preferences) en una pestaña. Desmarcar esta preferencia restaura la antigua ventana de Opciones.">
 
 
 <!ENTITY Ctr_pw_settings	"Configuración">
