@@ -605,7 +605,7 @@
 				  <menuseparator id="ctraddon_appmenu_sep" collapsed="true"/>
 	<menuitem id="ctraddon_appmenu_aboutc"
                 label="About:Config"
-				        oncommand="openUILinkIn('about:config', 'tab');"/>
+				        oncommand="gCyberfoxCustom.openAboutConfig();"/>
 			  </menupopup>
 			</menu>
  				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
