@@ -696,7 +696,7 @@
                      persist="class"
                      removable="true"
                      type="menu"
-                     label="Customize"
+                     label="&brandShortName;"
 					 popup="appmenu-popup"
 					 onmousedown="classicthemerestorerjs.ctr.openCtrAppmenuPopup();">
 	  </toolbarbutton>
