@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Nadzorni gumbi za povečavo na orodni vrstici: skrij gumb za ponastavitev povečave">
 <!ENTITY Ctr_alt_newtabp	"Stran novega zavihka: nadomestni videz">
 <!ENTITY Ctr_noresizerxp	"Skrij spremenilnik velikosti (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
+<!ENTITY Ctr_extraurlbut	"Go">
 <!ENTITY Ctr_pmhidelabels	"Pojavno okno ploščastega menija: skrij oznake gumbov">
 <!ENTITY Ctr_menupopupscr	"Pojavna okna menijev: prikaži drsnike namesto drsnih puščic">
 
@@ -197,7 +199,7 @@
 <!ENTITY Ctr_extrabar		"Dodatne orodne vrstice">
 <!ENTITY Ctr_extrabar0		"Dodatne orodne vrstice">
 <!ENTITY Ctr_extrabar1		"Dodatna orodna vrstica">
-<!ENTITY Ctr_extrabarinfo	"Preklop med načinoma 'Zavihki na vrhu' in 'Zavihki niso na vrhu' naključno spremeni vrstni red dodatnih orodnih vrstic. Za razrešitev te težave morate ponovno zagnati &brandShortName;.">
+<!ENTITY Ctr_extrabarinfo	"Preklop med načinoma 'Zavihki na vrhu' in 'Zavihki niso na vrhu' naključno spremeni vrstni red dodatnih orodnih vrstic. Za razrešitev te težave morate ponovno zagnati &brandShortName;a.">
 
 <!ENTITY Ctr_invicons		"Obrnjene ikone">
 <!ENTITY Ctr_menubar		"Vrstica z menijem">

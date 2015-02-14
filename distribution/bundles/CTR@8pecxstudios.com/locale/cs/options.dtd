@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Přiblížit prvky na liště: skrýt tlačítko pro obnovení lupy">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
+<!ENTITY Ctr_extraurlbut	"Go">
 <!ENTITY Ctr_pmhidelabels	"Tlačítko nabídky: skrýt texty u ikon">
 <!ENTITY Ctr_menupopupscr	"Nabídky: zobrazit rolovací lištu místo šipek">
 

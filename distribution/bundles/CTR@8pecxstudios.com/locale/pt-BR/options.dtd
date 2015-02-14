@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Controles de Ampliação na Barra de Ferramentas: Ocultar o Botão Redefinir Ampliação">
 <!ENTITY Ctr_alt_newtabp	"Página Nova Aba: Aparência Alternativa">
 <!ENTITY Ctr_noresizerxp	"Ocultar o Redimensionamento (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
+<!ENTITY Ctr_extraurlbut	"Go">
 <!ENTITY Ctr_pmhidelabels	"Menu do Painel: Ocultar Rótulos do Botão">
 <!ENTITY Ctr_menupopupscr	"Pop-ups do Menu: Exibir Barras de Rolagem em vez das Setas de Rolagem">
 

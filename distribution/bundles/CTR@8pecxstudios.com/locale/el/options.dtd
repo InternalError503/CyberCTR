@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Στοιχεία ελέγχου μεγέθυνσης σε εργαλειοθήκη: απόκρυψη κουμπιού επεναφοράς επιπέδου μεγέθυνσης">
 <!ENTITY Ctr_alt_newtabp	"Σελίδα νέας καρτέλας: εναλλακτική εμφάνιση">
 <!ENTITY Ctr_noresizerxp	"Απόκρυψη λαβής αλλαγής μεγέθους του παραθύρου (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
+<!ENTITY Ctr_extraurlbut	"Go">
 <!ENTITY Ctr_pmhidelabels	"Μενού πίνακα: απόκρυψη ετικετών κουμπιών">
 <!ENTITY Ctr_menupopupscr	"Αναδυόμενα μενού: εμφάνιση γραμμών κύλισης αντί για βέλη κύλισης">
 

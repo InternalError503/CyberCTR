@@ -91,7 +91,7 @@
 	  }
 	}
 	
-	/* for LavaFox themes lol*/
+	/* for LavaFox themes */
 	#main-window[currenttheme^="LavaFox"][tabsintitlebar][chromehidden~="menubar"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar ~ #TabsToolbar,
 	#main-window[currenttheme^="LavaFox"][tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar[autohide="true"][inactive] ~ #TabsToolbar {
 	  margin-top: 0px !important;

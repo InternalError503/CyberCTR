@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Araç çubuğunda zoom kontrolü: zoom-reset butonu gizle">
 <!ENTITY Ctr_alt_newtabp	"Yeni sekme sayfası: alternatif görünüm">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
+<!ENTITY Ctr_extraurlbut	"Go">
 <!ENTITY Ctr_pmhidelabels	"Panel menu uyarısı: buton etikeitini gizle">
 <!ENTITY Ctr_menupopupscr	"Menu uyarısı: kaydırma okları yerine kaydırma çubuklarını göster">
 
@@ -199,7 +201,7 @@
 <!ENTITY Ctr_extrabar1		"Ek Araç Çubuğu">
 <!ENTITY Ctr_extrabarinfo	"'Sekmeler yukarıda' ve 'Sekmeler yukarıda olmadığı' modlar arası değişmek, bazen araç çubuklarını bozabilir. &brandShortName; bu sorunu çözmek için yeniden başlatılması gerekir.">
 
-<!ENTITY Ctr_invicons		"Ters çevrilmiş simgeler">
+<!ENTITY Ctr_invicons		"Ters çevrilmiş simgeleri">
 <!ENTITY Ctr_menubar		"Menu çubuğu">
 <!ENTITY Ctr_tabstoolbar	"Sekme araç çubuğu">
 <!ENTITY Ctr_navbar			"Gezinti araç çubuğu">

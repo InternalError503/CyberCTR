@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Controles de zoom en la barra de herramientas: Ocultar botón de restablecimiento del zoom">
 <!ENTITY Ctr_alt_newtabp	"Página de nueva pestaña: Apariencia alternativa">
 <!ENTITY Ctr_noresizerxp	"Ocultar redimensionador (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
+<!ENTITY Ctr_extraurlbut	"Go">
 <!ENTITY Ctr_pmhidelabels	"Menú de panel emergente: Ocultar etiquetas de los botones">
 <!ENTITY Ctr_menupopupscr	"Menús emergentes: Mostrar barras de desplazamiento en lugar de flechas">
 
@@ -154,7 +156,7 @@
 <!ENTITY Ctr_navthrobber1	"Hacer clic en el indicador de actividad abre la URL especificada:">
 <!ENTITY Ctr_navthrobber2	"Añada URL o déjelo vacío">
 
-<!ENTITY Ctr_tab_tf_info1	"Están soportados como entrada nombres de colores, códigos hexadecimales, y valores rgb(a) y hsl(a).">
+<!ENTITY Ctr_tab_tf_info1	"Están soportados como entradas nombres de colores, códigos hexadecimales, y valores rgb(a) y hsl(a).">
 <!ENTITY Ctr_tab_tf_info2	"¡Las entradas no serán validadas!">
 <!ENTITY Ctr_tabact_t		"activa">
 <!ENTITY Ctr_tabhov_t		"señalada">

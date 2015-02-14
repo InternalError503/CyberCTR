@@ -142,6 +142,8 @@
 <!ENTITY Ctr_hidezoomres	"Zoom-Schaltflächen auf Leisten: verstecke Schaltfläche 'Normalgröße'">
 <!ENTITY Ctr_alt_newtabp	"Seite 'Neuer Tab': alternative Darstellung">
 <!ENTITY Ctr_noresizerxp	"'Resizer' verstecken (Windows XP/2000)">
+<!ENTITY Ctr_extraurlkeycb	"Tastenkombination ALT+S öffnet weitere Adressleiste">
+<!ENTITY Ctr_extraurlbut	"Los">
 <!ENTITY Ctr_pmhidelabels	"Menüschaltflächen-Aufklappmenü: verstecke Schaltflächen-Text">
 <!ENTITY Ctr_menupopupscr	"Aufklappmenüs: ersetze Navigationspfeile durch Bildlaufleisten">
 
