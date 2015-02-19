@@ -142,8 +142,7 @@
 <!ENTITY Ctr_hidezoomres	"Araç çubuğunda zoom kontrolü: zoom-reset butonu gizle">
 <!ENTITY Ctr_alt_newtabp	"Yeni sekme sayfası: alternatif görünüm">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
-<!ENTITY Ctr_extraurlbut	"Go">
+<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Panel menu uyarısı: buton etikeitini gizle">
 <!ENTITY Ctr_menupopupscr	"Menu uyarısı: kaydırma okları yerine kaydırma çubuklarını göster">
 

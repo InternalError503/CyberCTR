@@ -1099,7 +1099,7 @@ classicthemerestorerjso.ctr = {
 	  value: []
 	};
 
-		//Preference Filter all preferences we don't want to export\import..
+		// Exclude all preferences we don't want to export/import.
 		let blacklist = [
 		"extensions.classicthemerestorer.pref_actindx",
 		"extensions.classicthemerestorer.pref_actindx2",

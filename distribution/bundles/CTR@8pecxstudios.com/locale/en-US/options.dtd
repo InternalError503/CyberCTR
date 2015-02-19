@@ -142,8 +142,7 @@
 <!ENTITY Ctr_hidezoomres	"Zoom controls on toolbar: hide zoom-reset button">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Key combination ALT+D opens additional location bar">
-<!ENTITY Ctr_extraurlbut	"Go">
+<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Panel menu popup: hide button labels">
 <!ENTITY Ctr_menupopupscr	"Menupopups: show scrollbars instead of scroll arrows">
 

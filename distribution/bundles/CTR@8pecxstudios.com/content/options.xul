@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://classic_theme_restorer/content/overlay.css" type="text/css"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://classic_theme_restorer/locale/options.dtd">
+
+<!DOCTYPE overlay [
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+	%browserDTD;
+  <!ENTITY % window SYSTEM "chrome://classic_theme_restorer/locale/options.dtd">
+	%window;
+]>
 
 <prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	id="ClassicTRoptions"
@@ -769,7 +775,7 @@
 		<checkbox label="&Ctr_hideurelstop;" preference="ctraddon_hideurelstop" id="ctraddon_pw_hideurelstop"/>
 		<checkbox label="&Ctr_urlbardropm;"	 preference="ctraddon_urlbardropm"  id="ctraddon_pw_urlbardropm"/>
 		<checkbox label="&Ctr_hideprbutton;" preference="ctraddon_hideprbutton" id="ctraddon_pw_urlbarpblocked"/>
-		<checkbox label="&Ctr_extraurlkeycb;"	preference="ctraddon_extraurlkeycb" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
+		<checkbox label="&Ctr_extraurlkeycb;&openCmd.commandkey; &amp; Alt+&urlbar.accesskey; [Windows/Linux])"	preference="ctraddon_extraurlkeycb" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 	  </groupbox>
 		
 	  <groupbox>

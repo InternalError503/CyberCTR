@@ -142,8 +142,7 @@
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
 <!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
-<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
-<!ENTITY Ctr_extraurlbut	"Go">
+<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
 
@@ -277,7 +276,7 @@
 <!ENTITY Ctr_support		"Форум поддержки">
 <!ENTITY Ctr_newversion		"Новая версия?">
 
-<!ENTITY Ctr_addon-bar.accesskey	"Д">
+<!ENTITY Ctr_addon-bar.accesskey	"A">
 <!ENTITY Ctr_openInPrivateWindow	"Открыть в новом приватном окне">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Приступаем к работе">

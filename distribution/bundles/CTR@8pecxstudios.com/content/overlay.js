@@ -2088,6 +2088,11 @@ classicthemerestorerjs.ctr = {
 	setTimeout(function(){
 	  try{
 		if(classicthemerestorerjs.ctr.prefs.getBoolPref('extraurlkeycb')) {
+		  document.getElementById("focusURLBar").setAttribute("command",'CtrExtension:ToggleUrlExtraBar');
+		}
+	  } catch(e){}
+	  try{
+		if(classicthemerestorerjs.ctr.prefs.getBoolPref('extraurlkeycb')) {
 		  document.getElementById("focusURLBar2").setAttribute("command",'CtrExtension:ToggleUrlExtraBar');
 		}
 	  } catch(e){}

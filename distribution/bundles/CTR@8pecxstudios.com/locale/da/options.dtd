@@ -142,8 +142,7 @@
 <!ENTITY Ctr_hidezoomres	"Zoom knapper på værktøjslinje: skjul zoom-nulstil knapper">
 <!ENTITY Ctr_alt_newtabp	"Nyt faneblad side: alternativt udseende">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
-<!ENTITY Ctr_extraurlbut	"Go">
+<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Panelmenu popup: skjul mærkater på knapper">
 <!ENTITY Ctr_menupopupscr	"Menupopups: vis rullepaneler i stedet for rullepile">
 

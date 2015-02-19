@@ -142,8 +142,7 @@
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Key combination opens additional location bar">
-<!ENTITY Ctr_extraurlbut	"Go">
+<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Menu du panneau latéral : icônes seules">
 <!ENTITY Ctr_menupopupscr	"Menus pop-up : afficher des ascenseurs au lieu des flèches de défilement">
 
