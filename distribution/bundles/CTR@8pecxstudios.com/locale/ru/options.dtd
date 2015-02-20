@@ -10,7 +10,7 @@
   %brandDTD;
 <!-- Do not edit above this message-->  
 
-<!ENTITY Ctr_title			"Настройка &brandShortName;">
+<!ENTITY Ctr_title			"Персонализация &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"Панель дополнений">
 <!ENTITY Ctr_statusbar		"Статус панель">
@@ -261,7 +261,7 @@
 <!ENTITY Ctr_fx34search		"С &brandShortName; 34+ новая панель поиска. Отключение этой опции позволяет вернуть старую панель поиска.">
 <!ENTITY Ctr_fx34loop		"С &brandShortName; 34+ добавлен клиент для связи в режиме реального времени. Отключение параметра удаляет эту функцию.">
 <!ENTITY Ctr_fx35devtheme	"С &brandShortName; 35+ введена новая «Тема разработчика». Отключение параметра удаляет её и соответствующую кнопку в режиме «Настройка».">
-<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ настройки в новой вкладке. Если снять этот параметр, то восстанавливает старое окно настроек.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ настройки в новой вкладке. Если отключить этот параметр, восстанавливается старое окно настроек.">
 
 
 <!ENTITY Ctr_pw_settings	"Настройки">
@@ -288,9 +288,9 @@
 <!ENTITY ctr_help_features	"Информация о возможностях &amp;">
 <!ENTITY ctr_tabtitleintitlebar	"Добавить название вкладки в заголовок окна">
 
-<!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
-<!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">
+<!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
+<!ENTITY ctr_restoreCTRPrefFile.label	"Восстановление из резервной копии">
 
-<!ENTITY ctr_personanoshadow	"Remove text shadow on persona themes">
-<!ENTITY ctr_appbuttoncusttextcolor	"AppButton text color.">
-<!ENTITY ctr_appbuttoncusttextshadow	"Remove AppButton text shadow">
+<!ENTITY ctr_personanoshadow	"Удаление теней шрифтов в темах пользователя">
+<!ENTITY ctr_appbuttoncusttextcolor	"Цвет текста кнопки меню.">
+<!ENTITY ctr_appbuttoncusttextshadow	"Удаление тени шрифта кнопки меню">
