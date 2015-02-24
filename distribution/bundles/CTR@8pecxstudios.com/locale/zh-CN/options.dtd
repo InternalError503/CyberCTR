@@ -233,6 +233,7 @@
 <!ENTITY Ctr_nonavborder	"书签工具栏: 添加上边框">
 <!ENTITY Ctr_nonavtbborder	"顶部工具栏: 移除工具栏边框">
 <!ENTITY Ctr_hidesbclose	"侧边栏: 隐藏侧边栏关闭按钮">
+<!ENTITY Ctr_notextshadow	"Toolbars: hide shadow for toolbar text and tab text">
 <!ENTITY Ctr_chevronfix		"导航工具栏: 隐藏工具栏尾部的双箭头 ('chevron')">
 
 <!ENTITY Ctr_closeabarbut	"隐藏附加组件栏关闭按钮">
@@ -297,6 +298,5 @@
 <!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">
 
-<!ENTITY ctr_personanoshadow	"Remove text shadow on persona themes">
 <!ENTITY ctr_appbuttoncusttextcolor	"AppButton text color.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Remove AppButton text shadow">

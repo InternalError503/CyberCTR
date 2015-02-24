@@ -233,6 +233,7 @@
 <!ENTITY Ctr_nonavborder	"Barre personnelle : ajouter une bordure en haut de la barre">
 <!ENTITY Ctr_nonavtbborder	"Barres d’outils en haut : enlever les bordures">
 <!ENTITY Ctr_hidesbclose	"Panneaux latéraux : masquer le bouton de fermeture">
+<!ENTITY Ctr_notextshadow	"Toolbars: hide shadow for toolbar text and tab text">
 <!ENTITY Ctr_chevronfix		"Barre de navigation : masquer le chevron à la fin de la barre">
 
 <!ENTITY Ctr_closeabarbut	"Masquer le bouton de fermeture">
@@ -300,6 +301,5 @@
 <!ENTITY ctr_applyCTRPrefFile.label	"Appliquer les changements">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurer la copie de sauvegarde">
 
-<!ENTITY ctr_personanoshadow	"Enlever les ombres au texte des thèmes Persona.">
 <!ENTITY ctr_appbuttoncusttextcolor	"Couleur de texte du bouton d’application.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Enlever l’ombre du texte du bouton d’application.">

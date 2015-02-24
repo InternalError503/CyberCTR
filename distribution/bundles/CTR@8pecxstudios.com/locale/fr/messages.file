@@ -1,7 +1,8 @@
 # LOCALIZATION NOTE (popup.title, popup.msg.restart):
 # %S will be replaced by brandShortName
 popup.title=Personnaliser %S
-popup.msg.restart=%S doit être redémarré pour que les changements de configuration soient pris en compte.\nVoulez-vous redémarrer maintenant ?
+popup.msg.restart=%S doit être redémarré pour que les changements de configuration soient pris en compte.\nEst-ce que cela doit être fait maintenant?
+popup.msg.cctrrestarturlbar=Location bars last position could break browser ui and had to be reset.\n%S has to be restarted.\n\nRestart now?
 import.error=ERROR: Fichier erroné ou modifié !\nAucune donnée ne peut être importée !
 import.errorJSON=Désolé. Un problème est survenu pendant l’importation du fichier CTRpreferences.json (json n’est pas valide!)
 ctr_extrabar=Barre d’outils supplémentaire

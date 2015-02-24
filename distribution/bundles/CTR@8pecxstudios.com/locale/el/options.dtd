@@ -233,6 +233,7 @@
 <!ENTITY Ctr_nonavborder	"Εργαλειοθήκη σελιδοδεικτών: προσθήκη περιγράμματος κορυφής στην εργαλειοθήκη">
 <!ENTITY Ctr_nonavtbborder	"Εργαλειοθήκες κορυφής: αφαίρεση περιγραμμάτων εργαλειοθήκης">
 <!ENTITY Ctr_hidesbclose	"Πλευρικές στήλες: απόκρυψη κουμπιού κλεισίματος πλευρικής στήλης">
+<!ENTITY Ctr_notextshadow	"Toolbars: hide shadow for toolbar text and tab text">
 <!ENTITY Ctr_chevronfix		"Εργαλειοθήκη πλοήγησης: απόκρυψη διπλού βέλους («σιρίτι») στο τέλος της εργαλειοθήκης">
 
 <!ENTITY Ctr_closeabarbut	"Απόκρυψη κουμπιού κλεισίματος εργαλειοθήκης πρόσθετων">
@@ -297,6 +298,5 @@
 <!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">
 
-<!ENTITY ctr_personanoshadow	"Remove text shadow on persona themes">
 <!ENTITY ctr_appbuttoncusttextcolor	"AppButton text color.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Remove AppButton text shadow">

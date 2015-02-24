@@ -2,6 +2,7 @@
 # %S will be replaced by brandShortName
 popup.title=Customize %S
 popup.msg.restart=Za uveljavitev sprememb se mora %S ponovno zagnati.\nPonovno zaženi zdaj?
+popup.msg.cctrrestarturlbar=Location bars last position could break browser ui and had to be reset.\n%S has to be restarted.\n\nRestart now?
 import.error=NAPAKA: Najdena je bila napačna ali spremenjena datoteka!\nNičesar ni bilo mogoče uvoziti!
 import.errorJSON=Were sorry but something has gone wrong while trying to import CTRpreferences.json (json is not valid!)
 ctr_extrabar=Dodatna orodna vrstica

@@ -2,6 +2,7 @@
 # %S will be replaced by brandShortName
 popup.title=Персонализация %S
 popup.msg.restart=%S должен быть перезапущен для вступления изменений в силу. \nВы хотите сделать это сейчас?
+popup.msg.cctrrestarturlbar=Location bars last position could break browser ui and had to be reset.\n%S has to be restarted.\n\nRestart now?
 import.error=ОШИБКА: Найден неправильный или изменённый файл\nНичего не может быть импортировано!
 import.errorJSON=К сожалению, при попытке импортировать CTRpreferences.json возникла проблема (ошибка в json!)
 ctr_extrabar=Дополнительная панель

@@ -233,7 +233,8 @@
 <!ENTITY Ctr_nonavborder	"Панель закладок: добавить верхнюю границу для панели инструментов">
 <!ENTITY Ctr_nonavtbborder	"Популярные панели инструментов: удалить границы панелей инструментов">
 <!ENTITY Ctr_hidesbclose	"Боковые панели: скрыть кнопку «Закрыть» на боковой панели">
-<!ENTITY Ctr_chevronfix		"Панель навигации: скрыть двойную стрелку ('шеврон') в конце панели">
+<!ENTITY Ctr_notextshadow	"Toolbars: hide shadow for toolbar text and tab text">
+<!ENTITY Ctr_chevronfix		"Панель навигации: скрыть двойную стрелку («шеврон») в конце панели">
 
 <!ENTITY Ctr_closeabarbut	"Скрыть кнопку закрытия">
 <!ENTITY Ctr_highaddonsbar	"Увеличить высоту">
@@ -297,6 +298,5 @@
 <!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Восстановление из резервной копии">
 
-<!ENTITY ctr_personanoshadow	"Удаление теней шрифтов в темах пользователя">
 <!ENTITY ctr_appbuttoncusttextcolor	"Цвет текста кнопки меню.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Удаление тени шрифта кнопки меню">

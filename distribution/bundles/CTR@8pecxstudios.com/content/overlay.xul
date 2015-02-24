@@ -108,11 +108,11 @@
 				  autocompletesearch="urlinline history"
 				  enablehistory="true"
 				  class="uri-element"
-				  onkeydown="if(event.keyCode == '13') {gBrowser.selectedTab=gBrowser.addTab(this.value); document.getElementById('ctraddon_urlextrabar').setAttribute('collapsed',true);}"/>
+				  onkeydown="if(event.keyCode == '13') {gBrowser.selectedTab=gBrowser.addTab(this.value); document.getElementById('ctraddon_urlextrabar').setAttribute('collapsed',true);} else if(event.keyCode == '27') {document.getElementById('ctraddon_urlextrabar').setAttribute('collapsed',true);}"/>
 		  <button id="ctr_extraurlbar_button" removable="false" class="toolbarbutton-1"
 					oncommand="gBrowser.selectedTab=gBrowser.addTab(document.getElementById('ctraddon_extraurlbar_tb').value); document.getElementById('ctraddon_urlextrabar').setAttribute('collapsed',true);"/>
 		  <button id="ctraddon_extraurlbar-close" removable="false" class="ctr_extraurlbar_button-close close-icon"
-			    oncommand="classicthemerestorerjs.ctr.toggleCtrUrlExtraBar();"/>
+			    oncommand="document.getElementById('ctraddon_urlextrabar').setAttribute('collapsed',true);"/>
 	  </hbox>
 
 	</vbox>
@@ -122,7 +122,7 @@
 	  <toolbarbutton id="ctraddon_PanelUI-CTR-button"
 					 insertbefore="PanelUI-help"
 					 oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-					 tooltiptext="Classic Theme Restorer"/>
+					 tooltiptext="&Ctr_title;"/>
 	  <toolbarseparator insertbefore="PanelUI-help" id="ctraddon_PanelUI-CTR-button-separator"/>
 	</hbox>
 	
@@ -145,6 +145,8 @@
 	<!--### Add ability to open the 'more page info' window by clicking the icon inside identity box ###-->
 	<image id="page-proxy-favicon"
 	  onclick="if(classicthemerestorerjs.ctr.prefs.getBoolPref('icopageinfo')) gIdentityHandler.handleMoreInfoClick(event); else PageProxyClickHandler(event);"/>
+
+	<button id="customization-reset-button" onclick="if (event.button=='0') classicthemerestorerjs.ctr.resetCTRtoolbarConf();"/>
 
 	<!--### moveable urlbar & buttons ###-->
 	<toolbaritem id="urlbar-container" style="min-width:200px !important;" removable="true"/>

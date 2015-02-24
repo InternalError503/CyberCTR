@@ -97,6 +97,7 @@ pref("extensions.classicthemerestorer.nonavbarbg",false);
 pref("extensions.classicthemerestorer.nonavborder",false);
 pref("extensions.classicthemerestorer.nonavtbborder",false);
 pref("extensions.classicthemerestorer.hidesbclose",false);
+pref("extensions.classicthemerestorer.notextshadow",false);
 pref("extensions.classicthemerestorer.chevronfix",false);
 
 pref("extensions.classicthemerestorer.dblclnewtab",false);
@@ -225,9 +226,6 @@ pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
 
 //CyberCTR Add tab title to titlebar
 pref("extensions.classicthemerestorer.titleintitlebar", false);
-
-//CyberCTR No text shadow on persona themes.
-pref("extensions.classicthemerestorer.personanoshadow", false);
 
 //CyberCTR version
 pref("extensions.classicthemerestorer.version", "1.2.2");
