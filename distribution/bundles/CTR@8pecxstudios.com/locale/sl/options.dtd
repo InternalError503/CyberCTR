@@ -258,11 +258,11 @@
 <!ENTITY Ctr_nodevtheme		"Prepreči namestitev teme 'Developer Theme'">
 
 <!ENTITY Ctr_experttweaks	"Napredno">
-<!ENTITY Ctr_fx33layers		"Geko 33+ je vpeljal 'nove možnosti izrisa', ki na nekaterih sistemih povzročajo 'zamrznitev zavihkov'. Odznačitev te nastavitve bo rešila to težavo.">
-<!ENTITY Ctr_fx34search		"Geko 34+ je vpeljal 'nov ui za iskanje'. Odznačitev te nastavitve povrne 'stari ui za iskanje'.">
-<!ENTITY Ctr_fx34loop		"Geko 34+ je vpeljal možnosti 'klicanja in pogovorov'. Odznačitev te nastavitve jih odstrani.">
-<!ENTITY Ctr_fx35devtheme	"Geko 35+ je vpeljal novo temo 'Developer theme'. Odznačitev teh nastavitev to temo in pripadajoči gumb v načinu prilagoditve onemogoči.">
-<!ENTITY Ctr_fx36prefs		"Geko 36+ je vpeljal nastavitve v zavihku. Odznačitev te nastavitve obnovi staro okno nastavitev.">
+<!ENTITY Ctr_fx33layers		"&brandShortName;a 33+ je vpeljal 'nove možnosti izrisa', ki na nekaterih sistemih povzročajo 'zamrznitev zavihkov'. Odznačitev te nastavitve bo rešila to težavo.">
+<!ENTITY Ctr_fx34search		"&brandShortName;a 34+ je vpeljal 'nov ui za iskanje'. Odznačitev te nastavitve povrne 'stari ui za iskanje'.">
+<!ENTITY Ctr_fx34loop		"&brandShortName;a 34+ je vpeljal možnosti 'klicanja in pogovorov'. Odznačitev te nastavitve jih odstrani.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName;a 35+ je vpeljal novo temo 'Developer theme'. Odznačitev teh nastavitev to temo in pripadajoči gumb v načinu prilagoditve onemogoči.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName;a 36+ je vpeljal nastavitve v zavihku. Odznačitev te nastavitve obnovi staro okno nastavitev.">
 
 
 <!ENTITY Ctr_pw_settings	"Nastavitve">
