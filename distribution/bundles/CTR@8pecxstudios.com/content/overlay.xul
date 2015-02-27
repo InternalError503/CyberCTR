@@ -659,6 +659,11 @@
 							  label="&appMenuGettingStarted.label;"
 							  oncommand="gBrowser.loadOneTab('https://8pecxstudios.com/', {inBackground: false});"
 							  onclick="checkForMiddleClick(this, event);"/>
+				<menuitem id="appmenu_keyboardShortcuts"
+						  oncommand="openUILink('http://mzl.la/16NAhwz')"
+						  onclick="checkForMiddleClick(this, event);"
+						  label="&helpKeyboardShortcuts.label;"
+						  accesskey="&helpKeyboardShortcuts.accesskey;"/>
 					<menuitem id="appmenu_troubleshootingInfo"
 							  accesskey="&helpTroubleshootingInfo.accesskey;"
 							  label="&helpTroubleshootingInfo.label;"
