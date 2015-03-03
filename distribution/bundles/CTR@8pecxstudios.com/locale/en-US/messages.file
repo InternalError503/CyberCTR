@@ -3,7 +3,7 @@
 popup.title=Customize %S
 popup.msg.restart=%S has to be restarted for changes to take effect.\n\nRestart now?
 popup.msg.cctrrestarturlbar=Location bars last position could break browser ui and had to be reset.\n%S has to be restarted.\n\nRestart now?
-import.error=ERROR: Found wrong or modified file!\nNothing could be imported!
+import.error=ERROR: Found wrong or modified file!\nPreferences could not be imported!
 import.errorJSON=Were sorry but something has gone wrong while trying to import CTRpreferences.json (json is not valid!)
 ctr_extrabar=Additional Toolbar
 ctr_actthrobber=Activity Indicator
