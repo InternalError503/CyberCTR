@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Abas Arredondadas (Alternativas)">
 <!ENTITY Ctr_tabs3			"Abas Arredondadas (Alternativas Aero)">
 <!ENTITY Ctr_tabforminfo	"A Aparência da Aba é controlada pelo Tema atual.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Abas no Topo (Padrão)">
 <!ENTITY Ctr_tabsontop1		"Abas no Topo --- Definida [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Abas Embaixo (v1) --- Definida [tabsontop=false]">

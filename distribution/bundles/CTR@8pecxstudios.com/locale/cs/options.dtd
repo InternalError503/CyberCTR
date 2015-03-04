@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Zakulacené panely (alternativní)">
 <!ENTITY Ctr_tabs3			"Zakulacené panely (alternativní Aero)">
 <!ENTITY Ctr_tabforminfo	"Vzhled panelů je určen současným motivem vzhledu.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Panely navrchu (výchozí)">
 <!ENTITY Ctr_tabsontop1		"Panely navrchu --- nastaveno [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Panely pod adresním řádkem (v1) --- nastaveno [tabsontop=false]">

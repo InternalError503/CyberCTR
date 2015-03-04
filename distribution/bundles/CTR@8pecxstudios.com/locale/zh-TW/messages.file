@@ -2,7 +2,6 @@
 # %S will be replaced by brandShortName
 popup.title=Customize %S
 popup.msg.restart=%S 需要重新啟動以套用新的設定值。\n現在重啟?
-popup.msg.cctrrestarturlbar=Location bars last position could break browser ui and had to be reset.\n%S has to be restarted.\n\nRestart now?
 import.error=錯誤: 發現錯誤或檔案損壞!\n匯入已中止!
 import.errorJSON=Were sorry but something has gone wrong while trying to import CTRpreferences.json (json is not valid!)
 ctr_extrabar=新增工具列

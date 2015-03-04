@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"弧形标签页 (备选风格)">
 <!ENTITY Ctr_tabs3			"弧形标签页 (备选 Aero 风格)">
 <!ENTITY Ctr_tabforminfo	"标签页外观由当前的主题所控制">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"标签栏在顶部 (默认)">
 <!ENTITY Ctr_tabsontop1		"标签栏在顶部 --- [tabsontop=true] 属性">
 <!ENTITY Ctr_tabsontop2		"标签栏不在顶部 (v1) --- [tabsontop=false] 属性">

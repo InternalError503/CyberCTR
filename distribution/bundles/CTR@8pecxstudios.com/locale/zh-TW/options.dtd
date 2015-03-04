@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"弧形分頁 (非傳統風格)">
 <!ENTITY Ctr_tabs3			"弧形分頁 (Aero 風格)">
 <!ENTITY Ctr_tabforminfo	"分頁外觀由目前的佈景主題控制">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"分頁列置頂 (預設值)">
 <!ENTITY Ctr_tabsontop1		"分頁列置頂 --- 設定 [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"分頁列不置頂 (v1) --- 設定 [tabsontop=false]">

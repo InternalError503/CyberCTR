@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Gerundete Tabs (alternativ)">
 <!ENTITY Ctr_tabs3			"Gerundete Tabs (alternativ für Windows Aero)">
 <!ENTITY Ctr_tabforminfo	"Das aktuelle Thema bestimmt die Tabdarstellung.">
+<!ENTITY Ctr_coltabsinfo	"Tabdarstellung ist zur Erweiterung 'ColorfulTabs' nicht vollständig kompatibel!">
 <!ENTITY Ctr_tabsontop0		"Tabs oben (Standard)">
 <!ENTITY Ctr_tabsontop1		"Tabs oben --- '[tabsontop=true]' Attribut gesetzt">
 <!ENTITY Ctr_tabsontop2		"Tabs unten (v1) --- '[tabsontop=false]' Attribut gesetzt">

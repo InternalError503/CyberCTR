@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"丸いタブ (別バージョン)">
 <!ENTITY Ctr_tabs3			"丸いタブ (別バージョン Aero)">
 <!ENTITY Ctr_tabforminfo	"タブの見栄えは現在のテーマで制御されます。">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"タブを上にする (デフォルト)">
 <!ENTITY Ctr_tabsontop1		"タブを上にする --- [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"タブを下にする (v1) --- [tabsontop=false]">

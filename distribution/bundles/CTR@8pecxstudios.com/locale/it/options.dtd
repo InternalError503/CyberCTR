@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Scheda con angoli arrotondati (stile alternativo)">
 <!ENTITY Ctr_tabs3			"Schede con angoli arrotondati (stile Aero)">
 <!ENTITY Ctr_tabforminfo	"L’aspetto delle schede è definito dal tema in uso.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Schede in alto (predefinito)">
 <!ENTITY Ctr_tabsontop1		"Schede in alto --- attivata [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Schede in basso (v1) --- attivata [tabsontop=false]">

@@ -2,7 +2,6 @@
 # %S will be replaced by brandShortName
 popup.title=%S anpassen
 popup.msg.restart=Änderungen werden erst nach einem Neustart übernommen.\n\nSoll %S jetzt neugestartet werden?
-popup.msg.cctrrestarturlbar=Die letzte Adressleistenposition kann die Oberfläche korrumpieren und wird zurückgesetzt.\nEin Neustart wird benötigt.\n\nSoll %S jetzt neugestartet werden?
 import.error=FEHLER: Falsche oder modifizierte Datei gefunden!\nEinstellungen konnten nicht importiert werden!
 import.errorJSON=Were sorry but something has gone wrong while trying to import CTRpreferences.json (json is not valid!)
 ctr_extrabar=Extraleiste

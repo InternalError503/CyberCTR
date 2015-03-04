@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Wukulowaśone rejtarki (alternatiwny)">
 <!ENTITY Ctr_tabs3			"Wukulowaśone rejtarki (alternatiwa Aero)">
 <!ENTITY Ctr_tabforminfo	"Naglěd rejtarkow wótwisujo wót aktualneje drastwy.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Rejtarki górjejce (standard)">
 <!ENTITY Ctr_tabsontop1		"Rejtarki górjejce --- stajśo [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Rejtarki nic górjejce (v1) --- stajśo [tabsontop=false]">

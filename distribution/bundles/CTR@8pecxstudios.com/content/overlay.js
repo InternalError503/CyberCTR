@@ -5,8 +5,8 @@
 */
 
 //Browser Information			
-var browserAppInformation = Components.classes["@mozilla.org/xre/app-info;1"]
-			.getService(Components.interfaces.nsIXULAppInfo);
+var browserAppInformation = Cc["@mozilla.org/xre/app-info;1"]
+			.getService(Ci.nsIXULAppInfo);
 
 Cu.import("resource:///modules/CustomizableUI.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
@@ -15,7 +15,7 @@ Cu.import("resource://gre/modules/NetUtil.jsm");
 //Import services
 Cu.import("resource://gre/modules/Services.jsm");
 //Query nsIPrefBranch see: Bug 1125570 | Bug 1083561
-Services.prefs.QueryInterface(Components.interfaces.nsIPrefBranch);
+Services.prefs.QueryInterface(Ci.nsIPrefBranch);
 
 if (typeof classicthemerestorerjs == "undefined") {var classicthemerestorerjs = {};};
 if (!classicthemerestorerjs.ctr) {classicthemerestorerjs.ctr = {};};
@@ -88,6 +88,9 @@ classicthemerestorerjs.ctr = {
 		  var thirdpartytheme = Services.prefs.getBranch("general.skins.").getCharPref("selectedSkin");
 		  document.getElementById("main-window").setAttribute('currenttheme',thirdpartytheme);
 		  classicthemerestorerjs.ctr.loadUnloadCSS("thirdpartythemes",true);
+		  
+		  if(thirdpartytheme=="Tangerinefox" || thirdpartytheme=="Tangofox")
+			this.fxdefaulttheme=true;
 		}
 	} catch(e){}
 	
@@ -120,12 +123,6 @@ classicthemerestorerjs.ctr = {
 	// add-on fixes
 	this.addonCompatibilityImprovements();
 	
-	// handle max/min tab-width for every new window
-	window.addEventListener("DOMWindowCreated", function load(event){
-		window.removeEventListener("DOMWindowCreated", load, false);
-		classicthemerestorerjs.ctr.updateTabWidth();  
-	},false);
-
 	// handle max/min tab-width for every new window
 	this.updateTabWidth();
 	

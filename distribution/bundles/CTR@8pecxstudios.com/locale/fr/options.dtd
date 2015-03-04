@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Onglets arrondis (alternatifs)">
 <!ENTITY Ctr_tabs3			"Onglets arrondis (alternatifs Aero)">
 <!ENTITY Ctr_tabforminfo	"L’aspect des onglets est déterminé par le thème sélectionné.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Onglets en haut (valeur par défaut)">
 <!ENTITY Ctr_tabsontop1		"Onglets en haut --- réglage [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Onglets position basse (v1) --- réglage [tabsontop=false]">

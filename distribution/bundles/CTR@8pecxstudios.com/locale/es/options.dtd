@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Pestañas curvadas (alternativo)">
 <!ENTITY Ctr_tabs3			"Pestañas curvadas (Aero alternativo)">
 <!ENTITY Ctr_tabforminfo	"La apariencia de la pestaña está controlada por el tema de decoración actual.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Pestañas arriba (por defecto)">
 <!ENTITY Ctr_tabsontop1		"Pestañas arriba --- [tabsontop=true] establecido">
 <!ENTITY Ctr_tabsontop2		"Pestañas no arriba (v1) --- [tabsontop=false] establecido">

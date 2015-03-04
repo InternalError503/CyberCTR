@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Zaokroženi zavihki (nadomestni)">
 <!ENTITY Ctr_tabs3			"Zaokroženi zavihki (nadomestni Aero)">
 <!ENTITY Ctr_tabforminfo	"Videz zavihkov nadzira trenutna tema.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Zavihki na vrhu (privzeto)">
 <!ENTITY Ctr_tabsontop1		"Zavihki na vrhu --- atribut [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Zavihki niso na vrhu (v1) --- atribut [tabsontop=false]">

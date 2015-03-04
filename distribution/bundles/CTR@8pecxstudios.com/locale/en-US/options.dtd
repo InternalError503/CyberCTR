@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Curved tabs (alternative)">
 <!ENTITY Ctr_tabs3			"Curved tabs (alternative Aero)">
 <!ENTITY Ctr_tabforminfo	"Tab appearance is controlled by the current theme.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Tabs on top (default)">
 <!ENTITY Ctr_tabsontop1		"Tabs on top --- [tabsontop=true] attribute">
 <!ENTITY Ctr_tabsontop2		"Tabs not on top (v1) --- [tabsontop=false] attribute">

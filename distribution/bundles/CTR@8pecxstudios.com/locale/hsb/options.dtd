@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Skulojćene rajtarki (alternatiwny)">
 <!ENTITY Ctr_tabs3			"Skulojćene rajtarki (alternatiwa Aero)">
 <!ENTITY Ctr_tabforminfo	"Napohlad rajtarkow wot aktualneje drasty wotwisuje.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Rajtarki horjeka (standard)">
 <!ENTITY Ctr_tabsontop1		"Rajtarki horjeka --- stajće [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Rajtarki nic horjeka (v1) --- stajće [tabsontop=false]">

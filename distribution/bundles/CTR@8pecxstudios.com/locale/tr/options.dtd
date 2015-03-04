@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Kavisli Sekmeler (Alternatif)">
 <!ENTITY Ctr_tabs3			"Kavisli Sekmeler (Alternatif Aero)">
 <!ENTITY Ctr_tabforminfo	"Sekme görünümü geçerli tema tarafından kontrol edilir.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Sekmeler Tepede (varsayılan) - [ayarlanmamış]">
 <!ENTITY Ctr_tabsontop1		"Sekmeler Tepede (varsayılan) - [ayarlanmamış]">
 <!ENTITY Ctr_tabsontop2		"Sekmeler Tepede - ayarla [tabsontop=true]">

@@ -263,6 +263,7 @@
 		<caption  label="&Ctr_tabs;" class="ctraddon_topic"/>
 		
 		<description id="ctraddon_pw_tabforminfo" class="ctraddon_topic">&Ctr_tabforminfo;</description>
+		<description id="ctraddon_coltabsinfo" class="ctraddon_topic">&Ctr_coltabsinfo;</description>
 
 		<menulist preference="ctraddon_tabs" id="ctraddon_pw_tabmenulist">
 			<menupopup>

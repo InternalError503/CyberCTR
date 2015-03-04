@@ -43,6 +43,7 @@
 <!ENTITY Ctr_tabs2			"Καμπυλόγραμμες καρτέλες (εναλλακτική τεχνοτροπία)">
 <!ENTITY Ctr_tabs3			"Καμπυλόγραμμες καρτέλες (εναλλακτική τεχνοτροπία, Aero)">
 <!ENTITY Ctr_tabforminfo	"Η εμφάνιση των καρτελών ελέγχεται από το τρέχον θέμα.">
+<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
 <!ENTITY Ctr_tabsontop0		"Καρτέλες στο πάνω μέρος (προεπιλογή)">
 <!ENTITY Ctr_tabsontop1		"Καρτέλες στο πάνω μέρος --- ορισμός χαρακτηριστικού [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Καρτέλες όχι στο πάνω μέρος (v1) --- ορισμός χαρακτηριστικού [tabsontop=false]">
