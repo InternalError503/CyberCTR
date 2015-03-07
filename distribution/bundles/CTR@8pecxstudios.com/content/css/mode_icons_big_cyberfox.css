@@ -25,7 +25,12 @@
 	#nav-bar #tbar-copycurrenttaburl {
 	  list-style-image: url("chrome://classic_theme_restorer/content/images/menuPanel2.png") !important;
 	  -moz-image-region: rect(0px, 448px, 32px, 416px) !important;
-	}	
+	}
+
+	#nav-bar #tbar-copyalltaburl {
+	  list-style-image: url("chrome://classic_theme_restorer/content/images/menuPanel2.png") !important;
+	  -moz-image-region: rect(0px, 480px, 32px, 448px) !important;
+	}		
 
 	#nav-bar #downloads-button-additional[cui-areatype="toolbar"] {
 	  list-style-image: url("chrome://classic_theme_restorer/content/images/download-summary.png")!important;
