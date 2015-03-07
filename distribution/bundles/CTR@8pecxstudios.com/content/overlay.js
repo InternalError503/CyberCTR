@@ -4,10 +4,6 @@
  make sure a 'get' call looks only for items already on DOM.  
 */
 
-//Browser Information			
-var browserAppInformation = Cc["@mozilla.org/xre/app-info;1"]
-			.getService(Ci.nsIXULAppInfo);
-
 Cu.import("resource:///modules/CustomizableUI.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
 Cu.import("resource://gre/modules/FileUtils.jsm");
@@ -139,13 +135,13 @@ classicthemerestorerjs.ctr = {
 	
 	treeStyleCompatMode = Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle.disable");
 		//Check if browser Firefox (Added just in-case users decide to install in firefox reported: https://8pecxstudios.com/Forums/viewtopic.php?f=3&t=475&p=4368#p4366)
-		if (browserAppInformation.name.toLowerCase() === "Firefox".toLowerCase()) {
+		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
 			Services.prefs.setBoolPref("browser.restart.enabled", false);	
 			Services.prefs.setBoolPref("clean.ram.cache", false);
 			Services.prefs.setBoolPref("browser.menu.aboutconfig", false);
 			Services.prefs.setBoolPref("browser.context.classic", false);			
 		}
-		if (browserAppInformation.name.toLowerCase() === "Cyberfox".toLowerCase() && this.appversion <= 34) {
+		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase() && this.appversion <= 34) {
 				Services.prefs.setBoolPref("browser.menu.aboutconfig", true);
 		}
 		
