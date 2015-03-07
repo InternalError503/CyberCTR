@@ -60,7 +60,7 @@ classicthemerestorerjs.ctr = {
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
   fxdefaulttheme:		Services.prefs.getBranch("general.skins.").getCharPref("selectedSkin") == 'classic/1.0',
-  osstring:				Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULRuntime).OS,
+  osstring:				Services.appinfo.OS,
   appversion:			parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")),
   stringBundle:			Cc["@mozilla.org/intl/stringbundle;1"].getService(Ci.nsIStringBundleService).createBundle("chrome://classic_theme_restorer/locale/messages.file"),
   
@@ -69,7 +69,7 @@ classicthemerestorerjs.ctr = {
   moveFeedIntoUrlbar:	false,
 
   init: function() {
-  
+
 	// remove default panel ui button in favour of CTRs movable duplicate
 	try{
 		document.getElementById("PanelUI-button").removeChild(document.getElementById("PanelUI-menu-button"));
