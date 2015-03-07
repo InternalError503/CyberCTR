@@ -43,7 +43,7 @@
 <!ENTITY Ctr_tabs2			"Karty zaokrąglone (alternatywne)">
 <!ENTITY Ctr_tabs3			"Karty zaokrąglone (alternatywne Aero)">
 <!ENTITY Ctr_tabforminfo	"Wygląd karty jest kontrolowany przez obecny styl.">
-<!ENTITY Ctr_coltabsinfo	"Tab appearance is not fully compatible to 'ColorfulTabs' add-on!">
+<!ENTITY Ctr_coltabsinfo	"Wygląd karty nie jest w pełni kompatybilny z dodatkiem 'ColorfulTabs'!">
 <!ENTITY Ctr_tabsontop0		"Karty na górze (domyślne)">
 <!ENTITY Ctr_tabsontop1		"Karty na górze --- atrybut [tabsontop=true]">
 <!ENTITY Ctr_tabsontop2		"Karty nie na górze (v1) --- atrybut [tabsontop=false]">
@@ -142,6 +142,8 @@
 <!ENTITY Ctr_cpanelmenus	"Menu panelu: widok kompaktowy (zakładki, historia itp.)">
 <!ENTITY Ctr_hidezoomres	"Kontrolki powiększenia na pasku narzędzi: ukryj przycisk resetu powiększenia">
 <!ENTITY Ctr_alt_newtabp	"Strona nowej karty: wygląd alternatywny">
+<!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
+<!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_noresizerxp	"Usuń zmieniacz rozmiaru (Windows XP)">
 <!ENTITY Ctr_extraurlkeycb	"Otwórz dodatkowy pasek adresu (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Wyskakujące okno menu panelu: ukryj etykiety przycisku">

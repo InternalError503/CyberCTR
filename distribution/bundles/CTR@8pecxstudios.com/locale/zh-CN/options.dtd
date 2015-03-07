@@ -142,6 +142,8 @@
 <!ENTITY Ctr_cpanelmenus	"面板菜单: 更紧凑的视图 (书签、历史等等)">
 <!ENTITY Ctr_hidezoomres	"当缩放控制按钮在工具栏上时: 隐藏重置缩放按钮">
 <!ENTITY Ctr_alt_newtabp	"新标签页页面: 备选的外观">
+<!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
+<!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_noresizerxp	"隐藏调整大小控件 (Windows XP)">
 <!ENTITY Ctr_extraurlkeycb	"打开附加地址栏(Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"面板菜单: 隐藏按钮标签文本">

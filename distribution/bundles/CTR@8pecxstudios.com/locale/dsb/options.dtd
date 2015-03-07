@@ -142,6 +142,8 @@
 <!ENTITY Ctr_cpanelmenus	"Kompaktne pólowe menije (cytańske znamjenja, historija atd.)">
 <!ENTITY Ctr_hidezoomres	"Skalěrowańske elementy na symbolowej rědce: Tłocašk za slědkstajenje skalěrowanja schowaś">
 <!ENTITY Ctr_alt_newtabp	"Bok nowego rejtarka: alternatiwne wuglědanje">
+<!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
+<!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_noresizerxp	"Pśeměnjak wjelikosći schowaś (Windows XP)">
 <!ENTITY Ctr_extraurlkeycb	"Pśidatne adresowe pólo wócyniś (Cmd/Strg+">
 <!ENTITY Ctr_pmhidelabels	"Pólowy meni: Tekst tłocaškow schowaś">
