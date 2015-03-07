@@ -437,6 +437,7 @@
 					  oncommand="gSyncUI.openSetup()"
 					  class="menuitem-iconic"/>
 	  <menuitem id="appmenu_restartBrowser"
+					    class="menuitem-iconic"	  
 				        label="&restartBrowser.label;"
 				        oncommand="gCyberfoxCustom.restartBrowser();"/>					  
 			<menuitem id="appmenu-quit"
