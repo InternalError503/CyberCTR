@@ -325,17 +325,17 @@
 			</hbox>
 			
 			<menuitem id="appmenu_find"
-					  class="menuitem-iconic"			
 					  label="&findOnCmd.label;"
+					  class="menuitem-iconic"
 					  command="cmd_find"/>
 			<menuseparator/>
 			<menuitem id="appmenu_savePage"
-					  class="menuitem-iconic"				
 					  label="&savePageCmd.label;"
+					  class="menuitem-iconic"
 					  command="Browser:SavePage"/>
 			<menuitem id="appmenu_sendLink"
-					  class="menuitem-iconic"			
 					  label="&emailPageCmd.label;"
+					  class="menuitem-iconic"
 					  command="Browser:SendLink"/>
 
 			<menu id="appmenu_print"
@@ -437,7 +437,7 @@
 					  oncommand="gSyncUI.openSetup()"
 					  class="menuitem-iconic"/>
 	  <menuitem id="appmenu_restartBrowser"
-					    class="menuitem-iconic"	  
+	  					class="menuitem-iconic"
 				        label="&restartBrowser.label;"
 				        oncommand="gCyberfoxCustom.restartBrowser();"/>					  
 			<menuitem id="appmenu-quit"
