@@ -322,3 +322,7 @@
 
 <!ENTITY ctr_appbuttoncusttextcolor	"Couleur de texte du bouton d’application.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Enlever l’ombre du texte du bouton d’application.">
+
+<!ENTITY ctr_toolbarsearchbar.description	"Tool-bar search bar">
+<!ENTITY ctr_toolbarsearchbarcustwidth.label	"Enable custom maximum width">
+<!ENTITY ctr_toolbarsearchbarwidth.label	"Search-bar maximum width: ">

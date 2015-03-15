@@ -128,6 +128,9 @@ pref("extensions.classicthemerestorer.mbarpositionl","toolbar-menubar");
 pref("extensions.classicthemerestorer.mbarforceleft",false);
 pref("extensions.classicthemerestorer.mbarforceright",false);
 
+pref("extensions.classicthemerestorer.customsearchbarwidth", false);
+pref("extensions.classicthemerestorer.searchbarwidth", 150);
+
 // Animation
 pref("extensions.classicthemerestorer.throbberalt",false);
 pref("extensions.classicthemerestorer.bmanimation",true);

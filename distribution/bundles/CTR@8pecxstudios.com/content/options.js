@@ -178,6 +178,24 @@ classicthemerestorerjso.ctr = {
 	document.getElementById('ctraddon_hctpinfotab').style.visibility = 'collapse';
 	document.getElementById('ctraddon_hctpinfoab').style.visibility = 'collapse';
 	
+	//Custom search bar width
+	if (this.prefs.getBoolPref("customsearchbarwidth")){
+		document.getElementById('ctraddon_searchbarwidth').disabled = false;
+		document.getElementById('ctraddon_searchbarwidthl').disabled = false;
+	}else{
+		document.getElementById('ctraddon_searchbarwidth').disabled = true;
+		document.getElementById('ctraddon_searchbarwidthl').disabled = true;
+	}
+		
+	Application.prefs.get("extensions.classicthemerestorer.customsearchbarwidth").events.addListener("change", function(aEvent){	
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.customsearchbarwidth")){
+		document.getElementById('ctraddon_searchbarwidth').disabled = false;
+		document.getElementById('ctraddon_searchbarwidthl').disabled = false;
+	}else{
+		document.getElementById('ctraddon_searchbarwidth').disabled = true;
+		document.getElementById('ctraddon_searchbarwidthl').disabled = true;
+	}});
+	
 	// extra checks to not enable tab width settings while 'TabMixPlus' or 'TabUtilities' is enabled
 	AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
 	  if(addon && addon.isActive) {

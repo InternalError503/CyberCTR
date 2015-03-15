@@ -56,6 +56,7 @@ classicthemerestorerjs.ctr = {
   appbutton_color:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
 
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -152,7 +153,7 @@ classicthemerestorerjs.ctr = {
 	
 	// style CTRs 'customize-ui' option buttons
 	this.loadUnloadCSS('cui_buttons',true);
-	
+		
 	// CTRs extra add-on bar keys
 	this.CTRextraLocationBarKeyset();
 	
@@ -390,7 +391,7 @@ classicthemerestorerjs.ctr = {
 					}	
 				} catch(e){console.log("We are sorry something has gone wrong with Tabs titles in title-bar " + e);}			
 		  break;
-      		  
+		     		  
 		  case "ctabheightcb":
 			if (branch.getBoolPref("ctabheightcb")) classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",false);
@@ -1650,7 +1651,17 @@ classicthemerestorerjs.ctr = {
 				} catch(e){}
 			}
 		  break;
-
+		  
+		  case "searchbarwidth": case "customsearchbarwidth":
+			  	try{		  
+					if (branch.getBoolPref("customsearchbarwidth")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("searchbarsheet",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("searchbarsheet",false);
+					}	
+				} catch(e){}			
+		  break;	  
+		  
 		}
 	  }
 	);
@@ -4254,6 +4265,23 @@ classicthemerestorerjs.ctr = {
 				applyNewSheet(this.cuiButtonssheet);
 			}
 		
+		break;
+		
+		case "searchbarsheet":
+
+			removeOldSheet(this.searchbarsheet);
+			
+			if(enable==true && this.prefs.getBoolPref("customsearchbarwidth")){
+	
+				this.searchbarsheet=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+						#search-container {\
+							max-width: '+this.prefs.getIntPref('searchbarwidth')+'px !important;\
+						}\
+				'), null, null);
+				
+				applyNewSheet(this.searchbarsheet);
+			}
+
 		break;
 		
 	}
