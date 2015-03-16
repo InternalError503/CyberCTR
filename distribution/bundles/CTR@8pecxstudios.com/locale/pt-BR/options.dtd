@@ -1,20 +1,13 @@
-<!-- LOCALIZATION NOTE (<!ENTITY % brandDTD) must not be edited as it  
-	   controls the use of (&brandShortName;) this gets replaced at run time
-	   with the browsers name so in cyberfox (&brandShortName;) says cyberfox
-	   in firefox (&brandShortName;) says firefox, This item can not be edited or
-	   errors may occur.
--->
-<!-- Do not edit -->
 <!ENTITY % brandDTD
-    SYSTEM "chrome://branding/locale/brand.dtd">
+    SYSTEM "chrome://classic_theme_restorer/content/overlay.dtd">
   %brandDTD;
-<!-- Do not edit above this message-->  
-  
+<!-- Do not edit above this line and do not edit the variable '&brandShortName;' inside translated strings -->
+
 <!ENTITY Ctr_title			"Customize &brandShortName;">
 
 <!ENTITY Ctr_addonbar		"Barra de Complementos">
 <!ENTITY Ctr_statusbar		"Barra de Status">
-<!ENTITY Ctr_flexspace		"Espaço flexível">
+<!ENTITY Ctr_flexspace		"Espaço Flexível">
 <!ENTITY Ctr_space			"Espaço">
 <!ENTITY Ctr_separator		"Separador">
 <!ENTITY Ctr_puibseparator	"Separador do Botão do Painel da Interface do Usuário">

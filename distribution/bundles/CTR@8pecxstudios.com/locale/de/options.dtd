@@ -1,14 +1,8 @@
-<!-- LOCALIZATION NOTE (<!ENTITY % brandDTD) must not be edited as it  
-	   controls the use of (&brandShortName;) this gets replaced at run time
-	   with the browsers name so in cyberfox (&brandShortName;) says cyberfox
-	   in firefox (&brandShortName;) says firefox, This item can not be edited or
-	   errors may occur.
--->
-<!-- Do not edit -->
 <!ENTITY % brandDTD
-    SYSTEM "chrome://branding/locale/brand.dtd">
+    SYSTEM "chrome://classic_theme_restorer/content/overlay.dtd">
   %brandDTD;
-<!-- Do not edit above this message-->  
+<!-- Do not edit above this line and do not edit the variable '&brandShortName;' inside translated strings -->
+
 
 <!ENTITY Ctr_title      	"&brandShortName; anpassen">
 
@@ -78,7 +72,7 @@
 <!ENTITY Ctr_hctpinfotab	"Einige Tabvarianten sind nicht kompatibel zu 'Hide Caption Titlebar Plus'.">
 <!ENTITY Ctr_hctpinfoab		"Die Titelleisten-Schaltfläche ist nicht kompatibel zu 'Hide Caption Titlebar Plus'.">
 
-<!ENTITY Ctr_appbutton		"Firefox-Schaltfläche">
+<!ENTITY Ctr_appbutton		"&brandShortName;-Schaltfläche">
 <!ENTITY Ctr_appbutton0		"Deaktiviert">
 <!ENTITY Ctr_appbutton1		"Auf den Symbolleisten">
 <!ENTITY Ctr_appbutton1wt	"Auf den Symbolleisten (nur Text)">

@@ -606,12 +606,9 @@ classicthemerestorerjso.ctr = {
      when preference window gets closed */
   unloadprefwindow: function() {
 
-	var app        	 = Components.classes["@mozilla.org/toolkit/app-startup;1"].getService(Components.interfaces.nsIAppStartup);
 	var cancelQuit   = Components.classes["@mozilla.org/supports-PRBool;1"].createInstance(Components.interfaces.nsISupportsPRBool);
 	var observerSvc  = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
-	var promptSvc  	 = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
-	var stringBundle = Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService)
-						.createBundle("chrome://classic_theme_restorer/locale/messages.file");
+	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 						
 	var brandName	 = '';
 
@@ -620,7 +617,7 @@ classicthemerestorerjso.ctr = {
 	} catch(e) {}
 
 	if (this.needsRestart &&
-		promptSvc.confirm(null,
+		Services.prompt.confirm(null,
 			stringBundle.formatStringFromName("popup.title", [brandName], 1),
 			stringBundle.formatStringFromName("popup.msg.restart", [brandName], 1)
 		)) {
@@ -628,7 +625,7 @@ classicthemerestorerjso.ctr = {
 		if(cancelQuit.data) { // The quit request has been cancelled.
 			return false;
 		};
-		app.quit(app.eAttemptQuit | app.eRestart);
+		Services.startup.quit(Services.startup.eRestart | Services.startup.eAttemptQuit);
 	}
 	
 	// save last selected categories/tabs
@@ -1220,8 +1217,7 @@ classicthemerestorerjso.ctr = {
   /* import CTR settings */
   importCTRpreferences: function() {
  
-	var stringBundle = Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService)
-	                    .createBundle("chrome://classic_theme_restorer/locale/messages.file");
+	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
   
 	var pattern = loadFromFile();
 
@@ -1293,9 +1289,7 @@ classicthemerestorerjso.ctr = {
   /* import CTR settings JSON*/
   importCTRpreferencesJSON: function() {
  
-	var stringBundle = Components.classes["@mozilla.org/intl/stringbundle;1"]
-						.getService(Components.interfaces.nsIStringBundleService)
-							.createBundle("chrome://classic_theme_restorer/locale/messages.file");
+	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 
 	var parjson = loadFromFile();
 
