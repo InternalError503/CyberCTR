@@ -4836,8 +4836,6 @@ switch (appButtonState){
 		  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
 
 		  fp.init(window, null, nsIFilePicker.modeSave);
-		  var ext = "";
-		  var fname = "";
 		
 		  if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
 			  fp.defaultExtension = "txt";
