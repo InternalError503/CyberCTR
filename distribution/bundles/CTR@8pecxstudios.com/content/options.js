@@ -150,7 +150,7 @@ classicthemerestorerjso.ctr = {
 			isButton ==="appbutton_v2h" || 
 			isButton ==="appbutton_pm"){
 				
-		this.elementHandler([
+	classicthemerestorerjso.ctr.elementHandler([
 			'ctraddon_pw_cappbutctcl',
 			'ctraddon_pw_cappbutctct',
 			'ctraddon_pw_cappbutctcc',
@@ -163,7 +163,7 @@ classicthemerestorerjso.ctr = {
 	if (Services.prefs.getCharPref("extensions.classicthemerestorer.appbuttonc") === "appbuttonc_custom" || 
 		Services.prefs.getCharPref("extensions.classicthemerestorer.appbuttonc") === "appbuttonc_custom1"){
 
-		this.elementHandler([
+	classicthemerestorerjso.ctr.elementHandler([
 			'ctraddon_pw_cappbutctcl',
 			'ctraddon_pw_cappbutctct',
 			'ctraddon_pw_cappbutctcc',
@@ -172,7 +172,7 @@ classicthemerestorerjso.ctr = {
 
 	}else{
 		
-		this.elementHandler([
+	classicthemerestorerjso.ctr.elementHandler([
 			'ctraddon_pw_cappbutctcl',
 			'ctraddon_pw_cappbutctct',
 			'ctraddon_pw_cappbutctcc',
@@ -229,7 +229,7 @@ classicthemerestorerjso.ctr = {
 		  
 		classicthemerestorerjso.ctr.tmp_tu_active = true;
 		
-		this.elementHandler([
+		classicthemerestorerjso.ctr.elementHandler([
 			'ctraddon_pw_tabMinWidth',
 			'ctraddon_pw_tabMaxWidth',
 			'ctraddon_pw_tabMinWidth_L1',
@@ -249,7 +249,7 @@ classicthemerestorerjso.ctr = {
 
 		classicthemerestorerjso.ctr.tmp_tu_active = true;
 
-		this.elementHandler([
+		classicthemerestorerjso.ctr.elementHandler([
 			'ctraddon_pw_tabMinWidth',
 			'ctraddon_pw_tabMaxWidth',
 			'ctraddon_pw_tabMinWidth_L1',
@@ -274,7 +274,7 @@ classicthemerestorerjso.ctr = {
 	// Status4Evar, The Puzzle Piece, Puzzle Toolbars and The Addon Bar Restored
 	// override CTRs mov. status bar panel, so CTRs option gets disabled 
 	
-		this.elementHandler([
+		classicthemerestorerjso.ctr.elementHandler([
 			'ctraddon_pw_statusbar_s4e_info',
 			'ctraddon_pw_statusbar_tpp_info',
 			'ctraddon_pw_statusbar_pzt_info',
