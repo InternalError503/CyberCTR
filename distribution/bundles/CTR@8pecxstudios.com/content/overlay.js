@@ -4836,7 +4836,6 @@ switch (appButtonState){
    restoreBackupCTRpreferences: function() {
 	     
 		  var patterns = FileUtils.getFile("ProfD", []);
-		  var newPatterns;
 		  
 	if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
 					
