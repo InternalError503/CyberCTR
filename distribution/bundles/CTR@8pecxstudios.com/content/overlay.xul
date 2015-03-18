@@ -62,6 +62,7 @@
 				  <button label="&Ctr_cuitxt;" id="ctraddon_cui-textonly-button" class="customizationmode-button" oncommand="classicthemerestorerjs.ctr.cuiPrefChangeString('nav_txt_ico', 'txtonly');"/>
 				  <label value=" "/>
 				  <button label="&Ctr_cuitabsnontop;" id="ctraddon_cui-tabsnontop" class="customizationmode-button" oncommand="classicthemerestorerjs.ctr.cuiPrefTabsNontop();"/>
+				  <button label="&Ctr_extrabar;" id="ctraddon_cui-addtoolbars" class="customizationmode-button" oncommand="classicthemerestorerjs.ctr.additionalToolbars();"/>
 				</row>
 			  </rows>
 			</grid>
