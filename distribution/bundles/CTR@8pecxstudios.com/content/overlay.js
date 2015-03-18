@@ -4835,36 +4835,23 @@ switch (appButtonState){
    /* restore CTR settings */ 
    restoreBackupCTRpreferences: function() {
 	     
-		  var patterns;
+		  var patterns = FileUtils.getFile("ProfD", []);
 		  var newPatterns;
 		  
 	if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
-		
-		patterns = FileUtils.getFile("ProfD", []);
-		
-		if(patterns.exists()){			
+					
 			let promise = OS.File.read(patterns.path + "\\CTRpreferences.txt", { encoding: "utf-8" });
 			promise = promise.then(
-			  function onSuccess(data) {
-				return saveToFile(data);
-			  }
-			);	
-			
-		}					
+				function onSuccess(data) {
+					return saveToFile(data);
+				});					
 	}else{
-				  
-		patterns = FileUtils.getFile("ProfD", []);
-					  
-		if(patterns.exists()){			
+			
 			let promise = OS.File.read(patterns.path + "\\CTRpreferences.json", { encoding: "utf-8" });
 			promise = promise.then(
-			  function onSuccess(data) {
-				return saveToFile(data);
-			  }
-			);	
-					
-		}
-	
+				function onSuccess(data) {
+					return saveToFile(data);
+				});
 	}
 			    
 		function saveToFile(iPatterns) {
