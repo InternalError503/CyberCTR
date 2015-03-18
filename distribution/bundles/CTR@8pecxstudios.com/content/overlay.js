@@ -8,6 +8,7 @@ Cu.import("resource:///modules/CustomizableUI.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
 Cu.import("resource://gre/modules/FileUtils.jsm");
 Cu.import("resource://gre/modules/NetUtil.jsm");
+Cu.import("resource://gre/modules/osfile.jsm");    // load the OS module
 //Import services
 Cu.import("resource://gre/modules/Services.jsm");
 //Query nsIPrefBranch see: Bug 1125570 | Bug 1083561
@@ -4707,7 +4708,6 @@ switch (appButtonState){
 	function loadFromLocalFile() {
 
 	var localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
-	var backupSettingsFile = [];
 
 	if (localeSettingsFile.exists()){	  
 
@@ -4718,7 +4718,7 @@ switch (appButtonState){
 
 		if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			console.log("no change");
+
 			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
 			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
@@ -4728,20 +4728,21 @@ switch (appButtonState){
 				  _contentStream.close();
 			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
 
-			if (Services.prefs.getPrefType('extensions.classicthemerestorer.ctrpref.lastmod.backup') && 
-					Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
+		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
+
+			var iProfdir = FileUtils.getDir("ProfD",[""]);
+			// Write File to profile directory.
+			var encoder = new TextEncoder();
+			var array = encoder.encode(input.split(',').join('\n'));
+			var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.txt", array,{tmpPath: "CTRpreferences.txt.tmp"}); 			
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
 					
-						backupSettingsFile.push(input.split(linebreak));
-						Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup", backupSettingsFile);
-						Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
-						console.log("key updated!");		
-						
-			}	
+		}	
 			
 			return input.split(linebreak);
 			
 		}else{
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
 		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
@@ -4753,21 +4754,21 @@ switch (appButtonState){
 				  _contentStream.close();
 			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
 
-			if (!Services.prefs.getPrefType('extensions.classicthemerestorer.ctrpref.lastmod.backup')){
-			    backupSettingsFile.push(input.split(linebreak));
-				Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup", backupSettingsFile);
-				console.log("key created!");					
-			}
-			
+			var iProfdir = FileUtils.getDir("ProfD",[""]);
+			// Write File to profile directory.
+			var encoder = new TextEncoder();
+			var array = encoder.encode(input.split(',').join('\n'));
+			var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.txt", array,{tmpPath: "CTRpreferences.txt.tmp"}); 				
+		
 			return input.split(linebreak);
 		
-			}
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
+	}
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
 			Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			console.log("modified " + lastmod);
-		}else{	
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
+
+	}else{	
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
 		window.setTimeout(function(){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false)
 		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun");
@@ -4784,7 +4785,7 @@ switch (appButtonState){
 			},4000);
 			
 			
-		}else{
+	}else{
 		
 		window.setTimeout(function(){
 		
@@ -4802,9 +4803,9 @@ switch (appButtonState){
 			
 			},4000);
 			
-				}
 			}
 		}
+	}
 	
 	}else{
 		return null;
@@ -4818,19 +4819,40 @@ switch (appButtonState){
    /* restore CTR settings */ 
    restoreBackupCTRpreferences: function() {
 	     
-		  var patterns = Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup");
+		  var patterns;
 		  var newPatterns;
 		  
-			  if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
-					newPatterns = patterns.split(',').join('\n');
-			  }else{
-					newPatterns =Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup");
+	if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
+		
+		patterns = FileUtils.getFile("ProfD", []);
+		
+		if(patterns.exists()){			
+			let promise = OS.File.read(patterns.path + "\\CTRpreferences.txt", { encoding: "utf-8" });
+			promise = promise.then(
+			  function onSuccess(data) {
+				return saveToFile(data);
 			  }
-	 	 
-		saveToFile(newPatterns);
-		  
+			);	
+			
+		}					
+	}else{
+				  
+		patterns = FileUtils.getFile("ProfD", []);
+					  
+		if(patterns.exists()){			
+			let promise = OS.File.read(patterns.path + "\\CTRpreferences.json", { encoding: "utf-8" });
+			promise = promise.then(
+			  function onSuccess(data) {
+				return saveToFile(data);
+			  }
+			);	
+					
+		}
+	
+	}
+			    
 		function saveToFile(iPatterns) {
-
+			
 		  const nsIFilePicker = Components.interfaces.nsIFilePicker;
 		  var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 		  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
@@ -4912,18 +4934,17 @@ switch (appButtonState){
 	function loadFromLocalFile() {
 
 	var localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.json"]);
-	var backupSettingsFile = [];
 
 	if (localeSettingsFile.exists()){	  
 	
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", true);
-		
+				
 	var _ThisFile = localeSettingsFile;
 		var lastmod = new Date(_ThisFile.lastModifiedTime);
 
-		if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
+	if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			console.log("no change");
+
 			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
 			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
@@ -4932,15 +4953,16 @@ switch (appButtonState){
 				  _contentIOStream.close();
 				  _contentStream.close();
 				  
-			if (Services.prefs.getPrefType('extensions.classicthemerestorer.ctrpref.lastmod.backup') && 
-					Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
-					
-						backupSettingsFile.push(input);
-						Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup", backupSettingsFile);
-						Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
-						console.log("key updated!");		
-						
-			}	
+		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
+
+		var iProfdir = FileUtils.getDir("ProfD",[""]);
+		// Write File to to profile.
+        var encoder = new TextEncoder();
+        var array = encoder.encode(input);
+        var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.json", array,{tmpPath: "CTRpreferences.json.tmp"});				
+
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)					
+		}	
 			
 			 var text = input;
 
@@ -4951,8 +4973,8 @@ switch (appButtonState){
 				return JSON.parse(input);
 			  }
 			
-		}else{
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
+	}else{
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
 		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
@@ -4963,11 +4985,11 @@ switch (appButtonState){
 				  _contentIOStream.close();
 				  _contentStream.close();
 
-			if (!Services.prefs.getPrefType('extensions.classicthemerestorer.ctrpref.lastmod.backup')){
-			    backupSettingsFile.push(input);
-				Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod.backup", backupSettingsFile);
-				console.log("key created!");					
-			}
+			var iProfdir = FileUtils.getDir("ProfD",[""]);
+			// Write File to to profile.
+			var encoder = new TextEncoder();
+			var array = encoder.encode(input);
+			var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.json", array,{tmpPath: "CTRpreferences.json.tmp"});			
 			
 			 var text = input;
 
@@ -4979,11 +5001,10 @@ switch (appButtonState){
 			  }
 		
 			}
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
+	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
 			Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			console.log("modified " + lastmod);
-		}else{	
+	}else{	
 		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
 		window.setTimeout(function(){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false)
@@ -5001,7 +5022,7 @@ switch (appButtonState){
 			},4000);
 			
 			
-		}else{
+	}else{
 		
 		window.setTimeout(function(){
 		
