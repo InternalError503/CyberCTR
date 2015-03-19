@@ -68,8 +68,8 @@
 <!ENTITY Ctr_closeonleft	"Альтернативная позиция на вкладке">
 <!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (about:config)">
 
-<!ENTITY Ctr_hctpinfotab	"Some tab variations are not compatible to 'Hide Caption Titlebar Plus' add-on.">
-<!ENTITY Ctr_hctpinfoab		"Button on titlebar is not compatible to 'Hide Caption Titlebar Plus' add-on.">
+<!ENTITY Ctr_hctpinfotab	"Некоторые виды оформления вкладок несовместимы с расширением 'Hide Caption Titlebar Plus'.">
+<!ENTITY Ctr_hctpinfoab		"Кнопка на панели заголовка несовместима с расширением 'Hide Caption Titlebar Plus'.">
 
 <!ENTITY Ctr_appbutton		"Кнопка приложения">
 <!ENTITY Ctr_appbutton0		"отключена">
@@ -312,6 +312,6 @@
 <!ENTITY ctr_appbuttoncusttextcolor	"Цвет текста кнопки меню.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Удаление тени шрифта кнопки меню">
 
-<!ENTITY ctr_toolbarsearchbar.description	"Tool-bar search bar">
-<!ENTITY ctr_toolbarsearchbarcustwidth.label	"Enable custom maximum width">
-<!ENTITY ctr_toolbarsearchbarwidth.label	"Search-bar maximum width: ">
+<!ENTITY ctr_toolbarsearchbar.description	"Панель инструментов поиска">
+<!ENTITY ctr_toolbarsearchbarcustwidth.label	"Разрешить изменение максимальной ширины">
+<!ENTITY ctr_toolbarsearchbarwidth.label	"Максимальная ширина панели поиска: ">
