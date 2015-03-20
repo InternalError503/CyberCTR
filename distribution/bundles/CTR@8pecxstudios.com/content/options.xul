@@ -237,6 +237,8 @@
 	<preference id="ctraddon_searchbarwidthp"	name="extensions.classicthemerestorer.searchbarwidth"	type="int"		instantApply="true"/>	
 	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>	
 	
+	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>	
+	
 	
 	</preferences>
 
@@ -738,6 +740,20 @@
 		<checkbox label="&Ctr_bmbutnotext;"		preference="ctraddon_bmbutnotext" id="ctraddon_pw_bmbutnotext"/>
 		<checkbox label="&Ctr_noresizerxp;"		preference="ctraddon_noresizerxp" id="ctraddon_pw_noresizerxp"/>
 	  </groupbox>
+	  
+	  <groupbox>
+		<caption  label="&ctr_abouthome.caption;" class="ctraddon_topic"/>		
+		<menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
+			<menupopup>
+						<menuitem value="default" label="&ctr_abouthome.default;"/>
+						<menuitem value="defaultnobar" label="&ctr_abouthome.default; (&ctr_abouthome.links;)" id="defnolin"/>
+						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
+						<menuitem value="lightnobar"	 label="&ctr_abouthome.light; (&ctr_abouthome.links;)" id="lignolin"/>				
+						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
+						<menuitem value="darknobar"	 label="&ctr_abouthome.dark; (&ctr_abouthome.links;)" id="darnolin"/>						
+			</menupopup>
+		</menulist>		
+	  </groupbox>	  
 
 	</box>
 

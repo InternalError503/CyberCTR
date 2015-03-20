@@ -76,7 +76,7 @@ classicthemerestorerjs.ctr = {
 	try{
 		document.getElementById("PanelUI-button").removeChild(document.getElementById("PanelUI-menu-button"));
 	} catch(e){}
-	
+		
 	// adds a new global attribute 'defaultfxtheme' -> better parting css for default and non-default themes
 	try{
 		if (this.fxdefaulttheme){
@@ -293,6 +293,36 @@ classicthemerestorerjs.ctr = {
 			  },3000);
 			
 			}
+		  break;
+		  
+		  //start page style
+		  case "abouthome":
+		  
+			if (branch.getCharPref("abouthome") === "dark"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', true);	
+			}else{
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', false);					
+			}
+			if (branch.getCharPref("abouthome") === "darknobar"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedarknobar', true);	
+			}else{
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedarknobar', false);					
+			}			
+			if (branch.getCharPref("abouthome") === "light"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', true);	
+			}else{
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);					
+			}				
+			if (branch.getCharPref("abouthome") === "lightnobar"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelightnobar', true);	
+			}else{
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelightnobar', false);					
+			}
+			if (branch.getCharPref("abouthome") === "defaultnobar"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', true);	
+			}else{
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', false);					
+			}			
 		  break;
 		  
 		  // Tabs
@@ -2735,6 +2765,13 @@ classicthemerestorerjs.ctr = {
 		case "tree_style_fix": 		manageCSS("tree_style_fix.css");	break;
 		case "tabs_titlebar": 		manageCSS("tabs_titlebar.css");	break;
 		
+		case "abouthomedark": 		manageCSS("abouthomedark.css");	break;
+		case "abouthomelight": 		manageCSS("abouthomelight.css");	break;
+		case "abouthomedarknobar": 		manageCSS("abouthomedarknobar.css");	break;
+		case "abouthomelightnobar": 		manageCSS("abouthomelightnobar.css");	break;
+		case "abouthomenobar": 		manageCSS("abouthomenobar.css");	break;
+	
+		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
 		case "aerocolors":
@@ -4501,14 +4538,10 @@ try{
   }, false);	
   
   document.getElementById("ctraddon_appbutton2")
-        .addEventListener("DOMContentLoaded", function (e) {
-		
-try{		
-		
-classicthemerestorerjs.ctr.fixThatTreeStyleBro();
-		}catch (e){ alert(e)
-
-	}	
+        .addEventListener("DOMContentLoaded", function (e) {		
+	try{		
+			classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+		}catch (e){}	
 			
   }, false);
   
@@ -4625,7 +4658,7 @@ switch (newAppButtonState){
 					}
 				
 			  });	
-			  					
+ 					
   },
   
 	fixThatTreeStyleBro: function(){

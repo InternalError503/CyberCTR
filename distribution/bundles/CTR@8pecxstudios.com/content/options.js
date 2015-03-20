@@ -501,6 +501,13 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_titleintitlebar').disabled = false;
 		}
 
+		//Hide no link start page styles in firefox.	
+		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
+			document.getElementById('defnolin').hidden = true;
+			document.getElementById('lignolin').hidden = true;
+			document.getElementById('darnolin').hidden = true;
+		}	
+			
 			this.hideThemeInfoForTabs();
   },
   
