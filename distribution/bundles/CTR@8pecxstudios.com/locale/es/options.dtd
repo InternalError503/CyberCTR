@@ -321,4 +321,5 @@
 <!ENTITY ctr_abouthome.default "Default about:home style">
 <!ENTITY ctr_abouthome.light "Light about:home style">
 <!ENTITY ctr_abouthome.dark "Dark about:home style">
+<!ENTITY ctr_abouthome.simplicity  "Simplicity about:home style">
 <!ENTITY ctr_abouthome.links "No Links">

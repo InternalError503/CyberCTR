@@ -750,7 +750,8 @@
 						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
 						<menuitem value="lightnobar"	 label="&ctr_abouthome.light; (&ctr_abouthome.links;)" id="lignolin"/>				
 						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
-						<menuitem value="darknobar"	 label="&ctr_abouthome.dark; (&ctr_abouthome.links;)" id="darnolin"/>						
+						<menuitem value="darknobar"	 label="&ctr_abouthome.dark; (&ctr_abouthome.links;)" id="darnolin"/>	
+						<menuitem value="simplicity"	 label="&ctr_abouthome.simplicity;"/>						
 			</menupopup>
 		</menulist>		
 	  </groupbox>	  
