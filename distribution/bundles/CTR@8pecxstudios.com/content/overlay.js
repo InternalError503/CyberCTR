@@ -327,7 +327,12 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', true);	
 			}else{
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', false);					
-			}			
+			}	
+			if (branch.getCharPref("abouthome") === "simplicitynobar"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitynobar', true);	
+			}else{
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitynobar', false);					
+			}				
 		  break;
 		  
 		  // Tabs
@@ -2777,6 +2782,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;
 		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;
 		case "abouthomesimplicity": 			manageCSS("abouthomesimplicity.css");	break;		
+		case "abouthomesimplicitynobar": 			manageCSS("abouthomesimplicitynobar.css");	break;		
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		

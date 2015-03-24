@@ -506,6 +506,7 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('defnolin').hidden = true;
 			document.getElementById('lignolin').hidden = true;
 			document.getElementById('darnolin').hidden = true;
+			document.getElementById('simnolin').hidden = true;
 		}	
 			
 			this.hideThemeInfoForTabs();
