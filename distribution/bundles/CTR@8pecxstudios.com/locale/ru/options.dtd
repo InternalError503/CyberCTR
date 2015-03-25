@@ -262,7 +262,7 @@
 <!ENTITY Ctr_fx34loop		"В &brandShortName; версий 34 и выше добавлен клиент для связи в режиме реального времени. Отключение параметра удаляет эту функцию.">
 <!ENTITY Ctr_fx35devtheme	"В &brandShortName; версий 35 и выше введена новая «Тема разработчика». Отключение параметра удаляет её и соответствующую кнопку в режиме «Настройка».">
 <!ENTITY Ctr_fx36prefs		"В &brandShortName; версий 36 и выше настройки отображаются в новой вкладке. Если отключить этот параметр, восстанавливается старое окно настроек.">
-<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ introduced a new 'reader mode'. Unchecking this preferences disables it and removes its icon from location bar.">
+<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ introduced a new 'reader mode'. Unchecking these preferences disables it and removes its icon from location bar.">
 <!ENTITY Ctr_e_omtc			"OMTC / проблема с зависанием вкладок">
 <!ENTITY Ctr_e_searchui		"Внешний вид панели поиска">
 <!ENTITY Ctr_e_loop			"Вызовы и разговоры">
