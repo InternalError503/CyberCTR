@@ -58,6 +58,7 @@ classicthemerestorerjs.ctr = {
   
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  abhomenolinkssheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
 
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -296,43 +297,23 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  //start page style
-		  case "abouthome":
+		  case "abouthome": case "abouthomenobar":
 		  
-			if (branch.getCharPref("abouthome") === "dark"){
+			if (branch.getCharPref("abouthome") === "dark" || 
+				branch.getCharPref("abouthome") === "darknobar"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', false);					
-			}
-			if (branch.getCharPref("abouthome") === "darknobar"){
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedarknobar', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedarknobar', false);					
-			}			
-			if (branch.getCharPref("abouthome") === "light"){
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', false);}
+			if (branch.getCharPref("abouthome") === "light" || 
+				branch.getCharPref("abouthome") === "lightnobar"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);					
-			}				
-			if (branch.getCharPref("abouthome") === "lightnobar"){
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelightnobar', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelightnobar', false);					
-			}
-			if (branch.getCharPref("abouthome") === "defaultnobar"){
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', false);					
-			}	
-			if (branch.getCharPref("abouthome") === "simplicity"){
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);}				
+			if (branch.getCharPref("abouthome") === "simplicity" ||
+				branch.getCharPref("abouthome") === "simplicitynobar"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', false);					
-			}	
-			if (branch.getCharPref("abouthome") === "simplicitynobar"){
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitynobar', true);	
-			}else{
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitynobar', false);					
-			}				
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', false);}	
+			if (branch.getBoolPref("abouthomenobar") === true){
+					classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', false);}			
 		  break;
 		  
 		  // Tabs
@@ -2777,13 +2758,8 @@ classicthemerestorerjs.ctr = {
 		
 		case "abouthomedark": 			manageCSS("abouthomedark.css");	break;
 		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
-		case "abouthomedarknobar": 	manageCSS("abouthomedarknobar.css");	break;
-		case "abouthomelightnobar": 	manageCSS("abouthomelightnobar.css");	break;
-		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;
-		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;
 		case "abouthomesimplicity": 			manageCSS("abouthomesimplicity.css");	break;		
-		case "abouthomesimplicitynobar": 			manageCSS("abouthomesimplicitynobar.css");	break;		
-		
+	
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
 		case "aerocolors":
@@ -4347,6 +4323,27 @@ classicthemerestorerjs.ctr = {
 			}
 
 		break;
+		
+		case "abhomenolinkssheet":
+
+			removeOldSheet(this.abhomenolinkssheet);
+			
+			if(enable==true && this.prefs.getBoolPref("abouthomenobar") === true){
+	
+				this.abhomenolinkssheet=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+						@namespace url(http://www.w3.org/1999/xhtml);\
+						@-moz-document url("about:home") {\
+							.hmenubar,\
+							.headerbar {\
+								display: none!important;\
+							}\
+						}\
+				'), null, null);
+				
+				applyNewSheet(this.abhomenolinkssheet);
+			}
+
+		break;		
 		
 	}
 	

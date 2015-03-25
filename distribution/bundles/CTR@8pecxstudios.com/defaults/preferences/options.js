@@ -74,7 +74,9 @@ pref("extensions.classicthemerestorer.invicoaddonbar",false);
 
 pref("extensions.classicthemerestorer.athrobberurl","");
 
+//Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");
+pref("extensions.classicthemerestorer.abouthomenobar", false);
 
 // Urlbar
 pref("extensions.classicthemerestorer.starinurl",false);

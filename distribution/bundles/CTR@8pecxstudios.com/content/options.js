@@ -196,6 +196,13 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_searchbarwidth').disabled = true;
 		document.getElementById('ctraddon_searchbarwidthl').disabled = true;
 	}});
+
+  //Custom about:home style no links (Cyberfox only)
+	Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){		
+		switch (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome")){
+			case "defaultnobar": case "lightnobar": case "darknobar": case "simplicitynobar": Services.prefs.setBoolPref('extensions.classicthemerestorer.abouthomenobar', true); break;
+			case "default": case "light": case "dark": case "simplicity": Services.prefs.setBoolPref('extensions.classicthemerestorer.abouthomenobar', false); break;			
+	}});	
 	
 	// extra checks to not enable tab width settings while 'TabMixPlus' or 'TabUtilities' is enabled
 	AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
