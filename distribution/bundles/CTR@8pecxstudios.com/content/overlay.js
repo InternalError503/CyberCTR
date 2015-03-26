@@ -77,7 +77,7 @@ classicthemerestorerjs.ctr = {
 	try{
 		document.getElementById("PanelUI-button").removeChild(document.getElementById("PanelUI-menu-button"));
 	} catch(e){}
-		
+	
 	// adds a new global attribute 'defaultfxtheme' -> better parting css for default and non-default themes
 	try{
 		if (this.fxdefaulttheme){
@@ -155,7 +155,7 @@ classicthemerestorerjs.ctr = {
 	
 	// style CTRs 'customize-ui' option buttons
 	this.loadUnloadCSS('cui_buttons',true);
-		
+	
 	// CTRs extra add-on bar keys
 	this.CTRextraLocationBarKeyset();
 	
@@ -323,6 +323,7 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_squared2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_curved',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_curvedall',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_devedextra',false);
 
 			var devtheme=false;
 
@@ -334,6 +335,10 @@ classicthemerestorerjs.ctr = {
 
 			if (branch.getCharPref("tabs")!="tabs_default" && classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==false){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabs"),true);
+			}
+			
+			if (classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==true){
+			  classicthemerestorerjs.ctr.loadUnloadCSS('tabs_devedextra',true);
 			}
 
 			if (branch.getBoolPref("aerocolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==false) { 
@@ -1416,6 +1421,11 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("hidezoomres",false);
 		  break;
 		  
+		  case "alt_newtabp":
+			if (branch.getBoolPref("alt_newtabp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",false);
+		  break;
+		  
 		  case "bmbutpanelm":
 			if (branch.getBoolPref("bmbutpanelm")) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("bmbutpanelm",true);
@@ -2215,7 +2225,7 @@ classicthemerestorerjs.ctr = {
   // disable preferences which are not usable with third party themes  
   disableSettingsforThemes: function() {
 	
-	try {
+	/*try {
 	  if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled')!=false){
 		this.prefs.setBoolPref('tabcolor_def',false);
 		this.prefs.setBoolPref('tabcolor_act',false);
@@ -2225,7 +2235,7 @@ classicthemerestorerjs.ctr = {
 		this.prefs.setBoolPref('ntabcolor_def',false);
 		this.prefs.setBoolPref('ntabcolor_hov',false);
 	  }
-	} catch(e) {}
+	} catch(e) {}*/
 
 	if (!this.fxdefaulttheme) {
 		this.prefs.setBoolPref('tabcolor_def',false);
@@ -2461,6 +2471,8 @@ classicthemerestorerjs.ctr = {
 		break;
 		
 		case "tabs_curvedall":		manageCSS("tabs_curvedall.css");		break;
+		
+		case "tabs_devedextra":		manageCSS("tabs_devedextra.css");		break;
 		
 		case "tabsotoff":
 		
@@ -2724,6 +2736,7 @@ classicthemerestorerjs.ctr = {
 		case "emptyfavicon2": 		manageCSS("empty_favicon2.css");		break;
 		case "noemptypticon": 		manageCSS("empty_favicon_pt.css");		break;
 		case "hidezoomres": 		manageCSS("hide_zoomreset.css");		break;
+		case "alt_newtabp": 		manageCSS("alt_newtabpage.css");		break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbutnotext": 		manageCSS("bmbut_no_label.css");		break;
 		case "noresizerxp": 		manageCSS("no_resizer_xp.css");			break;

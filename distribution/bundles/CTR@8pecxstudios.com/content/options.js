@@ -540,14 +540,14 @@ classicthemerestorerjso.ctr = {
   },
   
   resetPrefsForDevTheme: function(){
-	var currenttabs=this.prefs.getCharPref('tabs');
+	/*var currenttabs=this.prefs.getCharPref('tabs');*/
 	
 	// reset Tab appearance, but keep last knows preference
 	setTimeout(function(){
 	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs','tabs_default');
 	},50);
 	setTimeout(function(){
-	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs',currenttabs);
+	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs','tabs_squared');
 	},100);
 	
 	// disable aeroblue toolbars preference
@@ -903,7 +903,8 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setBoolPref("faviconurl",true);
 	this.prefs.setBoolPref("bmanimation",true);
 	this.prefs.setBoolPref("pananimation",true);
-	
+	this.prefs.setBoolPref("alt_newtabp",true);
+
 	if (contexts.getBoolPref("classic")){}else{
 		this.prefs.setBoolPref("noconicons",true);
 	}
