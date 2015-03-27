@@ -307,10 +307,14 @@ classicthemerestorerjs.ctr = {
 				branch.getCharPref("abouthome") === "lightnobar"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);}				
-			if (branch.getCharPref("abouthome") === "simplicity" ||
-				branch.getCharPref("abouthome") === "simplicitynobar"){
-				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', false);}	
+			if (branch.getCharPref("abouthome") === "simplicityblue" ||
+				branch.getCharPref("abouthome") === "simplicitybluenobar"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', false);}
+			if (branch.getCharPref("abouthome") === "simplicityred" ||
+				branch.getCharPref("abouthome") === "simplicityrednobar"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}			
 			if (branch.getBoolPref("abouthomenobar") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', false);}			
@@ -2787,8 +2791,9 @@ classicthemerestorerjs.ctr = {
 		
 		case "abouthomedark": 			manageCSS("abouthomedark.css");	break;
 		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
-		case "abouthomesimplicity": 			manageCSS("abouthomesimplicity.css");	break;		
-	
+		case "abouthomesimplicityblue": 			manageCSS("abouthomesimplicityblue.css");	break;		
+		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;	
+		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
 		case "aerocolors":

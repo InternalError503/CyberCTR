@@ -754,8 +754,10 @@
 						<menuitem value="lightnobar"	 label="&ctr_abouthome.light; (&ctr_abouthome.links;)" id="lignolin"/>				
 						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
 						<menuitem value="darknobar"	 label="&ctr_abouthome.dark; (&ctr_abouthome.links;)" id="darnolin"/>	
-						<menuitem value="simplicity"	 label="&ctr_abouthome.simplicity;"/>
-						<menuitem value="simplicitynobar"	 label="&ctr_abouthome.simplicity;  (&ctr_abouthome.links;)" id="simnolin"/>						
+						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Blue)"/>
+						<menuitem value="simplicitybluenobar"	 label="&ctr_abouthome.simplicity; (Blue) (&ctr_abouthome.links;)" id="simnolin"/>
+						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Red)"/>
+						<menuitem value="simplicityrednobar"	 label="&ctr_abouthome.simplicity; (Red) (&ctr_abouthome.links;)" id="simnolin"/>						
 			</menupopup>
 		</menulist>		
 	  </groupbox>	  
