@@ -495,7 +495,8 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('defnolin').hidden = true;
 			document.getElementById('lignolin').hidden = true;
 			document.getElementById('darnolin').hidden = true;
-			document.getElementById('simnolin').hidden = true;
+			document.getElementById('simnolinb').hidden = true;
+			document.getElementById('simnolinr').hidden = true;			
 		}	
 			
 			this.hideThemeInfoForTabs();
