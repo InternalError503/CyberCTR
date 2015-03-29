@@ -77,6 +77,7 @@ pref("extensions.classicthemerestorer.athrobberurl","");
 //Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");
 pref("extensions.classicthemerestorer.abouthomenobar", false);
+pref("extensions.classicthemerestorer.abouthomenologo", false);
 
 // Urlbar
 pref("extensions.classicthemerestorer.starinurl",false);
