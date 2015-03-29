@@ -317,7 +317,14 @@ classicthemerestorerjs.ctr = {
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', false);}
 			if (branch.getBoolPref("abouthomenologo") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abhomenologossheet', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenologossheet', false);}					
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenologossheet', false);}			
+		  break;
+		  
+		  //No scons on about:home page
+			case "abouthomenoicons":		  
+			if (branch.getBoolPref("abouthomenoicons") === true){
+					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', false);}				
 		  break;
 		  
 		  // Tabs
@@ -2793,6 +2800,8 @@ classicthemerestorerjs.ctr = {
 		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
 		case "abouthomesimplicityblue": 			manageCSS("abouthomesimplicityblue.css");	break;		
 		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;	
+		case "abouthomenoicons": 			manageCSS("abouthomenoicons.css");	break;	
+		
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
