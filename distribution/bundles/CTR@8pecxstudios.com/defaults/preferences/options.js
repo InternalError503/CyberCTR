@@ -79,6 +79,7 @@ pref("extensions.classicthemerestorer.abouthome", "dark");
 pref("extensions.classicthemerestorer.abouthomenobar", false);
 pref("extensions.classicthemerestorer.abouthomenologo", false);
 pref("extensions.classicthemerestorer.abouthomenoicons", false);
+pref("extensions.classicthemerestorer.abouthomenosnippets", false);
 
 // Urlbar
 pref("extensions.classicthemerestorer.starinurl",false);

@@ -487,6 +487,11 @@ classicthemerestorerjso.ctr = {
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
 			document.getElementById('nolinks').hidden = true;	
 		}	
+
+		//Hide no snippets start page checkbox in Cyberfox as there are removed by default.	
+		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase()) {
+			document.getElementById('nosnippets').hidden = true;	
+		}
 			
 			this.hideThemeInfoForTabs();
   },

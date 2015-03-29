@@ -333,6 +333,13 @@ classicthemerestorerjs.ctr = {
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', false);}
 		  break;
 		  
+		//No snippets on about:home page
+		case "abouthomenosnippets":		  
+			if (branch.getBoolPref("abouthomenosnippets") === true){
+					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenosnippets', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenosnippets', false);}
+		  break;		  
+		  
 		  // Tabs
 		  case "tabs":
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_squared',false);
@@ -2809,7 +2816,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;		
 		case "abouthomenologo": 			manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 			manageCSS("abouthomenoicons.css");	break;	
-		
+		case "abouthomenosnippets": 			manageCSS("abouthomenosnippets.css");	break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
