@@ -431,7 +431,7 @@
         height: 32px;
         width: 32px;
     }
-    #aboutCyberfox {
+    #aboutMozilla {
         display: block;
         position: relative;
         /* pin wordmark to edge of document, not of viewport */
@@ -440,12 +440,12 @@
         opacity: .5;
         transition: opacity 150ms;
     }
-    #aboutCyberfox:hover {
+    #aboutMozilla:hover {
         opacity: 1;
     }
-    #aboutCyberfox::before {
-        /*content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber.png");*/
-        
+	/* We don't use this in cyberfox but can in firefox*/	
+    #aboutMozilla::before {
+       content: url("chrome://classic_theme_restorer/content/images/abouthome/mozilla.png")!important;       
         display: block;
         position: absolute;
         top: 12px;
@@ -516,8 +516,9 @@
             transform: scale(-0.5, 0.5) translateX(24px);
             transform-origin: top center;
         }
-        #aboutCyberfox::before {
-            /*content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber@2x.png");*/
+		/* We don't use this in cyberfox but can in firefox*/
+        #aboutMozilla::before {
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/mozilla@2x.png")!important;
         }
     }
 }
