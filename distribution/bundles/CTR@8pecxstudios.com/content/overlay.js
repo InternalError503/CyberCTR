@@ -58,7 +58,6 @@ classicthemerestorerjs.ctr = {
   
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
-  abhomenolinkssheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
 
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -297,7 +296,7 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  //start page style
-		  case "abouthome": case "abouthomenobar":
+		  case "abouthome":
 		  
 			if (branch.getCharPref("abouthome") === "dark"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', true);	
@@ -311,23 +310,27 @@ classicthemerestorerjs.ctr = {
 			if (branch.getCharPref("abouthome") === "simplicityred"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}			
+		  break;
+		 
+		 //No links on about:home page in cyberfox.
+		case "abouthomenobar":
 			if (branch.getBoolPref("abouthomenobar") === true){
-					classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', false);}		
+					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', false);}
 		  break;
 		  
-		  //No logo on about:home page
-			case "abouthomenologo":		  
+		//No logo on about:home page
+		case "abouthomenologo":		  
 			if (branch.getBoolPref("abouthomenologo") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenologo', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenologo', false);}			
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenologo', false);}
 		  break;		  
 		  
-		  //No icons on about:home page
-			case "abouthomenoicons":		  
+		//No icons on about:home page
+		case "abouthomenoicons":		  
 			if (branch.getBoolPref("abouthomenoicons") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', false);}				
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', false);}
 		  break;
 		  
 		  // Tabs
@@ -2803,6 +2806,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
 		case "abouthomesimplicityblue": 			manageCSS("abouthomesimplicityblue.css");	break;		
 		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;
+		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;		
 		case "abouthomenologo": 			manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 			manageCSS("abouthomenoicons.css");	break;	
 		
@@ -4370,27 +4374,6 @@ classicthemerestorerjs.ctr = {
 			}
 
 		break;
-		
-		case "abhomenolinkssheet":
-
-			removeOldSheet(this.abhomenolinkssheet);
-			
-			if(enable==true && this.prefs.getBoolPref("abouthomenobar") === true){
-	
-				this.abhomenolinkssheet=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.w3.org/1999/xhtml);\
-						@-moz-document url("about:home") {\
-							.hmenubar,\
-							.headerbar {\
-								display: none!important;\
-							}\
-						}\
-				'), null, null);
-				
-				applyNewSheet(this.abhomenolinkssheet);
-			}
-
-		break;	
 		
 	}
 	
