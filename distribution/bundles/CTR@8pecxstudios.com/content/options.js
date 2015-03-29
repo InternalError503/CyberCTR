@@ -196,13 +196,6 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_searchbarwidth').disabled = true;
 		document.getElementById('ctraddon_searchbarwidthl').disabled = true;
 	}});
-
-  //Custom about:home style no links (Cyberfox only)
-	Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){		
-		switch (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome")){
-			case "defaultnobar": case "lightnobar": case "darknobar": case "simplicitybluenobar": case "simplicityrednobar": Services.prefs.setBoolPref('extensions.classicthemerestorer.abouthomenobar', true); break;
-			case "default": case "light": case "dark": case "simplicityblue": case "simplicityred": Services.prefs.setBoolPref('extensions.classicthemerestorer.abouthomenobar', false); break;			
-	}});	
 	
 	// extra checks to not enable tab width settings while 'TabMixPlus' or 'TabUtilities' is enabled
 	AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
@@ -490,13 +483,9 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_titleintitlebar').disabled = false;
 		}
 
-		//Hide no link start page styles in firefox.	
+		//Hide no links start page checkbox in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
-			document.getElementById('defnolin').hidden = true;
-			document.getElementById('lignolin').hidden = true;
-			document.getElementById('darnolin').hidden = true;
-			document.getElementById('simnolinb').hidden = true;
-			document.getElementById('simnolinr').hidden = true;			
+			document.getElementById('nolinks').hidden = true;	
 		}	
 			
 			this.hideThemeInfoForTabs();

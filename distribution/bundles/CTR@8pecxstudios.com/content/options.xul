@@ -239,7 +239,8 @@
 	<preference id="ctraddon_searchbarwidthp"	name="extensions.classicthemerestorer.searchbarwidth"	type="int"		instantApply="true"/>	
 	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>	
 	
-	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>	
+	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>
+	<preference id="ctraddon_ctabouthomenobar"	name="extensions.classicthemerestorer.abouthomenobar"	type="bool"	instantApply="true"/>	
 	
 	
 	</preferences>
@@ -749,17 +750,13 @@
 		<menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
 			<menupopup>
 						<menuitem value="default" label="&ctr_abouthome.default;"/>
-						<menuitem value="defaultnobar" label="&ctr_abouthome.default; (&ctr_abouthome.links;)" id="defnolin"/>
-						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
-						<menuitem value="lightnobar"	 label="&ctr_abouthome.light; (&ctr_abouthome.links;)" id="lignolin"/>				
+						<menuitem value="light"	 label="&ctr_abouthome.light;"/>				
 						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
-						<menuitem value="darknobar"	 label="&ctr_abouthome.dark; (&ctr_abouthome.links;)" id="darnolin"/>	
 						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Blue)"/>
-						<menuitem value="simplicitybluenobar"	 label="&ctr_abouthome.simplicity; (Blue) (&ctr_abouthome.links;)" id="simnolinb"/>
-						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Red)"/>
-						<menuitem value="simplicityrednobar"	 label="&ctr_abouthome.simplicity; (Red) (&ctr_abouthome.links;)" id="simnolinr"/>						
+						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Red)"/>					
 			</menupopup>
-		</menulist>		
+		</menulist>
+		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>		
 	  </groupbox>	  
 
 	</box>

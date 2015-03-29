@@ -299,20 +299,16 @@ classicthemerestorerjs.ctr = {
 		  //start page style
 		  case "abouthome": case "abouthomenobar":
 		  
-			if (branch.getCharPref("abouthome") === "dark" || 
-				branch.getCharPref("abouthome") === "darknobar"){
+			if (branch.getCharPref("abouthome") === "dark"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', false);}
-			if (branch.getCharPref("abouthome") === "light" || 
-				branch.getCharPref("abouthome") === "lightnobar"){
+			if (branch.getCharPref("abouthome") === "light"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);}				
-			if (branch.getCharPref("abouthome") === "simplicityblue" ||
-				branch.getCharPref("abouthome") === "simplicitybluenobar"){
+			if (branch.getCharPref("abouthome") === "simplicityblue"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', false);}
-			if (branch.getCharPref("abouthome") === "simplicityred" ||
-				branch.getCharPref("abouthome") === "simplicityrednobar"){
+			if (branch.getCharPref("abouthome") === "simplicityred"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}			
 			if (branch.getBoolPref("abouthomenobar") === true){
