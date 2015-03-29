@@ -59,7 +59,6 @@ classicthemerestorerjs.ctr = {
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abhomenolinkssheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
-  abhomenologossheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
 
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -298,7 +297,7 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  //start page style
-		  case "abouthome": case "abouthomenobar": case "abouthomenologo":
+		  case "abouthome": case "abouthomenobar":
 		  
 			if (branch.getCharPref("abouthome") === "dark"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', true);	
@@ -314,13 +313,17 @@ classicthemerestorerjs.ctr = {
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}			
 			if (branch.getBoolPref("abouthomenobar") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', false);}
-			if (branch.getBoolPref("abouthomenologo") === true){
-					classicthemerestorerjs.ctr.loadUnloadCSS('abhomenologossheet', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenologossheet', false);}			
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abhomenolinkssheet', false);}		
 		  break;
 		  
-		  //No scons on about:home page
+		  //No logo on about:home page
+			case "abouthomenologo":		  
+			if (branch.getBoolPref("abouthomenologo") === true){
+					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenologo', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenologo', false);}			
+		  break;		  
+		  
+		  //No icons on about:home page
 			case "abouthomenoicons":		  
 			if (branch.getBoolPref("abouthomenoicons") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoicons', true);	
@@ -2799,7 +2802,8 @@ classicthemerestorerjs.ctr = {
 		case "abouthomedark": 			manageCSS("abouthomedark.css");	break;
 		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
 		case "abouthomesimplicityblue": 			manageCSS("abouthomesimplicityblue.css");	break;		
-		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;	
+		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;
+		case "abouthomenologo": 			manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 			manageCSS("abouthomenoicons.css");	break;	
 		
 		
@@ -4387,26 +4391,6 @@ classicthemerestorerjs.ctr = {
 			}
 
 		break;	
-
-		case "abhomenologossheet":
-
-			removeOldSheet(this.abhomenologossheet);
-			
-			if(enable==true && this.prefs.getBoolPref("abouthomenologo") === true){
-	
-				this.abhomenologossheet=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.w3.org/1999/xhtml);\
-						@-moz-document url("about:home") {\
-							#brandLogo {\
-								display: none!important;\
-							}\
-						}\
-				'), null, null);
-				
-				applyNewSheet(this.abhomenologossheet);
-			}
-
-		break;		
 		
 	}
 	
