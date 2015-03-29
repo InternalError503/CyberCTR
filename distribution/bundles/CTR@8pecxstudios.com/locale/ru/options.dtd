@@ -324,5 +324,6 @@
 <!ENTITY ctr_abouthome.dark "Темная страница about:home">
 <!ENTITY ctr_abouthome.simplicity  "Simplicity about:home style">
 <!ENTITY ctr_abouthome.links "Ссылки отсутствуют">
-<!ENTITY ctr_abouthome.logo "No Logo">
-<!ENTITY ctr_abouthome.icons "No Icons">
+<!ENTITY ctr_abouthome.links "No links on about:home page">
+<!ENTITY ctr_abouthome.logo "No logo on about:home page">
+<!ENTITY ctr_abouthome.icons "No icons on about:home page">
