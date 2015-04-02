@@ -272,7 +272,7 @@
         min-height: calc(15/12 * 3em);
     }
     #snippets a {
-        color: #00adee !important;
+        color: #ff0000!important;
     }
     #snippets a:hover {
         color: #3c3c3c!important;
