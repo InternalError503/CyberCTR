@@ -492,6 +492,19 @@ classicthemerestorerjso.ctr = {
 		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase()) {
 			document.getElementById('nosnippets').hidden = true;	
 		}
+		
+		//Disable no links option on simplicity theme(s)
+		if (this.prefs.getCharPref("abouthome") === "simplicityred" || 
+			this.prefs.getCharPref("abouthome") === "simplicityblue"){
+			document.getElementById('noicons').disabled = true;			
+		}else{document.getElementById('noicons').disabled = false;}
+
+		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
+			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityred" || 
+			Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityblue"){
+				document.getElementById('noicons').disabled = true;			
+			}else{document.getElementById('noicons').disabled = false;}
+		});
 			
 			this.hideThemeInfoForTabs();
   },

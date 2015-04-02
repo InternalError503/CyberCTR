@@ -760,7 +760,7 @@
 		</menulist>
 		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>
 		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
-		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons"/>
+		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
 		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>		
 	  </groupbox>	  
 
