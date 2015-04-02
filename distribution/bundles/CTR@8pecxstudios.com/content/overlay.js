@@ -309,7 +309,10 @@ classicthemerestorerjs.ctr = {
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', false);}
 			if (branch.getCharPref("abouthome") === "simplicityred"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}			
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}
+			if (branch.getCharPref("abouthome") === "simplicitygreen"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitygreen', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitygreen', false);}				
 		  break;
 		 
 		 //No links on about:home page in cyberfox.
@@ -2813,6 +2816,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
 		case "abouthomesimplicityblue": 			manageCSS("abouthomesimplicityblue.css");	break;		
 		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;
+		case "abouthomesimplicitygreen": 			manageCSS("abouthomesimplicitygreen.css");	break;
 		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;		
 		case "abouthomenologo": 			manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 			manageCSS("abouthomenoicons.css");	break;	
