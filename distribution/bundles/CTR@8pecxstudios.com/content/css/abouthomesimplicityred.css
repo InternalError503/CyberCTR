@@ -1,4 +1,4 @@
-/* simplicity theme */
+/* simplicity theme (Red)*/
 
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url("about:home") {
@@ -272,7 +272,7 @@
         min-height: calc(15/12 * 3em);
     }
     #snippets a {
-        color: #ff0000!important;
+        color: #00adee !important;
     }
     #snippets a:hover {
         color: #3c3c3c!important;
