@@ -1,4 +1,4 @@
-/* simplicity theme (Red)*/
+/* simplicity theme (Linux)*/
 
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url("about:home") {
@@ -74,7 +74,7 @@
         font-size: 14px;
     }
     .hmenubar li a:hover {
-        color: #ff0000!important;
+        color: #0fed00!important;
     }
     .hmenubar li a:active {
         color: #555555;
@@ -164,7 +164,7 @@
     #searchIcon[active],
     #searchIcon:hover {
         background-color: transparent!important;
-        border-color: #ff0000 !important;
+        border-color: #0fed00 !important;
         border-radius: 2.5px;
     }
     html[searchUIConfiguration="oldsearchui"] #searchIcon {
@@ -188,7 +188,7 @@
     }
     #searchText:hover {
         border: 1px solid;
-        border-color: #ff0000 !important;
+        border-color: #0fed00 !important;
     }
     #searchText:-moz-dir(rtl) {
         border-radius: 0 2.5px 2.5px 0;
@@ -196,7 +196,7 @@
     #searchText:focus,
     #searchText[autofocus] {
         background: #2d2d2d!important;
-        border-color: #ff0000 !important;
+        border-color: #0fed00 !important;
     }
     #searchSubmit {
         -moz-margin-start: -1px;
@@ -217,8 +217,8 @@
     #searchText[autofocus] + #searchSubmit {
         background: #2d2d2d!important;
         background-image: #2d2d2d!important;
-        border-color: #ff0000 !important;
-        color: #ff0000 !important;
+        border-color: #0fed00 !important;
+        color: #0fed00 !important;
     }
     #searchText:focus + #searchSubmit,
     #searchText[autofocus] + #searchSubmit {
@@ -272,7 +272,7 @@
         min-height: calc(15/12 * 3em);
     }
     #snippets a {
-        color: #ff0000!important;
+        color: #0fed00 !important;
     }
     #snippets a:hover {
         color: #3c3c3c!important;
@@ -329,13 +329,13 @@
         margin: 4px 1px;
     }
     .launchButton:hover {
-        color: #ff1014 !important;
+        color: #0fed00 !important;
         background-color: hsla(211, 79%, 6%, .03);
-        border-color: #ff0000 !important;
+        border-color: #0fed00 !important;
     }
     .launchButton:hover:active {
         background-image: linear-gradient(hsla(211, 79%, 6%, .02), hsla(211, 79%, 6%, .05));
-        border-color: #ff0000 !important;
+        border-color: #0fed00 !important;
         box-shadow: 0 1px 1px hsla(211, 79%, 6%, .05) inset, 0 0 1px hsla(211, 79%, 6%, .1) inset;
         transition-duration: 0ms;
     }

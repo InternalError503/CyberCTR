@@ -754,10 +754,10 @@
 						<menuitem value="default" label="&ctr_abouthome.default;"/>
 						<menuitem value="light"	 label="&ctr_abouthome.light;"/>				
 						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
-						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Blue)"/>
-						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Red)"/>
-						<menuitem value="simplicitygreen"	 label="&ctr_abouthome.simplicity; (Green)"/>
-						<menuitem value="simplicityyellow"	 label="&ctr_abouthome.simplicity; (Yellow)"/>						
+						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Intel)"/>
+						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Amd)"/>
+						<menuitem value="simplicitygreen"	 label="&ctr_abouthome.simplicity; (Linux)"/>
+						<menuitem value="simplicityyellow"	 label="&ctr_abouthome.simplicity; (Beta)"/>						
 			</menupopup>
 		</menulist>
 		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>

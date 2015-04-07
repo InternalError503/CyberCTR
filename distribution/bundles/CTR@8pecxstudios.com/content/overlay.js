@@ -2817,10 +2817,10 @@ classicthemerestorerjs.ctr = {
 		
 		case "abouthomedark": 							manageCSS("abouthomedark.css");	break;
 		case "abouthomelight": 							manageCSS("abouthomelight.css");	break;
-		case "abouthomesimplicityblue": 				manageCSS("abouthomesimplicityblue.css");	break;		
-		case "abouthomesimplicityred": 				manageCSS("abouthomesimplicityred.css");	break;
-		case "abouthomesimplicitygreen": 			manageCSS("abouthomesimplicitygreen.css");	break;
-		case "abouthomesimplicityyellow": 			manageCSS("abouthomesimplicityyellow.css");	break;
+		case "abouthomesimplicityblue": 				manageCSS("abouthomesimplicityintel.css");	break;		
+		case "abouthomesimplicityred": 				manageCSS("abouthomesimplicityamd.css");	break;
+		case "abouthomesimplicitygreen": 			manageCSS("abouthomesimplicitylinux.css");	break;
+		case "abouthomesimplicityyellow": 			manageCSS("abouthomesimplicitybeta.css");	break;
 		case "abouthomenobar": 							manageCSS("abouthomenobar.css");	break;		
 		case "abouthomenologo": 						manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 						manageCSS("abouthomenoicons.css");	break;	
