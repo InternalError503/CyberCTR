@@ -496,14 +496,16 @@ classicthemerestorerjso.ctr = {
 		//Disable no links option on simplicity theme(s)
 		if (this.prefs.getCharPref("abouthome") === "simplicityred" || 
 			this.prefs.getCharPref("abouthome") === "simplicityblue"|| 
-			this.prefs.getCharPref("abouthome") === "simplicitygreen"){
+			this.prefs.getCharPref("abouthome") === "simplicitygreen" || 
+			this.prefs.getCharPref("abouthome") === "simplicityyellow"){
 			document.getElementById('noicons').disabled = true;			
 		}else{document.getElementById('noicons').disabled = false;}
 
 		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
 			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityred" || 
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityblue"|| 
-				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitygreen"){
+				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitygreen"|| 
+				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityyellow"){
 				document.getElementById('noicons').disabled = true;			
 			}else{document.getElementById('noicons').disabled = false;}
 		});

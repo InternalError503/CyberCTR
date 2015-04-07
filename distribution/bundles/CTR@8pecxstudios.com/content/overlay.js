@@ -312,7 +312,10 @@ classicthemerestorerjs.ctr = {
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityred', false);}
 			if (branch.getCharPref("abouthome") === "simplicitygreen"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitygreen', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitygreen', false);}				
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicitygreen', false);}
+			if (branch.getCharPref("abouthome") === "simplicityyellow"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityyellow', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityyellow', false);}			
 		  break;
 		 
 		 //No links on about:home page in cyberfox.
@@ -2812,15 +2815,16 @@ classicthemerestorerjs.ctr = {
 		case "tree_style_fix": 		manageCSS("tree_style_fix.css");	break;
 		case "tabs_titlebar": 		manageCSS("tabs_titlebar.css");	break;
 		
-		case "abouthomedark": 			manageCSS("abouthomedark.css");	break;
-		case "abouthomelight": 			manageCSS("abouthomelight.css");	break;
-		case "abouthomesimplicityblue": 			manageCSS("abouthomesimplicityblue.css");	break;		
-		case "abouthomesimplicityred": 			manageCSS("abouthomesimplicityred.css");	break;
+		case "abouthomedark": 							manageCSS("abouthomedark.css");	break;
+		case "abouthomelight": 							manageCSS("abouthomelight.css");	break;
+		case "abouthomesimplicityblue": 				manageCSS("abouthomesimplicityblue.css");	break;		
+		case "abouthomesimplicityred": 				manageCSS("abouthomesimplicityred.css");	break;
 		case "abouthomesimplicitygreen": 			manageCSS("abouthomesimplicitygreen.css");	break;
-		case "abouthomenobar": 			manageCSS("abouthomenobar.css");	break;		
-		case "abouthomenologo": 			manageCSS("abouthomenologo.css");	break;		
-		case "abouthomenoicons": 			manageCSS("abouthomenoicons.css");	break;	
-		case "abouthomenosnippets": 			manageCSS("abouthomenosnippets.css");	break;
+		case "abouthomesimplicityyellow": 			manageCSS("abouthomesimplicityyellow.css");	break;
+		case "abouthomenobar": 							manageCSS("abouthomenobar.css");	break;		
+		case "abouthomenologo": 						manageCSS("abouthomenologo.css");	break;		
+		case "abouthomenoicons": 						manageCSS("abouthomenoicons.css");	break;	
+		case "abouthomenosnippets": 					manageCSS("abouthomenosnippets.css");	break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
