@@ -91,6 +91,9 @@ classicthemerestorerjs.ctr = {
 			this.fxdefaulttheme=true;
 			document.getElementById("main-window").setAttribute('defaultfxtheme',true);
 		  }
+		 
+		  // Don't animateFadeIn options window in nautipolis theme.	
+		  if(thirdpartytheme=="nautipolis" && classicthemerestorerjs.ctr.osstring=="WINNT"){Services.prefs.setBoolPref("browser.preferences.animateFadeIn", false);}
 		  
 		  classicthemerestorerjs.ctr.loadUnloadCSS("thirdpartythemes",true);
 		}
