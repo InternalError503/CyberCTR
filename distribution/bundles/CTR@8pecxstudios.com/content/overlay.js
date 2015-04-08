@@ -58,7 +58,8 @@ classicthemerestorerjs.ctr = {
   
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
-
+  abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
   fxdefaulttheme:		Services.prefs.getBranch("general.skins.").getCharPref("selectedSkin") == 'classic/1.0',
@@ -1751,7 +1752,17 @@ classicthemerestorerjs.ctr = {
 						classicthemerestorerjs.ctr.loadUnloadCSS("searchbarsheet",false);
 					}	
 				} catch(e){}			
-		  break;	  
+		  break;
+
+		  case "abouthomecustombg": case "abouthomecustomurl":
+			  	try{		  
+					if (branch.getBoolPref("abouthomecustombg")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg",false);
+					}	
+				} catch(e){}			
+		  break;		  
 		  
 		}
 	  }
@@ -4389,6 +4400,27 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.searchbarsheet);
+			}
+
+		break;
+		
+		case "abouthome_bg":
+
+			removeOldSheet(this.abouthome_bg);
+			
+			if(enable==true && this.prefs.getBoolPref("abouthomecustombg")){
+	
+				this.abouthome_bg=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.w3.org/1999/xhtml);\
+					@-moz-document url("about:home") {\
+						html{\
+							background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
+							background-size: 100% 100%!important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.abouthome_bg);
 			}
 
 		break;

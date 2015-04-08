@@ -327,3 +327,6 @@
 <!ENTITY ctr_abouthome.logo "Убрать логотип со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.icons "Убрать иконки со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.snippets "Убрать сниппеты со стартовой страницы about:home">
+<!ENTITY ctr_abouthome.custombg "Use custom background image">
+<!ENTITY ctr_abouthome.custombgurl "Enter url or file path">
+<!ENTITY ctr_abouthome.custombgurlph "Background image url|path">

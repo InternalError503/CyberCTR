@@ -245,6 +245,9 @@
 	<preference id="ctraddon_ctabouthomenoicons"	name="extensions.classicthemerestorer.abouthomenoicons"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenosnippets"	name="extensions.classicthemerestorer.abouthomenosnippets"	type="bool"	instantApply="true"/>
 	
+	<preference id="ctraddon_ctabouthomecustombg"	name="extensions.classicthemerestorer.abouthomecustombg"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_ctabouthome_bg"	name="extensions.classicthemerestorer.abouthomecustomurl"	type="string"	instantApply="true"/>
+	
 	</preferences>
 
 
@@ -763,7 +766,16 @@
 		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>
 		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
 		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
-		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>		
+		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>
+		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>		
+			<hbox>
+		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctabouthome_custbgl"/>
+		  <textbox id="ctraddon_ctabouthome_bg_urlbox" 
+						  preference="ctraddon_ctabouthome_bg" 
+						  size="auto" 
+						  flex="1" 
+						  placeholder="&ctr_abouthome.custombgurlph;"/>
+			</hbox>		
 	  </groupbox>	  
 
 	</box>

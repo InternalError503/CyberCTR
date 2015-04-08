@@ -509,7 +509,41 @@ classicthemerestorerjso.ctr = {
 				document.getElementById('noicons').disabled = true;			
 			}else{document.getElementById('noicons').disabled = false;}
 		});
-			
+		
+		// Replace whiteSpace and backslash in custom background urls	
+		Application.prefs.get("extensions.classicthemerestorer.abouthomecustomurl").events.addListener("change", function(aEvent){				
+		try{
+			Services.prefs.setCharPref("extensions.classicthemerestorer.abouthomecustomurl", document.getElementById('ctraddon_ctabouthome_bg_urlbox').value.replace(/ /g, "%20").replace(/\\/g,"/"));
+		} catch (e){ }
+		});
+		
+		//Disable custom background image on Light|dark theme styles.
+		if (this.prefs.getCharPref("abouthome") === "dark" || 
+			this.prefs.getCharPref("abouthome") === "light"){
+			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
+			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
+			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
+			this.prefs.setBoolPref("abouthomecustombg", false)
+		}else{
+			document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
+			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
+			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
+		}
+
+		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
+			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "dark" || 
+				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "light"){
+			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
+			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
+			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomecustombg", false)
+		}else{
+			document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
+			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
+			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
+		}
+		});
+	
 			this.hideThemeInfoForTabs();
   },
   
