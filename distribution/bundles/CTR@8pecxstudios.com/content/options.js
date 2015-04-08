@@ -513,7 +513,7 @@ classicthemerestorerjso.ctr = {
 		// Replace whiteSpace and backslash in custom background urls	
 		Application.prefs.get("extensions.classicthemerestorer.abouthomecustomurl").events.addListener("change", function(aEvent){				
 		try{
-			Services.prefs.setCharPref("extensions.classicthemerestorer.abouthomecustomurl", document.getElementById('ctraddon_ctabouthome_bg_urlbox').value.replace(/ /g, "%20").replace(/\\/g,"/"));
+			Services.prefs.setCharPref("extensions.classicthemerestorer.abouthomecustomurl", document.getElementById('ctraddon_ctabouthome_bg_urlbox').value.trim().replace(/ /g, "%20").replace(/\\/g,"/"));
 		} catch (e){ }
 		});
 		
