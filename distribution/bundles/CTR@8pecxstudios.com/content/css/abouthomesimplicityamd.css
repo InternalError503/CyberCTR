@@ -139,10 +139,7 @@
         }
     }
     #searchLogoContainer {
-        display: -moz-box;
-        -moz-box-align: center;
-        padding-top: 2px;
-        -moz-padding-end: 8px;
+        display: none!important;
     }
     #searchLogoContainer[hidden] {
         display: none;
