@@ -59,6 +59,7 @@ classicthemerestorerjs.ctr = {
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -307,7 +308,16 @@ classicthemerestorerjs.ctr = {
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomedark', false);}
 			if (branch.getCharPref("abouthome") === "light"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', true);	
-			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);}				
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);}
+
+			if (branch.getCharPref("abouthome") === "simplicityblue" ||
+			branch.getCharPref("abouthome") === "simplicityred" ||
+			branch.getCharPref("abouthome") === "simplicitygreen" || 
+			branch.getCharPref("abouthome") === "simplicityyellow" ||
+			branch.getCharPref("abouthome") === "simplicitycustom"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicity', false);}
+			
 			if (branch.getCharPref("abouthome") === "simplicityblue"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomesimplicityblue', false);}
@@ -1762,7 +1772,18 @@ classicthemerestorerjs.ctr = {
 						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg",false);
 					}	
 				} catch(e){}			
-		  break;		  
+		  break;	
+		  
+		  case "abouthomehighlight": case "abouthomecustomhighlightcolor":
+			  	try{		  
+					if (branch.getBoolPref("abouthomehighlight")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custcolor",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custcolor",false);
+					}	
+				} catch(e){}			
+		  break;
+		  
 		  
 		}
 	  }
@@ -2831,6 +2852,7 @@ classicthemerestorerjs.ctr = {
 		
 		case "abouthomedark": 							manageCSS("abouthomedark.css");	break;
 		case "abouthomelight": 							manageCSS("abouthomelight.css");	break;
+		case "abouthomesimplicity": 				    manageCSS("abouthomesimplicity.css");	break;	
 		case "abouthomesimplicityblue": 				manageCSS("abouthomesimplicityintel.css");	break;		
 		case "abouthomesimplicityred": 				manageCSS("abouthomesimplicityamd.css");	break;
 		case "abouthomesimplicitygreen": 			manageCSS("abouthomesimplicitylinux.css");	break;
@@ -4421,6 +4443,26 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.abouthome_bg);
+			}
+
+		break;
+
+		case "abouthome_custcolor":
+
+			removeOldSheet(this.abouthome_custcolor);
+			
+			if(enable==true && this.prefs.getBoolPref("abouthomehighlight")){
+	
+				this.abouthome_custcolor=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.w3.org/1999/xhtml);\
+					@-moz-document url("about:home") {\
+						:root {\
+							--main-highlight-color:'+this.prefs.getCharPref("abouthomecustomhighlightcolor")+'!important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.abouthome_custcolor);
 			}
 
 		break;

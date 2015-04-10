@@ -247,6 +247,8 @@
 	
 	<preference id="ctraddon_ctabouthomecustombg"	name="extensions.classicthemerestorer.abouthomecustombg"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthome_bg"	name="extensions.classicthemerestorer.abouthomecustomurl"	type="string"	instantApply="true"/>
+	<preference id="ctraddon_ctabouthomecustomhighlight"	name="extensions.classicthemerestorer.abouthomehighlight"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_ctabouthome_highlight_color"	name="extensions.classicthemerestorer.abouthomecustomhighlightcolor"	type="string"	instantApply="true"/>
 	
 	</preferences>
 
@@ -760,7 +762,8 @@
 						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Intel)"/>
 						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Amd)"/>
 						<menuitem value="simplicitygreen"	 label="&ctr_abouthome.simplicity; (Linux)"/>
-						<menuitem value="simplicityyellow"	 label="&ctr_abouthome.simplicity; (Beta)"/>						
+						<menuitem value="simplicityyellow"	 label="&ctr_abouthome.simplicity; (Beta)"/>	
+						<menuitem value="simplicitycustom"	 label="&ctr_abouthome.simplicity; (Custom)"/>						
 			</menupopup>
 		</menulist>
 		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>
@@ -775,7 +778,13 @@
 						  size="auto" 
 						  flex="1" 
 						  placeholder="&ctr_abouthome.custombgurlph;"/>
-			</hbox>		
+			</hbox>	
+			<checkbox label="&ctr_abouthome.customhighlight;" preference="ctraddon_ctabouthomecustomhighlight" id="ctraddon_ctabouthomecusthltck"/>
+		<hbox>
+			<label value="&ctr_abouthome.customhighlightcol;" id="ctraddon_ctabouthomecusthltlb"/>
+			<textbox preference="ctraddon_ctabouthome_highlight_color" id="ctraddon_ctabouthomecusthlttb" width="70px"/>
+			<colorpicker preference="ctraddon_ctabouthome_highlight_color" type="button" id="ctraddon_ctabouthomecusthltcp"/>
+		</hbox>			
 	  </groupbox>	  
 
 	</box>

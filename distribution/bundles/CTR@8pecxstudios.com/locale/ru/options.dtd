@@ -330,3 +330,5 @@
 <!ENTITY ctr_abouthome.custombg "Использовать свое фоновое изображение">
 <!ENTITY ctr_abouthome.custombgurl "Введите ссылку или путь к файлу">
 <!ENTITY ctr_abouthome.custombgurlph "Ссылка/путь к фоновому изображению">
+<!ENTITY ctr_abouthome.customhighlight "Use custom highlight color">
+<!ENTITY ctr_abouthome.customhighlightcol "Change custom highlight color">

@@ -82,6 +82,8 @@ pref("extensions.classicthemerestorer.abouthomenoicons", false);
 pref("extensions.classicthemerestorer.abouthomenosnippets", false);
 pref("extensions.classicthemerestorer.abouthomecustombg", false);
 pref("extensions.classicthemerestorer.abouthomecustomurl", "");
+pref("extensions.classicthemerestorer.abouthomehighlight", false);
+pref("extensions.classicthemerestorer.abouthomecustomhighlightcolor", "#fe634a");
 
 // Urlbar
 pref("extensions.classicthemerestorer.starinurl",false);

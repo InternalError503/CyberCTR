@@ -485,7 +485,7 @@ classicthemerestorerjso.ctr = {
 
 		//Hide no links start page checkbox in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
-			document.getElementById('nolinks').hidden = true;	
+			document.getElementById('nolinks').hidden = true;
 		}	
 
 		//Hide no snippets start page checkbox in Cyberfox as there are removed by default.	
@@ -493,21 +493,44 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('nosnippets').hidden = true;	
 		}
 		
-		//Disable no links option on simplicity theme(s)
+		//Disable no links & custom hightlight color option on simplicity theme(s)
 		if (this.prefs.getCharPref("abouthome") === "simplicityred" || 
 			this.prefs.getCharPref("abouthome") === "simplicityblue"|| 
 			this.prefs.getCharPref("abouthome") === "simplicitygreen" || 
 			this.prefs.getCharPref("abouthome") === "simplicityyellow"){
-			document.getElementById('noicons').disabled = true;			
-		}else{document.getElementById('noicons').disabled = false;}
+			document.getElementById('noicons').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+			this.prefs.setBoolPref("abouthomehighlight", false);	
+		}else{
+			document.getElementById('noicons').disabled = false;
+			document.getElementById('ctraddon_ctabouthomecusthltck').disabled = false;
+			document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = false;
+			document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
+			document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
+		}
 
 		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
 			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityred" || 
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityblue"|| 
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitygreen"|| 
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityyellow"){
-				document.getElementById('noicons').disabled = true;			
-			}else{document.getElementById('noicons').disabled = false;}
+				document.getElementById('noicons').disabled = true;
+				//Disable custom hightlight color on pre-sets.
+				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomehighlight", false);
+			}else{
+				document.getElementById('noicons').disabled = false;
+				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = false;
+				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = false;
+				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
+				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
+			}
 		});
 		
 		// Replace whiteSpace and backslash in custom background urls	
@@ -522,8 +545,14 @@ classicthemerestorerjso.ctr = {
 			this.prefs.getCharPref("abouthome") === "light"){
 			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
 			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
-			this.prefs.setBoolPref("abouthomecustombg", false)
+			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;		
+			this.prefs.setBoolPref("abouthomecustombg", false);
+			document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+			document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+			this.prefs.setBoolPref("abouthomehighlight", false);
+			
 		}else{
 			document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
 			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
@@ -531,19 +560,41 @@ classicthemerestorerjso.ctr = {
 		}
 
 		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
-			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "dark" || 
-				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "light"){
-			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomecustombg", false)
-		}else{
-			document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
-			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
-			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
-		}
+				if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "dark" || 
+					Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "light"){
+				document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
+				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
+				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomecustombg", false);			
+				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomehighlight", false);
+			}else{
+				document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
+				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
+				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
+			}
+			//Disable custom hightlight colors on default theme in firefox.	
+			if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 
+				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "default") {
+					document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+					document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+					document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+					this.prefs.setBoolPref("abouthomehighlight", false);
+			}
 		});
-	
+		//Disable custom hightlight colors on default theme in firefox.	
+		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {
+				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+				this.prefs.setBoolPref("abouthomehighlight", false);
+		}
+		
 			this.hideThemeInfoForTabs();
   },
   
