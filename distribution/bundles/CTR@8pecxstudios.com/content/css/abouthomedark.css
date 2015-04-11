@@ -2,6 +2,11 @@
 
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url("about:home") {
+
+	:root {
+		--main-highlight-color:#00adee;
+	}
+
     html {
         font: message-box;
         font-size: 100%;
@@ -83,7 +88,7 @@
         font-size: 14px;
     }
     .hmenubar li a:hover {
-        color: #00adee !important;
+        color: var(--main-highlight-color)!important;
         background-color: rgb(237, 237, 239);
         background-image: linear-gradient(rgb(216, 216, 218), rgb(237, 237, 239) 30%, rgb(237, 238, 240));
         background: url("chrome://classic_theme_restorer/content/images/abouthome/menu-shadow_dark.png") no-repeat scroll -28px -8px transparent;
@@ -204,7 +209,7 @@
     #searchSubmit,
     #searchText:focus,
     #searchText[autofocus] {
-        border-color: hsla(206, 100%, 60%, .6) hsla(206, 76%, 52%, .6) hsla(204, 100%, 40%, .6) !important;
+        border-color: var(--main-highlight-color)!important;
     }
     #searchSubmit {
         -moz-margin-start: -1px;
@@ -237,17 +242,17 @@
     #searchText[autofocus] + #searchSubmit {
         background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png), -moz-linear-gradient(#333, #222) !important;
         border: 1px solid !important;
-        border-color: hsla(206, 100%, 60%, .6) hsla(206, 76%, 52%, .6) hsla(204, 100%, 40%, .6) !important;
+        border-color: var(--main-highlight-color)!important;
     }
     #searchText + #searchSubmit:hover {
         background-image: -moz-linear-gradient(rgb(37, 38, 40) 15%, rgb(37, 38, 40) 40%, rgb(25, 25, 25) 65%) !important;
-        color: #00adee !important;
+        color: var(--main-highlight-color)!important;
         -moz-transition: .1s ease-in;
     }
     #searchText + #searchSubmit:hover:active {
-        color: #00adee !important;
+        color: var(--main-highlight-color)!important;
         background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png);
-        text-shadow: 0px 0px 3px #00adee !important;
+        text-shadow: 0px 0px 3px var(--main-highlight-color)!important;
         box-shadow: 0pt 5px 0pt rgba(34, 35, 37, 0.1) inset, 0 0 6.5px rgba(0, 0, 0, .4) inset, 0 0 5px rgba(0, 0, 0, .4) inset;
         -moz-transition: .1s ease-in;
         border: 1px solid #111;
@@ -292,7 +297,7 @@
         min-height: calc(15/12 * 3em);
     }
     #snippets a {
-        color: #00adee !important;
+        color: var(--main-highlight-color)!important;
     }
     #snippets a:hover {
         color: #efefef!important;
@@ -340,7 +345,7 @@
         margin: 4px 1px;
     }
     .launchButton:hover {
-        color: #00adee !important;
+        color: var(--main-highlight-color)!important;
         background-color: rgb(35, 35, 33) !important;
         background-image: linear-gradient(rgb(16, 16, 18), rgb(37, 37, 39) 60%, rgb(37, 38, 40)) !important;
         border-bottom: 1px solid rgb(55, 55, 55, .3) !important;
