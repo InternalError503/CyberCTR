@@ -606,7 +606,7 @@ classicthemerestorerjs.ctr = {
 				devtheme=true;
 			  }
 			} catch(e) {}
-			
+	
 			if (branch.getBoolPref("aerocolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==false) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("aerocolors",true);
 			  branch.setBoolPref("tabc_act_tb",false);
@@ -825,6 +825,17 @@ classicthemerestorerjs.ctr = {
 							urlbaricons.insertBefore(document.getElementById("bookmarks-menu-button"), urlbaricons.firstChild.nextSibling);
 						else
 							urlbaricons.insertBefore(document.getElementById("bookmarks-menu-button"), urlbaricons.firstChild);
+						
+						/* Fx 38+ adds reader mode buttons to urlbar icons area. They have to be moved to first position.*/
+						if (classicthemerestorerjs.ctr.appversion >= 38) {
+						  try{
+							if(document.getElementById("reader-mode-button").parentNode.id=="urlbar-icons") {
+							  urlbaricons.insertBefore(document.getElementById("reader-mode-button"), urlbaricons.firstChild);
+							  urlbaricons.insertBefore(document.getElementById("readinglist-addremove-button"), urlbaricons.firstChild);
+							}
+						  } catch(e){}
+						}
+						
 					  } catch(e){}
 					}
 
@@ -874,6 +885,17 @@ classicthemerestorerjs.ctr = {
 
 						var urlbaricons = document.getElementById("urlbar-icons");
 						urlbaricons.insertBefore(document.getElementById("feed-button"), urlbaricons.firstChild);
+						
+						/* Fx 38+ adds reader mode buttons to urlbar icons area. They have to be moved to first position.*/
+						if (classicthemerestorerjs.ctr.appversion >= 38) {
+						  try{
+							if(document.getElementById("reader-mode-button").parentNode.id=="urlbar-icons") {
+							  urlbaricons.insertBefore(document.getElementById("reader-mode-button"), urlbaricons.firstChild);
+							  urlbaricons.insertBefore(document.getElementById("readinglist-addremove-button"), urlbaricons.firstChild);
+							}
+						  } catch(e){}
+						}
+
 					  } catch(e){}
 					}
 				  },1300);
@@ -889,7 +911,6 @@ classicthemerestorerjs.ctr = {
 				  setTimeout(function(){
 					try{
 						if(document.getElementById("feed-button").parentNode.id=="urlbar-icons") {
-						  //document.getElementById("nav-bar-customization-target").appendChild(document.getElementById("feed-button"));
 						  CustomizableUI.addWidgetToArea("feed-button", CustomizableUI.AREA_NAVBAR);
 						  classicthemerestorerjs.ctr.loadUnloadCSS("feedinurl",false);
 						}
@@ -1391,8 +1412,11 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "nonavtbborder":
-			if (branch.getBoolPref("nonavtbborder") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("nonavtbborder",true);
-			  else classicthemerestorerjs.ctr.loadUnloadCSS("nonavtbborder",false);
+			if (branch.getBoolPref("nonavtbborder") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("nonavtbborder",true);
+			  branch.setBoolPref("tbsep_winc",false);
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("nonavtbborder",false);
 		  break;
 		  
 		  case "hidesbclose":
@@ -1408,6 +1432,14 @@ classicthemerestorerjs.ctr = {
 		  case "chevronfix":
 			if (branch.getBoolPref("chevronfix")) classicthemerestorerjs.ctr.loadUnloadCSS("chevronfix",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("chevronfix",false);
+		  break;
+		  
+		  case "tbsep_winc":
+			if (branch.getBoolPref("tbsep_winc") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("tbsep_winc",true);
+			  branch.setBoolPref("nonavtbborder",false);
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("tbsep_winc",false);
 		  break;
 		  
 		  case "tabmokcolor":
@@ -1741,7 +1773,7 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "bmarkoinpw":
-			if (branch.getBoolPref("bmarkoinpw")) classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",true);
+			if (branch.getBoolPref("bmarkoinpw") && classicthemerestorerjs.ctr.appversion < 38) classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",false);
 		  break;
 		  
@@ -1850,7 +1882,7 @@ classicthemerestorerjs.ctr = {
 			    devthemeosx=true;
 			  }
 			} catch(e) {}
-			  
+		  
 			if(devthemeosx==true)			
 			  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_default');
 		}
@@ -2791,6 +2823,7 @@ classicthemerestorerjs.ctr = {
 		case "hidesbclose": 		manageCSS("hidesidebarclose.css");		break;
 		case "notextshadow": 		manageCSS("notextshadow.css");			break;
 		case "chevronfix": 			manageCSS("chevronfix.css");			break;
+		case "tbsep_winc": 			manageCSS("tbsep_winc.css");			break;
 		case "highaddonsbar": 		manageCSS("higher_addonsbar.css");		break;
 		case "addonbarfs": 			manageCSS("addonbar_infullscreen.css");	break;
 		case "hightabpososx": 		manageCSS("higher_tabs_pos.css");		break;
@@ -4593,6 +4626,12 @@ classicthemerestorerjs.ctr = {
 	  }catch(e){}
 	}
   
+  },
+  
+  // exclude feature from newer Fx versions (it is already build in)
+  openInPrWin: function() {
+	if(classicthemerestorerjs.ctr.appversion < 38)
+	  openLinkIn(document.getElementById('placesContext').triggerNode._placesNode.uri, 'window', {private: true});
   },
   
   // reset CTRs toolbar configuration
