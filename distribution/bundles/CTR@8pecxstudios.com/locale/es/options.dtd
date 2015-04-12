@@ -138,6 +138,8 @@
 <!ENTITY Ctr_cpanelmenus	"Menús de panel: Vista compacta (marcadores, historial, etc.)">
 <!ENTITY Ctr_hidezoomres	"Controles de zoom en la barra de herramientas: Ocultar botón de restablecimiento del zoom">
 <!ENTITY Ctr_alt_newtabp	"Página de nueva pestaña: Apariencia alternativa">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Botón de menú Marcadores: Aspecto del panel de menú">
 <!ENTITY Ctr_bmbutnotext	"Botón de menú Marcadores: Ocultar etiqueta en la barra de marcadores">
 <!ENTITY Ctr_noresizerxp	"Ocultar redimensionador (Windows XP)">

@@ -79,6 +79,10 @@
 		<preference id="ctraddon_backforward"	name="extensions.classicthemerestorer.backforward"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_noconicons"	name="extensions.classicthemerestorer.noconicons"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_alt_newtabp"	name="extensions.classicthemerestorer.alt_newtabp"	 type="bool"	instantApply="true"/>
+		
+		<preference id="ctraddon_newtabcol"	name="browser.newtabpage.columns"	 type="int"		instantApply="true"/>
+		<preference id="ctraddon_newtabrow"	name="browser.newtabpage.rows"	 type="int"		instantApply="true"/>		
+		
 		<preference id="ctraddon_svgfilters"	name="extensions.classicthemerestorer.svgfilters"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_wincontrols"	name="extensions.classicthemerestorer.wincontrols"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_hideprbutton"	name="extensions.classicthemerestorer.hideprbutton"	type="bool"		instantApply="true"/>
@@ -737,6 +741,14 @@
 		
 		<checkbox label="&Ctr_noconicons;"		preference="ctraddon_noconicons" id="ctraddon_pw_noconicons"/>
 		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>
+		<hbox flex="1">
+			<textbox id="ctraddon_newtabcol" size="1" maxlength="5" preference="ctraddon_newtabcol" type="number" min="0" max="5"/>
+			<label value="&Ctr_alt_newtabcol;" id="ctraddon_newtabcolt"/>
+		</hbox>
+		<hbox flex="1">
+			<textbox id="ctraddon_newtabrows" size="1" maxlength="3" preference="ctraddon_newtabrow" type="number" min="0" max="3"/>
+			<label value="&Ctr_alt_newtabrow;" id="ctraddon_newtabrows"/>
+		</hbox>
 		<checkbox label="&Ctr_svgfilters;"		preference="ctraddon_svgfilters" id="ctraddon_pw_svgfilters"/>
 		<checkbox label="&Ctr_hideprivmask;"	preference="ctraddon_hideprivmask" id="ctraddon_pw_hideprivmask"/>
 		<checkbox label="&Ctr_combrelstop;"		preference="ctraddon_combrelstop" id="ctraddon_pw_stopreload"/>

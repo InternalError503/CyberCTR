@@ -137,6 +137,8 @@
 <!ENTITY Ctr_cpanelmenus	"Menu panelu: widok kompaktowy (zakładki, historia itp.)">
 <!ENTITY Ctr_hidezoomres	"Kontrolki powiększenia na pasku narzędzi: ukryj przycisk resetu powiększenia">
 <!ENTITY Ctr_alt_newtabp	"Strona nowej karty: wygląd alternatywny">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Przycisk menu zakładek: wygląd menu panelu">
 <!ENTITY Ctr_bmbutnotext	"Przycisk menu zakładek: ukryj etykietę na pasku zakładek">
 <!ENTITY Ctr_noresizerxp	"Usuń zmieniacz rozmiaru (Windows XP)">

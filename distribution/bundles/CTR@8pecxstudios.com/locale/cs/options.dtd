@@ -138,6 +138,8 @@
 <!ENTITY Ctr_cpanelmenus	"Nabídky panelů: kompaktní zobrazení (záložky, historie atd.)">
 <!ENTITY Ctr_hidezoomres	"Přiblížit prvky na liště: skrýt tlačítko pro obnovení lupy">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">

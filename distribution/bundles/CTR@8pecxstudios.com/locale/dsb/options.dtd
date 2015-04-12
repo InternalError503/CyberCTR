@@ -138,6 +138,8 @@
 <!ENTITY Ctr_cpanelmenus	"Kompaktne pólowe menije (cytańske znamjenja, historija atd.)">
 <!ENTITY Ctr_hidezoomres	"Skalěrowańske elementy na symbolowej rědce: Tłocašk za slědkstajenje skalěrowanja schowaś">
 <!ENTITY Ctr_alt_newtabp	"Bok nowego rejtarka: alternatiwne wuglědanje">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Tłocašk menija cytańskich znamjenjow: naglěd dialogowego menija">
 <!ENTITY Ctr_bmbutnotext	"Tłocašk menija cytańskich znamjenjow: tekst na rědce cytańskich znamjenjow schowaś">
 <!ENTITY Ctr_noresizerxp	"Pśeměnjak wjelikosći schowaś (Windows XP)">

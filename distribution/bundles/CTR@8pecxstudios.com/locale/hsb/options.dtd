@@ -138,6 +138,8 @@
 <!ENTITY Ctr_cpanelmenus	"Kompaktne pólne menije (zapołožki, historija atd.)">
 <!ENTITY Ctr_hidezoomres	"Skalowanske elementy na symbolowej lajsće: Tłóčatko za wróćostajenje skalowanja schować">
 <!ENTITY Ctr_alt_newtabp	"Strona noweho rajtarka: alternatiwny napohlad">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Tłóčatko menija zapołožkow: napohlad dialogoweho menija">
 <!ENTITY Ctr_bmbutnotext	"Tłóčatko menija zapołožkow: tekst na lajśce zapołožkow schować">
 <!ENTITY Ctr_noresizerxp	"Přeměnjowak wulkosće schować (Windows XP)">

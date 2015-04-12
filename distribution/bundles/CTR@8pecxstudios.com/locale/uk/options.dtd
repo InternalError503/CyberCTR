@@ -137,6 +137,8 @@
 <!ENTITY Ctr_cpanelmenus	"Панель меню: компактний вигляд (закладки, історія тощо)">
 <!ENTITY Ctr_hidezoomres	"Управління масштабом на панелі: приховати кнопку скидання масштабу">
 <!ENTITY Ctr_alt_newtabp	"Сторінка нової вкладки: альтернативний вигляд">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: вигляд меню панелі">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: приховати ярлик на панелі закладок">
 <!ENTITY Ctr_noresizerxp	"Приховати «Індикатор зміни розміру» (Windows XP)">

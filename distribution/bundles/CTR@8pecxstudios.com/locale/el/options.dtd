@@ -138,6 +138,8 @@
 <!ENTITY Ctr_cpanelmenus	"Μενού πίνακα: συνεπτυγμένη προβολή (σελιδοδείκτες, ιστορικό κλπ.)">
 <!ENTITY Ctr_hidezoomres	"Στοιχεία ελέγχου μεγέθυνσης σε εργαλειοθήκη: απόκρυψη κουμπιού επεναφοράς επιπέδου μεγέθυνσης">
 <!ENTITY Ctr_alt_newtabp	"Σελίδα νέας καρτέλας: εναλλακτική εμφάνιση">
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_noresizerxp	"Απόκρυψη λαβής αλλαγής μεγέθους του παραθύρου (Windows XP)">
