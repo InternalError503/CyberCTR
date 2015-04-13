@@ -47,6 +47,14 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 - Custom button color with 3 colors.
 - Set custom button color text color.
 - Remove custom button color text shadow.
+- Set default maximum width for tool-bar search-bar (Range 120px - 295px)
+- Switch between custom about:home page style pre-sets.
+- Change about:home page background with custom image (Locale file or from URL).	
+- Hide icons on about:home page.
+- Hide logo on about:home page.
+- Hide snippets (Ads) on about:home page (Firefox Only)
+- Remove links on about:home page (Cyberfox Only)
+- Change highlight color of about:home page links, search-bar and buttons.	
 
 Plus many under the hood changes and many more visual changes to come.
 
@@ -56,36 +64,41 @@ Plus many under the hood changes and many more visual changes to come.
 - Tab appearance: Squared classic tabs
 - Tab appearance: Curved tabs (all colored and visible)
 - Tabs not on top + [tabsontop="false/true"] attribute
+- Tabs height settings
 - Tabs min/max-width settings
 - Tab close on all tabs, active tab, tool-bars start/end
 - Custom colors for tab backgrounds, text and text shadow
 - Application button on tool-bars
 - Application button on title-bar [Windows only]
-- Custom application button colors
+- Own title for application button on titlebar [Windows only]
+- Predefined/custom application button colors
 - Small navigation tool-bar buttons
 - Movable back-forward button
-- Star button in url bar
-- Feed button in url bar
+- Star button in location bar
+- Rss-Feed button in location bar
 - Movable status-bar panel
 - Combine stop & reload buttons
-- Hide url bars stop & reload buttons
+- Hide location bars stop & reload buttons
 - Hide private browsing mask
-- Find bar on top & at the bottom
+- Find bar on top or bottom
 - 'Icons & Text' and 'Text only' modes
-- Add [iconsize="large"]/[iconsize="small"] attributes to #nav-bar element
+- Add [iconsize="large"]/[iconsize="small"] attributes to #nav-bar node
 - Compact panel menus (bookmarks, history...)
-- Green/blue identity-box colors for verified websites
-- Replace context icons with labels
+- Green/blue site identity button for verified websites and secure connections
+- Replace context menu icons with labels (Back, Forward...)
+- Add up to 20 additional toolbars
 - Restore tabs empty favicon
 - Replace generic favicon (empty and dotted) with sheet favicon
-- Favicon in url bars identity box (url bars left)
+- Favicon in urlbars identity box (location bars left)
 - Different padlock icons
+- AeroBlue toolbar colors for Windows 8/Classic, Linux, MacOSX
 - Hide navigation tool-bar
 - Inverted (white) tool-bar button icons
-- Double click on tabs tool-bar opens a 'new' tab
+- Double click on tabs toolbar opens a 'new' tab [Windows only]
 - Hide tabs tool-bar with one visible tab
 - Tool-bar settings to alter colors, sizes, borders
-- Disable unneeded animations
+- Disable some ui animations
+- Switch between old and new search
 
 ### Features (not on options window):
 
@@ -93,7 +106,7 @@ Plus many under the hood changes and many more visual changes to come.
 - Toggle 'Add-on Bar' using 'Ctrl + /' btw. 'Cmd + /'
 - Enable/disable 'Additional Tool-bar' (tool-bar context menu)
 - Spaces, Flexible spaces, Separators
-- Activity indicator on tool-bars (v1.2.4+)
+- Activity indicator on toolbars
 - Bookmarks menu & sidebar buttons
 - History menu & sidebar buttons
 - Additional movable reload & stop buttons
@@ -157,7 +170,7 @@ context menu (right-click on a tool-bar).
 
 #### Icons + text / text only mode
 
-Similates old modes where text was displayed below tool-bar buttons or button icons got hidden.
+Simulates old modes where text was displayed below tool-bar buttons or button icons got hidden.
 
 #### Bookmarks menu button
 
