@@ -515,6 +515,10 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
 			document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
 		}
+		
+		if (this.prefs.getCharPref("abouthome") === "simplicitycustom"){
+			document.getElementById('noicons').disabled = true;
+		}	
 
 		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
 			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityred" || 
@@ -534,6 +538,9 @@ classicthemerestorerjso.ctr = {
 				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = false;
 				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
 				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
+			}
+			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitycustom"){
+				document.getElementById('noicons').disabled = true;
 			}
 		});
 		
