@@ -137,8 +137,8 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+<!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
+<!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
@@ -272,7 +272,7 @@
 <!ENTITY Ctr_e_loop			"Вызовы и разговоры">
 <!ENTITY Ctr_e_deved		"Тема оформления для разработчиков">
 <!ENTITY Ctr_e_prefsui		"Настройки в виде вкладки">
-<!ENTITY Ctr_e_readermode	"Reader mode">
+<!ENTITY Ctr_e_readermode	"Режим ридера">
 
 
 <!ENTITY Ctr_pw_settings	"Настройки">
@@ -326,7 +326,7 @@
 <!ENTITY ctr_abouthome.default "Стиль по умолчанию">
 <!ENTITY ctr_abouthome.light "Светлая страница about:home">
 <!ENTITY ctr_abouthome.dark "Темная страница about:home">
-<!ENTITY ctr_abouthome.simplicity  "Simplicity about:home style">
+<!ENTITY ctr_abouthome.simplicity  "Упрощенная страница about:home">
 <!ENTITY ctr_abouthome.links "Убрать ссылки со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.logo "Убрать логотип со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.icons "Убрать иконки со стартовой страницы about:home">
