@@ -1,10 +1,10 @@
 /* simplicity theme (Core)*/
+
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url("about:home") {
-
-:root {
-	--main-highlight-color:#fe634a; 
-}
+    :root {
+        --main-highlight-color: #fe634a;
+    }
     html {
         font: message-box;
         font-size: 100%;
@@ -89,7 +89,6 @@
         text-align: center;
     }
     #brandLogo {
-        -moz-animation: brandLogo 3.5s 1;
         height: 154px;
         width: 154px;
         margin: 22px auto 31px;
@@ -98,48 +97,12 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
-    @-moz-keyframes brandLogo {
-        0% {
-            -moz-transform: rotate(0deg);
-            left: 0px;
-        }
-        25% {
-            -moz-transform: rotate(20deg);
-            left: 0px;
-        }
-        50% {
-            -moz-transform: rotate(0deg);
-            left: 500px;
-        }
-        55% {
-            -moz-transform: rotate(0deg);
-            left: 500px;
-        }
-        70% {
-            -moz-transform: rotate(0deg);
-            left: 500px;
-        }
-        90% {
-            -moz-transform: rotate(0deg);
-            left: 500px;
-        }
-        100% {
-            -moz-transform: rotate(-360deg);
-            left: 0px;
-        }
-    }
     #searchForm,
     #snippets {
         width: 470px;
     }
     #searchForm {
         display: -moz-box;
-        -moz-animation: searchForm 1s 1;
-    }
-    @-moz-keyframes searchForm {
-        0% {
-            width: 0px
-        }
     }
     #searchLogoContainer {
         display: none!important;
@@ -268,7 +231,6 @@
 		 preset the height of a three-line snippet to avoid visual moving/flickering as
 		 the snippets load. */
         
-        -moz-animation: pop-in 0.6s;
         min-height: calc(15/12 * 3em);
     }
     #snippets a {
@@ -276,16 +238,6 @@
     }
     #snippets a:hover {
         color: #3c3c3c!important;
-    }
-    @-moz-keyframes pop-in {
-        0% {
-            opacity: 0;
-            -moz-transform: scale(0.5);
-        }
-        100% {
-            opacity: 1;
-            -moz-transform: scale(1);
-        }
     }
     #launcher {
         display: -moz-box;

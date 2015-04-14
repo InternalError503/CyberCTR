@@ -254,7 +254,7 @@
 	<preference id="ctraddon_ctabouthome_bg"	name="extensions.classicthemerestorer.abouthomecustomurl"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomecustomhighlight"	name="extensions.classicthemerestorer.abouthomehighlight"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthome_highlight_color"	name="extensions.classicthemerestorer.abouthomecustomhighlightcolor"	type="string"	instantApply="true"/>
-	
+	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>		
 	</preferences>
 
 
@@ -784,7 +784,8 @@
 		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
 		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
 		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>
-		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>		
+		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>
+		<checkbox label="&ctr_abouthome.animate;"	preference="ctraddon_ctabouthomeanimate" id="ctraddon_ctabouthome_animate"/>			
 			<hbox>
 		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctabouthome_custbgl"/>
 		  <textbox id="ctraddon_ctabouthome_bg_urlbox" 

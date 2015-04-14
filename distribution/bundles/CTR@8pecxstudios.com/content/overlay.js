@@ -457,7 +457,14 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("abouthomenosnippets") === true){
 					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenosnippets', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenosnippets', false);}
-		  break;		  
+		  break;
+
+		//Use animations on about:home page
+		case "abouthomeanimate":		  
+			if (branch.getBoolPref("abouthomeanimate") === true){
+					classicthemerestorerjs.ctr.loadUnloadCSS('abouthomeanimate', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomeanimate', false);}
+		  break;			  
 		  
 		  // Tabs
 		  case "tabs":
@@ -2999,6 +3006,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenologo": 						manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 						manageCSS("abouthomenoicons.css");	break;	
 		case "abouthomenosnippets": 					manageCSS("abouthomenosnippets.css");	break;
+		case "abouthomeanimate": 					manageCSS("abouthomeanimate.css");	break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
