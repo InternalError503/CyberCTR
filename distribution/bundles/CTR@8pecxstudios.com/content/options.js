@@ -487,17 +487,17 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_titleintitlebar').disabled = false;
 		}
 
-		//Hide no links start page checkbox in firefox.	
+		//Hide no links start page check-box in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
 			document.getElementById('nolinks').hidden = true;
 		}	
 
-		//Hide no snippets start page checkbox in Cyberfox as there are removed by default.	
+		//Hide no snippets start page check-box in Cyberfox as there are removed by default.	
 		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase()) {
 			document.getElementById('nosnippets').hidden = true;	
 		}
 		
-		//Disable no links & custom hightlight color option on simplicity theme(s)
+		//Disable no links & custom highlight color option on simplicity theme(s)
 		if (this.prefs.getCharPref("abouthome") === "simplicityred" || 
 			this.prefs.getCharPref("abouthome") === "simplicityblue"|| 
 			this.prefs.getCharPref("abouthome") === "simplicitygreen" || 
@@ -526,7 +526,7 @@ classicthemerestorerjso.ctr = {
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitygreen"|| 
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityyellow"){
 				document.getElementById('noicons').disabled = true;
-				//Disable custom hightlight color on pre-sets.
+				//Disable custom highlight color on pre-sets.
 				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
 				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
 				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
@@ -577,7 +577,7 @@ classicthemerestorerjso.ctr = {
 				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
 				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
 			}
-			//Disable custom hightlight colors on default theme in firefox.	
+			//Disable custom highlight colors on default theme in firefox.	
 			if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 
 				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "default") {
 					document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
@@ -587,7 +587,7 @@ classicthemerestorerjso.ctr = {
 					this.prefs.setBoolPref("abouthomehighlight", false);
 			}
 		});
-		//Disable custom hightlight colors on default theme in firefox.	
+		//Disable custom highlight colors on default theme in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {
 				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
 				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
