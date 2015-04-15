@@ -321,6 +321,7 @@
 <!ENTITY ctr_toolbarsearchbar.description	"Панель инструментов поиска">
 <!ENTITY ctr_toolbarsearchbarcustwidth.label	"Разрешить изменение максимальной ширины">
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Максимальная ширина панели поиска: ">
+<!ENTITY ctr_colapseaddonsearchbar.label	"Collapsible about:addons search bar">
 
 <!ENTITY ctr_abouthome.caption "Стиль домашней страницы (about:home)">
 <!ENTITY ctr_abouthome.default "Стиль по умолчанию">

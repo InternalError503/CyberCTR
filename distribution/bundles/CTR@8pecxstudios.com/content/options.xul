@@ -242,7 +242,8 @@
     <preference id="ctraddon_titleintitlebar"	name="extensions.classicthemerestorer.titleintitlebar"	type="bool"		instantApply="true"/>
 
 	<preference id="ctraddon_searchbarwidthp"	name="extensions.classicthemerestorer.searchbarwidth"	type="int"		instantApply="true"/>	
-	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>	
+	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>
+	<preference id="ctraddon_colapsesearchaddons"	name="extensions.classicthemerestorer.colapsesearchaddons"	type="bool"		instantApply="true"/>	
 	
 	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenobar"	name="extensions.classicthemerestorer.abouthomenobar"	type="bool"	instantApply="true"/>	
@@ -958,6 +959,8 @@
 			<label id="ctraddon_searchbarwidthl" value="&ctr_toolbarsearchbarwidth.label;"/>
 			<textbox id="ctraddon_searchbarwidth" size="2" maxlength="3" preference="ctraddon_searchbarwidthp" type="number" min="120" max="295"/>
 		</hbox>
+		<checkbox label="&ctr_colapseaddonsearchbar.label;"	preference="ctraddon_colapsesearchaddons"/>
+		
 	  
 	</box>
 

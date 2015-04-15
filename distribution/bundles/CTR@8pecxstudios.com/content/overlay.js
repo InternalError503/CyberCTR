@@ -1926,6 +1926,16 @@ classicthemerestorerjs.ctr = {
 				} catch(e){}			
 		  break;
 		  
+		  case "colapsesearchaddons":
+			  	try{		  
+					if (branch.getBoolPref("colapsesearchaddons")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch",false);
+					}	
+				} catch(e){}			
+		  break;
+		  
 		  
 		}
 	  }
@@ -3006,7 +3016,9 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenologo": 						manageCSS("abouthomenologo.css");	break;		
 		case "abouthomenoicons": 						manageCSS("abouthomenoicons.css");	break;	
 		case "abouthomenosnippets": 					manageCSS("abouthomenosnippets.css");	break;
-		case "abouthomeanimate": 					manageCSS("abouthomeanimate.css");	break;
+		case "abouthomeanimate": 						manageCSS("abouthomeanimate.css");	break;
+		case "rndadonssearch": 						manageCSS("rndadonssearch.css");	break;
+		
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		

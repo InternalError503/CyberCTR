@@ -144,6 +144,7 @@ pref("extensions.classicthemerestorer.mbarforceright",false);
 
 pref("extensions.classicthemerestorer.customsearchbarwidth", false);
 pref("extensions.classicthemerestorer.searchbarwidth", 150);
+pref("extensions.classicthemerestorer.colapsesearchaddons", false);
 
 // Animation
 pref("extensions.classicthemerestorer.throbberalt",false);
