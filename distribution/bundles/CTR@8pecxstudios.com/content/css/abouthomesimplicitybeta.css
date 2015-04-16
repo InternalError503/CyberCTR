@@ -2,6 +2,6 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url("about:home") {
 	:root {
-		--main-highlight-color:#f3c742; 
+		--main-highlight-color:#f3c742!important; 
 	}
 }
