@@ -785,8 +785,8 @@
 		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
 		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
 		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>
-		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>
-		<checkbox label="&ctr_abouthome.animate;"	preference="ctraddon_ctabouthomeanimate" id="ctraddon_ctabouthome_animate"/>			
+		<checkbox label="&ctr_abouthome.animate;"	preference="ctraddon_ctabouthomeanimate" id="ctraddon_ctabouthome_animate"/>
+		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>			
 			<hbox>
 		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctabouthome_custbgl"/>
 		  <textbox id="ctraddon_ctabouthome_bg_urlbox" 
