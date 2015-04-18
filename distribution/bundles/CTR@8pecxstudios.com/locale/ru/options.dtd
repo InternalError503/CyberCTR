@@ -141,7 +141,7 @@
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
-<!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
+<!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
 <!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
 <!ENTITY Ctr_extraurlkeycb	"Открыть дополнительную адресную строку (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
@@ -322,7 +322,7 @@
 <!ENTITY ctr_toolbarsearchbar.description	"Панель инструментов поиска">
 <!ENTITY ctr_toolbarsearchbarcustwidth.label	"Разрешить изменение максимальной ширины">
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Максимальная ширина панели поиска: ">
-<!ENTITY ctr_colapseaddonsearchbar.label	"Collapsible about:addons search bar">
+<!ENTITY ctr_colapseaddonsearchbar.label	"Сворачиваемая панель поиска дополнений на странице about:addons">
 
 <!ENTITY ctr_abouthome.caption "Стиль домашней страницы (about:home)">
 <!ENTITY ctr_abouthome.default "Стиль по умолчанию">
@@ -338,4 +338,4 @@
 <!ENTITY ctr_abouthome.custombgurlph "Ссылка/путь к фоновому изображению">
 <!ENTITY ctr_abouthome.customhighlight "Использовать свой цвет подсветки ">
 <!ENTITY ctr_abouthome.customhighlightcol "Изменение цвета подсветки">
-<!ENTITY ctr_abouthome.animate "Use animations on about:home page">
+<!ENTITY ctr_abouthome.animate "Использовать анимации на домашней странице (about:home)">
