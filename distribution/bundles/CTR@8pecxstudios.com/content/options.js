@@ -556,13 +556,15 @@ classicthemerestorerjso.ctr = {
 			this.prefs.getCharPref("abouthome") === "light"){
 			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
 			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;		
+			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
+			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;			
 			this.prefs.setBoolPref("abouthomecustombg", false);
 			
 		}else{
 			document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
 			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
 			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
+			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 		}
 
 		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
@@ -571,11 +573,13 @@ classicthemerestorerjso.ctr = {
 				document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
 				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
 				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
+			    document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
 				Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomecustombg", false);
 			}else{
 				document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
 				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
 				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
+				document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 			}
 			//Disable custom highlight colors on default theme in firefox.	
 			if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 

@@ -59,6 +59,7 @@ classicthemerestorerjs.ctr = {
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  abouthome_bg_strech: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
@@ -1918,6 +1919,16 @@ classicthemerestorerjs.ctr = {
 					}	
 				} catch(e){}			
 		  break;	
+
+		   case "abouthomebgstretch":
+			  	try{		  
+					if (branch.getBoolPref("abouthomebgstretch")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg_strech",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg_strech",false);
+					}	
+				} catch(e){}			
+		  break;
 		  
 		  case "abouthomehighlight": case "abouthomecustomhighlightcolor":
 			  	try{		  
@@ -4633,12 +4644,31 @@ classicthemerestorerjs.ctr = {
 					@-moz-document url("about:home") {\
 						html{\
 							background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
-							background-size: 100% 100%!important;\
 						}\
 					}\
 				'), null, null);
 				
 				applyNewSheet(this.abouthome_bg);
+			}
+
+		break;
+
+		case "abouthome_bg_strech":
+
+			removeOldSheet(this.abouthome_bg_strech);
+			
+			if(enable==true && this.prefs.getBoolPref("abouthomebgstretch")){
+	
+				this.abouthome_bg_strech=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.w3.org/1999/xhtml);\
+					@-moz-document url("about:home") {\
+						html{\
+							background-size: 100% 100%!important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.abouthome_bg_strech);
 			}
 
 		break;

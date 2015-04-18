@@ -86,6 +86,7 @@ pref("extensions.classicthemerestorer.abouthomecustomurl", "");
 pref("extensions.classicthemerestorer.abouthomehighlight", false);
 pref("extensions.classicthemerestorer.abouthomecustomhighlightcolor", "#fe634a");
 pref("extensions.classicthemerestorer.abouthomeanimate", false);
+pref("extensions.classicthemerestorer.abouthomebgstretch", true);
 
 // Urlbar
 pref("extensions.classicthemerestorer.starinurl",false);
@@ -250,7 +251,7 @@ pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
 pref("extensions.classicthemerestorer.titleintitlebar", false);
 
 //CyberCTR version
-pref("extensions.classicthemerestorer.version", "1.3.0");
+pref("extensions.classicthemerestorer.version", "1.2.9");
 
 //Features
 pref("extensions.classicthemerestorer.features.firstrun", false);

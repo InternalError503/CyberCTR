@@ -256,7 +256,8 @@
 	<preference id="ctraddon_ctabouthome_bg"	name="extensions.classicthemerestorer.abouthomecustomurl"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomecustomhighlight"	name="extensions.classicthemerestorer.abouthomehighlight"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthome_highlight_color"	name="extensions.classicthemerestorer.abouthomecustomhighlightcolor"	type="string"	instantApply="true"/>
-	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>		
+	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>
+	<preference id="ctraddon_ctabouthome_bg_stretch"	name="extensions.classicthemerestorer.abouthomebgstretch"	type="bool"	instantApply="true"/>	
 	</preferences>
 
 
@@ -796,7 +797,8 @@
 						  size="auto" 
 						  flex="1" 
 						  placeholder="&ctr_abouthome.custombgurlph;"/>
-			</hbox>	
+			</hbox>
+			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>			
 			<checkbox label="&ctr_abouthome.customhighlight;" preference="ctraddon_ctabouthomecustomhighlight" id="ctraddon_ctabouthomecusthltck"/>
 		<hbox>
 			<label value="&ctr_abouthome.customhighlightcol;" id="ctraddon_ctabouthomecusthltlb"/>
