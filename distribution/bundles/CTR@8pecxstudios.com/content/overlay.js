@@ -61,6 +61,7 @@ classicthemerestorerjs.ctr = {
   abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg_strech: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  hideElements: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -1949,7 +1950,16 @@ classicthemerestorerjs.ctr = {
 					}	
 				} catch(e){}			
 		  break;
-		  
+
+		   case "hidexulelements": case "hidexulfilter":
+			  	try{		  
+					if (branch.getBoolPref("hidexulelements")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("hideElements",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("hideElements",false);
+					}	
+				} catch(e){}			
+		  break;		  
 		  
 		}
 	  }
@@ -4692,6 +4702,36 @@ classicthemerestorerjs.ctr = {
 			}
 
 		break;
+		
+		case "hideElements":
+
+			removeOldSheet(this.hideElements);
+			
+			if(enable==true && this.prefs.getBoolPref("hidexulelements")){
+				
+			var elementXulList = [];
+				elementXulList.push(this.prefs.getCharPref("hidexulfilter"));
+				//Output Example: Array [#menu_newNavigatorTab,#menu_newNavigator,#menu_close,#menu_print,#menu_FileQuitItem]
+			var elementData = "";
+
+				for (var i=0; i<elementXulList.length; i++){
+					elementData += elementXulList[i];
+				}
+				//Check for empty array so we don't create a style with no data.
+				if(elementData !== ""){
+				this.hideElements=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					/*AGENT_SHEET*/\
+					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
+					@-moz-document url(chrome://browser/content/browser.xul) {\
+						'+elementData+'{\
+							display:none!important;\
+						}\
+					}\
+				'), null, null);
+		
+				applyNewSheet(this.hideElements);
+				}
+			}
 		
 	}
 	
