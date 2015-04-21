@@ -339,4 +339,4 @@
 <!ENTITY ctr_abouthome.customhighlight "Использовать свой цвет подсветки ">
 <!ENTITY ctr_abouthome.customhighlightcol "Изменение цвета подсветки">
 <!ENTITY ctr_abouthome.animate "Использовать анимации на домашней странице (about:home)">
-<!ENTITY ctr_abouthome.custombgstretch "Stretch background image to window (Default).">
+<!ENTITY ctr_abouthome.custombgstretch "Растянуть фоновое изображение на весь размер окна (по умолчанию).">
