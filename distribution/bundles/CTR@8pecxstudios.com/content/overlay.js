@@ -4723,7 +4723,7 @@ classicthemerestorerjs.ctr = {
 					/*AGENT_SHEET*/\
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
-						'+elementData+'{\
+						'+elementData.replace(/,\s*$/, "")+'{\
 							display:none!important;\
 						}\
 					}\
