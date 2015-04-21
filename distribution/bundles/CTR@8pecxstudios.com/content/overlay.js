@@ -4709,21 +4709,15 @@ classicthemerestorerjs.ctr = {
 			
 			if(enable==true && this.prefs.getBoolPref("hidexulelements")){
 				
-			var elementXulList = [];
-				elementXulList.push(this.prefs.getCharPref("hidexulfilter"));
-				//Output Example: Array [#menu_newNavigatorTab,#menu_newNavigator,#menu_close,#menu_print,#menu_FileQuitItem]
-			var elementData = "";
+			var elementData = this.prefs.getCharPref("hidexulfilter").replace(/,\s*$/, "");
 
-				for (var i=0; i<elementXulList.length; i++){
-					elementData += elementXulList[i];
-				}
 				//Check for empty array so we don't create a style with no data.
 				if(elementData !== ""){
 				this.hideElements=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 					/*AGENT_SHEET*/\
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
-						'+elementData.replace(/,\s*$/, "")+'{\
+						'+elementData+'{\
 							display:none!important;\
 						}\
 					}\
