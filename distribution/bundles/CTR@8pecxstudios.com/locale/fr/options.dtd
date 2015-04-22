@@ -344,3 +344,8 @@
 <!ENTITY ctr_abouthome.customhighlightcol "Change custom highlight color">
 <!ENTITY ctr_abouthome.animate "Use animations on about:home page">
 <!ENTITY ctr_abouthome.custombgstretch "Stretch background image to window (Default).">
+
+<!ENTITY cssClassId.label "Enter a class or id:">
+<!ENTITY useFilterElement.label "Use custom filter to hide element classes or element ids">
+<!ENTITY filterElement.placehold "You can specify which element classes or element ids.">
+<!ENTITY add.label "ADD">

@@ -232,7 +232,7 @@ pref("extensions.classicthemerestorer.tabc_hov_unl",false);
 // first run/reset preference
 pref("extensions.classicthemerestorer.ctrreset",true);
 
-pref("extensions.classicthemerestorer.hidexulelements", true);
+pref("extensions.classicthemerestorer.hidexulelements", false);
 pref("extensions.classicthemerestorer.hidexulfilter", "");
 
 //Compatibility 

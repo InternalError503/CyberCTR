@@ -1465,6 +1465,31 @@ classicthemerestorerjso.ctr = {
 			//Catch any nasty errors and output to dialogue
 			alert("We are sorry but something has gone wrong! " + e);	
 		}		
+	},
+	
+	onCssInput: function (aCssField){
+		document.getElementById("btnADD").disabled = !aCssField.value;
+	}, 
+
+	onCssKeyPress: function (aEvent){
+		if (aEvent.keyCode == KeyEvent.DOM_VK_RETURN)
+		document.getElementById("btnADD").click();
+	},
+	
+	addCss: function (sCss){
+		 var textbox = document.getElementById("css");
+		 var textboxCss = textbox.value.trim().replace(/,\s*$/, ""); // trim space start and end, Remove any comas on the end.
+		if (Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length === 0){
+		Services.prefs.setCharPref("extensions.classicthemerestorer.hidexulfilter", 
+			Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter")+textboxCss);
+		}else{
+		Services.prefs.setCharPref("extensions.classicthemerestorer.hidexulfilter", 
+			Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter")+","+textboxCss);
+		}	
+		textbox.value = "";
+		textbox.focus();
+
+		this.onCssInput(textbox);
 	}
-  
+	
 };

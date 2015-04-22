@@ -258,6 +258,9 @@
 	<preference id="ctraddon_ctabouthome_highlight_color"	name="extensions.classicthemerestorer.abouthomecustomhighlightcolor"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthome_bg_stretch"	name="extensions.classicthemerestorer.abouthomebgstretch"	type="bool"	instantApply="true"/>	
+	
+	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>
+	
 	</preferences>
 
 
@@ -807,6 +810,26 @@
 		</hbox>			
 	  </groupbox>	  
 
+	<groupbox>
+		<caption  label="Hide element classes - element ids" class="ctraddon_topic"/>
+  <vbox class="contentPane" flex="1">
+  	<checkbox label="&useFilterElement.label;" preference="ctraddon_cthidexulelements"/>
+    <separator class="thin"/>
+    <label id="cssclid" control="css" value="&cssClassId.label;"/>
+    <hbox align="start">
+      <textbox id="css"
+					  placeholder="&filterElement.placehold;"
+					  flex="1" 
+					  oninput="classicthemerestorerjso.ctr.onCssInput(event.target);"
+                      onkeypress="classicthemerestorerjso.ctr.onCssKeyPress(event);"/>
+    </hbox>
+    <hbox pack="end">
+      <button id="btnADD" disabled="true" label="&add.label;" default="true"
+              oncommand="classicthemerestorerjso.ctr.addCss();"/>
+    </hbox>
+	</vbox>
+	</groupbox>
+	  
 	</box>
 
 	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_generaluibox2">

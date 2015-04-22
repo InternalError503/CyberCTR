@@ -340,3 +340,8 @@
 <!ENTITY ctr_abouthome.customhighlightcol "Изменение цвета подсветки">
 <!ENTITY ctr_abouthome.animate "Использовать анимации на домашней странице (about:home)">
 <!ENTITY ctr_abouthome.custombgstretch "Растянуть фоновое изображение на весь размер окна (по умолчанию).">
+
+<!ENTITY cssClassId.label "Enter a class or id:">
+<!ENTITY useFilterElement.label "Use custom filter to hide element classes or element ids">
+<!ENTITY filterElement.placehold "You can specify which element classes or element ids.">
+<!ENTITY add.label "ADD">
