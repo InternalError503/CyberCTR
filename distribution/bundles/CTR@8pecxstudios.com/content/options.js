@@ -1014,12 +1014,13 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setBoolPref("faviconurl",true);
 	this.prefs.setBoolPref("bmanimation",true);
 	this.prefs.setBoolPref("pananimation",true);
-	this.prefs.setBoolPref("alt_newtabp",true);
-
-	if (contexts.getBoolPref("classic")){}else{
+  if (contexts.getBoolPref("classic")){}else{
 		this.prefs.setBoolPref("noconicons",true);
 	}
-
+	this.prefs.setBoolPref("alt_newtabp",true);
+	this.prefs.setBoolPref("skipprintpr",true);
+	this.prefs.setBoolPref("tbconmenu",true);
+	
 	setTimeout(function(){
 		classicthemerestorerjso.ctr.prefs.setBoolPref("starinurl",true);
 		classicthemerestorerjso.ctr.prefs.setBoolPref("feedinurl",true);

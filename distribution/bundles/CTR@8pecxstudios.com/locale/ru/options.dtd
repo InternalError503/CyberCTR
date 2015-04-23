@@ -142,6 +142,7 @@
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
+<!ENTITY Ctr_tbconmenu		"Toolbar context menu: hide 'move to menu', 'remove from toolbar', 'reload/bookmark all tabs' and 'undo close tab'">
 <!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
 <!ENTITY Ctr_extraurlkeycb	"Открыть дополнительную адресную строку (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">

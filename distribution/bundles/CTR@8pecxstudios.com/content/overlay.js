@@ -1636,6 +1636,11 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmbutnotext",false);
 		  break;
 
+		  case "tbconmenu":
+			if (branch.getBoolPref("tbconmenu")) classicthemerestorerjs.ctr.loadUnloadCSS("tbconmenu",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tbconmenu",false);
+		  break;
+
 		  case "noresizerxp":
 			if (branch.getBoolPref("noresizerxp")) classicthemerestorerjs.ctr.loadUnloadCSS("noresizerxp",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("noresizerxp",false);
@@ -2077,7 +2082,7 @@ classicthemerestorerjs.ctr = {
   // Appbutton in titlebar
   createTitlebarButton: function() {
   
-	// this button can only be places on Firefox titlebar using Windows OS
+	// this button can only be placed on Firefox titlebar using Windows OS
 	if(classicthemerestorerjs.ctr.osstring == "WINNT"){
 
   //If in rome do what the romans do use the browsers name.
@@ -2093,10 +2098,13 @@ classicthemerestorerjs.ctr = {
 		var buttontitle = brandName; // init with default title
 		var custombuttontitle = classicthemerestorerjs.ctr.prefs.getCharPref('appbuttontxt');
 		
-		if(custombuttontitle!='') buttontitle = custombuttontitle;
+		var converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"].createInstance(Ci.nsIScriptableUnicodeConverter);
+		converter.charset = 'UTF-8';
+		
+		if(custombuttontitle!='') buttontitle = converter.ConvertToUnicode(custombuttontitle);
 		else {
 			try{
-			  // make sure appbutton will get correct title
+			  // make sure appbutton gets correct title
 			  buttontitle = document.getElementById("main-window").getAttribute("title_normal");
 			  if(buttontitle=="Mozilla Firefox") buttontitle="Firefox";
 			  else if(buttontitle=="Firefox Developer Edition") buttontitle="DevFox";
@@ -3005,6 +3013,7 @@ classicthemerestorerjs.ctr = {
 		case "alt_newtabp": 		manageCSS("alt_newtabpage.css");		break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbutnotext": 		manageCSS("bmbut_no_label.css");		break;
+		case "tbconmenu": 			manageCSS("tbconmenu.css");				break;
 		case "noresizerxp": 		manageCSS("no_resizer_xp.css");			break;
 		case "pmhidelabels": 		manageCSS("panelmenu_nolabels.css");	break;
 		case "menupopupscr": 		manageCSS("menupopupscrollbar.css");	break;
