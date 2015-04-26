@@ -69,6 +69,7 @@ cyberctrFeatures = {
                         document.getElementById("update_message").hidden = false;
                     } else {
                         document.getElementById("update_message").hidden = true;
+						document.getElementById("update_message_nou").hidden = false;
                     }
 
                 };
