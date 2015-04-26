@@ -259,3 +259,5 @@ pref("extensions.classicthemerestorer.version", "1.3.1");
 
 //Features
 pref("extensions.classicthemerestorer.features.firstrun", false);
+pref("extensions.classicthemerestorer.features.updatecheck", true);
+pref("extensions.classicthemerestorer.features.lastcheck", "");
