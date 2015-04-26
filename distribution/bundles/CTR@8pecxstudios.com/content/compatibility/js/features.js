@@ -16,9 +16,12 @@ cyberctrFeatures = {
             document.getElementById("first_run_message").hidden = false;
             Services.prefs.setBoolPref("extensions.classicthemerestorer.features.firstrun", true);
         }
-
-
-        try {
+		this.updateCheck();
+    },
+	
+	updateCheck: function (manual) {
+		
+		 try {
 
             //Set Global to disable update checks entirely 
             if (Services.prefs.getBoolPref("extensions.classicthemerestorer.features.updatecheck")) {
@@ -122,8 +125,7 @@ cyberctrFeatures = {
             //Show error
             Components.utils.reportError(eve);
         }
-
-    },
+	},	
 
     get_localized_document: function() {
 
