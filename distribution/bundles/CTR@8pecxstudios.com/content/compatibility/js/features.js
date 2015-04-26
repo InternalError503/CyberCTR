@@ -59,7 +59,7 @@ cyberctrFeatures = {
                         jsObject = JSON.parse(text);
                     }
 
-                    if (Services.prefs.getCharPref("extensions.classicthemerestorer.version") > jsObject.cyberctr.toString()) {
+                    if (jsObject.cyberctr.toString() > Services.prefs.getCharPref("extensions.classicthemerestorer.version")) {
                         document.getElementById("update_message").hidden = false;
                     } else {
                         document.getElementById("update_message").hidden = true;
