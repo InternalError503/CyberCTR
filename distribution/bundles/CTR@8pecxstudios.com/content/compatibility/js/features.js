@@ -16,7 +16,7 @@ cyberctrFeatures = {
             document.getElementById("first_run_message").hidden = false;
             Services.prefs.setBoolPref("extensions.classicthemerestorer.features.firstrun", true);
         }
-		this.updateCheck();
+		this.updateCheck(false);
     },
 	
 	updateCheck: function (manual) {
@@ -27,6 +27,9 @@ cyberctrFeatures = {
             if (Services.prefs.getBoolPref("extensions.classicthemerestorer.features.updatecheck")) {
 				//Only allow check once per day as update is not a priority.
 				var curTime = new Date()
+				if (manual === true && document.getElementById("first_run_message").getAttribute("hidden") === "true"){ 
+					Services.prefs.clearUserPref("extensions.classicthemerestorer.features.lastcheck");
+				}
 				if 	(Services.prefs.getCharPref("extensions.classicthemerestorer.features.lastcheck") != curTime.getDate()) {
 					Services.prefs.setCharPref("extensions.classicthemerestorer.features.lastcheck", curTime.getDate())
 					
