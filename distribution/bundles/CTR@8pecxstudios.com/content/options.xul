@@ -817,7 +817,10 @@
   <vbox class="contentPane" flex="1">
   	<checkbox label="&useFilterElement.label;" preference="ctraddon_cthidexulelements"/>
     <separator class="thin"/>
+	<hbox flex="1">
     <label id="cssclid" control="css" value="&cssClassId.label;"/>
+	<label id="cssidlist" class="text-link" value="ID_List" href="https://github.com/InternalError503/CyberCTR/blob/master/ID_List.md"/>
+	</hbox>
     <hbox align="start">
       <textbox id="css"
 					  placeholder="&filterElement.placehold;"
