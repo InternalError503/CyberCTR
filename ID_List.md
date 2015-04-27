@@ -1,7 +1,7 @@
 List of menu and context menu IDs to hide with custom filter
 
 
-######[File Menu]
+####[File Menu]
 | Item | ID |
 ------------- | -------------
 Complete File Menu Item | #file-menu
@@ -20,7 +20,7 @@ Restart Browser | #app_restartBrowser
 Exit | #menu_FileQuitItem
 
 
-######[Edit Menu]
+####[Edit Menu]
 | Item | ID |
 ------------- | -------------
 Complete Edit Menu Item | #edit-menu
@@ -36,7 +36,7 @@ Find | #menu_find
 Text Direction Swap | #textfieldDirection-swap
 
 
-######[View Menu]
+####[View Menu]
 | Item | ID |
 ------------- | -------------
 Complete View Menu Item | #View-menu
@@ -60,7 +60,7 @@ Fullscreen | #fullScreenItem
 Show All Tabs | #menu_showAllTabs
 
 
-######[History Menu]
+####[History Menu]
 | Item | ID |
 ------------- | -------------
 Complete History Menu Item | #History-menu
@@ -75,7 +75,7 @@ Recently Closed Windows `*Tree` | #historyUndoWindowMenu
 Window Undo Pop-up | #historyUndoWindowPopup
 
 
-######[bookmarks Menu]
+####[bookmarks Menu]
 | Item | ID |
 ------------- | -------------
 Complete bookmarks Menu Item | #bookmarksMenu
@@ -88,7 +88,7 @@ Bookmarks Tool-bar `*Tree` | #bookmarksToolbarFolderPopup
 Recent Bookmarks | #menu_unsortedBookmarks
 
 
-######[Tools Menu]
+####[Tools Menu]
 | Item | ID |
 ------------- | -------------
 Complete Tools Menu Item | #tools-menu
@@ -118,7 +118,7 @@ Clear Ram Cache | #minimizeMemoryUsage
 Options | #menu_preferences
 
 
-######[Help Menu]
+####[Help Menu]
 | Item | ID |
 ------------- | -------------
 Complete Help Menu Item | #helpMenu
@@ -131,45 +131,192 @@ Restart With Addons Disabled | #helpSafeMode
 Aboyt Cyberfox | #aboutName
 
 
+####[Main Interface]
+| Item | ID |
+------------- | -------------
+Tabs Tool-bar | #TabsToolbar
+Tab Browser Tabs | #tabbrowser-tabs
+Bookmarks Tool-bar | #PersonalToolbar
+Sidebar Box | #sidebar-box
+Developer Toolbar | #developer-toolbar
+
+
+####[General Interface]
+| Item | ID |
+------------- | -------------
+Navigation Tool-bar | #nav-bar
+Back Button | #back-button
+Forward Button | #forward-button
+Url Tool-bar | #urlbar
+Identity Box | #identity-box
+Page Favicon (Includes HTTPS Icon) | #page-proxy-favicon
+Seach-bar Tool-bar | #search-container
+
+
+####[Tool-Bar Buttons]
+| Item | ID |
+------------- | -------------
+Bookmark Tool-bar Button | #bookmarks-menu-button
+Bookmark Tool-bar Button Menu `*Tree` | #bookmarks-menu-button
+View Bookmarks Sidebar | #BMB_viewBookmarksSidebar
+Show All Bookmarks | #BMB_bookmarksShowAllTop
+Subscribe To This page | #BMB_subscribeToPageMenuitem
+Bookmarks Toolbar `*Tree` | #BMB_bookmarksToolbar
+Bookmarks Toolbar Pop-up | #BMB_bookmarksToolbarPopup
+Bookmarks Toolbar View Bookmarks Sidebar | #BMB_viewBookmarksToolbar
+Unsorted Bookmarks | #BMB_unsortedBookmarks
+Show All Boomarks | #BMB_bookmarksShowAll
+Downloads Button | #downloads-button
+Home Button | #home-buttonvbcmd
+Print Button | #print-button
+New Window Button | #new-window-button
+Fullscreen Button | #fullscreen-button
+Sync Button | #sync-button
+Tabview Button | #tabview-button
+Restart Browser Button | #toolbar_restartBrowser
+Clone Current Tab Button | #tbar-clonenewtab
+Clone In New Window Button | #tbar-clonenewwindow
+Downloads Simple | #downloads-button-additional
+Copy Tab Url Button | #tbar-copycurrenttaburl
+Copy All Tab Urls Button | #tbar-copyalltaburl
+Browser Console Button | #tbar_browserconsole
+
+
+
+####[Customization]
+| Item | ID |
+------------- | -------------
+Titlebar Visibility Button | #customization-titlebar-visibility-button
+Toolbar Visibility Button `*Tree` | #customization-toolbar-visibility-button
+Light Weight Themes Button `*Tree` | #customization-lwtheme-button
+Devedition Theme Button | #customization-devedition-theme-button
+Reset Button | #customization-reset-button
+
+
+####[Tab Context Menu]
+| Item | ID |
+------------- | -------------
+Tab Context Menu `*Tree` | #tabContextMenu
+Pin Tab | #context_pinTab
+Unpin Tab | #context_unpinTab
+Move To Group `*Tree` | #context_tabViewMenu
+Move To New Window | #context_openTabInWindow
+Copy Tab Url | #context_CopyCurrentTabUrl
+Copy All Tab Urls | #context_CopyAllTabUrls
+Clone Current Tab | #context_CloneCurrentTab
+Clone In Window | #context_CloneCurrentTabNewWindow
+Reload All Tabs | #context_reloadAllTabs
+Bookmark All Tabs | #context_bookmarkAllTabs
+Close Tabs To The Right | #context_closeTabsToTheEnd
+Close Other Tabs | #context_closeOtherTabs
+Undo Closed Tab | #context_undoCloseTab
+Close Tab | #context_closeTab
+
+
+####[Back Forward Menu]
+| Item | ID |
+------------- | -------------
+Back Forward Menu | #backForwardMenu
+
+
+####[Toolbar Context Menu]
+| Item | ID |
+------------- | -------------
+Toolbar Context Menu `*Tree` | #toolbar-context-menu
+Move To Menu | __.customize-context-moveToPanel__
+Remove From Tool-Bar | __.customize-context-removeFromToolbar__
+Reload All Tabs | #toolbar-context-reloadAllTabs
+Bookmark All Tabs | #toolbar-context-bookmarkAllTabs
+Undo Closed Tab | #toolbar-context-undoCloseTab
+Customize | __.viewCustomizeToolbar__
+About:Config | #menu-aboutconfig
+
+
+####[Content Area Context Menu]
+| Item | ID |
+------------- | -------------
+Content Area Context Menu `*Tree` | #contentAreaContextMenu
+Context Navigation `*Tree` | #context-navigation
+Back | #context-back
+Forward | #context-forward
+Reload | #context-reload
+Stop | #context-stop
+Bookmark This Page | #context-bookmarkpage
+Spellcheck No Suggestions | #spell-no-suggestions
+Spellcheck Add To Dictionary | #spell-add-to-dictionary
+Spellcheck Undo Add To Dictionary | #spell-undo-add-to-dictionary
+Open Link | #context-openlinkincurrent
+Open Lin In New Tab | #context-openlinkintab
+Open Link In New Window | #context-openlink
+Open Link In New Private Window | #context-openlinkprivate
+Bookmark This Link | #context-bookmarklink
+Share Link | #context-sharelink
+Save Link As | #context-savelink
+Copy Email Address | #context-copyemail
+Copy Link | #context-copylink
+Play | #context-media-play
+Pause | #context-media-pause
+Mute | #context-media-mute
+Unmute | #context-media-unmute
+Playback Rate `*Tree` | #context-media-playbackrate
+Show Controls | #context-media-showcontrols
+Hide Controls | #context-media-hidecontrols
+Show Stats | #context-video-showstats
+Hide Stats | #context-video-hidestats
+Media Fullscreen | #context-video-fullscreen
+Media Exit Fullscreen| #context-leave-dom-fullscreen
+Reload Image | #context-reloadimage
+View Image | #context-viewimage
+View  Video | #context-viewvideo
+Copy Image | #context-copyimage-contents
+Copy Image Location | #context-copyimage
+Copy Video Location | #context-copyvideourl
+Copy Audio Location | #context-copyaudiourl
+Save Image As | #context-saveimage
+Share Image | #context-shareimage
+Email Image | #context-sendimage
+Set As Desktop Background | #context-setDesktopBackground
+View Image Information | #context-viewimageinfo
+Save Video As | #context-sharevideo
+Save Audio As | #context-saveaudio
+Save Video Image | #context-video-saveimage
+Email Video | #context-sendvideo
+Email Audio | #context-sendaudio
+Click To Activate | #context-ctp-play
+Hide Click To Activate | #context-ctp-hide
+Context Navigation Classic `*Tree` | #context-navigation-classic
+Share Page | #context-sharepage
+Save Page As | #context-savepage
+Email Link | #context-sendLink
+Undo | #context-undo
+Cut | #context-cut
+Copy | #context-copy
+Paste | #context-paste
+Delete | #context-delete
+Select All | #context-selectall
+Add A Keyword For This In Search | #context-keywordfield
+Search <Engine> For | #context-searchselect
+Share Selection | #context-shareselect
+View Page Source | #context-viewsource
+View Page Information | #context-viewinfo
+Check Spelling | #spell-check-enabled
+Add To Dictionary | #spell-add-dictionaries-main
+Select Dictionary `*Tree` | #spell-dictionaries
+Inspect Element | #context-inspect
+Toggle Javascript | #context-javascript
+
+####[Panel UI]
+| Item | ID |
+------------- | -------------
+Sync | #PanelUI-fxa-status
+Customize | #PanelUI-customize
+Help Menu `*Tree` | #PanelUI-help
+Quit | #PanelUI-quit
+
 For items marked with `*Tree` means the whole menu and sub-menus. 
 
+*Note:* Not every item is in this list and some items are cyberfox specific.
+
+*Note:* Some IDs or Classes may radically change the user interface or break it use with caution.
+
 More items will be added as time permits.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
