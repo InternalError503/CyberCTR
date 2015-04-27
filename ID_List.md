@@ -1,5 +1,25 @@
 List of menu and context menu IDs to hide with custom filter
 
+__Quick Navigation__
+
+- [File Menu](#file-menu)
+- [Edit Menu](#edit-menu)
+- [View Menu](#view-menu)
+- [History Menu](#history-menu)
+- [Bookmarks Menu](#bookmarks-menu)
+- [Tools Menu](#tools-menu)
+- [Help Menu](#help-menu)
+- [Main Interface](#main-interface)
+- [General Interface](#general-interface)
+- [Tool-Bar Buttons](#tool-bar-buttons)
+- [Customization](#customization)
+- [Tab Context Menu](#tab-context-menu)
+- [Back Forward Menu](#back-forward-menu)
+- [Toolbar Context Menu](#toolbar-context-menu)
+- [Content Area Context Menu](#content-area-context-menu)
+- [Panel UI](#panel-ui)
+
+
 
 ####[File Menu]
 | Item | ID |
