@@ -54,7 +54,8 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 - Hide logo on about:home page.
 - Hide snippets (Ads) on about:home page (Firefox Only)
 - Remove links on about:home page (Cyberfox Only)
-- Change highlight color of about:home page links, search-bar and buttons.	
+- Change highlight color of about:home page links, search-bar and buttons.
+- Hide elements by class or id with css using the elements filter.  See list of [elements](https://github.com/InternalError503/CyberCTR/blob/master/ID_List.md)
 
 Plus many under the hood changes and many more visual changes to come.
 
