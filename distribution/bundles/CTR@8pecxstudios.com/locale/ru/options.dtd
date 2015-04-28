@@ -343,9 +343,9 @@
 <!ENTITY ctr_abouthome.custombgstretch "Растянуть фоновое изображение на весь размер окна (по умолчанию).">
 
 <!ENTITY cssClassId.description "Hide element classes - element ids">
-<!ENTITY cssClassId.label "Enter a class or id:">
-<!ENTITY useFilterElement.label "Use custom filter to hide element classes or element ids">
-<!ENTITY filterElement.placehold "You can specify which element classes or element ids.">
-<!ENTITY add.label "ADD">
-<!ENTITY clear.label "Clear Filter">
-<!ENTITY copy.label "Copy Filter">
+<!ENTITY cssClassId.label "Введите название класса или id:">
+<!ENTITY useFilterElement.label "Использовать свой фильтр для скрытия элементов по названиям классов или id">
+<!ENTITY filterElement.placehold "Вы можете указать классы или id элементов.">
+<!ENTITY add.label "Добавить">
+<!ENTITY clear.label "Очистить фильтр">
+<!ENTITY copy.label "Копировать фильтр">
