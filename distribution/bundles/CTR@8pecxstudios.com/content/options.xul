@@ -813,7 +813,7 @@
 	  </groupbox>	  
 
 	<groupbox>
-		<caption  label="Hide element classes - element ids" class="ctraddon_topic"/>
+		<caption  label="&cssClassId.description;" class="ctraddon_topic"/>
   <vbox class="contentPane" flex="1">
   	<checkbox label="&useFilterElement.label;" preference="ctraddon_cthidexulelements"/>
     <separator class="thin"/>
