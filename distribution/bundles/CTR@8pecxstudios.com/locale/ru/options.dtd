@@ -342,7 +342,7 @@
 <!ENTITY ctr_abouthome.animate "Использовать анимации на домашней странице (about:home)">
 <!ENTITY ctr_abouthome.custombgstretch "Растянуть фоновое изображение на весь размер окна (по умолчанию).">
 
-<!ENTITY cssClassId.description "Hide element classes - element ids">
+<!ENTITY cssClassId.description "Скрытие классов по названию и id">
 <!ENTITY cssClassId.label "Введите название класса или id:">
 <!ENTITY useFilterElement.label "Использовать свой фильтр для скрытия элементов по названиям классов или id">
 <!ENTITY filterElement.placehold "Вы можете указать классы или id элементов.">
