@@ -59,7 +59,7 @@ Text Direction Swap | #textfieldDirection-swap
 ####[View Menu]
 | Item | ID |
 ------------- | -------------
-Complete View Menu Item | #View-menu
+Complete View Menu Item | #view-menu
 View Menu Pop-up | #menu_ViewPopup
 Tool-bars `*Tree` | #viewToolbarsMenu
 About:Config | #AboutConfigMenuItem
@@ -83,7 +83,7 @@ Show All Tabs | #menu_showAllTabs
 ####[History Menu]
 | Item | ID |
 ------------- | -------------
-Complete History Menu Item | #History-menu
+Complete History Menu Item | #history-menu
 History Menu Pop-up | #menu_ViewPopup
 Show All History | #menu_showAllHistory
 Clear Recent History | #sanitizeItem
@@ -338,5 +338,7 @@ For items marked with `*Tree` means the whole menu and sub-menus.
 *Note:* Not every item is in this list and some items are cyberfox specific.
 
 *Note:* Some IDs or Classes may radically change the user interface or break it use with caution.
+
+*Note:* Warning case sensitive...
 
 More items will be added as time permits.
