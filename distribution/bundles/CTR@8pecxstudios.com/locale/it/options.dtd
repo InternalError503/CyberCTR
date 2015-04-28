@@ -346,3 +346,4 @@
 <!ENTITY useFilterElement.label "Use custom filter to hide element classes or element ids">
 <!ENTITY filterElement.placehold "You can specify which element classes or element ids.">
 <!ENTITY add.label "ADD">
+<!ENTITY clear.label "Clear Filter">

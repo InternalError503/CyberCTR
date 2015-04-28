@@ -1491,6 +1491,17 @@ classicthemerestorerjso.ctr = {
 		textbox.focus();
 
 		this.onCssInput(textbox);
-	}
+	},
+	
+	clearCss: function (event) {
+		if(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length === 0){return;}
+		var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
+		if (event === true && Services.prompt.confirm(null, stringBundle.GetStringFromName("clearFilter.title"), 
+		stringBundle.GetStringFromName("clearFilter.msg"))) {
+			document.getElementById("css").value="";
+			Services.prefs.clearUserPref("extensions.classicthemerestorer.hidexulfilter");
+			Services.prefs.setBoolPref("extensions.classicthemerestorer.hidexulelements", false);
+		}	
+	}	
 	
 };
