@@ -831,6 +831,8 @@
     <hbox pack="end">
       <button id="btnADD" disabled="true" label="&add.label;" default="true"
               oncommand="classicthemerestorerjso.ctr.addCss();"/>
+      <button id="btnCopy" label="&copy.label;"
+              oncommand="classicthemerestorerjso.ctr.copyCss();"/>
       <button id="btnClear" label="&clear.label;"
               oncommand="classicthemerestorerjso.ctr.clearCss(true);"/>
     </hbox>

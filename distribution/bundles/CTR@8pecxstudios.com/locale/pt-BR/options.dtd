@@ -347,3 +347,4 @@
 <!ENTITY filterElement.placehold "You can specify which element classes or element ids.">
 <!ENTITY add.label "ADD">
 <!ENTITY clear.label "Clear Filter">
+<!ENTITY copy.label "Copy Filter">

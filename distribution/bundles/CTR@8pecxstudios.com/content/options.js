@@ -1482,7 +1482,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById("btnADD").click();
 	},
 	
-	addCss: function (sCss){
+	addCss: function (){
 		 var textbox = document.getElementById("css");
 		 var textboxCss = textbox.value.trim().replace(/,\s*$/, ""); // trim space start and end, Remove any comas on the end.
 		 Services.prefs.setCharPref("extensions.classicthemerestorer.hidexulfilter", textboxCss);
@@ -1498,6 +1498,12 @@ classicthemerestorerjso.ctr = {
 			Services.prefs.clearUserPref("extensions.classicthemerestorer.hidexulfilter");
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.hidexulelements", false);
 		}	
+	},
+	
+	copyCss: function () {
+			if(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length === 0){return;}
+            var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
+            gClipboardHelper.copyString(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter"));
 	}	
 	
 };
