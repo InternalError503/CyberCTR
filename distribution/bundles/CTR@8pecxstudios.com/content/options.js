@@ -1470,7 +1470,7 @@ classicthemerestorerjso.ctr = {
 	},
 	
 	onCssInput: function (aCssField){
-		if (aCssField.value.length !== Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length){
+		if (aCssField.value.trim().length !== Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length){
 		document.getElementById("btnADD").disabled = false;
 		}else{
 			document.getElementById("btnADD").disabled = true;
