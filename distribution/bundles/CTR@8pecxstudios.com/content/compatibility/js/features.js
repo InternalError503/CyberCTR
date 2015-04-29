@@ -16,13 +16,21 @@ cyberctrFeatures = {
             document.getElementById("first_run_message").hidden = false;
             Services.prefs.setBoolPref("extensions.classicthemerestorer.features.firstrun", true);
         }
-		this.updateCheck(false);
+		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase()) {
+			this.updateCheck(false);
+		}
+		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
+			document.getElementById("up-check").hidden = true;
+			document.getElementById("up-check-oc").hidden = true;
+		}	
     },
 	
 	updateCheck: function (manual) {
 		
 		 try {
 
+			if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {return;}
+		 
             //Set Global to disable update checks entirely 
             if (Services.prefs.getBoolPref("extensions.classicthemerestorer.features.updatecheck")) {
 				//Only allow check once per day as update is not a priority.
