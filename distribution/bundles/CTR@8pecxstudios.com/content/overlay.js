@@ -2073,7 +2073,8 @@ classicthemerestorerjs.ctr = {
 	
 	timeoutID = window.setTimeout(function(){
 	  document.getElementById("backForwardMenu").openPopupAtScreen(anchorElem.boxObject.screenX, anchorElem.boxObject.screenY+anchorElem.boxObject.height-1, false);
-	}, 500);
+	  anchorElem.onmouseleave = function(event) {}
+	}, 600);
 		
 	anchorElem.onmouseleave = function(event) {
 	  window.clearTimeout(timeoutID);
@@ -2082,9 +2083,11 @@ classicthemerestorerjs.ctr = {
 	  if(event.clientY > positionY+5) {
 		document.getElementById("backForwardMenu").openPopupAtScreen(anchorElem.boxObject.screenX, anchorElem.boxObject.screenY+anchorElem.boxObject.height-1, false);
 	  }
+	  anchorElem.onmouseleave = function(event) {}
 	}
 	anchorElem.onmouseup = function() {
 	  window.clearTimeout(timeoutID);
+	  anchorElem.onmouseleave = function(event) {}
 	}
 
    }
