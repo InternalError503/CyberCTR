@@ -147,5 +147,6 @@ cyberctrFeatures = {
 
 }
 window.addEventListener("load", function() {
+	window.removeEventListener("load", cyberctrFeatures.initialize_features(), false);
     cyberctrFeatures.initialize_features();
 }, false);

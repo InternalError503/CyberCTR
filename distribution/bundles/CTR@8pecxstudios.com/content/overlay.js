@@ -16,7 +16,10 @@ Services.prefs.QueryInterface(Ci.nsIPrefBranch);
 
 if (typeof classicthemerestorerjs == "undefined") {var classicthemerestorerjs = {};};
 if (!classicthemerestorerjs.ctr) {classicthemerestorerjs.ctr = {};};
-window.addEventListener("load", function () { classicthemerestorerjs.ctr.customCTRPrefSettings(); }, false);  
+window.addEventListener("load", function () { 
+	window.removeEventListener("load", classicthemerestorerjs.ctr.customCTRPrefSettings(), false); 
+	classicthemerestorerjs.ctr.customCTRPrefSettings(); 
+}, false);  
 var treeStyleCompatMode;
 classicthemerestorerjs.ctr = {
  
