@@ -20,6 +20,16 @@ __Quick Navigation__
 - [Panel UI](#panel-ui)
 
 
+For items marked with `*Tree` means the whole menu and sub-menus. 
+
+*Note:* Not every item is in this list and some items are cyberfox specific.
+
+*Note:* Some IDs or Classes may radically change the user interface or break it use with caution.
+
+*Note:* Warning some ID's are case sensitive...
+
+More items will be added as time permits.
+
 
 ####[File Menu]
 | Item | ID |
@@ -332,13 +342,3 @@ Sync | #PanelUI-fxa-status
 Customize | #PanelUI-customize
 Help Menu `*Tree` | #PanelUI-help
 Quit | #PanelUI-quit
-
-For items marked with `*Tree` means the whole menu and sub-menus. 
-
-*Note:* Not every item is in this list and some items are cyberfox specific.
-
-*Note:* Some IDs or Classes may radically change the user interface or break it use with caution.
-
-*Note:* Warning some ID's are case sensitive...
-
-More items will be added as time permits.
