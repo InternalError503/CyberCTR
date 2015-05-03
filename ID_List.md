@@ -1,6 +1,6 @@
 List of menu and context menu IDs to hide with custom filter
 
-__Quick Navigation__
+##[Quick Navigation]
 
 - [File Menu](#file-menu)
 - [Edit Menu](#edit-menu)
@@ -48,6 +48,7 @@ Print | #menu_print
 Work Offline | #goOfflineMenuitem
 Restart Browser | #app_restartBrowser
 Exit | #menu_FileQuitItem
+[Top](#quick-navigation)
 
 
 ####[Edit Menu]
@@ -64,6 +65,7 @@ Delete | #menu_delete
 Select All | #menu_selectAll
 Find | #menu_find
 Text Direction Swap | #textfieldDirection-swap
+[Top](#quick-navigation)
 
 
 ####[View Menu]
@@ -88,6 +90,7 @@ Basic Page Style | #menu_pageStylePersistentOnly
 Charset Menu (Full `*Tree`) | #charsetMenu
 Fullscreen | #fullScreenItem
 Show All Tabs | #menu_showAllTabs
+[Top](#quick-navigation)
 
 
 ####[History Menu]
@@ -103,6 +106,7 @@ Recently Closed tabs `*Tree` | #historyUndoMenu
 Tab Undo Pop-up | #historyUndoPopup
 Recently Closed Windows `*Tree` | #historyUndoWindowMenu
 Window Undo Pop-up | #historyUndoWindowPopup
+[Top](#quick-navigation)
 
 
 ####[bookmarks Menu]
@@ -116,6 +120,7 @@ Subscribe To This Page | #subscribeToPageMenuitem
 Subscribe Menu Pop-up | #subscribeToPageMenupopup
 Bookmarks Tool-bar `*Tree` | #bookmarksToolbarFolderPopup
 Recent Bookmarks | #menu_unsortedBookmarks
+[Top](#quick-navigation)
 
 
 ####[Tools Menu]
@@ -146,6 +151,7 @@ Get More Tools | #getMoreDevtools
 Page Info | #menu_pageInfo
 Clear Ram Cache | #minimizeMemoryUsage
 Options | #menu_preferences
+[Top](#quick-navigation)
 
 
 ####[Help Menu]
@@ -159,6 +165,7 @@ Troubleshooting Information | #troubleShooting
 Submist Feedback | #feedbackPage
 Restart With Addons Disabled | #helpSafeMode
 Aboyt Cyberfox | #aboutName
+[Top](#quick-navigation)
 
 
 ####[Main Interface]
@@ -169,6 +176,7 @@ Tab Browser Tabs | #tabbrowser-tabs
 Bookmarks Tool-bar | #PersonalToolbar
 Sidebar Box | #sidebar-box
 Developer Toolbar | #developer-toolbar
+[Top](#quick-navigation)
 
 
 ####[General Interface]
@@ -181,6 +189,7 @@ Url Tool-bar | #urlbar
 Identity Box | #identity-box
 Page Favicon (Includes HTTPS Icon) | #page-proxy-favicon
 Seach-bar Tool-bar | #search-container
+[Top](#quick-navigation)
 
 
 ####[Tool-Bar Buttons]
@@ -210,7 +219,7 @@ Downloads Simple | #downloads-button-additional
 Copy Tab Url Button | #tbar-copycurrenttaburl
 Copy All Tab Urls Button | #tbar-copyalltaburl
 Browser Console Button | #tbar_browserconsole
-
+[Top](#quick-navigation)
 
 
 ####[Customization]
@@ -221,6 +230,7 @@ Toolbar Visibility Button `*Tree` | #customization-toolbar-visibility-button
 Light Weight Themes Button `*Tree` | #customization-lwtheme-button
 Devedition Theme Button | #customization-devedition-theme-button
 Reset Button | #customization-reset-button
+[Top](#quick-navigation)
 
 
 ####[Tab Context Menu]
@@ -241,12 +251,14 @@ Close Tabs To The Right | #context_closeTabsToTheEnd
 Close Other Tabs | #context_closeOtherTabs
 Undo Closed Tab | #context_undoCloseTab
 Close Tab | #context_closeTab
+[Top](#quick-navigation)
 
 
 ####[Back Forward Menu]
 | Item | ID |
 ------------- | -------------
 Back Forward Menu | #backForwardMenu
+[Top](#quick-navigation)
 
 
 ####[Toolbar Context Menu]
@@ -260,6 +272,7 @@ Bookmark All Tabs | #toolbar-context-bookmarkAllTabs
 Undo Closed Tab | #toolbar-context-undoCloseTab
 Customize | __.viewCustomizeToolbar__
 About:Config | #menu-aboutconfig
+[Top](#quick-navigation)
 
 
 ####[Content Area Context Menu]
@@ -334,6 +347,7 @@ Add To Dictionary | #spell-add-dictionaries-main
 Select Dictionary `*Tree` | #spell-dictionaries
 Inspect Element | #context-inspect
 Toggle Javascript | #context-javascript
+[Top](#quick-navigation)
 
 
 ####[Panel UI]
@@ -343,6 +357,7 @@ Sync | #PanelUI-fxa-status
 Customize | #PanelUI-customize
 Help Menu `*Tree` | #PanelUI-help
 Quit | #PanelUI-quit
+[Top](#quick-navigation)
 
 
 ####[CyberCTR]
@@ -401,3 +416,4 @@ Fullscreen | #appmenu_fullScreen
 Sync | #sync-setup-appmenu
 Restart Browser | #appmenu_restartBrowser
 Quit | #appmenu-quit
+[Top](#quick-navigation)
