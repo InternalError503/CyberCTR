@@ -18,7 +18,7 @@ __Quick Navigation__
 - [Toolbar Context Menu](#toolbar-context-menu)
 - [Content Area Context Menu](#content-area-context-menu)
 - [Panel UI](#panel-ui)
-
+- [CyberCTR - CTR](#CyberCTR)
 
 For items marked with `*Tree` means the whole menu and sub-menus. 
 
@@ -335,6 +335,7 @@ Select Dictionary `*Tree` | #spell-dictionaries
 Inspect Element | #context-inspect
 Toggle Javascript | #context-javascript
 
+
 ####[Panel UI]
 | Item | ID |
 ------------- | -------------
@@ -342,3 +343,61 @@ Sync | #PanelUI-fxa-status
 Customize | #PanelUI-customize
 Help Menu `*Tree` | #PanelUI-help
 Quit | #PanelUI-quit
+
+
+####[CyberCTR]
+| Item | ID |
+------------- | -------------
+AppMenu Button `*Tree` | #appmenu-popup
+AppMenu Primary Pane `*Tree` | #appmenuPrimaryPane
+New Tab | #appmenu_newTab 
+New Tab Pop-up `*Tree` | #ctraddon_menu_newTabmenupopup
+New Tab | #appmenu_newTab_popup
+New Window | #appmenu_newNavigator
+Open File | #appmenu_openFile
+New Private Window | #appmenu_newPrivateWindow
+Minimize Memory Usage | #appmenu_minimizeMemoryUsage
+Edit Box `*Tree` | #ctraddon_appmenubox_edit
+Edit Label | #appmenu-edit-label
+Cut | #appmenu-cut
+Copy | #appmenu-copy
+Paste | #appmenu-paste
+Edit Menu `*Tree` | #appmenu-editmenu
+Edit Menu Pop-up `*Tree` | #appmenu-editmenu-menupopup
+Edit Menu Cut | #appmenu-editmenu-cut
+Edit Menu Copy | #appmenu-editmenu-copy
+Edit Menu Paste | #appmenu-editmenu-paste
+Edit Menu Undo | #appmenu-editmenu-undo
+Edit Menu Redo | #appmenu-editmenu-redo
+Edit Menu Select All | #appmenu-editmenu-selectAll
+Edit Menu Delete | #appmenu-editmenu-delete
+Find In This Page | #appmenu_find
+Save Page As | #appmenu_savePage
+Email Link | #appmenu_sendLink
+Print `*Tree` | #appmenu_print
+Print Pop-up `*Tree` | #ctraddon_menu_newPrintmenupopup
+Print Pop-up Print | #appmenu_print_popup
+Print Pop-up Print Preview | #appmenu_printPreview
+Print Pop-up Print Setup | #appmenu_printSetup
+Web Developer `*Tree` | #appmenu_webDeveloper
+Web Developer Pop-up `*Tree` | #appmenu_webDeveloper_popup
+Toggle Tools | #appmenu_devToolbox
+Inspector | __Unknown__
+Web Console | #appmenu_errorConsole
+Debugger | __Unknown__
+Style Editor | __Unknown__
+Performance | __Unknown__
+Network | __Unknown__
+Developer Tool-Bar | #appmenu_devToolbar
+WebIDE | #appmenu_webide
+Browser Console | #appmenu_browserConsole
+Responsive Design View | #appmenu_responsiveUI
+Eydropper | #appmenu_eyedropper
+Scratchpad | #appmenu_scratchpad
+Page Source | #appmenu_pageSource
+Get More Tools | #appmenu_getMoreDevtools
+Work Offline | #appmenu_offlineMode
+Fullscreen | #appmenu_fullScreen
+Sync | #sync-setup-appmenu
+Restart Browser | #appmenu_restartBrowser
+Quit | #appmenu-quit
