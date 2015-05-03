@@ -339,6 +339,6 @@ For items marked with `*Tree` means the whole menu and sub-menus.
 
 *Note:* Some IDs or Classes may radically change the user interface or break it use with caution.
 
-*Note:* Warning case sensitive...
+*Note:* Warning some ID's are case sensitive...
 
 More items will be added as time permits.
