@@ -18,7 +18,7 @@ __Quick Navigation__
 - [Toolbar Context Menu](#toolbar-context-menu)
 - [Content Area Context Menu](#content-area-context-menu)
 - [Panel UI](#panel-ui)
-- [CyberCTR - CTR](#CyberCTR)
+- [CyberCTR - CTR](#cyberctr)
 
 For items marked with `*Tree` means the whole menu and sub-menus. 
 
