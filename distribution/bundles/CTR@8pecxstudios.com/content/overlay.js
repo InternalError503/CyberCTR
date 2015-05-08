@@ -4945,15 +4945,19 @@ try{
 			alert("Were sorry something has gone wrong removing Appmenu Items" + e);
 	}	
 			
-  }, false);	
-  
-  document.getElementById("ctraddon_appbutton2")
-        .addEventListener("DOMContentLoaded", function (e) {		
-	try{		
-			classicthemerestorerjs.ctr.fixThatTreeStyleBro();
-		}catch (e){}	
-			
   }, false);
+
+  if(classicthemerestorerjs.ctr.osstring=="WINNT"){
+	  document.getElementById("ctraddon_appbutton2")
+	        .addEventListener("DOMContentLoaded", function (e) {
+	        	document.getElementById("ctraddon_appbutton2")
+	        		.removeEventListener("DOMContentLoaded", load, false);		
+		try{		
+				classicthemerestorerjs.ctr.fixThatTreeStyleBro();
+			}catch (e){}	
+				
+	  }, false);
+  }
   
 //Add listener for tree style tab  
 window.addEventListener("DOMWindowCreated", function load(event){ 
