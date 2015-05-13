@@ -137,14 +137,14 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы информации о дополнениях">
+<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
 <!ENTITY Ctr_tbconmenu		"Контекстное меню панели инструментов: скрыть «Переместить в меню», «Удалить с панели инструментов», «Обновить/В закладки все вкладки», «Восстановить закрытую вкладку»">
-<!ENTITY Ctr_noresizerxp	"Скрыть «Изменение размера» (Windows XP/2000)">
+<!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
 <!ENTITY Ctr_extraurlkeycb	"Открыть дополнительную адресную строку (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
@@ -270,13 +270,14 @@
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; версий 35 и выше введена новая «Тема разработчика». Отключение параметра удаляет её и соответствующую кнопку в режиме «Настройка».">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; версий 36 и выше настройки отображаются в новой вкладке. Если отключить этот параметр, восстанавливается старое окно настроек.">
 <!ENTITY Ctr_fx38reader		"&brandShortName; версий 38 и выше представлен новый «режим чтения». Отключение этой опции выключает его и убирает иконку с адресной панели.">
-<!ENTITY Ctr_fx40pocket		"&brandShortName; в версиях 40+ введена новая функция 'Карман'. Отключение этой опции отключает ее и удаляет кнопку с панели инструментов.">
+<!ENTITY Ctr_fx38pocket      "В &brandShortName; версий 38 и выше введена новая функция 'Карман'. Отключение данной настройки отключает эту функцию и удаляет кнопку с панели инструментов.">
 <!ENTITY Ctr_e_omtc			"OMTC / проблема с зависанием вкладок">
 <!ENTITY Ctr_e_searchui		"Внешний вид панели поиска">
 <!ENTITY Ctr_e_loop			"Вызовы и разговоры">
 <!ENTITY Ctr_e_deved		"Тема оформления для разработчиков">
 <!ENTITY Ctr_e_prefsui		"Настройки в виде вкладки">
-<!ENTITY Ctr_e_pocket		"Карман">
+<!ENTITY Ctr_e_readermode	"Режим чтения">
+<!ENTITY Ctr_e_pocket		"Pocket">
 
 
 <!ENTITY Ctr_pw_settings	"Настройки">
@@ -284,8 +285,8 @@
 <!ENTITY Ctr_pw_set_predef	"Классическое оформление">
 <!ENTITY Ctr_pw_set_export	"Экспорт настроек">
 <!ENTITY Ctr_pw_set_import	"Импорт настроек">
-<!ENTITY Ctr_pw_set_syncon	"Добавить в синхронизацию">
-<!ENTITY Ctr_pw_set_syncoff	"Удалить из синхронизации">
+<!ENTITY Ctr_pw_set_syncon	"Add to Sync">
+<!ENTITY Ctr_pw_set_syncoff	"Remove from Sync">
 
 <!ENTITY Ctr_special_font	"Настройки цвета фона — только для темы по умолчанию!">
 <!ENTITY Ctr_special_info	"Некоторые варианты могут предложить визуальные изменения только в определенных случаях!">

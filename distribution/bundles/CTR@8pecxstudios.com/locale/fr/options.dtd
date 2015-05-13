@@ -271,7 +271,7 @@
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – introduit un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ – place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
 <!ENTITY Ctr_fx38reader		"&brandShortName; 38+ introduit un mode de lecture d’articles. En décochant ces préférences, cela désactive ce mode et enlève l’icône de la barre d’adresse.">
-<!ENTITY Ctr_fx40pocket		"&brandShortName; 40+ introduced the 'Pocket' feature. Unchecking this preference disables it and removes its button from the toolbars.">
+<!ENTITY Ctr_fx38pocket		"&brandShortName; 38+ introduced the 'Pocket' feature. Unchecking this preference disables it and removes its button from the toolbars.">
 <!ENTITY Ctr_e_omtc			"OMTC / hanging tabs issue">
 <!ENTITY Ctr_e_searchui		"Apparence et fonctionnement de la recherche">
 <!ENTITY Ctr_e_loop			"Appels et conversations">
