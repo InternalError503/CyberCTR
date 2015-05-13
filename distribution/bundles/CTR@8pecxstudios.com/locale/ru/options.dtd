@@ -137,14 +137,14 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
+<!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы информации о дополнениях">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
 <!ENTITY Ctr_tbconmenu		"Контекстное меню панели инструментов: скрыть «Переместить в меню», «Удалить с панели инструментов», «Обновить/В закладки все вкладки», «Восстановить закрытую вкладку»">
-<!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
+<!ENTITY Ctr_noresizerxp	"Скрыть «Изменение размера» (Windows XP/2000)">
 <!ENTITY Ctr_extraurlkeycb	"Открыть дополнительную адресную строку (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
