@@ -349,6 +349,9 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion > 37) {
 	  document.getElementById('ctraddon_pw_bmarkoinpw').style.visibility = 'collapse';
 	}
+	if (this.appversion < 40) {
+	  document.getElementById('ctraddon_pw_pocketgb').style.visibility = 'collapse';
+	}
 
 	function PrefListener(branch_name, callback) {
 	  // Keeping a reference to the observed preference branch or it will get

@@ -137,12 +137,13 @@
 <!ENTITY Ctr_cpanelmenus	"面板菜单: 更紧凑的视图 (书签、历史等等)">
 <!ENTITY Ctr_hidezoomres	"当缩放控制按钮在工具栏上时: 隐藏重置缩放按钮">
 <!ENTITY Ctr_alt_newtabp	"新标签页页面: 备选的外观">
+<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"书签菜单按钮: 面板式菜单外观">
 <!ENTITY Ctr_bmbutnotext	"书签菜单按钮: 隐藏书签工具栏上的文本标签">
 <!ENTITY Ctr_skipprintpr	"打印按钮: 跳过打印预览">
-<!ENTITY Ctr_tbconmenu		"Toolbar context menu: hide 'move to menu', 'remove from toolbar', 'reload/bookmark all tabs' and 'undo close tab'">
+<!ENTITY Ctr_tbconmenu		"工具栏右键菜单: 隐藏 “移动到菜单”, “从工具栏移除”, “重新载入所有标签页/将全部标签页加为书签” 与 “恢复关闭的标签页”">
 <!ENTITY Ctr_noresizerxp	"隐藏调整大小控件 (Windows XP)">
 <!ENTITY Ctr_extraurlkeycb	"打开附加地址栏(Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"面板菜单: 隐藏按钮标签文本">
@@ -269,12 +270,14 @@
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ 引入新的“开发者版本主题”。不选中此项以禁用“开发者版本主题”以及定制模式下它的一些按钮。">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ 引入在标签页中显示选项设置。不选中此项以使用旧选项窗口。">
 <!ENTITY Ctr_fx38reader		"&brandShortName; 38+ 引入新的“阅读模式”。不选中此项以禁用它并从地址栏移除图标。">
+<!ENTITY Ctr_fx40pocket		"&brandShortName; 40+ introduced the 'Pocket' feature. Unchecking this preference disables it and removes its button from the toolbars.">
 <!ENTITY Ctr_e_omtc			"OMTC / 卡死标签页的问题">
 <!ENTITY Ctr_e_searchui		"搜索栏外观">
 <!ENTITY Ctr_e_loop			"呼叫与会话">
 <!ENTITY Ctr_e_deved		"开发者版本主题">
 <!ENTITY Ctr_e_prefsui		"标签页中显示选项设置">
 <!ENTITY Ctr_e_readermode	"阅读模式">
+<!ENTITY Ctr_e_pocket		"Pocket">
 
 
 <!ENTITY Ctr_pw_settings	"设置">
@@ -282,8 +285,8 @@
 <!ENTITY Ctr_pw_set_predef	"经典主题预设">
 <!ENTITY Ctr_pw_set_export	"导出选项设置">
 <!ENTITY Ctr_pw_set_import	"导入选项设置">
-<!ENTITY Ctr_pw_set_syncon	"Add to Sync">
-<!ENTITY Ctr_pw_set_syncoff	"Remove from Sync">
+<!ENTITY Ctr_pw_set_syncon	"添加到同步">
+<!ENTITY Ctr_pw_set_syncoff	"从同步中移除">
 
 <!ENTITY Ctr_special_font	"只有默认主题才能设置背景颜色!">
 <!ENTITY Ctr_special_info	"一些选项可能无法在所有情况下提供视觉变化!">

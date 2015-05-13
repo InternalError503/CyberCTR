@@ -138,6 +138,7 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
+<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
@@ -270,12 +271,14 @@
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – introduit un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ – place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
 <!ENTITY Ctr_fx38reader		"&brandShortName; 38+ introduced a new 'reader mode'. Unchecking these preferences disables it and removes its icon from location bar.">
+<!ENTITY Ctr_fx40pocket		"&brandShortName; 40+ introduced the 'Pocket' feature. Unchecking this preference disables it and removes its button from the toolbars.">
 <!ENTITY Ctr_e_omtc			"OMTC / hanging tabs issue">
 <!ENTITY Ctr_e_searchui		"Search appearance">
 <!ENTITY Ctr_e_loop			"Calling and conversation">
 <!ENTITY Ctr_e_deved		"Developer Edition Theme">
 <!ENTITY Ctr_e_prefsui		"Preferences in tab">
 <!ENTITY Ctr_e_readermode	"Reader mode">
+<!ENTITY Ctr_e_pocket		"Pocket">
 
 
 <!ENTITY Ctr_pw_settings	"Réglages">
