@@ -316,7 +316,7 @@
 <!ENTITY Ctr_classic_elements		"Классическое оформление">
 <!ENTITY Ctr_pw_set_preaust		"Оформление Australis">
 <!ENTITY ctr_Support_forums	"Форум поддержки">
-<!ENTITY ctr_help_features	"Информация о возможностях &amp;">
+<!ENTITY ctr_help_features	"Информация о возможностях">
 <!ENTITY ctr_tabtitleintitlebar	"Добавить название вкладки в заголовок окна">
 
 <!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
