@@ -32,14 +32,25 @@
 
 		} catch(e){}
 	  }
-
+	  
 	  setTimeout(function(){
 		try{
 		  if(document.getElementById("newtab-customize-button").hasAttribute('active'))
 			document.getElementById("newtab-customize-button").removeAttribute('active');
 		}catch(e){}
+		try{
+		  if(parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")) >= 40)
+			document.getElementById("newtab-window").setAttribute('fx40plus',true);
+		} catch(e){}
 	  },200);
 	
+	}
+	
+	if(Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabp')) {
+	  try{
+		if(parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")) >= 40)
+		  document.getElementById("newtab-window").setAttribute('fx40plus',true);
+	  } catch(e){}
 	}
   </script>
 </overlay> 
