@@ -19,6 +19,26 @@ classicthemerestorerjso.ctr = {
   oswindows:		Services.appinfo.OS=="WINNT",
   needsRestart: 	false,
   tmp_tu_active:	false,
+  
+	// Exclude all preferences we don't want to synced.
+	blacklist: [
+		"extensions.classicthemerestorer.pref_actindx",
+		"extensions.classicthemerestorer.pref_actindx2",
+		"extensions.classicthemerestorer.ctrreset",
+		"extensions.classicthemerestorer.compatibility.treestyle",
+		"extensions.classicthemerestorer.compatibility.treestyle.disable",
+		"extensions.classicthemerestorer.compatibility.tabmix",
+		"extensions.classicthemerestorer.ctrpref.firstrun",
+		"extensions.classicthemerestorer.features.firstrun",
+		"extensions.classicthemerestorer.features.lastcheck",
+		"extensions.classicthemerestorer.features.updatecheck",
+		"extensions.classicthemerestorer.ctrpref.lastmod",
+		"extensions.classicthemerestorer.ctrpref.lastmodapply",
+		"extensions.classicthemerestorer.ctrpref.updatekey",
+		"extensions.classicthemerestorer.version",
+		"extensions.classicthemerestorer.features.firstrun",
+		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
+		],	
 
   initprefwindow: function() {
   
@@ -1058,27 +1078,10 @@ classicthemerestorerjso.ctr = {
 	
 	var preflist = Services.prefs.getChildList("extensions.classicthemerestorer.");
 	
-		// Exclude all preferences we don't want to synced.
-		let blacklist = [
-		"extensions.classicthemerestorer.pref_actindx",
-		"extensions.classicthemerestorer.pref_actindx2",
-		"extensions.classicthemerestorer.ctrreset",
-		"extensions.classicthemerestorer.compatibility.treestyle",
-		"extensions.classicthemerestorer.compatibility.treestyle.disable",
-		"extensions.classicthemerestorer.compatibility.tabmix",
-		"extensions.classicthemerestorer.ctrpref.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod",
-		"extensions.classicthemerestorer.ctrpref.lastmodapply",
-		"extensions.classicthemerestorer.ctrpref.updatekey",
-		"extensions.classicthemerestorer.version",
-		"extensions.classicthemerestorer.features.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
-		];	
-	
 	try {
 	  for (var i=0; i < preflist.length; i++) {
 		  
-		var index = preflist.indexOf(blacklist[i]);
+		var index = preflist.indexOf(this.blacklist[i]);
 
 		if (index > -1) {
 		  preflist.splice(index, 1);
@@ -1105,22 +1108,7 @@ classicthemerestorerjso.ctr = {
 	// Add filter header
 	preferenceArray.push("CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers");	
 
-		// Exclude all preferences we don't want to export/import.
-		let blacklist = [
-		"extensions.classicthemerestorer.pref_actindx",
-		"extensions.classicthemerestorer.pref_actindx2",
-		"extensions.classicthemerestorer.ctrreset",
-		"extensions.classicthemerestorer.compatibility.treestyle",
-		"extensions.classicthemerestorer.compatibility.treestyle.disable",
-		"extensions.classicthemerestorer.compatibility.tabmix",
-		"extensions.classicthemerestorer.ctrpref.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod",
-		"extensions.classicthemerestorer.ctrpref.lastmodapply",
-		"extensions.classicthemerestorer.ctrpref.updatekey",
-		"extensions.classicthemerestorer.version",
-		"extensions.classicthemerestorer.features.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
-		];
+
 
 	// Filter preference type and return its value.
 	function prefValue(pref){
@@ -1148,7 +1136,7 @@ classicthemerestorerjso.ctr = {
 
 	  try {
 		// Run Blacklist filter. Exclude all preferences we don't want to export/import.
-		var index = preflist.indexOf(blacklist[i]);
+		var index = preflist.indexOf(this.blacklist[i]);
 
 		if (index > -1) {
 		  preflist.splice(index, 1);
@@ -1362,22 +1350,7 @@ classicthemerestorerjso.ctr = {
 	  value: []
 	};
 
-		// Exclude all preferences we don't want to export/import.
-		let blacklist = [
-		"extensions.classicthemerestorer.pref_actindx",
-		"extensions.classicthemerestorer.pref_actindx2",
-		"extensions.classicthemerestorer.ctrreset",
-		"extensions.classicthemerestorer.compatibility.treestyle",
-		"extensions.classicthemerestorer.compatibility.treestyle.disable",
-		"extensions.classicthemerestorer.compatibility.tabmix",
-		"extensions.classicthemerestorer.ctrpref.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod",
-		"extensions.classicthemerestorer.ctrpref.lastmodapply",
-		"extensions.classicthemerestorer.ctrpref.updatekey",
-		"extensions.classicthemerestorer.version",
-		"extensions.classicthemerestorer.features.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
-		];
+
 
 	function prefValue(pref){
 
@@ -1393,7 +1366,7 @@ classicthemerestorerjso.ctr = {
 
 	  try {
 		// 'Blacklist' filter. Exclude all preferences we don't want to export/import.
-		var index = preflist.indexOf(blacklist[i]);
+		var index = preflist.indexOf(this.blacklist[i]);
 
 		if (index > -1) {
 		  preflist.splice(index, 1);
