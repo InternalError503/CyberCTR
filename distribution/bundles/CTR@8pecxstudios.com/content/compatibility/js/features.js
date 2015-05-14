@@ -96,28 +96,28 @@ cyberctrFeatures = {
 
                         case 0:
                             //log return failed request message for status 0 unsent
-                            console.log("Request failed " + this.target.status);
+                            console.log("Request failed " + aEvent.target.status);
                             break;
 
                         case 1:
-                            console.log("Error Status: " + this.target.status);
+                            console.log("Error Status: " + aEvent.target.status);
                             break;
 
                         case 2:
-                            console.log("Error Status: " + this.target.status);
+                            console.log("Error Status: " + aEvent.target.status);
                             break;
 
                         case 3:
-                            console.log("Error Status: " + this.target.status);
+                            console.log("Error Status: " + aEvent.target.status);
                             break;
 
                         case 4:
-                            console.log("Error Status: " + this.target.status);
+                            console.log("Error Status: " + aEvent.target.status);
                             break;
 
                         default:
                             aEvent.target.status
-                            console.log("Error Status: " + this.target.status);
+                            console.log("Error Status: " + aEvent.target.status);
                             break;
 
                     }
