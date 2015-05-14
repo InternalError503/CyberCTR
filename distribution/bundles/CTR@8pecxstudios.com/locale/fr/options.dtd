@@ -265,13 +265,13 @@
 <!ENTITY Ctr_nodevtheme		"Empêche l’activation du « thème développeur »">
 
 <!ENTITY Ctr_experttweaks	"Expert">
-<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ – introduit de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (aucune réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
-<!ENTITY Ctr_fx34search		"&brandShortName; 34+ – introduit une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
-<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ – introduit la possibilité d’inviter quelqu’un à discuter. Cette possibilité est desactivée en décochant cette option.">
-<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – introduit un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
+<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ – offre de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (aucune réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ – offre une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ – offre la possibilité d’inviter quelqu’un à discuter. Cette possibilité est desactivée en décochant cette option.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – offre un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ – place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
-<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ introduit un mode de lecture d’articles. En décochant ces préférences, cela désactive ce mode et enlève l’icône de la barre d’adresse.">
-<!ENTITY Ctr_fx38pocket		"&brandShortName; 38+ introduced the 'Pocket' feature. Unchecking this preference disables it and removes its button from the toolbars.">
+<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ offre un mode de lecture d’articles. Si cette option est décochée, ce mode est désactivé et l’icône est enlevé de la barre d’adresse.">
+<!ENTITY Ctr_fx38pocket		"&brandShortName; 38+ offre un mode « de poche » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevé des barres d’outils.">
 <!ENTITY Ctr_e_omtc			"OMTC / hanging tabs issue">
 <!ENTITY Ctr_e_searchui		"Apparence et fonctionnement de la recherche">
 <!ENTITY Ctr_e_loop			"Appels et conversations">
@@ -286,8 +286,8 @@
 <!ENTITY Ctr_pw_set_predef	"Préréglage classique">
 <!ENTITY Ctr_pw_set_export	"Exporter les préférences">
 <!ENTITY Ctr_pw_set_import	"Importer les préférences">
-<!ENTITY Ctr_pw_set_syncon	"Add to Sync">
-<!ENTITY Ctr_pw_set_syncoff	"Remove from Sync">
+<!ENTITY Ctr_pw_set_syncon	"Ajouter à la synchronisation">
+<!ENTITY Ctr_pw_set_syncoff	"Enlever de la synchronisation">
 
 <!ENTITY Ctr_special_font	"La configuration de la couleur de fond est réservée au thème par défaut">
 <!ENTITY Ctr_special_info	"Certaines options ne fonctionnent que dans certains cas !">
