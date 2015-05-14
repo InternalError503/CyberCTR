@@ -1058,8 +1058,31 @@ classicthemerestorerjso.ctr = {
 	
 	var preflist = Services.prefs.getChildList("extensions.classicthemerestorer.");
 	
+		// Exclude all preferences we don't want to synced.
+		let blacklist = [
+		"extensions.classicthemerestorer.pref_actindx",
+		"extensions.classicthemerestorer.pref_actindx2",
+		"extensions.classicthemerestorer.ctrreset",
+		"extensions.classicthemerestorer.compatibility.treestyle",
+		"extensions.classicthemerestorer.compatibility.treestyle.disable",
+		"extensions.classicthemerestorer.compatibility.tabmix",
+		"extensions.classicthemerestorer.ctrpref.firstrun",
+		"extensions.classicthemerestorer.ctrpref.lastmod",
+		"extensions.classicthemerestorer.ctrpref.lastmodapply",
+		"extensions.classicthemerestorer.ctrpref.updatekey",
+		"extensions.classicthemerestorer.version",
+		"extensions.classicthemerestorer.features.firstrun",
+		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
+		];	
+	
 	try {
 	  for (var i=0; i < preflist.length; i++) {
+		  
+		var index = preflist.indexOf(blacklist[i]);
+
+		if (index > -1) {
+		  preflist.splice(index, 1);
+		}
 		Services.prefs.getBranch("services.sync.prefs.sync.").setBoolPref(preflist[i],'true');
 	  }
 	} catch(e) {}
