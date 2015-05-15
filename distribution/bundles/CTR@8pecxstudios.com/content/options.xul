@@ -1164,14 +1164,13 @@
   <hbox align="center" flex="1" style="padding-top:5px;">
     <button label="&Ctr_pw_settings;" popup="ctr_pw_settingsPopup"/>
 <spacer flex="1" />
-<label value="&ctr_help_features;" 
-		   id="ctraddon_help_features" 
-		   class="text-link" 
-		   onclick="classicthemerestorerjso.ctr.showFeaturesTab(); window.focus();"/>
 <label  value="&ctr_Support_forums;" 
 			href="https://8pecxstudios.com/Forums/index.php" 
 			class="text-link" id="ctraddon_support" 
 			onclick="window.close();"/>
+<button label="&ctr_help_features;" 
+		   id="ctraddon_help_features"
+		   onclick="classicthemerestorerjso.ctr.showFeaturesTab(); window.focus();"/>
 <button dlgtype="accept" id="ctraddon_pw_okbutton"/>
   </hbox> 
 
