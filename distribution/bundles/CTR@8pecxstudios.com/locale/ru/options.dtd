@@ -137,7 +137,7 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
+<!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
@@ -277,7 +277,7 @@
 <!ENTITY Ctr_e_deved		"Тема оформления для разработчиков">
 <!ENTITY Ctr_e_prefsui		"Настройки в виде вкладки">
 <!ENTITY Ctr_e_readermode	"Режим чтения">
-<!ENTITY Ctr_e_pocket		"Pocket">
+<!ENTITY Ctr_e_pocket		"Карман">
 
 
 <!ENTITY Ctr_pw_settings	"Настройки">
@@ -285,8 +285,8 @@
 <!ENTITY Ctr_pw_set_predef	"Классическое оформление">
 <!ENTITY Ctr_pw_set_export	"Экспорт настроек">
 <!ENTITY Ctr_pw_set_import	"Импорт настроек">
-<!ENTITY Ctr_pw_set_syncon	"Add to Sync">
-<!ENTITY Ctr_pw_set_syncoff	"Remove from Sync">
+<!ENTITY Ctr_pw_set_syncon	"Добавить в синхронизацию">
+<!ENTITY Ctr_pw_set_syncoff	"Убрать из синхронизации">
 
 <!ENTITY Ctr_special_font	"Настройки цвета фона — только для темы по умолчанию!">
 <!ENTITY Ctr_special_info	"Некоторые варианты могут предложить визуальные изменения только в определенных случаях!">
@@ -316,7 +316,7 @@
 <!ENTITY Ctr_classic_elements		"Классическое оформление">
 <!ENTITY Ctr_pw_set_preaust		"Оформление Australis">
 <!ENTITY ctr_Support_forums	"Форум поддержки">
-<!ENTITY ctr_help_features	"Информация о возможностях">
+<!ENTITY ctr_help_features	"Информация и возможности">
 <!ENTITY ctr_tabtitleintitlebar	"Добавить название вкладки в заголовок окна">
 
 <!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
