@@ -5390,7 +5390,10 @@ switch (appButtonState){
 	  try {
 
 		if(parjson[i].preference.match(/extensions.classicthemerestorer./g)){
+			//To import previously generated preference export
 			setPrefValue(parjson[i].preference, parjson[i].value);
+		}else{
+			setPrefValue('extensions.classicthemerestorer.' + parjson[i].preference, parjson[i].value);
 		}
 
 	  } catch(e) {

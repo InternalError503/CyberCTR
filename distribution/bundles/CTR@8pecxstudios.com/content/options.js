@@ -1286,8 +1286,11 @@ classicthemerestorerjso.ctr = {
 	  try {
 
 		if(parjson[i].preference.match(/extensions.classicthemerestorer./g)){
+			//To import previously generated preference export
 			setPrefValue(parjson[i].preference, parjson[i].value);
-		}
+		}else{
+			setPrefValue('extensions.classicthemerestorer.' + parjson[i].preference, parjson[i].value);
+		}	
 
 	  } catch(e) {
 		// Report errors to console
@@ -1373,7 +1376,7 @@ classicthemerestorerjso.ctr = {
 		}
 
 		preferenceArray.preference.push({
-		  "preference" : preflist[i],
+		  "preference" : preflist[i].replace("extensions.classicthemerestorer.", ""),
 		  "value" : prefValue(preflist[i])
 		});
 
