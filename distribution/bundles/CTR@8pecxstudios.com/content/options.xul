@@ -259,6 +259,8 @@
 	<preference id="ctraddon_ctabouthome_bg"	name="extensions.classicthemerestorer.abouthomecustomurl"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomecustomhighlight"	name="extensions.classicthemerestorer.abouthomehighlight"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthome_highlight_color"	name="extensions.classicthemerestorer.abouthomecustomhighlightcolor"	type="string"	instantApply="true"/>
+	<preference id="ctraddon_ctabouthomecustombase"	name="extensions.classicthemerestorer.abouthomecustombase"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_ctabouthome_base_color"	name="extensions.classicthemerestorer.abouthomecustombasecolor"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthome_bg_stretch"	name="extensions.classicthemerestorer.abouthomebgstretch"	type="bool"	instantApply="true"/>	
 	
@@ -806,13 +808,19 @@
 						  flex="1" 
 						  placeholder="&ctr_abouthome.custombgurlph;"/>
 			</hbox>
-			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>			
+			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>
+			<checkbox label="&ctr_abouthome.custombase;" preference="ctraddon_ctabouthomecustombase" id="ctraddon_ctabouthomecustbsck"/>			
 			<checkbox label="&ctr_abouthome.customhighlight;" preference="ctraddon_ctabouthomecustomhighlight" id="ctraddon_ctabouthomecusthltck"/>
 		<hbox>
+			<label value="&ctr_abouthome.custombasecol;" id="ctraddon_ctabouthomecustbslb"/>
+			<textbox preference="ctraddon_ctabouthome_base_color" id="ctraddon_ctabouthomecustbstb" width="70px"/>
+			<colorpicker preference="ctraddon_ctabouthome_base_color" type="button" id="ctraddon_ctabouthomecustbscp"/>
+		</hbox>
+			<hbox>
 			<label value="&ctr_abouthome.customhighlightcol;" id="ctraddon_ctabouthomecusthltlb"/>
 			<textbox preference="ctraddon_ctabouthome_highlight_color" id="ctraddon_ctabouthomecusthlttb" width="70px"/>
 			<colorpicker preference="ctraddon_ctabouthome_highlight_color" type="button" id="ctraddon_ctabouthomecusthltcp"/>
-		</hbox>			
+		</hbox>		
 	  </groupbox>	  
 
 	<groupbox>

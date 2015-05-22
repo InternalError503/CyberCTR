@@ -87,6 +87,8 @@ pref("extensions.classicthemerestorer.abouthomecustombg", false);
 pref("extensions.classicthemerestorer.abouthomecustomurl", "");
 pref("extensions.classicthemerestorer.abouthomehighlight", false);
 pref("extensions.classicthemerestorer.abouthomecustomhighlightcolor", "#fe634a");
+pref("extensions.classicthemerestorer.abouthomecustombase", false);
+pref("extensions.classicthemerestorer.abouthomecustombasecolor", "#fff");
 pref("extensions.classicthemerestorer.abouthomeanimate", false);
 pref("extensions.classicthemerestorer.abouthomebgstretch", true);
 

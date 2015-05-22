@@ -348,6 +348,8 @@
 <!ENTITY ctr_abouthome.custombgurlph "Adresse de l’image ou chemin du fichier d’image">
 <!ENTITY ctr_abouthome.customhighlight "Utiliser une couleur de surlignement personnalisée">
 <!ENTITY ctr_abouthome.customhighlightcol "Définir cette couleur">
+<!ENTITY ctr_abouthome.custombase "Use custom text color">
+<!ENTITY ctr_abouthome.custombasecol "Change base text color">
 <!ENTITY ctr_abouthome.animate "Utiliser des animations sur la page about:home">
 <!ENTITY ctr_abouthome.custombgstretch "Étirer l’image d’arrière-plan à la taille de la fenêtre (par défaut).">
 

@@ -64,6 +64,7 @@ classicthemerestorerjs.ctr = {
   abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg_strech: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  abouthome_custbasecolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   hideElements: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
@@ -1964,6 +1965,16 @@ classicthemerestorerjs.ctr = {
 							classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custcolor",true);
 					}else{
 						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custcolor",false);
+					}	
+				} catch(e){}			
+		  break;
+		  
+		  case "abouthomecustombase": case "abouthomecustombasecolor": 
+			  	try{		  
+					if (branch.getBoolPref("abouthomecustombase")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custbasecolor",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custbasecolor",false);
 					}	
 				} catch(e){}			
 		  break;
@@ -4732,6 +4743,26 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.abouthome_custcolor);
+			}
+
+		break;
+		
+		case "abouthome_custbasecolor":
+
+			removeOldSheet(this.abouthome_custbasecolor);
+			
+			if(enable==true && this.prefs.getBoolPref("abouthomecustombase")){
+	
+				this.abouthome_custbasecolor=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.w3.org/1999/xhtml);\
+					@-moz-document url("about:home") {\
+						:root {\
+							--main-text-color:'+this.prefs.getCharPref("abouthomecustombasecolor")+'!important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.abouthome_custbasecolor);
 			}
 
 		break;
