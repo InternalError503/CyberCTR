@@ -80,6 +80,7 @@
 		<preference id="ctraddon_backforward"	name="extensions.classicthemerestorer.backforward"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_noconicons"	name="extensions.classicthemerestorer.noconicons"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_alt_newtabp"	name="extensions.classicthemerestorer.alt_newtabp"	 type="bool"	instantApply="true"/>
+		<preference id="ctraddon_alt_newtabpalt"	name="extensions.classicthemerestorer.alt_newtabpalt"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_alt_addonsp"	name="extensions.classicthemerestorer.alt_addonsp"	 type="bool"	instantApply="true"/>
 
 		<preference id="ctraddon_newtabcol"	name="browser.newtabpage.columns"	 type="int"		instantApply="true"/>
@@ -751,15 +752,6 @@
 		<description class="ctraddon_topic ctraddonsuboption" id="ctraddon_pw_statusbar_abr_info">&Ctr_mstatusbarabr;</description>
 		
 		<checkbox label="&Ctr_noconicons;"		preference="ctraddon_noconicons" id="ctraddon_pw_noconicons"/>
-		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>
-		<hbox flex="1">
-			<textbox id="ctraddon_newtabcol" size="1" maxlength="5" preference="ctraddon_newtabcol" type="number" min="0" max="5"/>
-			<label value="&Ctr_alt_newtabcol;" id="ctraddon_newtabcolt"/>
-		</hbox>
-		<hbox flex="1">
-			<textbox id="ctraddon_newtabrows" size="1" maxlength="3" preference="ctraddon_newtabrow" type="number" min="0" max="3"/>
-			<label value="&Ctr_alt_newtabrow;" id="ctraddon_newtabrows"/>
-		</hbox>
 		<checkbox label="&Ctr_svgfilters;"		preference="ctraddon_svgfilters" id="ctraddon_pw_svgfilters"/>
 		<checkbox label="&Ctr_hideprivmask;"	preference="ctraddon_hideprivmask" id="ctraddon_pw_hideprivmask"/>
 		<checkbox label="&Ctr_combrelstop;"		preference="ctraddon_combrelstop" id="ctraddon_pw_stopreload"/>
@@ -823,7 +815,21 @@
 			<textbox preference="ctraddon_ctabouthome_highlight_color" id="ctraddon_ctabouthomecusthlttb" width="70px"/>
 			<colorpicker preference="ctraddon_ctabouthome_highlight_color" type="button" id="ctraddon_ctabouthomecusthltcp"/>
 		</hbox>		
-	  </groupbox>	  
+	  </groupbox>	
+
+	<groupbox>
+		<caption  label="&ctr_aboutnewtab.caption;" class="ctraddon_topic"/>
+		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>
+		<checkbox label="&Ctr_alt_newtabpalt;"		preference="ctraddon_alt_newtabpalt" id="ctraddon_pw_alt_newtabpalt"/>
+		<hbox flex="1">
+			<textbox id="ctraddon_newtabcol" size="1" maxlength="5" preference="ctraddon_newtabcol" type="number" min="0" max="5"/>
+			<label value="&Ctr_alt_newtabcol;" id="ctraddon_newtabcolt"/>
+		</hbox>
+		<hbox flex="1">
+			<textbox id="ctraddon_newtabrows" size="1" maxlength="3" preference="ctraddon_newtabrow" type="number" min="0" max="3"/>
+			<label value="&Ctr_alt_newtabrow;" id="ctraddon_newtabrows"/>
+		</hbox>
+	</groupbox>	
 
 	<groupbox>
 		<caption  label="&cssClassId.description;" class="ctraddon_topic"/>

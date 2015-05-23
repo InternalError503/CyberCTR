@@ -12,7 +12,7 @@
 Cu.import("resource://gre/modules/Services.jsm");
     
 function ctraddon_toggle_newtab_page(){
-  if(Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabp')) {
+  if(Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabp') || Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabpalt')) {
     try{
 	  Services.prefs.getBranch('browser.newtabpage.').setBoolPref('enhanced',false);
  
@@ -36,7 +36,7 @@ function ctraddon_toggle_newtab_page(){
 
 }
 	
-if(Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabp')) {
+if(Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabp') || Services.prefs.getBranch('extensions.classicthemerestorer.').getBoolPref('alt_newtabpalt')) {
   try{
 	if(parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")) >= 40)
 	  document.getElementById("newtab-window").setAttribute('fx40plus',true);

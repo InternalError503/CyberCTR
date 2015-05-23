@@ -1640,6 +1640,11 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("alt_newtabp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",false);
 		  break;
+		  
+		  case "alt_newtabpalt":
+			if (branch.getBoolPref("alt_newtabpalt")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabpalt",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabpalt",false);
+		  break;
 
 		  case "alt_addonsp":
 			if (branch.getBoolPref("alt_addonsp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",true);
@@ -3063,7 +3068,8 @@ classicthemerestorerjs.ctr = {
 		case "emptyfavicon2": 		manageCSS("empty_favicon2.css");		break;
 		case "noemptypticon": 		manageCSS("empty_favicon_pt.css");		break;
 		case "hidezoomres": 		manageCSS("hide_zoomreset.css");		break;
-		case "alt_newtabp": 		manageCSS("alt_newtabpage.css");		break;
+		case "alt_newtabp": 		 manageCSS("alt_newtabpage.css");		break;
+		case "alt_newtabpalt": 		 manageCSS("alt_newtabpage_alt.css");		break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbutnotext": 		manageCSS("bmbut_no_label.css");		break;

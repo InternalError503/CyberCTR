@@ -138,6 +138,7 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
 <!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">
@@ -353,6 +354,8 @@
 <!ENTITY ctr_abouthome.custombasecol "Change base text color">
 <!ENTITY ctr_abouthome.animate "Utiliser des animations sur la page about:home">
 <!ENTITY ctr_abouthome.custombgstretch "Étirer l’image d’arrière-plan à la taille de la fenêtre (par défaut).">
+
+<!ENTITY ctr_aboutnewtab.caption "Change about:newtab page style">
 
 <!ENTITY cssClassId.description "Masquer les classes et les ID des éléments">
 <!ENTITY cssClassId.label "Saisir une classe ou une ID :">
