@@ -344,6 +344,7 @@
 <!ENTITY ctr_abouthome.icons "Aucune icône sur la page about:home">
 <!ENTITY ctr_abouthome.snippets "Aucun extrait sur la page about:home">
 <!ENTITY ctr_abouthome.custombg "Personnaliser l’image d’arrière-plan">
+<!ENTITY ctr_abouthome.custombgbrowse "Browse">
 <!ENTITY ctr_abouthome.custombgurl "Saisir l’adresse ou le chemin ">
 <!ENTITY ctr_abouthome.custombgurlph "Adresse de l’image ou chemin du fichier d’image">
 <!ENTITY ctr_abouthome.customhighlight "Utiliser une couleur de surlignement personnalisée">

@@ -340,6 +340,7 @@
 <!ENTITY ctr_abouthome.icons "No icons on about:home page">
 <!ENTITY ctr_abouthome.snippets "No snippets on about:home page">
 <!ENTITY ctr_abouthome.custombg "Use custom background image">
+<!ENTITY ctr_abouthome.custombgbrowse "Browse">
 <!ENTITY ctr_abouthome.custombgurl "Enter url or file path">
 <!ENTITY ctr_abouthome.custombgurlph "Background image url|path">
 <!ENTITY ctr_abouthome.customhighlight "Use custom highlight color">

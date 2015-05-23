@@ -1524,6 +1524,29 @@ classicthemerestorerjso.ctr = {
 			if(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length === 0){return;}
             var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
             gClipboardHelper.copyString(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter"));
-	}	
+	},
+
+	selectBG: function() {
+		try{
+		   const nsIFilePicker = Components.interfaces.nsIFilePicker;
+		   var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+		   var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
+		   var IOpath = "";
+
+		   fp.init(window, null, nsIFilePicker.modeOpen);
+		   fp.appendFilter("Image Files (*.jpg,*.png,*.gif)","*.jpg","*.png,","*.gif");
+
+		   if (fp.show() != nsIFilePicker.returnCancel) {
+			   IOpath = fp.file.path;
+			   stream.close();
+			   if (IOpath === ""){return null;}
+			  document.getElementById('ctraddon_ctabouthome_bg_urlbox').value = "file:" + IOpath ;
+			  Services.prefs.setCharPref("extensions.classicthemerestorer.abouthomecustomurl", "file:" + IOpath);
+			  
+			  return true;
+		   }
+		   return null;
+		}catch(e){}
+	}
 	
 };

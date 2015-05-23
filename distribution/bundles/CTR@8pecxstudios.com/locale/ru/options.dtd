@@ -340,6 +340,7 @@
 <!ENTITY ctr_abouthome.icons "Убрать иконки со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.snippets "Убрать сниппеты со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.custombg "Использовать свое фоновое изображение">
+<!ENTITY ctr_abouthome.custombgbrowse "Browse">
 <!ENTITY ctr_abouthome.custombgurl "Введите ссылку или путь к файлу">
 <!ENTITY ctr_abouthome.custombgurlph "Ссылка/путь к фоновому изображению">
 <!ENTITY ctr_abouthome.customhighlight "Использовать свой цвет подсветки ">
