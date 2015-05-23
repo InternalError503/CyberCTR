@@ -577,6 +577,7 @@ classicthemerestorerjso.ctr = {
 		
 		//Disable custom background image on Light|dark theme styles.
 		if (this.prefs.getCharPref("abouthome") === "dark" || 
+			this.prefs.getCharPref("abouthome") === "darkalt" ||
 			this.prefs.getCharPref("abouthome") === "light"){
 			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
 			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
@@ -593,6 +594,7 @@ classicthemerestorerjso.ctr = {
 
 		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
 				if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "dark" || 
+					Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "darkalt" ||
 					Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "light"){
 				document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
 				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
