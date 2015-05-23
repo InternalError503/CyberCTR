@@ -258,7 +258,7 @@ pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
 pref("extensions.classicthemerestorer.titleintitlebar", false);
 
 //CyberCTR version
-pref("extensions.classicthemerestorer.version", "1.3.3");
+pref("extensions.classicthemerestorer.version", "1.3.4");
 
 //Features
 pref("extensions.classicthemerestorer.features.firstrun", false);
