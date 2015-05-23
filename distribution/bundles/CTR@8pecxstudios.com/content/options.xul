@@ -785,7 +785,8 @@
 		<menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
 			<menupopup>
 						<menuitem value="default" label="&ctr_abouthome.default;"/>
-						<menuitem value="light"	 label="&ctr_abouthome.light;"/>				
+						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
+						<menuitem value="lightalt"	 label="&ctr_abouthome.light; (alt)"/>							
 						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
 						<menuitem value="darkalt"	 label="&ctr_abouthome.dark; (alt)"/>	
 						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Intel)"/>

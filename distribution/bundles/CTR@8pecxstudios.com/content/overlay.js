@@ -420,7 +420,10 @@ classicthemerestorerjs.ctr = {
 			if (branch.getCharPref("abouthome") === "light"){
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', true);	
 			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelight', false);}
-
+			if (branch.getCharPref("abouthome") === "lightalt"){
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelightalt', true);	
+			}else{classicthemerestorerjs.ctr.loadUnloadCSS('abouthomelightalt', false);}
+			
 			if (branch.getCharPref("abouthome") === "simplicityblue" ||
 			branch.getCharPref("abouthome") === "simplicityred" ||
 			branch.getCharPref("abouthome") === "simplicitygreen" || 
@@ -3114,6 +3117,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomedark": 							manageCSS("abouthomedark.css");	break;
 		case "abouthomedarkalt": 							manageCSS("abouthomedarkalt.css");	break;
 		case "abouthomelight": 							manageCSS("abouthomelight.css");	break;
+		case "abouthomelightalt": 							manageCSS("abouthomelightalt.css");	break;
 		case "abouthomesimplicity": 				    manageCSS("abouthomesimplicity.css");	break;	
 		case "abouthomesimplicityblue": 				manageCSS("abouthomesimplicityintel.css");	break;		
 		case "abouthomesimplicityred": 				manageCSS("abouthomesimplicityamd.css");	break;
