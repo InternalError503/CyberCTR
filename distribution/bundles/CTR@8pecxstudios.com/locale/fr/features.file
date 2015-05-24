@@ -1,10 +1,10 @@
 # LOCALIZATION NOTE (<a id="url-new-download"> or <a id="url-new-notes">):
 # Don't edit text contained in <a> symbols you can only edit the test "here"
-btn-check-update=Check For Updates
+btn-check-update=Vérifier les mises à jour
 btn-Documentation=Documentation
-btn-faq=Frequently Ask Questions
-btn-support-forums=Support Forums
-btn-contact-us=Contact Us
-msg-firstrun-welcome=Welcome to features and information, Here you will find useful information and links to help improve your browsing experience.
-msg-new-version-blob=A newer version of CyberCTR is available for download!, Click <a id="url-new-download">here</a> to visit the download section, Click <a id="url-new-notes">here</a> to visit the release notes section.
-msg-no-new-version=No CyberCTR updates available, You have the latest version.
+btn-faq=Foire aux questions
+btn-support-forums=Forum d’assistance
+btn-contact-us=Contactez-nous
+msg-firstrun-welcome=Bienvenue à cette page de fonctions et d’information. Vous y trouverez des renseignements utiles et des liens pour rendre la navigation plus agréable.
+msg-new-version-blob=Une nouvelle version de CyberCTR est prête à être téléchargée !, Cliquez <a id="url-new-download">ici</a> pour visiter la section des téléchargements., Cliquez <a id="url-new-notes">ici</a> pour consulter les notes de la nouvelle version.
+msg-no-new-version=Vous avez déjà la plus récente version de CyberCTR.

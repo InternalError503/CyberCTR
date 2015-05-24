@@ -138,12 +138,12 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Utiliser une couleur de surlignement personnalisée">
+<!ENTITY Ctr_alt_newtabpalt	"Page Nouvel onglet : aspect stylisé">
+<!ENTITY ctr_aboutnewtab.customhighlight 	"Utiliser une couleur de surlignement personnalisée">
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Définir cette couleur">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
-<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
+<!ENTITY ctr_aboutnewtab.custombase 	"Utiliser une couleur de texte personnalisée">
+<!ENTITY ctr_aboutnewtab.custombasecol 	"Changer la couleur de base du texte">
+<!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » de la page des modules complémentaires : autre aspect">
 <!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
 <!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">
 <!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
@@ -275,9 +275,9 @@
 <!ENTITY Ctr_fx34loop		"&brandShortName; 34+ – offre la possibilité d’inviter quelqu’un à discuter. Cette possibilité est desactivée en décochant cette option.">
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – offre un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ – place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
-<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ offre un mode de lecture d’articles. Si cette option est décochée, ce mode est désactivé et l’icône est enlevé de la barre d’adresse.">
-<!ENTITY Ctr_fx38pocket		"&brandShortName; 38+ offre un mode « de poche » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevé des barres d’outils.">
-<!ENTITY Ctr_e_omtc			"OMTC / hanging tabs issue">
+<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ offre un mode de lecture d’articles. Si cette option est décochée, ce mode est désactivé et l’icône est enlevée de la barre d’adresse.">
+<!ENTITY Ctr_fx38pocket		"&brandShortName; 38+ offre le mode « sac de rangement » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevée des barres d’outils.">
+<!ENTITY Ctr_e_omtc			"Problèmes de composition asynchrone (« OMTC »)">
 <!ENTITY Ctr_e_searchui		"Apparence et fonctionnement de la recherche">
 <!ENTITY Ctr_e_loop			"Appels et conversations">
 <!ENTITY Ctr_e_deved		"Thème de l’édition de développement">
@@ -324,14 +324,14 @@
 <!-- Extra CyberCTR Additions -->
 <!ENTITY Ctr_classic_elements		"Préréglage classique">
 <!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">
-<!ENTITY ctr_Support_forums	"Forum d’assistance">
-<!ENTITY ctr_help_features	"Fonctionnalités et renseignements">
+<!ENTITY ctr_Support_forums		"Forum d’assistance">
+<!ENTITY ctr_help_features		"Fonctionnalités et renseignements">
 <!ENTITY ctr_tabtitleintitlebar	"Afficher le titre de l’onglet dans la barre de titre">
 
-<!ENTITY ctr_applyCTRPrefFile.label	"Appliquer les changements">
+<!ENTITY ctr_applyCTRPrefFile.label		"Appliquer les changements">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurer la copie de sauvegarde">
 
-<!ENTITY ctr_appbuttoncusttextcolor	"Couleur de texte du bouton d’application.">
+<!ENTITY ctr_appbuttoncusttextcolor		"Couleur de texte du bouton d’application.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Enlever l’ombre du texte du bouton d’application.">
 
 <!ENTITY ctr_toolbarsearchbar.description	"Barre d’outils de la barre de recherche">
@@ -340,26 +340,26 @@
 <!ENTITY ctr_colapseaddonsearchbar.label	"Barre de recherche de about:addons compressible">
 
 <!ENTITY ctr_abouthome.caption "Modifier le style de la page about:home">
-<!ENTITY ctr_abouthome.default "Style about:home par défaut">
-<!ENTITY ctr_abouthome.light "Style about:home pâle">
-<!ENTITY ctr_abouthome.dark "Style about:home foncé">
-<!ENTITY ctr_abouthome.simplicity  "Style about:home Simplicité">
+<!ENTITY ctr_abouthome.default "Style de la page « about:home » : par défaut">
+<!ENTITY ctr_abouthome.light "Style de la page « about:home » : pâle">
+<!ENTITY ctr_abouthome.dark "Style de la page « about:home » : foncé">
+<!ENTITY ctr_abouthome.simplicity  "Style de la page « about:home » : Simplicité">
 <!ENTITY ctr_abouthome.links "Aucun lien sur la page about:home">
 <!ENTITY ctr_abouthome.logo "Aucun logo sur la page about:home">
 <!ENTITY ctr_abouthome.icons "Aucune icône sur la page about:home">
 <!ENTITY ctr_abouthome.snippets "Aucun extrait sur la page about:home">
 <!ENTITY ctr_abouthome.custombg "Personnaliser l’image d’arrière-plan">
-<!ENTITY ctr_abouthome.custombgbrowse "Browse">
+<!ENTITY ctr_abouthome.custombgbrowse "Naviguer">
 <!ENTITY ctr_abouthome.custombgurl "Saisir l’adresse ou le chemin ">
 <!ENTITY ctr_abouthome.custombgurlph "Adresse de l’image ou chemin du fichier d’image">
 <!ENTITY ctr_abouthome.customhighlight "Utiliser une couleur de surlignement personnalisée">
 <!ENTITY ctr_abouthome.customhighlightcol "Définir cette couleur">
-<!ENTITY ctr_abouthome.custombase "Use custom text color">
-<!ENTITY ctr_abouthome.custombasecol "Change base text color">
-<!ENTITY ctr_abouthome.animate "Utiliser des animations sur la page about:home">
+<!ENTITY ctr_abouthome.custombase "Utiuliser une couleur de texte personnalisée">
+<!ENTITY ctr_abouthome.custombasecol "Modifier la couleur de base du texte">
+<!ENTITY ctr_abouthome.animate "Utiliser des animations sur la page « about:home »">
 <!ENTITY ctr_abouthome.custombgstretch "Étirer l’image d’arrière-plan à la taille de la fenêtre (par défaut).">
 
-<!ENTITY ctr_aboutnewtab.caption "Change about:newtab page style">
+<!ENTITY ctr_aboutnewtab.caption "Modifier le style de la page « about:newtab »">
 
 <!ENTITY cssClassId.description "Masquer les classes et les ID des éléments">
 <!ENTITY cssClassId.label "Saisir une classe ou une ID :">
