@@ -137,11 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY Ctr_alt_newtabpalt	"Стиль представления страницы новой вкладки">
 <!ENTITY ctr_aboutnewtab.customhighlight "Использовать свой цвет подсветки ">
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Изменение цвета подсветки">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+<!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
+<!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
@@ -345,17 +345,17 @@
 <!ENTITY ctr_abouthome.icons "Убрать иконки со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.snippets "Убрать сниппеты со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.custombg "Использовать свое фоновое изображение">
-<!ENTITY ctr_abouthome.custombgbrowse "Browse">
+<!ENTITY ctr_abouthome.custombgbrowse "Обзор">
 <!ENTITY ctr_abouthome.custombgurl "Введите ссылку или путь к файлу">
 <!ENTITY ctr_abouthome.custombgurlph "Ссылка/путь к фоновому изображению">
 <!ENTITY ctr_abouthome.customhighlight "Использовать свой цвет подсветки ">
 <!ENTITY ctr_abouthome.customhighlightcol "Изменение цвета подсветки">
-<!ENTITY ctr_abouthome.custombase "Use custom text color">
-<!ENTITY ctr_abouthome.custombasecol "Change base text color">
+<!ENTITY ctr_abouthome.custombase "Использовать свой цвет текста">
+<!ENTITY ctr_abouthome.custombasecol "Изменить цвет текста">
 <!ENTITY ctr_abouthome.animate "Использовать анимации на домашней странице (about:home)">
 <!ENTITY ctr_abouthome.custombgstretch "Растянуть фоновое изображение на весь размер окна (по умолчанию).">
 
-<!ENTITY ctr_aboutnewtab.caption "Change about:newtab page style">
+<!ENTITY ctr_aboutnewtab.caption "Изменение стиля страницы about:newtab">
 
 <!ENTITY cssClassId.description "Скрытие классов по названию и id">
 <!ENTITY cssClassId.label "Введите название класса или id:">
