@@ -81,6 +81,12 @@
 		<preference id="ctraddon_noconicons"	name="extensions.classicthemerestorer.noconicons"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_alt_newtabp"	name="extensions.classicthemerestorer.alt_newtabp"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_alt_newtabpalt"	name="extensions.classicthemerestorer.alt_newtabpalt"	 type="bool"	instantApply="true"/>
+		
+		<preference id="ctraddon_alt_newtabpalt_custombase"	name="extensions.classicthemerestorer.aboutnewtabcustombase"	 type="bool"	instantApply="true"/>
+		<preference id="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlight"	 type="bool"	instantApply="true"/>
+		<preference id="ctraddon_alt_newtabpalt_custombasecolor"	name="extensions.classicthemerestorer.aboutnewtabcustombasecolor"	 type="string"	instantApply="true"/>
+		<preference id="ctraddon_alt_newtabpalt_customhighlightcolor"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor"	 type="string"	instantApply="true"/>		
+		
 		<preference id="ctraddon_alt_addonsp"	name="extensions.classicthemerestorer.alt_addonsp"	 type="bool"	instantApply="true"/>
 
 		<preference id="ctraddon_newtabcol"	name="browser.newtabpage.columns"	 type="int"		instantApply="true"/>
@@ -821,6 +827,18 @@
 		<caption  label="&ctr_aboutnewtab.caption;" class="ctraddon_topic"/>
 		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>
 		<checkbox label="&Ctr_alt_newtabpalt;"		preference="ctraddon_alt_newtabpalt" id="ctraddon_pw_alt_newtabpalt"/>
+		<checkbox label="&ctr_aboutnewtab.custombase;" preference="ctraddon_alt_newtabpalt_custombase" id="ctraddon_ctaboutnewtabcustbsck"/>			
+		<checkbox label="&ctr_aboutnewtab.customhighlight;" preference="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight" id="ctraddon_ctaboutnewtabcusthltck"/>
+		<hbox>
+			<label value="&ctr_aboutnewtab.custombasecol;" id="ctraddon_ctaboutnewtabcustbslb"/>
+			<textbox preference="ctraddon_alt_newtabpalt_custombasecolor" id="ctraddon_ctaboutnewtabcustbstb" width="70px"/>
+			<colorpicker preference="ctraddon_alt_newtabpalt_custombasecolor" type="button" id="ctraddon_ctaboutnewtabcustbscp"/>
+		</hbox>
+		<hbox>
+			<label value="&ctr_aboutnewtab.customhighlightcol;" id="ctraddon_ctaboutnewtabcusthltlb"/>
+			<textbox preference="ctraddon_alt_newtabpalt_customhighlightcolor" id="ctraddon_ctaboutnewtabcusthlttb" width="70px"/>
+			<colorpicker preference="ctraddon_alt_newtabpalt_customhighlightcolor" type="button" id="ctraddon_ctaboutnewtabcusthltcp"/>
+		</hbox>
 		<hbox flex="1">
 			<textbox id="ctraddon_newtabcol" size="1" maxlength="5" preference="ctraddon_newtabcol" type="number" min="0" max="5"/>
 			<label value="&Ctr_alt_newtabcol;" id="ctraddon_newtabcolt"/>

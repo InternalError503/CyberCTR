@@ -139,6 +139,10 @@
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
 <!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Utiliser une couleur de surlignement personnalisée">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Définir cette couleur">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
 <!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">

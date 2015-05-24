@@ -54,6 +54,12 @@ pref("extensions.classicthemerestorer.cpanelmenus",false);
 pref("extensions.classicthemerestorer.hidezoomres",false);
 pref("extensions.classicthemerestorer.alt_newtabp",false);
 pref("extensions.classicthemerestorer.alt_newtabpalt",false);
+
+pref("extensions.classicthemerestorer.aboutnewtabcustombase",false);
+pref("extensions.classicthemerestorer.aboutnewtabcustomhighlight",false);
+pref("extensions.classicthemerestorer.aboutnewtabcustombasecolor","#efefef");
+pref("extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor","#00adee");
+
 pref("extensions.classicthemerestorer.alt_addonsp",false);
 pref("extensions.classicthemerestorer.bmbutpanelm",false);
 pref("extensions.classicthemerestorer.bmbutnotext",false);

@@ -628,6 +628,57 @@ classicthemerestorerjso.ctr = {
 				this.prefs.setBoolPref("abouthomehighlight", false);
 		}
 		
+		//Alternate about:newtab page style 		
+			if(this.prefs.getBoolPref("alt_newtabpalt") === true){
+				document.getElementById('ctraddon_pw_alt_newtabp').disabled = true;
+				this.prefs.setBoolPref("alt_newtabp", false);
+				document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = false;
+			}else{
+				document.getElementById('ctraddon_pw_alt_newtabp').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = true;
+			}		
+		
+		
+		//Alternate about:newtab page style listener
+		Application.prefs.get("extensions.classicthemerestorer.alt_newtabpalt").events.addListener("change", function(aEvent){
+			if(Services.prefs.getBoolPref("extensions.classicthemerestorer.alt_newtabpalt") === true){
+				document.getElementById('ctraddon_pw_alt_newtabp').disabled = true;
+				Services.prefs.setBoolPref("extensions.classicthemerestorer.alt_newtabp", false);
+				document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = false;
+			}else{
+				document.getElementById('ctraddon_pw_alt_newtabp').disabled = false;
+				document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = true;
+				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = true;
+			}	
+		});
+		
 			document.getElementById("css").value = Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter");
 			this.hideThemeInfoForTabs();
   },

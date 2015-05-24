@@ -65,6 +65,7 @@ classicthemerestorerjs.ctr = {
   abouthome_bg_strech: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custbasecolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  aboutnewtab_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   hideElements: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
@@ -1987,6 +1988,16 @@ classicthemerestorerjs.ctr = {
 					}else{
 						classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_custbasecolor",false);
 					}	
+				} catch(e){}			
+		  break;
+		  
+		  case "aboutnewtabcustombase": case "aboutnewtabcustomhighlight": case "aboutnewtabcustombasecolor": case "aboutnewtabcustomhighlightcolor":
+			  	try{		  
+					if (branch.getBoolPref("aboutnewtabcustombase") || branch.getBoolPref("aboutnewtabcustomhighlight")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_custcolor",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_custcolor",false);
+					}
 				} catch(e){}			
 		  break;
 		  
@@ -4777,6 +4788,34 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.abouthome_custbasecolor);
+			}
+
+		break;
+		
+		case "aboutnewtab_custcolor":
+
+			removeOldSheet(this.aboutnewtab_custcolor);
+			
+			if(enable==true && this.prefs.getBoolPref("aboutnewtabcustombase") || this.prefs.getBoolPref("aboutnewtabcustomhighlight")){
+				var custBase ="";
+				var custHighLight ="";
+				if (this.prefs.getBoolPref("aboutnewtabcustombase")){
+					custBase = "--main-text-color:"+this.prefs.getCharPref("aboutnewtabcustombasecolor")+"!important;";
+				}
+				if (this.prefs.getBoolPref("aboutnewtabcustomhighlight")){
+					custHighLight = "--main-highlight-color:"+this.prefs.getCharPref("aboutnewtabcustomhighlightcolor")+"!important;";
+				}				
+	
+				this.aboutnewtab_custcolor=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@-moz-document url("about:newtab") {\
+						:root {\
+							'+custHighLight+'\
+							'+custBase+'\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.aboutnewtab_custcolor);
 			}
 
 		break;
