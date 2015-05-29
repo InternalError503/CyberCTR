@@ -256,6 +256,9 @@
 	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>
 	<preference id="ctraddon_colapsesearchaddons"	name="extensions.classicthemerestorer.colapsesearchaddons"	type="bool"		instantApply="true"/>	
 	
+	<preference id="ctraddon_custbookmarkfontsize"	name="extensions.classicthemerestorer.custbookmarkfontsize"	type="bool"		instantApply="true"/>
+	<preference id="ctraddon_cbookmarkfontsize"	name="extensions.classicthemerestorer.cbookmarkfontsize"	type="int"		instantApply="true"/>	
+	
 	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenobar"	name="extensions.classicthemerestorer.abouthomenobar"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthomenologo"	name="extensions.classicthemerestorer.abouthomenologo"	type="bool"	instantApply="true"/>		
@@ -1033,7 +1036,15 @@
 			<textbox id="ctraddon_searchbarwidth" size="2" maxlength="3" preference="ctraddon_searchbarwidthp" type="number" min="120" max="295"/>
 		</hbox>
 		<checkbox label="&ctr_colapseaddonsearchbar.label;"	preference="ctraddon_colapsesearchaddons"/>
-		
+		<spacer flex="1"/>
+		<description class="ctraddon_font1">&ctr_bookmarkfontsize.description;</description>
+		<hbox>		
+			<checkbox label="&ctr_custombookmarkfontsize.label;"	preference="ctraddon_custbookmarkfontsize"/>
+		</hbox>		
+		<hbox>		
+			<label id="ctraddon_bookmarkfontsizel" value="&ctr_cbookmarkfontsize.label;"/>
+			<textbox id="ctraddon_bookmarkfontsizet" size="2" maxlength="2" preference="ctraddon_cbookmarkfontsize" type="number" max="30" min="2"/>
+		</hbox>		
 	  
 	</box>
 

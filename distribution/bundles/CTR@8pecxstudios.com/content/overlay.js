@@ -61,6 +61,7 @@ classicthemerestorerjs.ctr = {
   
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  bookmarkbarfontsize: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg_strech: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
@@ -1950,7 +1951,17 @@ classicthemerestorerjs.ctr = {
 					}	
 				} catch(e){}			
 		  break;
-
+		  
+		  case "custbookmarkfontsize": case "cbookmarkfontsize":
+			  	try{		  
+					if (branch.getBoolPref("custbookmarkfontsize")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("bookmarkbarfontsize",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("bookmarkbarfontsize",false);
+					}	
+				} catch(e){}			
+		  break;
+		  
 		  case "abouthomecustombg": case "abouthomecustomurl":
 			  	try{		  
 					if (branch.getBoolPref("abouthomecustombg")) {				
@@ -4708,6 +4719,31 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.searchbarsheet);
+			}
+
+		break;
+		
+		case "bookmarkbarfontsize":
+
+			removeOldSheet(this.bookmarkbarfontsize);
+			
+			if(enable==true && this.prefs.getBoolPref("custbookmarkfontsize")){
+
+						/*#personal-bookmarks .bookmark-item > .toolbarbutton-icon {\
+							height:'+this.prefs.getIntPref('cbookmarkfontsize')+'px !important;\
+							width:'+this.prefs.getIntPref('cbookmarkfontsize')+'px !important;\
+						}\*/
+			
+				this.bookmarkbarfontsize=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+				@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
+					@-moz-document url(chrome://browser/content/browser.xul) {\
+						#PlacesToolbarItems {\
+							font-size: '+this.prefs.getIntPref('cbookmarkfontsize')+'px !important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.bookmarkbarfontsize);
 			}
 
 		break;

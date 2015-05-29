@@ -159,6 +159,9 @@ pref("extensions.classicthemerestorer.customsearchbarwidth", false);
 pref("extensions.classicthemerestorer.searchbarwidth", 150);
 pref("extensions.classicthemerestorer.colapsesearchaddons", false);
 
+pref("extensions.classicthemerestorer.custbookmarkfontsize", false);
+pref("extensions.classicthemerestorer.cbookmarkfontsize", 150);
+
 // Animation
 pref("extensions.classicthemerestorer.throbberalt",false);
 pref("extensions.classicthemerestorer.bmanimation",true);

@@ -339,6 +339,10 @@
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Largeur maximale de la barre de recherche : ">
 <!ENTITY ctr_colapseaddonsearchbar.label	"Barre de recherche de about:addons compressible">
 
+<!ENTITY ctr_bookmarkfontsize.description	"Bookmarks Tool-Bar">
+<!ENTITY ctr_custombookmarkfontsize.label	"Enable custom font size on bookmarks tool-bar">
+<!ENTITY ctr_cbookmarkfontsize.label	"Bookmarks font size: ">
+
 <!ENTITY ctr_abouthome.caption "Modifier le style de la page about:home">
 <!ENTITY ctr_abouthome.default "Style de la page « about:home » : par défaut">
 <!ENTITY ctr_abouthome.light "Style de la page « about:home » : pâle">
