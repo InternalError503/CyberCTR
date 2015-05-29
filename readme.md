@@ -59,6 +59,7 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 - Alternate about:newtab page style
 - Change highlight color of about:newtab page elements
 - Change default text color of about:newtab page text and grid color.
+- Set custom font size for bookmark-bar tool-bar (Range 2px - 30px)
 
 Plus many under the hood changes and many more visual changes to come.
 
