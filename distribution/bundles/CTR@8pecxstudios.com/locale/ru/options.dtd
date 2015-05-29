@@ -335,9 +335,9 @@
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Максимальная ширина панели поиска: ">
 <!ENTITY ctr_colapseaddonsearchbar.label	"Сворачиваемая панель поиска дополнений на странице about:addons">
 
-<!ENTITY ctr_bookmarkfontsize.description	"Bookmarks Tool-Bar">
-<!ENTITY ctr_custombookmarkfontsize.label	"Enable custom font size on bookmarks tool-bar">
-<!ENTITY ctr_cbookmarkfontsize.label	"Bookmarks font size: ">
+<!ENTITY ctr_bookmarkfontsize.description   "Панель закладок">
+<!ENTITY ctr_custombookmarkfontsize.label   "Изменить размер шрифта панели закладок">
+<!ENTITY ctr_cbookmarkfontsize.label   "Размер шрифта закладок: ">
 
 <!ENTITY ctr_abouthome.caption "Стиль домашней страницы (about:home)">
 <!ENTITY ctr_abouthome.default "Стиль по умолчанию">
