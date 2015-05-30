@@ -325,6 +325,8 @@
 <!ENTITY ctr_help_features	"Funktionen &amp; Informationen">
 <!ENTITY ctr_tabtitleintitlebar	"Add tab title to title-bar">
 
+<!ENTITY Ctr_custtabfontsize.label	"Tab font size: ">
+
 <!ENTITY ctr_applyCTRPrefFile.label	"Apply Changes">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restore Backup">
 

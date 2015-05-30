@@ -328,6 +328,8 @@
 <!ENTITY ctr_help_features		"Fonctionnalités et renseignements">
 <!ENTITY ctr_tabtitleintitlebar	"Afficher le titre de l’onglet dans la barre de titre">
 
+<!ENTITY Ctr_custtabfontsize.label	"Tab font size: ">
+
 <!ENTITY ctr_applyCTRPrefFile.label		"Appliquer les changements">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurer la copie de sauvegarde">
 

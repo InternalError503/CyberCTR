@@ -62,6 +62,7 @@ classicthemerestorerjs.ctr = {
   cuiButtonssheet:		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   searchbarsheet: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   bookmarkbarfontsize: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
+  tabfontsize: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_bg_strech: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
   abouthome_custcolor: 		Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null),
@@ -1958,6 +1959,16 @@ classicthemerestorerjs.ctr = {
 							classicthemerestorerjs.ctr.loadUnloadCSS("bookmarkbarfontsize",true);
 					}else{
 						classicthemerestorerjs.ctr.loadUnloadCSS("bookmarkbarfontsize",false);
+					}	
+				} catch(e){}			
+		  break;
+		  
+		  case "custtabfontsize": case "ctabfontsize":
+			  	try{		  
+					if (branch.getBoolPref("custtabfontsize")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("tabfontsize",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("tabfontsize",false);
 					}	
 				} catch(e){}			
 		  break;
@@ -4744,6 +4755,25 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.bookmarkbarfontsize);
+			}
+
+		break;
+		
+		case "tabfontsize":
+
+			removeOldSheet(this.tabfontsize);
+			
+			if(enable==true && this.prefs.getBoolPref("custtabfontsize")){			
+				this.tabfontsize=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+				@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
+					@-moz-document url(chrome://browser/content/browser.xul) {\
+						#TabsToolbar .tabbrowser-tab .tab-text {\
+							font-size: '+this.prefs.getIntPref('ctabfontsize')+'px !important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.tabfontsize);
 			}
 
 		break;

@@ -13,6 +13,9 @@ pref("extensions.classicthemerestorer.closetabhfl",false);
 pref("extensions.classicthemerestorer.closeonleft",false);
 pref("extensions.classicthemerestorer.closealt",false);
 
+pref("extensions.classicthemerestorer.custtabfontsize", false);
+pref("extensions.classicthemerestorer.ctabfontsize", 12);
+
 //Appbutton settings
 pref("extensions.classicthemerestorer.appbutton",'appbutton_v1');
 pref("extensions.classicthemerestorer.appbuttonc",'appbuttonc_default');
@@ -160,7 +163,7 @@ pref("extensions.classicthemerestorer.searchbarwidth", 150);
 pref("extensions.classicthemerestorer.colapsesearchaddons", false);
 
 pref("extensions.classicthemerestorer.custbookmarkfontsize", false);
-pref("extensions.classicthemerestorer.cbookmarkfontsize", 150);
+pref("extensions.classicthemerestorer.cbookmarkfontsize", 12);
 
 // Animation
 pref("extensions.classicthemerestorer.throbberalt",false);

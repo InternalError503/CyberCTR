@@ -251,6 +251,9 @@
 		<preference id="ctraddon_cuibuttons"	name="extensions.classicthemerestorer.cuibuttons"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_bmarkoinpw"	name="extensions.classicthemerestorer.bmarkoinpw"	type="bool"		instantApply="true"/>
     <preference id="ctraddon_titleintitlebar"	name="extensions.classicthemerestorer.titleintitlebar"	type="bool"		instantApply="true"/>
+	
+	<preference id="ctraddon_custtabfontsize"	name="extensions.classicthemerestorer.custtabfontsize"	type="bool"		instantApply="true"/>
+	<preference id="ctraddon_ctabfontsize"	name="extensions.classicthemerestorer.ctabfontsize"	type="int"		instantApply="true"/>
 
 	<preference id="ctraddon_searchbarwidthp"	name="extensions.classicthemerestorer.searchbarwidth"	type="int"		instantApply="true"/>	
 	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>
@@ -343,7 +346,12 @@
 		<checkbox label="&Ctr_noemptypticon;"	preference="ctraddon_noemptypticon" id="ctraddon_pw_tab_noemptypticon"/>
 		<checkbox label="&Ctr_throbberalt;"		preference="ctraddon_throbberalt" id="ctraddon_pw_throbberalt"/>
 		<checkbox label="&Ctr_e10stab_notd;" 	preference="ctraddon_e10stab_notd" id="ctraddon_pw_e10stab_notd"/>
-		<checkbox label="&ctr_tabtitleintitlebar;"	preference="ctraddon_titleintitlebar" id="ctraddon_titleintitlebar"/>		
+		<checkbox label="&ctr_tabtitleintitlebar;"	preference="ctraddon_titleintitlebar" id="ctraddon_titleintitlebar"/>
+		<hbox>
+		  <checkbox label="&Ctr_custtabfontsize.label;"	preference="ctraddon_custtabfontsize" id="ctraddon_custtabfontsizel"/>
+		  <textbox size="2" maxlength="2" preference="ctraddon_ctabfontsize" type="number" min="2" max="30" id="ctraddon_ctabfontsizep"/>
+		  <label value="px"/>
+		</hbox>		
 		<hbox>
 		  <checkbox label="&Ctr_tabminheight;"	preference="ctraddon_ctabheightcb" id="ctraddon_pw_tab_ctabheightcb"/>
 		  <textbox size="2" maxlength="2" preference="ctraddon_ctabheight" type="number" min="18" max="50" id="ctraddon_pw_tab_ctabheight"/>
