@@ -324,7 +324,7 @@
 <!ENTITY ctr_help_features	"Информация и возможности">
 <!ENTITY ctr_tabtitleintitlebar	"Добавить название вкладки в заголовок окна">
 
-<!ENTITY Ctr_custtabfontsize.label	"Tab font size: ">
+<!ENTITY Ctr_custtabfontsize.label   "Размер шрифта вкладок: ">
 
 <!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Восстановление из резервной копии">
