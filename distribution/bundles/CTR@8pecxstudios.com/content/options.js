@@ -20,7 +20,7 @@ classicthemerestorerjso.ctr = {
   needsRestart: 	false,
   tmp_tu_active:	false,
   
-	// Exclude all preferences we don't want to synced.
+  // Exclude all preferences we don't want to synced or export/import.
 	blacklist: [
 		"extensions.classicthemerestorer.pref_actindx",
 		"extensions.classicthemerestorer.pref_actindx2",
@@ -53,6 +53,12 @@ classicthemerestorerjso.ctr = {
 			}
 		  
 		  }
+	} catch(e){}
+	
+	try{
+	  if (this.appversion >= 40)
+		if(Services.prefs.getBranch("lightweightThemes.").getCharPref('selectedThemeID')=='firefox-devedition@mozilla.org')
+		  this.fxdefaulttheme=false;
 	} catch(e){}
 	
 	// restore last selected categories/tabs
@@ -357,7 +363,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_oldsearchgb').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_loopcallgb').style.visibility = 'collapse';
 	}
-	if (this.appversion < 35 || this.appversion > 39.9) {
+	if (this.appversion < 35) {
 	  document.getElementById('ctraddon_pw_devthemegb').style.visibility = 'collapse';
 	}
 	if (this.appversion < 36) {
@@ -369,6 +375,15 @@ classicthemerestorerjso.ctr = {
 	}
 	if (this.appversion > 37) {
 	  document.getElementById('ctraddon_pw_bmarkoinpw').style.visibility = 'collapse';
+	}
+	if (this.appversion > 39) {
+	  document.getElementById('ctraddon_pw_devtheme').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_devthemeb').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_devthemedescr').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_nodevtheme1').style.visibility = 'collapse';
+	}
+	if (this.appversion < 40) {
+	  document.getElementById('ctraddon_pw_nodevtheme2').style.visibility = 'collapse';
 	}
 
 
@@ -768,18 +783,33 @@ classicthemerestorerjso.ctr = {
   
   hideThemeInfoForTabs: function(){
 	setTimeout(function(){
-		try {
-		  if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled')!=false){
-			document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'visible';
-			document.getElementById('ctraddon_pw_tabmenulist').disabled = true;
-		  } else if(classicthemerestorerjso.ctr.fxdefaulttheme) {
-			  document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
-			  document.getElementById('ctraddon_pw_tabmenulist').disabled = false;
+		//try {
+		  if(classicthemerestorerjso.ctr.appversion < 40) {
+			try {
+			  if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled')!=false){
+				document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'visible';
+				document.getElementById('ctraddon_pw_tabmenulist').disabled = true;
+			  } else if(classicthemerestorerjso.ctr.fxdefaulttheme) {
+				document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
+				document.getElementById('ctraddon_pw_tabmenulist').disabled = false;
+			  }
+			} catch(e) {}
+		  } else {
+			  try {
+				if(Services.prefs.getBranch("lightweightThemes.").getCharPref('selectedThemeID')=='firefox-devedition@mozilla.org'){
+				  document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'visible';
+				  document.getElementById('ctraddon_pw_tabmenulist').disabled = true;
+				} else if(classicthemerestorerjso.ctr.fxdefaulttheme) {
+				  document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
+				  document.getElementById('ctraddon_pw_tabmenulist').disabled = false;
+				}
+			  } catch(e) {}
+			  
 		  }
-		} catch(e) {}
+		//} catch(e) {}
 	},100);
   },
-  
+
   unsetTabColorsAndMore: function() {
 	this.prefs.setBoolPref('tabcolor_def',false);
 	this.prefs.setBoolPref('tabcolor_act',false);

@@ -446,8 +446,8 @@
 				        oncommand="gCyberfoxCustom.restartBrowser();"/>					  
 			<menuitem id="appmenu-quit"
 					  class="menuitem-iconic ctraddon_windowsonly"
-					  label="&quitApplicationCmdWin.label;"
-					  accesskey="&quitApplicationCmdWin.accesskey;"
+					  label="&quitApplicationCmdWin.label;&quitApplicationCmdWin2.label;"
+					  accesskey="&quitApplicationCmdWin.accesskey;&quitApplicationCmdWin2.accesskey;"
 					  command="cmd_quitApplication"/>
 			<menuitem id="appmenu-quit"
 					  class="menuitem-iconic ctraddon_linuxonly"
@@ -677,8 +677,8 @@
 					<menuitem id="appmenu_openHelp"
 							  oncommand="openHelpLink('/index.php')"
 							  onclick="checkForMiddleClick(this, event);"
-							  label="&productHelp.label;"
-							  accesskey="&productHelp.accesskey;"/>
+						  label="&productHelp.label;&productHelp2.label;"
+						  accesskey="&productHelp.accesskey;&productHelp2.accesskey;"/>
 					<menuitem id="appmenu_gettingStarted"
 							  label="&appMenuGettingStarted.label;"
 							  oncommand="gBrowser.loadOneTab('https://8pecxstudios.com/', {inBackground: false});"
@@ -705,8 +705,8 @@
 							  oncommand="safeModeRestart();"/>
 					<menuseparator/>
 					<menuitem id="appmenu_about"
-							  accesskey="&aboutProduct.accesskey;"
-							  label="&aboutProduct.label;"
+						  accesskey="&aboutProduct.accesskey;&aboutProduct2.accesskey;"
+						  label="&aboutProduct.label;&aboutProduct2.label;"
 							  oncommand="openAboutDialog();"/>
 				  </menupopup>
 				</menu>

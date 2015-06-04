@@ -276,7 +276,7 @@
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – offre un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ – place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
 <!ENTITY Ctr_fx38reader		"&brandShortName; 38+ offre un mode de lecture d’articles. Si cette option est décochée, ce mode est désactivé et l’icône est enlevée de la barre d’adresse.">
-<!ENTITY Ctr_fx38pocket		"&brandShortName; 38+ offre le mode « sac de rangement » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevée des barres d’outils.">
+<!ENTITY Ctr_fx38pocket		"&brandShortName; 38.0.5+ offre le mode « sac de rangement » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevée des barres d’outils.">
 <!ENTITY Ctr_e_omtc			"Problèmes de composition asynchrone (« OMTC »)">
 <!ENTITY Ctr_e_searchui		"Apparence et fonctionnement de la recherche">
 <!ENTITY Ctr_e_loop			"Appels et conversations">
