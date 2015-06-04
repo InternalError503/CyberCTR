@@ -212,6 +212,15 @@ classicthemerestorerjs.ctr = {
 		this._branch.removeObserver('', this);
 	};
 	
+	//Pocket (Restart Required)
+	try{	
+		if (Services.prefs.getBoolPref("browser.pocket.enabled")) {
+			classicthemerestorerjs.ctr.loadUnloadCSS("nopocket",false);
+		}else{
+			classicthemerestorerjs.ctr.loadUnloadCSS("nopocket",true);
+		}
+	} catch(e){}	
+	
 	var ctrSettingsListener_forDevtheme = new PrefListener(
 	  "browser.devedition.theme.",
 	  function(branch, name) {
@@ -3168,7 +3177,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenosnippets": 					manageCSS("abouthomenosnippets.css");	break;
 		case "abouthomeanimate": 						manageCSS("abouthomeanimate.css");	break;
 		case "rndadonssearch": 						manageCSS("rndadonssearch.css");	break;
-		
+		case "nopocket": 						manageCSS("nopocket.css"); break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
