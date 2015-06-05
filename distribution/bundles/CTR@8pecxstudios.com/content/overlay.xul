@@ -676,11 +676,11 @@
 					onclick="if(classicthemerestorerjs.ctr.prefs.getBoolPref('appbclmmenus')
 								&amp;&amp; event.button=='0'
 								&amp;&amp; event.originalTarget.getAttribute('splitmenu')=='true')
-								{openHelpLink('/index.php');document.getElementById('appmenu-popup').hidePopup();}"
+								{openUILink('https://8pecxstudios.com/Forums/index.php');document.getElementById('appmenu-popup').hidePopup();}"
 					class="menu-iconic">
 				  <menupopup id="appmenu_helpMenupopup" onpopupshowing="buildHelpMenu();">
 					<menuitem id="appmenu_openHelp"
-							  oncommand="openHelpLink('/index.php')"
+							  oncommand="openUILink('https://8pecxstudios.com/Forums/index.php')"
 							  onclick="checkForMiddleClick(this, event);"
 						  label="&productHelp.label;&productHelp2.label;"
 						  accesskey="&productHelp.accesskey;&productHelp2.accesskey;"/>
