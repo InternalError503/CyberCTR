@@ -146,3 +146,5 @@
 <!-- Restart Browser Tweak -->
 <!ENTITY restartBrowser.label "Restart Browser">
 <!-- End Restart Browser Tweak -->
+
+<!ENTITY pocketMenuitem.label      "View Pocket List">
