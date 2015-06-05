@@ -186,8 +186,6 @@ classicthemerestorerjso.ctr = {
 	document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;
 	
 	//pref e10s tabs
-	document.getElementById('ctraddon_pw_e10stab_notd').disabled = true;
-	document.getElementById('ctraddon_pw_e10stab_notd').style.visibility = 'collapse';
 	document.getElementById('ctraddon_pw_e10stabs').disabled = true;
 	document.getElementById('ctraddon_pw_e10stabs').style.visibility = 'collapse';
 	document.getElementById('ctraddon_pw_e10stabsdescr').style.visibility = 'collapse';
@@ -483,7 +481,6 @@ classicthemerestorerjso.ctr = {
 	this.altTabsToolbarBgExtra(this.prefs.getBoolPref("alttabstb"));
 	this.ctrpwModeextra(this.prefs.getCharPref("nav_txt_ico"));
 	this.ctrpwDisableDevThemePrefsExtra(this.prefs.getBoolPref("nodevtheme"));
-	this.ctrShowE10sPrefForWindowPrefs();
 
 	
 	var closetab_value = this.prefs.getCharPref("closetab");
@@ -504,17 +501,7 @@ classicthemerestorerjso.ctr = {
 	}
 
 	this.onCtrPanelSelect();
-	
-	// if e10s is used show CTRs option to disable tab underlining
-	try{
-	  if (Services.prefs.getBranch("browser.tabs.remote.").getBoolPref("autostart") || 
-			Services.prefs.getBranch("browser.tabs.remote.autostart.").getBoolPref("1")) {
-		document.getElementById('ctraddon_pw_e10stab_notd').disabled = false;
-		document.getElementById('ctraddon_pw_e10stab_notd').style.visibility = 'visible';
-	  }
-	} catch(e) {}
 
-		
 		if (contexts.getBoolPref("classic")){
 			document.getElementById('ctraddon_pw_noconicons').disabled = true;
 		}else{
@@ -740,10 +727,10 @@ classicthemerestorerjso.ctr = {
 	
 	// reset Tab appearance, but keep last knows preference
 	setTimeout(function(){
-	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs','tabs_default');
+	  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_default');
 	},50);
 	setTimeout(function(){
-	  classicthemerestorerjso.ctr.prefs.setCharPref('tabs','tabs_squared');
+	  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_squared');
 	},100);
 	
 	// disable Aero (blue) toolbars preference
@@ -763,24 +750,7 @@ classicthemerestorerjso.ctr = {
 	  }
 	} catch(e) {}
   },
-  
-  ctrShowE10sPrefForWindowPrefs: function() {
-	try{
-	setTimeout(function(){
-	  if(Services.prefs.getBranch("app.update.").getCharPref("channel")=='nightly'
-			&& Services.prefs.getBranch("browser.preferences.").getBoolPref("inContent")==false) {
-		document.getElementById('ctraddon_pw_e10stabs').disabled = false;
-		document.getElementById('ctraddon_pw_e10stabs').style.visibility = 'visible';
-		document.getElementById('ctraddon_pw_e10stabsdescr').style.visibility = 'visible';
-	  } else {
-		document.getElementById('ctraddon_pw_e10stabs').disabled = true;
-		document.getElementById('ctraddon_pw_e10stabs').style.visibility = 'collapse';
-		document.getElementById('ctraddon_pw_e10stabsdescr').style.visibility = 'collapse';
-	  }
-	},100);
-	} catch(e) {}
-  },
-  
+ 
   hideThemeInfoForTabs: function(){
 	setTimeout(function(){
 		//try {
@@ -822,7 +792,7 @@ classicthemerestorerjso.ctr = {
 	if(this.prefs.getBoolPref('closeonleft')) {
 	  this.prefs.setBoolPref('closeonleft',false);
 	  setTimeout(function(){
-		classicthemerestorerjso.ctr.prefs.setBoolPref('closeonleft',true);
+		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref('closeonleft',true);
 	  },20);
 	}
   },
@@ -851,14 +821,14 @@ classicthemerestorerjso.ctr = {
 	document.getElementById('ctraddon_pw_bf_space').disabled = which;
 	document.getElementById('ctraddon_pw_hide_bf_popup').style.visibility = itemvis;
 	document.getElementById('ctraddon_pw_bf_space').style.visibility = itemvis;
-	if(classicthemerestorerjso.ctr.prefs.getBoolPref('smallnavbut')==false){
+	if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('smallnavbut')==false){
 	  document.getElementById('ctraddon_pw_nbcompact').disabled = which;
 	  document.getElementById('ctraddon_pw_nbcompact').style.visibility = itemvis;
 	}
   },
   
    ctrpwSNextra: function(which) {
-    if(classicthemerestorerjso.ctr.prefs.getBoolPref('backforward')){
+    if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('backforward')){
 	  var itemvis = 'collapse';
 	
       if(which==true) {
@@ -1082,7 +1052,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById("ctraddon_pw_starinurl").style.listStyleImage="unset";
 		document.getElementById("ctraddon_pw_feedinurl").style.listStyleImage="unset";
 		
-		if (classicthemerestorerjso.ctr.prefs.getBoolPref('starinurl'))
+		if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('starinurl'))
 		  document.getElementById('ctraddon_pw_bmanimation').disabled = true;
 		else document.getElementById('ctraddon_pw_bmanimation').disabled = false;
 	},1350);
@@ -1113,7 +1083,7 @@ classicthemerestorerjso.ctr = {
   classicCTRpreferences: function() {
 	this.resetCTRpreferences();
 	
-	if(classicthemerestorerjso.ctr.tmp_tu_active==false) classicthemerestorerjso.ctr.prefs.setIntPref("ctabwidth",250);
+	if(classicthemerestorerjso.ctr.tmp_tu_active==false) Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref("ctabwidth",250);
 	this.prefs.setBoolPref("panelmenucol",true);
 	this.prefs.setBoolPref("verifiedcolors",true);
 	this.prefs.setCharPref("findbar",'findbar_bottoma');
@@ -1132,12 +1102,12 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setBoolPref("tbconmenu",true);
 	
 	setTimeout(function(){
-		classicthemerestorerjso.ctr.prefs.setBoolPref("starinurl",true);
-		classicthemerestorerjso.ctr.prefs.setBoolPref("feedinurl",true);
+		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("starinurl",true);
+		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("feedinurl",true);
 	},1350);
 	
 	if (this.oswindows && classicthemerestorerjso.ctr.tmp_tu_active==false)
-		classicthemerestorerjso.ctr.prefs.setBoolPref("dblclnewtab",true);
+		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("dblclnewtab",true);
 	
 	this.needsBrowserRestart();
 
@@ -1165,7 +1135,6 @@ classicthemerestorerjso.ctr = {
 	
 	try {
 	  for (var i=0; i < preflist.length; i++) {
-		  
 		var index = preflist.indexOf(this.blacklist[i]);
 
 		if (index > -1) {
@@ -1192,8 +1161,6 @@ classicthemerestorerjso.ctr = {
 		 
 	// Add filter header
 	preferenceArray.push("CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers");	
-
-
 
 	// Filter preference type and return its value.
 	function prefValue(pref){
@@ -1371,11 +1338,11 @@ classicthemerestorerjso.ctr = {
 	  try {
 
 		if(parjson[i].preference.match(/extensions.classicthemerestorer./g)){
-			//To import previously generated preference export
+			//To import previously generated preference export.
 			setPrefValue(parjson[i].preference, parjson[i].value);
-		}else{
+		} else{
 			setPrefValue('extensions.classicthemerestorer.' + parjson[i].preference, parjson[i].value);
-		}	
+		}
 
 	  } catch(e) {
 		// Report errors to console
@@ -1437,7 +1404,6 @@ classicthemerestorerjso.ctr = {
 	  preference: [],
 	  value: []
 	};
-
 
 
 	function prefValue(pref){

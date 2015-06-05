@@ -231,7 +231,7 @@ classicthemerestorerjs.ctr = {
 
 		  case "enabled":
 			if (branch.getBoolPref("enabled") && classicthemerestorerjs.ctr.appversion < 40) {
-			  if(classicthemerestorerjs.ctr.prefs.getBoolPref("nodevtheme") && classicthemerestorerjs.ctr.appversion < 40) {
+			  if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("nodevtheme") && classicthemerestorerjs.ctr.appversion < 40) {
 				branch.setBoolPref("enabled",false);
 			  }
 			  else{
@@ -243,14 +243,14 @@ classicthemerestorerjs.ctr = {
 					classicthemerestorerjs.ctr.fxdevelopertheme=true;
 				  
 					setTimeout(function(){
-					  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_default');
+					  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_default');
 					},50);
 					setTimeout(function(){
-					  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_squared');
+					  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_squared');
 					},100);
 				  
-					if(classicthemerestorerjs.ctr.prefs.getBoolPref('aerocolors'))
-					  classicthemerestorerjs.ctr.prefs.setBoolPref('aerocolors',false);
+					if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('aerocolors'))
+					  Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref('aerocolors',false);
 				  
 				}
 			  }
@@ -285,7 +285,7 @@ classicthemerestorerjs.ctr = {
 		  case "selectedThemeID":
 			try{
 			  if (branch.getCharPref("selectedThemeID")=='firefox-devedition@mozilla.org' 
-				&& classicthemerestorerjs.ctr.prefs.getBoolPref("nodevtheme2")==false) {
+				&& Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("nodevtheme2")==false) {
 				
 				
 				try{
@@ -302,14 +302,14 @@ classicthemerestorerjs.ctr = {
 				}
 
 				setTimeout(function(){
-				  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_default');
+				  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_default');
 				},50);
 				setTimeout(function(){
-				  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_squared');
+				  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_squared');
 				},100);
 			  
-				if(classicthemerestorerjs.ctr.prefs.getBoolPref('aerocolors'))
-				  classicthemerestorerjs.ctr.prefs.setBoolPref('aerocolors',false);
+				if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('aerocolors'))
+				  Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref('aerocolors',false);
 			
 				classicthemerestorerjs.ctr.devthemeinterval = setInterval(function(){
 				
@@ -333,10 +333,10 @@ classicthemerestorerjs.ctr = {
 					classicthemerestorerjs.ctr.fxdevelopertheme=false;
 					
 					setTimeout(function(){
-					  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_default');
+					  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_default');
 					},50);
 					setTimeout(function(){
-					  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_squared');
+					  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_squared');
 					},100);
 				  }
 				  
@@ -415,7 +415,7 @@ classicthemerestorerjs.ctr = {
 			  // TreeStyleTabs add-on works better with tabs not on top, so this is enabled on reset/first run
 			  AddonManager.getAddonByID('treestyletab@piro.sakura.ne.jp', function(addon) {
 			if(addon && addon.isActive && classicthemerestorerjs.ctr.osstring=="WINNT"){
-				classicthemerestorerjs.ctr.prefs.setCharPref('tabsontop','false');
+				Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabsontop','false');
 				classicthemerestorerjs.ctr.fixThatTreeStyleBro();			
 				Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);											
 					}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);}
@@ -620,11 +620,6 @@ classicthemerestorerjs.ctr = {
 		  case "ctabwidth": case "ctabmwidth":
 			classicthemerestorerjs.ctr._updateTabWidth();
 		  break;
-
-		  case "e10stab_notd":
-			if (branch.getBoolPref("e10stab_notd")) classicthemerestorerjs.ctr.loadUnloadCSS("e10stab_notd",true);
-			  else classicthemerestorerjs.ctr.loadUnloadCSS("e10stab_notd",false);
-		  break;
 		  
 		  case "closetab":
 		  
@@ -768,7 +763,7 @@ classicthemerestorerjs.ctr = {
 		  case "nbiconsize":
 		  
 		    var currentAttribute = document.getElementById("nav-bar").getAttribute("iconsize");
-			var selectedAttribute = classicthemerestorerjs.ctr.prefs.getCharPref("nbiconsize");
+			var selectedAttribute = Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("nbiconsize");
 			
 			// if nav-bar current and CTRs selected attribute are both 'small', CTR does not need to change nav-bars attribute
 			if(currentAttribute=="small" && selectedAttribute=="small") {return;}
@@ -776,9 +771,9 @@ classicthemerestorerjs.ctr = {
 				// needs a delay or Cyberfox may override attribute in some cases
 				setTimeout(function(){
 				  try {
-					document.getElementById("nav-bar").setAttribute('iconsize',classicthemerestorerjs.ctr.prefs.getCharPref("nbiconsize"));
+					document.getElementById("nav-bar").setAttribute('iconsize',Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("nbiconsize"));
 				  } catch(e){}
-				},classicthemerestorerjs.ctr.prefs.getIntPref("nbisizedelay"));
+				},Services.prefs.getBranch("extensions.classicthemerestorer.").getIntPref("nbisizedelay"));
 				
 				window.addEventListener("load", function setCTRnavbariconsize(event){
 					window.removeEventListener("load", setCTRnavbariconsize, false);
@@ -786,9 +781,9 @@ classicthemerestorerjs.ctr = {
 					// needs a delay or Cyberfox may override attribute in some cases
 					setTimeout(function(){
 					  try {
-						document.getElementById("nav-bar").setAttribute('iconsize',classicthemerestorerjs.ctr.prefs.getCharPref("nbiconsize"));
+						document.getElementById("nav-bar").setAttribute('iconsize',Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("nbiconsize"));
 					  } catch(e){}
-					},classicthemerestorerjs.ctr.prefs.getIntPref("nbisizedelay"));
+					},Services.prefs.getBranch("extensions.classicthemerestorer.").getIntPref("nbisizedelay"));
 
 				},false);
 			}
@@ -1438,11 +1433,11 @@ classicthemerestorerjs.ctr = {
 			  },400);
 			} else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_pen",false);
 			
-			if(classicthemerestorerjs.ctr.prefs.getBoolPref("tabfbold_hov"))
+			if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tabfbold_hov"))
 			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",true);
 			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",false);
 				
-			if(classicthemerestorerjs.ctr.prefs.getBoolPref("tabfita_hov"))
+			if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tabfita_hov"))
 			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",true);
 			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",false);
 			
@@ -1485,11 +1480,11 @@ classicthemerestorerjs.ctr = {
 			  },400);
 			} else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",false);
 			
-			if(classicthemerestorerjs.ctr.prefs.getBoolPref("tabfbold_hov"))
+			if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tabfbold_hov"))
 			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",true);
 			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",false);
 				
-			if(classicthemerestorerjs.ctr.prefs.getBoolPref("tabfita_hov"))
+			if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tabfita_hov"))
 			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",true);
 			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",false);
 
@@ -1753,12 +1748,12 @@ classicthemerestorerjs.ctr = {
 
 		  case "dblclnewtab":
 			
-			if (classicthemerestorerjs.ctr.prefs.getBoolPref("dblclnewtab")==true && classicthemerestorerjs.ctr.osstring=="WINNT") {
+			if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("dblclnewtab")==true && classicthemerestorerjs.ctr.osstring=="WINNT") {
 			
 				document.getElementById("TabsToolbar").addEventListener("dblclick", function openNewTabOnDoubleClick(e) {
 				
 					// remove listener, if the preference got disabled in-between
-					if (classicthemerestorerjs.ctr.prefs.getBoolPref("dblclnewtab")==false) {
+					if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("dblclnewtab")==false) {
 						document.getElementById("TabsToolbar").removeEventListener("dblclick", openNewTabOnDoubleClick, false);
 						return;
 					}
@@ -1785,19 +1780,19 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "hidetbwot":
-			if (classicthemerestorerjs.ctr.prefs.getBoolPref("hidetbwot"))
+			if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwot"))
 		      classicthemerestorerjs.ctr.hideTabsToolbarWithOneTab();
 		  break;
 
 		  case "faviconurl": case "padlockex":
-			if (classicthemerestorerjs.ctr.prefs.getBoolPref("faviconurl"))
+			if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("faviconurl"))
 		      classicthemerestorerjs.ctr.favIconinUrlbarCTR();
 		  break;
 		  
 		  case "padlock":
-			if (classicthemerestorerjs.ctr.prefs.getBoolPref("faviconurl"))
+			if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("faviconurl"))
 		      classicthemerestorerjs.ctr.favIconinUrlbarCTR();
-			else if (classicthemerestorerjs.ctr.prefs.getCharPref("padlock")!="padlock_default"){
+			else if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock")!="padlock_default"){
 
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_default',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_classic',false);
@@ -1806,11 +1801,11 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_classic',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_modern',false);
 
-				if (classicthemerestorerjs.ctr.prefs.getCharPref("padlock")=="padlock_none")
+				if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock")=="padlock_none")
 					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_none",true);
-				if (classicthemerestorerjs.ctr.prefs.getCharPref("padlock")=="padlock_classic")
+				if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock")=="padlock_classic")
 					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_classic",true);
-				if (classicthemerestorerjs.ctr.prefs.getCharPref("padlock")=="padlock_modern")
+				if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock")=="padlock_modern")
 					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_modern",true);
 
 			} else {
@@ -2075,7 +2070,7 @@ classicthemerestorerjs.ctr = {
 
 		  case "navbarbuttons":
 			if (branch.getCharPref("navbarbuttons")!="nabbuttons_off") {
-			  classicthemerestorerjs.ctr.prefs.setBoolPref('smallnavbut',false);
+			  Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref('smallnavbut',false);
 			}
 			classicthemerestorerjs.ctr.checkAppbuttonOnNavbar();
 			
@@ -2119,7 +2114,7 @@ classicthemerestorerjs.ctr = {
 	// MacOSX requires extra checks to not load CTRs tab styles for (complete) themes by accident
 	if (classicthemerestorerjs.ctr.osstring=="Darwin") {
 		if(this.fxdefaulttheme==false) {
-			classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_default');
+			Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_default');
 		} else if(this.fxdefaulttheme==true){
 			var devthemeosx=false;
 			try {
@@ -2131,7 +2126,7 @@ classicthemerestorerjs.ctr = {
 			if(classicthemerestorerjs.ctr.fxdevelopertheme==true) devthemeosx=true;
 		  
 			if(devthemeosx==true)			
-			  classicthemerestorerjs.ctr.prefs.setCharPref('tabs','tabs_default');
+			  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabs','tabs_default');
 		}
 	}
 	
@@ -2206,7 +2201,7 @@ classicthemerestorerjs.ctr = {
 
 	
 		var buttontitle = brandName; // init with default title
-		var custombuttontitle = classicthemerestorerjs.ctr.prefs.getCharPref('appbuttontxt');
+		var custombuttontitle = Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref('appbuttontxt');
 		
 		var converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"].createInstance(Ci.nsIScriptableUnicodeConverter);
 		converter.charset = 'UTF-8';
@@ -2236,7 +2231,7 @@ classicthemerestorerjs.ctr = {
 		// handle 'double click to close current window' option
 		ctr_titlebarbutton.addEventListener("dblclick",  function appbuttonCloseCurrentWindow() {
 
-		  if(classicthemerestorerjs.ctr.prefs.getBoolPref("dblclclosefx"))
+		  if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("dblclclosefx"))
 			BrowserTryToCloseWindow();
 
 		}, false);
@@ -2272,11 +2267,11 @@ classicthemerestorerjs.ctr = {
   createAdditionalToolbars: function() {
 
 	// get amount of toolbars user wants to use
-	var extrabars_num=classicthemerestorerjs.ctr.prefs.getIntPref('am_extrabars');
+	var extrabars_num=Services.prefs.getBranch("extensions.classicthemerestorer.").getIntPref('am_extrabars');
 	
 	// reset unsupported values
-	if(extrabars_num<0) {extrabars_num=0; classicthemerestorerjs.ctr.prefs.setIntPref('am_extrabars',extrabars_num);}
-	if(extrabars_num>20) {extrabars_num=20; classicthemerestorerjs.ctr.prefs.setIntPref('am_extrabars',extrabars_num);}
+	if(extrabars_num<0) {extrabars_num=0; Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('am_extrabars',extrabars_num);}
+	if(extrabars_num>20) {extrabars_num=20; Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('am_extrabars',extrabars_num);}
 	
 	// only try to add additional toolbar(s), if user enables at least one toolbar
 	if(extrabars_num>0) {
@@ -2384,7 +2379,7 @@ classicthemerestorerjs.ctr = {
   },
   
   openAThrobberUrl: function() {
-	var newathrobberurl = classicthemerestorerjs.ctr.prefs.getCharPref("athrobberurl");
+	var newathrobberurl = Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("athrobberurl");
 	if(newathrobberurl!="") gBrowser.selectedTab = gBrowser.addTab(newathrobberurl);
   },
   
@@ -2410,8 +2405,8 @@ classicthemerestorerjs.ctr = {
 	
 	var appbutton = false;
 	try {
-	  if (classicthemerestorerjs.ctr.prefs.getCharPref("appbutton")=="appbutton_v1"
-		  || classicthemerestorerjs.ctr.prefs.getCharPref("appbutton")=="appbutton_v1wt")
+	  if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("appbutton")=="appbutton_v1"
+		  || Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("appbutton")=="appbutton_v1wt")
 	   appbutton = true
 	} catch(e){}
 	
@@ -2423,7 +2418,7 @@ classicthemerestorerjs.ctr = {
 
 
 	/* make sure popup position gets adjusted, if appbutton is on nav-bar in normal button mode */
-	if (classicthemerestorerjs.ctr.prefs.getBoolPref("smallnavbut")==false && cstbb==false
+	if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("smallnavbut")==false && cstbb==false
 		&& classicthemerestorerjs.ctr.fxdefaulttheme==true && appbutton==true) {
 			setTimeout(function(){
 			  try{
@@ -2456,13 +2451,13 @@ classicthemerestorerjs.ctr = {
 	  if(gBrowser.tabContainer.tabbrowser.visibleTabs.length < 2) {
 		
 		// optionally reduces delay on startup (because it can cause glitches with Windows Classic visual style)
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref("hidetbwote"))
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote"))
 		  document.getElementById("TabsToolbar").style.visibility = 'collapse';
 		else
 		  document.getElementById("TabsToolbar").collapsed = true;
 		
 		// correct titlebar appearance, if the user wants it (not required for all visual styles)
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref("hidetbwote2")) {
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote2")) {
 		
 		  if(classicthemerestorerjs.ctr.osstring=="WINNT" && tabsintitlebar==true){ // Windows
 			if (document.getElementById("toolbar-menubar").getAttribute("autohide") == "true"
@@ -2477,12 +2472,12 @@ classicthemerestorerjs.ctr = {
 	  }
 	  else {
 		
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref("hidetbwote"))
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote"))
 		  document.getElementById("TabsToolbar").style.visibility = 'visible';
 		else
 		  document.getElementById("TabsToolbar").collapsed = false;
 		
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref("hidetbwote2")) {
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote2")) {
 			
 		  if(classicthemerestorerjs.ctr.osstring=="WINNT") 
 			document.getElementById("toolbar-menubar").style.marginBottom="unset";		
@@ -2521,8 +2516,8 @@ classicthemerestorerjs.ctr = {
 	function faviconInUrlbar(){
 	 
 	 var ppfavicon     = document.getElementById("page-proxy-favicon");
-	 var emptyfavicon1 = classicthemerestorerjs.ctr.prefs.getBoolPref("emptyfavicon");
-	 var emptyfavicon2 = classicthemerestorerjs.ctr.prefs.getBoolPref("emptyfavicon2");
+	 var emptyfavicon1 = Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("emptyfavicon");
+	 var emptyfavicon2 = Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("emptyfavicon2");
 	 
 	 if(gBrowser.selectedTab.image) {
 	  try {
@@ -2553,11 +2548,11 @@ classicthemerestorerjs.ctr = {
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_classic',false);
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_modern',false);
 	
-	if (classicthemerestorerjs.ctr.prefs.getCharPref("padlock")!="padlock_none"){
-	  classicthemerestorerjs.ctr.loadUnloadCSS(classicthemerestorerjs.ctr.prefs.getCharPref("padlock"),true);
+	if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock")!="padlock_none"){
+	  classicthemerestorerjs.ctr.loadUnloadCSS(Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock"),true);
 	}
 	
-	if (classicthemerestorerjs.ctr.prefs.getBoolPref("padlockex")) classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra",true);
+	if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("padlockex")) classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra",true);
 	  else classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra",false);
   
   },
@@ -2633,12 +2628,12 @@ classicthemerestorerjs.ctr = {
   CTRextraLocationBarKeyset: function() {
 	setTimeout(function(){
 	  try{
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref('extraurlkeycb')) {
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('extraurlkeycb')) {
 		  document.getElementById("focusURLBar").setAttribute("command",'CtrExtension:ToggleUrlExtraBar');
 		}
 	  } catch(e){}
 	  try{
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref('extraurlkeycb')) {
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('extraurlkeycb')) {
 		  document.getElementById("focusURLBar2").setAttribute("command",'CtrExtension:ToggleUrlExtraBar');
 		}
 	  } catch(e){}
@@ -2649,7 +2644,7 @@ classicthemerestorerjs.ctr = {
   CTRextraSkipPrintPreview: function() {
 	setTimeout(function(){
 	  try{
-		if(classicthemerestorerjs.ctr.prefs.getBoolPref('skipprintpr')) {
+		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref('skipprintpr')) {
 		  classicthemerestorerjs.ctr.ctrGetId("print-button").setAttribute("command",'cmd_print');
 		  classicthemerestorerjs.ctr.ctrGetId("print-button").removeAttribute("oncommand");
 		}
@@ -2659,7 +2654,7 @@ classicthemerestorerjs.ctr = {
   
   // prevent developer theme from being enabled in Fx40+
   PreventDevThemeEnabling: function(){
-	if(classicthemerestorerjs.ctr.prefs.getBoolPref("nodevtheme2") && classicthemerestorerjs.ctr.appversion >= 40) {
+	if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("nodevtheme2") && classicthemerestorerjs.ctr.appversion >= 40) {
 
 	  try {
 		if (Services.prefs.getBranch("lightweightThemes.").getCharPref("selectedThemeID")=='firefox-devedition@mozilla.org') {
@@ -2687,8 +2682,8 @@ classicthemerestorerjs.ctr = {
   
   _updateTabWidth: function() {
 		
-	var minWidthValue = classicthemerestorerjs.ctr.prefs.getIntPref('ctabmwidth');
-	var maxWidthValue = classicthemerestorerjs.ctr.prefs.getIntPref('ctabwidth');
+	var minWidthValue = Services.prefs.getBranch("extensions.classicthemerestorer.").getIntPref('ctabmwidth');
+	var maxWidthValue = Services.prefs.getBranch("extensions.classicthemerestorer.").getIntPref('ctabwidth');
 
 	//remove the rule, if already inserted at the end of document.styleSheets[1]
 	try {
@@ -2768,13 +2763,13 @@ classicthemerestorerjs.ctr = {
   moveMenubar: function(mbarposition){
 
 	switch (mbarposition) {
-	  case "toolbar-menubar": _moveMenubar("toolbar-menubar"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'toolbar-menubar'); break;
-	  case "TabsToolbar": _moveMenubar("TabsToolbar"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'TabsToolbar'); break;
-	  case "nav-bar": _moveMenubar("nav-bar"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'nav-bar'); break;
-	  case "ctraddon_extra-bar": _moveMenubar("ctraddon_extra-bar"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'ctraddon_extra-bar'); break;
-	  case "PersonalToolbar": _moveMenubar("PersonalToolbar"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'PersonalToolbar'); break;
-	  case "ctraddon_addon-bar": _moveMenubar("ctraddon_addon-bar"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'ctraddon_addon-bar'); break;
-	  case "ctraddon_toolbar_dummy": _moveMenubar("ctraddon_toolbar_dummy"); classicthemerestorerjs.ctr.prefs.setCharPref("mbarpositionl",'ctraddon_toolbar_dummy'); break;
+	  case "toolbar-menubar": _moveMenubar("toolbar-menubar"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'toolbar-menubar'); break;
+	  case "TabsToolbar": _moveMenubar("TabsToolbar"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'TabsToolbar'); break;
+	  case "nav-bar": _moveMenubar("nav-bar"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'nav-bar'); break;
+	  case "ctraddon_extra-bar": _moveMenubar("ctraddon_extra-bar"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'ctraddon_extra-bar'); break;
+	  case "PersonalToolbar": _moveMenubar("PersonalToolbar"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'PersonalToolbar'); break;
+	  case "ctraddon_addon-bar": _moveMenubar("ctraddon_addon-bar"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'ctraddon_addon-bar'); break;
+	  case "ctraddon_toolbar_dummy": _moveMenubar("ctraddon_toolbar_dummy"); Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("mbarpositionl",'ctraddon_toolbar_dummy'); break;
 	}
 	
 	function _moveMenubar(new_menubar_pos){
@@ -2950,9 +2945,7 @@ classicthemerestorerjs.ctr = {
 			}
 		
 		break;
-		
-		case "e10stab_notd": 			manageCSS("e10s_tab_nounderline.css"); 	break;
-		
+	
 		case "closetab_active": 		manageCSS("closetab_active.css");  		break;
 		case "closetab_none": 			manageCSS("closetab_none.css");  		break;
 		case "closetab_forced": 		manageCSS("closetab_forced.css");  		break;
@@ -3736,8 +3729,8 @@ classicthemerestorerjs.ctr = {
 					var tb_color = this.prefs.getCharPref('ctabact2');
 					
 					if(classicthemerestorerjs.ctr.osstring=="Darwin") {
-					  if (classicthemerestorerjs.ctr.prefs.getCharPref("tabsontop")=='false'
-							|| classicthemerestorerjs.ctr.prefs.getCharPref("tabsontop")=='false2')
+					  if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("tabsontop")=='false'
+							|| Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("tabsontop")=='false2')
 						if (this.prefs.getCharPref('tabs')!='tabs_curved')
 						  tb_color = this.prefs.getCharPref('ctabact1');
 					}
@@ -5093,7 +5086,7 @@ classicthemerestorerjs.ctr = {
   
   // open prefwindow and specific category
   additionalToolbars: function(){
-	classicthemerestorerjs.ctr.prefs.setIntPref('pref_actindx',6);
+	Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('pref_actindx',6);
 	
 	setTimeout(function(){
 	  classicthemerestorerjs.ctr.openCTRPreferences();
@@ -5111,14 +5104,14 @@ classicthemerestorerjs.ctr = {
   
   toggleCtrNavBar: function() {
     
-	if(classicthemerestorerjs.ctr.prefs.getBoolPref("hidenavbar")) {
-      classicthemerestorerjs.ctr.prefs.setBoolPref("hidenavbar",false);
+	if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidenavbar")) {
+      Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("hidenavbar",false);
 	  try{
 	    document.getElementById("toggle_nav-bar").setAttribute("checked",true);
 	  }catch(e){}
 	}
     else {
-	  classicthemerestorerjs.ctr.prefs.setBoolPref("hidenavbar",true);
+	  Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("hidenavbar",true);
 	  try{
 		document.getElementById("toggle_nav-bar").setAttribute("checked",false);
 	  }catch(e){}
@@ -5154,7 +5147,7 @@ classicthemerestorerjs.ctr = {
 		CustomizableUI.addWidgetToArea("ctraddon_bookmarks-menu-toolbar-button", CustomizableUI.AREA_BOOKMARKS);
 
 		if (classicthemerestorerjs.ctr.osstring=="WINNT" && Services.prefs.getBranch("browser.tabs.").getBoolPref("drawInTitlebar")) {
-		  classicthemerestorerjs.ctr.prefs.setCharPref("appbutton",'appbutton_v2');
+		  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref("appbutton",'appbutton_v2');
 		}
 
 	  } catch(e){}
