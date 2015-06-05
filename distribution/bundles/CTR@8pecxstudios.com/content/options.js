@@ -99,7 +99,7 @@ classicthemerestorerjso.ctr = {
 		}
 		
 		document.getElementById('ctraddon_pw_closeonleft').disabled = true;
-		document.getElementById('ctraddon_pw_closealt').disabled = true;
+		//document.getElementById('ctraddon_pw_closealt').disabled = true;
 		document.getElementById('ctraddon_pw_nbcompact').disabled = true;
 		document.getElementById('ctraddon_pw_tabc_act_tb').disabled = true;
 		document.getElementById('ctraddon_pw_aerocolors').disabled = true;
@@ -142,7 +142,7 @@ classicthemerestorerjso.ctr = {
 		}
 		
 		document.getElementById('ctraddon_pw_closeonleft').style.visibility = 'collapse';
-		document.getElementById('ctraddon_pw_closealt').style.visibility = 'collapse';
+		//document.getElementById('ctraddon_pw_closealt').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_nbcompact').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabc_act_tb').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_aerocolors').style.visibility = 'collapse';

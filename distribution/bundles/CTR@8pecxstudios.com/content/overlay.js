@@ -623,21 +623,15 @@ classicthemerestorerjs.ctr = {
 		  
 		  case "closetab":
 		  
-			var def_tcw = Services.prefs.getBranch("browser.tabs.").getIntPref("tabClipWidth") == 140;
-
 			classicthemerestorerjs.ctr.loadUnloadCSS('closetab_active',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closetab_none',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closetab_forced',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closetab_tb_end',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closetab_tb_start',false);
-			if (def_tcw==false) {
-			  Services.prefs.getBranch("browser.tabs.").setIntPref("tabClipWidth",140);
-			}
 			
 			if (branch.getCharPref("closetab")!="closetab_default"){
 			  
 			  if (branch.getCharPref("closetab")=="closetab_forced") {
-				Services.prefs.getBranch("browser.tabs.").setIntPref("tabClipWidth",1);
 				classicthemerestorerjs.ctr.loadUnloadCSS('closetab_forced',true);
 			  }
 			  else if (classicthemerestorerjs.ctr.appversion >= 31) {
@@ -716,6 +710,8 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_dark',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_white_nd',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_dark_nd',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_grey',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_grey_nd',false);
 		
 			if (branch.getCharPref("altabico")!="altabico_white"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altabico"),true);
@@ -2674,6 +2670,7 @@ classicthemerestorerjs.ctr = {
 	}
   },
   
+  // tab width stuff
   updateTabWidth: function() {
   	window.addEventListener("DOMWindowCreated", function load(event){
 		classicthemerestorerjs.ctr._updateTabWidth();  
@@ -3086,6 +3083,8 @@ classicthemerestorerjs.ctr = {
 		case "altabico_dark": 		manageCSS("alt_appbutton_icons.css");	break;
 		case "altabico_white_nd": 	manageCSS("alt_appbutton_icons2.css");	break;
 		case "altabico_dark_nd": 	manageCSS("alt_appbutton_icons3.css");	break;
+		case "altabico_grey": 		manageCSS("alt_appbutton_icons4.css");	break;
+		case "altabico_grey_nd": 	manageCSS("alt_appbutton_icons5.css");	break;
 		case "appbutmhi": 			manageCSS("appbuthigherposition.css");  break;
 		case "appbutbdl": 			manageCSS("appbutton_borderless.css");  break;
 		
