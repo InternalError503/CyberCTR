@@ -1265,8 +1265,6 @@ classicthemerestorerjso.ctr = {
   /* import CTR settings JSON*/
   importCTRpreferencesJSON: function() {
  
-	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
-
 	var parjson = classicthemerestorerjso.ctr.loadFromFile("json");
 
 	if (!parjson) return false;
@@ -1297,15 +1295,6 @@ classicthemerestorerjso.ctr = {
 	  }
 	}	
 
-	// Need to check if json is valid. If json not valid. don't continue and show error.
-	function IsJsonValid(text) {
-
-	  try { JSON.parse(text); }
-	  catch (e) { return false; }
-	  return true;
-
-	}				
-	
 	this.needsBrowserRestart();
 	
 	return true;
@@ -1359,6 +1348,16 @@ classicthemerestorerjso.ctr = {
 	return true;
 
   }, 
+  
+	// Need to check if json is valid. If json not valid. don't continue and show error.
+	IsJsonValid: function (aData) {
+	  try { 
+			JSON.parse(aData); 
+		}catch (e) { 
+			return false; 
+		}
+	  return true;
+	},	
   
 	saveToFile: function(aPattern, aType) {
 		try{
@@ -1419,7 +1418,8 @@ classicthemerestorerjso.ctr = {
 			if (aType === "txt" || aType === "json") {} else {
 			  return false;
 			}
-
+			
+			var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 			const nsIFilePicker = Components.interfaces.nsIFilePicker;
 			var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 			var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
@@ -1432,14 +1432,6 @@ classicthemerestorerjso.ctr = {
 			  fp.appendFilters(nsIFilePicker.filterText);
 			} else if (aType === "json") {
 			  fp.appendFilters(nsIFilePicker.filterAll);
-			}
-			
-			function IsJsonValid(text) {
-
-			  try { JSON.parse(text); }
-			  catch (e) { return false; }
-			  return true;
-
 			}
 
 			if (fp.show() != nsIFilePicker.returnCancel) {
@@ -1456,7 +1448,7 @@ classicthemerestorerjso.ctr = {
 				  break;
 				case "json":
 				  var text = input;
-				  if (!IsJsonValid(text)) {
+				  if (!classicthemerestorerjso.ctr.IsJsonValid(text)) {
 					alert(stringBundle.GetStringFromName("import.errorJSON"));
 					return false;
 				  } else {
