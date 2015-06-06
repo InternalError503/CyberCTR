@@ -4980,6 +4980,7 @@ classicthemerestorerjs.ctr = {
 					@-moz-document url("about:home") {\
 						:root {\
 							--main-text-color:'+this.prefs.getCharPref("abouthomecustombasecolor")+'!important;\
+							--main-text-colorb:'+this.prefs.getCharPref("abouthomecustombasecolor")+'!important;\
 						}\
 					}\
 				'), null, null);
