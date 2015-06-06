@@ -1210,36 +1210,8 @@ classicthemerestorerjso.ctr = {
 	}	  
 	  
 	// Use new less bulky export for text.
-	saveToFile(preferenceArray);
-	  
-	function saveToFile(patterns) {
-
-	  const nsIFilePicker = Components.interfaces.nsIFilePicker;
-	  var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-	  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
-
-	  fp.init(window, null, nsIFilePicker.modeSave);
-	  fp.defaultExtension = "txt";
-	  fp.defaultString = "CTRpreferences.txt";
-	  fp.appendFilters(nsIFilePicker.filterText);
-
-	  if (fp.show() != nsIFilePicker.returnCancel) {
-		let file = fp.file;
-		if (!/\.txt$/.test(file.leafName.toLowerCase()))
-		  file.leafName += ".txt";
-		if (file.exists())
-		  file.remove(true);
-		file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
-		stream.init(file, 0x02, 0x200, null);
-
-		for (var i = 0; i < patterns.length ; i++) {
-		  patterns[i]=patterns[i]+"\n";
-		  stream.write(patterns[i], patterns[i].length);
-		}
-		stream.close();
-	  }
-	}
-	  
+	classicthemerestorerjso.ctr.saveToFile(preferenceArray, "txt");
+  
 	return true;
   },
   
@@ -1248,7 +1220,7 @@ classicthemerestorerjso.ctr = {
  
 	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
   
-	var pattern = loadFromFile();
+	var pattern = classicthemerestorerjso.ctr.loadFromFile("txt");
 
 	if (!pattern) return false;
 	   
@@ -1284,32 +1256,7 @@ classicthemerestorerjso.ctr = {
 		 this.prefs.setIntPref(''+prefName+'',prefValue);
 	  }
 	}
-	   
-	function loadFromFile() {
 
-	   const nsIFilePicker = Components.interfaces.nsIFilePicker;
-	   var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-	   var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-	   var streamIO = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
-
-	   fp.defaultExtension = "txt";
-	   fp.defaultString = "CTRpreferences.txt";
-	   fp.init(window, null, nsIFilePicker.modeOpen);
-	   fp.appendFilters(nsIFilePicker.filterText);
-
-	   if (fp.show() != nsIFilePicker.returnCancel) {
-		  stream.init(fp.file, 0x01, parseInt("0444", 8), null);
-		  streamIO.init(stream);
-		  var input = streamIO.read(stream.available());
-		  streamIO.close();
-		  stream.close();
-
-		  var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
-		  return input.split(linebreak);
-	   }
-	   return null;
-	}
-	
 	this.needsBrowserRestart();
 	
 	return true;
@@ -1320,7 +1267,7 @@ classicthemerestorerjso.ctr = {
  
 	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 
-	var parjson = loadFromFile();
+	var parjson = classicthemerestorerjso.ctr.loadFromFile("json");
 
 	if (!parjson) return false;
 	
@@ -1358,37 +1305,6 @@ classicthemerestorerjso.ctr = {
 	  return true;
 
 	}				
-	 
-	function loadFromFile() {
-
-	   const nsIFilePicker = Components.interfaces.nsIFilePicker;
-	   var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-	   var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-	   var streamIO = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
-
-	   fp.defaultExtension = "json";
-	   fp.defaultString = "CTRpreferences.json";
-	   fp.init(window, null, nsIFilePicker.modeOpen);
-	   fp.appendFilters(nsIFilePicker.filterAll);
-
-	   if (fp.show() != nsIFilePicker.returnCancel) {
-		  stream.init(fp.file, 0x01, parseInt("0444", 8), null);
-		  streamIO.init(stream);
-		  var input = streamIO.read(stream.available());
-		  streamIO.close();
-		  stream.close();
-
-		 var text = input;
-
-		  if(!IsJsonValid(text)){
-			  alert(stringBundle.GetStringFromName("import.errorJSON"));
-			  return false;
-		  } else{
-			return JSON.parse(input);
-		  }
-	   }
-	   return null;
-	}
 	
 	this.needsBrowserRestart();
 	
@@ -1438,39 +1354,123 @@ classicthemerestorerjso.ctr = {
 
 	}
 
-	saveToFile(preferenceArray);
-	  
-	function saveToFile(patterns) {
-
-	  const nsIFilePicker = Components.interfaces.nsIFilePicker;
-	  var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-	  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
-
-	  fp.init(window, null, nsIFilePicker.modeSave);
-	  fp.defaultExtension = "json";
-	  fp.defaultString = "CTRpreferences.json";
-	  fp.appendFilters(nsIFilePicker.filterAll);
-
-	  if (fp.show() != nsIFilePicker.returnCancel) {
-		let file = fp.file;
-		if (!/\.json$/.test(file.leafName.toLowerCase()))
-		  file.leafName += ".json";
-		if (file.exists())
-		  file.remove(true);
-		file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
-		stream.init(file, 0x02, 0x200, null);
-
-		var patternItems = JSON.stringify(patterns.preference);
-
-		stream.write(patternItems, patternItems.length)
-
-		stream.close();
-	  }
-	}
+	classicthemerestorerjso.ctr.saveToFile(preferenceArray, "json");
 
 	return true;
 
   }, 
+  
+	saveToFile: function(aPattern, aType) {
+		try{
+			if (aType === "txt" || aType === "json") {} else {
+			  return false;
+			}
+
+			const nsIFilePicker = Components.interfaces.nsIFilePicker;
+			var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+			var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
+
+			fp.init(window, null, nsIFilePicker.modeSave);
+			fp.defaultExtension = aType;
+			fp.defaultString = "CTRpreferences." + aType;
+
+			if (aType === "txt") {
+			  fp.appendFilters(nsIFilePicker.filterText);
+			} else if (aType === "json") {
+			  fp.appendFilters(nsIFilePicker.filterAll);
+			}
+
+			if (fp.show() != nsIFilePicker.returnCancel) {
+			  let file = fp.file;
+			  if (aType === "txt") {
+				if (!/\.txt$/.test(file.leafName.toLowerCase()))
+				  file.leafName += ".txt";
+			  } else if (aType === "json") {
+				if (!/\.json$/.test(file.leafName.toLowerCase()))
+				  file.leafName += ".json";
+			  }
+			  if (file.exists())
+				file.remove(true);
+			  file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
+			  stream.init(file, 0x02, 0x200, null);
+
+			  switch (aType) {
+				case "txt":
+				  for (var i = 0; i < aPattern.length; i++) {
+					aPattern[i] = aPattern[i] + "\n";
+					stream.write(aPattern[i], aPattern[i].length);
+				  }
+				  break;
+				case "json":
+				  var patternItems = JSON.stringify(aPattern.preference);
+				  stream.write(patternItems, patternItems.length)
+				  break;
+			  }
+			  stream.close();
+			}
+			return true;
+		  } catch(e) {
+			Components.utils.reportError(e);
+		  }
+	  },
+
+	  loadFromFile: function(aType) {
+		  try{
+			if (aType === "txt" || aType === "json") {} else {
+			  return false;
+			}
+
+			const nsIFilePicker = Components.interfaces.nsIFilePicker;
+			var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+			var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
+			var streamIO = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
+
+			fp.defaultExtension = aType;
+			fp.defaultString = "CTRpreferences." + aType;
+			fp.init(window, null, nsIFilePicker.modeOpen);
+			if (aType === "txt") {
+			  fp.appendFilters(nsIFilePicker.filterText);
+			} else if (aType === "json") {
+			  fp.appendFilters(nsIFilePicker.filterAll);
+			}
+			
+			function IsJsonValid(text) {
+
+			  try { JSON.parse(text); }
+			  catch (e) { return false; }
+			  return true;
+
+			}
+
+			if (fp.show() != nsIFilePicker.returnCancel) {
+			  stream.init(fp.file, 0x01, parseInt("0444", 8), null);
+			  streamIO.init(stream);
+			  var input = streamIO.read(stream.available());
+			  streamIO.close();
+			  stream.close();
+
+			  switch (aType) {
+				case "txt":
+				  var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+				  return input.split(linebreak);
+				  break;
+				case "json":
+				  var text = input;
+				  if (!IsJsonValid(text)) {
+					alert(stringBundle.GetStringFromName("import.errorJSON"));
+					return false;
+				  } else {
+					return JSON.parse(input);
+				  }
+				  break;
+			  }
+
+			}
+			return null;
+		  } catch(e) {
+			Components.utils.reportError(e);
+		  }
+	  },
  
   onCtrPanelSelect: function() {
     let ctrAddonPrefBoxTab = document.getElementById("CtrRadioGroup");
