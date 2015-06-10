@@ -280,6 +280,8 @@
 	
 	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>
 	
+	<preference id="ctraddon_cmovableurlbar"	name="extensions.classicthemerestorer.movableurlbar"	type="bool"	instantApply="true"/>	
+	
 	</preferences>
 
 
@@ -956,6 +958,14 @@
 		<checkbox label="&Ctr_urlbardropm;"	 preference="ctraddon_urlbardropm"  id="ctraddon_pw_urlbardropm"/>
 		<checkbox label="&Ctr_hideprbutton;" preference="ctraddon_hideprbutton" id="ctraddon_pw_urlbarpblocked"/>
 		<checkbox label="&Ctr_extraurlkeycb;&openCmd.commandkey; &amp; Alt+&urlbar.accesskey; [Windows/Linux])"	preference="ctraddon_extraurlkeycb" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
+	  </groupbox>
+	  
+		<groupbox>
+		<caption  label="&Ctr_urlbar; *" class="ctraddon_topic"/>
+		<checkbox label="&movableurlbar.label;" preference="ctraddon_cmovableurlbar" id="ctraddon_movableurlbar"/>
+		<description class="ctraddon_font1">&movableurlbar.warning0;</description>
+		<description class="ctraddon_font1">&movableurlbar.warning1;</description>
+		<description class="ctraddon_font1">&movableurlbar.warning2;</description>
 	  </groupbox>
 		
 	  <groupbox>

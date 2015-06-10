@@ -41,7 +41,14 @@ classicthemerestorerjso.ctr = {
 		],	
 
   initprefwindow: function() {
-  
+
+	// Movable url-bar (Note: If user moves url-bar to panel UI or customize pallet then restart it will break browser).
+	try{  
+		Application.prefs.get("extensions.classicthemerestorer.movableurlbar").events.addListener("change", function(aEvent){			
+			classicthemerestorerjso.ctr.needsBrowserRestart();						
+		});
+	} catch(e){}	  
+	
 	// adds a new global attribute 'defaultfxtheme' -> better parting css for default and non-default themes
 	try{
 		if (this.fxdefaulttheme) document.getElementById("ClassicTRoptionsPane").setAttribute('defaultfxtheme',true);

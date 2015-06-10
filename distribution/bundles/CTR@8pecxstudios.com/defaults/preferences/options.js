@@ -86,6 +86,7 @@ pref("extensions.classicthemerestorer.invicobookbar",false);
 pref("extensions.classicthemerestorer.invicoaddonbar",false);
 
 pref("extensions.classicthemerestorer.athrobberurl","");
+pref("extensions.classicthemerestorer.movableurlbar", false);
 
 //Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");

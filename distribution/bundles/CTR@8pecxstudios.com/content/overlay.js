@@ -85,6 +85,18 @@ classicthemerestorerjs.ctr = {
   devthemeinterval: 	null,
 
   init: function() {
+	  
+	// Movable url-bar (Note: If user moves url-bar to panel UI or customize pallet then restart it will break browser).
+	try{
+		var uriBar = document.getElementById("urlbar-container");
+			if (uriBar &&  typeof(uriBar)  != "undefined" || uriBar  != null){  
+				if (Services.prefs.getBoolPref("extensions.classicthemerestorer.movableurlbar") === false){
+					uriBar.removeAttribute("removable");
+				}else{
+					uriBar.setAttribute("removable", true);	
+				}	
+			}
+	} catch(e){}	  
   
 	// remove default panel ui button in favour of CTRs movable duplicate
 	try{
