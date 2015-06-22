@@ -86,6 +86,7 @@
 <!ENTITY Ctr_appbuttonc_a	"藍色按鈕 (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"黑色按鈕 (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"透明按鈕">
+<!ENTITY Ctr_appbuttonc_p	"藍色按鈕 (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"紅色按鈕">
 <!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"綠色按鈕">
@@ -192,6 +193,7 @@
 <!ENTITY Ctr_starinurl		"星形書籤按鈕併入網址列">
 <!ENTITY Ctr_feedinurl		"網址列中顯示消息來源訂閱按鈕">
 <!ENTITY Ctr_hideurelstop	"隱藏網址列中的停止與重新載入按鈕">
+<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
 <!ENTITY Ctr_urlbardropm	"移動下拉式三角按鈕到網址列末端">
 <!ENTITY Ctr_hideprbutton	"當彈出型廣告視窗被封鎖時，不顯示通知圖示">
 <!ENTITY Ctr_urlbar_ib		"網站識別鈕 (身份區塊)">
@@ -306,6 +308,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"用新隱私視窗開啟">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Getting started">
+<!ENTITY goCmd.label		"Go">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey            "B">

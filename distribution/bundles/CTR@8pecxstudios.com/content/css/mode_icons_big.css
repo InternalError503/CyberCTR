@@ -13,6 +13,7 @@
 	  list-style-image: url(chrome://classic_theme_restorer/content/images/menuPanel3.png) !important;
 	}
 	
+	#nav-bar #ctraddon_go-button > .toolbarbutton-icon,
 	#nav-bar #ctraddon_forward-button > .toolbarbutton-icon{
 	  -moz-image-region: rect(0px, 96px, 32px, 64px) !important;
 	  list-style-image: url(chrome://classic_theme_restorer/content/images/menuPanel3.png) !important;
@@ -142,6 +143,7 @@
 	}
 	toolbar #PanelUI-menu-button .toolbarbutton-badge-container image{
 	  min-width:32px !important;
+      min-height:32px !important;
 	}
 
 	#nav-bar #cut-button {
@@ -178,10 +180,10 @@
 	  list-style-image: url("chrome://classic_theme_restorer/content/images/menuPanel2.png") !important;
 	  -moz-image-region: rect(0px, 256px, 32px, 224px) !important;
 	}
-
-	#nav-bar #bookmarks-menu-button[cui-areatype="toolbar"] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
+	
+	#nav-bar #bookmarks-menu-button > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
 	  list-style-image: url("chrome://classic_theme_restorer/content/images/menuPanel2.png") !important;
-	  -moz-image-region: rect(0px, 286px, 32px, 256px) !important;
+	  -moz-image-region: rect(0px, 288px, 32px, 256px) !important;
 	}
 
 	#nav-bar #pocket-button[cui-areatype="toolbar"] {

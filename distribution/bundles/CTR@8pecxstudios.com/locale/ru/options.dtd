@@ -50,7 +50,7 @@
 <!ENTITY Ctr_tabheightinfo	"Низкое значение вызовет сбои в развёрнутом режиме!">
 <!ENTITY Ctr_tabmaxwidth	"Макс. ширина:">
 <!ENTITY Ctr_tabminwidth	"Мин. ширина:">
-<!ENTITY Ctr_tabclipwidth	"Clip-width:">
+<!ENTITY Ctr_tabclipwidth	"Ширина обрезки:">
 <!ENTITY Ctr_tabclipwidthI	"Вручную присвоить 'clip width' значение '1' !">
 <!ENTITY Ctr_tabwidthinfo	"Минимальная и максимальная ширина вкладок изменяются расширением TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Минимальная и максимальная ширина вкладок изменяются расширением TabUtilities">
@@ -85,6 +85,7 @@
 <!ENTITY Ctr_appbuttonc_a	"Синяя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Черная кнопка (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозрачная кнопка">
+<!ENTITY Ctr_appbuttonc_p	"Голубая кнопка (Palemoon)">
 <!ENTITY Ctr_appbuttonc_d	"&brandShortName; (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_r	"Красная кнопка">
 <!ENTITY Ctr_appbuttonc_s	"Оранжево-розовая кнопка">
@@ -192,6 +193,7 @@
 <!ENTITY Ctr_starinurl		"Звёздочка в адресной строке">
 <!ENTITY Ctr_feedinurl		"Кнопка RSS в адресной строке">
 <!ENTITY Ctr_hideurelstop	"Скрыть кнопку «Остановить и перезагрузить»">
+<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
 <!ENTITY Ctr_urlbardropm	"Переместить дропмаркер в конец адресной строки">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_urlbar_ib		"Кнопка подлинности сайта">
@@ -306,6 +308,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"Открыть в новом приватном окне">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Приступаем к работе">
+<!ENTITY goCmd.label		"Go">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey            "Н">

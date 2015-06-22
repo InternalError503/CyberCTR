@@ -86,6 +86,7 @@
 <!ENTITY Ctr_appbuttonc_a	"Синя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Чорна кнопка (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозора кнопка">
+<!ENTITY Ctr_appbuttonc_p	"Блакитна кнопка (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Червона кнопка">
 <!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Зелена кнопка">
@@ -144,7 +145,7 @@
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
-<!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
+<!ENTITY Ctr_alt_addonsp	"Сторінка «Детальніше» в Додатках: альтернативний вигляд">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: вигляд меню панелі">
@@ -192,6 +193,7 @@
 <!ENTITY Ctr_starinurl		"Зірка">
 <!ENTITY Ctr_feedinurl		"Кнопка RSS">
 <!ENTITY Ctr_hideurelstop	"Приховати кнопку «Зупинити та Перезавантажити»">
+<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
 <!ENTITY Ctr_urlbardropm	"Перемістити маркер-трикутник в кінець рядку адреси">
 <!ENTITY Ctr_hideprbutton	"Приховати інфо кнопку «спливаюче вікно блоковано»">
 <!ENTITY Ctr_urlbar_ib		"Індикатори справжності панелі рядку адреси">
@@ -277,8 +279,8 @@
 <!ENTITY Ctr_fx35devtheme	"В &brandShortName; 35+ введено нову «тему» від розробника. Вимкнення цих налаштувань вимикає цю «тему» і її кнопку в ручному режимі налаштувань.">
 <!ENTITY Ctr_fx36prefs		"В &brandShortName; 36+ введено нове налаштування у вкладці. Вимкнення цього пункту відновлює вікно зі старими налаштуванням.">
 <!ENTITY Ctr_fx38reader		"В &brandShortName; 38+ введено новий «режим читання». Вимкнення цього пункту вимикає цей режим та прибирає його іконку з панелі навігації.">
-<!ENTITY Ctr_fx38pocket		"&brandShortName; 38.0.5+ introduced the 'Pocket' feature. Unchecking this preference disables it and removes its button from the toolbars.">
-<!ENTITY Ctr_fx38pocket2	"Note: Moving 'Pocket'-button to 'customizing palette' before disabling this preference also removes 'Pocket' entries in bookmarks and reader menus.">
+<!ENTITY Ctr_fx38pocket		"В &brandShortName; 38.0.5+ введено режим «Pocket». Вимкнення цього пункту вимикає цей режим та усуває його кнопку з панелей.">
+<!ENTITY Ctr_fx38pocket2	"Примітка: Переміщення кнопки «Pocket» на сторінку «Пристосувати &brandShortName;» перед вимкненням цього налаштування також усуває написи «Pocket» в закладках і меню читання.">
 <!ENTITY Ctr_e_omtc			"OMTC / проблеми завислих вкладок">
 <!ENTITY Ctr_e_searchui		"Вигляд панелі Пошук">
 <!ENTITY Ctr_e_loop			"Виклик та сеанс зв’язку">
@@ -293,8 +295,8 @@
 <!ENTITY Ctr_pw_set_predef	"Класичні налаштунки">
 <!ENTITY Ctr_pw_set_export	"Експорт налаштувань">
 <!ENTITY Ctr_pw_set_import	"Імпорт налаштувань">
-<!ENTITY Ctr_pw_set_syncon	"Add to Sync">
-<!ENTITY Ctr_pw_set_syncoff	"Remove from Sync">
+<!ENTITY Ctr_pw_set_syncon	"Додати до Синхронізації">
+<!ENTITY Ctr_pw_set_syncoff	"Усунути з Синхронізації">
 
 <!ENTITY Ctr_special_font	"Налаштування кольору тла - тільки для типової теми!">
 <!ENTITY Ctr_special_info	"Деякі параметри не можуть запропонувати візуальні зміни в усіх випадках">
@@ -306,6 +308,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"Відкрити в новому приватному вікні">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Початок роботи">
+<!ENTITY goCmd.label		"Go">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey            "Н">

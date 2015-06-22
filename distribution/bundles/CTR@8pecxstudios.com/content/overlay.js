@@ -698,7 +698,8 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green_dark',false);			
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange_dark',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange_dark',false);
+      classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_palemo',false);			
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_purple',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red_dark',false);
@@ -1086,6 +1087,11 @@ classicthemerestorerjs.ctr = {
 		  case "hideurelstop":
 			if (branch.getBoolPref("hideurelstop")) classicthemerestorerjs.ctr.loadUnloadCSS("hideurelstop",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideurelstop",false);
+		  break;
+		  
+		  case "hideurlgo":
+			if (branch.getBoolPref("hideurlgo")) classicthemerestorerjs.ctr.loadUnloadCSS("hideurlgo",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideurlgo",false);
 		  break;
 
 		  case "urlbardropm":
@@ -3089,6 +3095,7 @@ classicthemerestorerjs.ctr = {
 		case "appbuttonc_cyan":	manageCSS("appbutton_cyan.css");		break;		
 		case "appbuttonc_nightly":	manageCSS("appbutton_nightly.css");		break;
 		case "appbuttonc_transp":	manageCSS("appbutton_transparent.css");	break;
+		case "appbuttonc_palemo":	manageCSS("appbutton_palemoon.css");	break;
 		case "appbuttonc_red":		manageCSS("appbutton_red.css");			break;
 		case "appbuttonc_red_dark":		manageCSS("appbutton_red_dark.css");			break;		
 		case "appbuttonc_green":	manageCSS("appbutton_green.css");		break;
@@ -3121,6 +3128,7 @@ classicthemerestorerjs.ctr = {
 		case "feedinurl":			manageCSS("feedinurl.css");				break;
 		case "statusbar": 			manageCSS("statusbar.css"); 			break;
 		case "hideurelstop": 		manageCSS("hideurlbarrelstop.css"); 	break;
+		case "hideurlgo": 			manageCSS("hideurlbargo.css"); 			break;
 		case "urlbardropm": 		manageCSS("urlbar_dropm.css"); 			break;
 		case "combrelstop":			manageCSS("combrelstop.css");			break;
 		case "panelmenucol": 		manageCSS("panelmenucolor.css");		break;

@@ -87,6 +87,7 @@
 <!ENTITY Ctr_appbuttonc_a	"Farbe: Blau (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Farbe: Schwarz (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Farbe: Transparent">
+<!ENTITY Ctr_appbuttonc_p	"Farbe: blau (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Farbe: Rot">
 <!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Farbe: Grün">
@@ -193,6 +194,7 @@
 <!ENTITY Ctr_starinurl		"'Lesezeichen-Stern'">
 <!ENTITY Ctr_feedinurl		"'Feed abonnieren'">
 <!ENTITY Ctr_hideurelstop	"Entferne 'Stopp' &amp; 'Neu laden'">
+<!ENTITY Ctr_hideurlgo		"Entferne 'Los'">
 <!ENTITY Ctr_urlbardropm	"Verschiebe die 'Schaltfläche' ans Ende der Adressleiste">
 <!ENTITY Ctr_hideprbutton	"Verstecke 'Infosymbol' (wenn ein Popup-Fenster blockiert wurde)">
 <!ENTITY Ctr_urlbar_ib		"Schaltfläche zur Webseitenidentität">
@@ -307,6 +309,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"In neuem privaten Fenster öffnen">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Erste Schritte">
+<!ENTITY goCmd.label		"Los">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey            "Z">
