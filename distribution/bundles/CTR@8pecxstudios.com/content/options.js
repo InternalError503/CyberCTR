@@ -247,6 +247,12 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_tabwidthinfo').style.visibility = 'visible';
 		document.getElementById('ctraddon_pw_tabwidthinfo2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabwidthinfo3').style.visibility = 'collapse';
+		
+		//Temp fix visual glitch changing from square to curved tabs after installing TMP
+		Application.prefs.get("extensions.classicthemerestorer.tabs").events.addListener("change", function(aEvent){
+			classicthemerestorerjso.ctr.needsBrowserRestart();
+		});
+		
 	  }
 	});
 	
