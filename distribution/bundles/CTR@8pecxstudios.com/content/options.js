@@ -387,16 +387,17 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion > 37) {
 	  document.getElementById('ctraddon_pw_bmarkoinpw').style.visibility = 'collapse';
 	}
-	if (this.appversion > 39) {
+	if (this.appversion > 40) {
 	  document.getElementById('ctraddon_pw_devtheme').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_devthemeb').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_devthemedescr').style.visibility = 'collapse';
-	  document.getElementById('ctraddon_pw_nodevtheme1').style.visibility = 'collapse';
 	}
 	if (this.appversion < 40) {
 	  document.getElementById('ctraddon_pw_nodevtheme2').style.visibility = 'collapse';
 	}
-
+	if (this.appversion < 41) {
+	  document.getElementById('ctraddon_pw_addonversion').style.visibility = 'collapse';
+	}
 
 	function PrefListener(branch_name, callback) {
 	  // Keeping a reference to the observed preference branch or it will get
@@ -493,8 +494,6 @@ classicthemerestorerjso.ctr = {
 	this.ctrpwHidetbwotExtra(this.prefs.getBoolPref("hidetbwot"));
 	this.altTabsToolbarBgExtra(this.prefs.getBoolPref("alttabstb"));
 	this.ctrpwModeextra(this.prefs.getCharPref("nav_txt_ico"));
-	this.ctrpwDisableDevThemePrefsExtra(this.prefs.getBoolPref("nodevtheme"));
-
 	
 	var closetab_value = this.prefs.getCharPref("closetab");
   
@@ -754,15 +753,6 @@ classicthemerestorerjso.ctr = {
 	this.unsetTabColorsAndMore();
 
   },
-  
-  //only reset prefs for dev theme, if it is enabled
-  resetPrefsForDevTheme2: function(){
-	try {
-	  if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled')!=false){
-		classicthemerestorerjso.ctr.resetPrefsForDevTheme();
-	  }
-	} catch(e) {}
-  },
  
   hideThemeInfoForTabs: function(){
 	setTimeout(function(){
@@ -869,14 +859,7 @@ classicthemerestorerjso.ctr = {
 	document.getElementById('ctraddon_pw_hidetbwote_winc').style.visibility = itemvis;
 	document.getElementById('ctraddon_pw_hidetbwote2').style.visibility = itemvis;
   },
-  
-  ctrpwDisableDevThemePrefsExtra: function(which) {
-	if (this.appversion >= 35) {
-	  document.getElementById('ctraddon_pw_devtheme').disabled = which;
-	  document.getElementById('ctraddon_pw_devthemeb').disabled = which;
-	}
-  },
-  
+ 
   altTabsToolbarBgExtra: function(which) {
 	if (this.fxdefaulttheme) {
 	

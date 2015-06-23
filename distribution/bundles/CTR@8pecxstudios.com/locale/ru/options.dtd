@@ -146,6 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
 <!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
+<!ENTITY Ctr_addonversion	"Add-ons page: display add-on version">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">

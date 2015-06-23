@@ -55,6 +55,7 @@ pref("extensions.classicthemerestorer.emptyfavicon2",false);
 pref("extensions.classicthemerestorer.panelmenucol",false);
 pref("extensions.classicthemerestorer.cpanelmenus",false);
 pref("extensions.classicthemerestorer.hidezoomres",false);
+pref("extensions.classicthemerestorer.addonversion",false);
 pref("extensions.classicthemerestorer.alt_newtabp",false);
 pref("extensions.classicthemerestorer.alt_newtabpalt",false);
 
@@ -179,7 +180,6 @@ pref("extensions.classicthemerestorer.contextitem",false);
 pref("extensions.classicthemerestorer.puictrbutton",false);
 pref("extensions.classicthemerestorer.cuibuttons",true);
 pref("extensions.classicthemerestorer.bmarkoinpw",false);
-pref("extensions.classicthemerestorer.nodevtheme",false);
 pref("extensions.classicthemerestorer.nodevtheme2",false);
 pref("extensions.classicthemerestorer.pref_actindx",3);
 pref("extensions.classicthemerestorer.pref_actindx2",0);

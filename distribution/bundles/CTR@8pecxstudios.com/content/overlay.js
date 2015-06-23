@@ -302,12 +302,6 @@ classicthemerestorerjs.ctr = {
 			  if (branch.getCharPref("selectedThemeID")=='firefox-devedition@mozilla.org' 
 				&& Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("nodevtheme2")==false) {
 				
-				
-				try{
-				  if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled'))
-					Services.prefs.getBranch("browser.devedition.theme.").setBoolPref('enabled',false)
-				} catch(e){}
-				
 				classicthemerestorerjs.ctr.fxdevelopertheme=true;
 			  
 				if (classicthemerestorerjs.ctr.fxdefaulttheme){
@@ -327,11 +321,6 @@ classicthemerestorerjs.ctr = {
 				  Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref('aerocolors',false);
 			
 				classicthemerestorerjs.ctr.devthemeinterval = setInterval(function(){
-				
-				  try{
-					if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled'))
-					  Services.prefs.getBranch("browser.devedition.theme.").setBoolPref('enabled',false)
-				  } catch(e){}
 				  
 				  let selectedThemeID = null;
 				  try {
@@ -1691,6 +1680,11 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",false);
 		  break;
 
+		  case "addonversion":
+			if (branch.getBoolPref("addonversion")) classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",false);
+		  break;
+
 		  case "bmbutpanelm":
 			if (branch.getBoolPref("bmbutpanelm")) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("bmbutpanelm",true);
@@ -1970,16 +1964,7 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("bmarkoinpw") && classicthemerestorerjs.ctr.appversion < 38) classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",false);
 		  break;
-		  
-		  case "nodevtheme":
-			if (branch.getBoolPref("nodevtheme") && classicthemerestorerjs.ctr.appversion < 40) {
-			  	try{
-					if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref("enabled"))
-					  Services.prefs.getBranch("browser.devedition.theme.").setBoolPref("enabled",false)
-				} catch(e){}
-			}
-		  break;
-		  
+
 		  case "searchbarwidth": case "customsearchbarwidth":
 			  	try{		  
 					if (branch.getBoolPref("customsearchbarwidth")) {				
@@ -2687,12 +2672,6 @@ classicthemerestorerjs.ctr = {
 		}
 	  } catch(e) {}
 	  
-	  //temporal fix for Aurora/DevEdition (this pref should not even exist anymore)
-	  try{
-		if(Services.prefs.getBranch("browser.devedition.theme.").getBoolPref('enabled'))
-		  Services.prefs.getBranch("browser.devedition.theme.").setBoolPref('enabled',false)
-	  } catch(e){}
-	  
 	  classicthemerestorerjs.ctr.loadUnloadCSS("nodevtheme2",true);
 	}
   },
@@ -3195,6 +3174,7 @@ classicthemerestorerjs.ctr = {
 		case "alt_newtabp": 		 manageCSS("alt_newtabpage.css");		break;
 		case "alt_newtabpalt": 		 manageCSS("alt_newtabpage_alt.css");		break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
+		case "addonversion": 		manageCSS("addonversion.css");			break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbutnotext": 		manageCSS("bmbut_no_label.css");		break;
 		case "tbconmenu": 			manageCSS("tbconmenu.css");				break;

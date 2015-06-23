@@ -147,6 +147,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_alt_addonsp	"Add-on-Seite 'Mehr Info': alternative Darstellung">
+<!ENTITY Ctr_addonversion	"Add-on-Seite: Add-on Version anzeigen">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Lesezeichen-Menüschaltfläche: 'Panel-Aufklappmenü'-Darstellung">

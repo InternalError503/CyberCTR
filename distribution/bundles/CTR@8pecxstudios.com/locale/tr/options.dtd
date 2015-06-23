@@ -146,6 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Özel metin rengi kullan">
 <!ENTITY ctr_aboutnewtab.custombasecol "Taban metin rengini değiştir">
 <!ENTITY Ctr_alt_addonsp	"Eklentiler için 'daha fazla bilgi' sayfası: alternatif görünüm">
+<!ENTITY Ctr_addonversion	"Add-ons page: display add-on version">
 <!ENTITY Ctr_alt_newtabcol	"Yeni sekme sayfası: sütunlar">
 <!ENTITY Ctr_alt_newtabrow	"Yeni sekme sayfası: satırlar">
 <!ENTITY Ctr_bmbutpanelm	"Yer imleri menü düğmesi: panel menu görünümü">
