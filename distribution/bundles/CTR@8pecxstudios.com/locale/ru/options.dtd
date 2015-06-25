@@ -146,7 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
 <!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
-<!ENTITY Ctr_addonversion	"Add-ons page: display add-on version">
+<!ENTITY Ctr_addonversion	"Страница дополнений: отображать версии">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
@@ -194,7 +194,7 @@
 <!ENTITY Ctr_starinurl		"Звёздочка в адресной строке">
 <!ENTITY Ctr_feedinurl		"Кнопка RSS в адресной строке">
 <!ENTITY Ctr_hideurelstop	"Скрыть кнопку «Остановить и перезагрузить»">
-<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
+<!ENTITY Ctr_hideurlgo		"Скрыть кнопку 'Перейти'">
 <!ENTITY Ctr_urlbardropm	"Переместить дропмаркер в конец адресной строки">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_urlbar_ib		"Кнопка подлинности сайта">
