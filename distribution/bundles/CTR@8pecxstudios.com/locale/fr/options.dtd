@@ -384,5 +384,5 @@
 
 <!ENTITY movableurlbar.label "Barre d’adresse déplaçable (ceci permet de la déplacer)">
 <!ENTITY movableurlbar.warning0 "Attention, paramètre dangereux ! Si vous déplacez la barre d’adresse dans le panneau de menu ou que vous personnalisez la fenêtre et que vous redémarrez, le navigateur sera corrompu.">
-<!ENTITY movableurlbar.warning1 "Vous devez deplacer la barre d'adresse à sa position par défaut avant de désactiver.">
-<!ENTITY movableurlbar.warning2 "Utilisez cette fonction avec prudence et à vos risques this feature with caution and at own risk.">
+<!ENTITY movableurlbar.warning1 "Vous devez déplacer la barre d'adresse à sa position par défaut avant de désactiver.">
+<!ENTITY movableurlbar.warning2 "Utilisez cette fonction avec prudence et à vos risques">
