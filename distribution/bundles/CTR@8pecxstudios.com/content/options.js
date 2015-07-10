@@ -66,7 +66,7 @@ classicthemerestorerjso.ctr = {
 	document.getElementById("ctraddon_tabcolor_tabs").selectedIndex = this.prefs.getIntPref('pref_actindx2');
 	
 		// Append CyberCTR Version To Window Title extensions.classicthemerestorer.version
-		var newTitle = document.title + " " + this.prefs.getCharPref('version');
+		var newTitle = document.title.replace(/.[0-9]/g, '') + " " + this.prefs.getCharPref('version');
 		document.title = newTitle;
 	
 	// disable and hide items not usable on third party themes
