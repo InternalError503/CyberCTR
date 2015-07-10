@@ -153,33 +153,6 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
 	};
 
-	//Custom Button Color Text Color
-	Application.prefs.get("extensions.classicthemerestorer.appbutton").events.addListener("change", function(aEvent){
-		var isButton = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
-		if (isButton ==="appbutton_off" || 
-			isButton ==="appbutton_v1" ||
-			isButton ==="appbutton_v1wt" ||
-			isButton ==="appbutton_v2h" || 
-			isButton ==="appbutton_pm"){
-				document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
-				document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
-				document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
-				document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;		
-	}});
-	Application.prefs.get("extensions.classicthemerestorer.appbuttonc").events.addListener("change", function(aEvent){
-		
-	if (Services.prefs.getCharPref("extensions.classicthemerestorer.appbuttonc") === "appbuttonc_custom" || 
-		Services.prefs.getCharPref("extensions.classicthemerestorer.appbuttonc") === "appbuttonc_custom1"){
-		document.getElementById('ctraddon_pw_cappbutctcl').disabled = false;
-		document.getElementById('ctraddon_pw_cappbutctct').disabled = false;
-		document.getElementById('ctraddon_pw_cappbutctcc').disabled = false;
-		document.getElementById('ctraddon_cappbutnotxtsh').disabled = false;		
-	}else{
-		document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
-		document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
-		document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
-		document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;
-	}});	
 	document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
 	document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
 	document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
@@ -215,16 +188,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_searchbarwidth').disabled = true;
 		document.getElementById('ctraddon_searchbarwidthl').disabled = true;
 	}
-		
-	Application.prefs.get("extensions.classicthemerestorer.customsearchbarwidth").events.addListener("change", function(aEvent){	
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.customsearchbarwidth")){
-		document.getElementById('ctraddon_searchbarwidth').disabled = false;
-		document.getElementById('ctraddon_searchbarwidthl').disabled = false;
-	}else{
-		document.getElementById('ctraddon_searchbarwidth').disabled = true;
-		document.getElementById('ctraddon_searchbarwidthl').disabled = true;
-	}});
-	
+
 	// extra checks to not enable tab width settings while 'TabMixPlus' or 'TabUtilities' is enabled
 	AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
 	  if(addon && addon.isActive) {
@@ -240,12 +204,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_tabwidthinfo').style.visibility = 'visible';
 		document.getElementById('ctraddon_pw_tabwidthinfo2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabwidthinfo3').style.visibility = 'collapse';
-		
-		//Temp fix visual glitch changing from square to curved tabs after installing TMP
-		Application.prefs.get("extensions.classicthemerestorer.tabs").events.addListener("change", function(aEvent){
-			classicthemerestorerjso.ctr.needsBrowserRestart();
-		});
-		
+
 	  }
 	});
 	
@@ -470,7 +429,138 @@ classicthemerestorerjso.ctr = {
 			  document.getElementById('ctraddon_pw_tabheightinfo').style.visibility = 'collapse';
 		  
 		  break;
+		  
+			//Temp fix visual glitch changing from square to curved tabs after installing TMP
+			case "tabs":
+				AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
+					if(addon && addon.isActive) {
+						classicthemerestorerjso.ctr.needsBrowserRestart();
+					}
+				});
+			break;
+		  
+			//Custom Button Color Text Color
+			case "appbutton":
+			var isButton = branch.getCharPref("appbutton");
+					if (isButton ==="appbutton_off" || 
+						isButton ==="appbutton_v1" ||
+						isButton ==="appbutton_v1wt" ||
+						isButton ==="appbutton_v2h" || 
+						isButton ==="appbutton_pm"){
+							document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
+							document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
+							document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
+							document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;		
+				}
+			break;
+			
+			case "appbuttonc":
+				if (branch.getCharPref("appbuttonc") === "appbuttonc_custom" || 
+					branch.getCharPref("appbuttonc") === "appbuttonc_custom1"){
+					document.getElementById('ctraddon_pw_cappbutctcl').disabled = false;
+					document.getElementById('ctraddon_pw_cappbutctct').disabled = false;
+					document.getElementById('ctraddon_pw_cappbutctcc').disabled = false;
+					document.getElementById('ctraddon_cappbutnotxtsh').disabled = false;		
+				}else{
+					document.getElementById('ctraddon_pw_cappbutctcl').disabled = true;
+					document.getElementById('ctraddon_pw_cappbutctct').disabled = true;
+					document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
+					document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;
+				}
+			break;
+			
+			case "customsearchbarwidth":
+				if (branch.getBoolPref("customsearchbarwidth")){
+					document.getElementById('ctraddon_searchbarwidth').disabled = false;
+					document.getElementById('ctraddon_searchbarwidthl').disabled = false;
+				}else{
+					document.getElementById('ctraddon_searchbarwidth').disabled = true;
+					document.getElementById('ctraddon_searchbarwidthl').disabled = true;
+				}
+			break;	
+			
+			case "abouthome":
+				if (branch.getCharPref("abouthome") === "simplicityred" || 
+					branch.getCharPref("abouthome") === "simplicityblue"|| 
+					branch.getCharPref("abouthome") === "simplicitygreen"|| 
+					branch.getCharPref("abouthome") === "simplicityyellow"){
+					document.getElementById('noicons').disabled = true;
+					//Disable custom highlight color on pre-sets.
+					document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+					document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+					document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+					branch.setBoolPref("abouthomehighlight", false);
+				}else{
+					document.getElementById('noicons').disabled = false;
+					document.getElementById('ctraddon_ctabouthomecusthltck').disabled = false;
+					document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = false;
+					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
+					document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
+						}
+				if (branch.getCharPref("abouthome") === "simplicitycustom"){
+					document.getElementById('noicons').disabled = true;
+				}
+			break;
 
+			case "abouthomecustomurl":
+				//Disable custom background image on Light|dark theme styles.
+				if (branch.getCharPref("abouthome") === "dark" || 
+					branch.getCharPref("abouthome") === "darkalt" ||
+					branch.getCharPref("abouthome") === "light" ||
+					branch.getCharPref("abouthome") === "lightalt"){
+					document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
+					document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
+					document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
+					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
+					branch.setBoolPref("abouthomecustombg", false);
+				}else{
+					document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
+					document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
+					document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
+					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
+				}
+				//Disable custom highlight colors on default theme in firefox.	
+				if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 
+					branch.getCharPref("abouthome") === "default") {
+						document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
+						document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
+						document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
+						document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
+						this.prefs.setBoolPref("abouthomehighlight", false);
+				}
+				// Replace whiteSpace and backslash in custom background urls
+				try{
+					branch.setCharPref("abouthomecustomurl", document.getElementById('ctraddon_ctabouthome_bg_urlbox').value.trim().replace(/ /g, "%20").replace(/\\/g,"/"));
+				} catch (e){ }
+			break;
+
+			//Alternate about:newtab page style listener
+			case "alt_newtabpalt":
+				if(branch.getBoolPref("alt_newtabpalt") === true){
+					document.getElementById('ctraddon_pw_alt_newtabp').disabled = true;
+					branch.setBoolPref("alt_newtabp", false);
+					document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = false;
+				}else{
+					document.getElementById('ctraddon_pw_alt_newtabp').disabled = false;
+					document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = true;
+					document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = true;
+				}
+			break;
+	
 		}
 	  }
 	);
@@ -550,38 +640,7 @@ classicthemerestorerjso.ctr = {
 		if (this.prefs.getCharPref("abouthome") === "simplicitycustom"){
 			document.getElementById('noicons').disabled = true;
 		}	
-
-		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
-			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityred" || 
-				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityblue"|| 
-				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitygreen"|| 
-				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicityyellow"){
-				document.getElementById('noicons').disabled = true;
-				//Disable custom highlight color on pre-sets.
-				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
-				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
-				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
-				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
-				Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomehighlight", false);
-			}else{
-				document.getElementById('noicons').disabled = false;
-				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = false;
-				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = false;
-				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
-				document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
-			}
-			if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "simplicitycustom"){
-				document.getElementById('noicons').disabled = true;
-			}
-		});
-		
-		// Replace whiteSpace and backslash in custom background urls	
-		Application.prefs.get("extensions.classicthemerestorer.abouthomecustomurl").events.addListener("change", function(aEvent){				
-		try{
-			Services.prefs.setCharPref("extensions.classicthemerestorer.abouthomecustomurl", document.getElementById('ctraddon_ctabouthome_bg_urlbox').value.trim().replace(/ /g, "%20").replace(/\\/g,"/"));
-		} catch (e){ }
-		});
-		
+	
 		//Disable custom background image on Light|dark theme styles.
 		if (this.prefs.getCharPref("abouthome") === "dark" || 
 			this.prefs.getCharPref("abouthome") === "darkalt" ||
@@ -600,32 +659,6 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 		}
 
-		Application.prefs.get("extensions.classicthemerestorer.abouthome").events.addListener("change", function(aEvent){
-				if (Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "dark" || 
-					Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "darkalt" ||
-					Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "light" ||
-					Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "lightalt"){
-				document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
-				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
-				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
-			    document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
-				Services.prefs.setBoolPref("extensions.classicthemerestorer.abouthomecustombg", false);
-			}else{
-				document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
-				document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
-				document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
-				document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
-			}
-			//Disable custom highlight colors on default theme in firefox.	
-			if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 
-				Services.prefs.getCharPref("extensions.classicthemerestorer.abouthome") === "default") {
-					document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
-					document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
-					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
-					document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = true;
-					this.prefs.setBoolPref("abouthomehighlight", false);
-			}
-		});
 		//Disable custom highlight colors on default theme in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {
 				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
@@ -658,34 +691,7 @@ classicthemerestorerjso.ctr = {
 				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = true;
 				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = true;
 			}		
-		
-		
-		//Alternate about:newtab page style listener
-		Application.prefs.get("extensions.classicthemerestorer.alt_newtabpalt").events.addListener("change", function(aEvent){
-			if(Services.prefs.getBoolPref("extensions.classicthemerestorer.alt_newtabpalt") === true){
-				document.getElementById('ctraddon_pw_alt_newtabp').disabled = true;
-				Services.prefs.setBoolPref("extensions.classicthemerestorer.alt_newtabp", false);
-				document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = false;
-			}else{
-				document.getElementById('ctraddon_pw_alt_newtabp').disabled = false;
-				document.getElementById('ctraddon_ctaboutnewtabcustbsck').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcusthltck').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcustbslb').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcustbstb').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcustbscp').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcusthltlb').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcusthlttb').disabled = true;
-				document.getElementById('ctraddon_ctaboutnewtabcusthltcp').disabled = true;
-			}	
-		});
-		
+
 			document.getElementById("css").value = Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter");
 			this.hideThemeInfoForTabs();
   },
