@@ -2089,6 +2089,68 @@ classicthemerestorerjs.ctr = {
 	
 	ctrSettingsListener_forCTB.register(true);
 	
+	var ctrTreeStyleListener_forCCTR = new PrefListener(
+	  "extensions.classicthemerestorer.appbutton",
+	  function(appbutton) {
+		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle")){return;}else{ 
+		var menutoolbarHasAttribute = document.getElementById("toolbar-menubar");
+			switch (appbutton) {
+				case "appbutton_off":
+					classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
+					if (menutoolbarHasAttribute.getAttribute('autohide', true)){
+						if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
+					}
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+				break;
+			
+				case "appbutton_v1": 
+					menutoolbarHasAttribute.setAttribute('autohide', false);		
+					classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
+				break;
+
+				case "appbutton_v1wt": 
+					menutoolbarHasAttribute.setAttribute('autohide', false);		
+					classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
+				break;
+
+				case "appbutton_v2wt2":  
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+				break;
+			
+				case "appbutton_v2": 
+					menutoolbarHasAttribute.setAttribute('autohide', false);		
+					classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+				break;
+				
+				case "appbutton_v2io": 
+					menutoolbarHasAttribute.setAttribute('autohide', false);		
+					classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
+				break;
+
+				case "appbutton_v2io2": 
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+				break;
+				
+				case "appbutton_pm": 
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
+					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
+				break;
+			}
+		}
+	  }
+	);
+	
+	ctrTreeStyleListener_forCCTR.register(true);
+	
 	/*
 	// SettingSanity add-on uses 'defaultDrawInTitlebar' pref, that breaks the default
 	// 'drawInTitlebar' provided by Firefox and required by CTR. Basically it does not
@@ -5275,70 +5337,6 @@ window.addEventListener("DOMWindowCreated", function load(event){
 			  });			
 								  					 			  
 			  		},false);
-					
-Application.prefs.get("extensions.classicthemerestorer.appbutton").events.addListener("change", function(aEvent){
-
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle")){return;}else{
-	
-var newAppButtonState = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
-var menutoolbarHasAttribute = document.getElementById("toolbar-menubar");				
-switch (newAppButtonState){
-
-		case "appbutton_off":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
-			if (menutoolbarHasAttribute.getAttribute('autohide', true)){
-				if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
-			}
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
-		break;
-	
-		case "appbutton_v1": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
-		break;
-
-		case "appbutton_v1wt": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
-		break;
-
-		case "appbutton_v2wt2":  
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
-		break;
-	
-		case "appbutton_v2": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
-		break;
-		
-		case "appbutton_v2io": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);			
-		break;
-
-		case "appbutton_v2io2": 
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
-		break;
-		
-		case "appbutton_pm": 
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
-		break;
-
-}
-   }
-		}
-   
-);	
 
 				Application.prefs.get("browser.context.classic").events.addListener("change", function(aEvent){
 
@@ -5376,7 +5374,6 @@ switch (appButtonState){
 
 		case "appbutton_off":
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
-			//menutoolbarHasAttribute.setAttribute('autohide', false);	
 			if (menutoolbarHasAttribute.getAttribute('autohide', true)){
 			if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
 			}	
