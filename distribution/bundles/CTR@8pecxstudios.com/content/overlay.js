@@ -2151,6 +2151,34 @@ classicthemerestorerjs.ctr = {
 	
 	ctrTreeStyleListener_forCCTR.register(true);
 	
+	var ctrContextClassicNoIconListener_forCCTR = new PrefListener(
+	  "extensions.classicthemerestorer.",
+	  function(branch, name) {
+		switch (name) {
+		  case "noconicons":
+			if (Services.prefs.getBoolPref("browser.context.classic")){
+				branch.setBoolPref("noconicons", false);
+			}		  
+		  break;		  
+		}
+	  }
+	);
+
+	var ctrContextClassicListener_forCCTR = new PrefListener(
+	  "browser.context.",
+	  function(branch, name) {
+		switch (name) {
+		  case "classic":
+			if (Services.prefs.getBoolPref("browser.context.classic")){
+				branch.setBoolPref("noconicons", false);
+			}		  
+		  break;		  
+		}
+	  }
+	);
+	ctrContextClassicNoIconListener_forCCTR.register(true);
+	ctrContextClassicListener_forCCTR.register(true);
+	
 	/*
 	// SettingSanity add-on uses 'defaultDrawInTitlebar' pref, that breaks the default
 	// 'drawInTitlebar' provided by Firefox and required by CTR. Basically it does not
@@ -5337,23 +5365,7 @@ window.addEventListener("DOMWindowCreated", function load(event){
 			  });			
 								  					 			  
 			  		},false);
-
-				Application.prefs.get("browser.context.classic").events.addListener("change", function(aEvent){
-
-					if (Services.prefs.getBoolPref("browser.context.classic")){
-						Services.prefs.setBoolPref("extensions.classicthemerestorer.noconicons", false);
-					}
 					
-				});		
-				
-				Application.prefs.get("extensions.classicthemerestorer.noconicons").events.addListener("change", function(aEvent){
-
-					if (Services.prefs.getBoolPref("browser.context.classic")){
-						Services.prefs.setBoolPref("extensions.classicthemerestorer.noconicons", false);
-					}
-					
-				});	
-				
 			  AddonManager.getAddonByID('CompactMenuCE@Merci.chao', function(addon) {
 				if(addon && addon.isActive) { 
 												alert("Compatibility issues detected (Personal Menu) \n Please uninstall (CyberCTR) or (Personal Menu)!");
