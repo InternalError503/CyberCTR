@@ -965,7 +965,7 @@
 	  
 		<groupbox>
 		<caption  label="&Ctr_urlbar; *" class="ctraddon_topic"/>
-		<checkbox label="&movableurlbar.label;" preference="ctraddon_cmovableurlbar" id="ctraddon_movableurlbar"/>
+		<checkbox label="&movableurlbar.label;" preference="ctraddon_cmovableurlbar" id="ctraddon_movableurlbar" oncommand="classicthemerestorerjso.ctr.isUrlbarMovable(true)"/>
 		<description class="ctraddon_font1">&movableurlbar.warning0;</description>
 		<description class="ctraddon_font1">&movableurlbar.warning1;</description>
 		<description class="ctraddon_font1">&movableurlbar.warning2;</description>
