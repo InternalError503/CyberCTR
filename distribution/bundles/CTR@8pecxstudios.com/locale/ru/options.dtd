@@ -146,7 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
 <!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
-<!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
+<!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
@@ -166,8 +166,8 @@
 
 <!ENTITY Ctr_navthrobber1	"Клик по индикатору активности открывает определенную страницу:">
 <!ENTITY Ctr_navthrobber2	"Укажите url страницы или оставьте пустое место">
-<!ENTITY Ctr_anewtaburl		"New tab page url">
-<!ENTITY Ctr_anewtaburlcb	"Custom new tab page url (default: 'about:newtab')">
+<!ENTITY Ctr_anewtaburl		"Адрес url новой вкладки">
+<!ENTITY Ctr_anewtaburlcb	"Изменение адреса url новой вкладки (по умолчанию - 'about:newtab')">
 
 <!ENTITY Ctr_tab_tf_info1	"Текстовые поля поддерживают названия цветов на английском, шестнадцатеричные коды, rgb(a) и значения hsl(a).">
 <!ENTITY Ctr_tab_tf_info2	"Введённое не будет проверяться!">
