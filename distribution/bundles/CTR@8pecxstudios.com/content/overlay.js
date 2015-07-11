@@ -687,6 +687,36 @@ classicthemerestorerjs.ctr = {
 			}
 			
 			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",true);
+		
+    if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
+				// custom button title for 'appbutton on toolbar'
+				if (branch.getCharPref("appbutton")=="appbutton_v1wt"){
+					
+					var buttontitle = "Firefox"; // init with default title
+					var custombuttontitle = Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref('appbuttontxt');
+					
+					var converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"].createInstance(Ci.nsIScriptableUnicodeConverter);
+					converter.charset = 'UTF-8';
+					
+					if(custombuttontitle!='') buttontitle = converter.ConvertToUnicode(custombuttontitle);
+					else {
+						try{
+						  // make sure appbutton gets correct title
+						  buttontitle = document.getElementById("main-window").getAttribute("title_normal");
+						  if(buttontitle=="Mozilla Firefox") buttontitle="Firefox";
+						  else if(buttontitle=="Firefox Developer Edition") buttontitle="DevFox";
+						
+						} catch(e){}
+					}
+					
+					setTimeout(function(){
+					  try{
+						document.getElementById("ctraddon_appbutton").setAttribute("label", buttontitle);
+					  } catch(e){}
+					},500);
+
+				}
+      }
 
 		  break;
 		  
