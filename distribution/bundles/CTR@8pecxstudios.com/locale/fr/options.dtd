@@ -274,7 +274,7 @@
 <!ENTITY Ctr_otherctroptns	"Autres paramètres">
 <!ENTITY Ctr_cuibotbuttons	"Boutons d’options en mode personnalisation">
 <!ENTITY Ctr_bookmarkoinpw	"Ajouter l’entrée « Ouvrir dans une nouvelle fenêtre de navigation privée » au menu contextuel des onglets">
-<!ENTITY Ctr_nodevtheme		"Nightly: Empêche l’activation du « thème développeur »">
+<!ENTITY Ctr_nodevtheme		"Empêche l’activation du « thème développeur »">
 
 <!ENTITY Ctr_experttweaks	"Expert">
 <!ENTITY Ctr_fx33layers		"&brandShortName; 33+ – offre de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (aucune réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
