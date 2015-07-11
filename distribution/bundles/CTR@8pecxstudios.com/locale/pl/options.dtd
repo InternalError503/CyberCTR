@@ -146,7 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_alt_addonsp	"Strona dodatków 'więcej informacji': wygląd alternatywny">
-<!ENTITY Ctr_addonversion	"Add-ons page: display add-on version">
+<!ENTITY Ctr_addonversion	"Strona dodatków: wyświetlaj wersję dodatku">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Przycisk menu zakładek: wygląd menu panelu">
@@ -194,7 +194,7 @@
 <!ENTITY Ctr_starinurl		"Przycisk 'gwiazdka'">
 <!ENTITY Ctr_feedinurl		"Przycisk RSS">
 <!ENTITY Ctr_hideurelstop	"Ukryj przyciski zatrzymania i odświeżania">
-<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
+<!ENTITY Ctr_hideurlgo		"Ukryj przycisk 'Przejdź'">
 <!ENTITY Ctr_urlbardropm	"Przenieś znacznik rozwinięcia na koniec paska adresu">
 <!ENTITY Ctr_hideprbutton	"Ukryj przycisk informujący o zablokowanym wyskakującym oknie">
 <!ENTITY Ctr_urlbar_ib		"Pole tożsamości paska adresu">
@@ -211,7 +211,7 @@
 <!ENTITY Ctr_extrabar		"Dodatkowe paski narzędzi">
 <!ENTITY Ctr_extrabar0		"Dodatkowy pasek (dodatkowe paski) narzędzi">
 <!ENTITY Ctr_extrabar1		"Dodatkowy pasek narzędzi">
-<!ENTITY Ctr_extrabarinfo	"Przełączanie pomiędzy trybami 'karty na górze' a 'karty nie na górze' losowo zmienia układ dodatkowych pasków narzędzi. &brandShortName;sa musi zostać zrestartowany, aby rozwiązać ten problem.">
+<!ENTITY Ctr_extrabarinfo	"Przełączanie pomiędzy trybami 'karty na górze' a 'karty nie na górze' losowo zmienia układ dodatkowych pasków narzędzi. &brandShortName; musi zostać zrestartowany, aby rozwiązać ten problem.">
 
 <!ENTITY Ctr_invicons		"Odwrócone kolory ikon">
 <!ENTITY Ctr_menubar		"Pasek menu">
@@ -310,7 +310,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"Otwórz w nowym oknie prywatnym">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Pierwsze kroki">
-<!ENTITY goCmd.label		"Go">
+<!ENTITY goCmd.label		"Przejdź">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey            "W">
