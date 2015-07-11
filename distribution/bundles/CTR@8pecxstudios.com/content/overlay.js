@@ -1681,7 +1681,7 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "addonversion":
-			if (branch.getBoolPref("addonversion")) classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
+			if (branch.getBoolPref("addonversion") && classicthemerestorerjs.ctr.appversion >= 40) classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",false);
 		  break;
 
