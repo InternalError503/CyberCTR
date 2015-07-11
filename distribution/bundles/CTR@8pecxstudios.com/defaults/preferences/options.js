@@ -89,6 +89,9 @@ pref("extensions.classicthemerestorer.invicoaddonbar",false);
 pref("extensions.classicthemerestorer.athrobberurl","");
 pref("extensions.classicthemerestorer.movableurlbar", false);
 
+pref("extensions.classicthemerestorer.anewtaburlcb",false);
+pref("extensions.classicthemerestorer.anewtaburl","about:newtab");
+
 //Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");
 pref("extensions.classicthemerestorer.abouthomenobar", false);

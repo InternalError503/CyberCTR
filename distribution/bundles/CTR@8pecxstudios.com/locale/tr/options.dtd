@@ -71,7 +71,7 @@
 <!ENTITY Ctr_close_wwltab	"Son görülebilir sekmeyle pencereyi kapat (about:config)">
 
 <!ENTITY Ctr_hctpinfotab	"Bazı sekme varyasyonları 'Hide Caption Titlebar Plus' eklentisiyle uyumlu değildir.">
-<!ENTITY Ctr_hctpinfoab		"Cyberfox butonu ekleme özelliği 'Hide Caption Titlebar Plus' eklentisiyle uyumlu değildir.">
+<!ENTITY Ctr_hctpinfoab		"&brandShortName; butonu ekleme özelliği 'Hide Caption Titlebar Plus' eklentisiyle uyumlu değildir.">
 
 <!ENTITY Ctr_appbutton		"&brandShortName; Butonu">
 <!ENTITY Ctr_appbutton0		"Buton devre-dışı">
@@ -166,6 +166,8 @@
 
 <!ENTITY Ctr_navthrobber1	"Etkinlik göstergesine tıklamak beliritilen bağlantıyı açar:">
 <!ENTITY Ctr_navthrobber2	"Bağlantı ekle ve ya boş bırakın:">
+<!ENTITY Ctr_anewtaburl		"New tab page url">
+<!ENTITY Ctr_anewtaburlcb	"Custom new tab page url (default: 'about:newtab')">
 
 <!ENTITY Ctr_tab_tf_info1	"Renk isimleri, hexcodes, rgb(a) ve hsl(a) değerleri desteklenir.">
 <!ENTITY Ctr_tab_tf_info2	"Girişler doğrulanamayacak!">
@@ -194,6 +196,7 @@
 <!ENTITY Ctr_starinurl		"Yıldız-butonu">
 <!ENTITY Ctr_feedinurl		"RSS feed-butonu">
 <!ENTITY Ctr_hideurelstop	"'Dur &amp; Yenile' butonlarını gizle">
+<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
 <!ENTITY Ctr_urlbardropm	"İşaretçiyi konum çubuğunun sonuna taşı">
 <!ENTITY Ctr_hideprbutton	"Popup engellendiğinde beliren uyarıyı gizle">
 <!ENTITY Ctr_urlbar_ib		"Site Kimlik Düğmesi (kimlik kutusu)">

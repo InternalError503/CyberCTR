@@ -1762,6 +1762,29 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("pananimation",true);
 		  break;
 		  // end reverse...
+	  
+		  case "anewtaburlcb": case "anewtaburl":
+
+		    if (branch.getBoolPref("anewtaburlcb") && classicthemerestorerjs.ctr.appversion >= 41) {
+				
+				var newURL = branch.getCharPref("anewtaburl");
+				
+				if (newURL=='') newURL='about:newtab';
+				
+				try{
+					Cu.import("resource:///modules/NewTabURL.jsm");
+					NewTabURL.override(newURL);
+				} catch(e){}
+
+				
+			} else if (classicthemerestorerjs.ctr.appversion >= 41) {
+				try{
+				  Cu.import("resource:///modules/NewTabURL.jsm");
+				  NewTabURL.reset();
+				} catch(e){}
+			}
+
+		  break;
 
 		  case "dblclnewtab":
 			

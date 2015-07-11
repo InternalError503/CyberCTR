@@ -167,6 +167,8 @@
 
 <!ENTITY Ctr_navthrobber1	"En cliquant l’indicateur, on ouvre l’URL suivante :">
 <!ENTITY Ctr_navthrobber2	"Saisir une url or laisser vide">
+<!ENTITY Ctr_anewtaburl		"New tab page url">
+<!ENTITY Ctr_anewtaburlcb	"Custom new tab page url (default: 'about:newtab')">
 
 <!ENTITY Ctr_tab_tf_info1	"Les noms de couleurs, les codes hexadécimaux, et les entités rgb(a) et hsl(a) sont pris en charge.">
 <!ENTITY Ctr_tab_tf_info2	"Toute autre saisie ne fonctionnera pas !">
@@ -272,7 +274,7 @@
 <!ENTITY Ctr_otherctroptns	"Autres paramètres">
 <!ENTITY Ctr_cuibotbuttons	"Boutons d’options en mode personnalisation">
 <!ENTITY Ctr_bookmarkoinpw	"Ajouter l’entrée « Ouvrir dans une nouvelle fenêtre de navigation privée » au menu contextuel des onglets">
-<!ENTITY Ctr_nodevtheme		"Empêche l’activation du « thème développeur »">
+<!ENTITY Ctr_nodevtheme		"Nightly: Empêche l’activation du « thème développeur »">
 
 <!ENTITY Ctr_experttweaks	"Expert">
 <!ENTITY Ctr_fx33layers		"&brandShortName; 33+ – offre de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (aucune réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
