@@ -497,13 +497,7 @@ classicthemerestorerjso.ctr = {
 					document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = false;
 					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
 					document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
-						}
-				if (branch.getCharPref("abouthome") === "simplicitycustom"){
-					document.getElementById('noicons').disabled = true;
 				}
-			break;
-
-			case "abouthomecustomurl":
 				//Disable custom background image on Light|dark theme styles.
 				if (branch.getCharPref("abouthome") === "dark" || 
 					branch.getCharPref("abouthome") === "darkalt" ||
@@ -514,12 +508,19 @@ classicthemerestorerjso.ctr = {
 					document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
 					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
 					branch.setBoolPref("abouthomecustombg", false);
+
 				}else{
 					document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
 					document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
 					document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
 					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 				}
+				if (branch.getCharPref("abouthome") === "simplicitycustom"){
+					document.getElementById('noicons').disabled = true;
+				}
+			break;
+
+			case "abouthomecustomurl":
 				//Disable custom highlight colors on default theme in firefox.	
 				if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 
 					branch.getCharPref("abouthome") === "default") {
