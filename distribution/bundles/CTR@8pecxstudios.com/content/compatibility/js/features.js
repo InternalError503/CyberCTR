@@ -21,7 +21,6 @@ cyberctrFeatures = {
 		}
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
 			document.getElementById("up-check").hidden = true;
-			document.getElementById("up-check-oc").hidden = true;
 		}
 		
 		//Localize UI elements.
@@ -30,12 +29,6 @@ cyberctrFeatures = {
 		document.getElementById("btn-faq").textContent =cyberctrFeatures.i18n("btn-faq");
 		document.getElementById("btn-support-forums").textContent =cyberctrFeatures.i18n("btn-support-forums");
 		document.getElementById("btn-contact-us").textContent =cyberctrFeatures.i18n("btn-contact-us");
-		//Off canvas
-		document.getElementById("btn-check-update-oc").textContent =cyberctrFeatures.i18n("btn-check-update");
-		document.getElementById("btn-Documentation-oc").textContent =cyberctrFeatures.i18n("btn-Documentation");
-		document.getElementById("btn-faq-oc").textContent =cyberctrFeatures.i18n("btn-faq");
-		document.getElementById("btn-support-forums-oc").textContent =cyberctrFeatures.i18n("btn-support-forums");
-		document.getElementById("btn-contact-us-oc").textContent =cyberctrFeatures.i18n("btn-contact-us");
 		//Updates
 		document.getElementById("msg-firstrun-welcome").textContent =cyberctrFeatures.i18n("msg-firstrun-welcome");
 		document.getElementById("msg-new-version-blob").innerHTML = cyberctrFeatures.i18n("msg-new-version-blob");
