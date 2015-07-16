@@ -1,5 +1,8 @@
+(function(global) {
+	
+var Cc = Components.classes, Cu = Components.utils;
 //Import services use one service for preferences.
-Components.utils.import("resource://gre/modules/Services.jsm");
+var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
 
 if (typeof cyberctrFeatures == "undefined") {
     var cyberctrFeatures = {};
@@ -148,7 +151,7 @@ cyberctrFeatures = {
 
         } catch (eve) {
             //Show error
-            Components.utils.reportError(eve);
+            Cu.reportError(eve);
         }
 	},	
 	
@@ -172,3 +175,7 @@ window.addEventListener("load", function() {
 	window.removeEventListener("load", cyberctrFeatures.initialize_features(), false);
     cyberctrFeatures.initialize_features();
 }, false);
+
+  // Make cyberctrFeatures a global variable
+  global.cyberctrFeatures = cyberctrFeatures;
+}(this));
