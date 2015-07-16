@@ -5,9 +5,7 @@
  make sure a 'get' call looks only for items already in DOM.
 */
 
-var Cc = Components.classes;
-var Ci = Components.interfaces;
-var Cu = Components.utils;
+var Cc = Components.classes, Ci = Components.interfaces, Cu = Components.utils;
 
 var {CustomizableUI} = Cu.import("resource:///modules/CustomizableUI.jsm", {});
 var {AddonManager} = Cu.import("resource://gre/modules/AddonManager.jsm", {});
