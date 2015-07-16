@@ -1,18 +1,22 @@
 "use strict";
+(function(global) {
 /*
  There are a few "timeouts" on this document. In almost all cases they are needed to
  make sure a 'get' call looks only for items already in DOM.
 */
 
-Cu.import("resource:///modules/CustomizableUI.jsm");
-Cu.import("resource://gre/modules/AddonManager.jsm");
-Cu.import("resource://gre/modules/FileUtils.jsm");
-Cu.import("resource://gre/modules/NetUtil.jsm");
-Cu.import("resource://gre/modules/osfile.jsm");    // load the OS module
+var Cc = Components.classes;
+var Ci = Components.interfaces;
+var Cu = Components.utils;
+
+var {CustomizableUI} = Cu.import("resource:///modules/CustomizableUI.jsm", {});
+var {AddonManager} = Cu.import("resource://gre/modules/AddonManager.jsm", {});
+var {FileUtils} = Cu.import("resource://gre/modules/FileUtils.jsm", {});
+var {NetUtil} = Cu.import("resource://gre/modules/NetUtil.jsm", {});
+var {osfile} = Cu.import("resource://gre/modules/osfile.jsm", {});    // load the OS module
 //Import services
-Cu.import("resource://gre/modules/Services.jsm");
-//Query nsIPrefBranch see: Bug 1125570 | Bug 1083561
-Services.prefs.QueryInterface(Ci.nsIPrefBranch);
+var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
+
 
 if (typeof classicthemerestorerjs == "undefined") {var classicthemerestorerjs = {};};
 if (!classicthemerestorerjs.ctr) {classicthemerestorerjs.ctr = {};};
@@ -2661,12 +2665,12 @@ classicthemerestorerjs.ctr = {
 	// As result event listener fails to listen for "TabAttrModified" event.
 	// Waiting until dom content is loaded fixes this problem.
 	window.addEventListener("DOMContentLoaded", function _favIconinUrlbarCTR(){
-	  var mainWindow = window.QueryInterface(Components.interfaces.nsIInterfaceRequestor)
-                       .getInterface(Components.interfaces.nsIWebNavigation)
-                       .QueryInterface(Components.interfaces.nsIDocShellTreeItem)
+	  var mainWindow = window.QueryInterface(Ci.nsIInterfaceRequestor)
+                       .getInterface(Ci.nsIWebNavigation)
+                       .QueryInterface(Ci.nsIDocShellTreeItem)
                        .rootTreeItem
-                       .QueryInterface(Components.interfaces.nsIInterfaceRequestor)
-                       .getInterface(Components.interfaces.nsIDOMWindow);
+                       .QueryInterface(Ci.nsIInterfaceRequestor)
+                       .getInterface(Ci.nsIDOMWindow);
 					   
 	  mainWindow.gBrowser.tabContainer.addEventListener("TabAttrModified", faviconInUrlbar, false);
 	}, false);
@@ -2820,7 +2824,7 @@ classicthemerestorerjs.ctr = {
 
 	  try {
 		if (Services.prefs.getBranch("lightweightThemes.").getCharPref("selectedThemeID")=='firefox-devedition@mozilla.org') {
-		  Components.utils.import("resource://gre/modules/LightweightThemeManager.jsm");
+		  Cu.import("resource://gre/modules/LightweightThemeManager.jsm");
 		  LightweightThemeManager.themeChanged(null);
 		  Services.prefs.getBranch("lightweightThemes.").deleteBranch("selectedThemeID");
 		}
@@ -5616,8 +5620,8 @@ switch (appButtonState){
 		if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 
-			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
+			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
 				  _contentIOStream.init(_contentStream);
 			var input = _contentIOStream.read(_contentStream.available());
@@ -5642,8 +5646,8 @@ switch (appButtonState){
 	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
 		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
+			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
 				  _contentIOStream.init(_contentStream);
 			var input = _contentIOStream.read(_contentStream.available());
@@ -5736,9 +5740,9 @@ switch (appButtonState){
 			    
 		function saveToFile(iPatterns) {
 			
-		  const nsIFilePicker = Components.interfaces.nsIFilePicker;
-		  var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-		  var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
+		  const nsIFilePicker = Ci.nsIFilePicker;
+		  var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+		  var stream = Cc["@mozilla.org/network/file-output-stream;1"].createInstance(Ci.nsIFileOutputStream);
 
 		  fp.init(window, null, nsIFilePicker.modeSave);
 		
@@ -5804,7 +5808,7 @@ switch (appButtonState){
 
 	  } catch(e) {
 		// Report errors to console
-		Components.utils.reportError(e);
+		Cu.reportError(e);
 	  }
 	}	
 
@@ -5831,8 +5835,8 @@ switch (appButtonState){
 	if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 
-			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
+			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
 				  _contentIOStream.init(_contentStream);
 			var input = _contentIOStream.read(_contentStream.available());
@@ -5863,8 +5867,8 @@ switch (appButtonState){
 	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
 		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			var _contentStream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-			var _contentIOStream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);	   
+			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
 				  _contentIOStream.init(_contentStream);
 			var input = _contentIOStream.read(_contentStream.available());
@@ -5977,3 +5981,7 @@ switch (appButtonState){
 classicthemerestorerjs.ctr.importLocalCTRpreferencesJSON();
 classicthemerestorerjs.ctr.importLocalCTRpreferences();
 classicthemerestorerjs.ctr.init();
+
+  // Make classicthemerestorerjs a global variable
+  global.classicthemerestorerjs = classicthemerestorerjs;
+}(this));

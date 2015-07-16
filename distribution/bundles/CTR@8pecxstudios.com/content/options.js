@@ -1,14 +1,17 @@
 "use strict";
+(function(global) {
 if (typeof classicthemerestorerjso == "undefined") {var classicthemerestorerjso = {};};
 if (!classicthemerestorerjso.ctr) {classicthemerestorerjso.ctr = {};};
 
-Components.utils.import("resource://gre/modules/AddonManager.jsm");
-Components.utils.import("resource:///modules/CustomizableUI.jsm");
+var Cc = Components.classes;
+var Ci = Components.interfaces;
+var Cu = Components.utils;
+
+var {CustomizableUI} = Cu.import("resource:///modules/CustomizableUI.jsm", {});
+var {AddonManager} = Cu.import("resource://gre/modules/AddonManager.jsm", {});
 
 //Import services use one service for preferences.
-Components.utils.import("resource://gre/modules/Services.jsm");
-//Query nsIPrefBranch see: Bug 1125570 | Bug 1083561
-Services.prefs.QueryInterface(Components.interfaces.nsIPrefBranch);
+var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
 var  contexts = Services.prefs.getBranch("browser.context.");
 
 classicthemerestorerjso.ctr = {
@@ -355,7 +358,7 @@ classicthemerestorerjso.ctr = {
 	  // Keeping a reference to the observed preference branch or it will get
 	  // garbage collected.
 	  this._branch = Services.prefs.getBranch(branch_name);
-	  this._branch.QueryInterface(Components.interfaces.nsIPrefBranch2);
+	  this._branch.QueryInterface(Ci.nsIPrefBranch2);
 	  this._callback = callback;
 	}
 
@@ -701,8 +704,8 @@ classicthemerestorerjso.ctr = {
      when preference window gets closed */
   unloadprefwindow: function() {
 
-	var cancelQuit   = Components.classes["@mozilla.org/supports-PRBool;1"].createInstance(Components.interfaces.nsISupportsPRBool);
-	var observerSvc  = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
+	var cancelQuit   = Cc["@mozilla.org/supports-PRBool;1"].createInstance(Ci.nsISupportsPRBool);
+	var observerSvc  = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
 	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 						
 	var brandName	 = '';
@@ -1216,7 +1219,7 @@ classicthemerestorerjso.ctr = {
 
 	  } catch(e) {
 		// Report errors to console
-		Components.utils.reportError(e);
+		Cu.reportError(e);
 	  }
 
 	}	  
@@ -1303,7 +1306,7 @@ classicthemerestorerjso.ctr = {
 
 	  } catch(e) {
 		// Report errors to console
-		Components.utils.reportError(e);
+		Cu.reportError(e);
 	  }
 	}	
 
@@ -1350,7 +1353,7 @@ classicthemerestorerjso.ctr = {
 
 	  } catch(e) {
 		// Report errors to console
-		Components.utils.reportError(e);
+		Cu.reportError(e);
 	  }
 
 	}
@@ -1377,9 +1380,9 @@ classicthemerestorerjso.ctr = {
 			  return false;
 			}
 
-			const nsIFilePicker = Components.interfaces.nsIFilePicker;
-			var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-			var stream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
+			const nsIFilePicker = Ci.nsIFilePicker;
+			var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+			var stream = Cc["@mozilla.org/network/file-output-stream;1"].createInstance(Ci.nsIFileOutputStream);
 
 			fp.init(window, null, nsIFilePicker.modeSave);
 			fp.defaultExtension = aType;
@@ -1421,7 +1424,7 @@ classicthemerestorerjso.ctr = {
 			}
 			return true;
 		  } catch(e) {
-			Components.utils.reportError(e);
+			Cu.reportError(e);
 		  }
 	  },
 
@@ -1432,10 +1435,10 @@ classicthemerestorerjso.ctr = {
 			}
 			
 			var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
-			const nsIFilePicker = Components.interfaces.nsIFilePicker;
-			var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-			var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-			var streamIO = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
+			const nsIFilePicker = Ci.nsIFilePicker;
+			var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+			var stream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+			var streamIO = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);
 
 			fp.defaultExtension = aType;
 			fp.defaultString = "CTRpreferences." + aType;
@@ -1472,7 +1475,7 @@ classicthemerestorerjso.ctr = {
 			}
 			return null;
 		  } catch(e) {
-			Components.utils.reportError(e);
+			Cu.reportError(e);
 		  }
 	  },
  
@@ -1491,8 +1494,8 @@ classicthemerestorerjso.ctr = {
  	ReuseFeaturesTab: function (attrName, url) {
 	
 	try{
-			  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-								 .getService(Components.interfaces.nsIWindowMediator);
+			  var wm = Cc["@mozilla.org/appshell/window-mediator;1"]
+								 .getService(Ci.nsIWindowMediator);
 			  for (var found = false, index = 0, tabbrowser = wm.getEnumerator('navigator:browser').getNext().gBrowser;
 				   index < tabbrowser.tabContainer.childNodes.length && !found;
 				   index++) {
@@ -1577,15 +1580,15 @@ classicthemerestorerjso.ctr = {
 	
 	copyCss: function () {
 			if(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter").length === 0){return;}
-            var gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
+            var gClipboardHelper = Cc["@mozilla.org/widget/clipboardhelper;1"].getService(Ci.nsIClipboardHelper);
             gClipboardHelper.copyString(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter"));
 	},
 
 	selectBG: function() {
 		try{
-		   const nsIFilePicker = Components.interfaces.nsIFilePicker;
-		   var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-		   var stream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
+		   const nsIFilePicker = Ci.nsIFilePicker;
+		   var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+		   var stream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
 		   var IOpath = "";
 
 		   fp.init(window, null, nsIFilePicker.modeOpen);
@@ -1605,3 +1608,8 @@ classicthemerestorerjso.ctr = {
 	}
 	
 };
+
+
+  // Make classicthemerestorerjso a global variable
+  global.classicthemerestorerjso = classicthemerestorerjso;
+}(this));
