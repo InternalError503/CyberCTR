@@ -1815,14 +1815,14 @@ classicthemerestorerjs.ctr = {
 				if (newURL=='') newURL='about:newtab';
 				
 				try{
-					Cu.import("resource:///modules/NewTabURL.jsm");
+					var {NewTabURL} = Cu.import("resource:///modules/NewTabURL.jsm", {});
 					NewTabURL.override(newURL);
 				} catch(e){}
 
 				
 			} else if (classicthemerestorerjs.ctr.appversion >= 41) {
 				try{
-				  Cu.import("resource:///modules/NewTabURL.jsm");
+				  var {NewTabURL} = Cu.import("resource:///modules/NewTabURL.jsm", {});
 				  NewTabURL.reset();
 				} catch(e){}
 			}
