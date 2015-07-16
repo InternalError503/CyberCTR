@@ -2822,7 +2822,7 @@ classicthemerestorerjs.ctr = {
 
 	  try {
 		if (Services.prefs.getBranch("lightweightThemes.").getCharPref("selectedThemeID")=='firefox-devedition@mozilla.org') {
-		  Cu.import("resource://gre/modules/LightweightThemeManager.jsm");
+		 var {LightweightThemeManager} = Cu.import("resource://gre/modules/LightweightThemeManager.jsm", {});
 		  LightweightThemeManager.themeChanged(null);
 		  Services.prefs.getBranch("lightweightThemes.").deleteBranch("selectedThemeID");
 		}
