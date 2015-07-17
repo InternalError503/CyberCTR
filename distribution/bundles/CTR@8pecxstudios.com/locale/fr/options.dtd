@@ -51,8 +51,6 @@
 <!ENTITY Ctr_tabheightinfo	"Une valeur trop petite causera des problèmes lorsque la fenêtre est maximisée.">
 <!ENTITY Ctr_tabmaxwidth	"Largeur maximale :">
 <!ENTITY Ctr_tabminwidth	"Largeur minimale :">
-<!ENTITY Ctr_tabclipwidth	"Largeur min. pour bouton de ferm. :">
-<!ENTITY Ctr_tabclipwidthI	"Saisir « 1 » dans « largeur min. pour bouton de ferm. »">
 <!ENTITY Ctr_tabwidthinfo	"Onglets : les largeurs mini et maxi sont controlées par TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Onglets : les largeurs mini et maxi sont controlées par TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Les valeurs en dessous de 48px causent des problèmes dans la majorité des cas.">
