@@ -276,7 +276,6 @@
 <!ENTITY Ctr_nodevtheme		"Empêche l’activation du « thème développeur »">
 
 <!ENTITY Ctr_experttweaks	"Expert">
-<!ENTITY Ctr_fx33layers		"&brandShortName; 33+ – offre de nouvelles fonctions de rendu, lesquelles sont responsables de bugs avec les onglets sur certains systèmes (aucune réaction, onglets gelés). Ce problème est résolu en décochant cette option.">
 <!ENTITY Ctr_fx34search		"&brandShortName; 34+ – offre une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
 <!ENTITY Ctr_fx34loop		"&brandShortName; 34+ – offre la possibilité d’inviter quelqu’un à discuter. Cette possibilité est désactivée en décochant cette option.">
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – offre un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
@@ -284,7 +283,6 @@
 <!ENTITY Ctr_fx38reader		"&brandShortName; 38+ offre un mode de lecture d’articles. Si cette option est décochée, ce mode est désactivé et l’icône est enlevée de la barre d’adresse.">
 <!ENTITY Ctr_fx38pocket		"&brandShortName; 38.0.5+ offre le mode « sac de rangement » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevée des barres d’outils.">
 <!ENTITY Ctr_fx38pocket2	"Note: Déplacer le bouton « Sac » vers la fenêtre de personnalisation avant de désactiver cette fonction permet également d’enlever le sac de rangement des marque-pages et du menu de lecture.">
-<!ENTITY Ctr_e_omtc			"Problèmes de composition asynchrone (« OMTC »)">
 <!ENTITY Ctr_e_searchui		"Apparence et fonctionnement de la recherche">
 <!ENTITY Ctr_e_loop			"Appels et conversations">
 <!ENTITY Ctr_e_deved		"Thème de l’édition de développement">
