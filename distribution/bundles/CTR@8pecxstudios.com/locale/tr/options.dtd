@@ -146,6 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Özel metin rengi kullan">
 <!ENTITY ctr_aboutnewtab.custombasecol "Taban metin rengini değiştir">
 <!ENTITY Ctr_alt_addonsp	"Eklentiler için 'daha fazla bilgi' sayfası: alternatif görünüm">
+<!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
 <!ENTITY Ctr_alt_newtabcol	"Yeni sekme sayfası: sütunlar">
 <!ENTITY Ctr_alt_newtabrow	"Yeni sekme sayfası: satırlar">
@@ -251,7 +252,7 @@
 <!ENTITY Ctr_nonavtbborder	"Tepedeki sekmeler: Araç çubuğu sınırları kaldır">
 <!ENTITY Ctr_hidesbclose	"Sidebars: Kenar çubuğu kapatma düğmesini gizle">
 <!ENTITY Ctr_notextshadow	"Araç Çubukları: Araç çubuğu metin ve sekme metinlerinde gölgeleri gizle">
-<!ENTITY Ctr_chevronfix		"Gezinti araç çubuğu: Araç çubuğu sonunda ki Çift oku gizle ('chevron')">
+<!ENTITY Ctr_chevronfix		"Gezinti araç çubuğu: Araç çubuğu sonunda ki Çift oku gizle ('More Tools')">
 <!ENTITY Ctr_tbsep_winc		"Üst araç çubukları: ek araç çubuğu ayırıcıları">
 
 <!ENTITY Ctr_closeabarbut	"Eklenti çubuğu kapatma düğmesini sakla">
@@ -277,7 +278,7 @@
 
 <!ENTITY Ctr_experttweaks	"Gelişmiş">
 <!ENTITY Ctr_fx33layers		"&brandShortName; 33+ introduced 'new render features' currently responsible for 'hanging tabs' on some systems. Unchecking this preference resolves this issue.">
-<!ENTITY Ctr_fx34search		"&brandShortName; 34+ introduced a 'new seach ui'. Unchecking this preference returns the 'old seach ui'.">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ introduced a 'new search ui'. Unchecking this preference returns the 'old search ui'.">
 <!ENTITY Ctr_fx34loop		"&brandShortName; 34+ introduced 'calling and conversation' features. Unchecking this preference removes them.">
 <!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ introduced a new 'developer theme'. Unchecking these preferences disables the 'developer theme' and its button in customizing mode.">
 <!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ introduced 'preferences in tab'. Unchecking this preference restores the old preference window.">

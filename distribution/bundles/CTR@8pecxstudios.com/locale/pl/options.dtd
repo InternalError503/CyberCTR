@@ -146,7 +146,8 @@
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_alt_addonsp	"Strona dodatków 'więcej informacji': wygląd alternatywny">
-<!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
+<!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
+<!ENTITY Ctr_addonversion	"Strona dodatków: wyświetlaj wersję dodatku">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Przycisk menu zakładek: wygląd menu panelu">

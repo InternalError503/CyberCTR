@@ -147,6 +147,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_alt_addonsp	"Página 'más información' de los complementos: Apariencia alternativa">
+<!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_addonversion	"Página de complementos: Mostrar la versión del complemento">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">

@@ -146,6 +146,7 @@
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_alt_addonsp	"Stran dodatkov 'Več': nadomestni videz">
+<!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_addonversion	"Stran dodatkov: prikaži različico dodatka">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
