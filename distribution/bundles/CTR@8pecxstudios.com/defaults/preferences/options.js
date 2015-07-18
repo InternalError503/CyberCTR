@@ -58,6 +58,8 @@ pref("extensions.classicthemerestorer.hidezoomres",false);
 pref("extensions.classicthemerestorer.addonversion",false);
 pref("extensions.classicthemerestorer.alt_newtabp",false);
 pref("extensions.classicthemerestorer.alt_newtabpalt",false);
+pref("extensions.classicthemerestorer.aboutnewtabcustombg", false);
+pref("extensions.classicthemerestorer.aboutnewtabcustomurl", "");
 
 pref("extensions.classicthemerestorer.aboutnewtabcustombase",false);
 pref("extensions.classicthemerestorer.aboutnewtabcustomhighlight",false);

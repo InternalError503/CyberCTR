@@ -73,6 +73,7 @@ classicthemerestorerjs.ctr = {
   abouthome_custbasecolor:		sheetIO,
   aboutnewtab_custcolor:			sheetIO,
   hideElements:							sheetIO,
+  aboutnewtab_bg:						sheetIO,
   
   prefs:										Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -2114,6 +2115,16 @@ classicthemerestorerjs.ctr = {
 					}else{
 						classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_custcolor",false);
 					}
+				} catch(e){}			
+		  break;
+		  
+		  case "aboutnewtabcustombg": case "aboutnewtabcustomurl":
+			  	try{		  
+					if (branch.getBoolPref("aboutnewtabcustombg")) {				
+							classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_bg",true);
+					}else{
+						classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_bg",false);
+					}	
 				} catch(e){}			
 		  break;
 		  
@@ -5255,6 +5266,31 @@ classicthemerestorerjs.ctr = {
 				applyNewSheet(this.hideElements);
 				}
 			}
+		break;
+			
+		case "aboutnewtab_bg":
+
+			removeOldSheet(this.aboutnewtab_bg);
+			
+			if(enable==true && this.prefs.getBoolPref("aboutnewtabcustombg")){
+	
+				this.aboutnewtab_bg=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.w3.org/1999/xhtml);\
+					@-moz-document url("about:newtab") {\
+						#newtab-window,\
+						#newtab-scrollbox{\
+							background-image: url('+ this.prefs.getCharPref("aboutnewtabcustomurl") +')!important;\
+						}\
+						#newtab-margin-bottom{\
+							background: transparent!important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.aboutnewtab_bg);
+			}
+
+		break;	
 		
 	}
 	

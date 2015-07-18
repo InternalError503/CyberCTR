@@ -280,9 +280,11 @@
 	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthome_bg_stretch"	name="extensions.classicthemerestorer.abouthomebgstretch"	type="bool"	instantApply="true"/>	
 	
-	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>
-	
-	<preference id="ctraddon_cmovableurlbar"	name="extensions.classicthemerestorer.movableurlbar"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_cmovableurlbar"	name="extensions.classicthemerestorer.movableurlbar"	type="bool"	instantApply="true"/>
+
+	<preference id="ctraddon_ctaboutnewtabcustombg"	name="extensions.classicthemerestorer.aboutnewtabcustombg"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_ctaboutnewtab_bg"	name="extensions.classicthemerestorer.aboutnewtabcustomurl"	type="string"	instantApply="true"/>	
 	
 	</preferences>
 
@@ -823,7 +825,7 @@
 						  preference="ctraddon_ctabouthome_bg" 
 						  size="auto" 
 						  flex="1" 
-						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectBG();"/><button id="custom_bg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectBG();"/>
+						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectBG('abh');"/><button id="custom_bg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectBG('abh');"/>
 			</hbox>
 			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>
 			<checkbox label="&ctr_abouthome.custombase;" preference="ctraddon_ctabouthomecustombase" id="ctraddon_ctabouthomecustbsck"/>			
@@ -846,6 +848,15 @@
 		<checkbox label="&Ctr_alt_newtabpalt;"		preference="ctraddon_alt_newtabpalt" id="ctraddon_pw_alt_newtabpalt"/>
 		<checkbox label="&ctr_aboutnewtab.custombase;" preference="ctraddon_alt_newtabpalt_custombase" id="ctraddon_ctaboutnewtabcustbsck"/>			
 		<checkbox label="&ctr_aboutnewtab.customhighlight;" preference="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight" id="ctraddon_ctaboutnewtabcusthltck"/>
+		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctaboutnewtabcustombg" id="ctraddon_ctaboutnewtab_custbg"/>			
+			<hbox>
+		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctaboutnewtab_custbgl"/>
+		  <textbox id="ctraddon_ctnewtab_bg_urlbox" 
+						  preference="ctraddon_ctaboutnewtab_bg" 
+						  size="auto" 
+						  flex="1" 
+						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectBG('ntp');"/><button id="custom_ntpbg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectBG('ntp');"/>
+			</hbox>
 		<hbox>
 			<label value="&ctr_aboutnewtab.custombasecol;" id="ctraddon_ctaboutnewtabcustbslb"/>
 			<textbox preference="ctraddon_alt_newtabpalt_custombasecolor" id="ctraddon_ctaboutnewtabcustbstb" width="70px"/>
