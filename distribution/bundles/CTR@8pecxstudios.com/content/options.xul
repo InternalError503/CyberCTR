@@ -285,6 +285,7 @@
 
 	<preference id="ctraddon_ctaboutnewtabcustombg"	name="extensions.classicthemerestorer.aboutnewtabcustombg"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg"	name="extensions.classicthemerestorer.aboutnewtabcustomurl"	type="string"	instantApply="true"/>	
+	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>
 	
 	</preferences>
 
@@ -857,6 +858,7 @@
 						  flex="1" 
 						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectBG('ntp');"/><button id="custom_ntpbg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectBG('ntp');"/>
 			</hbox>
+		<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctaboutnewtab_bg_stretch" id="ctraddon_ctaboutnewtab_custbgstretch"/>
 		<hbox>
 			<label value="&ctr_aboutnewtab.custombasecol;" id="ctraddon_ctaboutnewtabcustbslb"/>
 			<textbox preference="ctraddon_alt_newtabpalt_custombasecolor" id="ctraddon_ctaboutnewtabcustbstb" width="70px"/>
