@@ -437,9 +437,12 @@ classicthemerestorerjso.ctr = {
 			//Temp fix visual glitch changing from square to curved tabs after installing TMP
 			case "tabs":
 				AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
-					if(addon && addon.isActive) {
+					if(addon && addon.isActive && branch.getCharPref("tabs") === "tabs_default" && branch.getBoolPref("compatibility.tabmix") === false) {
+						branch.setBoolPref("compatibility.tabmix", true);
 						classicthemerestorerjso.ctr.needsBrowserRestart();
-					}
+					}else if (addon && addon.isActive && branch.getCharPref("tabs") != "tabs_default" && branch.getBoolPref("compatibility.tabmix") === true){
+							branch.setBoolPref("compatibility.tabmix", false);
+					}	
 				});
 			break;
 		  

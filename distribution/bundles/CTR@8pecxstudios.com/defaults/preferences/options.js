@@ -267,7 +267,7 @@ pref("extensions.classicthemerestorer.hidexulfilter", "");
 pref("extensions.classicthemerestorer.compatibility.treestyle",false);
 pref("extensions.classicthemerestorer.compatibility.treestyle.disable",false);
 
-//Tab Mix Plus, Not implemented yet!
+//Tab Mix Plus
 pref("extensions.classicthemerestorer.compatibility.tabmix",false);
 
 //CyberCTR Pre-set Configuration
