@@ -2142,9 +2142,14 @@ classicthemerestorerjs.ctr = {
 		  case "colapsesearchaddons":
 			  	try{		  
 					if (branch.getBoolPref("colapsesearchaddons")) {				
+						if (classicthemerestorerjs.ctr.appversion >= 40) {
+							classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch40plus",true);
+						} else {	
 							classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch",true);
+						}	
 					}else{
 						classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch",false);
+						classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch40plus",false);
 					}	
 				} catch(e){}			
 		  break;
@@ -3425,7 +3430,8 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenoicons": 						manageCSS("abouthomenoicons.css");	break;	
 		case "abouthomenosnippets": 					manageCSS("abouthomenosnippets.css");	break;
 		case "abouthomeanimate": 						manageCSS("abouthomeanimate.css");	break;
-		case "rndadonssearch": 						manageCSS("rndadonssearch.css");	break;
+		case "rndadonssearch": 						manageCSS("rndadonssearch.css"); break;
+		case "rndadonssearch40plus": 						manageCSS("rndadonssearch40plus.css");	break;
 		case "nopocket": 						manageCSS("nopocket.css"); break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
