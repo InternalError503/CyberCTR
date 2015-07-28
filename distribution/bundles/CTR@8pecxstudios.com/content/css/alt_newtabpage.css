@@ -29,11 +29,6 @@
 	  margin: 20px 10px 0px !important;
 	}
 */
-	#newtab-customize-button:-moz-any(:hover, :active, [active]) {
-		background-color: transparent!important;
-		border: none!important;
-		border-radius: none!important;
-	}
 
 	#newtab-customize-button,
 	.newtab-customize,
