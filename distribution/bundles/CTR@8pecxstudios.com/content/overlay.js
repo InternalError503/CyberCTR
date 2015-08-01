@@ -190,7 +190,17 @@ classicthemerestorerjs.ctr = {
 		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase() && this.appversion <= 34) {
 				Services.prefs.setBoolPref("browser.menu.aboutconfig", true);
 		}
-		
+	  
+		//Personal Menu				
+		AddonManager.getAddonByID('CompactMenuCE@Merci.chao', function(addon) {
+			if(addon && addon.isActive && Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.personalmenu") === true) { 
+				if (Services.prompt.confirm(null, classicthemerestorerjs.ctr.stringBundle.GetStringFromName("popup_compatibility_title"), 
+				classicthemerestorerjs.ctr.stringBundle.GetStringFromName("popup_compatibility_permenu"))){
+					Services.prefs.setCharPref("extensions.classicthemerestorer.appbutton", "appbutton_off");
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.personalmenu", false);
+				}
+			}
+		});	
 	
 	// style CTRs 'customize-ui' option buttons
 	this.loadUnloadCSS('cui_buttons',true);
@@ -5572,17 +5582,7 @@ window.addEventListener("DOMWindowCreated", function load(event){
 					
 			  });			
 								  					 			  
-			  		},false);
-					
-			  AddonManager.getAddonByID('CompactMenuCE@Merci.chao', function(addon) {
-				if(addon && addon.isActive) { 
-												alert("Compatibility issues detected (Personal Menu) \n Please uninstall (CyberCTR) or (Personal Menu)!");
-						//console.log("Compatibility issues detected (Personal Menu) \n Please uninstall (CyberCTR) or (Personal Menu)!");
-					}else{//console.log("No compatibility issues detected (Personal Menu)");
-					}
-				
-			  });	
- 					
+			  		},false);					
   },
   
 	fixThatTreeStyleBro: function(){

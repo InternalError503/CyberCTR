@@ -12,3 +12,5 @@ notification_msg_change=Önceden tanımlı CTRpreferences ayarlarınız değişt
 notification_button_change=Ayarlar
 clearFilter.title=Filtre temizlemeyi onayla.
 clearFilter.msg=Filtreyi temizlemek istediğinize emin misiniz?
+popup_compatibility_title=Compatibility issues detected!
+popup_compatibility_permenu=Would you like to enable compatibility mode? \n If not please uninstall (CyberCTR) or (Personal Menu)!

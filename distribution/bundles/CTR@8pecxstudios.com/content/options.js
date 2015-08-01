@@ -305,6 +305,13 @@ classicthemerestorerjso.ctr = {
 	   }
 	};
 	AddonManager.addAddonListener(HCTPListener);
+	//Personal menu
+	AddonManager.getAddonByID('CompactMenuCE@Merci.chao', function(addon) {
+		if(addon && addon.isActive) { 
+			document.getElementById('ctraddon_appbuttonboxtab').style.visibility = 'collapse';
+			document.getElementById('ctraddon_appbuttonbox').style.visibility = 'collapse';
+		}
+	});
 
 	// disable bookmark animation checkbox, if 'star button in urlbar' is used
 	if (this.prefs.getBoolPref('starinurl')) document.getElementById('ctraddon_pw_bmanimation').disabled = true;

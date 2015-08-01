@@ -270,6 +270,9 @@ pref("extensions.classicthemerestorer.compatibility.treestyle.disable",false);
 //Tab Mix Plus
 pref("extensions.classicthemerestorer.compatibility.tabmix",false);
 
+//Personal Menu
+pref("extensions.classicthemerestorer.compatibility.personalmenu",true);
+
 //CyberCTR Pre-set Configuration
 pref("extensions.classicthemerestorer.ctrpref.firstrun", true);
 pref("extensions.classicthemerestorer.ctrpref.lastmod", "0");

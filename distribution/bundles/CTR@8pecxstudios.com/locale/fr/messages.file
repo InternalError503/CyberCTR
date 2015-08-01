@@ -12,3 +12,5 @@ notification_msg_change=Le fichier de préférences préconfiguré CTRpreference
 notification_button_change=Options
 clearFilter.title=Confirmer l’effacement du filtre.
 clearFilter.msg=Êtes-vous certain de vouloir effacer le filtre ?
+popup_compatibility_title=Compatibility issues detected!
+popup_compatibility_permenu=Would you like to enable compatibility mode? \n If not please uninstall (CyberCTR) or (Personal Menu)!
