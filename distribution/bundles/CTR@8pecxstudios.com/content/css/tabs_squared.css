@@ -343,6 +343,11 @@
 	  clip-path: none !important;
 	}
 	
+	/* fix crash icons position */
+	.tabbrowser-tab[crashed] .tab-icon-overlay {
+	  margin-top:0px !important;
+	}
+	
 	/* Private Tab extension */
 	.tabs-newtab-button + .tabs-newtab-button {
 	  -moz-margin-start: 15px !important;
