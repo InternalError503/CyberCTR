@@ -178,6 +178,7 @@ pref("extensions.classicthemerestorer.cbookmarkfontsize", 12);
 pref("extensions.classicthemerestorer.throbberalt",false);
 pref("extensions.classicthemerestorer.bmanimation",true);
 pref("extensions.classicthemerestorer.pananimation",true);
+pref("extensions.classicthemerestorer.fsaduration",true);
 
 // CTR area
 pref("extensions.classicthemerestorer.toolsitem",true);
