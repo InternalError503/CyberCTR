@@ -12,5 +12,5 @@ notification_msg_change=Набор опций CTRpreferences был измене
 notification_button_change=Опции
 clearFilter.title=Подтверждение очистки фильтра.
 clearFilter.msg=Вы действительно хотите очистить фильтр?
-popup_compatibility_title=Compatibility issues detected!
-popup_compatibility_permenu=Would you like to enable compatibility mode? \n If not please uninstall (CyberCTR) or (Personal Menu)!
+popup_compatibility_title=Обнаружены проблемы с совместимостью!
+popup_compatibility_permenu=Вы хотите включить режим совместимости? \n В противном случае нужно удалить (CyberCTR) или (Personal Menu)!
