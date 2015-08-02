@@ -5668,6 +5668,32 @@ switch (appButtonState){
 }
 	}
 		},
+
+
+notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupShow, aPopup, aCallback){
+	try{
+		var notificationBox = gBrowser.getNotificationBox();
+		var button = [];		
+		switch ( aPopupShow ) {
+			case true:
+				button = [{
+					label: aButtonLabel,
+					accessKey: aAcessKey,
+					popup: aPopup,
+					callback: aCallback }];
+			break
+			
+			case false:
+				button = [{
+					label: aButtonLabel,
+					accessKey: aAcessKey,
+					callback: aCallback }];
+			break;
+		}			
+		notificationBox.appendNotification(aMessage, aMessageId, 'chrome://browser/skin/Info.png', notificationBox.PRIORITY_INFO_HIGH, button);		
+	}catch(e){}	
+},
+
 		
   /* import CTR settings */
  importLocalCTRpreferences: function() {
@@ -5772,41 +5798,22 @@ switch (appButtonState){
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 
 	}else{	
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
-		window.setTimeout(function(){
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false)
-		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun");
-		var nb = gBrowser.getNotificationBox();
-		var button = [{
-			label: classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
-			accessKey: 'R',
-			callback: function(){classicthemerestorerjs.ctr.ctrPrefRestart();}
-						  }];
-
-		const priority = nb.PRIORITY_INFO_LOW;
-			nb.appendNotification(message, 'CTRpreferences', 'chrome://browser/skin/Info.png', priority, button);
-			
-			},4000);
-			
-			
-	}else{
-		
-		window.setTimeout(function(){
-		
-		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod;
-		var nb = gBrowser.getNotificationBox();
-		var button = [{
-			label: classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
-			accessKey: 'O',
-			popup: 'ApplyCTRpreferences',
-			callback: null
-						  }];
-
-		const priority = nb.PRIORITY_INFO_LOW;
-			nb.appendNotification(message, 'CTRpreferences', 'chrome://browser/skin/Info.png', priority, button);
-			
-			},4000);
-			
+		switch (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
+			case true:	
+				window.setTimeout(function(){
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false);
+					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun"),
+						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
+						'R', false, null, function(){classicthemerestorerjs.ctr.ctrPrefRestart();});
+				},4000);	
+			break;
+			case false:
+				window.setTimeout(function(){
+					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod,
+						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
+						'O', true, 'ApplyCTRpreferences', null);	
+				},4000);			
+		break;
 			}
 		}
 	}
@@ -5998,44 +6005,25 @@ switch (appButtonState){
 			Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
 			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 	}else{	
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
-		window.setTimeout(function(){
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false)
-		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun");
-		var nb = gBrowser.getNotificationBox();
-		var button = [{
-			label: classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
-			accessKey: 'R',
-			callback: function(){classicthemerestorerjs.ctr.ctrPrefRestart();}
-						  }];
-
-		const priority = nb.PRIORITY_INFO_LOW;
-			nb.appendNotification(message, 'CTRpreferences', 'chrome://browser/skin/Info.png', priority, button);
-			
-			},4000);
-			
-			
-	}else{
-		
-		window.setTimeout(function(){
-		
-		var message = classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod;
-		var nb = gBrowser.getNotificationBox();
-		var button = [{
-			label: classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
-			accessKey: 'O',
-			popup: 'ApplyCTRpreferences',
-			callback: null
-						  }];
-
-		const priority = nb.PRIORITY_INFO_LOW;
-			nb.appendNotification(message, 'CTRpreferences', 'chrome://browser/skin/Info.png', priority, button);
-			
-			},4000);
-			
-				}
-			}
+		switch (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
+			case true:	
+				window.setTimeout(function(){
+					Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false);
+					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun"),
+						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
+						'R', false, null, function(){classicthemerestorerjs.ctr.ctrPrefRestart();});
+				},4000);	
+			break;
+			case false:
+				window.setTimeout(function(){
+					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod,
+						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
+						'O', true, 'ApplyCTRpreferences', null);	
+				},4000);			
+		break;
 		}
+			}
+	}
 	
 	}else{
 		return null;
