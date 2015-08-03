@@ -5694,6 +5694,23 @@ notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupSho
 	}catch(e){}	
 },
 
+
+getHash: function(aContentStream){
+	function toHexString(charCode) {
+		return ("0" + charCode.toString(16)).slice(-2);
+	}
+	try{	
+		var CryptoHash = Cc["@mozilla.org/security/hash;1"]
+					   .createInstance(Ci.nsICryptoHash);
+		CryptoHash.init(CryptoHash.MD5);
+		const PR_UINT32_MAX = 0xffffffff;	
+		CryptoHash.updateFromStream(aContentStream, PR_UINT32_MAX);
+		var HashSum = CryptoHash.finish(false); 
+		var s = [toHexString(HashSum.charCodeAt(i)) for (i in HashSum)].join("");
+		return s;
+		
+	}catch(e){}	
+},
 		
   /* import CTR settings */
  importLocalCTRpreferences: function() {
@@ -5743,13 +5760,16 @@ notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupSho
 
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", false);
 	
-	var _ThisFile = localeSettingsFile;
-		var lastmod = new Date(_ThisFile.lastModifiedTime);
+	var _ThisFile = localeSettingsFile;	
+	var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+		_contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), 0);
+		var lastmod = classicthemerestorerjs.ctr.getHash(_contentStream);
+		_contentStream.close();
 
 		if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 
-			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+		
 			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
 				  _contentIOStream.init(_contentStream);
@@ -5809,7 +5829,7 @@ notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupSho
 			break;
 			case false:
 				window.setTimeout(function(){
-					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod,
+					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change"),
 						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
 						'O', true, 'ApplyCTRpreferences', null);	
 				},4000);			
@@ -5940,12 +5960,14 @@ notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupSho
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", true);
 				
 	var _ThisFile = localeSettingsFile;
-		var lastmod = new Date(_ThisFile.lastModifiedTime);
+	var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+		_contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), 0);
+		var lastmod = classicthemerestorerjs.ctr.getHash(_contentStream);
+		_contentStream.close();
 
 	if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
 		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 
-			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
 			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
 				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
 				  _contentIOStream.init(_contentStream);
@@ -6016,7 +6038,7 @@ notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupSho
 			break;
 			case false:
 				window.setTimeout(function(){
-					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change") + "  " + lastmod,
+					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change"),
 						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
 						'O', true, 'ApplyCTRpreferences', null);	
 				},4000);			
