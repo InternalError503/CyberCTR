@@ -5681,7 +5681,7 @@ notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupSho
 					accessKey: aAcessKey,
 					popup: aPopup,
 					callback: aCallback }];
-			break
+			break;
 			
 			case false:
 				button = [{
