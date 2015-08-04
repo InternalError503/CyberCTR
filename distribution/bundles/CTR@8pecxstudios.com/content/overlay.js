@@ -5994,6 +5994,41 @@ switch (appButtonState){
       return true;
 
     },
+	/* 
+		Restore defaults remove all CTRpreferences files and settings 
+		Users still have to manually remove CTRpreferences from \browser directory.
+	*/
+    resetBackupCTRpreferences: function() {
+		
+	if (Services.prompt.confirm(null, classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_confirm_clear_title"), 
+				classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_confirm_clear"))){
+	
+     var patterns = FileUtils.getFile("ProfD", []);
+
+      if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
+
+        let promise = OS.File.remove(patterns.path + "\\CTRpreferences.txt");
+        promise = promise.then(
+          function onSuccess(data) {
+			  console.log(patterns.path + "\\CTRpreferences.txt was deleted");
+            return true;
+          });
+      } else {
+        let promise = OS.File.remove(patterns.path + "\\CTRpreferences.json");
+        promise = promise.then(
+          function onSuccess(data) {
+			  console.log(patterns.path + "\\CTRpreferences.json was deleted");
+            return true;
+          });
+      }
+  
+		Services.prefs.clearUserPref("extensions.classicthemerestorer.ctrpref.importjson");
+		Services.prefs.clearUserPref("extensions.classicthemerestorer.ctrpref.active");
+        Services.prefs.clearUserPref("extensions.classicthemerestorer.ctrpref.lastmodapply");
+		Services.prefs.clearUserPref("extensions.classicthemerestorer.ctrpref.lastmod");
+        Services.prefs.clearUserPref("extensions.classicthemerestorer.ctrpref.firstrun");	
+		}
+	},	
 
   ctrPrefRestart: function(){
 	  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", true);

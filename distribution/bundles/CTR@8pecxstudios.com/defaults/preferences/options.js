@@ -279,6 +279,7 @@ pref("extensions.classicthemerestorer.ctrpref.firstrun", true);
 pref("extensions.classicthemerestorer.ctrpref.lastmod", "0");
 pref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
+pref("extensions.classicthemerestorer.ctrpref.active", false);
 
 //CyberCTR Add tab title to titlebar
 pref("extensions.classicthemerestorer.titleintitlebar", false);

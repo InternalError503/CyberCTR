@@ -38,6 +38,7 @@
 	  <menupopup  id="ApplyCTRpreferences">
 		<menuitem label="&ctr_applyCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.ctrPrefRestart();"/>
 		<menuitem label="&ctr_restoreCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.restoreBackupCTRpreferences();"/>
+		<menuitem label="&ctr_resetCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.resetBackupCTRpreferences();"/>
 	  </menupopup>
 	</popupset>	
 	<!-- CyberCTR Feature -->	

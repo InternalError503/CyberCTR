@@ -14,3 +14,5 @@ clearFilter.title=Confirm clear filter.
 clearFilter.msg=Are you sure you want to clear the filter?
 popup_compatibility_title=Compatibility issues detected!
 popup_compatibility_permenu=Would you like to enable compatibility mode? \n If not please uninstall (CyberCTR) or (Personal Menu)!
+notification_confirm_clear_title=Please confirm action!
+notification_confirm_clear=Are you sure you want to do this?

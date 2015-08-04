@@ -340,6 +340,7 @@
 
 <!ENTITY ctr_applyCTRPrefFile.label		"Appliquer les changements">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurer la copie de sauvegarde">
+<!ENTITY ctr_resetCTRPrefFile.label	"Clear Backup">
 
 <!ENTITY ctr_appbuttoncusttextcolor		"Couleur de texte du bouton d’application.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Enlever l’ombre du texte du bouton d’application.">

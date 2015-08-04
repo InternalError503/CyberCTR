@@ -336,6 +336,7 @@
 
 <!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Восстановление из резервной копии">
+<!ENTITY ctr_resetCTRPrefFile.label	"Clear Backup">
 
 <!ENTITY ctr_appbuttoncusttextcolor	"Цвет текста кнопки меню.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Удаление тени шрифта кнопки меню">

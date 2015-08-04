@@ -336,6 +336,7 @@
 
 <!ENTITY ctr_applyCTRPrefFile.label	"Değişiklikleri Uygula">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Yedeği Geri Yükle">
+<!ENTITY ctr_resetCTRPrefFile.label	"Clear Backup">
 
 <!ENTITY ctr_appbuttoncusttextcolor	"Uygulama metin rengi.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Uygulama metin gölgesini kaldır">
