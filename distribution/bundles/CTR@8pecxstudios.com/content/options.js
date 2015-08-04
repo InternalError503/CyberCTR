@@ -38,6 +38,7 @@ classicthemerestorerjso.ctr = {
 		"extensions.classicthemerestorer.version",
 		"extensions.classicthemerestorer.ctrpref.lastmod.backup",
 		"extensions.classicthemerestorer.ctrpref.importjson",
+		"extensions.classicthemerestorer.ctrpref.active",
 		"extensions.classicthemerestorer.compatibility.personalmenu"
 		],	
 

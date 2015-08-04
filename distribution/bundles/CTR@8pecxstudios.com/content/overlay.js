@@ -5866,7 +5866,7 @@ switch (appButtonState){
         }
 
         if (FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]).exists()) {
-
+		  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.active", true);
           var pattern = classicthemerestorerjs.ctr.loadFromFile("txt");
 
           if (!pattern) return false;
@@ -5904,6 +5904,7 @@ switch (appButtonState){
         }
 
         if (FileUtils.getFile("CurProcD", ["CTRpreferences.json"]).exists()) {
+		  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.active", true);
           var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 
           var parjson = classicthemerestorerjs.ctr.loadFromFile("json");
