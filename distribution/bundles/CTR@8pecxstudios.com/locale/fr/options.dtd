@@ -145,8 +145,8 @@
 <!ENTITY ctr_aboutnewtab.custombase 	"Utiliser une couleur de texte personnalisée">
 <!ENTITY ctr_aboutnewtab.custombasecol 	"Changer la couleur de base du texte">
 <!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » de la page des modules complémentaires : autre aspect">
-<!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
-<!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
+<!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
+<!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
 <!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
 <!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">
 <!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
@@ -154,23 +154,23 @@
 <!ENTITY Ctr_skipprintpr	"Bouton Imprimer : masquer « Aperçu avant l’impression »">
 <!ENTITY Ctr_tbconmenu		"Menu contextuel de la barre d’outils : masquer « déplacer au menu », « enlever de la barre d’outils », « recharger / marquer tous les onglets » et « annuler fermer l’onglet »">
 <!ENTITY Ctr_noresizerxp	"Masquer l’outil de redimensionnement (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Ouvrir une barre d’adresse supplémentaire (Cmd/Ctrl+">
+<!ENTITY Ctr_extraurlkeycb	"Ouvrir une barre d’adresse supplémentaire (Cmd/Ctrl+)">
 <!ENTITY Ctr_pmhidelabels	"Menu du panneau latéral : icônes seules">
 <!ENTITY Ctr_menupopupscr	"Menus pop-up : afficher des ascenseurs au lieu des flèches de défilement">
 
 <!ENTITY Ctr_fxmockup		"Maquette &brandShortName;">
-<!ENTITY Ctr_tabmokcolor	"Boutons des onglets de couleur blanche (fermer, nouveau, groupes, tout lister)">
-<!ENTITY Ctr_tabmokcolor2	"Texte des onglets de couleur blanche et ombre noire pour les onglets non actifs">
-<!ENTITY Ctr_tabmokcolor3	"Séparateurs de couleur blanche sur la barre d’onglets">
-<!ENTITY Ctr_tabmokcolor4	"Favicons vides pointillés de couleur blanche">
+<!ENTITY Ctr_tabmokcolor	"Boutons des onglets en blanc (fermer, nouveau, groupes, tout lister)">
+<!ENTITY Ctr_tabmokcolor2	"Texte des onglets en blanc avec ombre noire pour les onglets non actifs">
+<!ENTITY Ctr_tabmokcolor3	"Séparateurs blancs sur la barre d’onglets">
+<!ENTITY Ctr_tabmokcolor4	"Favicons vides pointillés blancs">
 
-<!ENTITY Ctr_navthrobber1	"En cliquant l’indicateur, on ouvre l’URL suivante :">
-<!ENTITY Ctr_navthrobber2	"Saisir une url or laisser vide">
-<!ENTITY Ctr_anewtaburl		"New tab page url">
-<!ENTITY Ctr_anewtaburlcb	"Custom new tab page url (default: 'about:newtab')">
+<!ENTITY Ctr_navthrobber1	"En cliquant l’indicateur, on ouvre l’adresse suivante :">
+<!ENTITY Ctr_navthrobber2	"Saisir une adresse ou laisser vide">
+<!ENTITY Ctr_anewtaburl		"Adresse de la page Nouvel onglet">
+<!ENTITY Ctr_anewtaburlcb	"Adresse personnalisée de la page Nouvel onglet (par défaut : « about:newtab »)">
 
 <!ENTITY Ctr_tab_tf_info1	"Les noms de couleurs, les codes hexadécimaux, et les entités rgb(a) et hsl(a) sont pris en charge.">
-<!ENTITY Ctr_tab_tf_info2	"Toute autre saisie ne fonctionnera pas !">
+<!ENTITY Ctr_tab_tf_info2	"Toute autre saisie ne fonctionne pas !">
 <!ENTITY Ctr_tabact_t		"actif">
 <!ENTITY Ctr_tabhov_t		"au survol">
 <!ENTITY Ctr_tabnor_t		"par défaut">
@@ -190,13 +190,13 @@
 <!ENTITY Ctr_bold			"Gras">
 <!ENTITY Ctr_italic			"Italique">
 <!ENTITY Ctr_notabhov		"Les valeurs paramétrées supplantent celles « au survol »">
-<!ENTITY Ctr_tabc_act_tb	"Couleur de fond pour les barres d'outils">
+<!ENTITY Ctr_tabc_act_tb	"Couleur de fond pour les barres d’outils">
 
-<!ENTITY Ctr_urlbar			"La barre d’adresse">
+<!ENTITY Ctr_urlbar			"Barre d’adresse">
 <!ENTITY Ctr_starinurl		"Bouton des marque-pages">
 <!ENTITY Ctr_feedinurl		"Bouton d’abonnement">
 <!ENTITY Ctr_hideurelstop	"Masquer « stop-actualiser »">
-<!ENTITY Ctr_hideurlgo		"Hide 'go' button">
+<!ENTITY Ctr_hideurlgo		"Masquer le bouton « Go »">
 <!ENTITY Ctr_urlbardropm	"Placer le dropmarker à la fin de la barre d’adresse">
 <!ENTITY Ctr_hideprbutton	"Masquer l’icône de notification quand un pop-up est bloqué">
 <!ENTITY Ctr_urlbar_ib		"Bouton d’identité">
@@ -233,7 +233,7 @@
 <!ENTITY Ctr_hidetbwote2	"Conserver la barre de titre (onglets en haut)">
 <!ENTITY Ctr_notabfog		"Enlever l’effet de flou (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_notabbg		"Enlever l’arrière-plan (Windows AeroGlass / Win8)">
-<!ENTITY Ctr_hightabpos		"Réduire l’espace supérieur (si possible)">
+<!ENTITY Ctr_hightabpos		"Réduire l’espace en haut (si possible)">
 <!ENTITY Ctr_alttabstb		"Arrière plan alternatif">
 <!ENTITY Ctr_alttabstb2		"En mode maximisé (les onglets en haut)">
 
@@ -264,8 +264,8 @@
 <!ENTITY Ctr_pananimation	"Animation d’ouverture des panneaux">
 <!ENTITY Ctr_tabanimation	"Animation de l’ouverture et la fermeture des onglets (about:config)">
 <!ENTITY Ctr_dlanimation	"Animation de « Téléchargement terminé » (about:config)">
-<!ENTITY Ctr_fsanimation	"Fullscreen animations (about:config preference)">
-<!ENTITY Ctr_fsaduration	"Fullscreen animations for HTML5 content (about:config preferences)">
+<!ENTITY Ctr_fsanimation	"Animations plein écran (préférence about:config)">
+<!ENTITY Ctr_fsaduration	"Animations plein écran de contenu HTML5 (préférences about:config)">
 
 <!ENTITY Ctr_toolsitem		"« Personnaliser &brandShortName; » dans le menu outils">
 <!ENTITY Ctr_appmenuitem	"« Personnaliser &brandShortName; » dans le menu d’application">
@@ -350,14 +350,14 @@
 <!ENTITY ctr_colapseaddonsearchbar.label	"Barre de recherche de about:addons compressible">
 
 <!ENTITY ctr_bookmarkfontsize.description	"Barre personnelle">
-<!ENTITY ctr_custombookmarkfontsize.label	"Permettre de déterminer la taille de la police utilisée sur la barre personnelle">
+<!ENTITY ctr_custombookmarkfontsize.label	"Permettre de déterminer la taille de la police utilisée dans la barre personnelle">
 <!ENTITY ctr_cbookmarkfontsize.label	"Taille de la police des marque-pages : ">
 
 <!ENTITY ctr_abouthome.caption "Modifier le style de la page about:home">
-<!ENTITY ctr_abouthome.default "Style de la page « about:home » : par défaut">
-<!ENTITY ctr_abouthome.light "Style de la page « about:home » : pâle">
-<!ENTITY ctr_abouthome.dark "Style de la page « about:home » : foncé">
-<!ENTITY ctr_abouthome.simplicity  "Style de la page « about:home » : Simplicité">
+<!ENTITY ctr_abouthome.default "Page « about:home » : style par défaut">
+<!ENTITY ctr_abouthome.light   "Page « about:home » : style pâle">
+<!ENTITY ctr_abouthome.dark    "Page « about:home » : style foncé">
+<!ENTITY ctr_abouthome.simplicity  "Page « about:home » : style Simplicité">
 <!ENTITY ctr_abouthome.links "Aucun lien sur la page about:home">
 <!ENTITY ctr_abouthome.logo "Aucun logo sur la page about:home">
 <!ENTITY ctr_abouthome.icons "Aucune icône sur la page about:home">
@@ -386,4 +386,4 @@
 <!ENTITY movableurlbar.label "Barre d’adresse déplaçable (ceci permet de la déplacer)">
 <!ENTITY movableurlbar.warning0 "Attention, paramètre dangereux ! Si vous déplacez la barre d’adresse dans le panneau de menu ou que vous personnalisez la fenêtre et que vous redémarrez, le navigateur sera corrompu.">
 <!ENTITY movableurlbar.warning1 "Vous devez déplacer la barre d'adresse à sa position par défaut avant de désactiver.">
-<!ENTITY movableurlbar.warning2 "Utilisez cette fonction avec prudence et à vos risques">
+<!ENTITY movableurlbar.warning2 "Utilisez cette fonction avec prudence et à vos risques.">
