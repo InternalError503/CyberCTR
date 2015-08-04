@@ -5670,392 +5670,330 @@ switch (appButtonState){
 		},
 
 
-notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupShow, aPopup, aCallback){
-	try{
-		var notificationBox = gBrowser.getNotificationBox();
-		var button = [];		
-		switch ( aPopupShow ) {
-			case true:
-				button = [{
-					label: aButtonLabel,
-					accessKey: aAcessKey,
-					popup: aPopup,
-					callback: aCallback }];
-			break;
-			
-			case false:
-				button = [{
-					label: aButtonLabel,
-					accessKey: aAcessKey,
-					callback: aCallback }];
-			break;
-		}			
-		notificationBox.appendNotification(aMessage, aMessageId, 'chrome://browser/skin/Info.png', notificationBox.PRIORITY_INFO_HIGH, button);		
-	}catch(e){}	
-},
+    notifications: function(aMessage, aMessageId, aButtonLabel, aAcessKey, aPopupShow, aPopup, aCallback) {
+      try {
+        var notificationBox = gBrowser.getNotificationBox();
+        var button = [];
+        switch (aPopupShow) {
+          case true:
+            button = [{
+              label: aButtonLabel,
+              accessKey: aAcessKey,
+              popup: aPopup,
+              callback: aCallback
+            }];
+            break;
 
+          case false:
+            button = [{
+              label: aButtonLabel,
+              accessKey: aAcessKey,
+              callback: aCallback
+            }];
+            break;
+        }
+        notificationBox.appendNotification(aMessage, aMessageId, 'chrome://browser/skin/Info.png', notificationBox.PRIORITY_INFO_HIGH, button);
+      } catch (e) {}
+    },
 
-getHash: function(aContentStream){
-	function toHexString(charCode) {
-		return ("0" + charCode.toString(16)).slice(-2);
-	}
-	try{	
-		var CryptoHash = Cc["@mozilla.org/security/hash;1"]
-					   .createInstance(Ci.nsICryptoHash);
-		CryptoHash.init(CryptoHash.MD5);
-		const PR_UINT32_MAX = 0xffffffff;	
-		CryptoHash.updateFromStream(aContentStream, PR_UINT32_MAX);
-		var HashSum = CryptoHash.finish(false); 
-		var s = [toHexString(HashSum.charCodeAt(i)) for (i in HashSum)].join("");
-		return s;
-		
-	}catch(e){}	
-},
-		
-  /* import CTR settings */
- importLocalCTRpreferences: function() {
- 
-	var pattern = loadFromLocalFile();
+    getHash: function(aContentStream) {
+      function toHexString(charCode) {
+        return ("0" + charCode.toString(16)).slice(-2);
+      }
+      try {
+        var CryptoHash = Cc["@mozilla.org/security/hash;1"]
+          .createInstance(Ci.nsICryptoHash);
+        CryptoHash.init(CryptoHash.MD5);
+        const PR_UINT32_MAX = 0xffffffff;
+        CryptoHash.updateFromStream(aContentStream, PR_UINT32_MAX);
+        var HashSum = CryptoHash.finish(false);
+        var s = [toHexString(HashSum.charCodeAt(i)) for (i in HashSum)].join("");
+        return s;
 
-	if (!pattern) return false;
-	   
-	if(pattern[0]!="CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers") {
-	  alert(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("import.error"));
-	  return false;
-	}
+      } catch (e) {}
+    },
 
-	var i, prefName, prefValue;
-	   
-	for (i=1; i<pattern.length; i++){
-	  var index1 = pattern[i].indexOf("="); // for finding booleans
-	  var index2 = pattern[i].indexOf(":"); // for finding strings
-	  var index3 = pattern[i].indexOf("~"); // for finding integers
+    // Need to check if json is valid. If json not valid. don't continue and show error.
+    IsJsonValid: function(aData) {
+      try {
+        JSON.parse(aData);
+      } catch (e) {
+        return false;
+      }
+      return true;
+    },
 
-	  if (index2 > 0){ // find string
-		 prefName  = pattern[i].substring(0,index2);
-		 prefValue = pattern[i].substring(index2+1,pattern[i].length);
-		 
-		 this.prefs.setCharPref(''+prefName+'',''+prefValue+'');
-	  }
-	  else if (index1 > 0){ // find boolean
-		 prefName  = pattern[i].substring(0,index1);
-		 prefValue = pattern[i].substring(index1+1,pattern[i].length);
-		 
-		 // if prefValue string is "true" -> true, else -> false
-		 this.prefs.setBoolPref(''+prefName+'',(prefValue === 'true'));
-	  }
-	  else if (index3 > 0){ // find integer
-		 prefName  = pattern[i].substring(0,index3);
-		 prefValue = pattern[i].substring(index3+1,pattern[i].length);
-		 
-		 this.prefs.setIntPref(''+prefName+'',prefValue);
-	  }
-	}
-	   	
-	function loadFromLocalFile() {
+    loadFromFile: function(aType) {
+      try {
+        if (aType === "txt" || aType === "json") {} else {
+          return false;
+        }
 
-	var localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
+        var localeSettingsFile = "";
+        var contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
+        var contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);
 
-	if (localeSettingsFile.exists()){	  
+        if (aType === "txt") {
+          localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]);
+          Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", false);
+        }
 
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", false);
-	
-	var _ThisFile = localeSettingsFile;	
-	var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
-		_contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), 0);
-		var lastmod = classicthemerestorerjs.ctr.getHash(_contentStream);
-		_contentStream.close();
+        if (aType === "json") {
+          localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.json"]);
+          Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", true);
+        }
 
-		if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+        if (localeSettingsFile === "") {
+          return false;
+        }
 
-		
-			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
-				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
-				  _contentIOStream.init(_contentStream);
-			var input = _contentIOStream.read(_contentStream.available());
-				  _contentIOStream.close();
-				  _contentStream.close();
-			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+        var _ThisFile = localeSettingsFile;
+        contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), 0);
+        var lastmod = classicthemerestorerjs.ctr.getHash(contentStream);
+        contentStream.close();
+        if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()) {
+          Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+          contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
+          contentIOStream.init(contentStream);
+          var input = contentIOStream.read(contentStream.available());
+          contentIOStream.close();
+          contentStream.close();
+          switch (aType) {
+            case "txt":
+              var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+              return input.split(linebreak);
+              break;
+            case "json":
+              var text = input;
+              if (!classicthemerestorerjs.ctr.IsJsonValid(text)) {
+                return false;
+              } else {
+                return JSON.parse(input);
+              }
+              break;
+          }
+        } else {
+          if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")) {
+            Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
+            Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+            Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", true);
+            contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
+            contentIOStream.init(contentStream);
+            var input = contentIOStream.read(contentStream.available());
+            contentIOStream.close();
+            contentStream.close();
 
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
+            switch (aType) {
+              case "txt":
+                var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+                if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true) {
+                  var iProfdir = FileUtils.getDir("ProfD", [""]);
+                  var encoder = new TextEncoder();
+                  var array = encoder.encode(input.split(',').join('\n'));
+                  var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.txt", array, {
+                    tmpPath: "CTRpreferences.txt.tmp"
+                  });
+                  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
+                }
 
-			var iProfdir = FileUtils.getDir("ProfD",[""]);
-			// Write File to profile directory.
-			var encoder = new TextEncoder();
-			var array = encoder.encode(input.split(',').join('\n'));
-			var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.txt", array,{tmpPath: "CTRpreferences.txt.tmp"}); 			
-				Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
-					
-		}	
-			
-			return input.split(linebreak);
-			
-		}else{
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
-		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
-			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
-				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
-				  _contentIOStream.init(_contentStream);
-			var input = _contentIOStream.read(_contentStream.available());
-				  _contentIOStream.close();
-				  _contentStream.close();
-			var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
+                return input.split(linebreak);
+                break;
+              case "json":
+                var text = input;
+                if (!classicthemerestorerjs.ctr.IsJsonValid(text)) {
+                  return false;
+                } else {
+                  if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true) {
+                    var iProfdir = FileUtils.getDir("ProfD", [""]);
+                    var encoder = new TextEncoder();
+                    var array = encoder.encode(input);
+                    var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.json", array, {
+                      tmpPath: "CTRpreferences.json.tmp"
+                    });
+                    Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)
+                  }
+                  return JSON.parse(input);
+                }
+                break;
+            }
+          }
 
-			var iProfdir = FileUtils.getDir("ProfD",[""]);
-			// Write File to profile directory.
-			var encoder = new TextEncoder();
-			var array = encoder.encode(input.split(',').join('\n'));
-			var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.txt", array,{tmpPath: "CTRpreferences.txt.tmp"}); 				
-		
-			return input.split(linebreak);
-		
-	}
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
-			Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+          if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")) {
+            switch (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")) {
+              case true:
+                window.setTimeout(function() {
+                  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false);
+                  classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun"),
+                    'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
+                    'R', false, null,
+                    function() { classicthemerestorerjs.ctr.ctrPrefRestart(); });
+                }, 4000);
+                break;
+              case false:
+                window.setTimeout(function() {
+                  classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change"),
+                    'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
+                    'O', true, 'ApplyCTRpreferences', null);
+                }, 4000);
+                break;
+            }
+          }
+        }
 
-	}else{	
-		switch (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
-			case true:	
-				window.setTimeout(function(){
-					Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false);
-					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun"),
-						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
-						'R', false, null, function(){classicthemerestorerjs.ctr.ctrPrefRestart();});
-				},4000);	
-			break;
-			case false:
-				window.setTimeout(function(){
-					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change"),
-						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
-						'O', true, 'ApplyCTRpreferences', null);	
-				},4000);			
-		break;
-			}
-		}
-	}
-	
-	}else{
-		return null;
-	}	
-	   return null;
-	}	
-	
-	return true;
-  },
-  
-   /* restore CTR settings */ 
-   restoreBackupCTRpreferences: function() {
-	     
-		  var patterns = FileUtils.getFile("ProfD", []);
-		  
-	if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
-					
-			let promise = OS.File.read(patterns.path + "\\CTRpreferences.txt", { encoding: "utf-8" });
-			promise = promise.then(
-				function onSuccess(data) {
-					return saveToFile(data);
-				});					
-	}else{
-			
-			let promise = OS.File.read(patterns.path + "\\CTRpreferences.json", { encoding: "utf-8" });
-			promise = promise.then(
-				function onSuccess(data) {
-					return saveToFile(data);
-				});
-	}
-			    
-		function saveToFile(iPatterns) {
-			
-		  const nsIFilePicker = Ci.nsIFilePicker;
-		  var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-		  var stream = Cc["@mozilla.org/network/file-output-stream;1"].createInstance(Ci.nsIFileOutputStream);
+        return null;
+      } catch (e) {
+        Cu.reportError(e);
+      }
+    },
 
-		  fp.init(window, null, nsIFilePicker.modeSave);
-		
-		  if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){
-			  fp.defaultExtension = "txt";
-			  fp.defaultString = "CTRpreferences.txt";
-			  fp.appendFilters(nsIFilePicker.filterText);			  
-		  }else{
-			  fp.defaultExtension = "json";
-			  fp.defaultString = "CTRpreferences.json";	
-			  fp.appendFilters(nsIFilePicker.filterAll);			  
-		  }
+    /* import CTR settings */
+    importLocalCTRpreferences: function() {
 
-		 if (fp.show() != nsIFilePicker.returnCancel) {
-				let file = fp.file;
-		  if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")){				
-				if (!/\.txt$/.test(file.leafName.toLowerCase()))
-				  file.leafName += ".txt";
-		  }			  
-				if (file.exists())
-				  file.remove(true);
-				file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
-				stream.init(file, 0x02, 0x200, null);				
-				stream.write(iPatterns, iPatterns.length);
-				stream.close();
-			}
-		}
-		
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", true);
-		  
-		return true;
-		
-  },
+      function setPrefValue(pref, val) {
 
-  /* import CTR settings JSON*/
- importLocalCTRpreferencesJSON: function() {
-	 
-	var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");	 
- 
-	var parjson = loadFromLocalFile();
+        switch (Services.prefs.getPrefType(pref)) {
+          case 32: return Services.prefs.setCharPref(pref, val); break;
+          case 64: return Services.prefs.setIntPref(pref, val); break;
+          case 128: return Services.prefs.setBoolPref(pref, val); break;
+        }
 
-	if (!parjson) return false;
-	   
-	function setPrefValue(pref, val){
+      }
+      try {
+        //Check that only one type is used.
+        if (FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]).exists() && FileUtils.getFile("CurProcD", ["CTRpreferences.json"]).exists()) {
+          Services.prompt.alert(null, "Error:", "Both CTRpreferences.json & CTRpreferences.txt are present only one can be used.");
+          return false;
+        }
 
-	  switch (Services.prefs.getPrefType(pref)){
-		case 32:	return Services.prefs.setCharPref(pref, val);	break;
-		case 64:	return Services.prefs.setIntPref(pref, val);	break;
-		case 128:	return Services.prefs.setBoolPref(pref, val);	break;	
-	  }
+        if (FileUtils.getFile("CurProcD", ["CTRpreferences.txt"]).exists()) {
 
-	}
+          var pattern = classicthemerestorerjs.ctr.loadFromFile("txt");
 
-	for (var i=0; i<parjson.length; i++) {					  
-	  try {
+          if (!pattern) return false;
 
-		if(parjson[i].preference.match(/extensions.classicthemerestorer./g)){
-			//To import previously generated preference export
-			setPrefValue(parjson[i].preference, parjson[i].value);
-		}else{
-			setPrefValue('extensions.classicthemerestorer.' + parjson[i].preference, parjson[i].value);
-		}
+          if (pattern[0] != "CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers") {
+            alert(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("import.error"));
+            return false;
+          }
 
-	  } catch(e) {
-		// Report errors to console
-		Cu.reportError(e);
-	  }
-	}	
+          var i, prefName, prefValue;
 
-	// Need to check if json is valid. If json not valid. don't continue and show error.
-	function IsJsonValid(text) {
+          for (i = 1; i < pattern.length; i++) {
+            var index1 = pattern[i].indexOf("="); // for finding booleans
+            var index2 = pattern[i].indexOf(":"); // for finding strings
+            var index3 = pattern[i].indexOf("~"); // for finding integers
 
-	  try { JSON.parse(text); }
-	  catch (e) { return false; }
-	  return true;
+            if (index2 > 0) { // find string
+              prefName = pattern[i].substring(0, index2);
+              prefValue = pattern[i].substring(index2 + 1, pattern[i].length);
 
-	}
-	   	
-	function loadFromLocalFile() {
+              this.prefs.setCharPref('' + prefName + '', '' + prefValue + '');
+            } else if (index1 > 0) { // find boolean
+              prefName = pattern[i].substring(0, index1);
+              prefValue = pattern[i].substring(index1 + 1, pattern[i].length);
 
-	var localeSettingsFile = FileUtils.getFile("CurProcD", ["CTRpreferences.json"]);
+              // if prefValue string is "true" -> true, else -> false
+              this.prefs.setBoolPref('' + prefName + '', (prefValue === 'true'));
+            } else if (index3 > 0) { // find integer
+              prefName = pattern[i].substring(0, index3);
+              prefValue = pattern[i].substring(index3 + 1, pattern[i].length);
 
-	if (localeSettingsFile.exists()){	  
-	
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.importjson", true);
-				
-	var _ThisFile = localeSettingsFile;
-	var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
-		_contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), 0);
-		var lastmod = classicthemerestorerjs.ctr.getHash(_contentStream);
-		_contentStream.close();
+              this.prefs.setIntPref('' + prefName + '', prefValue);
+            }
+          }
+        }
 
-	if (Services.prefs.getCharPref("extensions.classicthemerestorer.ctrpref.lastmod") === lastmod.toString()){
-		Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
+        if (FileUtils.getFile("CurProcD", ["CTRpreferences.json"]).exists()) {
+          var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 
-			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
-				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
-				  _contentIOStream.init(_contentStream);
-			var input = _contentIOStream.read(_contentStream.available());
-				  _contentIOStream.close();
-				  _contentStream.close();
-				  
-		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.updatekey") === true){	
+          var parjson = classicthemerestorerjs.ctr.loadFromFile("json");
 
-		var iProfdir = FileUtils.getDir("ProfD",[""]);
-		// Write File to to profile.
-        var encoder = new TextEncoder();
-        var array = encoder.encode(input);
-        var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.json", array,{tmpPath: "CTRpreferences.json.tmp"});				
+          if (!parjson) return false;
 
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", false)					
-		}	
-			
-			 var text = input;
+          for (var i = 0; i < parjson.length; i++) {
+            try {
 
-			  if(!IsJsonValid(text)){
-				  alert(stringBundle.GetStringFromName("import.errorJSON"));
-				  return false;
-			  }else{
-				return JSON.parse(input);
-			  }
-			
-	}else{
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
-		Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-			var _contentStream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
-			var _contentIOStream = Cc["@mozilla.org/scriptableinputstream;1"].createInstance(Ci.nsIScriptableInputStream);	   
-				  _contentStream.init(localeSettingsFile, 0x01, parseInt("0444", 8), null);
-				  _contentIOStream.init(_contentStream);
-			var input = _contentIOStream.read(_contentStream.available());
-				  _contentIOStream.close();
-				  _contentStream.close();
+              if (parjson[i].preference.match(/extensions.classicthemerestorer./g)) {
+                //To import previously generated preference export
+                setPrefValue(parjson[i].preference, parjson[i].value);
+              } else {
+                setPrefValue('extensions.classicthemerestorer.' + parjson[i].preference, parjson[i].value);
+              }
 
-			var iProfdir = FileUtils.getDir("ProfD",[""]);
-			// Write File to to profile.
-			var encoder = new TextEncoder();
-			var array = encoder.encode(input);
-			var promise = OS.File.writeAtomic(iProfdir.path + "\\CTRpreferences.json", array,{tmpPath: "CTRpreferences.json.tmp"});			
-			
-			 var text = input;
+            } catch (e) {
+              // Report errors to console
+              Cu.reportError(e);
+            }
+          }
+        }
+      } catch (e) {}
+      return true;
+    },
 
-			  if(!IsJsonValid(text)){
-				  alert(stringBundle.GetStringFromName("import.errorJSON"));
-				  return false;
-			  }else{
-				return JSON.parse(input);
-			  }
-		
-			}
-	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")){
-			Services.prefs.setCharPref("extensions.classicthemerestorer.ctrpref.lastmod", lastmod.toString());
-			Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
-	}else{	
-		switch (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.firstrun")){
-			case true:	
-				window.setTimeout(function(){
-					Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.firstrun", false);
-					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_firstrun"),
-						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_firstrun"),
-						'R', false, null, function(){classicthemerestorerjs.ctr.ctrPrefRestart();});
-				},4000);	
-			break;
-			case false:
-				window.setTimeout(function(){
-					classicthemerestorerjs.ctr.notifications(classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_msg_change"),
-						'CTRpreferences', classicthemerestorerjs.ctr.stringBundle.GetStringFromName("notification_button_change"),
-						'O', true, 'ApplyCTRpreferences', null);	
-				},4000);			
-		break;
-		}
-			}
-	}
-	
-	}else{
-		return null;
-	}	
-	   return null;
-	}	
-	
-	return true;
-  },  
-  
+    /* restore CTR settings */
+    restoreBackupCTRpreferences: function() {
+
+      var patterns = FileUtils.getFile("ProfD", []);
+
+      if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
+
+        let promise = OS.File.read(patterns.path + "\\CTRpreferences.txt", {
+          encoding: "utf-8"
+        });
+        promise = promise.then(
+          function onSuccess(data) {
+            return saveToFile(data);
+          });
+      } else {
+
+        let promise = OS.File.read(patterns.path + "\\CTRpreferences.json", {
+          encoding: "utf-8"
+        });
+        promise = promise.then(
+          function onSuccess(data) {
+            return saveToFile(data);
+          });
+      }
+
+      function saveToFile(iPatterns) {
+
+        const nsIFilePicker = Ci.nsIFilePicker;
+        var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+        var stream = Cc["@mozilla.org/network/file-output-stream;1"].createInstance(Ci.nsIFileOutputStream);
+
+        fp.init(window, null, nsIFilePicker.modeSave);
+
+        if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
+          fp.defaultExtension = "txt";
+          fp.defaultString = "CTRpreferences.txt";
+          fp.appendFilters(nsIFilePicker.filterText);
+        } else {
+          fp.defaultExtension = "json";
+          fp.defaultString = "CTRpreferences.json";
+          fp.appendFilters(nsIFilePicker.filterAll);
+        }
+
+        if (fp.show() != nsIFilePicker.returnCancel) {
+          let file = fp.file;
+          if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
+            if (!/\.txt$/.test(file.leafName.toLowerCase()))
+              file.leafName += ".txt";
+          }
+          if (file.exists())
+            file.remove(true);
+          file.create(file.NORMAL_FILE_TYPE, parseInt("0666", 8));
+          stream.init(file, 0x02, 0x200, null);
+          stream.write(iPatterns, iPatterns.length);
+          stream.close();
+        }
+      }
+
+      Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.updatekey", true);
+
+      return true;
+
+    },
+
   ctrPrefRestart: function(){
 	  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", true);
 	  gCyberfoxCustom.restartBrowser();
@@ -6091,7 +6029,6 @@ getHash: function(aContentStream){
   }
   
 };
-classicthemerestorerjs.ctr.importLocalCTRpreferencesJSON();
 classicthemerestorerjs.ctr.importLocalCTRpreferences();
 classicthemerestorerjs.ctr.init();
 
