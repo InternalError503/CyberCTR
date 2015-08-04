@@ -1,9 +1,9 @@
 # LOCALIZATION NOTE (popup.title, popup.msg.restart):
 # %S will be replaced by brandShortName
 popup.title=Personnaliser %S
-popup.msg.restart=%S doit être redémarré pour que les changements de configuration soient pris en compte.\nEst-ce que cela doit être fait maintenant?
+popup.msg.restart=%S doit être redémarré pour que les changements de configuration soient pris en compte.\nEst-ce que cela doit être fait maintenant ?
 import.error=ERROR: Fichier erroné ou modifié !\nAucune donnée ne peut être importée !
-import.errorJSON=Désolé. Un problème est survenu pendant l’importation du fichier CTRpreferences.json (json n’est pas valide!)
+import.errorJSON=Désolé. Un problème est survenu pendant l’importation du fichier CTRpreferences.json (json n’est pas valide !)
 ctr_extrabar=Barre d’outils supplémentaire
 ctr_actthrobber=Indicateur d’activité
 notification_msg_firstrun=Le fichier de préférences CTRpreferences a été trouvé. Cliquez sur « Redémarrer » pour les appliquer.
@@ -12,5 +12,5 @@ notification_msg_change=Le fichier de préférences préconfiguré CTRpreference
 notification_button_change=Options
 clearFilter.title=Confirmer l’effacement du filtre.
 clearFilter.msg=Êtes-vous certain de vouloir effacer le filtre ?
-popup_compatibility_title=Compatibility issues detected!
-popup_compatibility_permenu=Would you like to enable compatibility mode? \n If not please uninstall (CyberCTR) or (Personal Menu)!
+popup_compatibility_title=Des problèmes de compatibilité ont été détectés !
+popup_compatibility_permenu=Voulez-vous activer le mode de compatibilité ? \n Sinon, veuillez désinstaller (CyberCTR) ou (Personal Menu) !
