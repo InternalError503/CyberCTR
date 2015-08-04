@@ -36,8 +36,9 @@ classicthemerestorerjso.ctr = {
 		"extensions.classicthemerestorer.ctrpref.lastmodapply",
 		"extensions.classicthemerestorer.ctrpref.updatekey",
 		"extensions.classicthemerestorer.version",
-		"extensions.classicthemerestorer.features.firstrun",
-		"extensions.classicthemerestorer.ctrpref.lastmod.backup"
+		"extensions.classicthemerestorer.ctrpref.lastmod.backup",
+		"extensions.classicthemerestorer.ctrpref.importjson",
+		"extensions.classicthemerestorer.compatibility.personalmenu"
 		],	
 
   initprefwindow: function() {
