@@ -14,5 +14,5 @@ clearFilter.title=Подтверждение очистки фильтра.
 clearFilter.msg=Вы действительно хотите очистить фильтр?
 popup_compatibility_title=Обнаружены проблемы с совместимостью!
 popup_compatibility_permenu=Вы хотите включить режим совместимости? \n В противном случае нужно удалить (CyberCTR) или (Personal Menu)!
-notification_confirm_clear_title=Please confirm action!
-notification_confirm_clear=Are you sure you want to do this?
+notification_confirm_clear_title=Подтвердите действие, пожалуйста!
+notification_confirm_clear=Вы уверены, что хотите это сделать?
