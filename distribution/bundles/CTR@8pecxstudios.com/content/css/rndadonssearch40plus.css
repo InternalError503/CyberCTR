@@ -6,13 +6,12 @@
         margin-bottom: -2px;
         -moz-padding-start: 5px!important;
         border: 1.1px solid #adbdcd;
-        width: 24px!important;		
+        width: 22px!important;		
         transition: background-color 0.55s, box-shadow 0.55s, width 0.65s!important;
     }
 	
 	#header-search .textbox-search-icon {
-        -moz-margin-end: 0px;
-		margin-right: -3px;
+        -moz-margin-end: 0px;		
     }
     #header-search:hover,
     #header-search[focused],
