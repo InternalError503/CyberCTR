@@ -540,6 +540,7 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_squared',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_squaredc2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_squared2',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_squared2c2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_curved',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_curvedall',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabs_devedextra',false);
@@ -565,6 +566,13 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("aerocolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==false) { 
 			  classicthemerestorerjs.ctr.loadUnloadCSS("aerocolors",false);
 			  classicthemerestorerjs.ctr.loadUnloadCSS("aerocolors",true);
+			}
+			
+			if (branch.getCharPref("tabs")=="tabs_squaredc2" || branch.getCharPref("tabs")=="tabs_squared2c2") {
+			  if (branch.getBoolPref("square_edges") && classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==false) {
+				classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",true);
+			  }
 			}
 		  
 		  break;
@@ -620,6 +628,14 @@ classicthemerestorerjs.ctr = {
 			
 		  break;
 		  
+		  case "square_edges":
+			if (branch.getBoolPref("square_edges") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+			  if (branch.getCharPref("tabs")=="tabs_squaredc2" || branch.getCharPref("tabs")=="tabs_squared2c2")
+				classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",true);
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",false);
+		  break;
+
 		  // Tabs title in titlebar
 		  case "titleintitlebar":
 			try {
@@ -679,9 +695,17 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("closetabhfl",false);
 		  break;
 
-		  case "closealt":
-			if (branch.getBoolPref("closealt") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("closealt",true);
-			  else classicthemerestorerjs.ctr.loadUnloadCSS("closealt",false);
+		  case "closeicon":
+			
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_red',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w7',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10i',false);
+			  
+			if (branch.getCharPref("closeicon")!="closeicon_default"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicon"),true);
+			}
+
 		  break;
 
 		  case "closeonleft":
@@ -3098,6 +3122,8 @@ classicthemerestorerjs.ctr = {
 		
 		break;
 		
+		case "tabs_squared2c2":		manageCSS("tabs_squared2c2.css"); 		break;
+		
 		case "tabs_curved":
 	
 			// different appearance for 'tabs not on top' on MacOSX
@@ -3201,6 +3227,8 @@ classicthemerestorerjs.ctr = {
 		
 		break;
 	
+		case "square_edges": 			manageCSS("tabssquare_edges.css");  	break;
+		
 		case "closetab_active": 		manageCSS("closetab_active.css");  		break;
 		case "closetab_none": 			manageCSS("closetab_none.css");  		break;
 		case "closetab_forced": 		manageCSS("closetab_forced.css");  		break;
@@ -3208,7 +3236,12 @@ classicthemerestorerjs.ctr = {
 		case "closetab_tb_start": 		manageCSS("closetab_tb_start.css");  	break;
 
 		case "closetabhfl": 			manageCSS("closetab_hideonone.css");  	break;
-		case "closealt": 				manageCSS("close_alticon.css");  		break;
+		
+		case "closeicon_red": 			manageCSS("close_icon_red.css");  		break;
+		case "closeicon_w7": 			manageCSS("close_icon_w7.css");  		break;
+		case "closeicon_w10": 			manageCSS("close_icon_w10.css");  		break;
+		case "closeicon_w10i": 			manageCSS("close_icon_w10i.css");  		break;
+		
 		case "closeonleft":
 		
 			if(this.prefs.getCharPref("tabs")=="tabs_curvedall") manageCSS("close_onleft2.css");
@@ -3516,6 +3549,13 @@ classicthemerestorerjs.ctr = {
 					aero_color_tabs  = '\
 						#main-window[defaultfxtheme="true"] #tabbrowser-tabs:not(:-moz-lwtheme) .tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) {\
 						  background-image: linear-gradient(to top,#eaf2fb,#eef5fc,#fbfdff);\
+						}\
+					';
+				}
+				else if(this.prefs.getCharPref('tabs')=='tabs_squared2c2'){
+					aero_color_tabs  = '\
+						#main-window[defaultfxtheme="true"] .tabbrowser-tab[selected]:not(:-moz-lwtheme) .tab-content {\
+						  background-image: linear-gradient(to top,#eaf2fb,#eef5fc,#fbfdff) !important;\
 						}\
 					';
 				}
@@ -4100,6 +4140,17 @@ classicthemerestorerjs.ctr = {
 				
 					this.ctabsheet_act=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 						#main-window #navigator-toolbox #TabsToolbar .tabbrowser-tab[selected="true"] {\
+						  background-image: linear-gradient('+this.prefs.getCharPref('ctabact1')+','+this.prefs.getCharPref('ctabact2')+') !important;\
+						}\
+						'+tabc_act_tb_sheet+'\
+					'), null, null);
+				
+				}
+				
+				else if (this.prefs.getCharPref('tabs')=='tabs_squared2c2') {
+				
+					this.ctabsheet_act=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+						#main-window #navigator-toolbox #TabsToolbar .tabbrowser-tab[selected] .tab-content {\
 						  background-image: linear-gradient('+this.prefs.getCharPref('ctabact1')+','+this.prefs.getCharPref('ctabact2')+') !important;\
 						}\
 						'+tabc_act_tb_sheet+'\

@@ -54,6 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo	"Šířka panelů (min-width a max-width) je určena doplňkem TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Šířka panelů (min-width a max-width) je určena doplňkem TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Hodnoty pod 48px působí většinou chyby!">
+<!ENTITY Ctr_square_edges	"Squared top corners">
 <!ENTITY Ctr_tabinsertion	"Vložit související panel za aktuální (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Obnovit prázdnou faviconu (pokud stránka nemá vlastní)">
 <!ENTITY Ctr_noemptypticon	"Odebrat prázdnou faviconu z připnutého panelu">
@@ -65,12 +66,16 @@
 <!ENTITY Ctr_closetab_4		"Na začátku lišty s panely">
 <!ENTITY Ctr_closetab_5		"Na všech panelech (vynutit)">
 <!ENTITY Ctr_closetab_hfot	"Skrýt pro jeden viditelný panel">
-<!ENTITY Ctr_closealt		"Alternativní ikona">
+<!ENTITY Ctr_closei_def		"Default close icon">
+<!ENTITY Ctr_closei_red		"Red close icon">
+<!ENTITY Ctr_closei_w7		"Windows 7 close icon">
+<!ENTITY Ctr_closei_w10		"Windows 10 close icon">
+<!ENTITY Ctr_closei_w10i	"Windows 10 inverted close icon">
 <!ENTITY Ctr_closeonleft	"Alternativní pozice na panelu">
 <!ENTITY Ctr_close_wwltab	"Zavřít okno s posledním viditelným panelem (about:config)">
 
-<!ENTITY Ctr_hctpinfotab	"Some tab variations are not compatible to 'Hide Caption Titlebar Plus' add-on.">
-<!ENTITY Ctr_hctpinfoab		"Button on titlebar is not compatible to 'Hide Caption Titlebar Plus' add-on.">
+<!ENTITY Ctr_hctpinfotab	"Některá nastavení nejsou kompatibilní s rozšířením 'Hide Caption Titlebar Plus'.">
+<!ENTITY Ctr_hctpinfoab		"Tlačítko aplikace není kompatibilní s rozšířením 'Hide Caption Titlebar Plus'.">
 
 <!ENTITY Ctr_appbutton		"Tlačítko aplikace">
 <!ENTITY Ctr_appbutton0		"Tlačítko zakázáno">
