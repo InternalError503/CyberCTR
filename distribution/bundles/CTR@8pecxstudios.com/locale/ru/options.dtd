@@ -53,7 +53,7 @@
 <!ENTITY Ctr_tabwidthinfo	"Минимальная и максимальная ширина вкладок изменяются расширением TabMixPlus">
 <!ENTITY Ctr_tabwidthinfo2	"Минимальная и максимальная ширина вкладок изменяются расширением TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Значения ниже 48px часто приводят к сбоям!">
-<!ENTITY Ctr_square_edges	"Squared top corners">
+<!ENTITY Ctr_square_edges	"Верхние углы без закругления">
 <!ENTITY Ctr_tabinsertion	"Вставить соответствующую вкладку после текущей вкладки (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Восстановить пустые значки на вкладках">
 <!ENTITY Ctr_noemptypticon	"Удалить пустой значок из прикреплённой вкладки">
@@ -65,11 +65,11 @@
 <!ENTITY Ctr_closetab_4		"в начале панели">
 <!ENTITY Ctr_closetab_5		"на всех вкладках (принудительно)">
 <!ENTITY Ctr_closetab_hfot	"Скрыть для одной вкладки">
-<!ENTITY Ctr_closei_def		"Default close icon">
-<!ENTITY Ctr_closei_red		"Red close icon">
-<!ENTITY Ctr_closei_w7		"Windows 7 close icon">
-<!ENTITY Ctr_closei_w10		"Windows 10 close icon">
-<!ENTITY Ctr_closei_w10i	"Windows 10 inverted close icon">
+<!ENTITY Ctr_closei_def		"Стандартный значок 'Закрыть'">
+<!ENTITY Ctr_closei_red		"Красный значок 'Закрыть'">
+<!ENTITY Ctr_closei_w7		"Значок 'Закрыть' в стиле Windows 7">
+<!ENTITY Ctr_closei_w10		"Значок 'Закрыть' в стиле Windows 10">
+<!ENTITY Ctr_closei_w10i	"Инверсивный значок 'Закрыть' в стиле Windows 10">
 <!ENTITY Ctr_closeonleft	"Альтернативная позиция на вкладке">
 <!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (about:config)">
 
