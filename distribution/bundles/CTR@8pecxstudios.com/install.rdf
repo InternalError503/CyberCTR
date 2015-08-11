@@ -4,7 +4,7 @@
 	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description rdf:about="urn:mozilla:install-manifest">
 		<em:id>CTR@8pecxstudios.com</em:id>
-		<em:name>CTR(Modified)</em:name>
+		<em:name>CyberCTR</em:name>
 		<em:version>1.3.7</em:version>
 		<em:type>2</em:type>
 		<em:multiprocessCompatible>true</em:multiprocessCompatible>
@@ -19,10 +19,9 @@
 			</Description>
 		</em:targetApplication>
 
-		<em:description>(Modified) 'Classic Theme Restorer' brings back appmenu button, squared tabs, add-ons bar, small nav-bar buttons, a few older buttons and more to Firefox Australis UI. Use 'Customize' menu to move buttons on toolbars.</em:description>
+		<em:description>CyberCTR is a heavily (Modified) version of 'Classic Theme Restorer' by Aris, CyberCTR has all the feature CTR has and many additional for cyberfox web browser.</em:description>
 		<em:homepageURL>https://addons.mozilla.org/addon/classicthemerestorer/</em:homepageURL>
-		<em:creator>Aris</em:creator>
-		
+		<em:creator>8pecxstudios</em:creator>
 		<em:contributor>InternalError503 (Toady)</em:contributor>
 		<em:contributor>Quicksaver</em:contributor>
 		<em:contributor>George M.</em:contributor>
