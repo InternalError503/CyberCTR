@@ -66,10 +66,6 @@
 <!ENTITY Ctr_closetab_5		"на всех вкладках (принудительно)">
 <!ENTITY Ctr_closetab_hfot	"Скрыть для одной вкладки">
 <!ENTITY Ctr_closei_def		"Стандартный значок 'Закрыть'">
-<!ENTITY Ctr_closei_red		"Красный значок 'Закрыть'">
-<!ENTITY Ctr_closei_w7		"Значок 'Закрыть' в стиле Windows 7">
-<!ENTITY Ctr_closei_w10		"Значок 'Закрыть' в стиле Windows 10">
-<!ENTITY Ctr_closei_w10i	"Инверсивный значок 'Закрыть' в стиле Windows 10">
 <!ENTITY Ctr_closeonleft	"Альтернативная позиция на вкладке">
 <!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (about:config)">
 
