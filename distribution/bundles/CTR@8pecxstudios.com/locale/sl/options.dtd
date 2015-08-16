@@ -144,8 +144,10 @@
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+<!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Stran dodatkov 'Več': nadomestni videz">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
+<!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Stran dodatkov: prikaži različico dodatka">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
@@ -244,6 +246,7 @@
 <!ENTITY Ctr_aerocolors		"Modre barve Aero za orodne vrstice (in zavihke)">
 <!ENTITY Ctr_hidenavbar		"Orodna vrstica za krmarjenje: skrij orodno vrstico">
 <!ENTITY Ctr_nobookbarbg	"Orodna vrstica zaznamkov: odstrani barvo ozadja">
+<!ENTITY Ctr_bookbarfs		"Orodna vrstica zaznamkov: v celozaslonskem načinu">
 <!ENTITY Ctr_nonavbarbg		"Orodna vrstica za krmarjenje: odstrani barvo ozadja">
 <!ENTITY Ctr_nonavbarbg1	"To vpliva na dodatne orodne vrstice tega dodatka in druge orodne vrstice na vrhu.">
 <!ENTITY Ctr_nonavbarbg2	"To vpliva na vse orodne vrstice izbire Slim Chrome dodatka 'The Fox, Only Better'.">

@@ -145,8 +145,10 @@
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Définir cette couleur">
 <!ENTITY ctr_aboutnewtab.custombase 	"Utiliser une couleur de texte personnalisée">
 <!ENTITY ctr_aboutnewtab.custombasecol 	"Changer la couleur de base du texte">
+<!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » de la page des modules complémentaires : autre aspect">
 <!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
+<!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
 <!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
 <!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">
@@ -245,6 +247,7 @@
 <!ENTITY Ctr_aerocolors		"Couleur aéro bleue pour les barres d’outils principales et la barre d’onglets">
 <!ENTITY Ctr_hidenavbar		"Masquer la barre de navigation">
 <!ENTITY Ctr_nobookbarbg	"Barre personnelle : enlever l’arrière-plan">
+<!ENTITY Ctr_bookbarfs		"Barre personnelle : en mode plein écran">
 <!ENTITY Ctr_nonavbarbg		"Barre de navigation : enlever l’arrière-plan">
 <!ENTITY Ctr_nonavbarbg1	"Affecte les barres d’outils additionnelles de cette extension, ainsi que d’autres barres d’onglets au-dessus.">
 <!ENTITY Ctr_nonavbarbg2	"Toutes les barres de l’interface réduite de « The Fox, Only Better » sont affectées.">

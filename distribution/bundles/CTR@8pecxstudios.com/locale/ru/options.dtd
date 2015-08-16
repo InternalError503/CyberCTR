@@ -144,8 +144,10 @@
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Изменение цвета подсветки">
 <!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
 <!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
+<!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
+<!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
 <!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
@@ -244,6 +246,7 @@
 <!ENTITY Ctr_aerocolors		"Цвета Blue Aero для основных панелей и вкладок">
 <!ENTITY Ctr_hidenavbar		"Скрыть панель навигации">
 <!ENTITY Ctr_nobookbarbg	"Панель закладок: удалить цвет фона">
+<!ENTITY Ctr_bookbarfs		"Панель закладок: в полноэкранном режиме">
 <!ENTITY Ctr_nonavbarbg		"Панель навигации: удалить цвет фона">
 <!ENTITY Ctr_nonavbarbg1	"Параметр влияет на все дополнительные и верхние панели инструментов.">
 <!ENTITY Ctr_nonavbarbg2	"Поддержка всех панелей инструментов в стиле Slim Chrome при использовании расширения 'The Fox, Only Better'.">
@@ -311,7 +314,7 @@
 <!ENTITY Ctr_openInPrivateWindow	"Открыть в новом приватном окне">
 <!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
 <!ENTITY appMenuGettingStarted.label	"Приступаем к работе">
-<!ENTITY goCmd.label		"Go">
+<!ENTITY goCmd.label		"Перейти">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey            "Н">

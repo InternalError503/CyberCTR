@@ -144,8 +144,10 @@
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+<!ENTITY Ctr_addonmanager	"Менеджер додатків">
 <!ENTITY Ctr_alt_addonsp	"Сторінка «Детальніше» в Додатках: альтернативний вигляд">
 <!ENTITY Ctr_alt_addonsm	"Менеджер додатків: альтернативний вигляд">
+<!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Списки додатків у Менеджері додатків: показати версію додатка">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
@@ -244,6 +246,7 @@
 <!ENTITY Ctr_aerocolors		"Кольори Blue Aero для основних панелей і вкладок">
 <!ENTITY Ctr_hidenavbar		"Панель навігації: приховати панель">
 <!ENTITY Ctr_nobookbarbg	"Панель закладок: прибрати колір тла">
+<!ENTITY Ctr_bookbarfs		"Панель закладок: у повноекранному режимі">
 <!ENTITY Ctr_nonavbarbg		"Панель навігації: прибрати колір тла">
 <!ENTITY Ctr_nonavbarbg1	"Ця функція на додаткових панелях та інших верхніх панелях пошкоджена іншим додатком.">
 <!ENTITY Ctr_nonavbarbg2	"Всі панелі Slim Chrome додатку 'The Fox, Only Better' пошкоджено.">

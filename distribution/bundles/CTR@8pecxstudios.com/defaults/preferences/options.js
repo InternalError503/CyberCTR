@@ -57,6 +57,8 @@ pref("extensions.classicthemerestorer.panelmenucol",false);
 pref("extensions.classicthemerestorer.cpanelmenus",false);
 pref("extensions.classicthemerestorer.hidezoomres",false);
 pref("extensions.classicthemerestorer.addonversion",false);
+pref("extensions.classicthemerestorer.alt_addonsm",false);
+pref("extensions.classicthemerestorer.am_nowarning",false);
 pref("extensions.classicthemerestorer.alt_newtabp",false);
 pref("extensions.classicthemerestorer.alt_newtabpalt",false);
 
@@ -132,6 +134,7 @@ pref("extensions.classicthemerestorer.aerocolors",false);
 pref("extensions.classicthemerestorer.nbiconsize",'small');
 
 pref("extensions.classicthemerestorer.nobookbarbg",false);
+pref("extensions.classicthemerestorer.bookbarfs",false);
 pref("extensions.classicthemerestorer.hidenavbar",false);
 pref("extensions.classicthemerestorer.nonavbarbg",false);
 pref("extensions.classicthemerestorer.nonavborder",false);

@@ -144,8 +144,10 @@
 <!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
 <!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
 <!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+<!ENTITY Ctr_addonmanager	"附加组件管理器">
 <!ENTITY Ctr_alt_addonsp	"附加组件“更多”页面: 备选的外观">
 <!ENTITY Ctr_alt_addonsm	"附加组件管理器: 备选的外观">
+<!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"附加组件页面: 显示附加组件版本">
 <!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
 <!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
@@ -244,6 +246,7 @@
 <!ENTITY Ctr_aerocolors		"主工具栏和标签页使用蓝色 Aero 颜色">
 <!ENTITY Ctr_hidenavbar		"导航工具栏: 隐藏工具栏">
 <!ENTITY Ctr_nobookbarbg	"书签工具栏: 移除背景颜色">
+<!ENTITY Ctr_bookbarfs		"书签工具栏: 在全屏模式">
 <!ENTITY Ctr_nonavbarbg		"导航工具栏: 移除背景颜色">
 <!ENTITY Ctr_nonavbarbg1	"应用到该附加组件的附加工具栏和其它顶部工具栏。">
 <!ENTITY Ctr_nonavbarbg2	"应用到“The Fox, Only Better”附加组件的 Slim Chrome 中的所有工具栏。">
