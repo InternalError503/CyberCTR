@@ -81,14 +81,12 @@
 <!ENTITY Ctr_appbutton2h	"Tłóčatko na titulnej lajsće [&brandShortName;] (schowane)">
 <!ENTITY Ctr_appbutton2io	"Tłóčatko na titulnej lajsće [&brandShortName;] (jenož symbol)">
 <!ENTITY Ctr_paneluibtweak	"Oranžowe menijowe tłóčatko na rajtarkowej lajsće">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Tłóčatkowa barba: Oranžowy (standard)">
 <!ENTITY Ctr_appbuttonc_a	"Tłóčatkowa barba: Módry (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Tłóčatkowa barba: Čorny (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Transparentne tłóčatko">
 <!ENTITY Ctr_appbuttonc_p	"Tłóčatkowa barba: Módry (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Tłóčatkowa barba: Čerwjeny">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Tłóčatkowa barba: Zeleny">
 <!ENTITY Ctr_appbuttonc_gr	"Tłóčatkowa barba: Šěry">
 <!ENTITY Ctr_appbuttonc_pu	"Tłóčatkowa barba: Purpur">
@@ -140,18 +138,11 @@
 <!ENTITY Ctr_cpanelmenus	"Kompaktne pólne menije (zapołožki, historija atd.)">
 <!ENTITY Ctr_hidezoomres	"Skalowanske elementy na symbolowej lajsće: Tłóčatko za wróćostajenje skalowanja schować">
 <!ENTITY Ctr_alt_newtabp	"Strona noweho rajtarka: alternatiwny napohlad">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Zrjadowak přidatkow">
 <!ENTITY Ctr_alt_addonsp	"Strona 'wjace info' přidatkow: alternatiwny napohlad">
 <!ENTITY Ctr_alt_addonsm	"Zrjadowak přidatkow: alternatiwny napohlad">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Přehlad přidatkow: wersiju přidatka pokazać">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Tłóčatko menija zapołožkow: napohlad dialogoweho menija">
 <!ENTITY Ctr_bmbutnotext	"Tłóčatko menija zapołožkow: tekst na lajśce zapołožkow schować">
 <!ENTITY Ctr_skipprintpr	"Ćišćerske tłóčatko: ćišćerski přehlad přeskočić">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Nastajenja">
 <!ENTITY Ctr_pw_set_reset	"Standard wobnowić">
 <!ENTITY Ctr_pw_set_predef	"Klasiske standardne hódnoty">
+<!ENTITY Ctr_pw_set_preaus	"Standard &brandShortName;">
 <!ENTITY Ctr_pw_set_export	"Nastajenja eksportować">
 <!ENTITY Ctr_pw_set_import	"Nastajenja importować">
 <!ENTITY Ctr_pw_set_syncon	"K Sync přidać">
@@ -331,6 +323,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

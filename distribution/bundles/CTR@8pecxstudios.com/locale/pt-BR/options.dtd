@@ -85,9 +85,7 @@
 <!ENTITY Ctr_appbuttonc_n	"Botão Preto (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Botão Transparente">
 <!ENTITY Ctr_appbuttonc_p	"Botão Azul (Palemoon)">
-<!ENTITY Ctr_appbuttonc_d	"Cyebrfox (Default)">
 <!ENTITY Ctr_appbuttonc_r	"Botão Vermelho">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Botão Verde">
 <!ENTITY Ctr_appbuttonc_gr	"Botão Cinza">
 <!ENTITY Ctr_appbuttonc_pu	"Botão Roxo">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Menus do Painel Compacto (Favoritos, Histórico, etc.)">
 <!ENTITY Ctr_hidezoomres	"Controles de Ampliação na Barra de Ferramentas: Ocultar o Botão Redefinir Ampliação">
 <!ENTITY Ctr_alt_newtabp	"Página Nova Aba: Aparência Alternativa">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"Configurações">
 <!ENTITY Ctr_pw_set_reset	"Restaurar aos Padrões">
 <!ENTITY Ctr_pw_set_predef	"Pré-configurações Clássicas">
+<!ENTITY Ctr_pw_set_preaus	"Pré-configurações do &brandShortName;">
 <!ENTITY Ctr_pw_set_export	"Exportar as Preferências">
 <!ENTITY Ctr_pw_set_import	"Importar as Preferências">
 <!ENTITY Ctr_pw_set_syncon	"Add to Sync">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"Cyebrfox (Default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

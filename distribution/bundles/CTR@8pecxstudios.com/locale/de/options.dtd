@@ -31,7 +31,7 @@
 <!ENTITY Ctr_tabcolors_t	"Tab Farben / Zeichensatz">
 
 <!ENTITY Ctr_tabs			"Tabs">
-<!ENTITY Ctr_tabs0			"Gerundete Tabs (Australis-Vorgabe)">
+<!ENTITY Ctr_tabs0			"Gerundete Tabs (&brandShortName;-Standard)">
 <!ENTITY Ctr_tabs1			"Quadratische Tabs (klassisch)">
 <!ENTITY Ctr_tabs1m			"Quadratische Tabs (australisiert)">
 <!ENTITY Ctr_tabs2			"Gerundete Tabs (alternativ)">
@@ -82,13 +82,11 @@
 <!ENTITY Ctr_appbutton2io	"Auf der &brandShortName; Titelleiste (nur Symbol)">
 <!ENTITY Ctr_paneluibtweak	"Orangene Menüschaltfläche auf der Tableiste">
 <!ENTITY Ctr_appbuttonc_o	"Farbe: Orange (Standard)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_appbuttonc_a	"Farbe: Blau (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Farbe: Schwarz (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Farbe: Transparent">
 <!ENTITY Ctr_appbuttonc_p	"Farbe: blau (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Farbe: Rot">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Farbe: Grün">
 <!ENTITY Ctr_appbuttonc_gr	"Farbe: Grau">
 <!ENTITY Ctr_appbuttonc_pu	"Farbe: Lila">
@@ -140,18 +138,11 @@
 <!ENTITY Ctr_cpanelmenus	"Kompakte 'Panel-Aufklappmenüs' (Lesezeichen, Chronik etc.)">
 <!ENTITY Ctr_hidezoomres	"Zoom-Schaltflächen auf Leisten: verstecke Schaltfläche 'Normalgröße'">
 <!ENTITY Ctr_alt_newtabp	"Seite 'Neuer Tab': alternative Darstellung">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on Manager">
 <!ENTITY Ctr_alt_addonsp	"Add-on-Seite 'Mehr Info': alternative Anordnung">
-<!ENTITY Ctr_alt_addonsm	"Add-ons Manager: alternative Darstellung">
+<!ENTITY Ctr_alt_addonsm	"Add-on Manager: alternative Darstellung">
 <!ENTITY Ctr_am_nowarning	"Add-on 'Übersicht': Warnungen ausblenden">
 <!ENTITY Ctr_addonversion	"Add-on 'Übersicht': Versionsnummer von Add-ons anzeigen">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Lesezeichen-Menüschaltfläche: 'Panel-Aufklappmenü'-Darstellung">
 <!ENTITY Ctr_bmbutnotext	"Lesezeichen-Menüschaltfläche: Text auf der Lesezeichenleiste verstecken">
 <!ENTITY Ctr_skipprintpr	"Drucken-Schaltfläche: Druckvorschau überspringen">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Einstellungen">
 <!ENTITY Ctr_pw_set_reset	"Standard wiederherstellen">
 <!ENTITY Ctr_pw_set_predef	"Klassische Vorgabe">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; Vorgabe">
 <!ENTITY Ctr_pw_set_export	"Exportiere Einstellungen">
 <!ENTITY Ctr_pw_set_import	"Importiere Einstellungen">
 <!ENTITY Ctr_pw_set_syncon	"Zu Sync hinzufügen">
@@ -331,6 +323,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Klassische Elemente">
 <!ENTITY Ctr_pw_set_preaust		"Australis-Vorgaben">
 <!ENTITY ctr_Support_forums	"Supportforum">

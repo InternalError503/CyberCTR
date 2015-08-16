@@ -76,18 +76,16 @@
 <!ENTITY Ctr_appbutton0		"Przycisk wyłączony">
 <!ENTITY Ctr_appbutton1		"Przycisk na pasku narzędzi">
 <!ENTITY Ctr_appbutton1wt	"Przycisk na pasku narzędzi (tylko tekst)">
-<!ENTITY Ctr_appbutton2		"Przycisk na pasku narzędzi [&brandShortName;sa]">
-<!ENTITY Ctr_appbutton2h	"Przycisk na pasku narzędzi [&brandShortName;sa] (ukryty)">
-<!ENTITY Ctr_appbutton2io	"Przycisk na pasku narzędzi [&brandShortName;sa] (tylko ikona)">
+<!ENTITY Ctr_appbutton2		"Przycisk na pasku narzędzi [&brandShortName;]">
+<!ENTITY Ctr_appbutton2h	"Przycisk na pasku narzędzi [&brandShortName;] (ukryty)">
+<!ENTITY Ctr_appbutton2io	"Przycisk na pasku narzędzi [&brandShortName;] (tylko ikona)">
 <!ENTITY Ctr_paneluibtweak	"Pomarańczowy przycisk menu panelu na pasku kart">
 <!ENTITY Ctr_appbuttonc_o	"Pomarańczowy kolor przycisku (domyślny)">
 <!ENTITY Ctr_appbuttonc_a	"Błękitny kolor przycisku (Aurora)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_appbuttonc_n	"Czarny kolor przycisku (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Przezroczysty przycisk">
 <!ENTITY Ctr_appbuttonc_p	"Błękitny kolor przycisku (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Czerwony kolor przycisku">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Zielony kolor przycisku">
 <!ENTITY Ctr_appbuttonc_gr	"Szary kolor przycisku">
 <!ENTITY Ctr_appbuttonc_pu	"Fioletowy kolor przycisku">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Menu panelu: widok kompaktowy (zakładki, historia itp.)">
 <!ENTITY Ctr_hidezoomres	"Kontrolki powiększenia na pasku narzędzi: ukryj przycisk resetu powiększenia">
 <!ENTITY Ctr_alt_newtabp	"Strona nowej karty: wygląd alternatywny">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Menedżer dodatków">
 <!ENTITY Ctr_alt_addonsp	"Strona dodatków 'więcej informacji': wygląd alternatywny">
 <!ENTITY Ctr_alt_addonsm	"Menedżer dodatków: wygląd alternatywny">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Strona dodatków: wyświetlaj wersję dodatku">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Przycisk menu zakładek: wygląd menu panelu">
 <!ENTITY Ctr_bmbutnotext	"Przycisk menu zakładek: ukryj etykietę na pasku zakładek">
 <!ENTITY Ctr_skipprintpr	"Przycisk drukowania: pomiń podgląd wydruku">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Ustawienia">
 <!ENTITY Ctr_pw_set_reset	"Przywróć domyślne">
 <!ENTITY Ctr_pw_set_predef	"Ustawienia klasyczne">
+<!ENTITY Ctr_pw_set_preaus	"Ustawienia Firefoksa">
 <!ENTITY Ctr_pw_set_export	"Eksportuj ustawienia">
 <!ENTITY Ctr_pw_set_import	"Importuj ustawienia">
 <!ENTITY Ctr_pw_set_syncon	"Dodaj do Sync">
@@ -331,6 +323,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

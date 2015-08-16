@@ -3,9 +3,11 @@
 popup.title=%S Özelleştir
 popup.msg.restart=Değişikliklerin geçerli olması için %S yeniden başlatılmalı.\nYeniden başlatılsın mı?
 import.error=ERROR: Yanlış ve ya değiştirilmiş bir dosya bulundu!\nHiçbirşey aktarılamadı!
-import.errorJSON=Üzgünüz fakat CTRpreferences.json dosyası içe aktarılırken bir sorun oluştu(json dosyası geçerli değil!)
 ctr_extrabar=Ek Araç Çubuğu
 ctr_actthrobber=Etkinlik Göstergesi
+
+# Extra CyberCTR Additions
+import.errorJSON=Üzgünüz fakat CTRpreferences.json dosyası içe aktarılırken bir sorun oluştu(json dosyası geçerli değil!)
 notification_msg_firstrun=CTR trcihlerinde değişiklikler bulundu uygulamak için yeniden başlatın
 notification_button_firstrun=Yeniden Başlat
 notification_msg_change=Önceden tanımlı CTRpreferences ayarlarınız değiştirildi

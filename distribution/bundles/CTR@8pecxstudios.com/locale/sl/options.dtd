@@ -30,7 +30,7 @@
 <!ENTITY Ctr_tabcolors_t	"Barve zavihkov in besedilo">
 
 <!ENTITY Ctr_tabs			"Zavihki">
-<!ENTITY Ctr_tabs0			"Zaokroženi zavihki (Australis default)">
+<!ENTITY Ctr_tabs0			"Zaokroženi zavihki (&brandShortName;ova privzeta nastavitev)">
 <!ENTITY Ctr_tabs1			"Pravokotni zavihki (klasični)">
 <!ENTITY Ctr_tabs1m			"Pravokotni zavihki (australizirani)">
 <!ENTITY Ctr_tabs2			"Zaokroženi zavihki (nadomestni)">
@@ -79,7 +79,6 @@
 <!ENTITY Ctr_appbutton2		"Gumb na nazivni vrstici [&brandShortName;a]">
 <!ENTITY Ctr_appbutton2h	"Gumb na nazivni vrstici [&brandShortName;a] (skrit)">
 <!ENTITY Ctr_appbutton2io	"Gumb na nazivni vrstici [&brandShortName;a] (samo ikona)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName;a button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Oranžni gumb ploščastega menija na orodni vrstici zavihkov">
 <!ENTITY Ctr_appbuttonc_o	"Oranžna barva gumba (privzeto)">
 <!ENTITY Ctr_appbuttonc_a	"Modra barva gumba (Aurora)">
@@ -87,7 +86,6 @@
 <!ENTITY Ctr_appbuttonc_t	"Prosojen gumb">
 <!ENTITY Ctr_appbuttonc_p	"Modra barva gumba (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Rdeča barva gumba">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Zelena barva gumba">
 <!ENTITY Ctr_appbuttonc_gr	"Siva barva gumba">
 <!ENTITY Ctr_appbuttonc_pu	"Vijolična barva gumba">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Ploščasti meniji: strnjen pogled (zaznamki, zgodovina itd.)">
 <!ENTITY Ctr_hidezoomres	"Nadzorni gumbi za povečavo na orodni vrstici: skrij gumb za ponastavitev povečave">
 <!ENTITY Ctr_alt_newtabp	"Stran novega zavihka: nadomestni videz">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Stran dodatkov 'Več': nadomestni videz">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Stran dodatkov: prikaži različico dodatka">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Gumb menija zaznamkov: videz ploščastega menija">
 <!ENTITY Ctr_bmbutnotext	"Gumb menija zaznamkov: skrij oznako na vrstici zaznamkov">
 <!ENTITY Ctr_skipprintpr	"Gumb Natisni: preskoči predogled tiskanja">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"Nastavitve">
 <!ENTITY Ctr_pw_set_reset	"Obnovi privzete nastavitve">
 <!ENTITY Ctr_pw_set_predef	"Klasične prednastavljene nastavitve">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName;ove prednastavljene nastavitve">
 <!ENTITY Ctr_pw_set_export	"Izvozi nastavitve">
 <!ENTITY Ctr_pw_set_import	"Uvozi nastavitve">
 <!ENTITY Ctr_pw_set_syncon	"Dodaj v Sync">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName;a button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

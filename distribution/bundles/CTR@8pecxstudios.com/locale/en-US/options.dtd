@@ -31,7 +31,7 @@
 <!ENTITY Ctr_tabcolors_t	"Tab colors &amp; text">
 
 <!ENTITY Ctr_tabs			"Tabs">
-<!ENTITY Ctr_tabs0			"Curved tabs (Australis default)">
+<!ENTITY Ctr_tabs0			"Curved tabs (&brandShortName; default)">
 <!ENTITY Ctr_tabs1			"Squared tabs (classic)">
 <!ENTITY Ctr_tabs1m			"Squared tabs (australized)">
 <!ENTITY Ctr_tabs2			"Curved tabs (alternative)">
@@ -80,7 +80,6 @@
 <!ENTITY Ctr_appbutton2		"Button on [&brandShortName;] titlebar">
 <!ENTITY Ctr_appbutton2h	"Button on [&brandShortName;] titlebar (hidden)">
 <!ENTITY Ctr_appbutton2io	"Button on [&brandShortName;] titlebar (icon only)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Orange panel menu button on tabs toolbar">
 <!ENTITY Ctr_appbuttonc_o	"Orange button color (Firefox)">
 <!ENTITY Ctr_appbuttonc_a	"Blue button color (Aurora)">
@@ -88,7 +87,6 @@
 <!ENTITY Ctr_appbuttonc_t	"Transparent button">
 <!ENTITY Ctr_appbuttonc_p	"Blue button color (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Red button color">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Green button color">
 <!ENTITY Ctr_appbuttonc_gr	"Gray button color">
 <!ENTITY Ctr_appbuttonc_pu	"Purple button color">
@@ -140,18 +138,11 @@
 <!ENTITY Ctr_cpanelmenus	"Panel menus: compact view (bookmarks, history etc.)">
 <!ENTITY Ctr_hidezoomres	"Zoom controls on toolbar: hide zoom-reset button">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative order">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Settings">
 <!ENTITY Ctr_pw_set_reset	"Restore defaults">
 <!ENTITY Ctr_pw_set_predef	"Classic preset">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; preset">
 <!ENTITY Ctr_pw_set_export	"Export preferences">
 <!ENTITY Ctr_pw_set_import	"Import preferences">
 <!ENTITY Ctr_pw_set_syncon	"Add to Sync">
@@ -331,6 +323,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

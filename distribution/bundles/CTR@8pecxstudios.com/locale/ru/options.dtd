@@ -85,9 +85,7 @@
 <!ENTITY Ctr_appbuttonc_n	"Черная кнопка (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозрачная кнопка">
 <!ENTITY Ctr_appbuttonc_p	"Голубая кнопка (Palemoon)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_r	"Красная кнопка">
-<!ENTITY Ctr_appbuttonc_s	"Оранжево-розовая кнопка">
 <!ENTITY Ctr_appbuttonc_g	"Зеленая кнопка">
 <!ENTITY Ctr_appbuttonc_gr	"Серая кнопка">
 <!ENTITY Ctr_appbuttonc_pu	"Фиолетовая кнопка">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_alt_newtabpalt	"Стиль представления страницы новой вкладки">
-<!ENTITY ctr_aboutnewtab.customhighlight "Использовать свой цвет подсветки ">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Изменение цвета подсветки">
-<!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
-<!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
-<!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
-<!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"Настройки">
 <!ENTITY Ctr_pw_set_reset	"Сбросить настройки">
 <!ENTITY Ctr_pw_set_predef	"Классическое оформление">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; предустановки">
 <!ENTITY Ctr_pw_set_export	"Экспорт настроек">
 <!ENTITY Ctr_pw_set_import	"Импорт настроек">
 <!ENTITY Ctr_pw_set_syncon	"Добавить в синхронизацию">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+ 
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; (по умолчанию)">
+<!ENTITY Ctr_appbuttonc_s	"Оранжево-розовая кнопка">
+
+<!ENTITY Ctr_alt_newtabpalt	"Стиль представления страницы новой вкладки">
+<!ENTITY ctr_aboutnewtab.customhighlight "Использовать свой цвет подсветки ">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Изменение цвета подсветки">
+<!ENTITY ctr_aboutnewtab.custombase "Использовать свой цвет текста">
+<!ENTITY ctr_aboutnewtab.custombasecol "Изменить цвет текста">
+
+<!ENTITY Ctr_alt_newtabcol	"Страница новой вкладки: столбцы">
+<!ENTITY Ctr_alt_newtabrow	"Страница новой вкладки: ряды">
+
 <!ENTITY Ctr_classic_elements		"Классическое оформление">
 <!ENTITY Ctr_pw_set_preaust		"Оформление Australis">
 <!ENTITY ctr_Support_forums	"Форум поддержки">

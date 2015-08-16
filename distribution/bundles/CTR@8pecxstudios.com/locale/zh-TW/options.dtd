@@ -74,7 +74,6 @@
 
 <!ENTITY Ctr_appbutton		"應用程式按鈕 (火狐橙按鈕)">
 <!ENTITY Ctr_appbutton0		"不顯示">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
 <!ENTITY Ctr_appbutton1		"顯示在工具列">
 <!ENTITY Ctr_appbutton1wt	"顯示在工具列 (僅文字)">
 <!ENTITY Ctr_appbutton2		"顯示在標題列">
@@ -87,7 +86,6 @@
 <!ENTITY Ctr_appbuttonc_t	"透明按鈕">
 <!ENTITY Ctr_appbuttonc_p	"藍色按鈕 (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"紅色按鈕">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"綠色按鈕">
 <!ENTITY Ctr_appbuttonc_gr	"灰色按鈕">
 <!ENTITY Ctr_appbuttonc_pu	"紫色按鈕">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"緊湊的面板選單(書籤、歷史等等.)">
 <!ENTITY Ctr_hidezoomres	"當縮放控制按鈕置於工具列上時，隱藏工具列上的縮放重設按鈕">
 <!ENTITY Ctr_alt_newtabp	"新分頁(九宮頁面): 換個外觀">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"設定">
 <!ENTITY Ctr_pw_set_reset	"套件預設值">
 <!ENTITY Ctr_pw_set_predef	"經典設定值">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; 預設值">
 <!ENTITY Ctr_pw_set_export	"匯出設定值">
 <!ENTITY Ctr_pw_set_import	"匯入設定值">
 <!ENTITY Ctr_pw_set_syncon	"Add to Sync">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

@@ -82,12 +82,10 @@
 <!ENTITY Ctr_paneluibtweak	"Pulsante pannello menu arancione nella barra delle schede">
 <!ENTITY Ctr_appbuttonc_o	"Pulsante arancione (predefinito)">
 <!ENTITY Ctr_appbuttonc_a	"Pulsante blu (Aurora)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
 <!ENTITY Ctr_appbuttonc_n	"Pulsante nero (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Pulsante trasparente">
 <!ENTITY Ctr_appbuttonc_p	"Pulsante azzurro (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Pulsante rosso">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Pulsante verde">
 <!ENTITY Ctr_appbuttonc_gr	"Pulsante grigio">
 <!ENTITY Ctr_appbuttonc_pu	"Pulsante viola">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Pannello menu unificato (Segnalibri, Cronologia, ecc..)">
 <!ENTITY Ctr_hidezoomres	"Nascondi il pulsante per ripristinare il livello di zoom dalla barra degli strumenti">
 <!ENTITY Ctr_alt_newtabp	"Nuova scheda: aspetto alternativo">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"Impostazioni">
 <!ENTITY Ctr_pw_set_reset	"Ripristina predefinite">
 <!ENTITY Ctr_pw_set_predef	"Preset classico">
+<!ENTITY Ctr_pw_set_preaus	"Preset &brandShortName;">
 <!ENTITY Ctr_pw_set_export	"Esporta preferenze">
 <!ENTITY Ctr_pw_set_import	"Importa preferenze">
 <!ENTITY Ctr_pw_set_syncon	"Add to Sync">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

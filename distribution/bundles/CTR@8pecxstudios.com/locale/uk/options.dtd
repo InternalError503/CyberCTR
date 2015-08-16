@@ -79,7 +79,6 @@
 <!ENTITY Ctr_appbutton2		"Кнопка на [&brandShortName;] панелі заголовку">
 <!ENTITY Ctr_appbutton2h	"Кнопка на [&brandShortName;] панелі заголовку (прихована)">
 <!ENTITY Ctr_appbutton2io	"Кнопка на [&brandShortName;] панелі заголовку (тільки іконка)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_paneluibtweak	"Оранжева кнопка меню на панелі вкладок">
 <!ENTITY Ctr_appbuttonc_o	"Оранжева кнопка (типово)">
 <!ENTITY Ctr_appbuttonc_a	"Синя кнопка (Aurora)">
@@ -87,7 +86,6 @@
 <!ENTITY Ctr_appbuttonc_t	"Прозора кнопка">
 <!ENTITY Ctr_appbuttonc_p	"Блакитна кнопка (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Червона кнопка">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Зелена кнопка">
 <!ENTITY Ctr_appbuttonc_gr	"Сіра кнопка">
 <!ENTITY Ctr_appbuttonc_pu	"Фіолетова кнопка">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Панель меню: компактний вигляд (закладки, історія тощо)">
 <!ENTITY Ctr_hidezoomres	"Управління масштабом на панелі: приховати кнопку скидання масштабу">
 <!ENTITY Ctr_alt_newtabp	"Сторінка нової вкладки: альтернативний вигляд">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Менеджер додатків">
 <!ENTITY Ctr_alt_addonsp	"Сторінка «Детальніше» в Додатках: альтернативний вигляд">
 <!ENTITY Ctr_alt_addonsm	"Менеджер додатків: альтернативний вигляд">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Списки додатків у Менеджері додатків: показати версію додатка">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: вигляд меню панелі">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: приховати ярлик на панелі закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка «Друк»: пропустити передогляд друку">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"Налаштування">
 <!ENTITY Ctr_pw_set_reset	"Скинути налаштування">
 <!ENTITY Ctr_pw_set_predef	"Класичні налаштунки">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; налаштунок">
 <!ENTITY Ctr_pw_set_export	"Експорт налаштувань">
 <!ENTITY Ctr_pw_set_import	"Імпорт налаштувань">
 <!ENTITY Ctr_pw_set_syncon	"Додати до Синхронізації">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

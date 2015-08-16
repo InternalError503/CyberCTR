@@ -31,7 +31,7 @@
 <!ENTITY Ctr_tabcolors_t	"Χρώματα καρτελών &amp; κειμένου">
 
 <!ENTITY Ctr_tabs			"Καρτέλες">
-<!ENTITY Ctr_tabs0			"Καμπυλόγραμμες καρτέλες (προεπιλογή Australis)">
+<!ENTITY Ctr_tabs0			"Καμπυλόγραμμες καρτέλες (προεπιλογή &brandShortName;)">
 <!ENTITY Ctr_tabs1			"Τετραγωνισμένες καρτέλες (κλασική τεχνοτροπία)">
 <!ENTITY Ctr_tabs1m			"Τετραγωνισμένες καρτέλες (τεχνοτροπία Australis)">
 <!ENTITY Ctr_tabs2			"Καμπυλόγραμμες καρτέλες (εναλλακτική τεχνοτροπία)">
@@ -81,14 +81,12 @@
 <!ENTITY Ctr_appbutton2h	"Στη γραμμή τίτλου του [&brandShortName;] (σε απόκρυψη)">
 <!ENTITY Ctr_appbutton2io	"Στη γραμμή τίτλου του [&brandShortName;] (μόνο εικονίδιο)">
 <!ENTITY Ctr_paneluibtweak	"Πορτοκαλί κουμπί μενού πίνακα στην εργαλειοθήκη καρτελών">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Πορτοκαλί χρώμα κουμπιού (προεπιλογή)">
 <!ENTITY Ctr_appbuttonc_a	"Μπλε χρώμα κουμπιού (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Μαύρο χρώμα κουμπιού (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Διαφανές κουμπί">
 <!ENTITY Ctr_appbuttonc_p	"Μπλε χρώμα κουμπιού (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Κόκκινο χρώμα κουμπιού">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Πράσινο χρώμα κουμπιού">
 <!ENTITY Ctr_appbuttonc_gr	"Γκρι χρώμα κουμπιού">
 <!ENTITY Ctr_appbuttonc_pu	"Πορφυρό χρώμα κουμπιού">
@@ -140,18 +138,11 @@
 <!ENTITY Ctr_cpanelmenus	"Μενού πίνακα: συνεπτυγμένη προβολή (σελιδοδείκτες, ιστορικό κλπ.)">
 <!ENTITY Ctr_hidezoomres	"Στοιχεία ελέγχου μεγέθυνσης σε εργαλειοθήκη: απόκρυψη κουμπιού επεναφοράς επιπέδου μεγέθυνσης">
 <!ENTITY Ctr_alt_newtabp	"Σελίδα νέας καρτέλας: εναλλακτική εμφάνιση">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Σελίδα επεκτάσεων «Περισσότερα»: εναλλακτική εμφάνιση">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Μενού κουμπιού-μενού σελιδοδεικτών: εμφάνιση μενού πίνακα">
 <!ENTITY Ctr_bmbutnotext	"Κουμπί-μενού σελιδοδεικτών: απόκρυψη ετικέτας στην εργαλειοθήκη σελιδοδεικτών">
 <!ENTITY Ctr_skipprintpr	"Κουμπί «Εκτύπωση»: παράκαμψη προεπισκόπησης εκτύπωσης">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Ρυθμίσεις">
 <!ENTITY Ctr_pw_set_reset	"Επαναφορά προεπιλογών">
 <!ENTITY Ctr_pw_set_predef	"Προκαθορισμένες κλασικές">
+<!ENTITY Ctr_pw_set_preaus	"Προκαθορισμένες του &brandShortName;">
 <!ENTITY Ctr_pw_set_export	"Εξαγωγή προτιμήσεων">
 <!ENTITY Ctr_pw_set_import	"Εισαγωγή προτιμήσεων">
 <!ENTITY Ctr_pw_set_syncon	"Προσθήκη στο «Sync»">
@@ -331,6 +323,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

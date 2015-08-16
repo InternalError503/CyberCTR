@@ -30,7 +30,7 @@
 <!ENTITY Ctr_tabcolors_t	"标签页颜色与文本">
 
 <!ENTITY Ctr_tabs			"标签页">
-<!ENTITY Ctr_tabs0			"弧形标签页 (Australis 默认)">
+<!ENTITY Ctr_tabs0			"弧形标签页 (&brandShortName; 默认)">
 <!ENTITY Ctr_tabs1			"方形标签页 (经典)">
 <!ENTITY Ctr_tabs1m			"方形标签页 (仿 Australis)">
 <!ENTITY Ctr_tabs2			"弧形标签页 (备选风格)">
@@ -81,13 +81,11 @@
 <!ENTITY Ctr_appbutton2io	"在 [&brandShortName;] 标题栏上显示 (仅图标)">
 <!ENTITY Ctr_paneluibtweak	"在标签页栏上显示橙色面板菜单按钮">
 <!ENTITY Ctr_appbuttonc_o	"橙色按钮 (默认)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
 <!ENTITY Ctr_appbuttonc_a	"蓝色按钮 (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"黑色按钮 (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"透明按钮">
 <!ENTITY Ctr_appbuttonc_p	"蓝色按钮 (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"红色按钮">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"绿色按钮">
 <!ENTITY Ctr_appbuttonc_gr	"灰色按钮">
 <!ENTITY Ctr_appbuttonc_pu	"紫色按钮">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"面板菜单: 更紧凑的视图 (书签、历史等等)">
 <!ENTITY Ctr_hidezoomres	"当缩放控制按钮在工具栏上时: 隐藏重置缩放按钮">
 <!ENTITY Ctr_alt_newtabp	"新标签页页面: 备选的外观">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"附加组件管理器">
 <!ENTITY Ctr_alt_addonsp	"附加组件“更多”页面: 备选的外观">
 <!ENTITY Ctr_alt_addonsm	"附加组件管理器: 备选的外观">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"附加组件页面: 显示附加组件版本">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"书签菜单按钮: 面板式菜单外观">
 <!ENTITY Ctr_bmbutnotext	"书签菜单按钮: 隐藏书签工具栏上的文本标签">
 <!ENTITY Ctr_skipprintpr	"打印按钮: 跳过打印预览">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"设置">
 <!ENTITY Ctr_pw_set_reset	"恢复默认">
 <!ENTITY Ctr_pw_set_predef	"经典主题预设">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; 预设">
 <!ENTITY Ctr_pw_set_export	"导出选项设置">
 <!ENTITY Ctr_pw_set_import	"导入选项设置">
 <!ENTITY Ctr_pw_set_syncon	"添加到同步">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (Default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

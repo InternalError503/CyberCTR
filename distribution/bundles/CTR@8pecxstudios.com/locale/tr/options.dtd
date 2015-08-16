@@ -30,7 +30,7 @@
 <!ENTITY Ctr_tabcolors_t	"Özel Renkler">
 
 <!ENTITY Ctr_tabs			"Sekmeler">
-<!ENTITY Ctr_tabs0			"Kavisli Sekmeler (Australis varsayılanı)">
+<!ENTITY Ctr_tabs0			"Kavisli Sekmeler (&brandShortName; varsayılanı)">
 <!ENTITY Ctr_tabs1			"Köşeli Sekmeler (Klasik)">
 <!ENTITY Ctr_tabs1m			"Kareli Sekmeler (Australize)">
 <!ENTITY Ctr_tabs2			"Kavisli Sekmeler (Alternatif)">
@@ -56,7 +56,7 @@
 <!ENTITY Ctr_square_edges	"Squared top corners">
 <!ENTITY Ctr_tabinsertion	"İlgili sekmeyi geçerli sekmeden sonra ekle (about:config tercihi)">
 <!ENTITY Ctr_emptyfavicon	"Boş faviconu yükle (sitenin faviconu yoksa eğer)">
-<!ENTITY Ctr_noemptypticon	"Sabitlenmiş sekmelerde boş faviconu kaldır">
+<!ENTITY Ctr_noemptypticon	"Tutturulmuş sekmelerde boş faviconu kaldır">
 <!ENTITY Ctr_e10stab_notd	"E10s sekmeler: altçizgiyi kaldır">
 <!ENTITY Ctr_closetab_0		"Sekme Kapat">
 <!ENTITY Ctr_closetab_1		"Sadece aktif sekme için">
@@ -67,7 +67,7 @@
 <!ENTITY Ctr_closetab_hfot	"Görünen sekme için sakla">
 <!ENTITY Ctr_closei_def		"Default icons">
 <!ENTITY Ctr_closeonleft	"Sekme üstünde alternatif pozisyon">
-<!ENTITY Ctr_close_wwltab	"Son görülebilir sekmeyle pencereyi kapat (about:config)">
+<!ENTITY Ctr_close_wwltab	"Son görülebilir sekmeyle sencereyi kapat (about:config)">
 
 <!ENTITY Ctr_hctpinfotab	"Bazı sekme varyasyonları 'Hide Caption Titlebar Plus' eklentisiyle uyumlu değildir.">
 <!ENTITY Ctr_hctpinfoab		"&brandShortName; butonu ekleme özelliği 'Hide Caption Titlebar Plus' eklentisiyle uyumlu değildir.">
@@ -79,7 +79,6 @@
 <!ENTITY Ctr_appbutton2		"[&brandShortName;] başlığında buton">
 <!ENTITY Ctr_appbutton2h	"Araç çubuğunda [&brandShortName;] butonu(saklı)">
 <!ENTITY Ctr_appbutton2io	"[&brandShortName;] başlığında buton (sadece ikon)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; buton rengi (varsayılan)">
 <!ENTITY Ctr_paneluibtweak	"Sekme çubuğunda turuncu panel menü butonu">
 <!ENTITY Ctr_appbuttonc_o	"Turuncu renk butonu">
 <!ENTITY Ctr_appbuttonc_a	"Mavi renk butonu (Aurora)">
@@ -87,7 +86,6 @@
 <!ENTITY Ctr_appbuttonc_t	"Şeffaf Buton">
 <!ENTITY Ctr_appbuttonc_p	"Blue button color (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Kırmızı Buton Rengi">
-<!ENTITY Ctr_appbuttonc_s	"Somon Buton Rengi">
 <!ENTITY Ctr_appbuttonc_g	"Yeşil Buton Rengi">
 <!ENTITY Ctr_appbuttonc_gr	"Gri Buton Rengi">
 <!ENTITY Ctr_appbuttonc_pu	"Mor Buton Rengi">
@@ -111,7 +109,7 @@
 <!ENTITY Ctr_nbcompact		"Gezinti araç çubuğu yüksekliğini azalt">
 <!ENTITY Ctr_hide_bf_popup	"Geçmiş menüsü butonunu gizlemek için Fare tuşuna basın">
 <!ENTITY Ctr_bf_space		"Düğmeleri arası boşluğu azaltın (mümkünse)">
-<!ENTITY Ctr_noconicons		"Etiketlerle sayfa içerik menüsü simgelerini değiştirin (geri, ileri, dur, yenile, yerimleri sayfası)">
+<!ENTITY Ctr_noconicons		"Etiketlerle sayfa içerik menüsü simgelerini değiştirin (geri, ileri, dur, yenile, yerimleri sayfaıs)">
 <!ENTITY Ctr_svgfilters		"Araç çubuğu düğmeleri için SVG renkleri kullan">
 <!ENTITY Ctr_wincontrols	"Hareketli tam ekran penceresi kontrolleri">
 <!ENTITY Ctr_emptyfavicon2	"Genel(boş noktalı) faviconu kağıt görünümlü favicon ile değiştir">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"Panel menu: tümleşik görünüm (yerimleri, geçmiş vb.)">
 <!ENTITY Ctr_hidezoomres	"Araç çubuğunda zoom kontrolü: zoom-reset butonu gizle">
 <!ENTITY Ctr_alt_newtabp	"Yeni sekme sayfası: alternatif görünüm">
-<!ENTITY Ctr_alt_newtabpalt	"Yeni sekme sayfası: tarz görünüm">
-<!ENTITY ctr_aboutnewtab.customhighlight "Özel vurgu rengi kullanın">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Özel vurgu rengini değiştirin">
-<!ENTITY ctr_aboutnewtab.custombase "Özel metin rengi kullan">
-<!ENTITY ctr_aboutnewtab.custombasecol "Taban metin rengini değiştir">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Eklentiler için 'daha fazla bilgi' sayfası: alternatif görünüm">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"Yeni sekme sayfası: sütunlar">
-<!ENTITY Ctr_alt_newtabrow	"Yeni sekme sayfası: satırlar">
 <!ENTITY Ctr_bmbutpanelm	"Yer imleri menü düğmesi: panel menu görünümü">
 <!ENTITY Ctr_bmbutnotext	"Yer imleri menü düğmesi: bar üzerinde etiketi gizle">
 <!ENTITY Ctr_skipprintpr	"Yazdır Butonu: baskı önizlemeyi atla">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"Ayarlar">
 <!ENTITY Ctr_pw_set_reset	"Sıfırla">
 <!ENTITY Ctr_pw_set_predef	"Klasik ön-tanımlı">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; ön-tanımlı">
 <!ENTITY Ctr_pw_set_export	"Tercihleri dışa Aktar">
 <!ENTITY Ctr_pw_set_import	"Tercihleri içe Aktar">
 <!ENTITY Ctr_pw_set_syncon	"Sync'e ekle">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; buton rengi (varsayılan)">
+<!ENTITY Ctr_appbuttonc_s	"Somon Buton Rengi">
+
+<!ENTITY Ctr_alt_newtabpalt	"Yeni sekme sayfası: tarz görünüm">
+<!ENTITY ctr_aboutnewtab.customhighlight "Özel vurgu rengi kullanın">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Özel vurgu rengini değiştirin">
+<!ENTITY ctr_aboutnewtab.custombase "Özel metin rengi kullan">
+<!ENTITY ctr_aboutnewtab.custombasecol "Taban metin rengini değiştir">
+
+<!ENTITY Ctr_alt_newtabcol	"Yeni sekme sayfası: sütunlar">
+<!ENTITY Ctr_alt_newtabrow	"Yeni sekme sayfası: satırlar">
+
 <!ENTITY Ctr_classic_elements		"Klasik Elementler">
 <!ENTITY Ctr_pw_set_preaust		"Ön-Tanımlı Australis">
 <!ENTITY ctr_Support_forums	"Destek Forumu">

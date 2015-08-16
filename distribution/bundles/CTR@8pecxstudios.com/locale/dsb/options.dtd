@@ -81,14 +81,12 @@
 <!ENTITY Ctr_appbutton2h	"Tłocašk na titelowej rědce (schowany)">
 <!ENTITY Ctr_appbutton2io	"Tłocašk na titelowej rědce [&brandShortName;] (jano symbol)">
 <!ENTITY Ctr_paneluibtweak	"Oranžowy menijowy tłocašk na rejtarkowej rědce">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
 <!ENTITY Ctr_appbuttonc_o	"Tłocaškowa barwa: Oranžowy (standard)">
 <!ENTITY Ctr_appbuttonc_a	"Tłocaškkowa barwa: Módry (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Tłocaškowa barwa: Carny (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Transparentny tłocašk">
 <!ENTITY Ctr_appbuttonc_p	"Tłocaškowa barwa: Módry (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Tłocaškowa barwa: Cerwjeny">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"Tłocaškowa barwa: Zeleny">
 <!ENTITY Ctr_appbuttonc_gr	"Tłocaškowa barwa: Šery">
 <!ENTITY Ctr_appbuttonc_pu	"Tłocaškowa barwa: Purpur">
@@ -140,18 +138,11 @@
 <!ENTITY Ctr_cpanelmenus	"Kompaktne pólowe menije (cytańske znamjenja, historija atd.)">
 <!ENTITY Ctr_hidezoomres	"Skalěrowańske elementy na symbolowej rědce: Tłocašk za slědkstajenje skalěrowanja schowaś">
 <!ENTITY Ctr_alt_newtabp	"Bok nowego rejtarka: alternatiwne wuglědanje">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Zastojnik dodankow">
 <!ENTITY Ctr_alt_addonsp	"Bok 'wěcej info' dodankow: alternatiwny naglěd">
 <!ENTITY Ctr_alt_addonsm	"Zastojnik dodankow: alternatiwny naglěd">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Pśeglěd zastojnika dodankow: wersiju dodanka pokazaś">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Tłocašk menija cytańskich znamjenjow: naglěd dialogowego menija">
 <!ENTITY Ctr_bmbutnotext	"Tłocašk menija cytańskich znamjenjow: tekst na rědce cytańskich znamjenjow schowaś">
 <!ENTITY Ctr_skipprintpr	"Śišćarski tłocašk: śišćarski pśeglěd pśeskócyś">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Nastajenja">
 <!ENTITY Ctr_pw_set_reset	"Standard wótnowiś">
 <!ENTITY Ctr_pw_set_predef	"Klasiske standardne gódnoty">
+<!ENTITY Ctr_pw_set_preaus	"Standard &brandShortName;">
 <!ENTITY Ctr_pw_set_export	"Nastajenja eksportěrowaś">
 <!ENTITY Ctr_pw_set_import	"Nastajenja importěrowaś">
 <!ENTITY Ctr_pw_set_syncon	"K Sync pśidaś">
@@ -331,6 +323,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

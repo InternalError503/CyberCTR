@@ -85,9 +85,7 @@
 <!ENTITY Ctr_appbuttonc_n	"黒色 (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"透過色">
 <!ENTITY Ctr_appbuttonc_p	"青色 (Palemoon)">
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; (Default)">
 <!ENTITY Ctr_appbuttonc_r	"赤色">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 <!ENTITY Ctr_appbuttonc_g	"緑色">
 <!ENTITY Ctr_appbuttonc_gr	"灰色">
 <!ENTITY Ctr_appbuttonc_pu	"紫色">
@@ -139,18 +137,11 @@
 <!ENTITY Ctr_cpanelmenus	"パネルメニュー：コンパクトビュー (ブックマーク、履歴など)">
 <!ENTITY Ctr_hidezoomres	"ツールバーのズームコントロール: ズームリセットボタンを隠す">
 <!ENTITY Ctr_alt_newtabp	"New tab page: alternative appearance">
-<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
-<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
-<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Add-ons 'more info' page: alternative appearance">
 <!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Add-on managers add-on lists: show add-on version">
-<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
-<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
 <!ENTITY Ctr_bmbutpanelm	"Bookmarks menu button: panel menu appearance">
 <!ENTITY Ctr_bmbutnotext	"Bookmarks menu button: hide label on bookmarks bar">
 <!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
@@ -299,6 +290,7 @@
 <!ENTITY Ctr_pw_settings	"設定">
 <!ENTITY Ctr_pw_set_reset	"デフォルトに戻す">
 <!ENTITY Ctr_pw_set_predef	"クラシックプリセット">
+<!ENTITY Ctr_pw_set_preaus	"&brandShortName; preset">
 <!ENTITY Ctr_pw_set_export	"設定をエクスポート">
 <!ENTITY Ctr_pw_set_import	"設定をインポート">
 <!ENTITY Ctr_pw_set_syncon	"Add to Sync">
@@ -330,6 +322,19 @@
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!-- Extra CyberCTR Additions -->
+ 
+<!ENTITY Ctr_appbuttonc_d	"&brandShortName; (Default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+
+<!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
+<!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Change custom highlight color">
+<!ENTITY ctr_aboutnewtab.custombase "Use custom text color">
+<!ENTITY ctr_aboutnewtab.custombasecol "Change base text color">
+
+<!ENTITY Ctr_alt_newtabcol	"New tab page: columns">
+<!ENTITY Ctr_alt_newtabrow	"New tab page: rows">
+
 <!ENTITY Ctr_classic_elements		"Classic Elements">
 <!ENTITY Ctr_pw_set_preaust		"Australis Pre-set">
 <!ENTITY ctr_Support_forums	"Support Forum">

@@ -81,14 +81,12 @@
 <!ENTITY Ctr_appbutton2h	"Bouton sur la barre de titre [&brandShortName;] (caché)">
 <!ENTITY Ctr_appbutton2io	"Bouton sur la barre de titre [&brandShortName;] (icône seule)">
 <!ENTITY Ctr_paneluibtweak	"Bouton orange sur la barre d’onglets">
-<!ENTITY Ctr_appbuttonc_o	"Bouton orange">
-<!ENTITY Ctr_appbuttonc_d	"Bouton &brandShortName; (par défaut)">
+<!ENTITY Ctr_appbuttonc_o	"Bouton orange (par firefox)">
 <!ENTITY Ctr_appbuttonc_a	"Bouton bleu (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Bouton noir (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Bouton transparent">
 <!ENTITY Ctr_appbuttonc_p	"Bouton bleu (Palemoon)">
 <!ENTITY Ctr_appbuttonc_r	"Bouton rouge">
-<!ENTITY Ctr_appbuttonc_s	"Bouton saumon">
 <!ENTITY Ctr_appbuttonc_g	"Bouton vert">
 <!ENTITY Ctr_appbuttonc_gr	"Bouton gris">
 <!ENTITY Ctr_appbuttonc_pu	"Bouton pourpre">
@@ -140,18 +138,11 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet : aspect alternatif">
-<!ENTITY Ctr_alt_newtabpalt	"Page Nouvel onglet : aspect stylisé">
-<!ENTITY ctr_aboutnewtab.customhighlight 	"Utiliser une couleur de surlignement personnalisée">
-<!ENTITY ctr_aboutnewtab.customhighlightcol "Définir cette couleur">
-<!ENTITY ctr_aboutnewtab.custombase 	"Utiliser une couleur de texte personnalisée">
-<!ENTITY ctr_aboutnewtab.custombasecol 	"Changer la couleur de base du texte">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » de la page des modules complémentaires : autre aspect">
 <!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
-<!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
-<!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">
 <!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
 <!ENTITY Ctr_bmbutnotext	"Bouton du menu des marque-pages : masquer l’étiquette sur la barre personnelle">
 <!ENTITY Ctr_skipprintpr	"Bouton Imprimer : masquer « Aperçu avant l’impression »">
@@ -300,6 +291,7 @@
 <!ENTITY Ctr_pw_settings	"Réglages">
 <!ENTITY Ctr_pw_set_reset	"Restaurer les réglages par défaut">
 <!ENTITY Ctr_pw_set_predef	"Préréglage classique">
+<!ENTITY Ctr_pw_set_preaus	"Préréglage &brandShortName;">
 <!ENTITY Ctr_pw_set_export	"Exporter les préférences">
 <!ENTITY Ctr_pw_set_import	"Importer les préférences">
 <!ENTITY Ctr_pw_set_syncon	"Ajouter à la synchronisation">
@@ -334,6 +326,19 @@
 <!ENTITY helpMenuWin.label		"Aide">
 
 <!-- Extra CyberCTR Additions -->
+
+<!ENTITY Ctr_appbuttonc_d	"Bouton &brandShortName; (par défaut)">
+<!ENTITY Ctr_appbuttonc_s	"Bouton saumon">
+
+<!ENTITY Ctr_alt_newtabpalt	"Page Nouvel onglet : aspect stylisé">
+<!ENTITY ctr_aboutnewtab.customhighlight 	"Utiliser une couleur de surlignement personnalisée">
+<!ENTITY ctr_aboutnewtab.customhighlightcol "Définir cette couleur">
+<!ENTITY ctr_aboutnewtab.custombase 	"Utiliser une couleur de texte personnalisée">
+<!ENTITY ctr_aboutnewtab.custombasecol 	"Changer la couleur de base du texte">
+
+<!ENTITY Ctr_alt_newtabcol	"Page Nouvel onglet : nombre de colonnes">
+<!ENTITY Ctr_alt_newtabrow	"Page Nouvel onglet : nombre de rangées">
+
 <!ENTITY Ctr_classic_elements	"Préréglage classique">
 <!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">
 <!ENTITY ctr_Support_forums		"Forum d’assistance">
