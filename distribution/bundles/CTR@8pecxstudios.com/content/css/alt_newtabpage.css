@@ -19,6 +19,10 @@
 	  margin: 20px 10px 20px !important;
 	}
 	
+   .newtab-link {
+      overflow:visible !important;
+   }
+	
 	html #newtab-grid {
 	  min-height: unset !important;
 	  max-height: unset !important;

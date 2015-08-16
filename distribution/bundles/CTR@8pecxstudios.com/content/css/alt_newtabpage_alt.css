@@ -26,6 +26,10 @@
 	  /* -moz-outline-radius: 8px;*/
 	}
 
+   .newtab-link {
+      overflow:visible !important;
+   }
+	
 	#newtab-window,
 	#newtab-scrollbox{
         background-color: #2d2d2d!important;
