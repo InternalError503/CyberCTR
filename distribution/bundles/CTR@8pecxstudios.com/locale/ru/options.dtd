@@ -137,16 +137,16 @@
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки: альтернативный вид">
-<!ENTITY Ctr_addonmanager	"Add-on manager">
+<!ENTITY Ctr_addonmanager	"Управление дополнениями">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
-<!ENTITY Ctr_alt_addonsm	"Add-on manager: alternative appearance">
-<!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
+<!ENTITY Ctr_alt_addonsm	"Управление дополнениями: альтернативное представление">
+<!ENTITY Ctr_am_nowarning	"Список дополнений в менеджере: скрыть предупреждения">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
 <!ENTITY Ctr_tbconmenu		"Контекстное меню панели инструментов: скрыть «Переместить в меню», «Удалить с панели инструментов», «Обновить/В закладки все вкладки», «Восстановить закрытую вкладку»">
-<!ENTITY Ctr_noresizerxp	"Скрыть «Resizer» (Windows XP/2000)">
+<!ENTITY Ctr_noresizerxp	"Скрыть «Изменение размера» (Windows XP/2000)">
 <!ENTITY Ctr_extraurlkeycb	"Открыть дополнительную адресную строку (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
@@ -345,7 +345,7 @@
 
 <!ENTITY ctr_applyCTRPrefFile.label	"Применить изменения">
 <!ENTITY ctr_restoreCTRPrefFile.label	"Восстановление из резервной копии">
-<!ENTITY ctr_resetCTRPrefFile.label	"Clear Backup">
+<!ENTITY ctr_resetCTRPrefFile.label	"Удалить резервные копии">
 
 <!ENTITY ctr_appbuttoncusttextcolor	"Цвет текста кнопки меню.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Удаление тени шрифта кнопки меню">
