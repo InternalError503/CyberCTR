@@ -96,6 +96,7 @@
 <!ENTITY Ctr_appbuttonI1e	"Non visible sur la barre de titre de l’OS">
 <!ENTITY Ctr_appbuttonI2	"Bouton coloré uniquement sur la barre de titre ou sur la barre d’onglets!">
 <!ENTITY Ctr_appbutmhi		"Position plus élevée (si sur la barre d’onglets)">
+<!ENTITY Ctr_appbautocol	"Set default / Aurora / Nightly color automatically">
 <!ENTITY Ctr_appbutbdl		"Masquer les bordures et les couleurs de fond">
 <!ENTITY Ctr_dblclclosefx	"Un double clic ferme la fenêtre courante">
 <!ENTITY Ctr_appbclmmenus	"Menus cliquables à l’intérieur d’un bouton de menus (Nouvel onglet, Imprimer…)">
@@ -236,6 +237,7 @@
 <!ENTITY Ctr_menubarnofog	"Enlever l’effet de flou / l’arrière-plan des éléments (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Couleur aéro bleue pour les barres d’outils principales et la barre d’onglets">
+<!ENTITY Ctr_transpttbw10	"Title/menu/tabs toolbar: remove background color (Windows 10)">
 <!ENTITY Ctr_hidenavbar		"Masquer la barre de navigation">
 <!ENTITY Ctr_nobookbarbg	"Barre personnelle : enlever l’arrière-plan">
 <!ENTITY Ctr_bookbarfs		"Barre personnelle : en mode plein écran">
@@ -273,19 +275,21 @@
 <!ENTITY Ctr_nodevtheme		"Empêche l’activation du « thème développeur »">
 
 <!ENTITY Ctr_experttweaks	"Expert">
-<!ENTITY Ctr_fx34search		"&brandShortName; 34+ – offre une nouvelle barre de recherche. Si cette option est décochée, l’ancienne barre de recherche est activée.">
-<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ – offre la possibilité d’inviter quelqu’un à discuter. Cette possibilité est désactivée en décochant cette option.">
-<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ – offre un nouveau « thème développeur ». Si cette option est décochée, ce thème et le bouton correspondant sont désactivés.">
-<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ – place les préférences dans un onglet. Si cette option est décochée, l’ancienne fenêtre de préférences est utilisée.">
-<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ offre un mode de lecture d’articles. Si cette option est décochée, ce mode est désactivé et l’icône est enlevée de la barre d’adresse.">
-<!ENTITY Ctr_fx38pocket		"&brandShortName; 38.0.5+ offre le mode « sac de rangement » (« Pocket »). Si cette option est décochée, ce mode est désactivé et l’icône est enlevée des barres d’outils.">
-<!ENTITY Ctr_fx38pocket2	"Note: Déplacer le bouton « Sac » vers la fenêtre de personnalisation avant de désactiver cette fonction permet également d’enlever le sac de rangement des marque-pages et du menu de lecture.">
-<!ENTITY Ctr_e_searchui		"Apparence et fonctionnement de la recherche">
+<!ENTITY Ctr_fx34search		"&brandShortName; 34+ introduit une nouvelle barre de recherche. Si cette option est décochée, l'ancienne barre de recherche est activée.">
+<!ENTITY Ctr_fx34loop		"&brandShortName; 34+ introduit la possibilité d'inviter quelqu'un à discuter. Cette possibilité est desactivée en décochant cette option.">
+<!ENTITY Ctr_fx35devtheme	"&brandShortName; 35+ introduit un nouveau thème 'Developer Edition'. Si cette option est décochée, le thème 'Developer Edition' est desactivé ainsi que son bouton dans la fenêtre de personnalisation.">
+<!ENTITY Ctr_fx36prefs		"&brandShortName; 36+ introduit les 'Préférences dans un onglet'. Si cette option est décochée, l'ancienne fenêtre des préférences est restaurée.">
+<!ENTITY Ctr_fx38reader		"&brandShortName; 38+ introduit un nouveau 'Mode lecture'. Si cette option est décochée, ce mode est desactivé et son icône est retirée de la barre d'adresse.">
+<!ENTITY Ctr_fx38pocket		"&brandShortName; 38.0.5+ introduit le support natif de 'Pocket'. Si cette option est décochée, 'Pocket' est desactivé et son bouton retiré des barres d'outils.">
+<!ENTITY Ctr_fx38pocket2	"Note: Déplacer le bouton 'Pocket' vers la 'fenêtre de personnalisation' avant de desactiver cette option, permet également d'enlever 'Pocket' des marques pages et du menu de lecture.">
+<!ENTITY Ctr_e_searchui		"Apparence de recherche">
 <!ENTITY Ctr_e_loop			"Appels et conversations">
 <!ENTITY Ctr_e_deved		"Thème de l’édition de développement">
 <!ENTITY Ctr_e_prefsui		"Préférences dans un onglet">
 <!ENTITY Ctr_e_readermode	"Mode de lecture d’articles">
 <!ENTITY Ctr_e_pocket		"Sac de rangement (« Pocket »)">
+<!ENTITY Ctr_e_tabsaudioico	"Audio playing icon on tabs">
+<!ENTITY Ctr_fx42tabsaudico	"&brandShortName; 42+: Unchecking this preference removes 'audio playing icon' from tabs.">
 
 
 <!ENTITY Ctr_pw_settings	"Réglages">

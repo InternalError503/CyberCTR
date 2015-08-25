@@ -25,6 +25,7 @@ pref("extensions.classicthemerestorer.appbutmhi",false);
 pref("extensions.classicthemerestorer.appbutbdl",false);
 pref("extensions.classicthemerestorer.dblclclosefx",false);
 pref("extensions.classicthemerestorer.appbclmmenus",true);
+pref("extensions.classicthemerestorer.appbautocol",false);
 
 pref("extensions.classicthemerestorer.appbuttontxt",'');
 
@@ -131,6 +132,7 @@ pref("extensions.classicthemerestorer.extraurlkeycb",false);
 
 // Toolbar settings
 pref("extensions.classicthemerestorer.aerocolors",false);
+pref("extensions.classicthemerestorer.transpttbw10",false);
 pref("extensions.classicthemerestorer.nbiconsize",'small');
 
 pref("extensions.classicthemerestorer.nobookbarbg",false);

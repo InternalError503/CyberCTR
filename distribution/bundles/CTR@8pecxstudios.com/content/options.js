@@ -344,6 +344,7 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion < 38) {
 	  document.getElementById('ctraddon_pw_readermodegb').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_pocketgb').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_readermode2').style.visibility = 'collapse';
 	}
 	if (this.appversion > 37) {
 	  document.getElementById('ctraddon_pw_bmarkoinpw').style.visibility = 'collapse';
@@ -351,6 +352,7 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion < 40) {
 	  document.getElementById('ctraddon_pw_addonversion').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_alt_addonsm').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_transpttbw10').style.visibility = 'collapse';
 	}
 	if (this.appversion < 41) {
 	  document.getElementById('ctraddon_pw_anewtaburlgbox').style.visibility = 'collapse';
@@ -358,6 +360,11 @@ classicthemerestorerjso.ctr = {
 
 	if (this.appversion < 42) {
 	  document.getElementById('ctraddon_pw_fsaduration').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_tabsaudioicogb').style.visibility = 'collapse';
+	}
+	
+	if (this.appversion >= 42) {
+	  document.getElementById('ctraddon_pw_readermode2').style.visibility = 'collapse';
 	}
 
 	function PrefListener(branch_name, callback) {
@@ -936,6 +943,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = true;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = false;
 	} else if (which=="appbutton_v1wt" && this.fxdefaulttheme){
 	  document.getElementById('ctraddon_altabico_list').disabled = true;
 	  document.getElementById('ctraddon_abhigher').disabled = false;
@@ -945,6 +953,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = false;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = false;
 	} else if (which=="appbutton_v1" && !this.fxdefaulttheme){
 	  document.getElementById('ctraddon_altabico_list').disabled = false;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
@@ -954,6 +963,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = true;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = false;
 	} else if (which=="appbutton_v1wt" && !this.fxdefaulttheme){
 	  document.getElementById('ctraddon_altabico_list').disabled = false;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
@@ -963,6 +973,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = false;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = false;
 	} else if (which=="appbutton_off" || which=="appbutton_v2h"){
 	  document.getElementById('ctraddon_altabico_list').disabled = true;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
@@ -972,6 +983,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = true;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = true;
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = true;
 	} else if (which=="appbutton_pm"){
 	  document.getElementById('ctraddon_altabico_list').disabled = true;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
@@ -981,6 +993,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = true;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = true;
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = true;
 	} else if (which=="appbutton_v2io" || which=="appbutton_v2io2") {
 	  document.getElementById('ctraddon_altabico_list').disabled = true;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
@@ -990,10 +1003,12 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = true;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = true;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
-	  
+	  document.getElementById('ctraddon_pw_appbautocol').disabled = false;
+
 	  if (tabsintitlebar==false && fromprefwindow==true) {
 		Services.prefs.getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
 	  }
+
 	} else {
 	  document.getElementById('ctraddon_altabico_list').disabled = true;
 	  document.getElementById('ctraddon_abhigher').disabled = true;
@@ -1003,10 +1018,11 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_appbutonclab').disabled = false;
 	  document.getElementById('ctraddon_pw_appbuttontxt').disabled = false;
 	  document.getElementById('ctraddon_appbclmmenus').disabled = false;
-	  
+
 	  if (tabsintitlebar==false && fromprefwindow==true) {
 		Services.prefs.getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
 	  }
+
 	}
   },
   

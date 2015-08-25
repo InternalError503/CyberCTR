@@ -33,10 +33,12 @@
 		<preference id="ctraddon_oldprefs" 		name="browser.preferences.inContent"				type="bool"		instantApply="true"/>
 		<preference id="ctraddon_devtheme"		name="browser.devedition.theme.enabled"				type="bool"		instantApply="true"/>
 		<preference id="ctraddon_readermode"	name="reader.parse-on-load.enabled"					type="bool"		instantApply="true"/>
+		<preference id="ctraddon_readermode2"	name="browser.readinglist.enabled"					type="bool"		instantApply="true"/>
 		<preference id="ctraddon_pocket"		name="browser.pocket.enabled"						type="bool"		instantApply="true"/>
 		<preference id="ctraddon_nodevtheme2"	name="extensions.classicthemerestorer.nodevtheme2"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_tabinsertion"	name="browser.tabs.insertRelatedAfterCurrent"		type="bool"		instantApply="true"/>
 		<preference id="ctraddon_e10stabs"		name="browser.tabs.remote.autostart"				type="bool"		instantApply="true"/>
+		<preference id="ctraddon_tabsaudioico"	name="browser.tabs.showAudioPlayingIcon"			type="bool"		instantApply="true"/>
 
 		<preference id="ctraddon_tabs"			name="extensions.classicthemerestorer.tabs" 		type="string"	instantApply="true"/>
 		<preference id="ctraddon_tabsontop"		name="extensions.classicthemerestorer.tabsontop" 	type="string"	instantApply="true"/>
@@ -220,6 +222,7 @@
 		<preference id="ctraddon_tabmokcolor4"	name="extensions.classicthemerestorer.tabmokcolor4"  type="bool"	instantApply="true"/>
 		
 		<preference id="ctraddon_aerocolors"	name="extensions.classicthemerestorer.aerocolors"	type="bool"		instantApply="true"/>
+		<preference id="ctraddon_transpttbw10"	name="extensions.classicthemerestorer.transpttbw10"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_nbiconsize"	name="extensions.classicthemerestorer.nbiconsize" 	type="string"	instantApply="true"/>
 		
 		<preference id="ctraddon_mbarposition"	name="extensions.classicthemerestorer.mbarposition"	 type="string"	instantApply="true"/>
@@ -239,6 +242,7 @@
 		<preference id="ctraddon_icopageinfo"	name="extensions.classicthemerestorer.icopageinfo"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_dblclclosefx"	name="extensions.classicthemerestorer.dblclclosefx"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_appbclmmenus"	name="extensions.classicthemerestorer.appbclmmenus"	 type="bool"	instantApply="true"/>
+		<preference id="ctraddon_appbautocol"	name="extensions.classicthemerestorer.appbautocol"	 type="bool"	instantApply="true"/>
 
 		<preference id="ctraddon_throbberalt"	name="extensions.classicthemerestorer.throbberalt" 	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_bmanimation"	name="extensions.classicthemerestorer.bmanimation"	type="bool"		instantApply="true"/>
@@ -441,8 +445,10 @@
 			<radio value="closeicon_default" label="&Ctr_closei_def;" id="ctraddon_closeicon_def"/>
 			<radio value="closeicon_red"	label=""	id="ctraddon_closeicon_red"/>
 			<radio value="closeicon_w7"		label=""	id="ctraddon_closeicon_w7"/>
+			<radio value="closeicon_w8"		label=""	id="ctraddon_closeicon_w8"/>
 			<radio value="closeicon_w10"	label=""	id="ctraddon_closeicon_w10"/>
 			<radio value="closeicon_w10i"	label=""	id="ctraddon_closeicon_w10i"/>
+			<radio value="closeicon_w10red"	label=""	id="ctraddon_closeicon_w10red"/>
 		</radiogroup>
 		
 		<checkbox label="&Ctr_close_wwltab;" preference="ctraddon_closewwltab" tooltiptext="browser.tabs.closeWindowWithLastTab"/>
@@ -798,6 +804,7 @@
 			<radio label="" value="altabico_dark_nd" 	id="ctraddon_altabico_dark_nd"/>
 		</radiogroup> 
 		<checkbox label="&Ctr_appbutmhi;"	 preference="ctraddon_appbutmhi" id="ctraddon_abhigher" class="ctraddon_windowsonly"/>
+		<checkbox label="&Ctr_appbautocol;"  preference="ctraddon_appbautocol" id="ctraddon_pw_appbautocol"/>
 		<checkbox label="&Ctr_appbutbdl;"	 preference="ctraddon_appbutbdl" id="ctraddon_appbutbdl"/>
 		<checkbox label="&Ctr_dblclclosefx;" preference="ctraddon_dblclclosefx" id="ctraddon_dblclclosefx" class="ctraddon_windowsonly"/>
 		<checkbox label="&Ctr_appbclmmenus;" preference="ctraddon_appbclmmenus" id="ctraddon_appbclmmenus"/>
@@ -830,7 +837,7 @@
 		
 		<checkbox label="&Ctr_noconicons;"		preference="ctraddon_noconicons" id="ctraddon_pw_noconicons"/>
 		<checkbox label="&Ctr_svgfilters;"		preference="ctraddon_svgfilters" id="ctraddon_pw_svgfilters"/>
-		<checkbox label="&Ctr_hideprivmask;"	preference="ctraddon_hideprivmask" id="ctraddon_pw_hideprivmask"/>
+		
 		<checkbox label="&Ctr_combrelstop;"		preference="ctraddon_combrelstop" id="ctraddon_pw_stopreload"/>
 		<description class="ctraddonsuboption">&Ctr_stoprel1;</description>
 
@@ -838,13 +845,11 @@
 		<checkbox label="&Ctr_emptyfavicon2;"	preference="ctraddon_emptyfavicon2" id="ctraddon_pw_emptyfavicon2" oncommand="if(this.checked) {classicthemerestorerjso.ctr.ctrpwTabEmptyFavicon(true);} else {classicthemerestorerjso.ctr.ctrpwTabEmptyFavicon(false);}"/>
 		<checkbox label="&Ctr_panelmenucol;"	preference="ctraddon_panelmenucol" id="ctraddon_pw_panelmenucolor"/>
 		<checkbox label="&Ctr_cpanelmenus;"		preference="ctraddon_cpanelmenus"/>
-		<checkbox label="&Ctr_pmhidelabels;"	preference="ctraddon_pmhidelabels"/>
 		<checkbox label="&Ctr_menupopupscr;"	preference="ctraddon_menupopupscr"/>
-		<checkbox label="&Ctr_hidezoomres;"		preference="ctraddon_hidezoomres"/>
 		<checkbox label="&Ctr_bmbutpanelm;"		preference="ctraddon_bmbutpanelm" id="ctraddon_pw_bmbutpanelm"/>
-		<checkbox label="&Ctr_bmbutnotext;"		preference="ctraddon_bmbutnotext" id="ctraddon_pw_bmbutnotext"/>
 		<checkbox label="&Ctr_skipprintpr;"		preference="ctraddon_skipprintpr" id="ctraddon_pw_skipprintpr" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 		<checkbox label="&Ctr_tbconmenu;"		preference="ctraddon_tbconmenu"	  id="ctraddon_pw_tbconmenu"/>
+		
 	  </groupbox>
 	  
 	  <groupbox>
@@ -1165,6 +1170,7 @@
 	  <groupbox>
 	    <caption  label="&Ctr_toolbars;" class="ctraddon_topic"/>
 		<checkbox label="&Ctr_aerocolors;"				 preference="ctraddon_aerocolors" id="ctraddon_pw_aerocolors"/>
+		<checkbox label="&Ctr_transpttbw10;"			 preference="ctraddon_transpttbw10" id="ctraddon_pw_transpttbw10"/>
 		<checkbox label="&Ctr_tbsep_winc; &Ctr_tnot;"	 preference="ctraddon_tbsep_winc" id="ctraddon_pw_tbsep_winc" class="ctraddon_windowsonly"/>
 		<checkbox label="&Ctr_nonavbarbg;"	 			 preference="ctraddon_nonavbarbg" id="ctraddon_pw_nonavbarbg"/>
 		<description id="ctraddon_pw_nonavbarbg1" class="ctraddonsuboption">&Ctr_nonavbarbg1;</description>
@@ -1234,6 +1240,7 @@
 		<caption  label="&Ctr_e_readermode;" class="ctraddon_topic"/>
 		<checkbox label="about:config &gt;&gt; reader.parse-on-load.enabled" preference="ctraddon_readermode" id="ctraddon_pw_readermode"/>
 		<description class="ctraddonsuboption acprefdesc">&Ctr_fx38reader;</description>
+		<checkbox label="about:config &gt;&gt; browser.readinglist.enabled" preference="ctraddon_readermode2" id="ctraddon_pw_readermode2"/>
 	  </groupbox>
 
 	  <groupbox id="ctraddon_pw_pocketgb">
@@ -1241,7 +1248,14 @@
 		<checkbox label="about:config &gt;&gt; browser.pocket.enabled" preference="ctraddon_pocket" id="ctraddon_pw_pocket" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 		<description class="ctraddonsuboption acprefdesc">&Ctr_fx38pocket;</description>
 		<description class="ctraddonsuboption acprefdesc">&Ctr_fx38pocket2;</description>
-	  </groupbox>  
+	  </groupbox>
+
+	  <groupbox id="ctraddon_pw_tabsaudioicogb">
+		<caption  label="&Ctr_e_tabsaudioico;" class="ctraddon_topic"/>
+		<checkbox label="about:config &gt;&gt; browser.tabs.showAudioPlayingIcon" preference="ctraddon_tabsaudioico" id="ctraddon_pw_tabsaudioico"/>
+		<description class="ctraddonsuboption acprefdesc">&Ctr_fx42tabsaudico;</description>
+	  </groupbox>
+	  
 	  
 
 	</box>
@@ -1288,7 +1302,7 @@
 		<menuitem label="&Ctr_pw_set_reset;"  id="ctr_pw_settings_reset"	oncommand="classicthemerestorerjso.ctr.resetCTRpreferences();" class="menuitem-iconic"/>
 		<menuseparator/>
 		<menuitem label="&Ctr_pw_set_predef;" id="ctr_pw_settings_classic"	oncommand="classicthemerestorerjso.ctr.classicCTRpreferences();" class="menuitem-iconic"/>
-    <menuitem label="&Ctr_pw_set_preaust;" id="ctr_pw_settings_australis"	oncommand="classicthemerestorerjso.ctr.AustralisCTRpreferences();" class="menuitem-iconic"/>		
+    <menuitem label="&Ctr_pw_set_preaust;" id="ctr_pw_settings_austral"	oncommand="classicthemerestorerjso.ctr.australisCTRpreferences();" class="menuitem-iconic"/>		
     <menuseparator/>
     <menuitem label="&Ctr_pw_set_export; (txt)" id="ctr_pw_settings_export"	oncommand="classicthemerestorerjso.ctr.exportCTRpreferences();" class="menuitem-iconic"/>
 		<menuitem label="&Ctr_pw_set_import; (txt)" id="ctr_pw_settings_import"	oncommand="classicthemerestorerjso.ctr.importCTRpreferences();" class="menuitem-iconic"/>
