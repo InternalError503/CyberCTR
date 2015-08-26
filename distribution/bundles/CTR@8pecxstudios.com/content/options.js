@@ -82,7 +82,6 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_menubarnofog').disabled = true;
 		document.getElementById('ctraddon_pw_tabmokcolor').disabled = true;
 		document.getElementById('ctraddon_pw_tabmokcolor2').disabled = true;
-		document.getElementById('ctraddon_pw_tabmokcolor3').disabled = true;
 		document.getElementById('ctraddon_pw_tabmokcolor4').disabled = true;
 		document.getElementById('ctraddon_pw_panelmenucolor').disabled = true;
 		document.getElementById('ctraddon_pw_nobookbarbg').disabled = true;
@@ -122,7 +121,6 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_menubarnofog').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabmokcolor').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabmokcolor2').style.visibility = 'collapse';
-		document.getElementById('ctraddon_pw_tabmokcolor3').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabmokcolor4').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_panelmenucolor').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_mockupoptions').style.visibility = 'collapse';
@@ -1174,7 +1172,7 @@ classicthemerestorerjso.ctr = {
   },
 
   // 'Australis' preset
-  AustralisCTRpreferences: function() {
+  australisCTRpreferences: function() {
 	this.resetCTRpreferences();
 	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);
 	this.prefs.setCharPref("appbutton",'appbutton_off');	

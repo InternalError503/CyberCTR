@@ -99,6 +99,8 @@ pref("extensions.classicthemerestorer.movableurlbar", false);
 pref("extensions.classicthemerestorer.anewtaburlcb",false);
 pref("extensions.classicthemerestorer.anewtaburl","about:newtab");
 
+pref("extensions.classicthemerestorer.tabseparator","tabsep_default");
+
 //Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");
 pref("extensions.classicthemerestorer.abouthomenobar", false);
@@ -181,7 +183,7 @@ pref("extensions.classicthemerestorer.custbookmarkfontsize", false);
 pref("extensions.classicthemerestorer.cbookmarkfontsize", 12);
 
 // Animation
-pref("extensions.classicthemerestorer.throbberalt",false);
+pref("extensions.classicthemerestorer.tabthrobber","throbber_default");
 pref("extensions.classicthemerestorer.bmanimation",true);
 pref("extensions.classicthemerestorer.pananimation",true);
 pref("extensions.classicthemerestorer.fsaduration",true);
