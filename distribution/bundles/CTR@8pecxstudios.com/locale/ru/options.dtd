@@ -95,7 +95,7 @@
 <!ENTITY Ctr_appbuttonI1e	"не видно в строке заголовка операционной системы">
 <!ENTITY Ctr_appbuttonI2	"Цвета кнопок, видимых только на панели заголовка и вкладок!">
 <!ENTITY Ctr_appbutmhi		"Высокое положение (если на панели вкладок)">
-<!ENTITY Ctr_appbautocol	"Set default / Aurora / Nightly color automatically">
+<!ENTITY Ctr_appbautocol	"Автоматический выбор: По умолчанию / Aurora / Nightly">
 <!ENTITY Ctr_appbutbdl		"Скрыть рамки и цвет фона">
 <!ENTITY Ctr_dblclclosefx	"Двойной клик закрывает активное окно">
 <!ENTITY Ctr_appbclmmenus	"Активное меню внутри меню кнопки (Новая вкладка, Печать ...)">
@@ -143,7 +143,7 @@
 <!ENTITY Ctr_alt_addonsm	"Управление дополнениями: альтернативное представление">
 <!ENTITY Ctr_am_nowarning	"Список дополнений в менеджере: скрыть предупреждения">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
-<!ENTITY Ctr_xpinstallui	"Add-on manager: old add-on install window (about:config preference)">
+<!ENTITY Ctr_xpinstallui	"Управление дополнениями: старый стиль окна установки дополнения (настройка в about:config)">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
@@ -153,7 +153,7 @@
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
 
-<!ENTITY Ctr_tabsep_def		"Default tab separators">
+<!ENTITY Ctr_tabsep_def		"Разделители вкладок по умолчанию">
 <!ENTITY Ctr_fxmockup		"Другие настройки для &brandShortName;">
 <!ENTITY Ctr_tabmokcolor	"Белый цвет для кнопок вкладок (закрыть, новая, группы, список всех)">
 <!ENTITY Ctr_tabmokcolor2	"Белый цвет и темная тень для текста на неактивной вкладке">
@@ -237,7 +237,7 @@
 <!ENTITY Ctr_menubarnofog	"Удалить туман из фона меню (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Цвета Blue Aero для основных панелей и вкладок">
-<!ENTITY Ctr_transpttbw10	"Title/menu/tabs toolbar: remove background color (Windows 10)">
+<!ENTITY Ctr_transpttbw10	"Панели заголовка/меню/вкладок: убрать цвет фона (Windows 10)">
 <!ENTITY Ctr_hidenavbar		"Скрыть панель навигации">
 <!ENTITY Ctr_nobookbarbg	"Панель закладок: удалить цвет фона">
 <!ENTITY Ctr_bookbarfs		"Панель закладок: в полноэкранном режиме">
@@ -256,7 +256,7 @@
 <!ENTITY Ctr_addonbarfs		"В полноэкранном режиме">
 
 <!ENTITY Ctr_animation		"Анимация">
-<!ENTITY Ctr_tabthrobber	"Default loading image">
+<!ENTITY Ctr_tabthrobber	"Стандартное изображение загрузки">
 <!ENTITY Ctr_bmanimation	"Анимация создания закладок">
 <!ENTITY Ctr_pananimation	"Анимация открытия панели">
 <!ENTITY Ctr_tabanimation	"Анимация открытия и закрытия вкладок (about:config)">
@@ -288,8 +288,8 @@
 <!ENTITY Ctr_e_prefsui		"Настройки в виде вкладки">
 <!ENTITY Ctr_e_readermode	"Режим чтения">
 <!ENTITY Ctr_e_pocket		"Карман">
-<!ENTITY Ctr_e_tabsaudioico	"Audio playing icon on tabs">
-<!ENTITY Ctr_fx42tabsaudico	"&brandShortName; 42+: Unchecking this preference removes 'audio playing icon' from tabs.">
+<!ENTITY Ctr_e_tabsaudioico	"Значок проигрывания аудио на вкладках">
+<!ENTITY Ctr_fx42tabsaudico	"&brandShortName; 42+: Снимите галочку для удаления с вкладок значка 'проигрывание аудио'.">
 
 
 <!ENTITY Ctr_pw_settings	"Настройки">
