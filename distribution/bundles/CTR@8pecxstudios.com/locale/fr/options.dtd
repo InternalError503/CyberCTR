@@ -144,6 +144,7 @@
 <!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
+<!ENTITY Ctr_xpinstallui	"Add-on manager: old add-on install window (about:config preference)">
 <!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
 <!ENTITY Ctr_bmbutnotext	"Bouton du menu des marque-pages : masquer l’étiquette sur la barre personnelle">
 <!ENTITY Ctr_skipprintpr	"Bouton Imprimer : masquer « Aperçu avant l’impression »">

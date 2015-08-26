@@ -143,6 +143,7 @@
 <!ENTITY Ctr_alt_addonsm	"Управление дополнениями: альтернативное представление">
 <!ENTITY Ctr_am_nowarning	"Список дополнений в менеджере: скрыть предупреждения">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
+<!ENTITY Ctr_xpinstallui	"Add-on manager: old add-on install window (about:config preference)">
 <!ENTITY Ctr_bmbutpanelm	"Кнопка меню закладок: стиль отображения меню">
 <!ENTITY Ctr_bmbutnotext	"Кнопка меню закладок: скрыть метку на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">

@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
 	classicthemerestorerjs.ctr.customCTRPrefSettings(); 
 }, false);  
 var treeStyleCompatMode;
-var sheetIO = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null);
+var sheetIO = Services.io.newURI("data:text/css;charset=utf-8," + encodeURIComponent(''), null, null);
 classicthemerestorerjs.ctr = {
  
   // initialize custom sheets for tab color settings
@@ -3139,7 +3139,7 @@ classicthemerestorerjs.ctr = {
   /* enable/disable css sheets*/
   loadUnloadCSS: function(which,enable) {
 	
-	const ios = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
+	const ios = Services.io;
 	
 	switch (which) {
 	
@@ -5521,7 +5521,7 @@ classicthemerestorerjs.ctr = {
 	function manageCSS(file) {
 
 		const sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
-		const ios = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
+		const ios = Services.io;
 
 		let uri = ios.newURI("chrome://classic_theme_restorer/content/css/" + file,null,null);
 		
