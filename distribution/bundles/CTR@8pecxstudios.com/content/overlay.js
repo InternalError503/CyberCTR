@@ -166,10 +166,6 @@ classicthemerestorerjs.ctr = {
 		if (this.appversion >= 42) document.getElementById("main-window").setAttribute('fx42plus',true);
 	} catch(e){}
 	
-	// add a new global attribute 'fx43plus' -> better parting css between versions
-	try{
-		if (this.appversion >= 43) document.getElementById("main-window").setAttribute('fx43plus',true);
-	} catch(e){}
 	// CTRs appbutton for Windows titlebar
 	this.createTitlebarButton();
 	
