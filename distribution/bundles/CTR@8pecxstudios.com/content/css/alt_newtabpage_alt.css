@@ -45,7 +45,8 @@
 	}
 
 	/* SITES */
-	.newtab-cell:not([ignorehover]) > .newtab-site:hover,
+	.newtab-cell:not([ignorehover]) .newtab-control:hover ~ .newtab-link,
+	.newtab-cell:not([ignorehover]) .newtab-link:hover,
 	.newtab-site[dragged] {
 	  box-shadow: 0 0 6px 2px var(--main-highlight-color)!important;
 	  border:none!important;
