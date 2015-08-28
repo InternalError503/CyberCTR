@@ -166,6 +166,11 @@ classicthemerestorerjs.ctr = {
 		if (this.appversion >= 42) document.getElementById("main-window").setAttribute('fx42plus',true);
 	} catch(e){}
 	
+	// add a new global attribute 'fx43plus' -> better parting css between versions
+	try{
+		if (this.appversion >= 43) document.getElementById("main-window").setAttribute('fx43plus',true);
+	} catch(e){}
+
 	// CTRs appbutton for Windows titlebar
 	this.createTitlebarButton();
 	
@@ -703,9 +708,26 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10i',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10red',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_gc',false);
 			  
 			if (branch.getCharPref("closeicon")!="closeicon_default"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicon"),true);
+			}
+
+		  break;
+		  
+		  case "closeicong":
+			
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_red',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w7',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w8',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10i',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10red',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_gc',false);
+			  
+			if (branch.getCharPref("closeicong")!="closeicong_default"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicong"),true);
 			}
 
 		  break;
@@ -3308,12 +3330,21 @@ classicthemerestorerjs.ctr = {
 
 		case "closetabhfl": 			manageCSS("closetab_hideonone.css");  	break;
 		
-		case "closeicon_red": 			manageCSS("close_icon_red.css");  		break;
-		case "closeicon_w7": 			manageCSS("close_icon_w7.css");  		break;
-		case "closeicon_w8": 			manageCSS("close_icon_w8.css");  		break;
-		case "closeicon_w10": 			manageCSS("close_icon_w10.css");  		break;
-		case "closeicon_w10i": 			manageCSS("close_icon_w10i.css");  		break;
-		case "closeicon_w10red": 		manageCSS("close_icon_w10red.css");  	break;
+		case "closeicon_red": 			manageCSS("close_icon_t_red.css");  	break;
+		case "closeicon_w7": 			manageCSS("close_icon_t_w7.css");  		break;
+		case "closeicon_w8": 			manageCSS("close_icon_t_w8.css");  		break;
+		case "closeicon_w10": 			manageCSS("close_icon_t_w10.css");  	break;
+		case "closeicon_w10i": 			manageCSS("close_icon_t_w10i.css");  	break;
+		case "closeicon_w10red": 		manageCSS("close_icon_t_w10red.css");  	break;
+		case "closeicon_gc": 			manageCSS("close_icon_t_gc.css");  		break;
+		
+		case "closeicong_red": 			manageCSS("close_icon_g_red.css");  	break;
+		case "closeicong_w7": 			manageCSS("close_icon_g_w7.css");  		break;
+		case "closeicong_w8": 			manageCSS("close_icon_g_w8.css");  		break;
+		case "closeicong_w10": 			manageCSS("close_icon_g_w10.css");  	break;
+		case "closeicong_w10i": 		manageCSS("close_icon_g_w10i.css");  	break;
+		case "closeicong_w10red": 		manageCSS("close_icon_g_w10red.css");  	break;
+		case "closeicong_gc": 			manageCSS("close_icon_g_gc.css");  		break;
 		
 		case "closeonleft":
 		

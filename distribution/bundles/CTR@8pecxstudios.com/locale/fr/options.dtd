@@ -153,6 +153,7 @@
 <!ENTITY Ctr_extraurlkeycb	"Ouvrir une barre d’adresse supplémentaire (Cmd/Ctrl+)">
 <!ENTITY Ctr_pmhidelabels	"Menu du panneau latéral : icônes seules">
 <!ENTITY Ctr_menupopupscr	"Menus pop-up : afficher des ascenseurs au lieu des flèches de défilement">
+<!ENTITY Ctr_closegeneral	"General close icons">
 
 <!ENTITY Ctr_tabsep_def		"Default tab separators">
 <!ENTITY Ctr_fxmockup		"Maquette &brandShortName;">

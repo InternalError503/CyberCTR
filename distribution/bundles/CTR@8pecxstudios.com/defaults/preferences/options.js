@@ -93,6 +93,7 @@ pref("extensions.classicthemerestorer.invicoextrabar",false);
 pref("extensions.classicthemerestorer.invicobookbar",false);
 pref("extensions.classicthemerestorer.invicoaddonbar",false);
 
+pref("extensions.classicthemerestorer.closeicong",'closeicong_default');
 pref("extensions.classicthemerestorer.athrobberurl","");
 pref("extensions.classicthemerestorer.movableurlbar", false);
 
