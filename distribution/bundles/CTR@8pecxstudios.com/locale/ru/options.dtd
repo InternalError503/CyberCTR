@@ -111,7 +111,7 @@
 <!ENTITY Ctr_hide_bf_popup	"Не показывать меню истории при клике мышью">
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"Заменить значки в контекстном меню страницы метками (назад, вперёд, остановить, обновить, страница закладок)">
-<!ENTITY Ctr_altoptionsp	"Options page: alternative appearance">
+<!ENTITY Ctr_altoptionsp	"Альтернативный вид страницы настроек">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_emptyfavicon2	"Установить общий значок (пустой и пунктирный)">
@@ -153,7 +153,7 @@
 <!ENTITY Ctr_extraurlkeycb	"Открыть дополнительную адресную строку (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Панель меню: спрятать надписи на кнопках">
 <!ENTITY Ctr_menupopupscr	"Всплывающие окна меню: показывать полосы прокрутки вместо стрелки прокрутки">
-<!ENTITY Ctr_closegeneral	"General close icons">
+<!ENTITY Ctr_closegeneral	"Общий вид значков 'Закрыть'">
 
 <!ENTITY Ctr_tabsep_def		"Разделители вкладок по умолчанию">
 <!ENTITY Ctr_fxmockup		"Другие настройки для &brandShortName;">
