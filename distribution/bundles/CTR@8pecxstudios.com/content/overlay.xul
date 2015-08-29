@@ -33,7 +33,7 @@
 	   <command id="CtrExtension:ToggleUrlExtraBar" oncommand="classicthemerestorerjs.ctr.toggleCtrUrlExtraBar();"/>
 	</commandset>
 	
-	<!-- CyberCTR Feature -->
+	<!--- CyberCTR customization settings -->
 	 <popupset>
 	  <menupopup  id="ApplyCTRpreferences">
 		<menuitem label="&ctr_applyCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.ctrPrefRestart();"/>
@@ -41,7 +41,7 @@
 		<menuitem label="&ctr_resetCTRPrefFile.label;" oncommand="classicthemerestorerjs.ctr.resetBackupCTRpreferences();"/>
 	  </menupopup>
 	</popupset>	
-	<!-- CyberCTR Feature -->	
+	<!--- CyberCTR customization settings -->	
 	
 	<keyset id="mainKeyset">
 	  <key id="ctraddon_key_toggleCtrAddonBar" command="CtrExtension:ToggleCtrAddonBar" key="/" modifiers="accel"/>
@@ -185,14 +185,13 @@
 	</menupopup>
 	
  	<!--### Add additional access too in-ctr via toolbar context will be optional ###-->
-	 <menupopup id="toolbar-context-menu">
-		
-		<menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-						  label="&Ctr_title;"
-						  class="menuitem-iconic"
-						  insertafter="viewToolbarsMenuSeparator"
-						  id="ctraddon_context_menu_entry"/>
-    </menupopup>
+	<menupopup id="toolbar-context-menu">
+	  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
+		label="&Ctr_title;"
+		class="menuitem-iconic"
+    insertafter="viewToolbarsMenuSeparator"
+		id="ctraddon_context_menu_entry"/>
+	</menupopup>
 
 	<!--### CTRs appmenu popup
 		!!!! IMPORTANT for AMO Editors !!!
@@ -250,10 +249,12 @@
 					label="&newPrivateWindow.label;"
 					class="menuitem-iconic"
 					command="Tools:PrivateBrowsing"/>
+<!--- CyberCTR customization settings -->
       <menuitem id="appmenu_minimizeMemoryUsage"
 				        class="menuitem-iconic menuitem-iconic-tooltip"
 				        label="&minimizeMemoryCache.label;"
-				        oncommand="Cu.forceGC();"/>					
+				        oncommand="Cu.forceGC();"/>	
+<!--- CyberCTR customization settings -->				
 			<menuseparator/>
 
 			<hbox id="ctraddon_appmenubox_edit" label="&editMenu.label;">
@@ -263,16 +264,16 @@
 						  class="menuitem-iconic"
 						  flex="1"/>
 				<toolbarbutton id="appmenu-cut"
-							   command="cmd_cut"
-							   class="menuitem-iconic"/>
+							  command="cmd_cut"
+							  class="menuitem-iconic"/>
 				<toolbarbutton id="appmenu-copy"
 								image="chrome://classic_theme_restorer/content/images/appmenu_copy.png"
-							   command="cmd_copy"
-							   class="menuitem-iconic"/>
+							  command="cmd_copy"
+							  class="menuitem-iconic"/>
 				<toolbarbutton id="appmenu-paste"
 								image="chrome://classic_theme_restorer/content/images/appmenu_paste.png"
-							   command="cmd_paste"
-							   class="menuitem-iconic"/>
+							  command="cmd_paste"
+							  class="menuitem-iconic"/>
 
 				<menu id="appmenu-editmenu"
 								label=""
@@ -441,10 +442,12 @@
 					  observes="sync-setup-state"
 					  oncommand="gSyncUI.openSetup()"
 					  class="menuitem-iconic"/>
+<!--- CyberCTR customization settings -->
 	  <menuitem id="appmenu_restartBrowser"
 	  					class="menuitem-iconic"
 				        label="&restartBrowser.label;"
-				        oncommand="gCyberfoxCustom.restartBrowser();"/>					  
+				        oncommand="gCyberfoxCustom.restartBrowser();"/>	
+<!--- CyberCTR customization settings -->			  
 			<menuitem id="appmenu-quit"
 					  class="menuitem-iconic ctraddon_windowsonly"
 					  label="&quitApplicationCmdWin.label;&quitApplicationCmdWin2.label;"
@@ -473,38 +476,40 @@
 							{PlacesCommandHook.showPlacesOrganizer('AllBookmarks');document.getElementById('appmenu-popup').hidePopup();}"
 				  class="menu-iconic">
 
-					<menupopup id="appmenu_bookmarksPopup"
-							   placespopup="true"
-							   context="placesContext"
-							   openInTabs="children"
-							   oncommand="BookmarksEventHandler.onCommand(event, this.parentNode._placesView);"
-							   onclick="BookmarksEventHandler.onClick(event, this.parentNode._placesView);"
-							   onpopupshowing="BookmarkingUI.onMainMenuPopupShowing(event);
-                               BookmarkingUI.updatePocketItemVisibility('menu_');
-											   if (!this.parentNode._placesView)
-												 new PlacesMenu(event, 'place:folder=BOOKMARKS_MENU');"
-							   tooltip="bhTooltip" popupsinherittooltip="true">
-					  <menuitem id="appmenu_showAllBookmarks"
-								label="&showAllBookmarks2.label;"
-								command="Browser:ShowAllBookmarks"
-								key="manBookmarkKb"/>
-					<menuseparator/>
+				<menupopup id="appmenu_bookmarksPopup"
+						   placespopup="true"
+						   context="placesContext"
+						   openInTabs="children"
+						   oncommand="BookmarksEventHandler.onCommand(event, this.parentNode._placesView);"
+						   onclick="BookmarksEventHandler.onClick(event, this.parentNode._placesView);"
+						   onpopupshowing="BookmarkingUI.onMainMenuPopupShowing(event);
+                            BookmarkingUI.updatePocketItemVisibility('menu_');
+										   if (!this.parentNode._placesView)
+											new PlacesMenu(event, 'place:folder=BOOKMARKS_MENU');"
+						   tooltip="bhTooltip" popupsinherittooltip="true">
+				  <menuitem id="appmenu_showAllBookmarks"
+							label="&showAllBookmarks2.label;"
+							command="Browser:ShowAllBookmarks"
+							key="manBookmarkKb"/>
+				<menuseparator/>
+<!--- CyberCTR customization settings -->
 					<menuitem id="menu_pocket" label="&pocketMenuitem.label;"
 								class="menuitem-iconic"
 								oncommand="window.pktUI.openTabWithUrl(Pocket.listURL);"/>
 					  <menuseparator id="menu_pocketSeparator"/>
-					  <menuitem id="appmenu_bookmarkThisPage"
-				                class="menuitem-iconic"					  
-								label="&bookmarkThisPageCmd.label;"
-								command="Browser:AddBookmarkAs"
-								key="addBookmarkAsKb"/>
-					  <menuitem id="appmenu_subscribeToPage"
-								class="menuitem-iconic"
-								label="&subscribeToPageMenuitem.label;"
-								oncommand="return FeedHandler.subscribeToFeed(null, event);"
-								onclick="checkForMiddleClick(this, event);"
-								observes="singleFeedMenuitemState"/>
-					  <menu id="appmenu_subscribeToPageMenu"
+<!--- CyberCTR customization settings -->
+				  <menuitem id="appmenu_bookmarkThisPage"
+              class="menuitem-iconic"					  
+							label="&bookmarkThisPageCmd.label;"
+							command="Browser:AddBookmarkAs"
+							key="addBookmarkAsKb"/>
+				  <menuitem id="appmenu_subscribeToPage"
+							class="menuitem-iconic"
+							label="&subscribeToPageMenuitem.label;"
+							oncommand="return FeedHandler.subscribeToFeed(null, event);"
+							onclick="checkForMiddleClick(this, event);"
+							observes="singleFeedMenuitemState"/>
+				  <menu id="appmenu_subscribeToPageMenu"
 							class="menu-iconic"
 							label="&subscribeToPageMenupopup.label;"
 							observes="multipleFeedsMenuState">
@@ -623,13 +628,15 @@
 							accesskey="&viewCustomizeToolbar.accesskey;"
 							label="&viewCustomizeToolbar.label;"/>
 				  <menuseparator id="ctraddon_appmenu_sep" collapsed="true"/>
+<!--- CyberCTR customization settings -->
 	<menuitem id="ctraddon_appmenu_aboutc"
                 label="About:Config"
 				        oncommand="gCyberfoxCustom.openAboutConfig();"/>
+<!--- CyberCTR customization settings -->
 			  </menupopup>
 			</menu>
- 				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
-								label="&Ctr_title;"							
+				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
+							label="&Ctr_title;"
 							id="ctraddon_appmenu_ctr2"/>
 			<!-- MacOSX/Linux/Unix version of the options menu with MacOSX/Linux/Unix specific labels -->
 			<menu id="appmenu_customizeUnix"
@@ -666,44 +673,44 @@
 								&amp;&amp; event.originalTarget.getAttribute('splitmenu')=='true')
 								{openUILink('https://8pecxstudios.com/Forums/index.php');document.getElementById('appmenu-popup').hidePopup();}"
 					class="menu-iconic">
-				  <menupopup id="appmenu_helpMenupopup" onpopupshowing="buildHelpMenu();">
-					<menuitem id="appmenu_openHelp"
-							  oncommand="openUILink('https://8pecxstudios.com/Forums/index.php')"
-							  onclick="checkForMiddleClick(this, event);"
+			  <menupopup id="appmenu_helpMenupopup" onpopupshowing="buildHelpMenu();">
+				<menuitem id="appmenu_openHelp"
+						  oncommand="openUILink('https://8pecxstudios.com/Forums/index.php')"
+						  onclick="checkForMiddleClick(this, event);"
 						  label="&productHelp.label;&productHelp2.label;"
 						  accesskey="&productHelp.accesskey;&productHelp2.accesskey;"/>
-					<menuitem id="appmenu_gettingStarted"
-							  label="&appMenuGettingStarted.label;"
-							  oncommand="gBrowser.loadOneTab('https://8pecxstudios.com/', {inBackground: false});"
-							  onclick="checkForMiddleClick(this, event);"/>
+				<menuitem id="appmenu_gettingStarted"
+						  label="&appMenuGettingStarted.label;"
+						  oncommand="gBrowser.loadOneTab('https://8pecxstudios.com/', {inBackground: false});"
+						  onclick="checkForMiddleClick(this, event);"/>
 				<menuitem id="appmenu_keyboardShortcuts"
 						  oncommand="openUILink('http://mzl.la/16NAhwz')"
 						  onclick="checkForMiddleClick(this, event);"
 						  label="&helpKeyboardShortcuts.label;"
 						  accesskey="&helpKeyboardShortcuts.accesskey;"/>
-					<menuitem id="appmenu_troubleshootingInfo"
-							  accesskey="&helpTroubleshootingInfo.accesskey;"
-							  label="&helpTroubleshootingInfo.label;"
-							  oncommand="openTroubleshootingPage()"
-							  onclick="checkForMiddleClick(this, event);"/>
-					<menuitem id="appmenu_feedbackPage"
-							  accesskey="&helpFeedbackPage.accesskey;"
-							  label="&helpFeedbackPage.label;"
-							  oncommand="openFeedbackPage()"
-							  onclick="checkForMiddleClick(this, event);"/>
-					<menuseparator/>
-					<menuitem id="appmenu_safeMode"
-							  accesskey="&helpSafeMode.accesskey;"
-							  label="&helpSafeMode.label;"
-							  oncommand="safeModeRestart();"/>
-					<menuseparator/>
-					<menuitem id="appmenu_about"
+				<menuitem id="appmenu_troubleshootingInfo"
+						  accesskey="&helpTroubleshootingInfo.accesskey;"
+						  label="&helpTroubleshootingInfo.label;"
+						  oncommand="openTroubleshootingPage()"
+						  onclick="checkForMiddleClick(this, event);"/>
+				<menuitem id="appmenu_feedbackPage"
+						  accesskey="&helpFeedbackPage.accesskey;"
+						  label="&helpFeedbackPage.label;"
+						  oncommand="openFeedbackPage()"
+						  onclick="checkForMiddleClick(this, event);"/>
+				<menuseparator/>
+				<menuitem id="appmenu_safeMode"
+						  accesskey="&helpSafeMode.accesskey;"
+						  label="&helpSafeMode.label;"
+						  oncommand="safeModeRestart();"/>
+				<menuseparator/>
+				<menuitem id="appmenu_about"
 						  accesskey="&aboutProduct.accesskey;&aboutProduct2.accesskey;"
 						  label="&aboutProduct.label;&aboutProduct2.label;"
-							  oncommand="openAboutDialog();"/>
-				  </menupopup>
-				</menu>
- 
+						  oncommand="openAboutDialog();"/>
+			  </menupopup>
+			</menu>
+			
 		  </vbox>
 		</hbox>
 		

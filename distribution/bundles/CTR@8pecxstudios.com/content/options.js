@@ -21,26 +21,26 @@ classicthemerestorerjso.ctr = {
   needsRestart: 	false,
   tmp_tu_active:	false,
   // Exclude all preferences we don't want to sync, export or import.
-	blacklist: [
-		"extensions.classicthemerestorer.pref_actindx",
-		"extensions.classicthemerestorer.pref_actindx2",
-		"extensions.classicthemerestorer.ctrreset",
-		"extensions.classicthemerestorer.compatibility.treestyle",
-		"extensions.classicthemerestorer.compatibility.treestyle.disable",
-		"extensions.classicthemerestorer.compatibility.tabmix",
-		"extensions.classicthemerestorer.ctrpref.firstrun",
-		"extensions.classicthemerestorer.features.firstrun",
-		"extensions.classicthemerestorer.features.lastcheck",
-		"extensions.classicthemerestorer.features.updatecheck",
-		"extensions.classicthemerestorer.ctrpref.lastmod",
-		"extensions.classicthemerestorer.ctrpref.lastmodapply",
-		"extensions.classicthemerestorer.ctrpref.updatekey",
-		"extensions.classicthemerestorer.version",
-		"extensions.classicthemerestorer.ctrpref.lastmod.backup",
-		"extensions.classicthemerestorer.ctrpref.importjson",
-		"extensions.classicthemerestorer.ctrpref.active",
-		"extensions.classicthemerestorer.compatibility.personalmenu"
-		],	
+  blacklist: [
+	"extensions.classicthemerestorer.pref_actindx",
+	"extensions.classicthemerestorer.pref_actindx2",
+	"extensions.classicthemerestorer.ctrreset",
+	"extensions.classicthemerestorer.compatibility.treestyle",
+	"extensions.classicthemerestorer.compatibility.treestyle.disable",
+	"extensions.classicthemerestorer.compatibility.tabmix",
+	"extensions.classicthemerestorer.ctrpref.firstrun",
+	"extensions.classicthemerestorer.features.firstrun",
+	"extensions.classicthemerestorer.features.lastcheck",
+	"extensions.classicthemerestorer.features.updatecheck",
+	"extensions.classicthemerestorer.ctrpref.lastmod",
+	"extensions.classicthemerestorer.ctrpref.lastmodapply",
+	"extensions.classicthemerestorer.ctrpref.updatekey",
+	"extensions.classicthemerestorer.version",
+	"extensions.classicthemerestorer.ctrpref.lastmod.backup",
+	"extensions.classicthemerestorer.ctrpref.importjson",
+	"extensions.classicthemerestorer.ctrpref.active",
+	"extensions.classicthemerestorer.compatibility.personalmenu"
+	],
 
   initprefwindow: function() {
   
@@ -139,11 +139,11 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_nonavtbborder').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_nobookbarbg').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_noaddonbarbg').style.visibility = 'collapse';
-		
+
 		if (contexts.getBoolPref("classic")){}else{
 			document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
 		}
-		
+
 		document.getElementById('ctraddon_pw_closeonleft').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_nbcompact').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabc_act_tb').style.visibility = 'collapse';
@@ -935,9 +935,9 @@ classicthemerestorerjso.ctr = {
   },
  
   ctrpwAppbuttonextra: function(which,fromprefwindow) {
-  
+
   var tabsintitlebar = Services.prefs.getBranch("browser.tabs.").getBoolPref("drawInTitlebar");
-  
+
 	if (which=="appbutton_v1" && this.fxdefaulttheme){
 	  document.getElementById('ctraddon_altabico_list').disabled = false;
 	  document.getElementById('ctraddon_abhigher').disabled = false;
@@ -1135,8 +1135,8 @@ classicthemerestorerjso.ctr = {
 	}
 	
 	this.initprefwindow();
-
-  this.ctrpwStarFeedDelay();
+	
+	this.ctrpwStarFeedDelay();
 
 	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
 	CustomizableUI.removeWidgetFromArea("feed-button", CustomizableUI.TYPE_TOOLBAR);
@@ -1184,15 +1184,18 @@ classicthemerestorerjso.ctr = {
   // 'Australis' preset
   australisCTRpreferences: function() {
 	this.resetCTRpreferences();
-	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);
-	this.prefs.setCharPref("appbutton",'appbutton_off');	
-	this.prefs.setCharPref("tabs",'tabs_default');
-  this.prefs.setBoolPref("statusbar",false);
-	this.prefs.setBoolPref("activndicat",false);
-  this.prefs.setBoolPref("toolsitem",false);
-  this.prefs.setBoolPref("cuibuttons",false);
-	if (this.oswindows) this.prefs.setBoolPref("dblclnewtab",true);
   Services.prefs.getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
+  CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
+	this.prefs.setCharPref("tabs",'tabs_default');
+	this.prefs.setCharPref("appbutton",'appbutton_off');
+	
+	this.prefs.setBoolPref("statusbar",false);
+	this.prefs.setBoolPref("activndicat",false);
+	this.prefs.setBoolPref("toolsitem",false);
+	this.prefs.setBoolPref("cuibuttons",false);
+	
+	if (this.oswindows) this.prefs.setBoolPref("dblclnewtab",true);
+	
 	this.needsBrowserRestart();
 
   },

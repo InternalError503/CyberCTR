@@ -65,12 +65,8 @@
 		<preference id="ctraddon_appbuttontxt"	name="extensions.classicthemerestorer.appbuttontxt" type="string"	instantApply="true"/>
 		
 		<preference id="ctraddon_cappbutc1"		name="extensions.classicthemerestorer.cappbutc1"	type="string"	instantApply="true"/>
-		<preference id="ctraddon_cappbutcm"		name="extensions.classicthemerestorer.cappbutcm"	type="string"	instantApply="true"/>
 		<preference id="ctraddon_cappbutc2"		name="extensions.classicthemerestorer.cappbutc2"	type="string"	instantApply="true"/>
-		<preference id="ctraddon_cappbutctc"		name="extensions.classicthemerestorer.cappbuttxtc"	type="string"	instantApply="true"/>
-		<preference id="ctraddon_cappbutcPercent"		name="extensions.classicthemerestorer.cappbutcpercent"	type="int"	instantApply="true"/>
-		<preference id="ctraddon_cappbutnotxtshp"		name="extensions.classicthemerestorer.cappbutnotxtsh"	type="bool"	instantApply="true"/>
-		
+
 		<preference id="ctraddon_nbisizedelay"	name="extensions.classicthemerestorer.nbisizedelay" type="int"		instantApply="true"/>
 		<preference id="ctraddon_smallnavbut"	name="extensions.classicthemerestorer.smallnavbut"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_hide_bf_popup"	name="extensions.classicthemerestorer.hide_bf_popup" type="bool"	instantApply="true"/>
@@ -78,23 +74,12 @@
 		<preference id="ctraddon_hidenavbar"	name="extensions.classicthemerestorer.hidenavbar"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_backforward"	name="extensions.classicthemerestorer.backforward"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_noconicons"	name="extensions.classicthemerestorer.noconicons"	type="bool"		instantApply="true"/>
-    <!--<preference id="ctraddon_addonversion"	name="extensions.classicthemerestorer.addonversion"	 type="bool"	instantApply="true"/>-->
-    <preference id="ctraddon_am_nowarning"	name="extensions.classicthemerestorer.am_nowarning"	 type="bool"	instantApply="true"/>
-    <preference id="ctraddon_alt_addonsm"	name="extensions.classicthemerestorer.alt_addonsm"	 type="bool"	instantApply="true"/>
-    <preference id="ctraddon_altoptionsp"	name="extensions.classicthemerestorer.altoptionsp"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_alt_newtabp"	name="extensions.classicthemerestorer.alt_newtabp"	 type="bool"	instantApply="true"/>
-		<preference id="ctraddon_alt_newtabpalt"	name="extensions.classicthemerestorer.alt_newtabpalt"	 type="bool"	instantApply="true"/>
-		
-		<preference id="ctraddon_alt_newtabpalt_custombase"	name="extensions.classicthemerestorer.aboutnewtabcustombase"	 type="bool"	instantApply="true"/>
-		<preference id="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlight"	 type="bool"	instantApply="true"/>
-		<preference id="ctraddon_alt_newtabpalt_custombasecolor"	name="extensions.classicthemerestorer.aboutnewtabcustombasecolor"	 type="string"	instantApply="true"/>
-		<preference id="ctraddon_alt_newtabpalt_customhighlightcolor"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor"	 type="string"	instantApply="true"/>		
-		
+		<!--<preference id="ctraddon_addonversion"	name="extensions.classicthemerestorer.addonversion"	 type="bool"	instantApply="true"/>-->
+		<preference id="ctraddon_am_nowarning"	name="extensions.classicthemerestorer.am_nowarning"	 type="bool"	instantApply="true"/>
 		<preference id="ctraddon_alt_addonsp"	name="extensions.classicthemerestorer.alt_addonsp"	 type="bool"	instantApply="true"/>
-
-		<preference id="ctraddon_newtabcol"	name="browser.newtabpage.columns"	 type="int"		instantApply="true"/>
-		<preference id="ctraddon_newtabrow"	name="browser.newtabpage.rows"	 type="int"		instantApply="true"/>		
-		
+		<preference id="ctraddon_alt_addonsm"	name="extensions.classicthemerestorer.alt_addonsm"	 type="bool"	instantApply="true"/>
+		<preference id="ctraddon_altoptionsp"	name="extensions.classicthemerestorer.altoptionsp"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_svgfilters"	name="extensions.classicthemerestorer.svgfilters"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_wincontrols"	name="extensions.classicthemerestorer.wincontrols"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_hideprbutton"	name="extensions.classicthemerestorer.hideprbutton"	type="bool"		instantApply="true"/>
@@ -230,8 +215,8 @@
 		
 		<preference id="ctraddon_mbarposition"	name="extensions.classicthemerestorer.mbarposition"	 type="string"	instantApply="true"/>
 		<preference id="ctraddon_athrobberurl"	name="extensions.classicthemerestorer.athrobberurl"	 type="string"	instantApply="true"/>
-		<preference id="ctraddon_anewtaburlcb"	name="extensions.classicthemerestorer.anewtaburlcb"	 type="bool"	instantApply="true"/>
-		<preference id="ctraddon_anewtaburl"	name="extensions.classicthemerestorer.anewtaburl"	 type="string"	instantApply="true"/>
+		<!--<preference id="ctraddon_anewtaburlcb"	name="extensions.classicthemerestorer.anewtaburlcb"	 type="bool"	instantApply="true"/>-->
+		<!--<preference id="ctraddon_anewtaburl"	name="extensions.classicthemerestorer.anewtaburl"	 type="string"	instantApply="true"/>-->
 		<preference id="ctraddon_mbarforceleft"	name="extensions.classicthemerestorer.mbarforceleft" type="bool"	instantApply="true"/>
 		<preference id="ctraddon_mbarforceright" name="extensions.classicthemerestorer.mbarforceright" type="bool"	instantApply="true"/>
 
@@ -262,24 +247,32 @@
 		<preference id="ctraddon_puictrbutton"	name="extensions.classicthemerestorer.puictrbutton"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_cuibuttons"	name="extensions.classicthemerestorer.cuibuttons"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_bmarkoinpw"	name="extensions.classicthemerestorer.bmarkoinpw"	type="bool"		instantApply="true"/>
-    <preference id="ctraddon_titleintitlebar"	name="extensions.classicthemerestorer.titleintitlebar"	type="bool"		instantApply="true"/>
-	
+  
+ <!--- CyberCTR customization settings -->
+	<preference id="ctraddon_cappbutcm"		name="extensions.classicthemerestorer.cappbutcm"	type="string"	instantApply="true"/>		
+	<preference id="ctraddon_cappbutctc"		name="extensions.classicthemerestorer.cappbuttxtc"	type="string"	instantApply="true"/>
+	<preference id="ctraddon_cappbutcPercent"		name="extensions.classicthemerestorer.cappbutcpercent"	type="int"	instantApply="true"/>
+	<preference id="ctraddon_cappbutnotxtshp"		name="extensions.classicthemerestorer.cappbutnotxtsh"	type="bool"	instantApply="true"/>				
+	<preference id="ctraddon_alt_newtabpalt"	name="extensions.classicthemerestorer.alt_newtabpalt"	 type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_alt_newtabpalt_custombase"	name="extensions.classicthemerestorer.aboutnewtabcustombase"	 type="bool"	instantApply="true"/>
+  <preference id="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlight"	 type="bool"	instantApply="true"/>
+	<preference id="ctraddon_alt_newtabpalt_custombasecolor"	name="extensions.classicthemerestorer.aboutnewtabcustombasecolor"	 type="string"	instantApply="true"/>
+	<preference id="ctraddon_alt_newtabpalt_customhighlightcolor"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor"	 type="string"	instantApply="true"/>		
+	<preference id="ctraddon_newtabcol"	name="browser.newtabpage.columns"	 type="int"		instantApply="true"/>
+	<preference id="ctraddon_newtabrow"	name="browser.newtabpage.rows"	 type="int"		instantApply="true"/>	 
+  <preference id="ctraddon_titleintitlebar"	name="extensions.classicthemerestorer.titleintitlebar"	type="bool"		instantApply="true"/>	
 	<preference id="ctraddon_custtabfontsize"	name="extensions.classicthemerestorer.custtabfontsize"	type="bool"		instantApply="true"/>
 	<preference id="ctraddon_ctabfontsize"	name="extensions.classicthemerestorer.ctabfontsize"	type="int"		instantApply="true"/>
-
 	<preference id="ctraddon_searchbarwidthp"	name="extensions.classicthemerestorer.searchbarwidth"	type="int"		instantApply="true"/>	
 	<preference id="ctraddon_custsearchbarwidthp"	name="extensions.classicthemerestorer.customsearchbarwidth"	type="bool"		instantApply="true"/>
-	<preference id="ctraddon_colapsesearchaddons"	name="extensions.classicthemerestorer.colapsesearchaddons"	type="bool"		instantApply="true"/>	
-	
+	<preference id="ctraddon_colapsesearchaddons"	name="extensions.classicthemerestorer.colapsesearchaddons"	type="bool"		instantApply="true"/>		
 	<preference id="ctraddon_custbookmarkfontsize"	name="extensions.classicthemerestorer.custbookmarkfontsize"	type="bool"		instantApply="true"/>
 	<preference id="ctraddon_cbookmarkfontsize"	name="extensions.classicthemerestorer.cbookmarkfontsize"	type="int"		instantApply="true"/>	
-	
 	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenobar"	name="extensions.classicthemerestorer.abouthomenobar"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthomenologo"	name="extensions.classicthemerestorer.abouthomenologo"	type="bool"	instantApply="true"/>		
 	<preference id="ctraddon_ctabouthomenoicons"	name="extensions.classicthemerestorer.abouthomenoicons"	type="bool"	instantApply="true"/>
-	<preference id="ctraddon_ctabouthomenosnippets"	name="extensions.classicthemerestorer.abouthomenosnippets"	type="bool"	instantApply="true"/>
-	
+	<preference id="ctraddon_ctabouthomenosnippets"	name="extensions.classicthemerestorer.abouthomenosnippets"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthomecustombg"	name="extensions.classicthemerestorer.abouthomecustombg"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctabouthome_bg"	name="extensions.classicthemerestorer.abouthomecustomurl"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomecustomhighlight"	name="extensions.classicthemerestorer.abouthomehighlight"	type="bool"	instantApply="true"/>	
@@ -288,14 +281,13 @@
 	<preference id="ctraddon_ctabouthome_base_color"	name="extensions.classicthemerestorer.abouthomecustombasecolor"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthome_bg_stretch"	name="extensions.classicthemerestorer.abouthomebgstretch"	type="bool"	instantApply="true"/>	
-	
 	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_cmovableurlbar"	name="extensions.classicthemerestorer.movableurlbar"	type="bool"	instantApply="true"/>
-
 	<preference id="ctraddon_ctaboutnewtabcustombg"	name="extensions.classicthemerestorer.aboutnewtabcustombg"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg"	name="extensions.classicthemerestorer.aboutnewtabcustomurl"	type="string"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>
-	
+ <!--- CyberCTR customization settings -->
+
 	</preferences>
 
 
@@ -307,7 +299,7 @@
 	  <radio class="ctraddontab" value="ctraddon_tabsbox" 		label="&Ctr_tabs; (1)"/>
 	  <radio class="ctraddontab" value="ctraddon_tabsbox2" 		label="&Ctr_tabs; (2)"/>
 	  <radio class="ctraddontab" value="ctraddon_fontbox"    	label="&Ctr_tabcolors_t;" id="ctraddon_sqtabcolorstab"/>
-	  <radio class="ctraddontab" value="ctraddon_appbuttonbox" id="ctraddon_appbuttonboxtab" label="&Ctr_appbutton;"/>
+	  <radio class="ctraddontab" value="ctraddon_appbuttonbox" 	label="&Ctr_appbutton;" id="ctraddon_appbuttonboxtab"/>
 	  <radio class="ctraddontab" value="ctraddon_generaluibox"	label="&Ctr_ui; (1)"/>
 	  <radio class="ctraddontab" value="ctraddon_generaluibox2"	label="&Ctr_ui; (2)"/>
 	  <radio class="ctraddontab" value="ctraddon_addonmngrbox"	label="&Ctr_addonmanager;"/>
@@ -369,12 +361,14 @@
 			<radio value="throbber_alt"		label=""	id="ctraddon_pw_tabthrobber_alt"/>
 			<radio value="throbber_fx39"	label=""	id="ctraddon_pw_tabthrobber_f39"/>
 		</radiogroup>
+ <!--- CyberCTR customization settings -->
 		<checkbox label="&ctr_tabtitleintitlebar;"	preference="ctraddon_titleintitlebar" id="ctraddon_titleintitlebar"/>
 		<hbox>
 		  <checkbox label="&Ctr_custtabfontsize.label;"	preference="ctraddon_custtabfontsize" id="ctraddon_custtabfontsizel"/>
 		  <textbox size="2" maxlength="2" preference="ctraddon_ctabfontsize" type="number" min="2" max="30" id="ctraddon_ctabfontsizep"/>
 		  <label value="px"/>
-		</hbox>		
+		</hbox>	
+ <!--- CyberCTR customization settings -->
 		<hbox>
 		  <checkbox label="&Ctr_tabminheight;"	preference="ctraddon_ctabheightcb" id="ctraddon_pw_tab_ctabheightcb"/>
 		  <textbox size="2" maxlength="2" preference="ctraddon_ctabheight" type="number" min="18" max="50" id="ctraddon_pw_tab_ctabheight"/>
@@ -423,7 +417,7 @@
 	
 	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_tabsbox2">
 
-	  <groupbox id="ctraddon_pw_anewtaburlgbox">
+	  <groupbox id="ctraddon_pw_anewtaburlgbox" style="visibility:collapse;">
 	    <caption  label="&Ctr_anewtaburl;" class="ctraddon_topic"/>
 		<checkbox label="&Ctr_anewtaburlcb;"	preference="ctraddon_anewtaburlcb" id="ctraddon_pw_anewtaburlcb"/>
 		<hbox>
@@ -770,24 +764,24 @@
 
 		<menulist preference="ctraddon_appbuttonc" id="ctraddon_appbutcolor_list">
 			<menupopup>
-						<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_nightly')" id="ctraddon_pw_appbuttonc_nightly"/>
-						<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_aurora')" id="ctraddon_pw_appbuttonc_aurora"/>	
-						<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; (Light)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_cyan')" id="ctraddon_pw_appbuttonc_cyan"/>						
-						<menuitem value="appbuttonc_default"	 label="&Ctr_appbuttonc_d;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_default')" id="ctraddon_pw_appbuttonc_default"/>
-						<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_gray')" id="ctraddon_pw_appbuttonc_gray"/>						
-						<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green')" id="ctraddon_pw_appbuttonc_green"/>	
-						<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green_dark')" id="ctraddon_pw_appbuttonc_green_dark"/>						
-						<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange')" id="ctraddon_pw_appbuttonc_orange"/>
-						<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange_dark')" id="ctraddon_pw_appbuttonc_orange_dark"/>
-            <menuitem value="appbuttonc_palemo"  label="&Ctr_appbuttonc_p;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_palemo')" id="ctraddon_pw_appbuttonc_palemo"/>
-						<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_purple')" id="ctraddon_pw_appbuttonc_purple"/>
-						<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red')" id="ctraddon_pw_appbuttonc_red"/>
-						<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red_dark')" id="ctraddon_pw_appbuttonc_red_dark"/>	
-						<menuitem value="appbuttonc_salmon"	 label="&Ctr_appbuttonc_s;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_salmon')" id="ctraddon_pw_appbuttonc_salmon"/>						
-						<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_transp')" id="ctraddon_pw_appbuttonc_transp"/>
-						<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_white')" id="ctraddon_pw_appbuttonc_white"/>				
-				        <menuitem value="appbuttonc_custom"	 label="&Ctr_appbuttonc_cu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom')" id="ctraddon_pw_appbuttonc_custom"/>
-						<menuitem value="appbuttonc_custom1"	 label="&Ctr_appbuttonc_cu; 3 colors" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom1')" id="ctraddon_pw_appbuttonc_custom1"/>
+				<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_nightly')" id="ctraddon_pw_appbuttonc_nightly"/>
+				<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_aurora')" id="ctraddon_pw_appbuttonc_aurora"/>	
+				<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; (Light)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_cyan')" id="ctraddon_pw_appbuttonc_cyan"/>						
+				<menuitem value="appbuttonc_default"	 label="&Ctr_appbuttonc_d;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_default')" id="ctraddon_pw_appbuttonc_default"/>
+				<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_gray')" id="ctraddon_pw_appbuttonc_gray"/>						
+				<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green')" id="ctraddon_pw_appbuttonc_green"/>	
+				<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green_dark')" id="ctraddon_pw_appbuttonc_green_dark"/>						
+				<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange')" id="ctraddon_pw_appbuttonc_orange"/>
+				<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange_dark')" id="ctraddon_pw_appbuttonc_orange_dark"/>
+        <menuitem value="appbuttonc_palemo"  label="&Ctr_appbuttonc_p;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_palemo')" id="ctraddon_pw_appbuttonc_palemo"/>
+				<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_purple')" id="ctraddon_pw_appbuttonc_purple"/>
+				<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red')" id="ctraddon_pw_appbuttonc_red"/>
+				<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red_dark')" id="ctraddon_pw_appbuttonc_red_dark"/>	
+				<menuitem value="appbuttonc_salmon"	 label="&Ctr_appbuttonc_s;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_salmon')" id="ctraddon_pw_appbuttonc_salmon"/>						
+				<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_transp')" id="ctraddon_pw_appbuttonc_transp"/>
+				<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_white')" id="ctraddon_pw_appbuttonc_white"/>				
+		    <menuitem value="appbuttonc_custom"	 label="&Ctr_appbuttonc_cu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom')" id="ctraddon_pw_appbuttonc_custom"/>
+				<menuitem value="appbuttonc_custom1"	 label="&Ctr_appbuttonc_cu; 3 colors" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_custom1')" id="ctraddon_pw_appbuttonc_custom1"/>
 			</menupopup>
 		</menulist>
 		
@@ -798,6 +792,7 @@
 			<colorpicker preference="ctraddon_cappbutcm" type="button" id="ctraddon_pw_cappbutcmcp"  hidden="true"/>			
 			<textbox preference="ctraddon_cappbutc2" id="ctraddon_pw_cappbutc2" width="70px"/>
 			<colorpicker preference="ctraddon_cappbutc2" type="button" id="ctraddon_pw_cappbutc2cp"/>
+ <!--- CyberCTR customization settings -->
 				<hbox>
 					<textbox id="ctraddon_cappbutcPercentnp" size="3" maxlength="3" max="200" preference="ctraddon_cappbutcPercent" type="number"/>
 					<label value="%"/>
@@ -808,6 +803,7 @@
 			<textbox preference="ctraddon_cappbutctc" id="ctraddon_pw_cappbutctct" width="70px"/>
 			<colorpicker preference="ctraddon_cappbutctc" type="button" id="ctraddon_pw_cappbutctcc"/>
 			<checkbox label="&ctr_appbuttoncusttextshadow;" preference="ctraddon_cappbutnotxtshp" id="ctraddon_cappbutnotxtsh"/>
+ <!--- CyberCTR customization settings -->
 		</hbox>
 		
 		<description>&Ctr_appbuttonI2;</description>
@@ -853,6 +849,7 @@
 		<description class="ctraddon_topic ctraddonsuboption" id="ctraddon_pw_statusbar_abr_info">&Ctr_mstatusbarabr;</description>
 		
 		<checkbox label="&Ctr_noconicons;"		preference="ctraddon_noconicons" id="ctraddon_pw_noconicons"/>
+		<!--<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>-->
 		<checkbox label="&Ctr_altoptionsp;"		preference="ctraddon_altoptionsp" id="ctraddon_pw_altoptionsp"/>
 		<checkbox label="&Ctr_svgfilters;"		preference="ctraddon_svgfilters" id="ctraddon_pw_svgfilters"/>
 		
@@ -883,6 +880,7 @@
 	  </groupbox>
 	  
 	  <groupbox>
+ <!--- CyberCTR customization settings -->
 		<caption  label="&ctr_abouthome.caption;" class="ctraddon_topic"/>		
 		<menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
 			<menupopup>
@@ -995,6 +993,7 @@
 	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_generaluibox2">
 
 	  <groupbox>
+ <!--- CyberCTR customization settings -->
 	    <caption  label="&Ctr_navthrobber;" class="ctraddon_topic"/>
 		<checkbox label="&Ctr_navthrobber;"	preference="ctraddon_activndicat" id="ctraddon_pw_activitythrobber" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 	    <description>&Ctr_navthrobber1;</description>
@@ -1049,7 +1048,9 @@
 
 	  <groupbox>
 		<caption  label="&Ctr_addonmanager;" class="ctraddon_topic"/>
+ <!--- CyberCTR customization settings -->
 		<checkbox label="&ctr_colapseaddonsearchbar.label;"	preference="ctraddon_colapsesearchaddons" id="ctraddon_pw_colapsesearchaddons"/>
+ <!--- CyberCTR customization settings -->
 		<checkbox label="&Ctr_alt_addonsm;"		preference="ctraddon_alt_addonsm" id="ctraddon_pw_alt_addonsm"/>
 		<checkbox label="&Ctr_addonversion;"	preference="ctraddon_addonversion" id="ctraddon_pw_addonversion" style="visibility:collapse;"/>
 		<checkbox label="&Ctr_am_nowarning;"	preference="ctraddon_am_nowarning" id="ctraddon_pw_am_nowarning"/>
@@ -1078,7 +1079,8 @@
 		<checkbox label="&Ctr_hideprbutton;" preference="ctraddon_hideprbutton" id="ctraddon_pw_urlbarpblocked"/>
 		<checkbox label="&Ctr_extraurlkeycb;&openCmd.commandkey; &amp; Alt+&urlbar.accesskey; [Windows/Linux])"	preference="ctraddon_extraurlkeycb" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 	  </groupbox>
-	  
+
+ <!--- CyberCTR customization settings -->	  
 		<groupbox>
 		<caption  label="&Ctr_urlbar; *" class="ctraddon_topic"/>
 		<checkbox label="&movableurlbar.label;" preference="ctraddon_cmovableurlbar" id="ctraddon_movableurlbar" oncommand="classicthemerestorerjso.ctr.isUrlbarMovable(true)"/>
@@ -1086,6 +1088,7 @@
 		<description class="ctraddon_font1">&movableurlbar.warning1;</description>
 		<description class="ctraddon_font1">&movableurlbar.warning2;</description>
 	  </groupbox>
+ <!--- CyberCTR customization settings -->
 		
 	  <groupbox>
 	    <caption  label="&Ctr_urlbar_ib;" class="ctraddon_topic"/>
@@ -1173,6 +1176,8 @@
 		  <description>&Ctr_extrabar0;</description>
 		</hbox>
 		<description>&Ctr_extrabarinfo;</description>
+
+ <!--- CyberCTR customization settings -->
 		<spacer flex="1"/>
 		<description class="ctraddon_font1">&ctr_toolbarsearchbar.description;</description>
 		<hbox>		
@@ -1191,7 +1196,8 @@
 			<label id="ctraddon_bookmarkfontsizel" value="&ctr_cbookmarkfontsize.label;"/>
 			<textbox id="ctraddon_bookmarkfontsizet" size="2" maxlength="2" preference="ctraddon_cbookmarkfontsize" type="number" max="30" min="2"/>
 		</hbox>		
-	  
+ <!--- CyberCTR customization settings -->
+  
 	</box>
 
 	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_toolbarsbox2">
@@ -1349,6 +1355,7 @@
   <hbox align="center" flex="1" style="padding-top:5px;">
     <button label="&Ctr_pw_settings;" popup="ctr_pw_settingsPopup"/>
 <spacer flex="1" />
+<!--- CyberCTR customization settings -->
 <label  value="&ctr_Support_forums;" 
 			href="https://8pecxstudios.com/Forums/index.php" 
 			class="text-link" id="ctraddon_support" 
@@ -1356,6 +1363,7 @@
 <button label="&ctr_help_features;" 
 		   id="ctraddon_help_features"
 		   onclick="classicthemerestorerjso.ctr.showFeaturesTab(); window.focus();"/>
+<!--- CyberCTR customization settings -->
 <button dlgtype="accept" id="ctraddon_pw_okbutton"/>
   </hbox> 
 
