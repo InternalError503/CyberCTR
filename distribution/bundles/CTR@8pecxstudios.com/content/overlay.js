@@ -3467,21 +3467,15 @@ classicthemerestorerjs.ctr = {
 			}
 
 		break;
-
-		case "appbuttonc_default":	manageCSS("appbutton_default.css");		break;		
+		
 		case "appbuttonc_orange":	manageCSS("appbutton_orange.css");		break;
-		case "appbuttonc_orange_dark":	manageCSS("appbutton_orange_dark.css");		break;		
 		case "appbuttonc_aurora":	manageCSS("appbutton_aurora.css");		break;
-		case "appbuttonc_cyan":	manageCSS("appbutton_cyan.css");		break;		
 		case "appbuttonc_nightly":	manageCSS("appbutton_nightly.css");		break;
 		case "appbuttonc_transp":	manageCSS("appbutton_transparent.css");	break;
 		case "appbuttonc_palemo":	manageCSS("appbutton_palemoon.css");	break;
 		case "appbuttonc_red":		manageCSS("appbutton_red.css");			break;
-		case "appbuttonc_red_dark":		manageCSS("appbutton_red_dark.css");			break;		
 		case "appbuttonc_green":	manageCSS("appbutton_green.css");		break;
-		case "appbuttonc_green_dark":	manageCSS("appbutton_green_dark.css");		break;		
 		case "appbuttonc_gray":		manageCSS("appbutton_gray.css");		break;
-		case "appbuttonc_salmon":		manageCSS("appbutton_salmon.css");		break;		
 		case "appbuttonc_purple":	manageCSS("appbutton_purple.css");		break;
 		case "appbuttonc_white":	manageCSS("appbutton_white.css");		break;
 
@@ -3545,7 +3539,6 @@ classicthemerestorerjs.ctr = {
 		case "hidezoomres": 		manageCSS("hide_zoomreset.css");		break;
 		case "alt_newtabp": 		manageCSS("alt_newtabpage.css");		break;
 		case "am_nowarning":		manageCSS("am_nowarnings.css");			break;
-		case "alt_newtabpalt": 		 manageCSS("alt_newtabpage_alt.css");		break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
 		case "addonversion": 		manageCSS("addonversion.css");			break;
@@ -3606,26 +3599,37 @@ classicthemerestorerjs.ctr = {
 		case "nodevtheme2":			manageCSS("no_devtheme.css");			break;
 		
 		case "spaces_extra": 		manageCSS("spaces_extra.css");			break;
-		case "tree_style_fix": 		manageCSS("tree_style_fix.css");	break;
-		case "tabs_titlebar": 		manageCSS("tabs_titlebar.css");	break;
+
+
+
+ 		case "appbuttonc_default":	manageCSS("cctr/appbutton_default.css");		break;
+		case "appbuttonc_orange_dark":	manageCSS("cctr/appbutton_orange_dark.css");		break;
+		case "appbuttonc_cyan":	manageCSS("cctr/appbutton_cyan.css");		break;
+		case "appbuttonc_red_dark":		manageCSS("cctr/appbutton_red_dark.css");			break;
+    case "appbuttonc_green_dark":	manageCSS("cctr/appbutton_green_dark.css");		break;
+		case "appbuttonc_salmon":		manageCSS("cctr/appbutton_salmon.css");		break;
+
+		case "alt_newtabpalt": 		 manageCSS("cctr/alt_newtabpage_alt.css");		break;
+		case "tree_style_fix": 		manageCSS("cctr/tree_style_fix.css");	break;
+		case "tabs_titlebar": 		manageCSS("cctr/tabs_titlebar.css");	break;
 		
-		case "abouthomedark": 							manageCSS("abouthomedark.css");	break;
-		case "abouthomedarkalt": 							manageCSS("abouthomedarkalt.css");	break;
-		case "abouthomelight": 							manageCSS("abouthomelight.css");	break;
-		case "abouthomelightalt": 							manageCSS("abouthomelightalt.css");	break;
-		case "abouthomesimplicity": 				    manageCSS("abouthomesimplicity.css");	break;	
-		case "abouthomesimplicityblue": 				manageCSS("abouthomesimplicityintel.css");	break;		
-		case "abouthomesimplicityred": 				manageCSS("abouthomesimplicityamd.css");	break;
-		case "abouthomesimplicitygreen": 			manageCSS("abouthomesimplicitylinux.css");	break;
-		case "abouthomesimplicityyellow": 			manageCSS("abouthomesimplicitybeta.css");	break;
-		case "abouthomenobar": 							manageCSS("abouthomenobar.css");	break;		
-		case "abouthomenologo": 						manageCSS("abouthomenologo.css");	break;		
-		case "abouthomenoicons": 						manageCSS("abouthomenoicons.css");	break;	
-		case "abouthomenosnippets": 					manageCSS("abouthomenosnippets.css");	break;
-		case "abouthomeanimate": 						manageCSS("abouthomeanimate.css");	break;
-		case "rndadonssearch": 						manageCSS("rndadonssearch.css"); break;
-		case "rndadonssearch40plus": 						manageCSS("rndadonssearch40plus.css");	break;
-		case "nopocket": 						manageCSS("nopocket.css"); break;
+		case "abouthomedark": 							manageCSS("cctr/abouthomedark.css");	break;
+		case "abouthomedarkalt": 							manageCSS("cctr/abouthomedarkalt.css");	break;
+		case "abouthomelight": 							manageCSS("cctr/abouthomelight.css");	break;
+		case "abouthomelightalt": 							manageCSS("cctr/abouthomelightalt.css");	break;
+		case "abouthomesimplicity": 				    manageCSS("cctr/abouthomesimplicity.css");	break;	
+		case "abouthomesimplicityblue": 				manageCSS("cctr/abouthomesimplicityintel.css");	break;		
+		case "abouthomesimplicityred": 				manageCSS("cctr/abouthomesimplicityamd.css");	break;
+		case "abouthomesimplicitygreen": 			manageCSS("cctr/abouthomesimplicitylinux.css");	break;
+		case "abouthomesimplicityyellow": 			manageCSS("cctr/abouthomesimplicitybeta.css");	break;
+		case "abouthomenobar": 							manageCSS("cctr/abouthomenobar.css");	break;		
+		case "abouthomenologo": 						manageCSS("cctr/abouthomenologo.css");	break;		
+		case "abouthomenoicons": 						manageCSS("cctr/abouthomenoicons.css");	break;	
+		case "abouthomenosnippets": 					manageCSS("cctr/abouthomenosnippets.css");	break;
+		case "abouthomeanimate": 						manageCSS("cctr/abouthomeanimate.css");	break;
+		case "rndadonssearch": 						manageCSS("cctr/rndadonssearch.css"); break;
+		case "rndadonssearch40plus": 						manageCSS("cctr/rndadonssearch40plus.css");	break;
+		case "nopocket": 						manageCSS("cctr/nopocket.css"); break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
