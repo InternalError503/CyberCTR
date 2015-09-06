@@ -985,7 +985,7 @@ classicthemerestorerjs.ctr = {
 		  case "nbcompact":
 			if (branch.getBoolPref("nbcompact") && branch.getBoolPref("backforward") && classicthemerestorerjs.ctr.osstring!="Darwin"&& branch.getBoolPref("smallnavbut")==false && classicthemerestorerjs.ctr.fxdefaulttheme==true){
 			  classicthemerestorerjs.ctr.loadUnloadCSS("nbcompact",true);
-			  console.log(branch.getCharPref("nav_txt_ico").indexOf('iconstxt'));
+
 			  if (branch.getCharPref("nav_txt_ico").indexOf('iconstxt')!=-1)
 				branch.setCharPref("nav_txt_ico",'icons');
 			}
