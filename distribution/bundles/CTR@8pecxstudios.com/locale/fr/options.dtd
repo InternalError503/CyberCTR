@@ -195,15 +195,17 @@
 <!ENTITY Ctr_feedinurl		"Bouton d’abonnement">
 <!ENTITY Ctr_hideurelstop	"Masquer « stop-actualiser »">
 <!ENTITY Ctr_hideurlgo		"Masquer le bouton « Go »">
+<!ENTITY Ctr_hideurlsrg		"Hide 'reload, stop &amp; go' button separators &amp; spaces">
 <!ENTITY Ctr_urlbardropm	"Placer le dropmarker à la fin de la barre d’adresse">
 <!ENTITY Ctr_hideprbutton	"Masquer l’icône de notification quand un pop-up est bloqué">
 <!ENTITY Ctr_urlbar_ib		"Bouton d’identité">
 <!ENTITY Ctr_verifiedcolors	"Couleurs alternatives pour les sites web vérifiés">
-<!ENTITY Ctr_faviconurl		"Afficher le favicon dans la barre d’adresse">
-<!ENTITY Ctr_padlock_hid	"Cadenas (caché)">
-<!ENTITY Ctr_padlock_def	"Cadenas (par défaut)">
-<!ENTITY Ctr_padlock_cla	"Cadenas (classique)">
-<!ENTITY Ctr_padlock_mod	"Cadenas (moderne)">
+<!ENTITY Ctr_faviconurl		"Afficher le favicon dans la barre d'adresse">
+<!ENTITY Ctr_padlock		"Cadenas">
+<!ENTITY Ctr_padlock_hid	"masqué">
+<!ENTITY Ctr_padlock_def	"par défaut">
+<!ENTITY Ctr_padlock_cla	"classique">
+<!ENTITY Ctr_padlock_mod	"moderne">
 <!ENTITY Ctr_padlock_ext	"Icônes de sécurité">
 <!ENTITY Ctr_icopageinfo	"Cliquer sur l’icône pour afficher la fenêtre d’informations de la page">
 
@@ -240,7 +242,8 @@
 <!ENTITY Ctr_menubarnofog	"Enlever l’effet de flou / l’arrière-plan des éléments (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Couleur aéro bleue pour les barres d’outils principales et la barre d’onglets">
-<!ENTITY Ctr_transpttbw10	"Title/menu/tabs toolbar: remove background color (Windows 10)">
+<!ENTITY Ctr_transpttbw10	"Title/menu/tabs toolbar: remove background color">
+<!ENTITY Ctr_transptcw10	"Hide default OS min/max/close buttons">
 <!ENTITY Ctr_hidenavbar		"Masquer la barre de navigation">
 <!ENTITY Ctr_nobookbarbg	"Barre personnelle : enlever l’arrière-plan">
 <!ENTITY Ctr_bookbarfs		"Barre personnelle : en mode plein écran">

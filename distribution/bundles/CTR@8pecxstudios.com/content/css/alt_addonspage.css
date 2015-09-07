@@ -1,5 +1,5 @@
 @-moz-document url(about:addons) {
-	
+
 	#detail-contributions{
 	  -moz-box-ordinal-group: 9 !important;
 	}
@@ -8,6 +8,9 @@
 	}
 	#detail-desc-container {
 	  -moz-box-ordinal-group: 11 !important;
+	}
+	.addon[name="Default"][type="theme"]{
+	  -moz-box-ordinal-group: 0 !important;
 	}
 
 }
