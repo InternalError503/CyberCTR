@@ -1,6 +1,11 @@
 @import url(chrome://classic_theme_restorer/content/css/alt_optionspage.css);
 @-moz-document url(about:preferences),url-prefix(about:preferences){
 
+    /* Search tab fixup */
+	#category-search {
+	   visibility: hidden!important;
+	}
+	
 	#categories .box-inherit {
 	  -moz-box-orient: horizontal !important;
 	  position: fixed !important;
