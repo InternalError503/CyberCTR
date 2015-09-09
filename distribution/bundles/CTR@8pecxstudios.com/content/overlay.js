@@ -5763,7 +5763,7 @@ classicthemerestorerjs.ctr = {
   openContentPrefsInWin: function() {
 	 
 	try{classicthemerestorerjs.ctr.ctrcontentprefswin.close();} catch(e){}
-	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=800,height=660,resizable=yes');
+	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=640,height=480,resizable=no,scrollbars');
 
   },
   
