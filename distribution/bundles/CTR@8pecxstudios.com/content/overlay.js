@@ -795,23 +795,24 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "appbuttonc":
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_nightly',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_aurora',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_cyan',false);			
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_default',false);		  
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_gray',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green_dark',false);			
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange_dark',false);
-      classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_palemo',false);			
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_purple',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red_dark',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_salmon',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_aurora',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_nightly',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_transp',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_palemo',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_gray',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_purple',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_white',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom',false);
+			
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_cyan',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_default',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_green_dark',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange_dark',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red_dark',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_salmon',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom1',false);
 
 			if (branch.getCharPref("appbuttonc")!="off"){
