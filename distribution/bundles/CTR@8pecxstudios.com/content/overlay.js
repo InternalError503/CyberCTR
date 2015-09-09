@@ -84,11 +84,12 @@ classicthemerestorerjs.ctr = {
   appversion:								parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")),
   stringBundle:							Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file"),
   
-  fullscreeduration:					false,
+  fullscreeduration:				false,
   moveStarIntoUrlbar:				false,
   moveFeedIntoUrlbar:				false,
   
   devthemeinterval:					null,
+  ctrcontentprefswin: 	    null,
 
   activityObserver: 	new MutationObserver(function() {}), // define empty, (CTR) global observer
   activityObserverOn:	false, // activity observer is always disabled, when a window get initialized
@@ -394,6 +395,7 @@ classicthemerestorerjs.ctr = {
 	
 	ctrSettingsListener_forDevtheme2.register(true);
 	
+
 
 	var ctrSettingsListener = new PrefListener(
 	  "extensions.classicthemerestorer.",
@@ -1003,6 +1005,16 @@ classicthemerestorerjs.ctr = {
 		  case "altoptionsp":
 			if (branch.getBoolPref("altoptionsp") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsp",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsp",false);
+		  break;
+		  
+		  case "altoptionsw":
+			if (branch.getBoolPref("altoptionsw") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsw",true);
+			}
+			else {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsw",false);
+			  classicthemerestorerjs.ctr.closeContentPrefsInWin();
+			}
 		  break;
 
 		  case "svgfilters":
@@ -3529,6 +3541,7 @@ classicthemerestorerjs.ctr = {
 		case "nbcompact":			manageCSS("navbar_compact.css");		break;
 		case "noconicons": 			manageCSS("nocontexticons.css");		break;
 		case "altoptionsp": 		manageCSS("alt_optionspage.css");		break;
+		case "altoptionsw": 		manageCSS("alt_optionswindow.css");		break;
 		case "svgfilters": 			manageCSS("svgfilters.css");			break;
 		case "iat_notf_vt": 		manageCSS("mode_iat_no_vt.css");		break;
 		case "to_notf_vt": 			manageCSS("mode_to_no_vt.css");			break;
@@ -5743,6 +5756,18 @@ classicthemerestorerjs.ctr = {
   openInPrWin: function() {
 	if(classicthemerestorerjs.ctr.appversion < 38)
 	  openLinkIn(document.getElementById('placesContext').triggerNode._placesNode.uri, 'window', {private: true});
+  },
+  
+  // 
+  openContentPrefsInWin: function() {
+	 
+	try{classicthemerestorerjs.ctr.ctrcontentprefswin.close();} catch(e){}
+	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=800,height=660,resizable=yes');
+
+  },
+  
+  closeContentPrefsInWin: function() {
+	try{classicthemerestorerjs.ctr.ctrcontentprefswin.close();} catch(e){}
   },
   
   // reset CTRs toolbar configuration

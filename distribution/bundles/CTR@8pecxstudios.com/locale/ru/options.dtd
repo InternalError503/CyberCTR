@@ -112,6 +112,7 @@
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"Заменить значки в контекстном меню страницы метками (назад, вперёд, остановить, обновить, страница закладок)">
 <!ENTITY Ctr_altoptionsp	"Альтернативный вид страницы настроек">
+<!ENTITY Ctr_altoptionsw	"Open options page (about:preferences) in a window">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_emptyfavicon2	"Установить общий значок (пустой и пунктирный)">
