@@ -1232,7 +1232,6 @@ classicthemerestorerjso.ctr = {
 	
 	this.prefs.setBoolPref("statusbar",false);
 	this.prefs.setBoolPref("activndicat",false);
-	this.prefs.setBoolPref("toolsitem",false);
 	this.prefs.setBoolPref("cuibuttons",false);
 	
 	if (this.oswindows) this.prefs.setBoolPref("dblclnewtab",true);
