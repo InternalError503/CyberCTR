@@ -1168,10 +1168,14 @@ classicthemerestorerjso.ctr = {
 	if (this.oswindows && tabsintitlebar) {
 	  this.prefs.setCharPref("appbutton",'appbutton_v2');
 	}
-
-	CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
-	CustomizableUI.removeWidgetFromArea("feed-button", CustomizableUI.TYPE_TOOLBAR);
-	this.needsBrowserRestart();
+	//Move buttons back to there default location, Need a small delay so prevent restart or ok button.
+	document.getElementById("ctraddon_pw_okbutton").disabled = true;
+	setTimeout(function(){
+		CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
+		CustomizableUI.removeWidgetFromArea("feed-button", CustomizableUI.TYPE_TOOLBAR);
+		classicthemerestorerjso.ctr.needsBrowserRestart();
+		document.getElementById("ctraddon_pw_okbutton").disabled = false;
+	},1350);//If changed here must update feedinurl timer in classic pre-set	
   },
 
   // 'classic' preset
@@ -1213,7 +1217,7 @@ classicthemerestorerjso.ctr = {
 	setTimeout(function(){
 		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("starinurl",true);
 		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("feedinurl",true);
-	},1350);
+	},1350);//If changed here must update CustomizableUI timer in restore defaults.	
 	
 	if (this.oswindows && classicthemerestorerjso.ctr.tmp_tu_active==false)
 		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("dblclnewtab",true);
@@ -1225,8 +1229,7 @@ classicthemerestorerjso.ctr = {
   // 'Australis' preset
   australisCTRpreferences: function() {
 	this.resetCTRpreferences();
-  Services.prefs.getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
-  CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
+    Services.prefs.getBranch("browser.tabs.").setBoolPref("drawInTitlebar", true);
 	this.prefs.setCharPref("tabs",'tabs_default');
 	this.prefs.setCharPref("appbutton",'appbutton_off');
 	
