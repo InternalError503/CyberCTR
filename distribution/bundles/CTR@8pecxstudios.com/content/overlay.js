@@ -3123,16 +3123,19 @@ classicthemerestorerjs.ctr = {
 	// disconnect observer, if it is already running
 	classicthemerestorerjs.ctr.activityObserver.disconnect();
 	
-	// check, if tab attributes got modified
-	classicthemerestorerjs.ctr.activityObserver = new MutationObserver(function(mutations) {
-	  mutations.forEach(function(mutation) {
-		ctrActivityThrobber();
-	  });
-	});
+	//Delay load (TypeError: Argument 1 of MutationObserver.observe is not an object. overlay.js:3135:1)
+	setTimeout(function(){	
+		// check, if tab attributes got modified
+		classicthemerestorerjs.ctr.activityObserver = new MutationObserver(function(mutations) {
+		  mutations.forEach(function(mutation) {
+			ctrActivityThrobber();
+		  });
+		});
 
-	// enable observer
-	if(classicthemerestorerjs.ctr.activityObserverOn==true)
-	  classicthemerestorerjs.ctr.activityObserver.observe(gBrowser.selectedTab, { attributes: true, attributeFilter: ['busy'] });
+		// enable observer
+		if(classicthemerestorerjs.ctr.activityObserverOn==true)
+		  classicthemerestorerjs.ctr.activityObserver.observe(gBrowser.selectedTab, { attributes: true, attributeFilter: ['busy'] });
+	},850);	
 	
 	// if tab is busy, add 'busy' attribute to 'ctraddon_navigator-throbber'
 	function ctrActivityThrobber(){
