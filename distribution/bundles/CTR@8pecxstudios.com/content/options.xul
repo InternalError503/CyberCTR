@@ -267,8 +267,7 @@
 	<preference id="ctraddon_alt_newtabpalt_custombasecolor"	name="extensions.classicthemerestorer.aboutnewtabcustombasecolor"	 type="string"	instantApply="true"/>
 	<preference id="ctraddon_alt_newtabpalt_customhighlightcolor"	name="extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor"	 type="string"	instantApply="true"/>		
 	<preference id="ctraddon_newtabcol"	name="browser.newtabpage.columns"	 type="int"		instantApply="true"/>
-	<preference id="ctraddon_newtabrow"	name="browser.newtabpage.rows"	 type="int"		instantApply="true"/>	 
-  <preference id="ctraddon_titleintitlebar"	name="extensions.classicthemerestorer.titleintitlebar"	type="bool"		instantApply="true"/>	
+	<preference id="ctraddon_newtabrow"	name="browser.newtabpage.rows"	 type="int"		instantApply="true"/>	 	
 	<preference id="ctraddon_custtabfontsize"	name="extensions.classicthemerestorer.custtabfontsize"	type="bool"		instantApply="true"/>
 	<preference id="ctraddon_ctabfontsize"	name="extensions.classicthemerestorer.ctabfontsize"	type="int"		instantApply="true"/>
 	<preference id="ctraddon_searchbarwidthp"	name="extensions.classicthemerestorer.searchbarwidth"	type="int"		instantApply="true"/>	
@@ -371,7 +370,6 @@
 			<radio value="throbber_nav"		label=""	id="ctraddon_pw_tabthrobber_nav"/>
 		</radiogroup>
  <!--- CyberCTR customization settings -->
-		<checkbox label="&ctr_tabtitleintitlebar;"	preference="ctraddon_titleintitlebar" id="ctraddon_titleintitlebar"/>
 		<hbox>
 		  <checkbox label="&Ctr_custtabfontsize.label;"	preference="ctraddon_custtabfontsize" id="ctraddon_custtabfontsizel"/>
 		  <textbox size="2" maxlength="2" preference="ctraddon_ctabfontsize" type="number" min="2" max="30" id="ctraddon_ctabfontsizep"/>

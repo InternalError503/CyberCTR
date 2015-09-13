@@ -655,11 +655,6 @@ classicthemerestorerjso.ctr = {
 		}else{
 			document.getElementById('ctraddon_pw_noconicons').disabled = false;
 		}
-		if (!this.oswindows){
-			document.getElementById('ctraddon_titleintitlebar').disabled = true;
-		} else {
-			document.getElementById('ctraddon_titleintitlebar').disabled = false;
-		}
 
 		//Hide no links start page check-box in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {

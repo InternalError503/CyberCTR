@@ -359,7 +359,6 @@
 <!ENTITY Ctr_pw_set_preaust		"Préréglage Australis">
 <!ENTITY ctr_Support_forums		"Forum d’assistance">
 <!ENTITY ctr_help_features		"Fonctionnalités et renseignements">
-<!ENTITY ctr_tabtitleintitlebar	"Afficher le titre de l’onglet dans la barre de titre">
 
 <!ENTITY Ctr_custtabfontsize.label	"Taille de la police des onglets : ">
 
