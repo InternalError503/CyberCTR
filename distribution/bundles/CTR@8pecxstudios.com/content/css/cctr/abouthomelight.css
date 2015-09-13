@@ -12,6 +12,7 @@
         background-color: hsl(0, 0%, 95%) !important;
         color: #333;
         height: 100%;
+		-moz-user-select: none;
     }
     body {
         margin: 0;
