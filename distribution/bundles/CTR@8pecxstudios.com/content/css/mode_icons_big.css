@@ -1,5 +1,5 @@
 @import url(chrome://ctraddon_os_special/skin/mode_icons_big_extra.css);
-@import url(chrome://classic_theme_restorer/content/css/mode_icons_big_cyberfox.css);
+@import url(chrome://classic_theme_restorer/content/css/cctr/mode_icons_big_cyberfox.css);
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 @-moz-document url(chrome://browser/content/browser.xul) {
