@@ -54,6 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Sekme genişlikleri TabUtilities tarafından kontrol ediliyor">
 <!ENTITY Ctr_tabwidthinfo3	"48px altındaki değerler bazı hatalara sebep olabilir!">
 <!ENTITY Ctr_square_edges	"Squared top corners">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"İlgili sekmeyi geçerli sekmeden sonra ekle (about:config tercihi)">
 <!ENTITY Ctr_emptyfavicon	"Boş faviconu yükle (sitenin faviconu yoksa eğer)">
 <!ENTITY Ctr_noemptypticon	"Tutturulmuş sekmelerde boş faviconu kaldır">

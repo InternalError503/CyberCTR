@@ -54,6 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Larguras Mínimas e Máximas são Controladas Pelo TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Valores Abaixo de 48px Causarão Falhas na Maioria dos Casos!">
 <!ENTITY Ctr_square_edges	"Squared top corners">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"Inserir a Aba Relacionada Depois da Aba Atual (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Restaurar o Favicon Vazio (Se um Site Não Oferecer Um)">
 <!ENTITY Ctr_noemptypticon	"Remover o Favicon Vazio da Aba Fixa">

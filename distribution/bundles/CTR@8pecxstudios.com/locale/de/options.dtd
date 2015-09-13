@@ -55,6 +55,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Die Minimal- und Maximalbreite von Tabs wird von 'TabUtilities' kontrolliert">
 <!ENTITY Ctr_tabwidthinfo3	"Werte unter 48px sorgen meistens für eine fehlerhafte Darstellung!">
 <!ENTITY Ctr_square_edges	"Eckige obere Tabränder">
+<!ENTITY Ctr_tttitlebar		"Tabtitel in der &brandShortName; Titelleiste">
 <!ENTITY Ctr_tabinsertion	"Verwandten Tab nach aktuellem Tab einfügen (about:config Einstellung)">
 <!ENTITY Ctr_emptyfavicon	"Leeres Lesezeichensymbol auf Tabs wiederherstellen">
 <!ENTITY Ctr_noemptypticon	"Leeres Lesezeichensymbol auf angehefteten Tabs verstecken">

@@ -55,6 +55,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Šířka panelů (min-width a max-width) je určena doplňkem TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Hodnoty pod 48px působí většinou chyby!">
 <!ENTITY Ctr_square_edges	"Hranaté horní rohy">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"Vložit související panel za aktuální (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Obnovit prázdnou faviconu (pokud stránka nemá vlastní)">
 <!ENTITY Ctr_noemptypticon	"Odebrat prázdnou faviconu z připnutého panelu">
@@ -112,8 +113,8 @@
 <!ENTITY Ctr_hide_bf_popup	"Skrýt nabídku historie tlačítek při kliknutí myší">
 <!ENTITY Ctr_bf_space		"Zmenšit mezery mezi tlačítky (pokud lze)">
 <!ENTITY Ctr_noconicons		"Nahradit ikony v kontextové nabídce stránky textem (zpět, vpřed, zastavit, obnovit, přidat do záložek)">
-<!ENTITY Ctr_altoptionsp	"Options page (about:preferences): alternative appearance">
-<!ENTITY Ctr_altoptionsw	"Open options page (about:preferences) in a window">
+<!ENTITY Ctr_altoptionsp	"Stránka nastavení (about:preferences): alternativní vzhled">
+<!ENTITY Ctr_altoptionsw	"Otevřít stránku nastavení (about:preferences) v okně">
 <!ENTITY Ctr_svgfilters		"SVG barvy pro defaultní ikony tlačítek lišty">
 <!ENTITY Ctr_wincontrols	"Přesunutelné ovládací prvky okna v režimu celé obrazovky">
 <!ENTITY Ctr_emptyfavicon2	"Nahradit obecnou faviconu (prázdnou tečkovanou) faviconou listu">
@@ -155,7 +156,7 @@
 <!ENTITY Ctr_extraurlkeycb	"Otevřít přídavný adresní řádek (Cmd/Ctrl+">
 <!ENTITY Ctr_pmhidelabels	"Tlačítko nabídky: skrýt texty u ikon">
 <!ENTITY Ctr_menupopupscr	"Nabídky: zobrazit rolovací lištu místo šipek">
-<!ENTITY Ctr_closegeneral	"General close icons">
+<!ENTITY Ctr_closegeneral	"Ikony pro zavření">
 
 <!ENTITY Ctr_tabsep_def		"Defaulní oddělovače panelů">
 <!ENTITY Ctr_fxmockup		"&brandShortName; Mockup">
@@ -196,7 +197,7 @@
 <!ENTITY Ctr_feedinurl		"Tlačítko kanálu">
 <!ENTITY Ctr_hideurelstop	"Skrýt tlačítka zastavit &amp; obnovit">
 <!ENTITY Ctr_hideurlgo		"Skrýt tlačítko 'přejít'">
-<!ENTITY Ctr_hideurlsrg		"Hide 'reload, stop &amp; go' button separators &amp; spaces">
+<!ENTITY Ctr_hideurlsrg		"Skrýt tlačítka 'obnovit, zastavit &amp; přejít' oddělovače &amp; mezery">
 <!ENTITY Ctr_urlbardropm	"Přesunout rozevírací šipku na konec řádku">
 <!ENTITY Ctr_hideprbutton	"Nezobrazovat upozornění při blokování vyskakovacích oken">
 <!ENTITY Ctr_urlbar_ib		"Tlačítko identity webu (identity box)">
@@ -243,12 +244,12 @@
 <!ENTITY Ctr_menubarnofog	"Odstranit barevné/zamlžené pozadí (Windows AeroGlass/8)">
 
 <!ENTITY Ctr_aerocolors		"Barvy 'Blue Aero' pro hlavní lištu a panely">
-<!ENTITY Ctr_transpttbw10	"Title/menu/tabs toolbar: remove background color">
-<!ENTITY Ctr_transptcw10	"Hide default OS min/max/close buttons">
+<!ENTITY Ctr_transpttbw10	"Lišta title/menu/tabs: odstranit barvu pozadí">
+<!ENTITY Ctr_transptcw10	"Skrýt defaultní OS tlačítka min/max/close">
 <!ENTITY Ctr_hidenavbar		"Navigační lišta: skrýt lištu">
-<!ENTITY Ctr_navbarpad		"Additional left and right padding">
-<!ENTITY Ctr_navbarpad_l	"Left: ">
-<!ENTITY Ctr_navbarpad_r	"Right: ">
+<!ENTITY Ctr_navbarpad		"Přidat místo po stranách">
+<!ENTITY Ctr_navbarpad_l	"Vlevo: ">
+<!ENTITY Ctr_navbarpad_r	"Vpravo: ">
 <!ENTITY Ctr_nobookbarbg	"Lišta záložek: odstranit barvu pozadí">
 <!ENTITY Ctr_bookbarfs		"Lišta záložek: v celoobrazovkovém módu (fullscreen)">
 <!ENTITY Ctr_nonavbarbg		"Navigační lišta: odstranit barvu pozadí">

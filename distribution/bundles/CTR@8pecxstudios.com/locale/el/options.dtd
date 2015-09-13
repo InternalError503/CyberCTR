@@ -55,6 +55,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Το εύρος καρτελών ελέγχεται από την επέκταση «TabUtilities»">
 <!ENTITY Ctr_tabwidthinfo3	"Τιμές κάτω από 48px θα προκαλέσουν δυσλειτουργίες στις περισσότερες περιπτώσεις!">
 <!ENTITY Ctr_square_edges	"Τετραγωνισμένες γωνίες κορυφής">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"Εισαγωγή συναφούς καρτέλας μετά την τρέχουσα καρτέλα (προτίμηση about:config)">
 <!ENTITY Ctr_emptyfavicon	"Επαναφορά κενού εικονιδίου (εάν ένας ιστότοπος δεν διαθέτει εικονίδιο)">
 <!ENTITY Ctr_noemptypticon	"Απομάκρυνση κενού εικονιδίου από καρτέλες εφαρμογών">

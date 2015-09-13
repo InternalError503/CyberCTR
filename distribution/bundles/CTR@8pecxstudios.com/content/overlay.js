@@ -230,6 +230,9 @@ classicthemerestorerjs.ctr = {
 	// prevent developer theme from being enabled in Fx40+
 	this.PreventDevThemeEnabling();
 	
+	// add tab title to browsers titlebar
+	this.tabTitleInBrowsersTitlebar();
+	
 	// prevent accidental location bar removal by using context menu 
 	this.removeContextItemsFromLocationbarContext();
 	
@@ -3066,6 +3069,44 @@ classicthemerestorerjs.ctr = {
 	}
   },
   
+  // add tab title to browsers titlebar
+  tabTitleInBrowsersTitlebar: function(){
+	if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tttitlebar")==true
+		&& classicthemerestorerjs.ctr.osstring=="WINNT"
+			&& classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+
+	  try {
+
+		var titlebartitle = document.createElement("toolbarbutton");
+		titlebartitle.setAttribute("id", "ctraddon_titlebartitle");
+		titlebartitle.setAttribute("ordinal", "0");
+		titlebartitle.setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+
+		document.getElementById("titlebar-content").appendChild(titlebartitle);
+
+		window.addEventListener("load", function update_title() {
+		   document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+		}, false);
+		window.addEventListener("DOMContentLoaded", function update_title() {
+		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+		}, false);
+		window.addEventListener("TabOpen", function update_title() {
+		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+		}, false);
+		window.addEventListener("TabSelect", function update_title() {
+		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+		}, false);
+		window.addEventListener("TabAttrModified", function update_title() {
+		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+		}, false);
+
+	  
+	  } catch(e) {}
+	  
+	  classicthemerestorerjs.ctr.loadUnloadCSS("tttitlebar",true);
+	}
+  },
+  
   // prevent accidental location bar removal by using context menu 
   removeContextItemsFromLocationbarContext: function(){
 
@@ -3390,6 +3431,7 @@ classicthemerestorerjs.ctr = {
 		break;
 	
 		case "square_edges": 			manageCSS("tabssquare_edges.css");  	break;
+		case "tttitlebar": 				manageCSS("tabsttitleintitlebar.css");  break;
 		
 		case "closetab_active": 		manageCSS("closetab_active.css");  		break;
 		case "closetab_none": 			manageCSS("closetab_none.css");  		break;

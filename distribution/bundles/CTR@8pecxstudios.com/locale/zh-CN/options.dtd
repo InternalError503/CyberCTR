@@ -54,6 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"标签页的最小宽度和最大宽度由 TabUtilities 所控制">
 <!ENTITY Ctr_tabwidthinfo3	"小于48px的值在多数情况下可能出现问题!">
 <!ENTITY Ctr_square_edges	"方形顶部边角">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"在当前标签页后插入关联标签页 (about:config)">
 <!ENTITY Ctr_emptyfavicon	"使用空白网站小图标 (如果网站没有提供)">
 <!ENTITY Ctr_noemptypticon	"为固定的标签页移除空白小图标">

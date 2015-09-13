@@ -55,6 +55,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Onglets : les largeurs mini et maxi sont controlées par TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Les valeurs en dessous de 48px causent des problèmes dans la majorité des cas.">
 <!ENTITY Ctr_square_edges	"Squared top corners">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"Placer l’onglet apparenté après l’onglet courant (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Restaurer le favicon vide sur les onglets (sites ne possédant pas de favicon)">
 <!ENTITY Ctr_noemptypticon	"Enlever les favicons vides des onglets épinglés">

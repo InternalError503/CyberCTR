@@ -54,6 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Širino zavihkov nadzira TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Vrednosti pod 48 sl. točk bodo v večini premerov povzročile napake!">
 <!ENTITY Ctr_square_edges	"Kvadratasti zgornji koti">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"Vstavi odprti zavihek poleg trenutnega (nastavitev about:config)">
 <!ENTITY Ctr_emptyfavicon	"Obnovi prazno zaznamko (če je stran ne dobavi)">
 <!ENTITY Ctr_noemptypticon	"Odstrani prazno zaznamko iz pripetih zavihkov">

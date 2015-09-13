@@ -54,6 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"分頁的最小和最大寬度由 Tab Utilities 控制">
 <!ENTITY Ctr_tabwidthinfo3	"小於 48px 的值有可能導致故障!">
 <!ENTITY Ctr_square_edges	"Squared top corners">
+<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
 <!ENTITY Ctr_tabinsertion	"Insert related tab after current tab (about:config)">
 <!ENTITY Ctr_emptyfavicon	"開啟的網頁若未提供網站圖示，仍在該分頁顯示空圖示">
 <!ENTITY Ctr_noemptypticon	"從釘選分頁移除空圖示">
