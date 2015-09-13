@@ -28,69 +28,71 @@ classicthemerestorerjs.ctr = {
  
   // initialize custom sheets for tab color settings
   
-  ctabsheet_def:						sheetIO,
-  ctabsheet_act:							sheetIO,
-  ctabsheet_hov:						sheetIO,
-  ctabsheet_pen:						sheetIO,
-  ctabsheet_unr:						sheetIO,
-  cntabsheet_def:						sheetIO,
-  cntabsheet_hov:						sheetIO,
-  tabtxtcsheet_def:					sheetIO,
-  tabtxtcsheet_act:						sheetIO,
-  tabtxtcsheet_hov:					sheetIO,
-  tabtxtcsheet_pen:					sheetIO,
-  tabtxtcsheet_unr:					sheetIO,
-  tabtxtshsheet_def:					sheetIO,
-  tabtxtshsheet_act:					sheetIO,
-  tabtxtshsheet_hov:					sheetIO,
-  tabtxtshsheet_pen:					sheetIO,
-  tabtxtshsheet_unr:					sheetIO,
+  ctabsheet_def: sheetIO,
+  ctabsheet_act: sheetIO,
+  ctabsheet_hov: sheetIO,
+  ctabsheet_pen: sheetIO,
+  ctabsheet_unr: sheetIO,
+  cntabsheet_def: sheetIO,
+  cntabsheet_hov: sheetIO,
+  tabtxtcsheet_def: sheetIO,
+  tabtxtcsheet_act: sheetIO,
+  tabtxtcsheet_hov: sheetIO,
+  tabtxtcsheet_pen: sheetIO,
+  tabtxtcsheet_unr: sheetIO,
+  tabtxtshsheet_def: sheetIO,
+  tabtxtshsheet_act: sheetIO,
+  tabtxtshsheet_hov: sheetIO,
+  tabtxtshsheet_pen: sheetIO,
+  tabtxtshsheet_unr: sheetIO,
   
-  tabboldsheet_def:					sheetIO,
-  tabboldsheet_act:					sheetIO,
-  tabboldsheet_hov:					sheetIO,
-  tabboldsheet_pen:					sheetIO,
-  tabboldsheet_unr:					sheetIO,
-  tabitasheet_def:						sheetIO,
-  tabitasheet_act:						sheetIO,
-  tabitasheet_hov:						sheetIO,
-  tabitasheet_pen:						sheetIO,
-  tabitasheet_unr:						sheetIO,
+  tabboldsheet_def: sheetIO,
+  tabboldsheet_act: sheetIO,
+  tabboldsheet_hov: sheetIO,
+  tabboldsheet_pen: sheetIO,
+  tabboldsheet_unr: sheetIO,
+  tabitasheet_def: sheetIO,
+  tabitasheet_act: sheetIO,
+  tabitasheet_hov: sheetIO,
+  tabitasheet_pen: sheetIO,
+  tabitasheet_unr: sheetIO,
   
-  aerocolors:								sheetIO,
+  aerocolors: sheetIO,
   
-  tabheight:								sheetIO,
-  
-  appbutton_color:						sheetIO,
-  
-  cuiButtonssheet:						sheetIO,
-  searchbarsheet:						sheetIO,
-  bookmarkbarfontsize:				sheetIO,
-  tabfontsize:								sheetIO,
-  abouthome_bg:						sheetIO,
-  abouthome_bg_strech:			sheetIO,
-  abouthome_custcolor:				sheetIO,
-  abouthome_custbasecolor:		sheetIO,
-  aboutnewtab_custcolor:			sheetIO,
-  hideElements:							sheetIO,
-  aboutnewtab_bg:						sheetIO,
-  aboutnewtab_bg_strech:			sheetIO,
-  
-  prefs:										Services.prefs.getBranch("extensions.classicthemerestorer."),
-  
-  fxdefaulttheme:						Services.prefs.getBranch("general.skins.").getCharPref("selectedSkin") == 'classic/1.0',
-  fxdevelopertheme:					false,
-  osstring:									Services.appinfo.OS,
-  appversion:								parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")),
-  stringBundle:							Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file"),
-  
-  fullscreeduration:				false,
-  moveStarIntoUrlbar:				false,
-  moveFeedIntoUrlbar:				false,
-  
-  devthemeinterval:					null,
-  ctrcontentprefswin: 	    null,
+  tabheight: sheetIO,
 
+  navbarpadding: sheetIO,
+  
+  appbutton_color: sheetIO,
+  
+  cuiButtonssheet: sheetIO,
+  searchbarsheet: sheetIO,
+  bookmarkbarfontsize: sheetIO,
+  tabfontsize: sheetIO,
+  abouthome_bg: sheetIO,
+  abouthome_bg_strech: sheetIO,
+  abouthome_custcolor: sheetIO,
+  abouthome_custbasecolor: sheetIO,
+  aboutnewtab_custcolor: sheetIO,
+  hideElements: sheetIO,
+  aboutnewtab_bg: sheetIO,
+  aboutnewtab_bg_strech: sheetIO,
+  
+  prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
+  
+  fxdefaulttheme:		Services.prefs.getBranch("general.skins.").getCharPref("selectedSkin") == 'classic/1.0',
+  fxdevelopertheme:		false,
+  osstring:				Services.appinfo.OS,
+  appversion:			parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")),
+  stringBundle:			Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file"),
+  
+  fullscreeduration:	false,
+  moveStarIntoUrlbar:	false,
+  moveFeedIntoUrlbar:	false,
+  
+  devthemeinterval: 	null,
+  ctrcontentprefswin: 	null,
+ 
   activityObserver: 	new MutationObserver(function() {}), // define empty, (CTR) global observer
   activityObserverOn:	false, // activity observer is always disabled, when a window get initialized
 
@@ -971,6 +973,13 @@ classicthemerestorerjs.ctr = {
 			}
 		  break;
 		  
+		  case "navbarpad": case "navbarpad_l": case "navbarpad_r":
+		    if (branch.getBoolPref("navbarpad")) 
+			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",true);
+		    else
+			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",false);
+		  break;
+
 		  case "backforward":
 			if (branch.getBoolPref("backforward")) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("backforward",true);
@@ -5345,6 +5354,23 @@ classicthemerestorerjs.ctr = {
 
 		break;
 		
+		case "navbarpad":
+			removeOldSheet(this.navbarpadding);
+			
+			if(enable==true && this.prefs.getBoolPref('navbarpad')){
+		
+				this.navbarpadding=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					#main-window:not([customizing]) #nav-bar-customization-target {\
+					  padding-left: '+this.prefs.getIntPref('navbarpad_l')+'px !important;\
+					  padding-right: '+this.prefs.getIntPref('navbarpad_r')+'px !important;\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.navbarpadding);
+			}
+		
+		break;
+		
 		case "cui_buttons":
 		
 			removeOldSheet(this.cuiButtonssheet);
@@ -5723,7 +5749,7 @@ classicthemerestorerjs.ctr = {
   
   // open prefwindow and specific category
   additionalToolbars: function(){
-	Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('pref_actindx',6);
+	Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('pref_actindx',8);
 	
 	setTimeout(function(){
 	  classicthemerestorerjs.ctr.openCTRPreferences();
