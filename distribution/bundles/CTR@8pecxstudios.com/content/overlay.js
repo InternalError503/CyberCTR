@@ -3739,7 +3739,7 @@ classicthemerestorerjs.ctr = {
 				
 				var aero_color_optionsp = '';
 				
-				if (this.prefs.getBoolPref("altoptionsp")) {
+				if (this.prefs.getBoolPref("altoptionsp") || this.prefs.getBoolPref("altoptionsw")) {
 					aero_color_optionsp = '\
 					  @-moz-document url(about:preferences),url-prefix(about:preferences){\
 						page, #dialogBox .groupbox-title {\
