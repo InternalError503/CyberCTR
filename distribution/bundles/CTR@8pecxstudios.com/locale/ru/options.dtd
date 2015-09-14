@@ -54,7 +54,7 @@
 <!ENTITY Ctr_tabwidthinfo2	"Минимальная и максимальная ширина вкладок изменяются расширением TabUtilities">
 <!ENTITY Ctr_tabwidthinfo3	"Значения ниже 48px часто приводят к сбоям!">
 <!ENTITY Ctr_square_edges	"Верхние углы без закругления">
-<!ENTITY Ctr_tttitlebar		"Tab title in &brandShortName; titlebar">
+<!ENTITY Ctr_tttitlebar		"Название вкладки в панели вкладок &brandShortName;">
 <!ENTITY Ctr_tabinsertion	"Вставить соответствующую вкладку после текущей вкладки (about:config)">
 <!ENTITY Ctr_emptyfavicon	"Восстановить пустые значки на вкладках">
 <!ENTITY Ctr_noemptypticon	"Удалить пустой значок из прикреплённой вкладки">
