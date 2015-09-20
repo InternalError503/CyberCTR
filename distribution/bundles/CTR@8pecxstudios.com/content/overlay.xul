@@ -877,6 +877,7 @@
 					 persist="class"
 					 cui-areatype="toolbar"
 					 oncommand="classicthemerestorerjs.ctr.openCTRPreferences(this);"
+					 overflows="false"
                      tooltiptext="&Ctr_title;"/>
 
 	  <!--### creates a bookmarks sidebar button ###-->
