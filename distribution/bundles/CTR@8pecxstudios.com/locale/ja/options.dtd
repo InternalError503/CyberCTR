@@ -193,6 +193,7 @@
 
 <!ENTITY Ctr_urlbar			"URL バー">
 <!ENTITY Ctr_starinurl		"URL バーにスターボタンを表示する">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"URL バーにフィードボタンを表示する">
 <!ENTITY Ctr_hideurelstop	"URL バーの中止&amp;再読み込みボタンを隠す">
 <!ENTITY Ctr_hideurlgo		"Hide 'go' button">
@@ -253,7 +254,7 @@
 <!ENTITY Ctr_bookbarfs		"ブックマークツールバー: in fullscreen mode">
 <!ENTITY Ctr_nonavbarbg		"ナビゲーションツールバー: 背景色を取り除く">
 <!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
-<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'The Fox, Only Better' add-on's Slim Chrome are affected.">
+<!ENTITY Ctr_nonavbarbg2	"All toolbars in 'Beyond Australis' add-on's Slim Chrome are affected.">
 <!ENTITY Ctr_nonavborder	"ブックマークツールバー: ツールバーに上ボーダーを加える">
 <!ENTITY Ctr_nonavtbborder	"ツールバー: 上ボーダーを取り除く">
 <!ENTITY Ctr_hidesbclose	"Sidebars: hide sidebar close button">

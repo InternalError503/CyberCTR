@@ -194,6 +194,7 @@
 
 <!ENTITY Ctr_urlbar			"Γραμμή τοποθεσιών">
 <!ENTITY Ctr_starinurl		"Κουμπί-αστέρι">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Κουμπί «Συνδρομή» (RSS)">
 <!ENTITY Ctr_hideurelstop	"Απόκρυψη κουμπιών «Διακοπή» &amp; «Ανανέωση»">
 <!ENTITY Ctr_hideurlgo		"Απόκρυψη κουμπιού «Μετάβαση»">
@@ -254,7 +255,7 @@
 <!ENTITY Ctr_bookbarfs		"Εμφάνιση σε προβολή πλήρους οθόνης">
 <!ENTITY Ctr_nonavbarbg		"Απομάκρυνση χρώματος φόντου">
 <!ENTITY Ctr_nonavbarbg1	"Επηρεάζονται επίσης οι επιπρόσθετες εργαλειοθήκες αυτής της επέκτασης και άλλες εργαλειοθήκες κορυφής.">
-<!ENTITY Ctr_nonavbarbg2	"Επηρεάζονται όλες οι εργαλειοθήκες σε λειτουργία «Slim Chrome» της επέκτασης «The Fox, Only Better».">
+<!ENTITY Ctr_nonavbarbg2	"Επηρεάζονται όλες οι εργαλειοθήκες σε λειτουργία «Slim Chrome» της επέκτασης «Beyond Australis».">
 <!ENTITY Ctr_nonavborder	"Προσθήκη περιγράμματος κορυφής στην εργαλειοθήκη">
 <!ENTITY Ctr_nonavtbborder	"Εργαλειοθήκες κορυφής: Απομάκρυνση περιγραμμάτων εργαλειοθήκης">
 <!ENTITY Ctr_hidesbclose	"Πλευρικές στήλες: απόκρυψη κουμπιού κλεισίματος πλευρικής στήλης">

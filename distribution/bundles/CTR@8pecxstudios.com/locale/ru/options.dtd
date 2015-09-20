@@ -193,6 +193,7 @@
 
 <!ENTITY Ctr_urlbar			"Адресная строка">
 <!ENTITY Ctr_starinurl		"Звёздочка в адресной строке">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Кнопка RSS в адресной строке">
 <!ENTITY Ctr_hideurelstop	"Скрыть кнопку «Остановить и перезагрузить»">
 <!ENTITY Ctr_hideurlgo		"Скрыть кнопку «Перейти»">
@@ -253,7 +254,7 @@
 <!ENTITY Ctr_bookbarfs		"Панель закладок: в полноэкранном режиме">
 <!ENTITY Ctr_nonavbarbg		"Панель навигации: удалить цвет фона">
 <!ENTITY Ctr_nonavbarbg1	"Параметр влияет на все дополнительные и верхние панели инструментов.">
-<!ENTITY Ctr_nonavbarbg2	"Поддержка всех панелей инструментов в стиле Slim Chrome при использовании расширения 'The Fox, Only Better'.">
+<!ENTITY Ctr_nonavbarbg2	"Поддержка всех панелей инструментов в стиле Slim Chrome при использовании расширения «Beyond Australis».">
 <!ENTITY Ctr_nonavborder	"Панель закладок: добавить верхнюю границу для панели инструментов">
 <!ENTITY Ctr_nonavtbborder	"Популярные панели инструментов: удалить границы панелей инструментов">
 <!ENTITY Ctr_hidesbclose	"Боковые панели: скрыть кнопку «Закрыть» на боковой панели">

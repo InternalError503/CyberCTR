@@ -193,6 +193,7 @@
 
 <!ENTITY Ctr_urlbar			"Pasek adresu">
 <!ENTITY Ctr_starinurl		"Przycisk 'gwiazdka'">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Przycisk RSS">
 <!ENTITY Ctr_hideurelstop	"Ukryj przyciski zatrzymania i odświeżania">
 <!ENTITY Ctr_hideurlgo		"Ukryj przycisk 'Przejdź'">
@@ -253,7 +254,7 @@
 <!ENTITY Ctr_bookbarfs		"Pasek zakładek: w trybie pełnoekranowym">
 <!ENTITY Ctr_nonavbarbg		"Pasek nawigacji: usuń kolor tła">
 <!ENTITY Ctr_nonavbarbg1	"Dotyczy dodatkowych pasków narzędzi tego dodatku oraz innych górnych pasków narzędzi.">
-<!ENTITY Ctr_nonavbarbg2	"Dotyczy wszystkich pasków narzędzi Slim Chrome z dodatku 'The Fox, Only Better'.">
+<!ENTITY Ctr_nonavbarbg2	"Dotyczy wszystkich pasków narzędzi Slim Chrome z dodatku 'Beyond Australis'.">
 <!ENTITY Ctr_nonavborder	"Pasek zakładek: dodaj obramowanie na górze paska">
 <!ENTITY Ctr_nonavtbborder	"Górne paski: usuń obramowanie paska">
 <!ENTITY Ctr_hidesbclose	"Paski boczne: ukryj przycisk zamknięcia paska bocznego">

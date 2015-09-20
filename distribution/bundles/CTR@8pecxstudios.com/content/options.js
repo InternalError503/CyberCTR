@@ -16,7 +16,7 @@ classicthemerestorerjso.ctr = {
 
   prefs:			Services.prefs.getBranch("extensions.classicthemerestorer."),
   fxdefaulttheme:	Services.prefs.getBranch("general.skins.").getCharPref("selectedSkin") == 'classic/1.0',
-  appversion:		parseInt(Services.prefs.getBranch("extensions.").getCharPref("lastAppVersion")),
+  appversion:		parseInt(Services.appinfo.version),
   oswindows:		Services.appinfo.OS=="WINNT",
   needsRestart: 	false,
   tmp_tu_active:	false,

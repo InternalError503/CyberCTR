@@ -194,6 +194,7 @@
 
 <!ENTITY Ctr_urlbar			"Adresní řádek">
 <!ENTITY Ctr_starinurl		"Tlačítko hvězdičky">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Tlačítko kanálu">
 <!ENTITY Ctr_hideurelstop	"Skrýt tlačítka zastavit &amp; obnovit">
 <!ENTITY Ctr_hideurlgo		"Skrýt tlačítko 'přejít'">
@@ -254,7 +255,7 @@
 <!ENTITY Ctr_bookbarfs		"Lišta záložek: v celoobrazovkovém módu (fullscreen)">
 <!ENTITY Ctr_nonavbarbg		"Navigační lišta: odstranit barvu pozadí">
 <!ENTITY Ctr_nonavbarbg1	"Nastavením tohoto rozšíření budou ovlivněna nastavení dalších rozšíření.">
-<!ENTITY Ctr_nonavbarbg2	"Budou ovlivněna rozšíření 'The Fox, Only Better' a 'Slim Chrome'.">
+<!ENTITY Ctr_nonavbarbg2	"Budou ovlivněna rozšíření 'Beyond Australis' a 'Slim Chrome'.">
 <!ENTITY Ctr_nonavborder	"Lišta záložek: přidat horní okraj lišty">
 <!ENTITY Ctr_nonavtbborder	"Vrchní lišty: odstranit okraje lišt">
 <!ENTITY Ctr_hidesbclose	"Postranní panely: skrýt zavírací tlačítka">

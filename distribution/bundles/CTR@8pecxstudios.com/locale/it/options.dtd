@@ -193,6 +193,7 @@
 
 <!ENTITY Ctr_urlbar			"Barra degli indirizzi">
 <!ENTITY Ctr_starinurl		"Stella nella barra degli indirizzi">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Pulsante dei feed nella barra degli indirizzi">
 <!ENTITY Ctr_hideurelstop	"Nascondi pulsanti Stop e Ricarica nella barra degli indirizzi">
 <!ENTITY Ctr_hideurlgo		"Nascondi il pulsante 'Vai'">
@@ -253,7 +254,7 @@
 <!ENTITY Ctr_bookbarfs		"Barra dei segnalibri: in modalità tutto schermo">
 <!ENTITY Ctr_nonavbarbg		"Rimuovi colore di sfondo dalla barra di navigazione">
 <!ENTITY Ctr_nonavbarbg1	"Ha effetto sulle barre di questo componente aggiuntivo e su altre barre in alto.">
-<!ENTITY Ctr_nonavbarbg2	"Vengono influenzate tutte le barre del componente 'The Fox, Only Better' di Slim Chrome.">
+<!ENTITY Ctr_nonavbarbg2	"Vengono influenzate tutte le barre del componente 'Beyond Australis' di Slim Chrome.">
 <!ENTITY Ctr_nonavborder	"Aggiungi bordo superiore alla barra dei segnalibri">
 <!ENTITY Ctr_nonavtbborder	"Rimuovi i bordi alle barre degli strumenti posizionate in alto">
 <!ENTITY Ctr_hidesbclose	"Barre laterali: nascondi il pulsante di chiusura della barra laterale">

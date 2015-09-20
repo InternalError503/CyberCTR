@@ -194,6 +194,7 @@
 
 <!ENTITY Ctr_urlbar			"Adresowe polo">
 <!ENTITY Ctr_starinurl		"Hwězdne tłóčatko">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Kanalowe tłóčatko">
 <!ENTITY Ctr_hideurelstop	"Tłóčatce Stój a Znowa adresowych lajstow schować">
 <!ENTITY Ctr_hideurlgo		"Tłóčatko 'Start' schować">
@@ -254,7 +255,7 @@
 <!ENTITY Ctr_bookbarfs		"W modusu połneje wobrazowki">
 <!ENTITY Ctr_nonavbarbg		"Pozadkowu barbu wotstronić">
 <!ENTITY Ctr_nonavbarbg1	"Wuskutkuje so na přidatne lajsty tutoho přidatka a na druhe hornje lajsty.">
-<!ENTITY Ctr_nonavbarbg2	"Wuskutkuje so na wšě lajsty powjercha Slim přidatka 'The Fox, Only Better'.">
+<!ENTITY Ctr_nonavbarbg2	"Wuskutkuje so na wšě lajsty powjercha Slim přidatka 'Beyond Australis'.">
 <!ENTITY Ctr_nonavborder	"Horni ramik symbolowej lajsće přidać">
 <!ENTITY Ctr_nonavtbborder	"Hornje symbolowe lajsty: ramiki symboloweje lajsty wotstronić">
 <!ENTITY Ctr_hidesbclose	"Bóčnicy: Tłóčatko Začinić bóčnicy schować">

@@ -194,6 +194,7 @@
 
 <!ENTITY Ctr_urlbar			"Adresowe pólo">
 <!ENTITY Ctr_starinurl		"Gwězdowy tłocašk">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Kanalowy tłocašk">
 <!ENTITY Ctr_hideurelstop	"Tłocaška Stoj a Znowego adresowych rědkow schowaś">
 <!ENTITY Ctr_hideurlgo		"Tłocašk 'Start' schowaś">
@@ -254,7 +255,7 @@
 <!ENTITY Ctr_bookbarfs		"W modusu połneje wobrazowki">
 <!ENTITY Ctr_nonavbarbg		"Slězynowu barwu wótpóraś">
 <!ENTITY Ctr_nonavbarbg1	"Wustatkujo se na pśidatne rědki a druge górne rědki.">
-<!ENTITY Ctr_nonavbarbg2	"Nastajenje ma wustatkowanje na wšykne rědki w pśedstajenju Slim dodanka 'The Fox, Only Better'.">
+<!ENTITY Ctr_nonavbarbg2	"Nastajenje ma wustatkowanje na wšykne rědki w pśedstajenju Slim dodanka 'Beyond Australis'.">
 <!ENTITY Ctr_nonavborder	"Górny ramik symbolowej rědce pśidaś">
 <!ENTITY Ctr_nonavtbborder	"Górne symbolowe rědki: ramiki symboloweje rědki wótpóraś">
 <!ENTITY Ctr_hidesbclose	"Bócnice: Tłocašk 'Zacyniś' bócnice schowaś">

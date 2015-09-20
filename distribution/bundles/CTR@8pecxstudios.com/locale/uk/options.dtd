@@ -193,6 +193,7 @@
 
 <!ENTITY Ctr_urlbar			"Панель рядку адреси">
 <!ENTITY Ctr_starinurl		"Зірка">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"Кнопка RSS">
 <!ENTITY Ctr_hideurelstop	"Приховати кнопку «Зупинити та Перезавантажити»">
 <!ENTITY Ctr_hideurlgo		"Приховати кнопку «Перейти»">
@@ -253,7 +254,7 @@
 <!ENTITY Ctr_bookbarfs		"Панель закладок: у повноекранному режимі">
 <!ENTITY Ctr_nonavbarbg		"Панель навігації: прибрати колір тла">
 <!ENTITY Ctr_nonavbarbg1	"Ця функція на додаткових панелях та інших верхніх панелях пошкоджена іншим додатком.">
-<!ENTITY Ctr_nonavbarbg2	"Всі панелі Slim Chrome додатку 'The Fox, Only Better' пошкоджено.">
+<!ENTITY Ctr_nonavbarbg2	"Всі панелі Slim Chrome додатку 'Beyond Australis' пошкоджено.">
 <!ENTITY Ctr_nonavborder	"Панель закладок: додати верхню межу для панелі інструментів">
 <!ENTITY Ctr_nonavtbborder	"Верхні панелі інструментів: прибрати межі панелі">
 <!ENTITY Ctr_hidesbclose	"Бокові панелі: приховати кнопку «Закрити» бокової панелі">

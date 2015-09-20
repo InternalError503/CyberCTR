@@ -193,6 +193,7 @@
 
 <!ENTITY Ctr_urlbar			"Yer çubuğu">
 <!ENTITY Ctr_starinurl		"Yıldız-butonu">
+<!ENTITY Ctr_starinurlinfo	"Default bookmarks menu button gets hidden">
 <!ENTITY Ctr_feedinurl		"RSS feed-butonu">
 <!ENTITY Ctr_hideurelstop	"'Dur &amp; Yenile' butonlarını gizle">
 <!ENTITY Ctr_hideurlgo		"Hide 'go' button">
@@ -253,7 +254,7 @@
 <!ENTITY Ctr_bookbarfs		"Yerimi araç çubuğu: Tam Ekran modunda">
 <!ENTITY Ctr_nonavbarbg		"Gezinti Araç çubuğu: Arkaplan rengini kaldır">
 <!ENTITY Ctr_nonavbarbg1	"Bu eklentiler, ek araç çubukları ve diğer üst düzey araç çubuklarını etkiler.">
-<!ENTITY Ctr_nonavbarbg2	"Tüm araç çubukları 'Fox, Only Better' eklentileri Slim Chrome etkilenir.">
+<!ENTITY Ctr_nonavbarbg2	"Tüm araç çubukları 'Beyond Australis' eklentileri Slim Chrome etkilenir.">
 <!ENTITY Ctr_nonavborder	"Yerimi araç çubuğu: Araç çubuğuna üst sınır ekle">
 <!ENTITY Ctr_nonavtbborder	"Tepedeki sekmeler: Araç çubuğu sınırları kaldır">
 <!ENTITY Ctr_hidesbclose	"Sidebars: Kenar çubuğu kapatma düğmesini gizle">
