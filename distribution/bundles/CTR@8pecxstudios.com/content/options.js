@@ -157,6 +157,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_hightabpososx').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_altoptionsp').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tttitlebar').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_am_compact').style.visibility = 'collapse';
 	} else {
 		document.getElementById('ctraddon_pw_special_info2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_special_font').style.visibility = 'collapse';
@@ -359,6 +360,7 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion < 40) {
 	  document.getElementById('ctraddon_pw_addonversion').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_alt_addonsm').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_am_compact').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_transpttbw10').style.visibility = 'collapse';
 	}
 	
@@ -382,11 +384,11 @@ classicthemerestorerjso.ctr = {
 
 	if (this.appversion >= 42) {
 	  document.getElementById('ctraddon_pw_readermode2').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_oldprefsgb').style.visibility = 'collapse';
 	}
 
 	if (this.appversion >= 43) {
 	  document.getElementById('ctraddon_pw_oldsearchgb').style.visibility = 'collapse';
-	  document.getElementById('ctraddon_pw_oldprefsgb').style.visibility = 'collapse';
 	}	
 
 	function PrefListener(branch_name, callback) {

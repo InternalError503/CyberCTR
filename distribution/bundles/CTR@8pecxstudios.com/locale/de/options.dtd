@@ -26,7 +26,7 @@
 <!ENTITY Ctr_cuitxt			"Text">
 <!ENTITY Ctr_cuitabsnontop	"Tabs unten">
 
-<!ENTITY Ctr_tnot			"(Tabs 'unten')">
+<!ENTITY Ctr_tnot			"(Tabs unten)">
 
 <!ENTITY Ctr_tabcolors_t	"Tab Farben / Zeichensatz">
 
@@ -44,7 +44,7 @@
 <!ENTITY Ctr_tabsontop3		"Tabs unten (v2) --- '[tabsontop=false]' Attribut gesetzt">
 <!ENTITY Ctr_tabsontopW1	"v2 ist nur für einige Add-ons und vollständige Themen sinnvoll!">
 <!ENTITY Ctr_tabsontopI1	"[tabsontop=true/false] Attribut wird gesetzt für">
-<!ENTITY Ctr_tabsintitlebar	"&brandShortName;-Titelleiste (about:config-Einstellung)">
+<!ENTITY Ctr_tabsintitlebar	"&brandShortName; Titelleiste (about:config Einstellung)">
 <!ENTITY Ctr_tabwidthdef	"(Standard)">
 <!ENTITY Ctr_tabwidthcla	"(klassisch)">
 <!ENTITY Ctr_tabminheight	"Höhe:">
@@ -94,7 +94,7 @@
 <!ENTITY Ctr_appbuttonc_wh	"Farbe: weiß">
 <!ENTITY Ctr_appbuttonc_cu	"Farbe: eigene Definition">
 <!ENTITY Ctr_appbuttonI1	"Nach einer Änderung wird ein Neustart empfohlen.">
-<!ENTITY Ctr_appbuttonI1e	"Die &brandShortName;-Schaltfläche ist auf der Windows-Titelleiste nicht sichtbar!">
+<!ENTITY Ctr_appbuttonI1e	"Die &brandShortName;-Schaltfläche ist auf der Windows Titelleiste nicht sichtbar!">
 <!ENTITY Ctr_appbuttonI2	"Die Farbe ist nur auf der Titelleiste und der Tableiste sichtbar!">
 <!ENTITY Ctr_appbutmhi		"Höhere Position (falls auf der Tableiste)">
 <!ENTITY Ctr_appbautocol	"Setze Browserkanalfarben automatisch (standard/Aurora/Nightly)">
@@ -146,6 +146,7 @@
 <!ENTITY Ctr_alt_addonsp	"'Mehr Info'-Seite: alternative Anordnung">
 <!ENTITY Ctr_alt_addonsm	"Alternative Darstellung">
 <!ENTITY Ctr_am_nowarning	"Add-on 'Übersicht': Warnungen ausblenden">
+<!ENTITY Ctr_am_compact		"Add-on 'Übersicht': Kompakte Darstellung">
 <!ENTITY Ctr_addonversion	"Add-on 'Übersicht': Versionsnummer von Add-ons anzeigen">
 <!ENTITY Ctr_xpinstallui	"Altes Add-on Installationsfenster (about:config Einstellung)">
 <!ENTITY Ctr_bmbutpanelm	"Lesezeichen-Menüschaltfläche: 'Panel-Aufklappmenü'-Darstellung">
@@ -159,7 +160,7 @@
 <!ENTITY Ctr_closegeneral	"Schließen-Symbole">
 
 <!ENTITY Ctr_tabsep_def		"Standard Trennlinien">
-<!ENTITY Ctr_fxmockup		"&brandShortName;-Entwürfe">
+<!ENTITY Ctr_fxmockup		"&brandShortName; Entwürfe">
 <!ENTITY Ctr_tabmokcolor	"Weiße Schaltflächen (Neu, Schließen, Gruppen, Listen)">
 <!ENTITY Ctr_tabmokcolor2	"Weißer Tabtext und dunkler Schatten für nicht aktive Tabs">
 <!ENTITY Ctr_tabmokcolor4	"Weißes leeres Lesezeichensymbol für Tabs">
@@ -193,9 +194,9 @@
 <!ENTITY Ctr_tabc_act_tb	"Tab-Hintergrundfarbe auf Leisten">
 
 <!ENTITY Ctr_urlbar			"Adressleiste">
-<!ENTITY Ctr_starinurl		"'Lesezeichen-Stern'">
+<!ENTITY Ctr_starinurl		"Lesezeichen-Stern">
 <!ENTITY Ctr_starinurlinfo	"Standard-Lesezeichenschaltfläche wird entfernt">
-<!ENTITY Ctr_feedinurl		"'Feed abonnieren'">
+<!ENTITY Ctr_feedinurl		"Feed abonnieren">
 <!ENTITY Ctr_hideurelstop	"Entferne 'Stopp' &amp; 'Neu laden'">
 <!ENTITY Ctr_hideurlgo		"Entferne 'Los'">
 <!ENTITY Ctr_hideurlsrg		"Entferne 'Neu laden, Stopp &amp; Los' Trennlinien &amp; Leerstellen">
