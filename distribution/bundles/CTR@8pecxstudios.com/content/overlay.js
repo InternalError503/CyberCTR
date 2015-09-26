@@ -1032,7 +1032,11 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS("navthrobber",false);
 				classicthemerestorerjs.ctr.activityObserverOn = false;
 				classicthemerestorerjs.ctr.restoreActivityThrobber();
-			  } else classicthemerestorerjs.ctr.activityObserver.disconnect();
+			  } else {
+				try{
+				  classicthemerestorerjs.ctr.activityObserver.disconnect();
+				}catch(e){}
+			  }
 			}
 		  break;
 
@@ -3166,26 +3170,33 @@ classicthemerestorerjs.ctr = {
   restoreActivityThrobber: function(){
 	
 	// disconnect observer, if it is already running
-	classicthemerestorerjs.ctr.activityObserver.disconnect();
+	try{
+	  classicthemerestorerjs.ctr.activityObserver.disconnect();
+	}catch(e){}
 	
-	//Delay load (TypeError: Argument 1 of MutationObserver.observe is not an object. overlay.js:3135:1)
-	setTimeout(function(){	
-		// check, if tab attributes got modified
-		classicthemerestorerjs.ctr.activityObserver = new MutationObserver(function(mutations) {
-		  mutations.forEach(function(mutation) {
-			ctrActivityThrobber();
-		  });
-		});
+	// check, if tab attributes got modified
+	classicthemerestorerjs.ctr.activityObserver = new MutationObserver(function(mutations) {
+	  mutations.forEach(function(mutation) {
+		ctrActivityThrobber();
+	  });
+	});
 
-		// enable observer
-		if(classicthemerestorerjs.ctr.activityObserverOn==true)
-		  classicthemerestorerjs.ctr.activityObserver.observe(gBrowser.selectedTab, { attributes: true, attributeFilter: ['busy'] });
-	},850);	
+	// enable observer
+	if(classicthemerestorerjs.ctr.activityObserverOn==true) {
+	  try{
+		classicthemerestorerjs.ctr.activityObserver.observe(gBrowser.selectedTab, { attributes: true, attributeFilter: ['busy'] });
+	  }catch(e){}
+	}
 	
 	// if tab is busy, add 'busy' attribute to 'ctraddon_navigator-throbber'
 	function ctrActivityThrobber(){
 		if(classicthemerestorerjs.ctr.activityObserverOn==true){
-		  var navthrobber = document.getElementById('ctraddon_navigator-throbber');
+
+		  var navthrobber = null;
+
+		  try{
+		    navthrobber = document.getElementById('ctraddon_navigator-throbber');
+		  }catch(e){}
 		  
 		  if(gBrowser.selectedTab.hasAttribute('busy')) {
 			try{
@@ -3201,7 +3212,9 @@ classicthemerestorerjs.ctr = {
 			  }
 			}catch(e){}
 		  }
-		  classicthemerestorerjs.ctr.activityObserver.observe(gBrowser.selectedTab, { attributes: true, attributeFilter: ['busy'] });
+		  try{
+		    classicthemerestorerjs.ctr.activityObserver.observe(gBrowser.selectedTab, { attributes: true, attributeFilter: ['busy'] });
+		  }catch(e){}
 		}
 	}
 	
