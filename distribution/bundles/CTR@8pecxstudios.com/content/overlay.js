@@ -1122,12 +1122,9 @@ classicthemerestorerjs.ctr = {
 						/* Fx 38+ adds reader mode buttons to urlbar icons area. They have to be moved to first position.*/
 						if (classicthemerestorerjs.ctr.appversion >= 38) {
 						  try{
-							var readerMode = document.getElementById("reader-mode-button");
-							if (readerMode &&  typeof(readerMode)  != "undefined" || readerMode  != null){  
-								if(readerMode.parentNode.id=="urlbar-icons") {
-								  urlbaricons.insertBefore(readerMode, urlbaricons.firstChild);
-								  urlbaricons.insertBefore(document.getElementById("readinglist-addremove-button"), urlbaricons.firstChild);
-								}
+							if(document.getElementById("reader-mode-button").parentNode.id=="urlbar-icons") {
+							  urlbaricons.insertBefore(document.getElementById("reader-mode-button"), urlbaricons.firstChild);
+							  urlbaricons.insertBefore(document.getElementById("readinglist-addremove-button"), urlbaricons.firstChild);
 							}
 						  } catch(e){}
 						}
@@ -1185,12 +1182,9 @@ classicthemerestorerjs.ctr = {
 						/* Fx 38+ adds reader mode buttons to urlbar icons area. They have to be moved to first position.*/
 						if (classicthemerestorerjs.ctr.appversion >= 38) {
 						  try{
-							var readerMode = document.getElementById("reader-mode-button");
-							if (readerMode &&  typeof(readerMode)  != "undefined" || readerMode  != null){ 
-								if(readerMode.parentNode.id=="urlbar-icons") {
-								  urlbaricons.insertBefore(readerMode, urlbaricons.firstChild);
-								  urlbaricons.insertBefore(document.getElementById("readinglist-addremove-button"), urlbaricons.firstChild);
-								}
+							if(document.getElementById("reader-mode-button").parentNode.id=="urlbar-icons") {
+							  urlbaricons.insertBefore(document.getElementById("reader-mode-button"), urlbaricons.firstChild);
+							  urlbaricons.insertBefore(document.getElementById("readinglist-addremove-button"), urlbaricons.firstChild);
 							}
 						  } catch(e){}
 						}

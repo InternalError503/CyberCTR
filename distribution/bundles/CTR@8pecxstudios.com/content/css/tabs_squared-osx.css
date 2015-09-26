@@ -44,7 +44,13 @@
 	#tabbrowser-tabs:not([overflow="true"]) {
 	  -moz-margin-end: -8px !important;
 	}
-	
+
+	/*.tab-background-start[visuallyselected=true]::after,
+	.tab-background-start[visuallyselected=true]::before,
+	.tab-background-start,
+	.tab-background-end,
+	.tab-background-end[visuallyselected=true]::after,
+	.tab-background-end[visuallyselected=true]::before,*/
 	#tabbrowser-tabs{
 	  min-height: 0px !important;
 	}
