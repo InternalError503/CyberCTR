@@ -13,6 +13,7 @@
 	.newtab-thumbnail,
 	.newtab-title	{ 
 	  border-radius: 0px !important;
+	  -moz-user-select: none;
 	}
 
 	#newtab-window .newtab-cell {
