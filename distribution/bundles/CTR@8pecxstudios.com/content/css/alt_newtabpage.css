@@ -10,7 +10,8 @@
 	}
 	.newtab-cell,
 	.newtab-link,
-	.newtab-thumbnail { 
+	.newtab-thumbnail,
+	.newtab-title	{ 
 	  border-radius: 0px !important;
 	}
 

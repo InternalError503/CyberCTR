@@ -1,7 +1,7 @@
 @-moz-document url(about:newtab) {
 
 	:root {
-		--main-highlight-color:#00adee; 
+		--main-highlight-color:#333333; 
 		--main-text-color:#efefef;
 	}
 
@@ -13,16 +13,11 @@
 	.newtab-sponsored {
 	  display: none !important;
 	}
-	.newtab-cell,
-	.newtab-link,
-	.newtab-thumbnail { 
-	  border-radius: 0px !important;
-	  background-color: transparent!important;
-	}
 	
 	.newtab-cell:empty {
 	  outline: 2px dashed var(--main-text-color)!important;
 	  /* -moz-outline-radius: 8px;*/
+	  background-color: transparent!important;
 	}
 
    .newtab-link {
@@ -48,8 +43,8 @@
 	.newtab-site[dragged] {
 	  box-shadow: 0 0 6px 2px var(--main-highlight-color)!important;
 	  border:none!important;
-	  /* border-radius: 12px !important;*/
-	  background-color: transparent!important;
+	  /* border-radius: 12px !important;
+	  background-color: transparent!important; */
 	  margin: 0px!important;
 	}
 
@@ -66,6 +61,7 @@
 	.newtab-title {
 	  color: var(--main-text-color)!important;
 	  filter: brightness(75%)!important;
+     background-color: transparent!important;
 	}
 
 	.newtab-site:hover .newtab-title {
@@ -173,4 +169,8 @@
 /* remove overlay on top of new tab page */
 #newtab-window #newtab-customize-overlay {
   display: none !important;
+}
+
+html .newtab-site  {
+ box-shadow: none!important;
 }
