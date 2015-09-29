@@ -43,9 +43,9 @@
         }
     }
 	
-    @-moz-keyframes searchForm {
+    @-moz-keyframes searchIconAndTextContainer {
         0% {
-            width: 0px
+            width: 0px;
         }
     }	
 	
@@ -53,8 +53,8 @@
         -moz-animation: brandLogo 3.5s 1;
 	}
 	
-    #searchForm {
-        -moz-animation: searchForm 1s 1;
+    #searchIconAndTextContainer {
+        -moz-animation: searchIconAndTextContainer 1s 1;
     }
 	
     #snippets {
