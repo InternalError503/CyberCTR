@@ -3732,7 +3732,7 @@ classicthemerestorerjs.ctr = {
 		case "tree_style_fix": 		manageCSS("cctr/tree_style_fix.css");	break;
 		
 		case "abouthomedark":
-			if (classicthemerestorerjs.ctr.appversion >= 43)	{	
+			if (classicthemerestorerjs.ctr.appversion >= 42)	{	
 				manageCSS("cctr/abouthomedark42p.css");	
 			}else{
 				manageCSS("cctr/abouthomedark.css");
