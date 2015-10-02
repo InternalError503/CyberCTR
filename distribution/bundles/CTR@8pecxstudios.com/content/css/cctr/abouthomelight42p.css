@@ -1,10 +1,10 @@
-/* Default Dark theme*/
+/* Default Light theme*/
 
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url("about:home") {
     :root {
         --main-highlight-color: #00adee;
-        --main-text-color: #efefef;
+        --main-text-color: #555555;
     }
     html {
         font: message-box;
@@ -20,7 +20,7 @@
         -moz-box-orient: vertical;
         width: 100%;
         height: 100%;
-        background-color: #222 !important;
+        background-color: #dedede !important;
         background-image: url("chrome://classic_theme_restorer/content/images/abouthome/noise.png") !important;
     }
     input,
@@ -50,10 +50,10 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        background-color: rgb(35, 35, 37) !important;
-        background-image: linear-gradient(rgb(57, 58, 60), rgb(37, 38, 40) 95%, rgb(25, 25, 25)) !important;
-        border-bottom: 1px solid rgb(22, 22, 22) !important;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3), 0px 6px 0px rgb(55, 53, 57) inset, 0px 7px 0px rgb(35, 35, 35) inset !important;
+        background-color: rgb(235, 235, 237) !important;
+        background-image: linear-gradient(rgb(237, 238, 240), rgb(237, 238, 240) 95%, rgb(225, 225, 225)) !important;
+        border-bottom: 1px solid rgb(199, 199, 199) !important;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3), 0px 6px 0px rgb(75, 73, 67) inset, 0px 7px 0px rgb(255, 255, 255) inset !important;
         font-size: 0px;
         letter-spacing: 0px;
         word-spacing: 0px;
@@ -83,7 +83,6 @@
         width: auto;
         min-width: 73px;
         color: var(--main-text-color)!important;
-        text-shadow: -1px -1px #111 !important;
         height: 55;
         font-size: 14px;
     }
@@ -91,10 +90,10 @@
         color: var(--main-highlight-color)!important;
         background-color: rgb(237, 237, 239);
         background-image: linear-gradient(rgb(216, 216, 218), rgb(237, 237, 239) 30%, rgb(237, 238, 240));
-        background: url("chrome://classic_theme_restorer/content/images/abouthome/menu-shadow_dark.png") no-repeat scroll -28px -8px transparent;
+        background: url("chrome://classic_theme_restorer/content/images/abouthome/menu-shadow_light.png") no-repeat scroll -28px -8px transparent;
         border-top: 6px solid rgb(55, 55, 55);
         border-bottom: 1px solid rgb(55, 55, 55, .3);
-        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .99) inset, 1px 4px 4px hsla(0, 0%, 0%, .99) inset;
+        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .100) inset, 1px 4px 4px hsla(0, 0%, 0%, .100) inset;
         padding-top: 9px !important;
         padding-left: 5px;
         padding-right: 5px;
@@ -108,11 +107,11 @@
     }
     .hmenubar li a:active {
         color: var(--main-text-color)!important;
-        background-color: rgb(37, 37, 39);
-        background-image: linear-gradient(rgb(16, 16, 18), rgb(37, 37, 39) 30%, rgb(37, 38, 40));
+        background-color: rgb(237, 237, 239);
+        background-image: linear-gradient(rgb(216, 216, 218), rgb(237, 237, 239) 30%, rgb(237, 238, 240));
         border-top: 6px solid rgb(35, 35, 35);
         border-bottom: 1px solid rgb(55, 55, 55, .3);
-        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .90) inset, 1px 4px 4px hsla(0, 0%, 0%, .90) inset;
+        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .100) inset, 1px 4px 4px hsla(0, 0%, 0%, .100) inset;
         padding-top: 9px !important;
         padding-left: 5px;
         padding-right: 5px;
@@ -125,7 +124,7 @@
         border-radius: 0px 0px 5px 5px;
     }
     .hmenubar li a.clicked {
-        color: var(--main-text-color)!important;
+        color: #FFF !important;
         font-weight: bold;
         background: #3a3b3c !important;
         border-radius: 0px 0px 5px 5px;
@@ -134,78 +133,59 @@
         text-align: center !important;
     }
     #brandLogo {
-        height: 154px!important;
-        width: 154px!important;
+        height: 154px !important;
+        width: 154px !important;
         margin: 22px auto 31px;
         background-image: url("chrome://branding/content/about-logo.png");
-        background-size: 154px auto!important;
-        background-position: center center!important;
+        background-size: 154px auto !important;
+        background-position: center center !important;
         background-repeat: no-repeat;
     }
-    #searchForm {
+	#searchIconAndTextContainer {
         width: 480px;
         display: -moz-box;
     }
-    #searchLogoContainer {
-        z-index: -2000;
-        display: -moz-box;
-        -moz-box-align: center;
-        padding-top: 2px;
-        -moz-padding-end: 8px;
-    }
-    #searchLogoContainer[hidden] {
-        display: none;
-    }
-    #searchEngineLogo {
-        display: inline-block;
-        height: 28px;
-        width: 70px;
-        min-width: 70px;
+    #searchIconAndTextContainer {
+		display: -moz-box;
+		height: 36px;
+		position: relative;
     }
     #searchIcon {
-        border: 1px solid transparent !important;
-        -moz-margin-end: 5px;
-        height: 38px;
-        width: 38px;
-        background-image: url("chrome://classic_theme_restorer/content/images/abouthome/magnifier_dark.png") !important;
-        background-color: transparent;
-        background-size: 26px;
-        background-position: center center;
-        background-repeat: no-repeat;
+		border: 1px transparent;
+		padding: 0;
+		margin: 0;
+		width: 36px;
+		height: 36px;
+        background: url("chrome://classic_theme_restorer/content/images/abouthome/magnifier_light.png") center center no-repeat !important;
+		position: absolute;
     }
-    #searchIcon[active],
-    #searchIcon:hover {
-        background-color: #222 !important;
-        border: 1px solid #111 !important;
-        border-radius: 2.5px;
-    }
-    html[searchUIConfiguration="oldsearchui"] #searchIcon {
-        display: none;
-    }
-    html:not([searchUIConfiguration="oldsearchui"]) #searchText::-moz-placeholder {
-        color: transparent;
-    }
-    html:not([searchUIConfiguration="oldsearchui"]) #searchLogoContainer {
-        display: none;
-    }
+
     #searchText {
+		margin-left: 0;
         -moz-box-flex: 1;
-        padding: 6px 8px;
+        padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 34px;
+		padding-right: 8px;
         color: var(--main-text-color)!important;
-        background-color: #333 !important;
-        background-image: -moz-linear-gradient(rgb(37, 38, 40), rgb(37, 38, 40) 95%, rgb(25, 25, 25)) !important;
+        background-color: #aeaeae !important;
+        background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png), -moz-linear-gradient(rgb(237, 238, 240), rgb(237, 238, 240) 95%, rgb(225, 225, 225)) !important;
         box-shadow: 1px 3px 3px hsla(0, 0%, 0%, .100) inset, 1px 3px 3px hsla(0, 0%, 0%, .100) inset !important;
-        border: 1px solid #111 !important;
-        /* border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);*/
-        /*box-shadow: 0 1px 0 hsla(210,65%,9%,.02) inset,
-				  0 0 2px hsla(210,65%,9%,.1) inset,
-				  0 1px 0 hsla(0,0%,100%,.2);*/
-        
-        border-radius: 2.5px 0 0 2.5px;
+        border: 1px solid #aeaeae !important;
+        border-radius: 2px 0 0 2px;
     }
     #searchText:-moz-dir(rtl) {
         border-radius: 0 2.5px 2.5px 0;
     }
+	#searchText[aria-expanded="true"] {
+	  border-radius: 2px 0 0 0;
+	}
+
+	#searchText[aria-expanded="true"]:-moz-dir(rtl) {
+	  border-radius: 0 2px 0 0;
+	}
+
+	#searchText[keepfocus],
     #searchSubmit,
     #searchText:focus,
     #searchText[autofocus] {
@@ -214,38 +194,40 @@
     #searchSubmit {
         -moz-margin-start: -1px;
         color: var(--main-text-color)!important;
-        background: linear-gradient(hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, .1)) padding-box !important;
-        padding: 0 9px;
+        background: url("chrome://classic_theme_restorer/content/images/abouthome/search-arrow-go.svg#search-arrow-go") center center no-repeat, linear-gradient(hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, .1)) padding-box !important;
+        padding: 0px;
         border: 1px solid !important;
-        background-color: #333 !important;
-        border-color: hsla(210, 54%, 20%, .15) hsla(210, 54%, 20%, .17) hsla(210, 54%, 20%, .2) !important;
-        background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png), -moz-linear-gradient(rgb(37, 38, 40) 25%, rgb(37, 38, 40) 50%, rgb(25, 25, 25) 75%) !important;
-        border: 1px solid #111 !important;
-        border-radius: 0 2.5px 2.5px 0;
-        box-shadow: 0pt 1px 0pt rgba(55, 55, 55, 0.1) !important;
+        background-color: #aeaeae !important;
+        border-color: hsla(210, 54%, 20%, .15) hsla(210, 54%, 20%, .17) hsla(210, 54%, 20%, .2);
+        border: 1px solid #aeaeae !important;
+        border-radius: 0 2px 2px 0;
+        box-shadow: 0pt 1px 0pt rgba(255, 255, 255, 0.1) !important;
         cursor: pointer;
         transition-property: background-color, border-color, box-shadow;
         transition-duration: 150ms;
+		width: 50px;
     }
     #searchSubmit:-moz-dir(rtl) {
-        border-radius: 2.5px 0 0 2.5px;
+        border-radius: 2px 0 0 2px;
     }
     #searchText:focus + #searchSubmit,
+	#searchText[keepfocus] + #searchSubmit,
     #searchText + #searchSubmit:hover,
     #searchText[autofocus] + #searchSubmit {
-        /*border-color: -moz-linear-gradient(#4cb1ff, #1793e5) !important;*/
+        /* border-color: -moz-linear-gradient(#4cb1ff, #1793e5) !important;*/
         
-        background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png) !important;
-        color: var(--main-text-color)!important;
+        background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png);
+        color: var(--main-highlight-color)!important;
     }
     #searchText:focus + #searchSubmit,
+	#searchText[keepfocus] + #searchSubmit,
     #searchText[autofocus] + #searchSubmit {
-        background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png), -moz-linear-gradient(#333, #222) !important;
+		background: url("chrome://classic_theme_restorer/content/images/abouthome/search-arrow-go.svg#search-arrow-go") center center no-repeat, -moz-linear-gradient(#efefef, #dedede)!important;
         border: 1px solid !important;
         border-color: var(--main-highlight-color)!important;
     }
     #searchText + #searchSubmit:hover {
-        background-image: -moz-linear-gradient(rgb(37, 38, 40) 15%, rgb(37, 38, 40) 40%, rgb(25, 25, 25) 65%) !important;
+	    background: url("chrome://classic_theme_restorer/content/images/abouthome/search-arrow-go.svg#search-arrow-go") center center no-repeat, -moz-linear-gradient(rgb(237, 238, 240) 15%, rgb(237, 238, 240) 40%, rgb(225, 225, 225) 65%)!important;
         color: var(--main-highlight-color)!important;
         -moz-transition: .1s ease-in;
     }
@@ -253,9 +235,9 @@
         color: var(--main-highlight-color)!important;
         background-image: url(chrome://classic_theme_restorer/content/images/abouthome/noise.png);
         text-shadow: 0px 0px 3px var(--main-highlight-color)!important;
-        box-shadow: 0pt 5px 0pt rgba(34, 35, 37, 0.1) inset, 0 0 6.5px rgba(0, 0, 0, .4) inset, 0 0 5px rgba(0, 0, 0, .4) inset;
+        box-shadow: 0pt 5px 0pt rgba(234, 235, 237, 0.1) inset, 0 0 6.5px rgba(0, 0, 0, .4) inset, 0 0 5px rgba(0, 0, 0, .4) inset;
         -moz-transition: .1s ease-in;
-        border: 1px solid #111;
+        border: 1px solid #aaaaaa;
     }
     /* Add snippets support for users who use cyberCTR in firefox */
     
@@ -264,9 +246,9 @@
     #rightsSnippet {
         display: block;
         min-height: 38px;
-        background: 30px center no-repeat;
+        background: 0px center no-repeat;
         padding: 6px 0;
-        -moz-padding-start: 79px;
+        -moz-padding-start: 49px;
     }
     #rightsSnippet[hidden] {
         display: none;
@@ -274,7 +256,7 @@
     #defaultSnippet1:-moz-dir(rtl),
     #defaultSnippet2:-moz-dir(rtl),
     #rightsSnippet:-moz-dir(rtl) {
-        background-position: right 30px center;
+        background-position: right 0px center;
     }
     #defaultSnippet1 {
         background-image: url("chrome://browser/content/abouthome/snippet1.png");
@@ -286,7 +268,7 @@
         display: inline-block;
         text-align: start;
         margin: 12px 0;
-        color: var(--main-text-color)!important;
+        color: #333 !important;
         font-size: 75%;
         /* 12px is the computed font size, 15px the computed line height of the snippets
 		 with Segoe UI on a default Windows 7 setup. The 15/12 multiplier approximately
@@ -300,17 +282,17 @@
         color: var(--main-highlight-color)!important;
     }
     #snippets a:hover {
-        color: var(--main-text-color)!important;
+        color: #3c3c3c!important;
     }
     #launcher {
         display: -moz-box;
         -moz-box-align: center;
         -moz-box-pack: center;
         width: 100%;
-        background-color: rgb(45, 45, 47) !important;
-        background-image: linear-gradient(rgb(47, 48, 50), rgb(37, 38, 40) 85%, rgb(15, 15, 15)) !important;
-        border-top: 1px solid rgb(19, 19, 19) !important;
-        box-shadow: 0px 1px 0px #333 inset !important;
+        background-color: rgb(245, 245, 247) !important;
+        background-image: linear-gradient(rgb(247, 248, 250), rgb(237, 238, 240) 85%, rgb(215, 215, 215)) !important;
+        border-top: 1px solid rgb(199, 199, 199) !important;
+        box-shadow: 0px 1px 0px #bebebe inset !important;
     }
     #launcher:not([session]),
     body[narrow] #launcher[session] {
@@ -332,10 +314,9 @@
         vertical-align: top;
         white-space: normal;
         background: transparent padding-box;
-        border: 1px solid #1a1a1a !important;
-        border-radius: 12px 12px 12px 12px;
+        border: 1px solid #cecece !important;
+        border-radius: 12px;
         color: var(--main-text-color)!important;
-        text-shadow: -1px -1px #111 !important;
         font-size: 75%;
         cursor: pointer;
         transition-property: background-color, border-color, box-shadow;
@@ -346,20 +327,18 @@
     }
     .launchButton:hover {
         color: var(--main-highlight-color)!important;
-        background-color: rgb(35, 35, 33) !important;
-        background-image: linear-gradient(rgb(16, 16, 18), rgb(37, 37, 39) 60%, rgb(37, 38, 40)) !important;
-        border-bottom: 1px solid rgb(55, 55, 55, .3) !important;
-        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .99) inset, 1px 4px 4px hsla(0, 0%, 0%, .99) inset !important;
-        border-radius: 12px 12px 12px 12px;
+        background-color: rgb(235, 235, 233) !important;
+        background-image: linear-gradient(rgb(206, 206, 208), rgb(237, 237, 239) 60%, rgb(237, 238, 240)) !important;
+        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .100) inset, 1px 4px 4px hsla(0, 0%, 0%, .100) inset !important;
+        border: 1px solid #bebebe !important;
         -moz-transition: .1s ease-in;
     }
     .launchButton:hover:active {
         color: var(--main-text-color)!important;
-        background-color: rgb(15, 15, 13) !important;
-        background-image: linear-gradient(rgb(6, 6, 8), rgb(17, 17, 19) 30%, rgb(17, 18, 10)) !important;
-        box-shadow: 1px 4px 4px hsla(0, 0%, 0%, .95) inset, 1px 4px 4px hsla(0, 0%, 0%, .95) inset !important;
-        border-bottom: 1px solid rgb(55, 55, 55, .3) !important;
-        border-radius: 12px 12px 12px 12px;
+        background-color: rgb(215, 215, 213) !important;
+        background-image: linear-gradient(rgb(206, 206, 208), rgb(217, 217, 219) 30%, rgb(217, 218, 210)) !important;
+        box-shadow: 1px 4px 4px hsla(0, 90%, 90%, .100) inset, 1px 4px 4px hsla(0, 0%, 0%, .99) inset !important;
+        border: 1px solid #bebebe !important;
         -moz-transition: .1s ease-out;
     }
     .launchButton[hidden],
@@ -399,28 +378,28 @@
         /* remove extra vertical space due to non-zero font-size */
     }
     #downloads::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/downloads_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/downloads_light.png") !important;
     }
     #bookmarks::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/bookmarks_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/bookmarks_light.png") !important;
     }
     #history::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/history_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/history_light.png") !important;
     }
     #apps::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/apps_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/apps_light.png") !important;
     }
     #addons::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/addons_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/addons_light.png") !important;
     }
     #sync::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/sync_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/sync_light.png") !important;
     }
     #settings::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/settings_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/settings_light.png") !important;
     }
     #restorePreviousSession::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/restore-large_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/restore-large_light.png") !important;
         height: 48px;
         width: 48px;
         display: inline-block;
@@ -434,11 +413,11 @@
         transform: scaleX(-1);
     }
     body[narrow] #restorePreviousSession::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/restore_dark.png")!important;
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/restore_light.png") !important;
         height: 32px;
         width: 32px;
     }
-    #aboutMozilla {
+    #aboutCyberfox {
         display: block;
         position: relative;
         /* pin wordmark to edge of document, not of viewport */
@@ -447,13 +426,12 @@
         opacity: .5;
         transition: opacity 150ms;
     }
-    #aboutMozilla:hover {
+    #aboutCyberfox:hover {
         opacity: 1;
     }
-    /* We don't use this in cyberfox but can in firefox*/
-    
-    #aboutMozilla::before {
-        content: url("chrome://classic_theme_restorer/content/images/abouthome/mozilla.png")!important;
+    #aboutCyberfox::before {
+        /*content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber.png");*/
+        
         display: block;
         position: absolute;
         top: 12px;
@@ -469,9 +447,6 @@
     @media not all and (max-resolution: 1dppx) {
         #brandLogo {
             background-image: url("chrome://branding/content/about-logo@2x.png");
-        }
-        #searchIcon {
-            background-image: url("chrome://classic_theme_restorer/content/images/abouthome/magnifier_dark@2px.png")!important;
         }
         #defaultSnippet1,
         #defaultSnippet2,
@@ -494,40 +469,38 @@
             transform: scale(.5) translateX(32px);
         }
         #downloads::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/downloads_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/downloads_light@2x.png") !important;
         }
         #bookmarks::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/bookmarks_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/bookmarks_light@2x.png") !important;
         }
         #history::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/history_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/history_light@2x.png") !important;
         }
         #apps::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/apps_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/apps_light@2x.png") !important;
         }
         #addons::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/addons_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/addons_light@2x.png") !important;
         }
         #sync::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/sync_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/sync_light@2x.png") !important;
         }
         #settings::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/settings_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/settings_light@2x.png") !important;
         }
         #restorePreviousSession::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/restore-large_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/restore-large_light@2x.png") !important;
         }
         body[narrow] #restorePreviousSession::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/restore_dark@2x.png")!important;
+            content: url("chrome://classic_theme_restorer/content/images/abouthome/restore_light@2x.png") !important;
         }
         #restorePreviousSession:-moz-dir(rtl)::before {
             transform: scale(-0.5, 0.5) translateX(24px);
             transform-origin: top center;
         }
-        /* We don't use this in cyberfox but can in firefox*/
-        
-        #aboutMozilla::before {
-            content: url("chrome://classic_theme_restorer/content/images/abouthome/mozilla@2x.png")!important;
+        #aboutCyberfox::before {
+            /*content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber@2x.png");*/
         }
     }
 }

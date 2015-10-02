@@ -3719,17 +3719,53 @@ classicthemerestorerjs.ctr = {
 		case "appbuttonc_orange_dark":	manageCSS("cctr/appbutton_orange_dark.css");		break;
 		case "appbuttonc_cyan":	manageCSS("cctr/appbutton_cyan.css");		break;
 		case "appbuttonc_red_dark":		manageCSS("cctr/appbutton_red_dark.css");			break;
-    case "appbuttonc_green_dark":	manageCSS("cctr/appbutton_green_dark.css");		break;
+		case "appbuttonc_green_dark":	manageCSS("cctr/appbutton_green_dark.css");		break;
 		case "appbuttonc_salmon":		manageCSS("cctr/appbutton_salmon.css");		break;
 
-		case "alt_newtabpalt": 		 manageCSS("cctr/alt_newtabpage_alt.css");		break;
+		case "alt_newtabpalt":
+			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
+				manageCSS("cctr/alt_newtabpage_alt42p.css");
+			}else{
+				manageCSS("cctr/alt_newtabpage_alt.css");
+			}				
+			break;
 		case "tree_style_fix": 		manageCSS("cctr/tree_style_fix.css");	break;
 		
-		case "abouthomedark": 							manageCSS("cctr/abouthomedark.css");	break;
-		case "abouthomedarkalt": 							manageCSS("cctr/abouthomedarkalt.css");	break;
-		case "abouthomelight": 							manageCSS("cctr/abouthomelight.css");	break;
-		case "abouthomelightalt": 							manageCSS("cctr/abouthomelightalt.css");	break;
-		case "abouthomesimplicity": 				    manageCSS("cctr/abouthomesimplicity.css");	break;	
+		case "abouthomedark":
+			if (classicthemerestorerjs.ctr.appversion >= 43)	{	
+				manageCSS("cctr/abouthomedark42p.css");	
+			}else{
+				manageCSS("cctr/abouthomedark.css");
+			}				
+		break;
+		case "abouthomedarkalt":
+			if (classicthemerestorerjs.ctr.appversion >= 42)	{
+				manageCSS("cctr/abouthomedarkalt42p.css");
+			}else{
+				manageCSS("cctr/abouthomedarkalt.css");
+			}				
+		break;
+		case "abouthomelight": 
+			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
+				manageCSS("cctr/abouthomelight42p.css");	
+			}else{
+				manageCSS("cctr/abouthomelight.css");	
+			}
+		break;
+		case "abouthomelightalt": 
+			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
+				manageCSS("cctr/abouthomelightalt42p.css");	
+			}else{
+				manageCSS("cctr/abouthomelightalt.css");
+			}
+		break;
+		case "abouthomesimplicity":
+			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
+				manageCSS("cctr/abouthomesimplicity42p.css");
+			}else{
+				manageCSS("cctr/abouthomesimplicity.css");
+			}				
+		break;	
 		case "abouthomesimplicityblue": 				manageCSS("cctr/abouthomesimplicityintel.css");	break;		
 		case "abouthomesimplicityred": 				manageCSS("cctr/abouthomesimplicityamd.css");	break;
 		case "abouthomesimplicitygreen": 			manageCSS("cctr/abouthomesimplicitylinux.css");	break;
