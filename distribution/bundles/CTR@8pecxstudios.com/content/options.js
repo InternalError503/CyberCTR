@@ -98,7 +98,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_notabbg').disabled = true;
 		document.getElementById('ctraddon_pw_noaddonbarbg').disabled = true;
 		
-		if (contexts.getBoolPref("classic")){}else{
+		if (this.contexts.getBoolPref("classic")){}else{
 			document.getElementById('ctraddon_pw_noconicons').disabled = true;
 		}
 		
