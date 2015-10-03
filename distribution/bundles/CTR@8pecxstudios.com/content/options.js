@@ -158,6 +158,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_altoptionsp').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tttitlebar').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_am_compact').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_am_compact2').style.visibility = 'collapse';
 	} else {
 		document.getElementById('ctraddon_pw_special_info2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_special_font').style.visibility = 'collapse';
@@ -361,6 +362,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_addonversion').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_alt_addonsm').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_am_compact').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_am_compact2').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_transpttbw10').style.visibility = 'collapse';
 	}
 	
@@ -385,6 +387,10 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion >= 42) {
 	  document.getElementById('ctraddon_pw_readermode2').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_oldprefsgb').style.visibility = 'collapse';
+	}
+	
+	if (this.appversion < 43) {
+	  document.getElementById('ctraddon_pw_ctroldsearch').style.visibility = 'collapse';
 	}
 
 	if (this.appversion >= 43) {
@@ -632,6 +638,7 @@ classicthemerestorerjso.ctr = {
 	this.currentTabAppearance(this.prefs.getCharPref("tabs"));
 	this.ctrpwTranspTbW10(this.prefs.getBoolPref("transpttbw10"));
 	this.ctrpwNavBarPadding(this.prefs.getBoolPref("navbarpad"));
+	this.ctrpwCompactAddonList(this.prefs.getBoolPref("am_compact"));
 	
 	var closetab_value = this.prefs.getCharPref("closetab");
   
@@ -933,6 +940,19 @@ classicthemerestorerjso.ctr = {
 	
     document.getElementById('ctraddon_pw_navbarpad_lr').disabled = which;
 	document.getElementById('ctraddon_pw_navbarpad_lr').style.visibility = itemvis;
+  },
+  
+  ctrpwCompactAddonList: function(which) {
+	var itemvis = 'collapse';
+	
+    if(which==true) {
+	  which=false; itemvis = 'visible';
+	} else {
+	  which=true; itemvis = 'collapse';
+	}
+	
+    document.getElementById('ctraddon_pw_am_compact2').disabled = which;
+	document.getElementById('ctraddon_pw_am_compact2').style.visibility = itemvis;
   },
  
   altTabsToolbarBgExtra: function(which) {

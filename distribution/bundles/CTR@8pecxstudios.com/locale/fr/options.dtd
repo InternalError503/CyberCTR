@@ -142,11 +142,13 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page 'Nouvel onglet' (about:newtab) : apparence alternative">
+<!ENTITY Ctr_ctroldsearch	"Old search (experimental)">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » de la page des modules complémentaires : autre aspect">
 <!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
 <!ENTITY Ctr_am_nowarning	"Add-on managers add-on lists: hide warnings">
 <!ENTITY Ctr_am_compact		"Add-on lists: compact view">
+<!ENTITY Ctr_am_compact2	"Compact view +">
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
 <!ENTITY Ctr_xpinstallui	"Add-on manager: old add-on install window (about:config preference)">
 <!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
