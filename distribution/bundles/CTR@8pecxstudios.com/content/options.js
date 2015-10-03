@@ -10,7 +10,6 @@ var {AddonManager} = Cu.import("resource://gre/modules/AddonManager.jsm", {});
 
 //Import services use one service for preferences.
 var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
-var  contexts = Services.prefs.getBranch("browser.context.");
 
 classicthemerestorerjso.ctr = {
 
@@ -20,6 +19,7 @@ classicthemerestorerjso.ctr = {
   oswindows:		Services.appinfo.OS=="WINNT",
   needsRestart: 	false,
   tmp_tu_active:	false,
+  contexts: Services.prefs.getBranch("browser.context."),
   // Exclude all preferences we don't want to sync, export or import.
   blacklist: [
 	"extensions.classicthemerestorer.pref_actindx",
@@ -141,7 +141,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_nobookbarbg').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_noaddonbarbg').style.visibility = 'collapse';
 
-		if (contexts.getBoolPref("classic")){}else{
+		if (this.contexts.getBoolPref("classic")){}else{
 			document.getElementById('ctraddon_pw_noconicons').style.visibility = 'collapse';
 		}
 
@@ -659,7 +659,7 @@ classicthemerestorerjso.ctr = {
 
 	this.onCtrPanelSelect();
 
-		if (contexts.getBoolPref("classic")){
+		if (this.contexts.getBoolPref("classic")){
 			document.getElementById('ctraddon_pw_noconicons').disabled = true;
 		}else{
 			document.getElementById('ctraddon_pw_noconicons').disabled = false;
@@ -1226,7 +1226,7 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setBoolPref("faviconurl",true);
 	this.prefs.setBoolPref("bmanimation",true);
 	this.prefs.setBoolPref("pananimation",true);
-  if (contexts.getBoolPref("classic")){}else{
+	if (classicthemerestorerjso.ctr.contexts.getBoolPref("classic")){}else{
 		this.prefs.setBoolPref("noconicons",true);
 	}
 	this.prefs.setBoolPref("alt_newtabp",true);
