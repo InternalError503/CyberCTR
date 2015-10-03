@@ -126,6 +126,8 @@
 <!ENTITY Ctr_stoprel1		"Pomembno: gumb Ponovno naloži vstavite za gumb Ustavi!">
 <!ENTITY Ctr_panelmenucol	"Ploščasti meniji: nadomestna barva ozadja">
 <!ENTITY Ctr_hideprivmask	"Zasebno brskanje: skrij kazalnik maskiranja">
+<!ENTITY Ctr_navsmallicons	"Small icons">
+<!ENTITY Ctr_navlargeicons	"Large icons">
 <!ENTITY Ctr_nbisizedelay	"Zakasnitev izvajanja v ms (1000 ms = 1 sec)">
 <!ENTITY Ctr_findbar		"Položaj iskalne vrstice">
 <!ENTITY Ctr_findbar_def	"Spodaj (privzeto)">
@@ -141,13 +143,13 @@
 <!ENTITY Ctr_cpanelmenus	"Ploščasti meniji: strnjen pogled (zaznamki, zgodovina itd.)">
 <!ENTITY Ctr_hidezoomres	"Nadzorni gumbi za povečavo na orodni vrstici: skrij gumb za ponastavitev povečave">
 <!ENTITY Ctr_alt_newtabp	"Stran novega zavihka (about:newtab): nadomestni videz">
-<!ENTITY Ctr_ctroldsearch	"Old search (experimental)">
+<!ENTITY Ctr_ctroldsearch	"Staro iskanje (preskusno)">
 <!ENTITY Ctr_addonmanager	"Upravitelj dodatkov">
 <!ENTITY Ctr_alt_addonsp	"Stran dodatkov 'Več': nadomestni videz">
 <!ENTITY Ctr_alt_addonsm	"Nadomestni videz">
 <!ENTITY Ctr_am_nowarning	"Seznami dodatkov Upravitelja dodatkov: skrij opozorila">
-<!ENTITY Ctr_am_compact		"Add-on lists: compact view">
-<!ENTITY Ctr_am_compact2	"Compact view +">
+<!ENTITY Ctr_am_compact		"Seznami dodatkov: strnjen pogled">
+<!ENTITY Ctr_am_compact2	"Strnjen pogled +">
 <!ENTITY Ctr_addonversion	"Stran dodatkov: prikaži različico dodatka">
 <!ENTITY Ctr_xpinstallui	"Staro okno za namestitev dodatkov (nastavitev about:config)">
 <!ENTITY Ctr_bmbutpanelm	"Gumb menija zaznamkov: videz ploščastega menija">
