@@ -400,7 +400,6 @@ classicthemerestorerjs.ctr = {
 	);
 	
 	ctrSettingsListener_forDevtheme2.register(true);
-	
 
 
 	var ctrSettingsListener = new PrefListener(
@@ -590,7 +589,7 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",true);
 			  }
 			}
-		  
+				  
 		  break;
 		  
 		  case "tabsontop":
@@ -1675,22 +1674,15 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("altmenubar",false);
 		  break;
 		  
-		  case "altmenubarpos":
-			if (branch.getBoolPref("altmenubarpos") && classicthemerestorerjs.ctr.osstring=="WINNT") {
-			  classicthemerestorerjs.ctr.loadUnloadCSS("altmenubarpos",true);
-			  branch.setBoolPref("altmenubarpos2",false);
+		  case "altmbarpos":
+			classicthemerestorerjs.ctr.loadUnloadCSS('altmbarpos1',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('altmbarpos2',false);
+		
+			if (branch.getCharPref("altmbarpos")!="altmbarpos0"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altmbarpos"),true);
 			}
-			else classicthemerestorerjs.ctr.loadUnloadCSS("altmenubarpos",false);
 		  break;
-		  
-		  case "altmenubarpos2":
-			if (branch.getBoolPref("altmenubarpos2") && classicthemerestorerjs.ctr.osstring=="WINNT") {
-			  classicthemerestorerjs.ctr.loadUnloadCSS("altmenubarpos2",true);
-			  branch.setBoolPref("altmenubarpos",false);
-			}
-			else classicthemerestorerjs.ctr.loadUnloadCSS("altmenubarpos2",false);
-		  break;
-		  
+	  
 		  case "menubarnofog":
 			if (branch.getBoolPref("menubarnofog") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("menubarnofog",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("menubarnofog",false);
@@ -2989,14 +2981,9 @@ classicthemerestorerjs.ctr = {
 	
 	if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("padlockex")){
 	  classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra",true);
-	  if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("emptyfavicon")==false
-		&& Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("emptyfavicon2")==false)
-		  classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra2",true);
-	  else classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra2",false);
 	}
 	else {
 	  classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra",false);
-	  classicthemerestorerjs.ctr.loadUnloadCSS("padlock_extra2",false);
 	}
   
   },
@@ -3303,7 +3290,7 @@ classicthemerestorerjs.ctr = {
 	}
   
   },
-  
+ 
   /* enable/disable css sheets*/
   loadUnloadCSS: function(which,enable) {
 	
@@ -3657,8 +3644,8 @@ classicthemerestorerjs.ctr = {
 		case "panelmenucol2": 		manageCSS("panelmenucolor2.css");		break;
 
 		case "altmenubar": 			manageCSS("menubar.css");				break;
-		case "altmenubarpos": 		manageCSS("menubar_altpos.css");		break;
-		case "altmenubarpos2": 		manageCSS("menubar_altpos2.css");		break;
+		case "altmbarpos1": 		manageCSS("menubar_altpos.css");		break;
+		case "altmbarpos2": 		manageCSS("menubar_altpos2.css");		break;
 		case "menubarnofog": 		manageCSS("menubar_nofog.css");			break;
 		case "menubarfs": 			manageCSS("menubar_infullscreen.css");	break;
 		case "noaddonbarbg": 		manageCSS("noaddonbarbg.css");			break;
@@ -3728,7 +3715,6 @@ classicthemerestorerjs.ctr = {
 		case "padlock_classic": 	manageCSS("padlock_classic.css");		break;
 		case "padlock_modern":		manageCSS("padlock_modern.css");		break;
 		case "padlock_extra":		manageCSS("padlock_extra.css");			break;
-		case "padlock_extra2":		manageCSS("padlock_extra2.css");		break;
 		case "padlock2_classic": 	manageCSS("padlock2_classic.css");		break;
 		case "padlock2_modern":		manageCSS("padlock2_modern.css");		break;
 		case "padlock2_none":		manageCSS("padlock2_none.css");			break;

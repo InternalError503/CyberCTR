@@ -245,7 +245,8 @@
 <!ENTITY Ctr_alttabstb2		"В развернутом режиме (вкладки сверху)">
 
 <!ENTITY Ctr_altmenubar		"Добавить цвет фона в строку заголовка операционной системы">
-<!ENTITY Ctr_altmenubarpos	"Изменить расположение (ниже строки заголовка &brandShortName;)">
+<!ENTITY Ctr_altmenubarpos	"Изменить расположение">
+<!ENTITY Ctr_altmenubarpos2	"Ниже строки заголовка &brandShortName;">
 <!ENTITY Ctr_menubarnofog	"Удалить туман из фона меню (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Цвета Blue Aero для основных панелей и вкладок">
