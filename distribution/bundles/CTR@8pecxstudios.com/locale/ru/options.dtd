@@ -416,5 +416,5 @@
 <!ENTITY movableurlbar.warning1 "Перед отключением необходимо вернуть адресную строку на место.">
 <!ENTITY movableurlbar.warning2 "Используйте эту функцию осторожно, на свой страх и риск.">
 
-<!ENTITY Ctr_tabthrobber_usecust.label "Use custom tab throbber">
-<!ENTITY Ctr_tabthrobber_custurlph.label "Throbber image url|path">
+<!ENTITY Ctr_tabthrobber_usecust.label "Использовать свой индикатор загрузки вкладки">
+<!ENTITY Ctr_tabthrobber_custurlph.label "Ссылка или путь к файлу с изображением индикатора загрузки вкладки">
