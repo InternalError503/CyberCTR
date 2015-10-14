@@ -80,10 +80,4 @@
 		}
 	  }
 	}
-}/*
-@-moz-document url(chrome://browser/content/aboutDialog.xul) {
-	/*Ft DeepDark#aboutDialog[currenttheme^="ftdeepdark"] #aboutDialogContainer */
-	#aboutDialog > #aboutDialogContainer > #bottomBox{
-		background-color:transparent!important;
-	}
-}*/
+}
