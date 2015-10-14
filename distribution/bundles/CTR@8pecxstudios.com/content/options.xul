@@ -295,7 +295,9 @@
 	<preference id="ctraddon_cmovableurlbar"	name="extensions.classicthemerestorer.movableurlbar"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctaboutnewtabcustombg"	name="extensions.classicthemerestorer.aboutnewtabcustombg"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg"	name="extensions.classicthemerestorer.aboutnewtabcustomurl"	type="string"	instantApply="true"/>	
-	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>
+	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_tabthrobber_usecust"	name="extensions.classicthemerestorer.tabthrobberusecust"	type="bool"		instantApply="true"/>
+	<preference id="ctraddon_tabthrobber_cust"	name="extensions.classicthemerestorer.tabthrobbercusturl" 	type="string"	instantApply="true"/>		
  <!--- CyberCTR customization settings -->
 
 	</preferences>
@@ -380,6 +382,15 @@
  <!--- CyberCTR customization settings -->			
 		</radiogroup>
  <!--- CyberCTR customization settings -->
+ 		<checkbox label="&Ctr_tabthrobber_usecust.label;"	preference="ctraddon_tabthrobber_usecust" id="ctraddon_tabthrobber_usecustcb"/>			
+		<hbox>
+		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_tabthrobber_custlb"/>
+		  <textbox id="ctraddon_tabthrobber_cust_urlbox" 
+						  preference="ctraddon_tabthrobber_cust" 
+						  size="auto" 
+						  flex="1" 
+						  placeholder="&Ctr_tabthrobber_custurlph.label;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_tabthrobber_cust_urlbox', 'tabthrobbercusturl');"/><button id="ctraddon_tabthrobber_cust_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_tabthrobber_cust_urlbox', 'tabthrobbercusturl');"/>
+		</hbox>		
 		<hbox align="center">
 		  <checkbox label="&Ctr_custtabfontsize.label;"	preference="ctraddon_custtabfontsize" id="ctraddon_custtabfontsizel"/>
 		  <textbox size="2" maxlength="2" preference="ctraddon_ctabfontsize" type="number" min="2" max="30" id="ctraddon_ctabfontsizep"/>
@@ -929,7 +940,7 @@
 						  preference="ctraddon_ctabouthome_bg" 
 						  size="auto" 
 						  flex="1" 
-						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectBG('abh');"/><button id="custom_bg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectBG('abh');"/>
+						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_ctabouthome_bg_urlbox', 'abouthomecustomurl');"/><button id="custom_bg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_ctabouthome_bg_urlbox', 'abouthomecustomurl');"/>
 			</hbox>
 			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>
 			<checkbox label="&ctr_abouthome.custombase;" preference="ctraddon_ctabouthomecustombase" id="ctraddon_ctabouthomecustbsck"/>			
@@ -959,7 +970,7 @@
 						  preference="ctraddon_ctaboutnewtab_bg" 
 						  size="auto" 
 						  flex="1" 
-						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectBG('ntp');"/><button id="custom_ntpbg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectBG('ntp');"/>
+						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_ctnewtab_bg_urlbox', 'aboutnewtabcustomurl');"/><button id="custom_ntpbg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_ctnewtab_bg_urlbox', 'aboutnewtabcustomurl')"/>
 			</hbox>
 		<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctaboutnewtab_bg_stretch" id="ctraddon_ctaboutnewtab_custbgstretch"/>
 		<hbox>

@@ -639,6 +639,14 @@ classicthemerestorerjso.ctr = {
 					branch.setCharPref("aboutnewtabcustomurl", document.getElementById('ctraddon_ctnewtab_bg_urlbox').value.trim().replace(/ /g, "%20").replace(/\\/g,"/"));
 				} catch (e){ }
 			break;
+			
+			case "tabthrobbercusturl":
+
+				// Replace whiteSpace and backslash in custom background urls
+				try{
+					branch.setCharPref("tabthrobbercusturl", document.getElementById('ctraddon_tabthrobber_cust_urlbox').value.trim().replace(/ /g, "%20").replace(/\\/g,"/"));
+				} catch (e){ }
+			break;
 	
 		}
 	  }
@@ -1737,7 +1745,7 @@ classicthemerestorerjso.ctr = {
             gClipboardHelper.copyString(Services.prefs.getCharPref("extensions.classicthemerestorer.hidexulfilter"));
 	},
 
-	selectBG: function(aPlace) {
+	selectImage: function(aID, aPref) {
 		try{
 		   const nsIFilePicker = Ci.nsIFilePicker;
 		   var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
@@ -1750,14 +1758,9 @@ classicthemerestorerjso.ctr = {
 		   if (fp.show() != nsIFilePicker.returnCancel) {
 			   IOpath = fp.file.path;
 			   stream.close();
-			   if (IOpath === ""){return null;}
-			if (aPlace === "abh"){   
-			  document.getElementById('ctraddon_ctabouthome_bg_urlbox').value = "file:" + IOpath ;
-			  Services.prefs.setCharPref("extensions.classicthemerestorer.abouthomecustomurl", "file:" + IOpath);
-			}else if (aPlace === "ntp"){
-			  document.getElementById('ctraddon_ctnewtab_bg_urlbox').value = "file:" + IOpath ;
-			  Services.prefs.setCharPref("extensions.classicthemerestorer.aboutnewtabcustomurl", "file:" + IOpath);
-			}			
+			  if (IOpath === ""){return null;}
+			  document.getElementById(aID).value = "file:" + IOpath ;
+			  Services.prefs.setCharPref('extensions.classicthemerestorer.' + aPref, "file:" + IOpath);		
 			  return true;
 		   }
 		   return null;

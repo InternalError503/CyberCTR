@@ -250,6 +250,10 @@ pref("extensions.classicthemerestorer.cappbuttxtc",'#efefef');
 pref("extensions.classicthemerestorer.cappbutcpercent", 75);
 pref("extensions.classicthemerestorer.cappbutnotxtsh", false);
 
+//Custom tab throbber_default
+pref("extensions.classicthemerestorer.tabthrobberusecust", false);
+pref("extensions.classicthemerestorer.tabthrobbercusturl", "");
+
 //Custom about:newtab style
 pref("extensions.classicthemerestorer.alt_newtabpalt",false);
 pref("extensions.classicthemerestorer.aboutnewtabcustombg", false);

@@ -77,6 +77,7 @@ classicthemerestorerjs.ctr = {
   hideElements: sheetIO,
   aboutnewtab_bg: sheetIO,
   aboutnewtab_bg_strech: sheetIO,
+  custtabthorbber: sheetIO,
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -2112,6 +2113,12 @@ classicthemerestorerjs.ctr = {
 		   case "hidexulelements": case "hidexulfilter":
 			  	try{		  
 					classicthemerestorerjs.ctr.loadUnloadCSS("hideElements",branch.getBoolPref("hidexulelements"));	
+				} catch(e){}			
+		  break;
+
+		  case "tabthrobberusecust": case "tabthrobbercusturl":
+			  	try{		  			
+					classicthemerestorerjs.ctr.loadUnloadCSS("custtabthorbber",branch.getBoolPref("tabthrobberusecust"));	
 				} catch(e){}			
 		  break;		  
 		  
@@ -5506,6 +5513,26 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.aboutnewtab_bg_strech);
+			}
+
+		break;
+		
+		case "custtabthorbber":
+
+			removeOldSheet(this.custtabthorbber);
+			
+			if(enable==true && this.prefs.getBoolPref("tabthrobberusecust")){
+	
+				this.custtabthorbber=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
+					@-moz-document url(chrome://browser/content/browser.xul) {\
+						.tab-throbber[progress]{\
+							list-style-image: url('+ this.prefs.getCharPref("tabthrobbercusturl") +')!important;\
+						}\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.custtabthorbber);
 			}
 
 		break;

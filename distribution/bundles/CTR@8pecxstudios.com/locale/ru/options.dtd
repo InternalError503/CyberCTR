@@ -415,3 +415,6 @@
 <!ENTITY movableurlbar.warning0 "Внимание! Это высокоуровневая функция: если переместить адресную строку в панель меню или окно персонализации, а затем перезапустить браузер, возникнут серьезные неполадки в работе браузера.">
 <!ENTITY movableurlbar.warning1 "Перед отключением необходимо вернуть адресную строку на место.">
 <!ENTITY movableurlbar.warning2 "Используйте эту функцию осторожно, на свой страх и риск.">
+
+<!ENTITY Ctr_tabthrobber_usecust.label "Use custom tab throbber">
+<!ENTITY Ctr_tabthrobber_custurlph.label "Throbber image url|path">
