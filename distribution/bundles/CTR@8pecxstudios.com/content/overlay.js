@@ -1784,6 +1784,11 @@ classicthemerestorerjs.ctr = {
 		  
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_f39',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt1',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt2',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt3',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt4',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt5',false);			
 			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabthrobber"),branch.getCharPref("tabthrobber")!="throbber_default");
 		  break;
 		  
@@ -3542,6 +3547,12 @@ classicthemerestorerjs.ctr = {
 		case "rndadonssearch": 						manageCSS("cctr/rndadonssearch.css"); break;
 		case "rndadonssearch40plus": 						manageCSS("cctr/rndadonssearch40plus.css");	break;
 		case "nopocket": 						manageCSS("cctr/nopocket.css"); break;
+		
+		case "throbber_alt1": 		manageCSS("throbberalt_1.css");			break;
+		case "throbber_alt2": 		manageCSS("throbberalt_2.css");			break;
+		case "throbber_alt3": 		manageCSS("throbberalt_3.css");			break;
+		case "throbber_alt4": 		manageCSS("throbberalt_4.css");			break;
+		case "throbber_alt5": 		manageCSS("throbberalt_5.css");			break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		

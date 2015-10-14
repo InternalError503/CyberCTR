@@ -371,6 +371,13 @@
 			<radio value="throbber_alt"		label=""	id="ctraddon_pw_tabthrobber_alt"/>
 			<radio value="throbber_fx39"	label=""	id="ctraddon_pw_tabthrobber_f39"/>
 			<radio value="throbber_nav"		label=""	id="ctraddon_pw_tabthrobber_nav"/>
+ <!--- CyberCTR customization settings -->
+			<radio value="throbber_alt1"	label=""	id="ctraddon_pw_throbber_loading_1"/>
+			<radio value="throbber_alt2"	label=""	id="ctraddon_pw_throbber_loading_2"/>
+			<radio value="throbber_alt3"	label=""	id="ctraddon_pw_throbber_loading_3"/>
+			<radio value="throbber_alt4"	label=""	id="ctraddon_pw_throbber_loading_4"/>
+			<radio value="throbber_alt5"	label=""	id="ctraddon_pw_throbber_loading_5"/>
+ <!--- CyberCTR customization settings -->			
 		</radiogroup>
  <!--- CyberCTR customization settings -->
 		<hbox align="center">
