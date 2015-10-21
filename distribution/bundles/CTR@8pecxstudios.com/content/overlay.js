@@ -5809,43 +5809,43 @@ switch (appButtonState){
 		break;
 	
 		case "appbutton_v1": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}		
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_v1wt": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 
 		case "appbutton_v2wt2": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_v2": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_v2io": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 
 		case "appbutton_v2io2": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_pm": 
-			menutoolbarHasAttribute.setAttribute('autohide', false);		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
 			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
