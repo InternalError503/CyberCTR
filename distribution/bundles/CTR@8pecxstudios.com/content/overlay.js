@@ -5675,7 +5675,9 @@ classicthemerestorerjs.ctr = {
   openContentPrefsInWin: function() {
 	 
 	try{classicthemerestorerjs.ctr.ctrcontentprefswin.close();} catch(e){}
+	if (classicthemerestorerjs.ctr.fxdefaulttheme) {
 	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=640,height=480,resizable=no,scrollbars');
+	} else openPreferences();
 
   },
   
