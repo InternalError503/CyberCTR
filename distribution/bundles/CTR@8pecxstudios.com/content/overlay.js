@@ -5809,45 +5809,52 @@ switch (appButtonState){
 		break;
 	
 		case "appbutton_v1": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}		
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}		
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_v1wt": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 
 		case "appbutton_v2wt2": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_v2": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}				
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_v2io": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 
 		case "appbutton_v2io2": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 		
 		case "appbutton_pm": 
-			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);}			
+			if(classicthemerestorerjs.ctr.osstring!="Linux"){menutoolbarHasAttribute.setAttribute('autohide', false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
+			}			
 			Services.prefs.setCharPref("extensions.classicthemerestorer.tabs", "tabs_default");
-			classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",true);
 		break;
 
 }
