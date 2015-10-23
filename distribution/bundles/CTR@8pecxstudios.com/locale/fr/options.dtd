@@ -302,7 +302,7 @@
 <!ENTITY Ctr_fx38pocket		"&brandShortName; 38.0.5+ introduit le support natif de 'Pocket'. Si cette option est décochée, 'Pocket' est desactivé et son bouton retiré des barres d'outils.">
 <!ENTITY Ctr_fx38pocket2	"Note: Déplacer le bouton 'Pocket' vers la 'fenêtre de personnalisation' avant de desactiver cette option, permet également d'enlever 'Pocket' des marques pages et du menu de lecture.">
 <!ENTITY Ctr_e_searchui		"Apparence de recherche">
-<!ENTITY Ctr_e_loop			"Appels et conversations">
+<!ENTITY Ctr_e_loop			"Appel et conversation">
 <!ENTITY Ctr_e_deved		"Thème de l’édition de développement">
 <!ENTITY Ctr_e_prefsui		"Préférences dans un onglet">
 <!ENTITY Ctr_e_readermode	"Mode de lecture d’articles">
