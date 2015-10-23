@@ -3584,11 +3584,11 @@ classicthemerestorerjs.ctr = {
 		case "rndadonssearch40plus": 						manageCSS("cctr/rndadonssearch40plus.css");	break;
 		case "nopocket": 						manageCSS("cctr/nopocket.css"); break;
 		
-		case "throbber_alt1": 		manageCSS("throbberalt_1.css");			break;
-		case "throbber_alt2": 		manageCSS("throbberalt_2.css");			break;
-		case "throbber_alt3": 		manageCSS("throbberalt_3.css");			break;
-		case "throbber_alt4": 		manageCSS("throbberalt_4.css");			break;
-		case "throbber_alt5": 		manageCSS("throbberalt_5.css");			break;
+		case "throbber_alt1": 		manageCSS("cctr/throbberalt_1.css");			break;
+		case "throbber_alt2": 		manageCSS("cctr/throbberalt_2.css");			break;
+		case "throbber_alt3": 		manageCSS("cctr/throbberalt_3.css");			break;
+		case "throbber_alt4": 		manageCSS("cctr/throbberalt_4.css");			break;
+		case "throbber_alt5": 		manageCSS("cctr/throbberalt_5.css");			break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
