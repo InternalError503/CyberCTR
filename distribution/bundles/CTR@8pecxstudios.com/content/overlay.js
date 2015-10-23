@@ -1731,7 +1731,16 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "addonversion":
-			classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",branch.getBoolPref("addonversion") && classicthemerestorerjs.ctr.appversion >= 40);
+			if (branch.getBoolPref("addonversion") && classicthemerestorerjs.ctr.appversion >= 40) {
+			  if(classicthemerestorerjs.ctr.appversion < 42)
+				classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
+			  else if(classicthemerestorerjs.ctr.appversion >= 42)
+				classicthemerestorerjs.ctr.loadUnloadCSS("addonversion_fx42",true);
+			}
+			else { 
+			  classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("addonversion_fx42",false);
+			}
 		  break;
 
 		  case "bmbutpanelm":
@@ -3435,6 +3444,7 @@ classicthemerestorerjs.ctr = {
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
 		case "addonversion": 		manageCSS("addonversion.css");			break;
+		case "addonversion_fx42": 	manageCSS("addonversion_fx42.css");		break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbutnotext": 		manageCSS("bmbut_no_label.css");		break;
 		case "tbconmenu": 			manageCSS("tbconmenu.css");				break;
