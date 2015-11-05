@@ -1789,7 +1789,11 @@ classicthemerestorerjs.ctr = {
 		  case "menupopupscr":
 			classicthemerestorerjs.ctr.loadUnloadCSS("menupopupscr",branch.getBoolPref("menupopupscr"));
 		  break;
-		  
+
+		  case "ib_nohovcolor":
+			classicthemerestorerjs.ctr.loadUnloadCSS("ib_nohovcolor",branch.getBoolPref("ib_nohovcolor") && classicthemerestorerjs.ctr.fxdefaulttheme==true && classicthemerestorerjs.ctr.appversion >= 42);
+		  break;
+
 		  case "verifiedcolors":
 			classicthemerestorerjs.ctr.loadUnloadCSS("verifiedcolors",branch.getBoolPref("verifiedcolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
 		  break;
@@ -3463,13 +3467,13 @@ classicthemerestorerjs.ctr = {
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
 		case "addonversion": 		manageCSS("addonversion.css");			break;
-		case "addonversion_fx42": 	manageCSS("addonversion_fx42.css");		break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbutnotext": 		manageCSS("bmbut_no_label.css");		break;
 		case "tbconmenu": 			manageCSS("tbconmenu.css");				break;
 		case "noresizerxp": 		manageCSS("no_resizer_xp.css");			break;
 		case "pmhidelabels": 		manageCSS("panelmenu_nolabels.css");	break;
 		case "menupopupscr": 		manageCSS("menupopupscrollbar.css");	break;
+		case "ib_nohovcolor": 		manageCSS("ib_nohovcolor.css");			break;
 		case "verifiedcolors": 		manageCSS("verifiedcolors.css");		break;
 		case "hideprivmask": 		manageCSS("hideprivatemask.css");		break;
 		case "bfurlbarfix": 		manageCSS("bf_urlbarfix.css");			break;
@@ -5705,7 +5709,9 @@ classicthemerestorerjs.ctr = {
 	 
 	try{classicthemerestorerjs.ctr.ctrcontentprefswin.close();} catch(e){}
 	if (classicthemerestorerjs.ctr.fxdefaulttheme) {
-	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=640,height=480,resizable=no,scrollbars');
+	  var w = (screen.availWidth-640)/2;
+	  var h = (screen.availHeight-480)/2;
+	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=640,height=480,top='+h+',left='+w+',resizable=no,scrollbars');
 	} else openPreferences();
 
   },

@@ -116,8 +116,8 @@
 <!ENTITY Ctr_altoptionsw	"Odpri stran z možnostmi (about:preferences) v oknu">
 <!ENTITY Ctr_svgfilters		"Barve SVG za privzete ikone gumbov orodne vrstice">
 <!ENTITY Ctr_wincontrols	"Premakljive nadzorne tipke celozaslonskega okna">
-<!ENTITY Ctr_oldtoplevimg	"'Top level domain' images: classic appearance">
-<!ENTITY Ctr_altalertbox	"'Alert box': alternative appearance">
+<!ENTITY Ctr_oldtoplevimg	"Slike 'vrhnje domene': klasični videz">
+<!ENTITY Ctr_altalertbox	"'Okno opozorila': nadomestni videz">
 <!ENTITY Ctr_emptyfavicon2	"Nadomesti splošno zaznamko (prazno in pikčasto) z zaznamko lista">
 <!ENTITY Ctr_mstatusbar		"Premakljivo podokno stanja">
 <!ENTITY Ctr_mstatusbars4e	"Podokno stanja nadzira 'Status-4-Evar'">
@@ -208,7 +208,8 @@
 <!ENTITY Ctr_urlbardropm	"Premakni spustno puščico na konec naslovne vrstice">
 <!ENTITY Ctr_hideprbutton	"Skrij ikono obvestil ob blokiranju pojavnega okna">
 <!ENTITY Ctr_urlbar_ib		"Gumb identitete strani (polje indentitete)">
-<!ENTITY Ctr_verifiedcolors	"Zelena/modra barva gumba za preverjene spletne strani in varne povezave">
+<!ENTITY Ctr_ib_nohovcolor	"Do not show gray color when hovered">
+<!ENTITY Ctr_verifiedcolors	"Button colors for verified websites, secure and not secure connections">
 <!ENTITY Ctr_faviconurl		"Zaznamka: ikona trenutne spletne strani">
 <!ENTITY Ctr_padlock		"Ikona ključavnice za varne povezave">
 <!ENTITY Ctr_padlock_hid	"skrita">
