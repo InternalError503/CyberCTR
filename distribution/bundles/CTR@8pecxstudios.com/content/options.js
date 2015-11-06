@@ -160,6 +160,8 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_am_compact').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_am_compact2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_altoptionsw').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_ib_nohovcolor').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_altreaderico').style.visibility = 'collapse';
 	} else {
 		document.getElementById('ctraddon_pw_special_info2').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_special_font').style.visibility = 'collapse';
@@ -386,6 +388,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_am_compact').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_am_compact2').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_transpttbw10').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_altreaderico').style.visibility = 'collapse';
 	}
 	
 	if (this.appversion >= 40) {

@@ -1169,7 +1169,11 @@ classicthemerestorerjs.ctr = {
 		  case "urlbardropm":
 			classicthemerestorerjs.ctr.loadUnloadCSS("urlbardropm",branch.getBoolPref("urlbardropm"));
 		  break;
-		  
+
+		  case "altreaderico":
+			classicthemerestorerjs.ctr.loadUnloadCSS("altreaderico",branch.getBoolPref("altreaderico") && classicthemerestorerjs.ctr.fxdefaulttheme==true && classicthemerestorerjs.ctr.appversion >= 40);
+		  break;
+
 		  case "combrelstop":
 			classicthemerestorerjs.ctr.loadUnloadCSS("combrelstop",branch.getBoolPref("combrelstop"));
 		  break;
@@ -3425,6 +3429,7 @@ classicthemerestorerjs.ctr = {
 		case "hideurlgo": 			manageCSS("hideurlbargo.css"); 			break;
 		case "hideurlsrg": 			manageCSS("hideurlbarrelstopgo.css"); 	break;
 		case "urlbardropm": 		manageCSS("urlbar_dropm.css"); 			break;
+		case "altreaderico": 		manageCSS("alt_reader_icons.css");		break;
 		case "combrelstop":			manageCSS("combrelstop.css");			break;
 		case "panelmenucol": 		manageCSS("panelmenucolor.css");		break;
 		case "panelmenucol2": 		manageCSS("panelmenucolor2.css");		break;
