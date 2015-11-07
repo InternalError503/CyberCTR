@@ -278,7 +278,7 @@
 <!ENTITY Ctr_addonbarfs		"En mode plein écran">
 
 <!ENTITY Ctr_animation		"Animation">
-<!ENTITY Ctr_tabthrobber	"Image de chargement par défaut">
+<!ENTITY Ctr_tabthrobber	"Img. charg. défaut">
 <!ENTITY Ctr_bmanimation	"Animation lors de l’ajout de nouveaux marque-pages">
 <!ENTITY Ctr_pananimation	"Animation d’ouverture des panneaux">
 <!ENTITY Ctr_tabanimation	"Animation de l’ouverture et la fermeture des onglets (about:config)">
@@ -377,8 +377,8 @@
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurer la copie de sauvegarde">
 <!ENTITY ctr_resetCTRPrefFile.label	"Effacer la copie de sauvegarde">
 
-<!ENTITY ctr_appbuttoncusttextcolor		"Couleur de texte du bouton d’application.">
-<!ENTITY ctr_appbuttoncusttextshadow	"Enlever l’ombre du texte du bouton d’application.">
+<!ENTITY ctr_appbuttoncusttextcolor		"Couleur du texte du bouton :">
+<!ENTITY ctr_appbuttoncusttextshadow	"Enlever l’ombre du texte.">
 
 <!ENTITY ctr_toolbarsearchbar.description	"Barre d’outils de la barre de recherche">
 <!ENTITY ctr_toolbarsearchbarcustwidth.label	"Permettre de personnaliser la largeur maximale">
@@ -400,7 +400,7 @@
 <!ENTITY ctr_abouthome.snippets "Aucun extrait sur la page about:home">
 <!ENTITY ctr_abouthome.custombg "Personnaliser l’image d’arrière-plan">
 <!ENTITY ctr_abouthome.custombgbrowse "Naviguer">
-<!ENTITY ctr_abouthome.custombgurl "Saisir l’adresse ou le chemin ">
+<!ENTITY ctr_abouthome.custombgurl "Saisir...">
 <!ENTITY ctr_abouthome.custombgurlph "Adresse de l’image ou chemin du fichier d’image">
 <!ENTITY ctr_abouthome.customhighlight "Utiliser une couleur de surlignement personnalisée">
 <!ENTITY ctr_abouthome.customhighlightcol "Définir cette couleur">
