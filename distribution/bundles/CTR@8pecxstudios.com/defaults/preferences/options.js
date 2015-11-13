@@ -302,7 +302,7 @@ pref("extensions.classicthemerestorer.hidexulelements", false);
 pref("extensions.classicthemerestorer.hidexulfilter", "");
 
 //CyberCTR version
-pref("extensions.classicthemerestorer.version", "1.4.3");
+pref("extensions.classicthemerestorer.version", "1.4.4");
 
 //CyberCTR Pre-set Configuration
 pref("extensions.classicthemerestorer.ctrpref.firstrun", true);
