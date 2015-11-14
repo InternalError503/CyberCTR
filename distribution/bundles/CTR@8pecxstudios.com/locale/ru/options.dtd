@@ -112,6 +112,7 @@
 <!ENTITY Ctr_hide_bf_popup	"Не показывать меню истории при клике мышью">
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"Заменить значки в контекстном меню страницы метками (назад, вперёд, остановить, обновить, страница закладок)">
+<!ENTITY Ctr_altoptionsd	"Страница «Настройки» (about:preferences): default appearance">
 <!ENTITY Ctr_altoptionsp	"Альтернативный вид страницы настроек">
 <!ENTITY Ctr_altoptionsw	"Открывать страницу настроек (about:preferences) в окне">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">

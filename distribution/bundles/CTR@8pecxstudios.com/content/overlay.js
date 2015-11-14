@@ -925,19 +925,17 @@ classicthemerestorerjs.ctr = {
 		  case "noconicons":
 			classicthemerestorerjs.ctr.loadUnloadCSS("noconicons",branch.getBoolPref("noconicons") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
 		  break;
-
-		  case "altoptionsp":
-			classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsp",branch.getBoolPref("altoptionsp") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
-		  break;
 		  
-		  case "altoptionsw":
-			if (branch.getBoolPref("altoptionsw") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
-			  classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsw",true);
-			}
-			else {
-			  classicthemerestorerjs.ctr.loadUnloadCSS("altoptionsw",false);
+		  case "altoptions":
+			  classicthemerestorerjs.ctr.loadUnloadCSS("options_alt",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("options_win",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("options_win_alt",false);
 			  classicthemerestorerjs.ctr.closeContentPrefsInWin();
+		
+			if (branch.getCharPref("altoptions")!="options_default" && classicthemerestorerjs.ctr.fxdefaulttheme==true){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altoptions"),true);
 			}
+
 		  break;
 
 		  case "svgfilters":
@@ -1320,6 +1318,7 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_hov",branch.getBoolPref("ntabcolor_hov"));
 		  break;
 		  
+
 		  case "tabtextc_def":
 			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_def",branch.getBoolPref("tabtextc_def"));
 		  break;
@@ -3410,8 +3409,9 @@ classicthemerestorerjs.ctr = {
 		case "backforward":			manageCSS("back-forward.css");			break;
 		case "nbcompact":			manageCSS("navbar_compact.css");		break;
 		case "noconicons": 			manageCSS("nocontexticons.css");		break;
-		case "altoptionsp": 		manageCSS("alt_optionspage.css");		break;
-		case "altoptionsw": 		manageCSS("alt_optionswindow.css");		break;
+		case "options_alt": 		manageCSS("alt_optionspage.css");		break;
+		case "options_win": 		manageCSS("alt_optionswindow.css");		break;
+		case "options_win_alt": 	manageCSS("alt_optionswindow2.css");	break;
 		case "svgfilters": 			manageCSS("svgfilters.css");			break;
 		case "iat_notf_vt": 		manageCSS("mode_iat_no_vt.css");		break;
 		case "to_notf_vt": 			manageCSS("mode_to_no_vt.css");			break;
@@ -3624,7 +3624,7 @@ classicthemerestorerjs.ctr = {
 				
 				var aero_color_optionsp = '';
 				
-				if (this.prefs.getBoolPref("altoptionsp") || this.prefs.getBoolPref("altoptionsw")) {
+				if (this.prefs.getCharPref("altoptions")=='options_alt' || this.prefs.getCharPref("altoptions")=='options_win') {
 					aero_color_optionsp = '\
 					  @-moz-document url(about:preferences),url-prefix(about:preferences){\
 						page, #dialogBox .groupbox-title {\
@@ -5709,14 +5709,23 @@ classicthemerestorerjs.ctr = {
 	  openLinkIn(document.getElementById('placesContext').triggerNode._placesNode.uri, 'window', {private: true});
   },
   
-  // 
+  // open 'about:preferences' in a new small window
   openContentPrefsInWin: function() {
 	 
 	try{classicthemerestorerjs.ctr.ctrcontentprefswin.close();} catch(e){}
 	if (classicthemerestorerjs.ctr.fxdefaulttheme) {
-	  var w = (screen.availWidth-640)/2;
-	  var h = (screen.availHeight-480)/2;
-	classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width=640,height=480,top='+h+',left='+w+',resizable=no,scrollbars');
+		
+	  var wwidth = 800; // window width
+	  var wheight = 660; // window height
+
+	  if (classicthemerestorerjs.ctr.prefs.getCharPref("altoptions")=='options_win_alt') {
+		wwidth = 700;
+	  }
+
+	  var w = (screen.availWidth-wwidth)/2;
+	  var h = (screen.availHeight-wheight)/2;
+
+	  classicthemerestorerjs.ctr.ctrcontentprefswin = window.open('about:preferences', 'about:preferences', 'width='+wwidth+',height='+wheight+',top='+h+',left='+w+',resizable=yes');
 	} else openPreferences();
 
   },

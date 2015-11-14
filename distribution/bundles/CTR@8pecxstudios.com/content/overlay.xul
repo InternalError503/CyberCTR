@@ -132,7 +132,7 @@
 	<menuitem id="context-stop" label="&stopCmd.label;" accesskey="&stopCmd.accesskey;"/>
 	<menuitem id="context-bookmarkpage" label="&bookmarkThisPageCmd.label;" accesskey="&bookmarkPageCmd2.accesskey;"/>
 	
-	<menuitem id="menu_preferences" oncommand="if(classicthemerestorerjs.ctr.prefs.getBoolPref('altoptionsw'))
+	<menuitem id="menu_preferences" oncommand="if(classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win' || classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win_alt')
 		classicthemerestorerjs.ctr.openContentPrefsInWin(); else openPreferences();"/>
 	
 	<menupopup id="toolbar-context-menu">
@@ -618,7 +618,7 @@
 					onclick="if(classicthemerestorerjs.ctr.prefs.getBoolPref('appbclmmenus')
 								&amp;&amp; event.button=='0'
 								&amp;&amp; event.originalTarget.getAttribute('splitmenu')=='true')
-								{if(classicthemerestorerjs.ctr.prefs.getBoolPref('altoptionsw'))
+								{if(classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win' || classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win_alt')
 									classicthemerestorerjs.ctr.openContentPrefsInWin();
 									   else openPreferences();document.getElementById('appmenu-popup').hidePopup();}"
 					class="menu-iconic ctraddon_windowsonly">
@@ -626,7 +626,7 @@
 				  <menuitem id="appmenu_preferences"
 							label="&preferencesCmd2.label;"
 							accesskey="&preferencesCmd2.accesskey;"
-							oncommand="if(classicthemerestorerjs.ctr.prefs.getBoolPref('altoptionsw'))
+							oncommand="if(classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win' || classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win_alt')
 										 classicthemerestorerjs.ctr.openContentPrefsInWin();
 									   else openPreferences();"/>
 				  <menuseparator/>
@@ -651,7 +651,7 @@
 					onclick="if(classicthemerestorerjs.ctr.prefs.getBoolPref('appbclmmenus')
 								&amp;&amp; event.button=='0'
 								&amp;&amp; event.originalTarget.getAttribute('splitmenu')=='true')
-								{if(classicthemerestorerjs.ctr.prefs.getBoolPref('altoptionsw'))
+								{if(classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win' || classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win_alt')
 									classicthemerestorerjs.ctr.openContentPrefsInWin();
 									   else openPreferences();document.getElementById('appmenu-popup').hidePopup();}"
 					class="menu-iconic ctraddon_nonwindows">
@@ -660,7 +660,7 @@
 							label="&preferencesCmdUnix.label;"
 							class="ctraddon_nonwindows"
 							accesskey="&preferencesCmdUnix.accesskey;"
-							oncommand="if(classicthemerestorerjs.ctr.prefs.getBoolPref('altoptionsw'))
+							oncommand="if(classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win' || classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win_alt')
 										 classicthemerestorerjs.ctr.openContentPrefsInWin();
 									   else openPreferences();"/>
 				  <menuseparator/>
