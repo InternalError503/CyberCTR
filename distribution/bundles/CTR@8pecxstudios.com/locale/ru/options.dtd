@@ -46,7 +46,7 @@
 <!ENTITY Ctr_tabsontopI1	"Добавляет атрибут [tabsontop=true/false] для">
 <!ENTITY Ctr_tabsintitlebar	"Строка заголовка (about:config)">
 <!ENTITY Ctr_tabwidthdef	"(по умолчанию)">
-<!ENTITY Ctr_tabwidthcla	"(классич.)">
+<!ENTITY Ctr_tabwidthcla	"(классическая)">
 <!ENTITY Ctr_tabminheight	"Высота:">
 <!ENTITY Ctr_tabheightinfo	"Низкое значение вызовет сбои в развёрнутом режиме!">
 <!ENTITY Ctr_tabmaxwidth	"Макс. ширина:">
@@ -81,8 +81,8 @@
 <!ENTITY Ctr_appbutton2		"в панели заголовка">
 <!ENTITY Ctr_appbutton2h	"в панели заголовка (скрыта)">
 <!ENTITY Ctr_appbutton2io	"в панели заголовка (только значки)">
-<!ENTITY Ctr_paneluibtweak	"Оранжевая кнопка меню на панели вкладок">
-<!ENTITY Ctr_paneluibtweak2	" ">
+<!ENTITY Ctr_paneluibtweak	"Отображать кнопку основного меню как 'Кнопку приложения'">
+<!ENTITY Ctr_paneluibtweak2	"при размещении на панели вкладок">
 <!ENTITY Ctr_appbuttonc_o	"Оранжевая кнопка (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_a	"Синяя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Черная кнопка (Nightly)">
@@ -114,7 +114,7 @@
 <!ENTITY Ctr_hide_bf_popup	"Не показывать меню истории при клике мышью">
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"Заменить значки в контекстном меню страницы метками (назад, вперёд, остановить, обновить, страница закладок)">
-<!ENTITY Ctr_altoptionsd	"Страница «Настройки» (about:preferences): default appearance">
+<!ENTITY Ctr_altoptionsd	"Страница «Настройки» (about:preferences): вид по умолчанию">
 <!ENTITY Ctr_altoptionsp	"Альтернативный вид страницы настроек">
 <!ENTITY Ctr_altoptionsw	"Открывать страницу настроек (about:preferences) в окне">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
@@ -210,11 +210,11 @@
 <!ENTITY Ctr_hideurlgo		"Скрыть кнопку «Перейти»">
 <!ENTITY Ctr_hideurlsrg		"Скрыть промежутки и разделители между кнопками 'перезагрузить', 'остановить' и 'перейти'">
 <!ENTITY Ctr_urlbardropm	"Переместить дропмаркер в конец адресной строки">
-<!ENTITY Ctr_altreaderico	"Alternative 'Reader' icons">
+<!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_urlbar_ib		"Кнопка подлинности сайта">
-<!ENTITY Ctr_ib_nohovcolor	"Do not show gray color when hovered">
-<!ENTITY Ctr_verifiedcolors	"Button colors for verified websites, secure and not secure connections">
+<!ENTITY Ctr_ib_nohovcolor	"Не отображать серый цвет при зависании">
+<!ENTITY Ctr_verifiedcolors	"Цвета кнопок для проверенных сайтов, надежных и ненадежных соединений">
 <!ENTITY Ctr_faviconurl		"Значок в адресной строке">
 <!ENTITY Ctr_padlock		"Замок">
 <!ENTITY Ctr_padlock_hid	"Скрыть замок">
