@@ -620,16 +620,19 @@ classicthemerestorerjs.ctr = {
 		  
 		  case "square_edges":
 			if (branch.getBoolPref("square_edges") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
-				classicthemerestorerjs.ctr.loadUnloadCSS("square_edges", branch.getCharPref("tabs")=="tabs_squaredc2" || branch.getCharPref("tabs")=="tabs_squared2c2");
-			}	
+			  if (branch.getCharPref("tabs")=="tabs_squaredc2" || branch.getCharPref("tabs")=="tabs_squared2c2")
+				classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",true);
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("square_edges",false);
 		  break;
 		  
 		  case "ctabheightcb":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",branch.getBoolPref("ctabheightcb"));
+			if (branch.getBoolPref("ctabheightcb")) classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",false);
 		  break;
 		  
 		  case "ctabheight":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",branch.getBoolPref("ctabheightcb"));
+			if (branch.getBoolPref("ctabheightcb")) classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",true);
 		  break;
 		  
 		  case "ctabwidth": case "ctabmwidth":
@@ -658,7 +661,8 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "closetabhfl":
-			classicthemerestorerjs.ctr.loadUnloadCSS("closetabhfl",branch.getBoolPref("closetabhfl"));
+			if (branch.getBoolPref("closetabhfl")) classicthemerestorerjs.ctr.loadUnloadCSS("closetabhfl",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("closetabhfl",false);
 		  break;
 
 		  case "closeicon":
@@ -670,7 +674,10 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10i',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10red',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_gc',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicon"),branch.getCharPref("closeicon")!="closeicon_default");
+			  
+			if (branch.getCharPref("closeicon")!="closeicon_default"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicon"),true);
+			}
 
 		  break;
 		  
@@ -683,12 +690,16 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10i',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10red',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_gc',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicong"),branch.getCharPref("closeicong")!="closeicong_default");
+			  
+			if (branch.getCharPref("closeicong")!="closeicong_default"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("closeicong"),true);
+			}
 
 		  break;
 
 		  case "closeonleft":
-			classicthemerestorerjs.ctr.loadUnloadCSS("closeonleft",branch.getBoolPref("closeonleft") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("closeonleft") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("closeonleft",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("closeonleft",false);
 		  break;
 
 
@@ -702,10 +713,14 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2io2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_v2h',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbutton_pm',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbutton"),branch.getCharPref("appbutton")!="appbutton_off");
-			classicthemerestorerjs.ctr.checkAppbuttonOnNavbar();
-		    classicthemerestorerjs.ctr.fixThatTreeStyleBro();			
-			classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",branch.getCharPref("appbuttonc")=="appbuttonc_custom");
+		
+			if (branch.getCharPref("appbutton")!="appbutton_off"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbutton"),true);
+			  classicthemerestorerjs.ctr.checkAppbuttonOnNavbar();
+			}
+		    classicthemerestorerjs.ctr.fixThatTreeStyleBro();	
+        		
+			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",true);
 		
     if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
 				// custom button title for 'appbutton on toolbar'
@@ -759,7 +774,10 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red_dark',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_salmon',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom1',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbuttonc"),branch.getCharPref("appbuttonc")!="off");
+
+			if (branch.getCharPref("appbuttonc")!="off"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbuttonc"),true);
+			}
 		  break;
 		  
 		  case "appbautocol":
@@ -783,8 +801,8 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "cappbutc1": case "cappbutcm": case "cappbutc2": case "cappbutcpercent": case "cappbuttxtc": case "cappbutnotxtsh":
-			classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",branch.getCharPref("appbuttonc")=="appbuttonc_custom");
-			classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom1",branch.getCharPref("appbuttonc")=="appbuttonc_custom1");
+			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom",true);
+			if (branch.getCharPref("appbuttonc")=="appbuttonc_custom1") classicthemerestorerjs.ctr.loadUnloadCSS("appbuttonc_custom1",true);
 		  break;
 		  
 		  case "altabico":
@@ -793,7 +811,11 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_dark_nd',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_grey',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_grey_nd',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altabico"),branch.getCharPref("altabico")!="altabico_white");
+		
+			if (branch.getCharPref("altabico")!="altabico_white"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altabico"),true);
+			}
+
 		  break;
 		  
 		  case "appbutmhi":
@@ -805,7 +827,8 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "appbutbdl":
-			classicthemerestorerjs.ctr.loadUnloadCSS("appbutbdl",branch.getBoolPref("appbutbdl"));
+			if (branch.getBoolPref("appbutbdl")) classicthemerestorerjs.ctr.loadUnloadCSS("appbutbdl",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("appbutbdl",false);
 		  break;
 		  
 		  /*Aero Colors*/
@@ -824,7 +847,9 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("aerocolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true && devtheme==false) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("aerocolors",true);
 			  branch.setBoolPref("tabc_act_tb",false);
-			  classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",branch.getBoolPref("tabcolor_act") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			  if (branch.getBoolPref("tabcolor_act") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+				classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",true);
+			  }
 			}
 			else classicthemerestorerjs.ctr.loadUnloadCSS("aerocolors",false);
 		  break;
@@ -884,15 +909,33 @@ classicthemerestorerjs.ctr = {
 
 		  break;
 		  
-		  case "hidenavbar":
-			  classicthemerestorerjs.ctr.loadUnloadCSS("hidenavbar",branch.getBoolPref("hidenavbar"));
+		  case "hidenavbar":	  
+			if (branch.getBoolPref("hidenavbar")) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("hidenavbar",true);
+			  
+			  setTimeout(function(){
 				try{
-				  document.getElementById("toggle_nav-bar").setAttribute("checked",!branch.getBoolPref("hidenavbar"));
+				  document.getElementById("toggle_nav-bar").setAttribute("checked",false);
 				}catch(e){}
+			  },1500);
+
+			}
+			else {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("hidenavbar",false);
+			  
+			  setTimeout(function(){
+				try{
+				  document.getElementById("toggle_nav-bar").setAttribute("checked",true);
+				}catch(e){}
+			  },1500);
+			}
 		  break;
 		  
 		  case "navbarpad": case "navbarpad_l": case "navbarpad_r":
-			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",branch.getBoolPref("navbarpad"));
+		    if (branch.getBoolPref("navbarpad")) 
+			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",true);
+		    else
+			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",false);
 		  break;
 
 		  case "backforward":
@@ -923,7 +966,8 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "noconicons":
-			classicthemerestorerjs.ctr.loadUnloadCSS("noconicons",branch.getBoolPref("noconicons") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("noconicons") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("noconicons",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("noconicons",false);
 		  break;
 		  
 		  case "altoptions":
@@ -967,11 +1011,13 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "svgfilters":
-			classicthemerestorerjs.ctr.loadUnloadCSS("svgfilters",branch.getBoolPref("svgfilters"));
+			if (branch.getBoolPref("svgfilters")) classicthemerestorerjs.ctr.loadUnloadCSS("svgfilters",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("svgfilters",false);
 		  break;
 
 		  case "wincontrols":
-			classicthemerestorerjs.ctr.loadUnloadCSS("wincontrols",branch.getBoolPref("wincontrols"));
+			if (branch.getBoolPref("wincontrols")) classicthemerestorerjs.ctr.loadUnloadCSS("wincontrols",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("wincontrols",false);
 		  break;
 
 		  case "altalertbox":
@@ -1006,7 +1052,8 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "hideprbutton":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hideprbutton",branch.getBoolPref("hideprbutton"));
+			if (branch.getBoolPref("hideprbutton")) classicthemerestorerjs.ctr.loadUnloadCSS("hideprbutton",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideprbutton",false);
 		  break;
 		  
 		  case "statusbar":
@@ -1181,34 +1228,43 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "hideurelstop":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hideurelstop",branch.getBoolPref("hideurelstop"));
+			if (branch.getBoolPref("hideurelstop")) classicthemerestorerjs.ctr.loadUnloadCSS("hideurelstop",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideurelstop",false);
 		  break;
 		  
 		  case "hideurlgo":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hideurlgo",branch.getBoolPref("hideurlgo"));
+			if (branch.getBoolPref("hideurlgo")) classicthemerestorerjs.ctr.loadUnloadCSS("hideurlgo",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideurlgo",false);
 		  break;
 
 		  case "hideurlsrg":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hideurlsrg",branch.getBoolPref("hideurlsrg"));
+			if (branch.getBoolPref("hideurlsrg")) classicthemerestorerjs.ctr.loadUnloadCSS("hideurlsrg",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideurlsrg",false);
 		  break;
 
 		  case "urlbardropm":
-			classicthemerestorerjs.ctr.loadUnloadCSS("urlbardropm",branch.getBoolPref("urlbardropm"));
+			if (branch.getBoolPref("urlbardropm")) classicthemerestorerjs.ctr.loadUnloadCSS("urlbardropm",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("urlbardropm",false);
 		  break;
 
 		  case "altreaderico":
-			classicthemerestorerjs.ctr.loadUnloadCSS("altreaderico",branch.getBoolPref("altreaderico") && classicthemerestorerjs.ctr.fxdefaulttheme==true && classicthemerestorerjs.ctr.appversion >= 40);
+			if (branch.getBoolPref("altreaderico") && classicthemerestorerjs.ctr.fxdefaulttheme==true && classicthemerestorerjs.ctr.appversion >= 40) classicthemerestorerjs.ctr.loadUnloadCSS("altreaderico",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("altreaderico",false);
 		  break;
 
 		  case "combrelstop":
-			classicthemerestorerjs.ctr.loadUnloadCSS("combrelstop",branch.getBoolPref("combrelstop"));
+			if (branch.getBoolPref("combrelstop")) classicthemerestorerjs.ctr.loadUnloadCSS("combrelstop",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("combrelstop",false);
 		  break;
 		  
 		  case "findbar":
 			classicthemerestorerjs.ctr.loadUnloadCSS('findbar_top',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('findbar_topa',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('findbar_bottoma',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("findbar"),branch.getCharPref("findbar")!="findbar_default");
+
+			if (branch.getCharPref("findbar")!="findbar_default"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("findbar"),true);
+			}
 		  break;
 		  
 		  case "nav_txt_ico":
@@ -1318,185 +1374,212 @@ classicthemerestorerjs.ctr = {
 		  // Color settings (checkboxes)
 		  
 		  case "tabcolor_def":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_def",branch.getBoolPref("tabcolor_def"));
+			if (branch.getBoolPref("tabcolor_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_def",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_def",false);
 		  break;
 		  
 		  case "tabcolor_act":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",branch.getBoolPref("tabcolor_act"));
+			if (branch.getBoolPref("tabcolor_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",false);
 		  break;
 		  
 		  case "tabcolor_hov":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_hov",branch.getBoolPref("tabcolor_hov"));
+			if (branch.getBoolPref("tabcolor_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_hov",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_hov",false);
 		  break;
 		  
 		  case "tabcolor_pen":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_pen",branch.getBoolPref("tabcolor_pen"));
+			if (branch.getBoolPref("tabcolor_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_pen",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_pen",false);
 		  break;
 		  
 		  case "tabcolor_unr":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_unr",branch.getBoolPref("tabcolor_unr"));
+			if (branch.getBoolPref("tabcolor_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_unr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_unr",false);
 		  break;
 
 		  
 		  case "ntabcolor_def":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_def",branch.getBoolPref("ntabcolor_def"));
+			if (branch.getBoolPref("ntabcolor_def")) classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_def",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_def",false);
 		  break;
 		  
 		  case "ntabcolor_hov":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_hov",branch.getBoolPref("ntabcolor_hov"));
+			if (branch.getBoolPref("ntabcolor_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_hov",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_hov",false);
 		  break;
 		  
 
 		  case "tabtextc_def":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_def",branch.getBoolPref("tabtextc_def"));
+			if (branch.getBoolPref("tabtextc_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_def",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_def",false);
 		  break;
 		  
 		  case "tabtextc_act":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_act",branch.getBoolPref("tabtextc_act"));
+			if (branch.getBoolPref("tabtextc_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_act",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_act",false);
 		  break;
 		  
 		  case "tabtextc_hov":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_hov",branch.getBoolPref("tabtextc_hov"));
+			if (branch.getBoolPref("tabtextc_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_hov",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_hov",false);
 		  break;
 		  
 		  case "tabtextc_pen":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_pen",branch.getBoolPref("tabtextc_pen"));
+			if (branch.getBoolPref("tabtextc_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_pen",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_pen",false);
 		  break;
 		  
 		  case "tabtextc_unr":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_unr",branch.getBoolPref("tabtextc_unr"));
+			if (branch.getBoolPref("tabtextc_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_unr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_unr",false);
 		  break;
 		  
 		  case "tabtextsh_def":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_def",branch.getBoolPref("tabtextsh_def"));
+			if (branch.getBoolPref("tabtextsh_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_def",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_def",false);
 		  break;
 		  
 		  case "tabtextsh_act":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_act",branch.getBoolPref("tabtextsh_act"));
+			if (branch.getBoolPref("tabtextsh_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_act",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_act",false);
 		  break;
 		  
 		  case "tabtextsh_hov":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_hov",branch.getBoolPref("tabtextsh_hov"));
+			if (branch.getBoolPref("tabtextsh_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_hov",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_hov",false);
 		  break;
 		  
 		  case "tabtextsh_pen":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_pen",branch.getBoolPref("tabtextsh_pen"));
+			if (branch.getBoolPref("tabtextsh_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_pen",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_pen",false);
 		  break;
 		  
 		  case "tabtextsh_unr":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_unr",branch.getBoolPref("tabtextsh_unr"));
+			if (branch.getBoolPref("tabtextsh_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_unr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_unr",false);
 		  break;
 		  
 	  
 		  // Color settings (colorpickers)
 		  
 		  case "ctab1": case "ctab2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_def",branch.getBoolPref("tabcolor_def"));
+			if (branch.getBoolPref("tabcolor_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_def",true);
 		  break;
 		  
 		  case "ctabact1": case "ctabact2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",branch.getBoolPref("tabcolor_act"));
+			if (branch.getBoolPref("tabcolor_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",true);
 		  break;
 		  
 		  case "ctabhov1": case "ctabhov2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_hov",branch.getBoolPref("tabcolor_hov"));
+			if (branch.getBoolPref("tabcolor_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_hov",true);
 		  break;
 
 		  case "ctabpen1": case "ctabpen2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_pen",branch.getBoolPref("tabcolor_pen"));
+			if (branch.getBoolPref("tabcolor_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_pen",true);
 		  break;
 		  
 		  case "ctabunr1": case "ctabunr2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_unr",branch.getBoolPref("tabcolor_unr"));
+			if (branch.getBoolPref("tabcolor_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_unr",true);
 		  break;
 
 		  case "cntab1": case "cntab2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_def",branch.getBoolPref("ntabcolor_def"));
+			if (branch.getBoolPref("ntabcolor_def")) classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_def",true);
 		  break;
 		  
 		  case "cntabhov1": case "cntabhov2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_hov",branch.getBoolPref("ntabcolor_hov"));
+			if (branch.getBoolPref("ntabcolor_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("ntabcolor_hov",true);
 		  break;
 		  
 		  case "ctabt":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_def",branch.getBoolPref("tabtextc_def"));
+			if (branch.getBoolPref("tabtextc_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_def",true);
 		  break;
 		  
 		  case "ctabhovt":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_hov",branch.getBoolPref("tabtextc_hov"));
+			if (branch.getBoolPref("tabtextc_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_hov",true);
 		  break;
 		  
 		  case "ctabactt":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_act",branch.getBoolPref("tabtextc_act"));
+			if (branch.getBoolPref("tabtextc_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_act",true);
 		  break;
 		  
 		  case "ctabpent":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_pen",branch.getBoolPref("tabtextc_pen"));
+			if (branch.getBoolPref("tabtextc_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_pen",true);
 		  break;
 		  
 		  case "ctabunrt":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_unr",branch.getBoolPref("tabtextc_unr"));
+			if (branch.getBoolPref("tabtextc_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextc_unr",true);
 		  break;
 		  
 		  case 'ctabtsh':
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_def",branch.getBoolPref("tabtextsh_def"));
+			if (branch.getBoolPref("tabtextsh_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_def",true);
 		  break;
 		  
 		  case 'ctabhovtsh':
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_hov",branch.getBoolPref("tabtextsh_hov"));
+			if (branch.getBoolPref("tabtextsh_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_hov",true);
 		  break;
 		  
 		  case 'ctabacttsh':
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_act",branch.getBoolPref("tabtextsh_act"));
+			if (branch.getBoolPref("tabtextsh_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_act",true);
 		  break;
 		  
 		  case 'ctabpentsh':
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_pen",branch.getBoolPref("tabtextsh_pen"));
+			if (branch.getBoolPref("tabtextsh_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_pen",true);
 		  break;
 		  
 		  case 'ctabunrtsh':
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_unr",branch.getBoolPref("tabtextsh_unr"));
+			if (branch.getBoolPref("tabtextsh_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabtextsh_unr",true);
 		  break;
 		  
 		  
 		  case "tabfbold_def":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_def",branch.getBoolPref("tabfbold_def"));
+			if (branch.getBoolPref("tabfbold_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_def",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_def",false);
 		  break;
 		  
 		  case "tabfbold_act":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_act",branch.getBoolPref("tabfbold_act"));
+			if (branch.getBoolPref("tabfbold_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_act",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_act",false);
 		  break;
 
 		  case "tabfbold_hov":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",branch.getBoolPref("tabfbold_hov"));
+			if (branch.getBoolPref("tabfbold_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",false);
 		  break;
 		  
 		  case "tabfbold_pen":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_pen",branch.getBoolPref("tabfbold_pen"));
+			if (branch.getBoolPref("tabfbold_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_pen",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_pen",false);
 		  break;
 		  
 		  case "tabfbold_unr":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_unr",branch.getBoolPref("tabfbold_unr"));
+			if (branch.getBoolPref("tabfbold_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_unr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_unr",false);
 		  break;
 
 		  case "tabfita_def":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_def",branch.getBoolPref("tabfita_def"));
+			if (branch.getBoolPref("tabfita_def")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_def",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_def",false);
 		  break;
 		  
 		  case "tabfita_act":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_act",branch.getBoolPref("tabfita_act"));
+			if (branch.getBoolPref("tabfita_act")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_act",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_act",false);
 		  break;
 
 		  case "tabfita_hov":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",branch.getBoolPref("tabfita_hov"));
+			if (branch.getBoolPref("tabfita_hov")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",false);
 		  break;
 		  
 		  case "tabfita_pen":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_pen",branch.getBoolPref("tabfita_pen"));
+			if (branch.getBoolPref("tabfita_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_pen",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_pen",false);
 		  break;
 		  
 		  case "tabfita_unr":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",branch.getBoolPref("tabfita_unr"));
+			if (branch.getBoolPref("tabfita_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",false);
 		  break;
 		  
 		  /* exclude hover settings from unloaded/pending tab */
@@ -1536,8 +1619,13 @@ classicthemerestorerjs.ctr = {
 			  },400);
 			} else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_pen",false);
 			
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",branch.getBoolPref("tabfbold_hov"));
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",branch.getBoolPref("tabfita_hov"));
+			if(branch.getBoolPref("tabfbold_hov"))
+			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",true);
+			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",false);
+				
+			if(branch.getBoolPref("tabfita_hov"))
+			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",true);
+			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",false);
 			
 		  break;
 		  
@@ -1578,36 +1666,53 @@ classicthemerestorerjs.ctr = {
 			  },400);
 			} else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",false);
 			
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",branch.getBoolPref("tabfbold_hov"));
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",branch.getBoolPref("tabfita_hov"));
+			if(branch.getBoolPref("tabfbold_hov"))
+			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",true);
+			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfbold_hov",false);
+				
+			if(branch.getBoolPref("tabfita_hov"))
+			  classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",true);
+			else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_hov",false);
+
 		  break;
 		  
 		  case "tabc_act_tb":
 			if (branch.getBoolPref("tabc_act_tb")) branch.setBoolPref("aerocolors",false);
-			  classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",branch.getBoolPref("tabcolor_act"));
+			
+			if (branch.getBoolPref("tabcolor_act")) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",true);
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("tabcolor_act",false);
 		  break;
 
 		  // Special	  
 		  case "altmenubar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("altmenubar",branch.getBoolPref("altmenubar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("altmenubar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("altmenubar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("altmenubar",false);
 		  break;
 		  
 		  case "altmbarpos":
 			classicthemerestorerjs.ctr.loadUnloadCSS('altmbarpos1',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altmbarpos2',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altmbarpos"),branch.getCharPref("altmbarpos")!="altmbarpos0");
+		
+			if (branch.getCharPref("altmbarpos")!="altmbarpos0"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altmbarpos"),true);
+			}
 		  break;
 	  
 		  case "menubarnofog":
-			classicthemerestorerjs.ctr.loadUnloadCSS("menubarnofog",branch.getBoolPref("menubarnofog") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("menubarnofog") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("menubarnofog",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("menubarnofog",false);
 		  break;
 		  
 		  case "menubarfs":
-			classicthemerestorerjs.ctr.loadUnloadCSS("menubarfs",branch.getBoolPref("menubarfs") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("menubarfs") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("menubarfs",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("menubarfs",false);
 		  break;
 		  
 		  case "noaddonbarbg":
-			classicthemerestorerjs.ctr.loadUnloadCSS("noaddonbarbg",branch.getBoolPref("noaddonbarbg") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("noaddonbarbg") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("noaddonbarbg",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("noaddonbarbg",false);
 		  break;
 		  
 		  case "notabfog":
@@ -1627,28 +1732,41 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "nobookbarbg":
-			classicthemerestorerjs.ctr.loadUnloadCSS("nobookbarbg",branch.getBoolPref("nobookbarbg") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("nobookbarbg") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("nobookbarbg",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("nobookbarbg",false);
 		  break;
 
 		  case "bookbarfs":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bookbarfs",branch.getBoolPref("bookbarfs") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("bookbarfs") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("bookbarfs",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("bookbarfs",false);
 		  break;
 		  
 		  case "transpttbw10":
-			classicthemerestorerjs.ctr.loadUnloadCSS("transpttbw10",branch.getBoolPref("transpttbw10") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
-			classicthemerestorerjs.ctr.loadUnloadCSS("transptcw10",branch.getBoolPref("transptcw10"));
+			if (branch.getBoolPref("transpttbw10") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("transpttbw10",true);
+			  
+			  if (branch.getBoolPref("transptcw10"))
+				classicthemerestorerjs.ctr.loadUnloadCSS("transptcw10",true);
+			}
+			else {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("transpttbw10",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("transptcw10",false);
+			}
 		  break;
 		  
 		  case "transptcw10":
-			classicthemerestorerjs.ctr.loadUnloadCSS("transptcw10",branch.getBoolPref("transptcw10") && branch.getBoolPref("transpttbw10") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("transptcw10") && branch.getBoolPref("transpttbw10") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("transptcw10",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("transptcw10",false);
 		  break;
 
 		  case "nonavbarbg":
-			classicthemerestorerjs.ctr.loadUnloadCSS("nonavbarbg",branch.getBoolPref("nonavbarbg") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("nonavbarbg") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("nonavbarbg",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("nonavbarbg",false);
 		  break;
 		  
 		  case "nonavborder":
-			classicthemerestorerjs.ctr.loadUnloadCSS("nonavborder",branch.getBoolPref("nonavborder") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("nonavborder") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("nonavborder",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("nonavborder",false);
 		  break;
 		  
 		  case "nonavtbborder":
@@ -1660,15 +1778,18 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "hidesbclose":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hidesbclose",branch.getBoolPref("hidesbclose"));
+			if (branch.getBoolPref("hidesbclose")) classicthemerestorerjs.ctr.loadUnloadCSS("hidesbclose",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hidesbclose",false);
 		  break;
 		  
 		  case "notextshadow":
-			classicthemerestorerjs.ctr.loadUnloadCSS("notextshadow",branch.getBoolPref("notextshadow"));
+			if (branch.getBoolPref("notextshadow")) classicthemerestorerjs.ctr.loadUnloadCSS("notextshadow",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("notextshadow",false);
 		  break;
 		  
 		  case "chevronfix":
-			classicthemerestorerjs.ctr.loadUnloadCSS("chevronfix",branch.getBoolPref("chevronfix"));
+			if (branch.getBoolPref("chevronfix")) classicthemerestorerjs.ctr.loadUnloadCSS("chevronfix",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("chevronfix",false);
 		  break;
 		  
 		  case "tbsep_winc":
@@ -1689,15 +1810,21 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabsep_white_sol',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabsep_black_sol2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('tabsep_white_sol2',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabseparator"),branch.getCharPref("tabseparator")!="tabsep_default" && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			
+			if (branch.getCharPref("tabseparator")!="tabsep_default" && classicthemerestorerjs.ctr.fxdefaulttheme==true){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabseparator"),true);
+			}
+
 		  break;
 		  
 		  case "tabmokcolor":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabmokcolor",branch.getBoolPref("tabmokcolor") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("tabmokcolor") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("tabmokcolor",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabmokcolor",false);
 		  break;
 
 		  case "tabmokcolor2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tabmokcolor2",branch.getBoolPref("tabmokcolor2") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("tabmokcolor2") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("tabmokcolor2",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabmokcolor2",false);
 		  break;
 
 		  case "tabmokcolor4":
@@ -1706,19 +1833,24 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "closeabarbut":
-			classicthemerestorerjs.ctr.loadUnloadCSS("closeabarbut",branch.getBoolPref("closeabarbut"));
+			if (branch.getBoolPref("closeabarbut"))	classicthemerestorerjs.ctr.loadUnloadCSS("closeabarbut",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("closeabarbut",false);
 		  break;
 
 		  case "bfurlbarfix":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bfurlbarfix",branch.getBoolPref("bfurlbarfix") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("bfurlbarfix") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("bfurlbarfix",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("bfurlbarfix",false);
 		  break;
 
 		  case "bf_space":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bf_space",branch.getBoolPref("bf_space") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("bf_space") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("bf_space",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("bf_space",false);
 		  break;		  
 
 		  case "emptyfavicon":
-			classicthemerestorerjs.ctr.loadUnloadCSS("emptyfavicon",branch.getBoolPref("emptyfavicon"));		
+			if (branch.getBoolPref("emptyfavicon")) classicthemerestorerjs.ctr.loadUnloadCSS("emptyfavicon",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("emptyfavicon",false);
+			
 			if (branch.getBoolPref("faviconurl")) {classicthemerestorerjs.ctr.favIconinUrlbarCTR();}
 		  break;
 		  
@@ -1734,35 +1866,47 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "noemptypticon":
-			classicthemerestorerjs.ctr.loadUnloadCSS("noemptypticon",branch.getBoolPref("noemptypticon"));
+			if (branch.getBoolPref("noemptypticon")) classicthemerestorerjs.ctr.loadUnloadCSS("noemptypticon",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("noemptypticon",false);
 		  break;
 		  
 		  case "hidezoomres":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hidezoomres",branch.getBoolPref("hidezoomres"));
+			if (branch.getBoolPref("hidezoomres")) classicthemerestorerjs.ctr.loadUnloadCSS("hidezoomres",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hidezoomres",false);
 		  break;
 		  
 		  case "alt_newtabp":
-			classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",branch.getBoolPref("alt_newtabp"));
+			if (branch.getBoolPref("alt_newtabp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabp",false);
 		  break;
 		  
 		  case "ctroldsearch":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ctroldsearch",branch.getBoolPref("ctroldsearch") && classicthemerestorerjs.ctr.appversion >= 43);
+			if (branch.getBoolPref("ctroldsearch") && classicthemerestorerjs.ctr.appversion >= 43) classicthemerestorerjs.ctr.loadUnloadCSS("ctroldsearch",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ctroldsearch",false);
 		  break;
 
 		  case "am_nowarning":
-			classicthemerestorerjs.ctr.loadUnloadCSS("am_nowarning",branch.getBoolPref("am_nowarning"));
+			if (branch.getBoolPref("am_nowarning")) classicthemerestorerjs.ctr.loadUnloadCSS("am_nowarning",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_nowarning",false);
 		  break;
 
 		  case "am_compact":
-			classicthemerestorerjs.ctr.loadUnloadCSS("am_compact",branch.getBoolPref("am_compact") && classicthemerestorerjs.ctr.appversion >= 40
-			  && classicthemerestorerjs.ctr.fxdefaulttheme==true);
-			classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",branch.getBoolPref("am_compact2") && classicthemerestorerjs.ctr.appversion >= 40
-			  && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("am_compact") && classicthemerestorerjs.ctr.appversion >= 40
+			  && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+				classicthemerestorerjs.ctr.loadUnloadCSS("am_compact",true);
+				if (branch.getBoolPref("am_compact2"))
+				  classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",true);
+			}
+			else { 
+			  classicthemerestorerjs.ctr.loadUnloadCSS("am_compact",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",false);
+			}
 		  break;
 
 		  case "am_compact2":
-			classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",branch.getBoolPref("am_compact") && branch.getBoolPref("am_compact2") && classicthemerestorerjs.ctr.appversion >= 40
-				&& classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("am_compact") && branch.getBoolPref("am_compact2") && classicthemerestorerjs.ctr.appversion >= 40
+				&& classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",false);
 		  break;
 
 		  case "alt_newtabpalt":
@@ -1770,29 +1914,27 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "alt_addonsp":
-			classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",branch.getBoolPref("alt_addonsp"));
+			if (branch.getBoolPref("alt_addonsp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",false);
 		  break;
 		  
 		  case "alt_addonsm":
-			classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsm",branch.getBoolPref("alt_addonsm") && classicthemerestorerjs.ctr.appversion >= 40
-				&& classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("alt_addonsm") && classicthemerestorerjs.ctr.appversion >= 40
+				&& classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsm",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsm",false);
 		  break;
 
 		  case "addonversion":
-			if (branch.getBoolPref("addonversion") && classicthemerestorerjs.ctr.appversion >= 40) {
-			  if(classicthemerestorerjs.ctr.appversion < 42)
-				classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
-			  else if(classicthemerestorerjs.ctr.appversion >= 42)
-				classicthemerestorerjs.ctr.loadUnloadCSS("addonversion_fx42",true);
-			}
-			else { 
-			  classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",false);
-			  classicthemerestorerjs.ctr.loadUnloadCSS("addonversion_fx42",false);
-			}
+			if (branch.getBoolPref("addonversion") && classicthemerestorerjs.ctr.appversion >= 40) classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",false);
 		  break;
 
 		  case "bmbutpanelm":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bmbutpanelm",branch.getBoolPref("bmbutpanelm"));	  
+			if (branch.getBoolPref("bmbutpanelm")) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("bmbutpanelm",true);
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("bmbutpanelm",false);
+			  
 			if (branch.getBoolPref("panelmenucol")) {
 			  branch.setBoolPref("panelmenucol",false);
 			  setTimeout(function(){
@@ -1802,44 +1944,54 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "bmbutnotext":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bmbutnotext",branch.getBoolPref("bmbutnotext"));
+			if (branch.getBoolPref("bmbutnotext")) classicthemerestorerjs.ctr.loadUnloadCSS("bmbutnotext",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmbutnotext",false);
 		  break;
 
 		  case "tbconmenu":
-			classicthemerestorerjs.ctr.loadUnloadCSS("tbconmenu",branch.getBoolPref("tbconmenu"));
+			if (branch.getBoolPref("tbconmenu")) classicthemerestorerjs.ctr.loadUnloadCSS("tbconmenu",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tbconmenu",false);
 		  break;
 
 		  case "noresizerxp":
-			classicthemerestorerjs.ctr.loadUnloadCSS("noresizerxp",branch.getBoolPref("noresizerxp"));
+			if (branch.getBoolPref("noresizerxp")) classicthemerestorerjs.ctr.loadUnloadCSS("noresizerxp",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("noresizerxp",false);
 		  break;
 
 		  case "pmhidelabels":
-			classicthemerestorerjs.ctr.loadUnloadCSS("pmhidelabels",branch.getBoolPref("pmhidelabels"));
+			if (branch.getBoolPref("pmhidelabels")) classicthemerestorerjs.ctr.loadUnloadCSS("pmhidelabels",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("pmhidelabels",false);
 		  break;
 		  
 		  case "menupopupscr":
-			classicthemerestorerjs.ctr.loadUnloadCSS("menupopupscr",branch.getBoolPref("menupopupscr"));
+			if (branch.getBoolPref("menupopupscr")) classicthemerestorerjs.ctr.loadUnloadCSS("menupopupscr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("menupopupscr",false);
 		  break;
 
 		  case "ib_nohovcolor":
-			classicthemerestorerjs.ctr.loadUnloadCSS("ib_nohovcolor",branch.getBoolPref("ib_nohovcolor") && classicthemerestorerjs.ctr.fxdefaulttheme==true && classicthemerestorerjs.ctr.appversion >= 42);
+			if (branch.getBoolPref("ib_nohovcolor") && classicthemerestorerjs.ctr.fxdefaulttheme==true && classicthemerestorerjs.ctr.appversion >= 42) classicthemerestorerjs.ctr.loadUnloadCSS("ib_nohovcolor",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ib_nohovcolor",false);
 		  break;
-
+		  
 		  case "verifiedcolors":
-			classicthemerestorerjs.ctr.loadUnloadCSS("verifiedcolors",branch.getBoolPref("verifiedcolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("verifiedcolors") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("verifiedcolors",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("verifiedcolors",false);
 		  break;
 
 		  
 		  case "hideprivmask":
-			classicthemerestorerjs.ctr.loadUnloadCSS("hideprivmask",branch.getBoolPref("hideprivmask"));
+			if (branch.getBoolPref("hideprivmask")) classicthemerestorerjs.ctr.loadUnloadCSS("hideprivmask",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideprivmask",false);
 		  break;
 
 		  case "highaddonsbar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("highaddonsbar",branch.getBoolPref("highaddonsbar"));
+			if (branch.getBoolPref("highaddonsbar")) classicthemerestorerjs.ctr.loadUnloadCSS("highaddonsbar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("highaddonsbar",false);
 		  break;
 		  
 		  case "addonbarfs":
-			classicthemerestorerjs.ctr.loadUnloadCSS("addonbarfs",branch.getBoolPref("addonbarfs"));
+			if (branch.getBoolPref("addonbarfs")) classicthemerestorerjs.ctr.loadUnloadCSS("addonbarfs",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("addonbarfs",false);
 		  break;
 	  
 		  case "tabthrobber":
@@ -1851,16 +2003,21 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt3',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt4',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt5',false);			
-			classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabthrobber"),branch.getCharPref("tabthrobber")!="throbber_default");
+			if (branch.getCharPref("tabthrobber")!="throbber_default"){
+			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabthrobber"),true);
+			}
+
 		  break;
 		  
 		  // reverse option to match other animation preference labels
 		  case "bmanimation":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bmanimation",!branch.getBoolPref("bmanimation"));
+			if (branch.getBoolPref("bmanimation")) classicthemerestorerjs.ctr.loadUnloadCSS("bmanimation",false);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmanimation",true);
 		  break;
 
 		  case "pananimation":
-			classicthemerestorerjs.ctr.loadUnloadCSS("pananimation",!branch.getBoolPref("pananimation"));
+			if (branch.getBoolPref("pananimation")) classicthemerestorerjs.ctr.loadUnloadCSS("pananimation",false);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("pananimation",true);
 		  break;
 		  // end reverse...
 
@@ -1967,9 +2124,14 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_none',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_classic',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_modern',false);
-				classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_none",branch.getCharPref("padlock")=="padlock_none");
-				classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_classic",branch.getCharPref("padlock")=="padlock_classic");
-				classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_modern",branch.getCharPref("padlock")=="padlock_modern");
+
+				if (branch.getCharPref("padlock")=="padlock_none")
+					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_none",true);
+				if (branch.getCharPref("padlock")=="padlock_classic")
+					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_classic",true);
+				if (branch.getCharPref("padlock")=="padlock_modern")
+					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_modern",true);
+
 			} else {
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_default',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_classic',false);
@@ -2004,12 +2166,15 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "alttabstb2":
-				classicthemerestorerjs.ctr.loadUnloadCSS("alttabstb2",branch.getBoolPref("alttabstb2") && branch.getBoolPref("alttabstb")
-				&& classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("alttabstb2") && branch.getBoolPref("alttabstb")
+				&& classicthemerestorerjs.ctr.fxdefaulttheme==true)
+					classicthemerestorerjs.ctr.loadUnloadCSS("alttabstb2",true);
+			else classicthemerestorerjs.ctr.loadUnloadCSS("alttabstb2",false);
 		  break;
 
 		  case "cpanelmenus":
-			classicthemerestorerjs.ctr.loadUnloadCSS("cpanelmenus",branch.getBoolPref("cpanelmenus"));
+			if (branch.getBoolPref("cpanelmenus")) classicthemerestorerjs.ctr.loadUnloadCSS("cpanelmenus",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("cpanelmenus",false);
 		  break;
 
 		  case "panelmenucol":
@@ -2025,27 +2190,33 @@ classicthemerestorerjs.ctr = {
 		  
 		  //inv icons START
 		  case "invicomenubar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("invicomenubar",branch.getBoolPref("invicomenubar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("invicomenubar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("invicomenubar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("invicomenubar",false);
 		  break;
 		  
 		  case "invicotabsbar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("invicotabsbar",branch.getBoolPref("invicotabsbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("invicotabsbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("invicotabsbar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("invicotabsbar",false);
 		  break;
 		  
 		  case "inviconavbar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("inviconavbar",branch.getBoolPref("inviconavbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("inviconavbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("inviconavbar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("inviconavbar",false);
 		  break;
 
 		  case "invicoextrabar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("invicoextrabar",branch.getBoolPref("invicoextrabar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("invicoextrabar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("invicoextrabar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("invicoextrabar",false);
 		  break;
 		  
 		  case "invicobookbar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("invicobookbar",branch.getBoolPref("invicobookbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("invicobookbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("invicobookbar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("invicobookbar",false);
 		  break;
 		  
 		  case "invicoaddonbar":
-			classicthemerestorerjs.ctr.loadUnloadCSS("invicoaddonbar",branch.getBoolPref("invicoaddonbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true);
+			if (branch.getBoolPref("invicoaddonbar") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("invicoaddonbar",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("invicoaddonbar",false);
 		  break;
 		  //inv icons END
 		  
@@ -2077,23 +2248,28 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "appmenuitem":
-			classicthemerestorerjs.ctr.loadUnloadCSS("appmenuitem",!branch.getBoolPref("appmenuitem"));
+			if (branch.getBoolPref("appmenuitem")) classicthemerestorerjs.ctr.loadUnloadCSS("appmenuitem",false);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("appmenuitem",true);
 		  break;
 		  
 		  case "contextitem":
-			classicthemerestorerjs.ctr.loadUnloadCSS("contextitem",!branch.getBoolPref("contextitem"));
+			if (branch.getBoolPref("contextitem")) classicthemerestorerjs.ctr.loadUnloadCSS("contextitem",false);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("contextitem",true);
 		  break;
 		  
 		  case "puictrbutton":
-			classicthemerestorerjs.ctr.loadUnloadCSS("puictrbutton",branch.getBoolPref("puictrbutton"));
+			if (branch.getBoolPref("puictrbutton")) classicthemerestorerjs.ctr.loadUnloadCSS("puictrbutton",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("puictrbutton",false);
 		  break;
 		  
 		  case "cuibuttons":
-			classicthemerestorerjs.ctr.loadUnloadCSS("cuibuttons",branch.getBoolPref("cuibuttons"));
+			if (branch.getBoolPref("cuibuttons")) classicthemerestorerjs.ctr.loadUnloadCSS("cuibuttons",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("cuibuttons",false);
 		  break;
 
 		  case "bmarkoinpw":
-			classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",branch.getBoolPref("bmarkoinpw") && classicthemerestorerjs.ctr.appversion < 38);
+			if (branch.getBoolPref("bmarkoinpw") && classicthemerestorerjs.ctr.appversion < 38) classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",false);
 		  break;
 
 		  case "searchbarwidth": case "customsearchbarwidth":
