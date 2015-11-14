@@ -179,9 +179,14 @@ classicthemerestorerjs.ctr = {
 		if (this.appversion >= 43) document.getElementById("main-window").setAttribute('fx43plus',true);
 	} catch(e){}
 	
-	// add a new global attribute 'fx43plus' -> better parting css between versions
+	// add a new global attribute 'fx44plus' -> better parting css between versions
 	try{
 		if (this.appversion >= 44) document.getElementById("main-window").setAttribute('fx44plus',true);
+	} catch(e){}
+	
+	// add a new global attribute 'fx45plus' -> better parting css between versions
+	try{
+		if (this.appversion >= 45) document.getElementById("main-window").setAttribute('fx45plus',true);
 	} catch(e){}
 
 	// CTRs appbutton for Windows titlebar
@@ -260,7 +265,7 @@ classicthemerestorerjs.ctr = {
 	PrefListener.prototype.register = function(trigger) {
 	  this._branch.addObserver('', this, false);
 	  if (trigger) {
-		let that = this;
+		var that = this;
 		this._branch.getChildList('', {}).
 		  forEach(function (pref_leaf_name)
 			{ that._callback(that._branch, pref_leaf_name); });
@@ -371,7 +376,7 @@ classicthemerestorerjs.ctr = {
 			
 				classicthemerestorerjs.ctr.devthemeinterval = setInterval(function(){
 				  
-				  let selectedThemeID = null;
+				  var selectedThemeID = null;
 				  try {
 					selectedThemeID = Services.prefs.getBranch("lightweightThemes.").getCharPref("selectedThemeID");
 				  } catch (e) {}
@@ -2119,12 +2124,13 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_default',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_classic',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_modern',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_none',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_none',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_classic',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_modern',false);
 
 				if (branch.getCharPref("padlock")=="padlock_none")
-					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_none",true);
+				    classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_none",true);			
 				if (branch.getCharPref("padlock")=="padlock_classic")
 					classicthemerestorerjs.ctr.loadUnloadCSS("padlock2_classic",true);
 				if (branch.getCharPref("padlock")=="padlock_modern")
@@ -2134,6 +2140,7 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_default',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_classic',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_modern',false);
+				classicthemerestorerjs.ctr.loadUnloadCSS('padlock_none',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_none',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_classic',false);
 				classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_modern',false);
@@ -2931,7 +2938,18 @@ classicthemerestorerjs.ctr = {
 	
 	function faviconInUrlbar(){
 	 
-	 var ppfavicon     = document.getElementById("page-proxy-favicon");
+	 var ppfavicon = "";
+	 
+	 if (classicthemerestorerjs.ctr.appversion >= 45) {
+		try {
+		  ppfavicon = document.getElementById("identity-icon");
+		} catch(e){}
+	 } else {
+		try {
+		  ppfavicon = document.getElementById("page-proxy-favicon");
+		} catch(e){}
+	 }
+	 
 	 var emptyfavicon1 = Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("emptyfavicon");
 	 var emptyfavicon2 = Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("emptyfavicon2");
 	 
@@ -2960,9 +2978,14 @@ classicthemerestorerjs.ctr = {
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock_default',false);
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock_classic',false);
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock_modern',false);
+	classicthemerestorerjs.ctr.loadUnloadCSS('padlock_none',false);
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_none',false);
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_classic',false);
 	classicthemerestorerjs.ctr.loadUnloadCSS('padlock2_modern',false);
+	
+	if (classicthemerestorerjs.ctr.prefs.getCharPref("padlock")=="padlock_none" && classicthemerestorerjs.ctr.appversion >= 45)
+		classicthemerestorerjs.ctr.loadUnloadCSS("padlock_none",true);
+	else classicthemerestorerjs.ctr.loadUnloadCSS("padlock_none",false);
 	
 	if (Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock")!="padlock_none"){
 	  classicthemerestorerjs.ctr.loadUnloadCSS(Services.prefs.getBranch("extensions.classicthemerestorer.").getCharPref("padlock"),true);
@@ -3283,7 +3306,7 @@ classicthemerestorerjs.ctr = {
   /* enable/disable css sheets*/
   loadUnloadCSS: function(which,enable) {
 	
-	const ios = Services.io;
+	var ios = Services.io;
 	
 	switch (which) {
 	
@@ -3713,6 +3736,7 @@ classicthemerestorerjs.ctr = {
 		case "padlock_classic": 	manageCSS("padlock_classic.css");		break;
 		case "padlock_modern":		manageCSS("padlock_modern.css");		break;
 		case "padlock_extra":		manageCSS("padlock_extra.css");			break;
+		case "padlock_none":		manageCSS("padlock_none.css");			break;
 		case "padlock2_classic": 	manageCSS("padlock2_classic.css");		break;
 		case "padlock2_modern":		manageCSS("padlock2_modern.css");		break;
 		case "padlock2_none":		manageCSS("padlock2_none.css");			break;
@@ -5785,10 +5809,10 @@ classicthemerestorerjs.ctr = {
 	// Apply or remove the style sheet files
 	function manageCSS(file) {
 
-		const sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
-		const ios = Services.io;
+		var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
+		var ios = Services.io;
 
-		let uri = ios.newURI("chrome://classic_theme_restorer/content/css/" + file,null,null);
+		var uri = ios.newURI("chrome://classic_theme_restorer/content/css/" + file,null,null);
 		
 		try{
 			if (enable) {
@@ -5804,7 +5828,7 @@ classicthemerestorerjs.ctr = {
 	// remove style sheet
 	function removeOldSheet(sheet){
 
-	  const sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
+	  var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
 
 		if (sss.sheetRegistered(sheet,sss.AGENT_SHEET)) sss.unregisterSheet(sheet,sss.AGENT_SHEET);
 	}
@@ -5812,7 +5836,7 @@ classicthemerestorerjs.ctr = {
 	// apply style sheet
 	function applyNewSheet(sheet){
 
-	  const sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
+	  var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
 
 		try {
 			if (!sss.sheetRegistered(sheet,sss.AGENT_SHEET)) sss.loadAndRegisterSheet(sheet,sss.AGENT_SHEET);
@@ -5861,10 +5885,10 @@ classicthemerestorerjs.ctr = {
   },
   
   openCTRPreferences: function(currentWindow) {
-	  let windows = Services.wm.getEnumerator(null);
-	  let optionsURL = "chrome://classic_theme_restorer/content/options.xul"
+	  var windows = Services.wm.getEnumerator(null);
+	  var optionsURL = "chrome://classic_theme_restorer/content/options.xul"
 		while (windows.hasMoreElements()) {
-		  let win = windows.getNext();
+		  var win = windows.getNext();
 		  if (win.document.documentURI == optionsURL) {
 			win.focus();
 			return;
@@ -5886,7 +5910,7 @@ classicthemerestorerjs.ctr = {
   // hides/shows CTRs add-on bar
   toggleCtrAddonBar: function() {
     
-	let ctrAddonBar = document.getElementById("ctraddon_addon-bar");
+	var ctrAddonBar = document.getElementById("ctraddon_addon-bar");
     setToolbarVisibility(ctrAddonBar, ctrAddonBar.collapsed);
   
   },
@@ -6386,7 +6410,7 @@ switch (appButtonState){
 
       if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
 
-        let promise = OS.File.read(patterns.path + "\\CTRpreferences.txt", {
+        var promise = OS.File.read(patterns.path + "\\CTRpreferences.txt", {
           encoding: "utf-8"
         });
         promise = promise.then(
@@ -6395,7 +6419,7 @@ switch (appButtonState){
           });
       } else {
 
-        let promise = OS.File.read(patterns.path + "\\CTRpreferences.json", {
+        var promise = OS.File.read(patterns.path + "\\CTRpreferences.json", {
           encoding: "utf-8"
         });
         promise = promise.then(
@@ -6423,7 +6447,7 @@ switch (appButtonState){
         }
 
         if (fp.show() != nsIFilePicker.returnCancel) {
-          let file = fp.file;
+          var file = fp.file;
           if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
             if (!/\.txt$/.test(file.leafName.toLowerCase()))
               file.leafName += ".txt";
@@ -6455,14 +6479,14 @@ switch (appButtonState){
 
       if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.importjson")) {
 
-        let promise = OS.File.remove(patterns.path + "\\CTRpreferences.txt");
+        var promise = OS.File.remove(patterns.path + "\\CTRpreferences.txt");
         promise = promise.then(
           function onSuccess(data) {
 			  console.log(patterns.path + "\\CTRpreferences.txt was deleted");
             return true;
           });
       } else {
-        let promise = OS.File.remove(patterns.path + "\\CTRpreferences.json");
+        var promise = OS.File.remove(patterns.path + "\\CTRpreferences.json");
         promise = promise.then(
           function onSuccess(data) {
 			  console.log(patterns.path + "\\CTRpreferences.json was deleted");
@@ -6481,14 +6505,6 @@ switch (appButtonState){
   ctrPrefRestart: function(){
 	  Services.prefs.setBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply", true);
 	  gCyberfoxCustom.restartBrowser();
-  },
-  
-  // hides/shows CTRs add-on bar
-  toggleCtrAddonBar: function() {
-    
-	let ctrAddonBar = document.getElementById("ctraddon_addon-bar");
-    setToolbarVisibility(ctrAddonBar, ctrAddonBar.collapsed);
-  
   },
   
   toggleCtrUrlExtraBar: function() {
