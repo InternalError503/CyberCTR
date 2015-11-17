@@ -423,15 +423,14 @@
         /* pin wordmark to edge of document, not of viewport */
         
         -moz-box-ordinal-group: 0;
-        opacity: .5;
+        opacity: .2;
         transition: opacity 150ms;
     }
     #aboutCyberfox:hover {
         opacity: 1;
     }
     #aboutCyberfox::before {
-        /*content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber.png");*/
-        
+        content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber-dark.png");       
         display: block;
         position: absolute;
         top: 12px;
@@ -439,6 +438,13 @@
         width: 69px;
         height: 19px;
     }
+	
+	@media (max-width: 800px) {
+		#aboutCyberfox {
+			display:none;
+		}
+	}
+	
     /* [HiDPI]
 	 * At resolutions above 1dppx, prefer downscaling the 2x Retina graphics
 	 * rather than upscaling the original-size ones (bug 818940).
@@ -498,9 +504,6 @@
         #restorePreviousSession:-moz-dir(rtl)::before {
             transform: scale(-0.5, 0.5) translateX(24px);
             transform-origin: top center;
-        }
-        #aboutCyberfox::before {
-            /*content: url("chrome://classic_theme_restorer/content/images/abouthome/cyber@2x.png");*/
         }
     }
 }

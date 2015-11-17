@@ -351,21 +351,11 @@
         height: 32px;
         width: 32px;
     }
-    #aboutMozilla {
-        display: block;
-        position: relative;
-        /* pin wordmark to edge of document, not of viewport */
-        
-        -moz-box-ordinal-group: 0;
-        opacity: .5;
-        transition: opacity 150ms;
-    }
-    #aboutMozilla:hover {
-        opacity: 1;
-    }
-    #aboutMozilla::before {
+	
+    #aboutCyberfox {
         display: none!important;
     }
+	
     @media not all and (max-resolution: 1dppx) {
         #brandLogo {
             display: none!important;
@@ -407,9 +397,6 @@
         #restorePreviousSession:-moz-dir(rtl)::before {
             transform: scale(-0.5, 0.5) translateX(24px);
             transform-origin: top center;
-        }
-        #aboutMozilla::before {
-            display: none!important;
         }
     }
 }
