@@ -114,9 +114,14 @@
 <!ENTITY Ctr_hide_bf_popup	"Не показывать меню истории при клике мышью">
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"Заменить значки в контекстном меню страницы метками (назад, вперёд, остановить, обновить, страница закладок)">
-<!ENTITY Ctr_altoptionsd	"Страница «Настройки» (about:preferences): вид по умолчанию">
-<!ENTITY Ctr_altoptionsp	"Альтернативный вид страницы настроек">
-<!ENTITY Ctr_altoptionsw	"Открывать страницу настроек (about:preferences) в окне">
+<!ENTITY Ctr_prefpage		"Страница Настройки">
+<!ENTITY Ctr_altoptionsd	"Default appearance">
+<!ENTITY Ctr_altoptionsp	"Альтернативный вид">
+<!ENTITY Ctr_altoptionsw	"Открывать страницу «Настройки» в окне">
+<!ENTITY Ctr_altoptionsww	"Width">
+<!ENTITY Ctr_altoptionswh	"Height">
+<!ENTITY Ctr_altoptionsi	"The simulated options window is not a dialog anymore but a 'browser window' with all toolbars hidden. The 'Use Current Page' feature only adds urls of pages opened in the current window, which is only 'about:preferences' in this case. The 'options' toolbar button gets replaced by a new one to be able to open options in a window.">
+<!ENTITY Ctr_options_rem	"Remember last selected category">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
