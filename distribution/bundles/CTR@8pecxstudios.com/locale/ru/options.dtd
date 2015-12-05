@@ -115,13 +115,13 @@
 <!ENTITY Ctr_bf_space		"По возможности уменьшать промежуток между кнопками">
 <!ENTITY Ctr_noconicons		"Заменить значки в контекстном меню страницы метками (назад, вперёд, остановить, обновить, страница закладок)">
 <!ENTITY Ctr_prefpage		"Страница Настройки">
-<!ENTITY Ctr_altoptionsd	"Default appearance">
+<!ENTITY Ctr_altoptionsd	"Вид по умолчанию">
 <!ENTITY Ctr_altoptionsp	"Альтернативный вид">
 <!ENTITY Ctr_altoptionsw	"Открывать страницу «Настройки» в окне">
-<!ENTITY Ctr_altoptionsww	"Width">
-<!ENTITY Ctr_altoptionswh	"Height">
-<!ENTITY Ctr_altoptionsi	"The simulated options window is not a dialog anymore but a 'browser window' with all toolbars hidden. The 'Use Current Page' feature only adds urls of pages opened in the current window, which is only 'about:preferences' in this case. The 'options' toolbar button gets replaced by a new one to be able to open options in a window.">
-<!ENTITY Ctr_options_rem	"Remember last selected category">
+<!ENTITY Ctr_altoptionsww	"Ширина">
+<!ENTITY Ctr_altoptionswh	"Высота">
+<!ENTITY Ctr_altoptionsi	"Окно настроек больше не является диалогом – теперь это полноценное 'окно браузера', в котором скрыты все панели инструментов. Опция 'Использовать текущие страницы' добавляет адреса открытых в текущем окне страниц, то есть в данном случае 'about:preferences'. Старая кнопка панели инструментов 'Настройки' заменяется новой, позволяющей открывать соответствующее окно">
+<!ENTITY Ctr_options_rem	"Запомнить последний выбор">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
@@ -217,10 +217,10 @@
 <!ENTITY Ctr_urlbardropm	"Переместить дропмаркер в конец адресной строки">
 <!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
-<!ENTITY Ctr_locsearchbw10	"Reduce location bars and search bars height (experimental)">
+<!ENTITY Ctr_locsearchbw10	"Уменьшить высоту панелей адреса и поиска (экспериментально)">
 <!ENTITY Ctr_urlbar_ib		"Кнопка подлинности сайта">
 <!ENTITY Ctr_ib_nohovcolor	"Не отображать серый цвет при зависании">
-<!ENTITY Ctr_ib_graycolor	"Gray color for unknown identity and chrome pages">
+<!ENTITY Ctr_ib_graycolor	"Серый цвет для сайтов неизвестной подлинности и сайтов chrome">
 <!ENTITY Ctr_verifiedcolors	"Цвета кнопок для проверенных сайтов, надежных и ненадежных соединений">
 <!ENTITY Ctr_faviconurl		"Значок в адресной строке">
 <!ENTITY Ctr_padlock		"Замок">
@@ -228,7 +228,7 @@
 <!ENTITY Ctr_padlock_def	"по умолчанию">
 <!ENTITY Ctr_padlock_cla	"классический">
 <!ENTITY Ctr_padlock_mod	"модерн">
-<!ENTITY Ctr_padlock_ext	"'&brandShortName;' icon for valid 'about' pages">
+<!ENTITY Ctr_padlock_ext	"Иконка '&brandShortName;' для корректных страниц 'about'">
 <!ENTITY Ctr_icopageinfo	"Нажатие на иконку открывает «Информацию о странице»">
 
 <!ENTITY Ctr_menubar_items	"Позиция пунктов меню">
@@ -266,7 +266,7 @@
 
 <!ENTITY Ctr_aerocolors		"Цвета Blue Aero для основных панелей и вкладок">
 <!ENTITY Ctr_transpttbw10	"Панели заголовка/меню/вкладок: убрать цвет фона">
-<!ENTITY Ctr_transpttbew10	"Additional tweaks for some OS themes">
+<!ENTITY Ctr_transpttbew10	"Дополнительные опции для некоторых тем оформления ОС">
 <!ENTITY Ctr_transptcw10	"Скрыть стандартные кнопки ОС (Свернуть, Развернуть, Закрыть)">
 <!ENTITY Ctr_hidenavbar		"Скрыть панель навигации">
 <!ENTITY Ctr_navbarpad		"Дополнительные отступы слева и справа">
