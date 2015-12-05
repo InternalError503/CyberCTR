@@ -220,6 +220,7 @@
 <!ENTITY Ctr_hideprbutton	"Masquer l’icône de notification quand un pop-up est bloqué">
 <!ENTITY Ctr_urlbar_ib		"Bouton d’identité">
 <!ENTITY Ctr_ib_nohovcolor	"Ne pas griser l’arrière-plan au survol">
+<!ENTITY Ctr_ib_graycolor	"Gray color for unknown identity and chrome pages">
 <!ENTITY Ctr_verifiedcolors	"Couleurs de boutons pour les sites certifiés sécurisés, les connexions sécurisées et non sécurisées">
 <!ENTITY Ctr_faviconurl		"Afficher le favicon dans la barre d'adresse">
 <!ENTITY Ctr_padlock		"Cadenas pour les connexions sécurisées">
@@ -227,7 +228,7 @@
 <!ENTITY Ctr_padlock_def	"par défaut  ">
 <!ENTITY Ctr_padlock_cla	"classique  ">
 <!ENTITY Ctr_padlock_mod	"moderne  ">
-<!ENTITY Ctr_padlock_ext	"Icônes de sécurité">
+<!ENTITY Ctr_padlock_ext	"'&brandShortName;' icon for valid 'about' pages">
 <!ENTITY Ctr_icopageinfo	"Cliquer sur l’icône pour afficher la fenêtre d’informations de la page">
 
 <!ENTITY Ctr_menubar_items	"Position de la barre de menus">
