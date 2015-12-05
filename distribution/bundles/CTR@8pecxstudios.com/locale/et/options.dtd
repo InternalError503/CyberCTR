@@ -217,7 +217,7 @@
 <!ENTITY Ctr_urlbardropm	"Teisalda rippmenüü avamise nupp aadressiriba lõppu">
 <!ENTITY Ctr_altreaderico	"Alternatiivsed 'Lugemisvaate' ikoonid">
 <!ENTITY Ctr_hideprbutton	"Peida blokeeritud hüpikakende teavitusikoon">
-<!ENTITY Ctr_locsearchbw10	"Reduce location bars and search bars height (experimental)">
+<!ENTITY Ctr_locsearchbw10	"Vähenda aadressiriba ja otsinguriba kõrgust (katsejärgus)">
 <!ENTITY Ctr_urlbar_ib		"Saidi identiteedi nupp (identiteedi kast)">
 <!ENTITY Ctr_ib_nohovcolor	"Hiirekursoriga ikooni peale minnes ära näita halli taustavärvi">
 <!ENTITY Ctr_ib_graycolor	"Hall värvus tundmatu identiteedi ja chrome-lehtede jaoks">
@@ -266,6 +266,7 @@
 
 <!ENTITY Ctr_aerocolors		"Sinised Aero värvid tööriistaribadel (ja kaartidel)">
 <!ENTITY Ctr_transpttbw10	"Tiitli-/menüü-/kaartide riba: eemalda taustavärv">
+<!ENTITY Ctr_transpttbew10	"Additional tweaks for some OS themes">
 <!ENTITY Ctr_transptcw10	"Peida vaikimisi op-süsteemi min/max/sulge nupud">
 <!ENTITY Ctr_hidenavbar		"Peida tööriistariba">
 <!ENTITY Ctr_navbarpad		"Lisatühimik vasakul ja paremal">
