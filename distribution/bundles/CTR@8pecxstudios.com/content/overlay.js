@@ -2064,7 +2064,8 @@ classicthemerestorerjs.ctr = {
 				
 				try{
 					var {NewTabURL} = Cu.import("resource:///modules/NewTabURL.jsm", {});
-					NewTabURL.override(newURL);
+					if (classicthemerestorerjs.ctr.appversion >= 44) aboutNewTabService.newTabURL = newURL;
+					else NewTabURL.override(newURL);
 				} catch(e){}
 				
 				classicthemerestorerjs.ctr.altnewtabpageOn = true;
@@ -2073,7 +2074,8 @@ classicthemerestorerjs.ctr = {
 			} else if (classicthemerestorerjs.ctr.appversion >= 41 && classicthemerestorerjs.ctr.altnewtabpageOn==true) {
 				try{
 				  var {NewTabURL} = Cu.import("resource:///modules/NewTabURL.jsm", {});
-				  NewTabURL.reset();
+				  if (classicthemerestorerjs.ctr.appversion >= 44) aboutNewTabService.resetNewTabURL();
+				  else NewTabURL.reset();
 				} catch(e){}
 				
 				classicthemerestorerjs.ctr.altnewtabpageOn = false;
