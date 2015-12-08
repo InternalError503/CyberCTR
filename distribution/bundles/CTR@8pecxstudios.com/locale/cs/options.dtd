@@ -435,3 +435,5 @@
 
 <!ENTITY Ctr_tabthrobber_usecust.label "Use custom tab throbber">
 <!ENTITY Ctr_tabthrobber_custurlph.label "Throbber image url|path">
+
+<!ENTITY Ctr_animatelwtheme "Aninate Aninated light-weight themes on startup.">

@@ -434,3 +434,5 @@
 
 <!ENTITY Ctr_tabthrobber_usecust.label "Использовать свой индикатор загрузки вкладки">
 <!ENTITY Ctr_tabthrobber_custurlph.label "Ссылка или путь к файлу с изображением индикатора загрузки вкладки">
+
+<!ENTITY Ctr_animatelwtheme "Aninate Aninated light-weight themes on startup.">

@@ -311,6 +311,9 @@ pref("extensions.classicthemerestorer.cbookmarkfontsize", 12);
 pref("extensions.classicthemerestorer.hidexulelements", false);
 pref("extensions.classicthemerestorer.hidexulfilter", "");
 
+//CyberCTR animate animated lightweight themes
+pref("extensions.classicthemerestorer.animatedlwtthemes", true);
+
 //CyberCTR version
 pref("extensions.classicthemerestorer.version", "1.4.4");
 

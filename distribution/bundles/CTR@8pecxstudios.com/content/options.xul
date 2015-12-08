@@ -309,7 +309,8 @@
 	<preference id="ctraddon_ctaboutnewtab_bg"	name="extensions.classicthemerestorer.aboutnewtabcustomurl"	type="string"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_tabthrobber_usecust"	name="extensions.classicthemerestorer.tabthrobberusecust"	type="bool"		instantApply="true"/>
-	<preference id="ctraddon_tabthrobber_cust"	name="extensions.classicthemerestorer.tabthrobbercusturl" 	type="string"	instantApply="true"/>		
+	<preference id="ctraddon_tabthrobber_cust"	name="extensions.classicthemerestorer.tabthrobbercusturl" 	type="string"	instantApply="true"/>
+	<preference id="ctraddon_animatelwtheme"	name="extensions.classicthemerestorer.animatedlwtthemes"	type="bool"	instantApply="true"/>	
  <!--- CyberCTR customization settings -->
 
 	</preferences>
@@ -1060,6 +1061,7 @@
 		<checkbox label="&Ctr_hidezoomres;"		preference="ctraddon_hidezoomres"/>
 		<checkbox label="&Ctr_noresizerxp;"		preference="ctraddon_noresizerxp" id="ctraddon_pw_noresizerxp"/>
 		<checkbox label="&Ctr_tbconmenu;"		preference="ctraddon_tbconmenu"	  id="ctraddon_pw_tbconmenu"/>
+		<checkbox label="&Ctr_animatelwtheme;" preference="ctraddon_animatelwtheme"	  id="ctraddon_pw_animatelwtheme" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart();"/>
 	  </groupbox>
 	  
 	  <groupbox id="ctraddon_pw_invertedicons">

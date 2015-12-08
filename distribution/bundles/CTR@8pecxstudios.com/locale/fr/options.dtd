@@ -438,3 +438,5 @@
 
 <!ENTITY Ctr_tabthrobber_usecust.label "Choisir une image de chargement">
 <!ENTITY Ctr_tabthrobber_custurlph.label "URL ou chemin de l’image de chargement">
+
+<!ENTITY Ctr_animatelwtheme "Aninate Aninated light-weight themes on startup.">
