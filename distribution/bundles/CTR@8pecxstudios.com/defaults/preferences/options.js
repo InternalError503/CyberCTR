@@ -315,7 +315,7 @@ pref("extensions.classicthemerestorer.hidexulfilter", "");
 pref("extensions.classicthemerestorer.animatedlwtthemes", true);
 
 //CyberCTR version
-pref("extensions.classicthemerestorer.version", "1.4.4");
+pref("extensions.classicthemerestorer.version", "1.4.5");
 
 //CyberCTR Pre-set Configuration
 pref("extensions.classicthemerestorer.ctrpref.firstrun", true);
