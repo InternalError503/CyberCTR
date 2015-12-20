@@ -101,6 +101,11 @@ classicthemerestorerjs.ctr = {
   activityObserverOn:	false, // activity observer is always disabled, when a window get initialized
 
   init: function() {
+	  
+	  //Clean up old preferences
+	try{
+	  Services.prefs.clearUserPref("extensions.classicthemerestorer.movableurlbar");
+	} catch(e){}
 	
 	// remove default panel ui button in favour of CTRs movable duplicate
 	try{
