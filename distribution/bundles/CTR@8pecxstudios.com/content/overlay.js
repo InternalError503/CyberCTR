@@ -61,6 +61,8 @@ classicthemerestorerjs.ctr = {
   
   tabheight: sheetIO,
 
+  locsearchbarsize: sheetIO,
+
   navbarpadding: sheetIO,
   
   appbutton_color: sheetIO,
@@ -192,6 +194,9 @@ classicthemerestorerjs.ctr = {
 	// CTRs appbutton for Windows titlebar
 	this.createTitlebarButton();
 	
+	// prevent location bar moving to palette or panel menu
+	this.preventLocationbarRemoval();
+	
 	// additional toolbars
 	this.createAdditionalToolbars();
 	
@@ -262,7 +267,7 @@ classicthemerestorerjs.ctr = {
 	
 	// prevent accidental location bar removal by using context menu 
 	this.removeContextItemsFromLocationbarContext();
-	
+
 	// CTR Preferences listener
 	function PrefListener(branch_name, callback) {
 	  // Keeping a reference to the observed preference branch or it will get
@@ -956,6 +961,13 @@ classicthemerestorerjs.ctr = {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",true);
 		    else
 			  classicthemerestorerjs.ctr.loadUnloadCSS("navbarpad",false);
+		  break;
+		  
+		  case "lbsbsize": case "lbsize_minw": case "lbsize_maxw": case "sbsize_minw": case "sbsize_maxw":
+		    if (branch.getBoolPref("lbsbsize")) 
+			  classicthemerestorerjs.ctr.loadUnloadCSS("lbsbsize",true);
+		    else
+			  classicthemerestorerjs.ctr.loadUnloadCSS("lbsbsize",false);
 		  break;
 
 		  case "backforward":
@@ -2731,6 +2743,28 @@ classicthemerestorerjs.ctr = {
 
   },
   
+  // prevent location bar moving to palette or panel menu
+  preventLocationbarRemoval: function() {
+	
+	try {
+	  if(!document.querySelector('#urlbar-container').getAttribute('cui-areatype'))
+		document.querySelector('#urlbar-container').setAttribute('cui-areatype','toolbar');
+	} catch(e){}
+	
+  	var observer = new MutationObserver(function(mutations) {
+	  mutations.forEach(function(mutation) {
+		if(!document.querySelector('#urlbar-container').getAttribute('cui-areatype')) {
+		  CustomizableUI.addWidgetToArea("urlbar-container", CustomizableUI.AREA_NAVBAR);
+		}
+	    else if (document.querySelector('#urlbar-container').getAttribute('cui-areatype')=="menu-panel") {
+		  CustomizableUI.addWidgetToArea("urlbar-container", CustomizableUI.AREA_NAVBAR);
+		}
+	  });    
+	});
+	
+	observer.observe(document.querySelector('#urlbar-container'), { attributes: true, attributeFilter: ['cui-areatype'] });
+  },
+
   // create 0-20 additional toolbars on startup
   // easier and more accurate compared to adding toolbars manually to overlay.xul
   createAdditionalToolbars: function() {
@@ -5590,6 +5624,27 @@ classicthemerestorerjs.ctr = {
 
 		break;
 		
+		case "lbsbsize":
+			removeOldSheet(this.locsearchbarsize);
+			
+			if(enable==true && this.prefs.getBoolPref('lbsbsize')){
+		
+				this.locsearchbarsize=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					#urlbar-container {\
+					  min-width: '+this.prefs.getIntPref('lbsize_minw')+'px !important;\
+					  max-width: '+this.prefs.getIntPref('lbsize_maxw')+'px !important;\
+					}\
+					#search-container {\
+					  min-width: '+this.prefs.getIntPref('sbsize_minw')+'px !important;\
+					  max-width: '+this.prefs.getIntPref('sbsize_maxw')+'px !important;\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.locsearchbarsize);
+			}
+		
+		break;
+		
 		case "navbarpad":
 			removeOldSheet(this.navbarpadding);
 			
@@ -6004,7 +6059,7 @@ classicthemerestorerjs.ctr = {
   
   // open prefwindow and specific category
   additionalToolbars: function(){
-	Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('pref_actindx',9);
+	Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('pref_actindx',10);
 	
 	setTimeout(function(){
 	  classicthemerestorerjs.ctr.openCTRPreferences();
@@ -6055,6 +6110,9 @@ classicthemerestorerjs.ctr = {
 		wwidth = classicthemerestorerjs.ctr.prefs.getIntPref("aboutprefsww");
 	  if(classicthemerestorerjs.ctr.prefs.getIntPref("aboutprefswh") != 670)
 		wheight = classicthemerestorerjs.ctr.prefs.getIntPref("aboutprefswh");
+	
+	  if (wwidth < 500) wwidth = 500;
+	  if (wheight < 300) wheight = 300;
 
 	  var w = (screen.availWidth-wwidth)/2;
 	  var h = (screen.availHeight-wheight)/2;

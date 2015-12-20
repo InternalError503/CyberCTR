@@ -231,6 +231,8 @@
 <!ENTITY Ctr_padlock_mod	"moderne  ">
 <!ENTITY Ctr_padlock_ext	"'&brandShortName;' icon for valid 'about' pages">
 <!ENTITY Ctr_icopageinfo	"Cliquer sur l’icône pour afficher la fenêtre d’informations de la page">
+<!ENTITY Ctr_lbsbsize		"Custom width for location bar and search bar">
+<!ENTITY Ctr_searchbar		"Search bar">
 
 <!ENTITY Ctr_menubar_items	"Position de la barre de menus">
 <!ENTITY Ctr_extrabar		"Barres d’outils supplémentaires">
