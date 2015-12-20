@@ -54,7 +54,7 @@
               <xul:menuitem class="open-engine-manager"
                             anonid="open-engine-manager"
                             label="&cmd_engineManager.label;"
-                            oncommand="Services.prefs.getBranch('extensions.classicthemerestorer.').setCharPref('aboutprefs','category-search'); if(classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win' || classicthemerestorerjs.ctr.prefs.getCharPref('altoptions')=='options_win_alt'){classicthemerestorerjs.ctr.openContentPrefsInWin();} else{gBrowser.selectedTab = gBrowser.addTab('about:preferences#search')}"/>
+                            oncommand="classicthemerestorerjs.ctr.manageOldSearchMenuitem();"/>
             </xul:menupopup>
           </xul:button>
         </xul:box>
@@ -457,7 +457,7 @@
                                                    aEvent.ctrlKey))
               where = "tab-background";
           }
-
+		  
           this.doSearch(textValue, where, aEngine);
 
           if (where == "tab-background")
@@ -485,6 +485,7 @@
 
           let engine = aEngine || this.currentEngine;
           var submission = engine.getSubmission(aData, null, "searchbar");
+
           // null parameter below specifies HTML response for search
           let params = {
             postData: submission.postData,
