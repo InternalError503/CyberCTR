@@ -165,6 +165,7 @@
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
 <!ENTITY Ctr_xpinstallui	"Acienne fenêtre d'installation de modules (préférence about:config)">
 <!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
+<!ENTITY Ctr_bmbunsortbm	"Bouton Marque-pages : 'unsorted bookmarks' submenu">
 <!ENTITY Ctr_bmbutnotext	"Bouton du menu des marque-pages : masquer l’étiquette sur la barre personnelle">
 <!ENTITY Ctr_skipprintpr	"Bouton Imprimer : masquer « Aperçu avant l’impression »">
 <!ENTITY Ctr_tbconmenu		"Menu contextuel de la barre d’outils : masquer « déplacer au menu », « enlever de la barre d’outils », « recharger / marquer tous les onglets » et « annuler fermer l’onglet »">
