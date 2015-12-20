@@ -155,7 +155,7 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter le menu du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page 'Nouvel onglet' (about:newtab) : apparence alternative">
-<!ENTITY Ctr_ctroldsearch	"Old search (experimental)">
+<!ENTITY Ctr_ctroldsearch	"Ancienne recherche">
 <!ENTITY Ctr_addonmanager	"Add-on manager">
 <!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » de la page des modules complémentaires : autre aspect">
 <!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
