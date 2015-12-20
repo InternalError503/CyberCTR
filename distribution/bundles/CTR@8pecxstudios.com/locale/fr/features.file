@@ -6,5 +6,5 @@ btn-faq=Foire aux questions
 btn-support-forums=Forum d’assistance
 btn-contact-us=Contactez-nous
 msg-firstrun-welcome=Bienvenue à cette page de fonctions et d’information. Vous y trouverez des renseignements utiles et des liens pour rendre la navigation plus agréable.
-msg-new-version-blob=Une nouvelle version de CyberCTR est prête à être téléchargée !, Cliquez <a id="url-new-download">ici</a> pour visiter la section des téléchargements., Cliquez <a id="url-new-notes">ici</a> pour consulter les notes de la nouvelle version.
-msg-no-new-version=Vous avez déjà la plus récente version de CyberCTR.
+msg-new-version-blob=Une nouvelle version de CyberCTR est prête à être téléchargée !, <a id="url-new-download">Cliquez ici</a> pour visiter la section des téléchargements., <a id="url-new-notes">Cliquez ici</a> pour consulter les notes de la nouvelle version.
+msg-no-new-version=Vous utilisez déjà la plus récente version de CyberCTR.
