@@ -101,18 +101,6 @@ classicthemerestorerjs.ctr = {
   activityObserverOn:	false, // activity observer is always disabled, when a window get initialized
 
   init: function() {
-	  
-	// Movable url-bar (Note: If user moves url-bar to panel UI or customize pallet then restart it will break browser).
-	try{
-		var uriBar = document.getElementById("urlbar-container");
-			if (uriBar &&  typeof(uriBar)  != "undefined" || uriBar  != null){  
-				if (Services.prefs.getBoolPref("extensions.classicthemerestorer.movableurlbar") === false){
-					uriBar.removeAttribute("removable");
-				}else{
-					uriBar.setAttribute("removable", true);	
-				}	
-			}
-	} catch(e){}	  
   
 	// remove default panel ui button in favour of CTRs movable duplicate
 	try{
@@ -2753,6 +2741,10 @@ classicthemerestorerjs.ctr = {
   // prevent location bar moving to palette or panel menu
   preventLocationbarRemoval: function() {
 	
+	try {
+	  document.querySelector('#urlbar-container').setAttribute('removable','true');
+	} catch(e){}
+
 	try {
 	  if(!document.querySelector('#urlbar-container').getAttribute('cui-areatype'))
 		document.querySelector('#urlbar-container').setAttribute('cui-areatype','toolbar');

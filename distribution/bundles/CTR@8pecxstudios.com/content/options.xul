@@ -310,8 +310,7 @@
 	<preference id="ctraddon_ctabouthome_base_color"	name="extensions.classicthemerestorer.abouthomecustombasecolor"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomeanimate"	name="extensions.classicthemerestorer.abouthomeanimate"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthome_bg_stretch"	name="extensions.classicthemerestorer.abouthomebgstretch"	type="bool"	instantApply="true"/>	
-	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>	
-	<preference id="ctraddon_cmovableurlbar"	name="extensions.classicthemerestorer.movableurlbar"	type="bool"	instantApply="true"/>
+	<preference id="ctraddon_cthidexulelements"	name="extensions.classicthemerestorer.hidexulelements"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctaboutnewtabcustombg"	name="extensions.classicthemerestorer.aboutnewtabcustombg"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg"	name="extensions.classicthemerestorer.aboutnewtabcustomurl"	type="string"	instantApply="true"/>	
 	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>	
@@ -1200,16 +1199,6 @@
 		</hbox>
 
 	  </groupbox>
-
- <!--- CyberCTR customization settings -->	  
-		<groupbox>
-		<caption  label="&Ctr_urlbar; *" class="ctraddon_topic"/>
-		<checkbox label="&movableurlbar.label;" preference="ctraddon_cmovableurlbar" id="ctraddon_movableurlbar" oncommand="classicthemerestorerjso.ctr.isUrlbarMovable(true)"/>
-		<description class="ctraddon_font1">&movableurlbar.warning0;</description>
-		<description class="ctraddon_font1">&movableurlbar.warning1;</description>
-		<description class="ctraddon_font1">&movableurlbar.warning2;</description>
-	  </groupbox>
- <!--- CyberCTR customization settings -->
 
 	</box>
 

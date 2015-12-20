@@ -1256,13 +1256,6 @@ classicthemerestorerjso.ctr = {
 	},1350);
   },
   
-  // Movable url-bar (Note: If user moves url-bar to panel UI or customize pallet then restart it will break browser).
-  isUrlbarMovable: function(aBoolean){
-	  if(aBoolean){
-		classicthemerestorerjso.ctr.needsBrowserRestart();
-	  }	
-  },		
-  
   resetCTRpreferences: function() {
     var preferences = document.getElementsByTagName("preference");
     for (var preference of preferences) {

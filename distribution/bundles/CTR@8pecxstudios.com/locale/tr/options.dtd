@@ -430,11 +430,6 @@
 <!ENTITY clear.label "Filtre Temizle">
 <!ENTITY copy.label "Filtreyi kopyala">
 
-<!ENTITY movableurlbar.label "Movable URL-Bar (Allows you to move the url-bar)">
-<!ENTITY movableurlbar.warning0 "Warning: This is a high level feature, If you move the URL-Bar to the panel UI menu or customize window and restart, It will break the browser.">
-<!ENTITY movableurlbar.warning1 "You must restore the URL-Bar to its default position before disabling.">
-<!ENTITY movableurlbar.warning2 "Use this feature with caution and at own risk.">
-
 <!ENTITY Ctr_tabthrobber_usecust.label "Use custom tab throbber">
 <!ENTITY Ctr_tabthrobber_custurlph.label "Throbber image url|path">
 

@@ -285,9 +285,6 @@ pref("extensions.classicthemerestorer.aboutnewtabcustomhighlight",false);
 pref("extensions.classicthemerestorer.aboutnewtabcustombasecolor","#efefef");
 pref("extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor","#00adee");
 
-//Movable url-bar
-pref("extensions.classicthemerestorer.movableurlbar", false);
-
 //Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");
 pref("extensions.classicthemerestorer.abouthomenobar", false);
