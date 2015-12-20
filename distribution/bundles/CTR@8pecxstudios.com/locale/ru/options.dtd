@@ -438,3 +438,7 @@
 <!ENTITY Ctr_tabthrobber_custurlph.label "Ссылка или путь к файлу с изображением индикатора загрузки вкладки">
 
 <!ENTITY Ctr_animatelwtheme "Анимация легких тем оформления при запуске.">
+
+
+<!ENTITY Ctr_tbp_abouthome "AboutHome Page">
+<!ENTITY Ctr_tbp_newtab "NewTab Page">

@@ -439,3 +439,6 @@
 <!ENTITY Ctr_tabthrobber_custurlph.label "Throbber image url|path">
 
 <!ENTITY Ctr_animatelwtheme "Animate Animated light-weight themes on startup.">
+
+<!ENTITY Ctr_tbp_abouthome "AboutHome Page">
+<!ENTITY Ctr_tbp_newtab "NewTab Page">

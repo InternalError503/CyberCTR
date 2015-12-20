@@ -333,6 +333,10 @@
 	  <radio class="ctraddontab" value="ctraddon_appbuttonbox" 	label="&Ctr_appbutton;" id="ctraddon_appbuttonboxtab"/>
 	  <radio class="ctraddontab" value="ctraddon_generaluibox"	label="&Ctr_ui; (1)"/>
 	  <radio class="ctraddontab" value="ctraddon_generaluibox2"	label="&Ctr_ui; (2)"/>
+    <!--- CyberCTR customization settings -->
+	  <radio class="ctraddontab" value="ctraddon_abouthomebox"	label="&Ctr_tbp_abouthome;"/>
+	  <radio class="ctraddontab" value="ctraddon_aboutnewtabbox"	label="&Ctr_tbp_newtab;"/>
+    <!--- CyberCTR customization settings -->
 	  <radio class="ctraddontab" value="ctraddon_prefpagebox"	label="&Ctr_prefpage;"/>
 	  <radio class="ctraddontab" value="ctraddon_addonmngrbox"	label="&Ctr_addonmanager;"/>
 	  <radio class="ctraddontab" value="ctraddon_locationbbox"	label="&Ctr_urlbar; (1)"/>
@@ -931,89 +935,8 @@
 		</radiogroup>
 
 	  </groupbox>
-	  
-	  <groupbox>
- <!--- CyberCTR customization settings -->
-		<caption  label="&ctr_abouthome.caption;" class="ctraddon_topic"/>		
-		<menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
-			<menupopup>
-						<menuitem value="default" label="&ctr_abouthome.default;"/>
-						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
-						<menuitem value="lightalt"	 label="&ctr_abouthome.light; (alt)"/>							
-						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
-						<menuitem value="darkalt"	 label="&ctr_abouthome.dark; (alt)"/>	
-						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Intel)"/>
-						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Amd)"/>
-						<menuitem value="simplicitygreen"	 label="&ctr_abouthome.simplicity; (Linux)"/>
-						<menuitem value="simplicityyellow"	 label="&ctr_abouthome.simplicity; (Beta)"/>	
-						<menuitem value="simplicitycustom"	 label="&ctr_abouthome.simplicity; (Custom)"/>						
-			</menupopup>
-		</menulist>
-		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>
-		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
-		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
-		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>
-		<checkbox label="&ctr_abouthome.animate;"	preference="ctraddon_ctabouthomeanimate" id="ctraddon_ctabouthome_animate"/>
-		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>			
-			<hbox>
-		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctabouthome_custbgl"/>
-		  <textbox id="ctraddon_ctabouthome_bg_urlbox" 
-						  preference="ctraddon_ctabouthome_bg" 
-						  size="auto" 
-						  flex="1" 
-						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_ctabouthome_bg_urlbox', 'abouthomecustomurl');"/><button id="custom_bg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_ctabouthome_bg_urlbox', 'abouthomecustomurl');"/>
-			</hbox>
-			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>
-			<checkbox label="&ctr_abouthome.custombase;" preference="ctraddon_ctabouthomecustombase" id="ctraddon_ctabouthomecustbsck"/>			
-			<checkbox label="&ctr_abouthome.customhighlight;" preference="ctraddon_ctabouthomecustomhighlight" id="ctraddon_ctabouthomecusthltck"/>
-		<hbox>
-			<label value="&ctr_abouthome.custombasecol;" id="ctraddon_ctabouthomecustbslb"/>
-			<textbox preference="ctraddon_ctabouthome_base_color" id="ctraddon_ctabouthomecustbstb" width="70px"/>
-			<colorpicker preference="ctraddon_ctabouthome_base_color" type="button" id="ctraddon_ctabouthomecustbscp"/>
-		</hbox>
-			<hbox>
-			<label value="&ctr_abouthome.customhighlightcol;" id="ctraddon_ctabouthomecusthltlb"/>
-			<textbox preference="ctraddon_ctabouthome_highlight_color" id="ctraddon_ctabouthomecusthlttb" width="70px"/>
-			<colorpicker preference="ctraddon_ctabouthome_highlight_color" type="button" id="ctraddon_ctabouthomecusthltcp"/>
-		</hbox>		
-	  </groupbox>	
 
-	<groupbox>
-		<caption  label="&ctr_aboutnewtab.caption;" class="ctraddon_topic"/>
-		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>
-		<checkbox label="&Ctr_alt_newtabpalt;"		preference="ctraddon_alt_newtabpalt" id="ctraddon_pw_alt_newtabpalt"/>
-		<checkbox label="&ctr_aboutnewtab.custombase;" preference="ctraddon_alt_newtabpalt_custombase" id="ctraddon_ctaboutnewtabcustbsck"/>			
-		<checkbox label="&ctr_aboutnewtab.customhighlight;" preference="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight" id="ctraddon_ctaboutnewtabcusthltck"/>
-		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctaboutnewtabcustombg" id="ctraddon_ctaboutnewtab_custbg"/>			
-			<hbox>
-		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctaboutnewtab_custbgl"/>
-		  <textbox id="ctraddon_ctnewtab_bg_urlbox" 
-						  preference="ctraddon_ctaboutnewtab_bg" 
-						  size="auto" 
-						  flex="1" 
-						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_ctnewtab_bg_urlbox', 'aboutnewtabcustomurl');"/><button id="custom_ntpbg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_ctnewtab_bg_urlbox', 'aboutnewtabcustomurl')"/>
-			</hbox>
-		<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctaboutnewtab_bg_stretch" id="ctraddon_ctaboutnewtab_custbgstretch"/>
-		<hbox>
-			<label value="&ctr_aboutnewtab.custombasecol;" id="ctraddon_ctaboutnewtabcustbslb"/>
-			<textbox preference="ctraddon_alt_newtabpalt_custombasecolor" id="ctraddon_ctaboutnewtabcustbstb" width="70px"/>
-			<colorpicker preference="ctraddon_alt_newtabpalt_custombasecolor" type="button" id="ctraddon_ctaboutnewtabcustbscp"/>
-		</hbox>
-		<hbox>
-			<label value="&ctr_aboutnewtab.customhighlightcol;" id="ctraddon_ctaboutnewtabcusthltlb"/>
-			<textbox preference="ctraddon_alt_newtabpalt_customhighlightcolor" id="ctraddon_ctaboutnewtabcusthlttb" width="70px"/>
-			<colorpicker preference="ctraddon_alt_newtabpalt_customhighlightcolor" type="button" id="ctraddon_ctaboutnewtabcusthltcp"/>
-		</hbox>
-		<hbox flex="1">
-			<textbox id="ctraddon_newtabcol" size="1" maxlength="5" preference="ctraddon_newtabcol" type="number" min="0" max="5"/>
-			<label value="&Ctr_alt_newtabcol;" id="ctraddon_newtabcolt"/>
-		</hbox>
-		<hbox flex="1">
-			<textbox id="ctraddon_newtabrows" size="1" maxlength="3" preference="ctraddon_newtabrow" type="number" min="0" max="3"/>
-			<label value="&Ctr_alt_newtabrow;" id="ctraddon_newtabrows"/>
-		</hbox>
-	</groupbox>	
-
+<!--- CyberCTR customization settings -->
 	<groupbox>
 		<caption  label="&cssClassId.description;" class="ctraddon_topic"/>
   <vbox class="contentPane" flex="1">
@@ -1040,6 +963,7 @@
     </hbox>
 	</vbox>
 	</groupbox>
+<!--- CyberCTR customization settings -->
 	  
 	</box>
 	
@@ -1092,6 +1016,93 @@
 	  </groupbox>
 
 	</box>
+
+<!--- CyberCTR customization settings -->	
+	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_abouthomebox">
+	  <groupbox>
+		<caption  label="&ctr_abouthome.caption;" class="ctraddon_topic"/>		
+		<menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
+			<menupopup>
+						<menuitem value="default" label="&ctr_abouthome.default;"/>
+						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
+						<menuitem value="lightalt"	 label="&ctr_abouthome.light; (alt)"/>							
+						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
+						<menuitem value="darkalt"	 label="&ctr_abouthome.dark; (alt)"/>	
+						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Intel)"/>
+						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Amd)"/>
+						<menuitem value="simplicitygreen"	 label="&ctr_abouthome.simplicity; (Linux)"/>
+						<menuitem value="simplicityyellow"	 label="&ctr_abouthome.simplicity; (Beta)"/>	
+						<menuitem value="simplicitycustom"	 label="&ctr_abouthome.simplicity; (Custom)"/>						
+			</menupopup>
+		</menulist>
+		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>
+		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
+		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
+		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>
+		<checkbox label="&ctr_abouthome.animate;"	preference="ctraddon_ctabouthomeanimate" id="ctraddon_ctabouthome_animate"/>
+		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctabouthomecustombg" id="ctraddon_ctabouthome_custbg"/>			
+			<hbox>
+		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctabouthome_custbgl"/>
+		  <textbox id="ctraddon_ctabouthome_bg_urlbox" 
+						  preference="ctraddon_ctabouthome_bg" 
+						  size="auto" 
+						  flex="1" 
+						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_ctabouthome_bg_urlbox', 'abouthomecustomurl');"/><button id="custom_bg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_ctabouthome_bg_urlbox', 'abouthomecustomurl');"/>
+			</hbox>
+			<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctabouthome_bg_stretch" id="ctraddon_ctabouthome_custbgstretch"/>
+			<checkbox label="&ctr_abouthome.custombase;" preference="ctraddon_ctabouthomecustombase" id="ctraddon_ctabouthomecustbsck"/>			
+			<checkbox label="&ctr_abouthome.customhighlight;" preference="ctraddon_ctabouthomecustomhighlight" id="ctraddon_ctabouthomecusthltck"/>
+		<hbox>
+			<label value="&ctr_abouthome.custombasecol;" id="ctraddon_ctabouthomecustbslb"/>
+			<textbox preference="ctraddon_ctabouthome_base_color" id="ctraddon_ctabouthomecustbstb" width="70px"/>
+			<colorpicker preference="ctraddon_ctabouthome_base_color" type="button" id="ctraddon_ctabouthomecustbscp"/>
+		</hbox>
+			<hbox>
+			<label value="&ctr_abouthome.customhighlightcol;" id="ctraddon_ctabouthomecusthltlb"/>
+			<textbox preference="ctraddon_ctabouthome_highlight_color" id="ctraddon_ctabouthomecusthlttb" width="70px"/>
+			<colorpicker preference="ctraddon_ctabouthome_highlight_color" type="button" id="ctraddon_ctabouthomecusthltcp"/>
+		</hbox>		
+	  </groupbox>
+	</box>
+	
+	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_aboutnewtabbox">
+	<groupbox>
+		<caption  label="&ctr_aboutnewtab.caption;" class="ctraddon_topic"/>
+		<checkbox label="&Ctr_alt_newtabp;"		preference="ctraddon_alt_newtabp" id="ctraddon_pw_alt_newtabp"/>
+		<checkbox label="&Ctr_alt_newtabpalt;"		preference="ctraddon_alt_newtabpalt" id="ctraddon_pw_alt_newtabpalt"/>
+		<checkbox label="&ctr_aboutnewtab.custombase;" preference="ctraddon_alt_newtabpalt_custombase" id="ctraddon_ctaboutnewtabcustbsck"/>			
+		<checkbox label="&ctr_aboutnewtab.customhighlight;" preference="ctraddon_alt_newtabpalt_aboutnewtabcustomhighlight" id="ctraddon_ctaboutnewtabcusthltck"/>
+		<checkbox label="&ctr_abouthome.custombg;"	preference="ctraddon_ctaboutnewtabcustombg" id="ctraddon_ctaboutnewtab_custbg"/>			
+			<hbox>
+		  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_ctaboutnewtab_custbgl"/>
+		  <textbox id="ctraddon_ctnewtab_bg_urlbox" 
+						  preference="ctraddon_ctaboutnewtab_bg" 
+						  size="auto" 
+						  flex="1" 
+						  placeholder="&ctr_abouthome.custombgurlph;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_ctnewtab_bg_urlbox', 'aboutnewtabcustomurl');"/><button id="custom_ntpbg_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_ctnewtab_bg_urlbox', 'aboutnewtabcustomurl')"/>
+			</hbox>
+		<checkbox label="&ctr_abouthome.custombgstretch;"	preference="ctraddon_ctaboutnewtab_bg_stretch" id="ctraddon_ctaboutnewtab_custbgstretch"/>
+		<hbox>
+			<label value="&ctr_aboutnewtab.custombasecol;" id="ctraddon_ctaboutnewtabcustbslb"/>
+			<textbox preference="ctraddon_alt_newtabpalt_custombasecolor" id="ctraddon_ctaboutnewtabcustbstb" width="70px"/>
+			<colorpicker preference="ctraddon_alt_newtabpalt_custombasecolor" type="button" id="ctraddon_ctaboutnewtabcustbscp"/>
+		</hbox>
+		<hbox>
+			<label value="&ctr_aboutnewtab.customhighlightcol;" id="ctraddon_ctaboutnewtabcusthltlb"/>
+			<textbox preference="ctraddon_alt_newtabpalt_customhighlightcolor" id="ctraddon_ctaboutnewtabcusthlttb" width="70px"/>
+			<colorpicker preference="ctraddon_alt_newtabpalt_customhighlightcolor" type="button" id="ctraddon_ctaboutnewtabcusthltcp"/>
+		</hbox>
+		<hbox flex="1">
+			<textbox id="ctraddon_newtabcol" size="1" maxlength="5" preference="ctraddon_newtabcol" type="number" min="0" max="5"/>
+			<label value="&Ctr_alt_newtabcol;" id="ctraddon_newtabcolt"/>
+		</hbox>
+		<hbox flex="1">
+			<textbox id="ctraddon_newtabrows" size="1" maxlength="3" preference="ctraddon_newtabrow" type="number" min="0" max="3"/>
+			<label value="&Ctr_alt_newtabrow;" id="ctraddon_newtabrows"/>
+		</hbox>
+	</groupbox>
+	</box>
+<!--- CyberCTR customization settings -->
 	
 	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_prefpagebox">
 
