@@ -441,3 +441,7 @@
 
 <!ENTITY Ctr_tbp_abouthome "Page AboutHome">
 <!ENTITY Ctr_tbp_newtab "Page NewTab">
+
+<!ENTITY Ctr_dark.label "(Dark)">
+<!ENTITY Ctr_light.label "(Light)">
+<!ENTITY Ctr_alt.label "(Alt)">

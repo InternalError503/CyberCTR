@@ -823,17 +823,17 @@
 			<menupopup>
 				<menuitem value="appbuttonc_nightly" label="&Ctr_appbuttonc_n;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_nightly')" id="ctraddon_pw_appbuttonc_nightly"/>
 				<menuitem value="appbuttonc_aurora"	 label="&Ctr_appbuttonc_a;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_aurora')" id="ctraddon_pw_appbuttonc_aurora"/>	
-				<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; (Light)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_cyan')" id="ctraddon_pw_appbuttonc_cyan"/>						
+				<menuitem value="appbuttonc_cyan"	 label="&Ctr_appbuttonc_a; &Ctr_light.label;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_cyan')" id="ctraddon_pw_appbuttonc_cyan"/>						
 				<menuitem value="appbuttonc_default"	 label="&Ctr_appbuttonc_d;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_default')" id="ctraddon_pw_appbuttonc_default"/>
 				<menuitem value="appbuttonc_gray"	 label="&Ctr_appbuttonc_gr;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_gray')" id="ctraddon_pw_appbuttonc_gray"/>						
 				<menuitem value="appbuttonc_green"	 label="&Ctr_appbuttonc_g;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green')" id="ctraddon_pw_appbuttonc_green"/>	
-				<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green_dark')" id="ctraddon_pw_appbuttonc_green_dark"/>						
+				<menuitem value="appbuttonc_green_dark"	 label="&Ctr_appbuttonc_g;  &Ctr_dark.label;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_green_dark')" id="ctraddon_pw_appbuttonc_green_dark"/>						
 				<menuitem value="appbuttonc_orange"	 label="&Ctr_appbuttonc_o;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange')" id="ctraddon_pw_appbuttonc_orange"/>
-				<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange_dark')" id="ctraddon_pw_appbuttonc_orange_dark"/>
+				<menuitem value="appbuttonc_orange_dark"	 label="&Ctr_appbuttonc_o;  &Ctr_dark.label;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_orange_dark')" id="ctraddon_pw_appbuttonc_orange_dark"/>
         <menuitem value="appbuttonc_palemo"  label="&Ctr_appbuttonc_p;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_palemo')" id="ctraddon_pw_appbuttonc_palemo"/>
 				<menuitem value="appbuttonc_purple"	 label="&Ctr_appbuttonc_pu;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_purple')" id="ctraddon_pw_appbuttonc_purple"/>
 				<menuitem value="appbuttonc_red"	 label="&Ctr_appbuttonc_r;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red')" id="ctraddon_pw_appbuttonc_red"/>
-				<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; (Dark)" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red_dark')" id="ctraddon_pw_appbuttonc_red_dark"/>	
+				<menuitem value="appbuttonc_red_dark"	 label="&Ctr_appbuttonc_r; &Ctr_dark.label;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_red_dark')" id="ctraddon_pw_appbuttonc_red_dark"/>	
 				<menuitem value="appbuttonc_salmon"	 label="&Ctr_appbuttonc_s;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_salmon')" id="ctraddon_pw_appbuttonc_salmon"/>						
 				<menuitem value="appbuttonc_transp"  label="&Ctr_appbuttonc_t;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_transp')" id="ctraddon_pw_appbuttonc_transp"/>
 				<menuitem value="appbuttonc_white"	 label="&Ctr_appbuttonc_wh;" oncommand="classicthemerestorerjso.ctr.ctrpwAppbuttonColorExtra('appbuttonc_white')" id="ctraddon_pw_appbuttonc_white"/>				
@@ -1026,9 +1026,9 @@
 			<menupopup>
 						<menuitem value="default" label="&ctr_abouthome.default;"/>
 						<menuitem value="light"	 label="&ctr_abouthome.light;"/>
-						<menuitem value="lightalt"	 label="&ctr_abouthome.light; (alt)"/>							
+						<menuitem value="lightalt"	 label="&ctr_abouthome.light; &Ctr_alt.label;"/>							
 						<menuitem value="dark"	 label="&ctr_abouthome.dark;"/>
-						<menuitem value="darkalt"	 label="&ctr_abouthome.dark; (alt)"/>	
+						<menuitem value="darkalt"	 label="&ctr_abouthome.dark; &Ctr_alt.label;"/>	
 						<menuitem value="simplicityblue"	 label="&ctr_abouthome.simplicity; (Intel)"/>
 						<menuitem value="simplicityred"	 label="&ctr_abouthome.simplicity; (Amd)"/>
 						<menuitem value="simplicitygreen"	 label="&ctr_abouthome.simplicity; (Linux)"/>

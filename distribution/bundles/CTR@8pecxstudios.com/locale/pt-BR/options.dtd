@@ -437,3 +437,7 @@
 
 <!ENTITY Ctr_tbp_abouthome "AboutHome Page">
 <!ENTITY Ctr_tbp_newtab "NewTab Page">
+
+<!ENTITY Ctr_dark.label "(Dark)">
+<!ENTITY Ctr_light.label "(Light)">
+<!ENTITY Ctr_alt.label "(Alt)">
