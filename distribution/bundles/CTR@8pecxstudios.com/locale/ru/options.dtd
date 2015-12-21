@@ -231,8 +231,8 @@
 <!ENTITY Ctr_padlock_mod	"модерн">
 <!ENTITY Ctr_padlock_ext	"Иконка '&brandShortName;' для корректных страниц 'about'">
 <!ENTITY Ctr_icopageinfo	"Нажатие на иконку открывает «Информацию о странице»">
-<!ENTITY Ctr_lbsbsize		"Custom width for location bar and search bar">
-<!ENTITY Ctr_searchbar		"Search bar">
+<!ENTITY Ctr_lbsbsize		"Настройка ширины панелей адреса и поиска">
+<!ENTITY Ctr_searchbar		"Панель поиска">
 
 <!ENTITY Ctr_menubar_items	"Позиция пунктов меню">
 <!ENTITY Ctr_extrabar		"Дополнительные панели инструментов">
@@ -436,9 +436,9 @@
 <!ENTITY Ctr_animatelwtheme "Анимация легких тем оформления при запуске.">
 
 
-<!ENTITY Ctr_tbp_abouthome "AboutHome Page">
-<!ENTITY Ctr_tbp_newtab "NewTab Page">
+<!ENTITY Ctr_tbp_abouthome "Страница AboutHome">
+<!ENTITY Ctr_tbp_newtab "Страница NewTab">
 
-<!ENTITY Ctr_dark.label "(Dark)">
-<!ENTITY Ctr_light.label "(Light)">
-<!ENTITY Ctr_alt.label "(Alt)">
+<!ENTITY Ctr_dark.label "(Темн.)">
+<!ENTITY Ctr_light.label "(Светл.)">
+<!ENTITY Ctr_alt.label "(Альт.)">
