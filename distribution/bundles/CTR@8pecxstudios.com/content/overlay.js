@@ -1,4 +1,5 @@
 "use strict";
+
 (function(global) {
 /*
  There are a few "timeouts" on this document. In almost all cases they are needed to
