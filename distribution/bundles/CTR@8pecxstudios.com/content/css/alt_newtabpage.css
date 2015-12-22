@@ -12,8 +12,9 @@
 
 	.newtab-cell,
 	.newtab-link,
-	.newtab-thumbnail,
-	.newtab-title	{ 
+	.newtab-site,
+	.newtab-title,
+	.newtab-thumbnail { 
 	  border-radius: 0px !important;
 	  -moz-user-select: none;
 	}
