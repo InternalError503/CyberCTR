@@ -164,10 +164,11 @@
 <!ENTITY Ctr_am_compact2	"Vue compacte +">
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version dans les listes de modules">
 <!ENTITY Ctr_xpinstallui	"Acienne fenêtre d’installation de modules (préférence about:config)">
-<!ENTITY Ctr_bmbutpanelm	"Bouton du menu des marque-pages : aspect du panneau de menus">
-<!ENTITY Ctr_bmbunsortbm	"Bouton Marque-pages : 'unsorted bookmarks' submenu">
-<!ENTITY Ctr_bmbviewbmtb	"Bouton Marque-pages : show 'View Toolbar'">
-<!ENTITY Ctr_bmbnounsort	"Bouton Marque-pages : hide 'unsorted bookmarks'">
+<!ENTITY Ctr_bmbutton		"Bouton Marque-pages">
+<!ENTITY Ctr_bmbutpanelm	"Popup : apparence Panneau menu">
+<!ENTITY Ctr_bmbunsortbm	"Popup : 'unsorted bookmarks' submenu">
+<!ENTITY Ctr_bmbviewbmtb	"Popup : show 'View Toolbar'">
+<!ENTITY Ctr_bmbnounsort	"Popup : hide 'unsorted bookmarks'">
 <!ENTITY Ctr_bmbutnotext	"Bouton du menu des marque-pages : masquer l’étiquette sur la barre personnelle">
 <!ENTITY Ctr_skipprintpr	"Bouton Imprimer : masquer « Aperçu avant l’impression »">
 <!ENTITY Ctr_tbconmenu		"Menu contextuel de la barre d’outils : masquer « déplacer au menu », « enlever de la barre d’outils », « recharger / marquer tous les onglets » et « annuler fermer l’onglet »">
@@ -236,6 +237,7 @@
 <!ENTITY Ctr_icopageinfo	"Cliquer sur l’icône pour afficher la fenêtre d’informations de la page">
 <!ENTITY Ctr_lbsbsize		"Largeurs personnalisées pour la barre d’adresse et la barre de recherche">
 <!ENTITY Ctr_searchbar		"Barre de recherche">
+<!ENTITY Ctr_lbsugresi		"Remove scrollbar from suggestions popup">
 <!ENTITY Ctr_lbsugres		"Number of results in suggestions popup (about:config preference)">
 
 <!ENTITY Ctr_menubar_items	"Position de la barre ou du bloc de menus">
