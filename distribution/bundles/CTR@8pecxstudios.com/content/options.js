@@ -420,6 +420,8 @@ classicthemerestorerjso.ctr = {
 	
 	if (this.appversion < 43) {
 	  document.getElementById('ctraddon_pw_ctroldsearch').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_lbsugres').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_lbsugresbox').style.visibility = 'collapse';
 	}
 
 	if (this.appversion >= 43) {
@@ -1314,6 +1316,9 @@ classicthemerestorerjso.ctr = {
 	}
 	if(this.appversion >= 41) { 
 	  this.prefs.setBoolPref("hideurlsrg",true);
+	}
+	if(this.appversion >= 43) { 
+	  this.prefs.setBoolPref("oldsearch",true);
 	}
 	
 	setTimeout(function(){
