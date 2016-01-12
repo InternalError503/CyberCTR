@@ -6353,6 +6353,9 @@ classicthemerestorerjs.ctr = {
 	
 	  if (wwidth < 500) wwidth = 500;
 	  if (wheight < 300) wheight = 300;
+	  
+	  if (wwidth > screen.availWidth) wwidth = screen.availWidth-1;
+	  if (wheight > screen.availHeight) wheight = screen.availHeight-1;
 
 	  var w = (screen.availWidth-wwidth)/2;
 	  var h = (screen.availHeight-wheight)/2;
