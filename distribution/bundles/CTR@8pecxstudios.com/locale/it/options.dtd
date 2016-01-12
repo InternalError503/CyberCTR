@@ -94,6 +94,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Pulsante viola">
 <!ENTITY Ctr_appbuttonc_wh	"Pulsante bianco">
 <!ENTITY Ctr_appbuttonc_cu	"Colore personalizzato">
+<!ENTITY Ctr_appbuttonct	"Custom button color for button on toolbar">
 <!ENTITY Ctr_appbuttonI1	"riavvio consigliato">
 <!ENTITY Ctr_appbuttonI1e	"Visibile solo nella barra del titolo di &brandShortName; e non in quella di Windows.">
 <!ENTITY Ctr_appbuttonI2	"Colorato solo nella barra del titolo e nella barra delle schede.">
@@ -218,7 +219,7 @@
 <!ENTITY Ctr_hideurelstop	"Nascondi i pulsanti Stop e Ricarica nella barra degli indirizzi">
 <!ENTITY Ctr_hideurlgo		"Nascondi il pulsante 'Vai'">
 <!ENTITY Ctr_hideurlsrg		"Nascondi spazio e separatori dai pulsanti Stop, Ricarica e Vai">
-<!ENTITY Ctr_urlbardropm	"Sposta il pulsante Avanti/Indietro all’estremità della barra degli indirizzi">
+<!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
 <!ENTITY Ctr_altreaderico	"Alternative 'Reader' icons">
 <!ENTITY Ctr_hideprbutton	"Nascondi l’icona di notifica quando un popup viene bloccato">
 <!ENTITY Ctr_locsearchbw10	"Riduci l'altezza delle barre degli indirizzi e di ricerca (sperimentale)">
@@ -236,7 +237,7 @@
 <!ENTITY Ctr_icopageinfo	"Cliccando sull’icona vengono visualizzate le 'Informazioni sulla pagina'">
 <!ENTITY Ctr_lbsbsize		"Larghezza personalizzata per la barra degli indirizzi e di ricerca">
 <!ENTITY Ctr_searchbar		"Barra di ricerca">
-<!ENTITY Ctr_lbsugresi		"Remove scrollbar from suggestions popup">
+<!ENTITY Ctr_lbsugresi		"Display as many results in suggestions popup as possible (without scrollbar)">
 <!ENTITY Ctr_lbsugres		"Number of results in suggestions popup (about:config preference)">
 
 <!ENTITY Ctr_menubar_items	"Posizione delle voci del menu">

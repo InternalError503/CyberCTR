@@ -95,6 +95,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Color de botón púrpura">
 <!ENTITY Ctr_appbuttonc_wh	"Color de botón blanco">
 <!ENTITY Ctr_appbuttonc_cu	"Color de botón personalizado">
+<!ENTITY Ctr_appbuttonct	"Custom button color for button on toolbar">
 <!ENTITY Ctr_appbuttonI1	"Se recomienda reiniciar">
 <!ENTITY Ctr_appbuttonI1e	"¡No es visible en la barra de título de SO de Windows, sólo en la barra de título de &brandShortName;!">
 <!ENTITY Ctr_appbuttonI2	"¡Los colores del botón sólo son visibles en la barra de título y la barra de pestañas!">
@@ -219,7 +220,7 @@
 <!ENTITY Ctr_hideurelstop	"Ocultar botones 'Parar y Recargar'">
 <!ENTITY Ctr_hideurlgo		"Ocultar botón 'Ir'">
 <!ENTITY Ctr_hideurlsrg		"Ocultar separadores y espacios del botón 'Recargar, Parar e Ir'">
-<!ENTITY Ctr_urlbardropm	"Mover flecha de despliegue al final de barras de direcciones">
+<!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
 <!ENTITY Ctr_altreaderico	"Iconos de 'Vista de lectura' alternativos">
 <!ENTITY Ctr_hideprbutton	"Ocultar icono de notificación cuando se bloquee una ventana emergente">
 <!ENTITY Ctr_locsearchbw10	"Reducir altura de la barra de direcciones y el recuadro de búsqueda (experimental)">
@@ -237,7 +238,7 @@
 <!ENTITY Ctr_icopageinfo	"Hacer clic en el icono abre la ventana 'Información de la página'">
 <!ENTITY Ctr_lbsbsize		"Ancho personalizado para barra de direcciones y recuadro de búsqueda">
 <!ENTITY Ctr_searchbar		"Recuadro de búsqueda">
-<!ENTITY Ctr_lbsugresi		"Remove scrollbar from suggestions popup">
+<!ENTITY Ctr_lbsugresi		"Display as many results in suggestions popup as possible (without scrollbar)">
 <!ENTITY Ctr_lbsugres		"Number of results in suggestions popup (about:config preference)">
 
 <!ENTITY Ctr_menubar_items	"Posición de los elementos del menú">

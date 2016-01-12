@@ -94,6 +94,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"紫色按鈕">
 <!ENTITY Ctr_appbuttonc_wh	"白色按鈕">
 <!ENTITY Ctr_appbuttonc_cu	"自訂按鈕顏色">
+<!ENTITY Ctr_appbuttonct	"Custom button color for button on toolbar">
 <!ENTITY Ctr_appbuttonI1	"建議重啟瀏覽器!">
 <!ENTITY Ctr_appbuttonI1e	"在作業系統標題列上不可見">
 <!ENTITY Ctr_appbuttonI2	"此項設定僅生效於標題列與分頁列!">
@@ -218,7 +219,7 @@
 <!ENTITY Ctr_hideurelstop	"隱藏網址列中的停止與重新載入按鈕">
 <!ENTITY Ctr_hideurlgo		"隱藏「衝」按鈕">
 <!ENTITY Ctr_hideurlsrg		"隱藏「重新載入、停止載入、衝」按鈕兩側的分隔線和空白">
-<!ENTITY Ctr_urlbardropm	"移動下拉式三角按鈕到網址列末端">
+<!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
 <!ENTITY Ctr_altreaderico	"Alternative 'Reader' icons">
 <!ENTITY Ctr_hideprbutton	"當彈出型廣告視窗被封鎖時，不顯示通知圖示">
 <!ENTITY Ctr_locsearchbw10	"Reduce location bars and search bars height (experimental)">
@@ -236,7 +237,7 @@
 <!ENTITY Ctr_icopageinfo	"按下圖示，則開啟「頁面資訊」視窗">
 <!ENTITY Ctr_lbsbsize		"Custom width for location bar and search bar">
 <!ENTITY Ctr_searchbar		"Search bar">
-<!ENTITY Ctr_lbsugresi		"Remove scrollbar from suggestions popup">
+<!ENTITY Ctr_lbsugresi		"Display as many results in suggestions popup as possible (without scrollbar)">
 <!ENTITY Ctr_lbsugres		"Number of results in suggestions popup (about:config preference)">
 
 <!ENTITY Ctr_menubar_items	"選單列併入">

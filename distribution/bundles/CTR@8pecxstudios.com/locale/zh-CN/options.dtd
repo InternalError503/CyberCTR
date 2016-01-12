@@ -94,6 +94,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"紫色按钮">
 <!ENTITY Ctr_appbuttonc_wh	"白色按钮">
 <!ENTITY Ctr_appbuttonc_cu	"自定义按钮颜色">
+<!ENTITY Ctr_appbuttonct	"Custom button color for button on toolbar">
 <!ENTITY Ctr_appbuttonI1	"建议重启浏览器">
 <!ENTITY Ctr_appbuttonI1e	"在 Windows 系统标题栏上不可见，仅在 &brandShortName; 标题栏上!">
 <!ENTITY Ctr_appbuttonI2	"按钮颜色只在标题栏与标签页栏上可见!">
@@ -164,10 +165,10 @@
 <!ENTITY Ctr_addonversion	"附加组件页面: 显示附加组件版本">
 <!ENTITY Ctr_xpinstallui	"附加组件管理器: 旧式附加组件安装窗口(about:config 选项)">
 <!ENTITY Ctr_bmbutton		"书签菜单按钮">
-<!ENTITY Ctr_bmbutpanelm	"Popup: 面板式菜单外观">
-<!ENTITY Ctr_bmbunsortbm	"Popup: 'unsorted bookmarks' submenu">
-<!ENTITY Ctr_bmbviewbmtb	"Popup: show 'View Toolbar'">
-<!ENTITY Ctr_bmbnounsort	"Popup: hide 'unsorted bookmarks'">
+<!ENTITY Ctr_bmbutpanelm	"弹出式菜单: 面板式菜单外观">
+<!ENTITY Ctr_bmbunsortbm	"弹出式菜单: “未分类书签”子菜单">
+<!ENTITY Ctr_bmbviewbmtb	"弹出式菜单: 显示“查看工具栏”">
+<!ENTITY Ctr_bmbnounsort	"弹出式菜单: 隐藏“未分类书签”">
 <!ENTITY Ctr_bmbutnotext	"隐藏书签工具栏上的文本标签">
 <!ENTITY Ctr_skipprintpr	"打印按钮: 跳过打印预览">
 <!ENTITY Ctr_tbconmenu		"工具栏右键菜单: 隐藏 “移动到菜单”, “从工具栏移除”, “重新载入所有标签页/将全部标签页加为书签” 与 “恢复关闭的标签页”">
@@ -218,7 +219,7 @@
 <!ENTITY Ctr_hideurelstop	"隐藏停止和重新载入按钮">
 <!ENTITY Ctr_hideurlgo		"隐藏 “转到” 按钮">
 <!ENTITY Ctr_hideurlsrg		"隐藏 “重新载入，停止和转到” 按钮的分隔符与空白">
-<!ENTITY Ctr_urlbardropm	"下拉控件移动到地址栏尾部">
+<!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
 <!ENTITY Ctr_altreaderico	"备选的 “阅读模式” 图标">
 <!ENTITY Ctr_hideprbutton	"当弹出窗口被阻止时隐藏通知图标">
 <!ENTITY Ctr_locsearchbw10	"减小地址栏与搜索栏高度(实验性)">
@@ -234,10 +235,10 @@
 <!ENTITY Ctr_padlock_mod	"现代">
 <!ENTITY Ctr_padlock_ext	"合法的 'about' 页面显示 '&brandShortName;' 图标">
 <!ENTITY Ctr_icopageinfo	"点击图标打开“页面信息”窗口">
-<!ENTITY Ctr_lbsbsize		"Custom width for location bar and search bar">
-<!ENTITY Ctr_searchbar		"Search bar">
-<!ENTITY Ctr_lbsugresi		"Remove scrollbar from suggestions popup">
-<!ENTITY Ctr_lbsugres		"Number of results in suggestions popup (about:config preference)">
+<!ENTITY Ctr_lbsbsize		"自定义地址栏和搜索栏的宽度">
+<!ENTITY Ctr_searchbar		"搜索栏">
+<!ENTITY Ctr_lbsugresi		"Display as many results in suggestions popup as possible (without scrollbar)">
+<!ENTITY Ctr_lbsugres		"建议弹出框中的结果个数(about:config 选项)">
 
 <!ENTITY Ctr_menubar_items	"菜单项目位置">
 <!ENTITY Ctr_extrabar		"附加工具栏">
@@ -274,7 +275,7 @@
 
 <!ENTITY Ctr_aerocolors		"主工具栏和标签页使用蓝色 Aero 颜色">
 <!ENTITY Ctr_transpttbw10	"标题/菜单/标签页工具栏: 移除背景颜色">
-<!ENTITY Ctr_transpttbew10	"Additional tweaks for some OS themes">
+<!ENTITY Ctr_transpttbew10	"为部分操作系统主题应用额外调整">
 <!ENTITY Ctr_transptcw10	"隐藏系统默认的 最小化/最大化/关闭 按钮">
 <!ENTITY Ctr_hidenavbar		"导航工具栏: 隐藏工具栏">
 <!ENTITY Ctr_navbarpad		"额外的左右内边距">
