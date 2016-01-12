@@ -33,7 +33,7 @@
 	}		
 
 	#nav-bar #downloads-button-additional[cui-areatype="toolbar"] {
-	  list-style-image: url("chrome://classic_theme_restorer/content/images/download-summary.png")!important;
+	  list-style-image: url("chrome://classic_theme_restorer/content/images/cctr/download-summary.png")!important;
 	   -moz-image-region: rect(0px, 32px, 32px,  0px) !important;
 	}
 }

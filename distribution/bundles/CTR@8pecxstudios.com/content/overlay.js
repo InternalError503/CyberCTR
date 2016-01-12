@@ -2071,11 +2071,11 @@ classicthemerestorerjs.ctr = {
 		  
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_f39',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt1',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt2',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt3',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt4',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt5',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt1',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt2',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt3',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt4',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt5',false);			
 			if (branch.getCharPref("tabthrobber")!="throbber_default"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabthrobber"),true);
 			}
