@@ -3859,7 +3859,12 @@ classicthemerestorerjs.ctr = {
 		case "am_compact2":			manageCSS("am_compact2.css");			break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
-		case "addonversion": 		manageCSS("addonversion.css");			break;
+		
+		case "addonversion":
+			if (classicthemerestorerjs.ctr.appversion < 46) manageCSS("addonversion.css");
+			else manageCSS("addonversion46.css");
+		break;
+		
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
 		case "bmbunsortbm": 		manageCSS("bmbut_unsortedbookm.css");	break;
 		case "bmbviewbmtb": 		manageCSS("bmbut_bmbviewbmtb.css");		break;
