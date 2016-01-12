@@ -185,6 +185,13 @@ classicthemerestorerjs.ctr = {
 		if (this.appversion >= 45) document.getElementById("main-window").setAttribute('fx45plus',true);
 	} catch(e){}
 
+	// add CTR version number to '#main-window' node, so other add-ons/themes can easier distinguish between versions
+	AddonManager.getAddonByID('ClassicThemeRestorer@ArisT2Noia4dev', function(addon) {
+	  try{
+		document.getElementById("main-window").setAttribute('ctraddon_version',addon.version);
+	  } catch(e){}
+	});
+	
 	// CTRs appbutton for Windows titlebar
 	this.createTitlebarButton();
 	
@@ -6937,6 +6944,13 @@ switch (appButtonState){
 			document.getElementById('ctraddon_extraurlbar_tb').focus();
 		  },100);
 		}
+	} catch(e){}
+  },
+  
+  openUrlFromUrlExtraBar: function() {
+    try{
+		delayedOpenTab(document.getElementById('ctraddon_extraurlbar_tb').value, null, null, null, true);
+		document.getElementById('ctraddon_urlextrabar').setAttribute('collapsed',true);
 	} catch(e){}
   },
   
