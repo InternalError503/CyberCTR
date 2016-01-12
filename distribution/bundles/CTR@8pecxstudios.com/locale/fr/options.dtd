@@ -157,6 +157,7 @@
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page 'Nouvel onglet' (about:newtab) : autre aspect">
 <!ENTITY Ctr_ctroldsearch	"Recherche – ancienne méthode">
+<!ENTITY Ctr_ctroldsearchc	"Clear searchbox after search">
 <!ENTITY Ctr_addonmanager	"Modules complémentaires">
 <!ENTITY Ctr_alt_addonsp	"Pages « plus de détails » des modules : autre aspect">
 <!ENTITY Ctr_alt_addonsm	"Gestionnaire de modules complémentaires : autre présentation">
