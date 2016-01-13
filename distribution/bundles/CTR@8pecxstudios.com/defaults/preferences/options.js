@@ -322,6 +322,10 @@ pref("extensions.classicthemerestorer.hidexulfilter", "");
 //CyberCTR animate animated lightweight themes (False by Default).
 pref("extensions.classicthemerestorer.animatedlwtthemes", false);
 
+//CyberCTR Custom CSS
+pref("extensions.classicthemerestorer.loadcustomcss", false);
+pref("extensions.classicthemerestorer.customcssurl", "");
+
 //CyberCTR version
 pref("extensions.classicthemerestorer.version", "1.4.9");
 

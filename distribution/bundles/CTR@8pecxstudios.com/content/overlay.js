@@ -81,6 +81,7 @@ classicthemerestorerjs.ctr = {
   aboutnewtab_bg: sheetIO,
   aboutnewtab_bg_strech: sheetIO,
   custtabthorbber: sheetIO,
+  cctrcustomcsss: sheetIO,
   
   prefs:				Services.prefs.getBranch("extensions.classicthemerestorer."),
   
@@ -306,7 +307,7 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS("nopocket",true);
 		}
 	} catch(e){}	
-	
+
 	var ctrSettingsListener_forDevtheme = new PrefListener(
 	  "browser.devedition.theme.",
 	  function(branch, name) {
@@ -2465,7 +2466,13 @@ classicthemerestorerjs.ctr = {
 			  	try{		  			
 					classicthemerestorerjs.ctr.loadUnloadCSS("custtabthorbber",branch.getBoolPref("tabthrobberusecust"));	
 				} catch(e){}			
-		  break;		  
+		  break;	
+
+		  case "loadcustomcss": case "customcssurl":
+		  try{ 	
+					classicthemerestorerjs.ctr.loadUnloadCSS("cctrcustomcsss",branch.getBoolPref("loadcustomcss"));
+			  	} catch(e){}		
+		  break;
 		  
 		}
 	  }
@@ -6206,6 +6213,21 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.custtabthorbber);
+			}
+
+		break;
+		
+		case "cctrcustomcsss":
+
+			removeOldSheet(this.cctrcustomcsss);
+			
+			if(enable==true && this.prefs.getBoolPref("loadcustomcss")){
+				
+				this.cctrcustomcsss=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+							@import url("file:///'+ this.prefs.getCharPref("customcssurl").replace(/\\/g,"/") +'");\
+				'), null, null);
+
+				applyNewSheet(this.cctrcustomcsss);
 			}
 
 		break;
