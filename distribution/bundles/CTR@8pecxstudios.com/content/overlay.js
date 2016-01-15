@@ -239,17 +239,11 @@ classicthemerestorerjs.ctr = {
 
 		//Animate animated lwtheme's
 		if (Services.prefs.getBoolPref("extensions.classicthemerestorer.animatedlwtthemes")){
-			if (Services.startup.startingUp === false){
 				try{
-					AddonManager.getAddonByID(JSON.parse(Services.prefs.getCharPref("lightweightThemes.usedThemes"))[0].id + "@personas.mozilla.org", 
-						function(addon){
-							if (addon.isActive){
-								addon.userDisabled = true;
-								addon.userDisabled = false;
-							}
-					});
+								//addition restart maybe required. (Less start-up intensive).
+								Services.prefs.setBoolPref("lightweightThemes.persisted.headerURL", false);
+								Services.prefs.setBoolPref("lightweightThemes.persisted.footerURL", false);
 				}catch(e){}	
-			}
 		}	
 	
 	// style CTRs 'customize-ui' option buttons

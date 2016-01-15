@@ -1017,7 +1017,7 @@
 		<checkbox label="&Ctr_hidezoomres;"		preference="ctraddon_hidezoomres"/>
 		<checkbox label="&Ctr_noresizerxp;"		preference="ctraddon_noresizerxp" id="ctraddon_pw_noresizerxp"/>
 		<checkbox label="&Ctr_tbconmenu;"		preference="ctraddon_tbconmenu"	  id="ctraddon_pw_tbconmenu"/>
-		<checkbox label="&Ctr_animatelwtheme;" preference="ctraddon_animatelwtheme"	  id="ctraddon_pw_animatelwtheme" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart();"/>
+		<checkbox label="&Ctr_animatelwtheme; (Addition restart maybe required)" tooltiptext="(Addition restart maybe required)" preference="ctraddon_animatelwtheme"	  id="ctraddon_pw_animatelwtheme" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart();"/>
 	  </groupbox>
 	  
 	  <groupbox id="ctraddon_pw_invertedicons">
