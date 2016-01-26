@@ -94,7 +94,7 @@
 <!ENTITY Ctr_appbuttonc_pu	"Фиолетовая кнопка">
 <!ENTITY Ctr_appbuttonc_wh	"Белая кнопка">
 <!ENTITY Ctr_appbuttonc_cu	"Пользовательский цвет кнопки">
-<!ENTITY Ctr_appbuttonct	"Custom button color for button on toolbar">
+<!ENTITY Ctr_appbuttonct	"Свой цвет кнопок панели инструментов">
 <!ENTITY Ctr_appbuttonI1	"рекомендуется перезапуск">
 <!ENTITY Ctr_appbuttonI1e	"не видно в строке заголовка операционной системы">
 <!ENTITY Ctr_appbuttonI2	"Цвета кнопок, видимых только на панели заголовка и вкладок!">
@@ -152,7 +152,7 @@
 <!ENTITY Ctr_nav_txt_ico3	"Показывать только текст">
 <!ENTITY Ctr_nav_txt_exp	"Экспериментальные атрибуты:">
 <!ENTITY Ctr_iat_notf_vt	"Исключить вертикальные панели инструментов">
-<!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т. д.)">
+<!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т.д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
 <!ENTITY Ctr_alt_newtabp	"Страница новой вкладки (about:newtab): альтернативный вид">
 <!ENTITY Ctr_ctroldsearch	"Старая форма поиска">
@@ -166,10 +166,10 @@
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_xpinstallui	"Управление дополнениями: старый стиль окна установки дополнения (настройка в about:config)">
 <!ENTITY Ctr_bmbutton		"Кнопка меню закладок">
-<!ENTITY Ctr_bmbutpanelm	"Popup: вид панели меню">
-<!ENTITY Ctr_bmbunsortbm	"Popup: 'unsorted bookmarks' submenu">
-<!ENTITY Ctr_bmbviewbmtb	"Popup: show 'View Toolbar'">
-<!ENTITY Ctr_bmbnounsort	"Popup: hide 'unsorted bookmarks'">
+<!ENTITY Ctr_bmbutpanelm	"Всплывающее меню: вид панели меню">
+<!ENTITY Ctr_bmbunsortbm	"Всплывающее меню: подменю 'несортированные закладки'">
+<!ENTITY Ctr_bmbviewbmtb	"Всплывающее меню: показывать 'Просмотр Панели инструментов'">
+<!ENTITY Ctr_bmbnounsort	"Всплывающее меню: скрыть 'несортированные закладки'">
 <!ENTITY Ctr_bmbutnotext	"Скрыть текст на панели закладок">
 <!ENTITY Ctr_skipprintpr	"Кнопка печати: пропускать предварительный просмотр">
 <!ENTITY Ctr_tbconmenu		"Контекстное меню панели инструментов: скрыть «Переместить в меню», «Удалить с панели инструментов», «Обновить/В закладки все вкладки», «Восстановить закрытую вкладку»">
@@ -220,7 +220,7 @@
 <!ENTITY Ctr_hideurelstop	"Скрыть кнопку «Остановить и перезагрузить»">
 <!ENTITY Ctr_hideurlgo		"Скрыть кнопку «Перейти»">
 <!ENTITY Ctr_hideurlsrg		"Скрыть промежутки и разделители между кнопками 'перезагрузить', 'остановить' и 'перейти'">
-<!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
+<!ENTITY Ctr_urlbardropm	"Перемещать маркеа на последнюю возможную позицию">
 <!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_locsearchbw10	"Уменьшить высоту панелей адреса и поиска (экспериментально)">
@@ -238,8 +238,8 @@
 <!ENTITY Ctr_icopageinfo	"Нажатие на иконку открывает «Информацию о странице»">
 <!ENTITY Ctr_lbsbsize		"Настройка ширины панелей адреса и поиска">
 <!ENTITY Ctr_searchbar		"Панель поиска">
-<!ENTITY Ctr_lbsugresi		"Display as many results in suggestions popup as possible (without scrollbar)">
-<!ENTITY Ctr_lbsugres		"Number of results in suggestions popup (about:config preference)">
+<!ENTITY Ctr_lbsugresi		"Отображать максимально возможное количество результатов в подсказках (без прокрутки)">
+<!ENTITY Ctr_lbsugres		"Количество всплывающих результатов (настройка about:config)">
 
 <!ENTITY Ctr_menubar_items	"Позиция пунктов меню">
 <!ENTITY Ctr_extrabar		"Дополнительные панели инструментов">
