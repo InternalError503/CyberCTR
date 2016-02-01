@@ -2398,11 +2398,6 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("cuibuttons",false);
 		  break;
 
-		  case "bmarkoinpw":
-			if (branch.getBoolPref("bmarkoinpw") && classicthemerestorerjs.ctr.appversion < 38) classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",true);
-			  else classicthemerestorerjs.ctr.loadUnloadCSS("bmarkoinpw",false);
-		  break;
-
 		  case "searchbarwidth": case "customsearchbarwidth":
 			  	try{		  
 					classicthemerestorerjs.ctr.loadUnloadCSS("searchbarsheet",branch.getBoolPref("customsearchbarwidth"));
@@ -3976,7 +3971,6 @@ classicthemerestorerjs.ctr = {
 		case "toolsitem": 			manageCSS("ctraddon_toolsitem.css");	break;
 		
 		case "cuibuttons":			manageCSS("cuibuttons.css");			break;
-		case "bmarkoinpw":			manageCSS("ctraddon_bmark_oinpw.css");	break;
 		
 		case "nodevtheme2":			manageCSS("no_devtheme.css");			break;
 		
@@ -6414,13 +6408,7 @@ classicthemerestorerjs.ctr = {
 	}
   
   },
-  
-  // exclude feature from newer Fx versions (it is already build in)
-  openInPrWin: function() {
-	if(classicthemerestorerjs.ctr.appversion < 38)
-	  openLinkIn(document.getElementById('placesContext').triggerNode._placesNode.uri, 'window', {private: true});
-  },
-  
+ 
   // open 'about:preferences' in a new small window
   openContentPrefsInWin: function(which) {
 	 

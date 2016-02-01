@@ -150,7 +150,7 @@
 <!ENTITY Ctr_nav_txt_ico1	"Näita suuri ikoone">
 <!ENTITY Ctr_nav_txt_ico2	"Näita ikoone ja teksti">
 <!ENTITY Ctr_nav_txt_ico3	"Näita ainult teksti">
-<!ENTITY Ctr_nav_txt_exp	"Classic attributes (experimental):">
+<!ENTITY Ctr_nav_txt_exp	"Klassikalised atribuudid (katsejärgus):">
 <!ENTITY Ctr_iat_notf_vt	"Välista vertikaalsed tööriistaribad">
 <!ENTITY Ctr_cpanelmenus	"Paneelimenüüd (järjehoidjad, ajalugu jms.): kompaktne vaade">
 <!ENTITY Ctr_hidezoomres	"Suurendamise juhtnupud tööriistaribal: peida suurendamise lähtestamise nupp">
@@ -163,11 +163,11 @@
 <!ENTITY Ctr_addonmanager	"Lisade haldur">
 <!ENTITY Ctr_alt_addonsp	"'Rohkem teavet' leht: alternatiivne järjestus">
 <!ENTITY Ctr_alt_addonsm	"Alternatiivne välimus">
-<!ENTITY Ctr_am_nowarning	"Laienduste loend: peida hoiatused">
-<!ENTITY Ctr_am_compact		"Laienduste loend: kompaktne vaade">
+<!ENTITY Ctr_am_nowarning	"Laienduste loendid: peida hoiatused">
+<!ENTITY Ctr_am_compact		"Laienduste loendid: kompaktne vaade">
 <!ENTITY Ctr_am_compact2	"Kompaktne vaade +">
-<!ENTITY Ctr_am_highlight	"Add-on lists: highlight entry on hover">
-<!ENTITY Ctr_addonversion	"Laienduste loend: näita lisade versiooni">
+<!ENTITY Ctr_am_highlight	"Laienduste loendid: hiirega peale minnes tõsta kirjed esile">
+<!ENTITY Ctr_addonversion	"Laienduste loendid: näita lisade versiooni">
 <!ENTITY Ctr_xpinstallui	"Vana lisade paigaldamise aken (about:config eelistus)">
 <!ENTITY Ctr_bmbutton		"Järjehoidjate menüü nupp">
 <!ENTITY Ctr_bmbutpanelm	"Menüühüpik: paneelimenüü välimus">
@@ -318,7 +318,6 @@
 
 <!ENTITY Ctr_otherctroptns	"Muud sätted">
 <!ENTITY Ctr_cuibotbuttons	"Lisanupud kohandamise režiimis">
-<!ENTITY Ctr_bookmarkoinpw	"Kirje 'Ava uues privaatses aknas' järjehoidjate kontekstimenüüs">
 <!ENTITY Ctr_nodevtheme		"Ära luba 'Arendaja väljalaske välimust' sisse lülitada">
 
 <!ENTITY Ctr_experttweaks	"Täpsemad">
@@ -355,23 +354,21 @@
 <!ENTITY Ctr_support		"Kasutajatoe foorum">
 <!ENTITY Ctr_newversion		"Uus versioon?">
 
-<!ENTITY Ctr_addon-bar.accesskey	"A">
-<!ENTITY Ctr_openInPrivateWindow	"Ava uues privaatses aknas">
-<!ENTITY Ctr_openInPrivateWindow.accesskey	"P">
+<!ENTITY Ctr_addon-bar.accesskey		"A">
 <!ENTITY appMenuGettingStarted.label	"Alustamine">
-<!ENTITY goCmd.label		"Mine">
+<!ENTITY goCmd.label					"Mine">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
-<!ENTITY backCmd.accesskey            "T">
-<!ENTITY forwardCmd.accesskey         "E">
-<!ENTITY reloadCmd.accesskey          "L">
-<!ENTITY stopCmd.accesskey            "P">
-<!ENTITY bookmarkPageCmd2.accesskey   "J">
+<!ENTITY backCmd.accesskey				"T">
+<!ENTITY forwardCmd.accesskey			"E">
+<!ENTITY reloadCmd.accesskey			"L">
+<!ENTITY stopCmd.accesskey				"P">
+<!ENTITY bookmarkPageCmd2.accesskey		"J">
 
 <!-- DONT-EDIT! Start Fallback entities. Leave empty! DONT-EDIT! -->
-<!ENTITY openCmd.commandkey			"">
-<!ENTITY urlbar.accesskey			"">
-<!ENTITY urlbar.placeholder2		"">
+<!ENTITY openCmd.commandkey				"">
+<!ENTITY urlbar.accesskey				"">
+<!ENTITY urlbar.placeholder2			"">
 <!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 
