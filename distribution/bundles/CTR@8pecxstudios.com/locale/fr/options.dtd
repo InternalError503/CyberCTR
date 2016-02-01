@@ -151,7 +151,7 @@
 <!ENTITY Ctr_nav_txt_ico1	"Afficher de grandes icônes">
 <!ENTITY Ctr_nav_txt_ico2	"Afficher icônes et textes">
 <!ENTITY Ctr_nav_txt_ico3	"Afficher seulement les textes">
-<!ENTITY Ctr_nav_txt_exp	"Attributs expérimentaux :">
+<!ENTITY Ctr_nav_txt_exp	"Classic attributes (experimental):">
 <!ENTITY Ctr_iat_notf_vt	"Pas pour les barres d’outils verticales">
 <!ENTITY Ctr_cpanelmenus	"Compacter les éléments du panneau latéral (marque-pages, historique, etc)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom (si sur une barre d’outils) : cacher le bouton « Réinitialiser le niveau de zoom »">
@@ -167,6 +167,7 @@
 <!ENTITY Ctr_am_nowarning	"Listes de modules : cacher les alertes">
 <!ENTITY Ctr_am_compact		"Listes de modules : vue compacte">
 <!ENTITY Ctr_am_compact2	"Vue compacte +">
+<!ENTITY Ctr_am_highlight	"Add-on lists: highlight entry on hover">
 <!ENTITY Ctr_addonversion	"Gestionnaire de modules complémentaires : afficher la version de chaque module">
 <!ENTITY Ctr_xpinstallui	"Acienne fenêtre d’installation de modules (préférence about:config)">
 <!ENTITY Ctr_bmbutton		"Bouton Marque-pages">

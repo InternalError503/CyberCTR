@@ -1986,6 +1986,11 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_compact2",false);
 		  break;
 
+		  case "am_highlight":
+			if (branch.getBoolPref("am_highlight")) classicthemerestorerjs.ctr.loadUnloadCSS("am_highlight",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_highlight",false);
+		  break;
+
 		  case "alt_newtabpalt":
 			classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabpalt",branch.getBoolPref("alt_newtabpalt"));
 		  break;
@@ -2095,11 +2100,12 @@ classicthemerestorerjs.ctr = {
 		  
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_alt',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('throbber_f39',false);
+      classicthemerestorerjs.ctr.loadUnloadCSS('throbber_nav',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt1',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt3',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt4',false);
-			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt5',false);			
+			classicthemerestorerjs.ctr.loadUnloadCSS('cctr/throbber_alt5',false);
 			if (branch.getCharPref("tabthrobber")!="throbber_default"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("tabthrobber"),true);
 			}
@@ -3898,6 +3904,7 @@ classicthemerestorerjs.ctr = {
 		case "am_nowarning":		manageCSS("am_nowarnings.css");			break;
 		case "am_compact":			manageCSS("am_compact.css");			break;
 		case "am_compact2":			manageCSS("am_compact2.css");			break;
+		case "am_highlight": 		manageCSS("am_highlight.css");			break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
 		

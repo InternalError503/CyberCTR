@@ -150,7 +150,7 @@
 <!ENTITY Ctr_nav_txt_ico1	"Показывать большие значки">
 <!ENTITY Ctr_nav_txt_ico2	"Показывать значки и текст">
 <!ENTITY Ctr_nav_txt_ico3	"Показывать только текст">
-<!ENTITY Ctr_nav_txt_exp	"Экспериментальные атрибуты:">
+<!ENTITY Ctr_nav_txt_exp	"Classic attributes (experimental):">
 <!ENTITY Ctr_iat_notf_vt	"Исключить вертикальные панели инструментов">
 <!ENTITY Ctr_cpanelmenus	"Компактная панель меню (закладки, история и т.д.)">
 <!ENTITY Ctr_hidezoomres	"Кнопки масштаба: скрыть сброс масштабирования">
@@ -166,6 +166,7 @@
 <!ENTITY Ctr_am_nowarning	"Список дополнений в менеджере: скрыть предупреждения">
 <!ENTITY Ctr_am_compact		"Компактный вид списка дополнений">
 <!ENTITY Ctr_am_compact2	"Компактный вид +">
+<!ENTITY Ctr_am_highlight	"Add-on lists: highlight entry on hover">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_xpinstallui	"Управление дополнениями: старый стиль окна установки дополнения (настройка в about:config)">
 <!ENTITY Ctr_bmbutton		"Кнопка меню закладок">
