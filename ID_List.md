@@ -246,6 +246,7 @@ Copy All Tab Urls | #context_CopyAllTabUrls
 Clone Current Tab | #context_CloneCurrentTab
 Clone In Window | #context_CloneCurrentTabNewWindow
 Reload All Tabs | #context_reloadAllTabs
+Bookmark This Page | #context_bookmarkThisPage
 Bookmark All Tabs | #context_bookmarkAllTabs
 Close Tabs To The Right | #context_closeTabsToTheEnd
 Close Other Tabs | #context_closeOtherTabs
