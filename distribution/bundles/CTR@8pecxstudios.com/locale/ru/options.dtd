@@ -71,7 +71,7 @@
 <!ENTITY Ctr_closetab_hfot	"Скрыть для одной вкладки">
 <!ENTITY Ctr_closei_def		"Стандартный значок 'Закрыть'">
 <!ENTITY Ctr_closeonleft	"Альтернативная позиция на вкладке">
-<!ENTITY Ctr_closetabbig	"Bigger icon (20x20px)">
+<!ENTITY Ctr_closetabbig	"Увеличенный значок (20x20px)">
 <!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (настройка about:config)">
 
 <!ENTITY Ctr_hctpinfotab	"Некоторые виды оформления вкладок несовместимы с расширением 'Hide Caption Titlebar Plus'.">
@@ -131,7 +131,7 @@
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
-<!ENTITY Ctr_emptygfavico	"Заменять пустые фавиконки">
+<!ENTITY Ctr_emptygfavico	"Заменять пустые значки избранного">
 <!ENTITY Ctr_mstatusbar		"Подвижная строка состояния">
 <!ENTITY Ctr_mstatusbars4e	"Панель статуса управляется переменной 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Панель статуса управляется переменной 'ThePuzzlePiece'">
@@ -171,12 +171,12 @@
 <!ENTITY Ctr_am_compact		"Компактный вид списка дополнений">
 <!ENTITY Ctr_am_compact2	"Компактный вид +">
 <!ENTITY Ctr_am_highlight	"Списки дополнений: подсвечивать элемент при наведении">
-<!ENTITY Ctr_am_buticons	"Add-on lists: replace button labels with icons">
-<!ENTITY Ctr_am_hovshowb	"Add-on lists: only show buttons on 'hover'">
+<!ENTITY Ctr_am_buticons	"Список дополнений: заменить текстовые метки значками">
+<!ENTITY Ctr_am_hovshowb	"Список дополнений: показывать кнопки только при наведении">
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_xpinstallui	"Управление дополнениями: старый стиль окна установки дополнения (настройка в about:config)">
 <!ENTITY Ctr_bmbutton		"Кнопка меню закладок">
-<!ENTITY Ctr_hiderecentbm	"Bookmarks popup: hide recently added bookmarks">
+<!ENTITY Ctr_hiderecentbm	"Всплывающее меню: скрывать недавно добавленные закладки">
 <!ENTITY Ctr_bmbutpanelm	"Всплывающее меню: вид панели меню">
 <!ENTITY Ctr_bmbunsortbm	"Всплывающее меню: подменю 'несортированные закладки'">
 <!ENTITY Ctr_bmbunsortbm2	"Меню над закладками">
@@ -230,11 +230,11 @@
 <!ENTITY Ctr_starinurlinfo	"По умолчанию кнопка закладок в меню скрывается">
 <!ENTITY Ctr_feedinurl		"Кнопка RSS в адресной строке">
 <!ENTITY Ctr_hideurelstop	"Скрыть кнопку «Остановить и перезагрузить»">
-<!ENTITY Ctr_hideurelstop2	"Always show 'go' button">
+<!ENTITY Ctr_hideurelstop2	"Всегда отображать кнопку «Перейти»">
 <!ENTITY Ctr_hideurlgo		"Скрыть кнопку «Перейти»">
-<!ENTITY Ctr_hideurlsrg		"Скрыть промежутки и разделители между кнопками 'перезагрузить', 'остановить' и 'перейти'">
-<!ENTITY Ctr_urlbardropm	"Перемещать маркеа на последнюю возможную позицию">
-<!ENTITY Ctr_urlbardropm2	"Make dropmarker always visible">
+<!ENTITY Ctr_hideurlsrg		"Скрыть промежутки и разделители между кнопками «Перезагрузить», «Остановить» и «Перейти»">
+<!ENTITY Ctr_urlbardropm	"Перемещать маркер на последнюю возможную позицию">
+<!ENTITY Ctr_urlbardropm2	"Сделать маркер видимым постоянно">
 <!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_locsearchbw10	"Уменьшить высоту панелей адреса и поиска (экспериментально)">
@@ -242,7 +242,7 @@
 <!ENTITY Ctr_ib_nohovcolor	"Не отображать серый цвет при зависании">
 <!ENTITY Ctr_ib_graycolor	"Серый цвет для сайтов неизвестной подлинности и сайтов chrome">
 <!ENTITY Ctr_verifiedcolors	"Цвета кнопок для проверенных сайтов, надежных и ненадежных соединений">
-<!ENTITY Ctr_ibinfoico		"Replace 'i'-icon with globe icon">
+<!ENTITY Ctr_ibinfoico		"Заменить значок 'i' значком 'глобуса'">
 <!ENTITY Ctr_faviconurl		"Значок в адресной строке">
 <!ENTITY Ctr_padlock		"Замок">
 <!ENTITY Ctr_padlock_hid	"Скрыть замок">
