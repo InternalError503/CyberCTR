@@ -56,10 +56,10 @@
 <!ENTITY Ctr_tabwidthinfo3	"Значения ниже 48px часто приводят к сбоям!">
 <!ENTITY Ctr_square_edges	"Верхние углы без закругления">
 <!ENTITY Ctr_tttitlebar		"Название вкладки в панели вкладок &brandShortName;">
-<!ENTITY Ctr_tabinsertion	"Вставить соответствующую вкладку после текущей вкладки (about:config)">
-<!ENTITY Ctr_emptytfavico	"Show favicon (if a site does not offer one)">
-<!ENTITY Ctr_emptytfavico_n	"None">
-<!ENTITY Ctr_emptytfavico_g	"Generic">
+<!ENTITY Ctr_tabinsertion	"Открывать связанную вкладку после текущей вкладки (настройка about:config)">
+<!ENTITY Ctr_emptytfavico	"Показывать фавиконку (если отсутствует)">
+<!ENTITY Ctr_emptytfavico_n	"Нет">
+<!ENTITY Ctr_emptytfavico_g	"Стандартная">
 <!ENTITY Ctr_noemptypticon	"Удалить пустой значок из прикреплённой вкладки">
 <!ENTITY Ctr_e10stab_notd	"Вкладки E10s: удалить подчёркивание">
 <!ENTITY Ctr_closetab_0		"Кнопка закрытия вкладки">
@@ -71,7 +71,7 @@
 <!ENTITY Ctr_closetab_hfot	"Скрыть для одной вкладки">
 <!ENTITY Ctr_closei_def		"Стандартный значок 'Закрыть'">
 <!ENTITY Ctr_closeonleft	"Альтернативная позиция на вкладке">
-<!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (about:config)">
+<!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (настройка about:config)">
 
 <!ENTITY Ctr_hctpinfotab	"Некоторые виды оформления вкладок несовместимы с расширением 'Hide Caption Titlebar Plus'.">
 <!ENTITY Ctr_hctpinfoab		"Кнопка на панели заголовка несовместима с расширением 'Hide Caption Titlebar Plus'.">
@@ -83,8 +83,8 @@
 <!ENTITY Ctr_appbutton2		"в панели заголовка">
 <!ENTITY Ctr_appbutton2h	"в панели заголовка (скрыта)">
 <!ENTITY Ctr_appbutton2io	"в панели заголовка (только значки)">
-<!ENTITY Ctr_paneluibtweak	"Отображать кнопку основного меню как 'Кнопку приложения'">
-<!ENTITY Ctr_paneluibtweak2	" ">
+<!ENTITY Ctr_paneluibtweak	"Оранжевая кнопка меню">
+<!ENTITY Ctr_paneluibtweak2	"...на панели вкладок">
 <!ENTITY Ctr_appbuttonc_o	"Оранжевая кнопка (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_a	"Синяя кнопка (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Черная кнопка (Nightly)">
@@ -129,7 +129,7 @@
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
-<!ENTITY Ctr_emptygfavico	"Replace generic favicon">
+<!ENTITY Ctr_emptygfavico	"Заменять пустые фавиконки">
 <!ENTITY Ctr_mstatusbar		"Подвижная строка состояния">
 <!ENTITY Ctr_mstatusbars4e	"Панель статуса управляется переменной 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Панель статуса управляется переменной 'ThePuzzlePiece'">
@@ -174,7 +174,7 @@
 <!ENTITY Ctr_bmbutton		"Кнопка меню закладок">
 <!ENTITY Ctr_bmbutpanelm	"Всплывающее меню: вид панели меню">
 <!ENTITY Ctr_bmbunsortbm	"Всплывающее меню: подменю 'несортированные закладки'">
-<!ENTITY Ctr_bmbunsortbm2	"Menu above bookmarks">
+<!ENTITY Ctr_bmbunsortbm2	"Меню над закладками">
 <!ENTITY Ctr_bmbviewbmtb	"Всплывающее меню: показывать 'Просмотр Панели инструментов'">
 <!ENTITY Ctr_bmbnounsort	"Всплывающее меню: скрыть 'несортированные закладки'">
 <!ENTITY Ctr_bmbutnotext	"Скрыть текст на панели закладок">
@@ -362,8 +362,8 @@
 <!ENTITY Ctr_addon-bar.accesskey		"A">
 <!ENTITY appMenuGettingStarted.label	"Начало работы">
 <!ENTITY goCmd.label					"Перейти">
-<!ENTITY Ctr_menu_restart.label			"Restart &brandShortName;">
-<!ENTITY Ctr_restartapp					"'Restart &brandShortName;' in appmenu and filemenu">
+<!ENTITY Ctr_menu_restart.label			"Перезапуск &brandShortName;">
+<!ENTITY Ctr_restartapp					"'Перезапуск &brandShortName;' в меню приложения/файл">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey				"Н">
