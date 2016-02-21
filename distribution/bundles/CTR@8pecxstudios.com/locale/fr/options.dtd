@@ -85,7 +85,8 @@
 <!ENTITY Ctr_appbutton2h	"Bouton sur la barre de titre [&brandShortName;] (caché)">
 <!ENTITY Ctr_appbutton2io	"Bouton sur la barre de titre [&brandShortName;] (icône seule)">
 <!ENTITY Ctr_paneluibtweak	"Bouton orange sur la barre d'onglets">
-<!ENTITY Ctr_paneluibtweak2	" ">
+<!ENTITY Ctr_paneluibtweak2	"Bouton orange sur la barre d'onglets (icône seule)">
+<!ENTITY Ctr_paneluibtweak3	" ">
 <!ENTITY Ctr_appbuttonc_o	"Bouton orange (Firefox)">
 <!ENTITY Ctr_appbuttonc_a	"Bouton bleu (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Bouton noir (Nightly)">
@@ -362,9 +363,9 @@
 
 <!ENTITY Ctr_addon-bar.accesskey		"D">
 <!ENTITY appMenuGettingStarted.label	"Pour commencer">
-<!ENTITY goCmd.label					"Go">
-<!ENTITY Ctr_menu_restart.label			"Restart &brandShortName;">
-<!ENTITY Ctr_restartapp					"'Restart &brandShortName;' in appmenu and filemenu">
+<!ENTITY goCmd.label					"Aller à">
+<!ENTITY Ctr_menu_restart.label			"Redémarrer &brandShortName;">
+<!ENTITY Ctr_restartapp					"« Redémarrer &brandShortName; » dans le menu de l'application et le menu Fichier">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey				"d">
