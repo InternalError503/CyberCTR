@@ -11,6 +11,7 @@ pref("extensions.classicthemerestorer.noemptypticon",false);
 pref("extensions.classicthemerestorer.closetab","closetab_default");
 pref("extensions.classicthemerestorer.closetabhfl",false);
 pref("extensions.classicthemerestorer.closeonleft",false);
+pref("extensions.classicthemerestorer.closetabbig",false);
 pref("extensions.classicthemerestorer.closeicon",'closeicon_default');
 pref("extensions.classicthemerestorer.tttitlebar",false);
 
@@ -65,6 +66,8 @@ pref("extensions.classicthemerestorer.am_nowarning",false);
 pref("extensions.classicthemerestorer.am_compact",false);
 pref("extensions.classicthemerestorer.am_compact2",true);
 pref("extensions.classicthemerestorer.am_highlight",false);
+pref("extensions.classicthemerestorer.am_buticons",false);
+pref("extensions.classicthemerestorer.am_hovshowb",false);
 pref("extensions.classicthemerestorer.alt_addonsp",false);
 pref("extensions.classicthemerestorer.bmbutpanelm",false);
 pref("extensions.classicthemerestorer.bmbunsortbm",false);
@@ -115,6 +118,7 @@ pref("extensions.classicthemerestorer.altreaderico",false);
 pref("extensions.classicthemerestorer.ib_nohovcolor",false);
 pref("extensions.classicthemerestorer.ib_graycolor",false);
 pref("extensions.classicthemerestorer.verifiedcolors",false);
+pref("extensions.classicthemerestorer.ibinfoico",false);
 pref("extensions.classicthemerestorer.faviconurl",false);
 pref("extensions.classicthemerestorer.padlock","padlock_default");
 pref("extensions.classicthemerestorer.padlockex",true);
@@ -325,8 +329,8 @@ pref("extensions.classicthemerestorer.cbookmarkfontsize", 12);
 pref("extensions.classicthemerestorer.hidexulelements", false);
 pref("extensions.classicthemerestorer.hidexulfilter", "");
 
-//CyberCTR animate animated lightweight themes (False by Default).
-pref("extensions.classicthemerestorer.animatedlwtthemes", false);
+//CyberCTR animate animated lightweight themes (True by Default).
+pref("extensions.classicthemerestorer.animatedlwtthemes", true);
 
 //CyberCTR Custom CSS
 pref("extensions.classicthemerestorer.loadcustomcss", false);

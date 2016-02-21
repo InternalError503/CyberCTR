@@ -721,6 +721,11 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("closeonleft") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("closeonleft",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("closeonleft",false);
 		  break;
+		  
+		  case "closetabbig":
+			if (branch.getBoolPref("closetabbig")) classicthemerestorerjs.ctr.loadUnloadCSS("closetabbig",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("closetabbig",false);
+		  break;
 
 
 		  // Appbutton
@@ -2025,6 +2030,16 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("am_highlight")) classicthemerestorerjs.ctr.loadUnloadCSS("am_highlight",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_highlight",false);
 		  break;
+		  
+		  case "am_buticons":
+			if (branch.getBoolPref("am_buticons")) classicthemerestorerjs.ctr.loadUnloadCSS("am_buticons",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_buticons",false);
+		  break;
+		  
+		  case "am_hovshowb":
+			if (branch.getBoolPref("am_hovshowb")) classicthemerestorerjs.ctr.loadUnloadCSS("am_hovshowb",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_hovshowb",false);
+		  break;
 
 		  case "alt_newtabpalt":
 			classicthemerestorerjs.ctr.loadUnloadCSS("alt_newtabpalt",branch.getBoolPref("alt_newtabpalt"));
@@ -2123,6 +2138,10 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("verifiedcolors",false);
 		  break;
 
+		  case "ibinfoico":
+			if (branch.getBoolPref("ibinfoico")) classicthemerestorerjs.ctr.loadUnloadCSS("ibinfoico",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ibinfoico",false);
+		  break;
 		  
 		  case "hideprivmask":
 			if (branch.getBoolPref("hideprivmask")) classicthemerestorerjs.ctr.loadUnloadCSS("hideprivmask",true);
@@ -3791,6 +3810,8 @@ classicthemerestorerjs.ctr = {
 		case "closeicong_w10red": 		manageCSS("close_icon_g_w10red.css");  	break;
 		case "closeicong_gc": 			manageCSS("close_icon_g_gc.css");  		break;
 		
+		case "closetabbig": 			manageCSS("close_icon_t_big.css");  	break;
+		
 		case "closeonleft":
 		
 			if(this.prefs.getCharPref("tabs")=="tabs_curvedall") manageCSS("close_onleft2.css");
@@ -4008,6 +4029,8 @@ classicthemerestorerjs.ctr = {
 		case "am_compact":			manageCSS("am_compact.css");			break;
 		case "am_compact2":			manageCSS("am_compact2.css");			break;
 		case "am_highlight": 		manageCSS("am_highlight.css");			break;
+		case "am_buticons": 		manageCSS("am_buttonicons.css");		break;
+		case "am_hovshowb": 		manageCSS("am_hovshowbut.css");			break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
 		
@@ -4029,6 +4052,7 @@ classicthemerestorerjs.ctr = {
 		case "ib_nohovcolor": 		manageCSS("ib_nohovcolor.css");			break;
 		case "ib_graycolor": 		manageCSS("ib_graycolor.css");			break;
 		case "verifiedcolors": 		manageCSS("verifiedcolors.css");		break;
+		case "ibinfoico": 			manageCSS("hide_ibinfoico.css");		break;
 		case "hideprivmask": 		manageCSS("hideprivatemask.css");		break;
 		case "bfurlbarfix": 		manageCSS("bf_urlbarfix.css");			break;
 		case "bf_space": 			manageCSS("bf_space.css");				break;
