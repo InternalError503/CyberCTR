@@ -58,7 +58,9 @@
 <!ENTITY Ctr_square_edges	"Équarrir les coins supérieurs">
 <!ENTITY Ctr_tttitlebar		"Titre de l’onglet dans la barre titre de &brandShortName;">
 <!ENTITY Ctr_tabinsertion	"Placer l’onglet apparenté après l’onglet courant (about:config)">
-<!ENTITY Ctr_emptyfavicon	"Afficher les favicons vides sur les onglets (pour les sites qui n’en ont pas)">
+<!ENTITY Ctr_emptytfavico	"Show favicon (if a site does not offer one)">
+<!ENTITY Ctr_emptytfavico_n	"None">
+<!ENTITY Ctr_emptytfavico_g	"Generic">
 <!ENTITY Ctr_noemptypticon	"Enlever les favicons vides des onglets épinglés">
 <!ENTITY Ctr_e10stab_notd	"Onglets E10 : enlever le soulignage">
 <!ENTITY Ctr_closetab_0		"Bouton de fermeture">
@@ -128,7 +130,7 @@
 <!ENTITY Ctr_wincontrols	"Mode plein écran : boutons « Réduire - Restaurer - Fermer » déplaçables">
 <!ENTITY Ctr_oldtoplevimg	"Images du domaine de premier niveau : présentation classique">
 <!ENTITY Ctr_altalertbox	"Boîtes d’alerte : autre présentation">
-<!ENTITY Ctr_emptyfavicon2	"Remplacer le favicon générique (vide avec pointillés) par un favicon ayant l’aspect d’une feuille de papier">
+<!ENTITY Ctr_emptygfavico	"Replace generic favicon">
 <!ENTITY Ctr_mstatusbar		"Barre d’état déplaçable">
 <!ENTITY Ctr_mstatusbars4e	"La configuration de la barre d’état est régie par « Status-4-Evar »">
 <!ENTITY Ctr_mstatusbartpp	"La configuration de la barre d’état est régie par « ThePuzzlePiece »">
@@ -172,7 +174,8 @@
 <!ENTITY Ctr_xpinstallui	"Acienne fenêtre d’installation de modules (préférence about:config)">
 <!ENTITY Ctr_bmbutton		"Bouton Marque-pages">
 <!ENTITY Ctr_bmbutpanelm	"Popup : apparence du panneau de menus">
-<!ENTITY Ctr_bmbunsortbm	"Popup : sous-menu « Marque-pages non classés »">
+<!ENTITY Ctr_bmbunsortbm	"Popup : sous menu des « marque-pages non triés »">
+<!ENTITY Ctr_bmbunsortbm2	"Menu above bookmarks">
 <!ENTITY Ctr_bmbviewbmtb	"Popup :afficher « Affichage de la barre d’outils »">
 <!ENTITY Ctr_bmbnounsort	"Popup : masquer « Marque-pages non classés »">
 <!ENTITY Ctr_bmbutnotext	"Masquer l’identifiant sur la barre personnelle">
@@ -223,9 +226,11 @@
 <!ENTITY Ctr_starinurlinfo	"Par défaut le bouton de menu des marque-pages est masqué">
 <!ENTITY Ctr_feedinurl		"Bouton d’abonnement">
 <!ENTITY Ctr_hideurelstop	"Masquer « stop-actualiser »">
+<!ENTITY Ctr_hideurelstop2	"Always show 'go' button">
 <!ENTITY Ctr_hideurlgo		"Masquer le bouton « Go »">
 <!ENTITY Ctr_hideurlsrg		"Cacher les séparateurs de boutons « actualiser, stop &amp; aller à » &amp; espaces">
-<!ENTITY Ctr_urlbardropm	"Placer le dropmarker en dernier">
+<!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
+<!ENTITY Ctr_urlbardropm2	"Make dropmarker always visible">
 <!ENTITY Ctr_altreaderico	"Autres icônes pour le mode « lecture »">
 <!ENTITY Ctr_hideprbutton	"Masquer l’icône de notification quand un pop-up est bloqué">
 <!ENTITY Ctr_locsearchbw10	"Réduire la hauteur de la barre d’adresse et de la barre de recherche (expérimental)">
@@ -366,11 +371,10 @@
 <!ENTITY stopCmd.accesskey				"r">
 <!ENTITY bookmarkPageCmd2.accesskey		"M">
 
-<!-- DONT-EDIT! Start Fallback entities. Leave empty! DONT-EDIT! -->
+<!-- Fallback entities. Leave empty! -->
 <!ENTITY openCmd.commandkey				"">
 <!ENTITY urlbar.accesskey				"">
 <!ENTITY urlbar.placeholder2			"">
-<!-- DONT-EDIT! End Fallback entities. Leave empty! DONT-EDIT! -->
 
 <!ENTITY helpMenu.label			"Aide">
 <!ENTITY helpMenuWin.label		"Aide">
