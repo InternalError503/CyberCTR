@@ -176,6 +176,7 @@
 <!ENTITY Ctr_addonversion	"Отображать версии дополнений на странице 'Управление дополнениями'">
 <!ENTITY Ctr_xpinstallui	"Управление дополнениями: старый стиль окна установки дополнения (настройка в about:config)">
 <!ENTITY Ctr_bmbutton		"Кнопка меню закладок">
+<!ENTITY Ctr_hiderecentbm	"Bookmarks popup: hide recently added bookmarks">
 <!ENTITY Ctr_bmbutpanelm	"Всплывающее меню: вид панели меню">
 <!ENTITY Ctr_bmbunsortbm	"Всплывающее меню: подменю 'несортированные закладки'">
 <!ENTITY Ctr_bmbunsortbm2	"Меню над закладками">
