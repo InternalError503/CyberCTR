@@ -146,6 +146,7 @@
 	  min-height: unset !important;
 	  height: unset !important;
 	  font-size: 90% !important;
+	  color: inherit!important;
 	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 	

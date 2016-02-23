@@ -198,6 +198,7 @@
 	  min-height: unset !important;
 	  height: unset !important;
 	  font-size: 90% !important;
+	  color: inherit!important;
 	}
 	
 	#weavePrefsDeck button {
