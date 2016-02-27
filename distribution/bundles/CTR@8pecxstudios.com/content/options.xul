@@ -16,6 +16,7 @@
 	onload="classicthemerestorerjso.ctr.initprefwindow()"
 	onunload="classicthemerestorerjso.ctr.unloadprefwindow()"
 	buttons="accept"
+	defaultButton="0"
 	autosize="true"
 	resizable="yes"
 	ondialogaccept="return true"
@@ -465,7 +466,7 @@
 					<textbox id="ctraddon_pw_tabMinWidth" size="3" maxlength="3" preference="ctraddon_tabmwidth" type="number"/>
 					<label value="px"/>
 				</hbox>
-				<label value="100px &Ctr_tabwidthdef;" id="ctraddon_pw_tabMinWidth_L2"/>
+				<label value="100 px &Ctr_tabwidthdef;" id="ctraddon_pw_tabMinWidth_L2"/>
 			</row>
 			<row align="center">
 				<label value="&Ctr_tabmaxwidth;" id="ctraddon_pw_tabMaxWidth_L1"/>
@@ -473,7 +474,7 @@
 					<textbox id="ctraddon_pw_tabMaxWidth" size="3" maxlength="3" preference="ctraddon_tabwidth" type="number"/>
 					<label value="px"/>
 				</hbox>
-				<label value="210px &Ctr_tabwidthdef; / 250px &Ctr_tabwidthcla;" id="ctraddon_pw_tabMaxWidth_L2"/>
+				<label value="210 px &Ctr_tabwidthdef; / 250 px &Ctr_tabwidthcla;" id="ctraddon_pw_tabMaxWidth_L2"/>
 			</row>
 		  </rows>
 		</grid>
@@ -1316,6 +1317,7 @@
 				<menuitem value="iconstxt3"	label="&Ctr_nav_txt_ico2; v3" oncommand="classicthemerestorerjso.ctr.ctrpwModeextra('iconstxt3')"/>
 				<menuitem value="iconstxt4"	label="&Ctr_nav_txt_ico2; v4" oncommand="classicthemerestorerjso.ctr.ctrpwModeextra('iconstxt4')"/>
 				<menuitem value="txtonly"	label="&Ctr_nav_txt_ico3;" oncommand="classicthemerestorerjso.ctr.ctrpwModeextra('txtonly')"/>
+				<label value=" "/>
 				<description class="ctraddon_font1">&Ctr_nav_txt_exp;</description>
 				<menuitem value="text"		label="[mode='text'] (&Ctr_nav_txt_ico3;)" oncommand="classicthemerestorerjso.ctr.ctrpwModeextra('text')"/>
 				<menuitem value="full"		label="[mode='full'] (&Ctr_nav_txt_ico2;)" oncommand="classicthemerestorerjso.ctr.ctrpwModeextra('full')"/>
