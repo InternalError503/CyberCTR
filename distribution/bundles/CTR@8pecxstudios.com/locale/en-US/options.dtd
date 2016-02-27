@@ -102,7 +102,7 @@
 <!ENTITY Ctr_appbuttonct	"Custom button color for button on toolbar">
 <!ENTITY Ctr_appbuttonI1	"Restart recommended">
 <!ENTITY Ctr_appbuttonI1e	"Only visible on &brandShortName; titlebar, not Windows OS titlebar!">
-<!ENTITY Ctr_appbuttonI2	"Button colors are only visible, if button is on titlebar or tabs toolbar!">
+<!ENTITY Ctr_appbuttonI2	"Button colors are only visible if button is on titlebar or tabs toolbar!">
 <!ENTITY Ctr_appbutmhi		"Higher position (if on tabs toolbar)">
 <!ENTITY Ctr_appbautocol	"Automatically set browser channel color (default/Aurora/Nightly)">
 <!ENTITY Ctr_appbutbdl		"Hide borders and background colors">
@@ -187,7 +187,7 @@
 <!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
 <!ENTITY Ctr_tbconmenu		"Toolbar context menu: hide 'move to menu', 'remove from toolbar', 'reload/bookmark all tabs' and 'undo close tab'">
 <!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
+<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+)">
 <!ENTITY Ctr_pmhidelabels	"Main panel menu popup: hide button labels">
 <!ENTITY Ctr_menupopupscr	"Menu popups: show scrollbars instead of scroll arrows">
 <!ENTITY Ctr_closegeneral	"General close icons">
@@ -204,7 +204,7 @@
 <!ENTITY Ctr_anewtaburlcb	"Custom new tab page url (default: 'about:newtab')">
 
 <!ENTITY Ctr_tab_tf_info1	"Color names, hexcodes, rgb(a) and hsl(a) values are supported.">
-<!ENTITY Ctr_tab_tf_info2	"Inputs won't be validated!">
+<!ENTITY Ctr_tab_tf_info2	"Input values are not validated!">
 <!ENTITY Ctr_tabact_t		"selected">
 <!ENTITY Ctr_tabhov_t		"hovered">
 <!ENTITY Ctr_tabnor_t		"default">
@@ -244,7 +244,7 @@
 <!ENTITY Ctr_ib_graycolor	"Gray color for unknown identity and chrome pages">
 <!ENTITY Ctr_verifiedcolors	"Button colors for verified websites, secure and not secure connections">
 <!ENTITY Ctr_ibinfoico		"Replace 'i'-icon with globe icon">
-<!ENTITY Ctr_faviconurl		"Favicon: current websites icon">
+<!ENTITY Ctr_faviconurl		"Favicon: current website icon">
 <!ENTITY Ctr_padlock		"Padlock icon for secure connections">
 <!ENTITY Ctr_padlock_hid	"hidden">
 <!ENTITY Ctr_padlock_def	"default">
@@ -412,13 +412,13 @@
 <!ENTITY ctr_appbuttoncusttextcolor	"AppButton text color.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Remove AppButton text shadow">
 
-<!ENTITY ctr_toolbarsearchbar.description	"Tool-bar search bar">
+<!ENTITY ctr_toolbarsearchbar.description	"Toolbar search bar">
 <!ENTITY ctr_toolbarsearchbarcustwidth.label	"Enable custom maximum width">
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Search-bar maximum width: ">
 <!ENTITY ctr_colapseaddonsearchbar.label	"Collapsible about:addons search bar">
 
-<!ENTITY ctr_bookmarkfontsize.description	"Bookmarks Tool-Bar">
-<!ENTITY ctr_custombookmarkfontsize.label	"Enable custom font size on bookmarks tool-bar">
+<!ENTITY ctr_bookmarkfontsize.description	"Bookmarks Toolbar">
+<!ENTITY ctr_custombookmarkfontsize.label	"Enable custom font size on bookmarks toolbar">
 <!ENTITY ctr_cbookmarkfontsize.label	"Bookmarks font size: ">
 
 <!ENTITY ctr_abouthome.caption "Change about:home page style">
