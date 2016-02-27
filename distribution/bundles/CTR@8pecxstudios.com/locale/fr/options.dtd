@@ -261,7 +261,7 @@
 <!ENTITY Ctr_extrabar		"Barres d’outils supplémentaires">
 <!ENTITY Ctr_extrabar0		"Barre(s) d’outils supplémentaire(s)">
 <!ENTITY Ctr_extrabar1		"Barre d’outils supplémentaire">
-<!ENTITY Ctr_extrabarinfo	"En basculant entre « onglets en haut » et « onglets position basse » l’ordre des barres d'outils risque d’être altéré. Il faut redémarrer &brandShortName; pour remédier à ce problème.">
+<!ENTITY Ctr_extrabarinfo	"En basculant entre « onglets en haut » et « onglets position basse » l’ordre des barres d’outils risque d’être altéré. Il faut redémarrer &brandShortName; pour remédier à ce problème.">
 
 <!ENTITY Ctr_invicons		"Icônes inversées">
 <!ENTITY Ctr_menubar		"Barre de menus">
@@ -384,13 +384,13 @@
 <!ENTITY urlbar.accesskey				"">
 <!ENTITY urlbar.placeholder2			"">
 
-<!ENTITY helpMenu.label				"Aide">
-<!ENTITY helpMenuWin.label			"Aide">
+<!ENTITY helpMenu.label					"Aide">
+<!ENTITY helpMenuWin.label				"Aide">
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d			"Bouton &brandShortName; (par défaut)">
-<!ENTITY Ctr_appbuttonc_s			"Bouton saumon">
+<!ENTITY Ctr_appbuttonc_d				"Bouton &brandShortName; (par défaut)">
+<!ENTITY Ctr_appbuttonc_s				"Bouton saumon">
 
 <!ENTITY Ctr_alt_newtabpalt					"Page Nouvel onglet : aspect personnalisé">
 <!ENTITY ctr_aboutnewtab.customhighlight 	"Utiliser une couleur de surlignement personnalisée">
@@ -398,13 +398,13 @@
 <!ENTITY ctr_aboutnewtab.custombase 		"Utiliser une couleur de texte personnalisée">
 <!ENTITY ctr_aboutnewtab.custombasecol 		"Définir la couleur par défaut du texte">
 
-<!ENTITY Ctr_alt_newtabcol			"Page Nouvel onglet : nombre de colonnes">
-<!ENTITY Ctr_alt_newtabrow			"Page Nouvel onglet : nombre de rangées">
+<!ENTITY Ctr_alt_newtabcol				"Page Nouvel onglet : nombre de colonnes">
+<!ENTITY Ctr_alt_newtabrow				"Page Nouvel onglet : nombre de rangées">
 
-<!ENTITY Ctr_classic_elements		"Préréglage classique">
-<!ENTITY Ctr_pw_set_preaust			"Préréglage Australis">
-<!ENTITY ctr_Support_forums			"Forum d’assistance">
-<!ENTITY ctr_help_features			"Fonctionnalités et renseignements">
+<!ENTITY Ctr_classic_elements			"Préréglage classique">
+<!ENTITY Ctr_pw_set_preaust				"Préréglage Australis">
+<!ENTITY ctr_Support_forums				"Forum d’assistance">
+<!ENTITY ctr_help_features				"Fonctionnalités et renseignements">
 
 <!ENTITY Ctr_custtabfontsize.label		"Taille de la police des onglets : ">
 
