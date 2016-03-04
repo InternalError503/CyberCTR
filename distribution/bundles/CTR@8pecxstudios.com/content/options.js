@@ -426,6 +426,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_ctroldsearch').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_lbsugres').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_lbsugresbox').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_urlbar_uc').style.visibility = 'collapse';
 	}
 
 	if (this.appversion >= 43) {
@@ -443,6 +444,7 @@ classicthemerestorerjso.ctr = {
 
 	if (this.appversion < 47) {
 	  document.getElementById('ctraddon_pw_hiderecentbm').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_hideeditbm').style.visibility = 'collapse';
 	}
 	
 
