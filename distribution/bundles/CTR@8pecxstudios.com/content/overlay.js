@@ -6915,7 +6915,7 @@ switch (appButtonState){
         const PR_UINT32_MAX = 0xffffffff;
         CryptoHash.updateFromStream(aContentStream, PR_UINT32_MAX);
         var HashSum = CryptoHash.finish(false);
-        var s = [toHexString(HashSum.charCodeAt(i)) for (i in HashSum)].join("");
+        var s = Array.from(HashSum, (c, i) => toHexString(HashSum.charCodeAt(i))).join("");
         return s;
 
       } catch (e) {}
