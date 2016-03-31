@@ -665,6 +665,7 @@
 			</menu>
 				  <menuitem oncommand="classicthemerestorerjs.ctr.openCTRPreferences();"
 							label="&Ctr_title;"
+              class="menuitem-iconic"
 							id="ctraddon_appmenu_ctr2"/>
 			<!-- MacOSX/Linux/Unix version of the options menu with MacOSX/Linux/Unix specific labels -->
 			<menu id="appmenu_customizeUnix"
