@@ -245,6 +245,8 @@
 <!ENTITY Ctr_ib_graycolor	"Серый цвет для сайтов неизвестной подлинности и сайтов chrome">
 <!ENTITY Ctr_verifiedcolors	"Цвета кнопок для проверенных сайтов, надежных и ненадежных соединений">
 <!ENTITY Ctr_ibinfoico		"Заменить значок 'i' значком 'глобуса'">
+<!ENTITY Ctr_ibinfoico2		"Hide 'i'-icon (if possible)">
+<!ENTITY Ctr_iblabels		"Hide labels">
 <!ENTITY Ctr_faviconurl		"Значок в адресной строке">
 <!ENTITY Ctr_padlock		"Замок">
 <!ENTITY Ctr_padlock_hid	"Скрыть замок">
@@ -252,7 +254,7 @@
 <!ENTITY Ctr_padlock_cla	"классический">
 <!ENTITY Ctr_padlock_mod	"модерн">
 <!ENTITY Ctr_padlock_ext	"Иконка '&brandShortName;' для корректных страниц 'about'">
-<!ENTITY Ctr_icopageinfo	"Нажатие на иконку открывает «Информацию о странице»">
+<!ENTITY Ctr_icopageinfo	"Favicon/globe-/'i'-icon: 'click' opens 'page info window'">
 <!ENTITY Ctr_lbsbsize		"Настройка ширины панелей адреса и поиска">
 <!ENTITY Ctr_searchbar		"Панель поиска">
 <!ENTITY Ctr_lbsugresi		"Отображать максимально возможное количество результатов в подсказках (без прокрутки)">

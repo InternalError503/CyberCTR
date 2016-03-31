@@ -440,6 +440,8 @@ classicthemerestorerjso.ctr = {
 
 	if (this.appversion < 45) {
 	  document.getElementById('ctraddon_pw_ibinfoico').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_ibinfoico2').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_iblabels').style.visibility = 'collapse';
 	}
 
 	if (this.appversion < 47) {
@@ -922,6 +924,7 @@ classicthemerestorerjso.ctr = {
   ctrpwFaviconextra: function(which) {
 	if(which==true) which=false; else which=true;
 	document.getElementById('ctraddon_padlock_extra').disabled = which;
+	document.getElementById('ctraddon_pw_ibinfoico2').disabled = !which;
   },
   
   ctrpwBFextra: function(which) {
@@ -1061,7 +1064,7 @@ classicthemerestorerjso.ctr = {
     document.getElementById('ctraddon_pw_hideurelstop2').disabled = which;
 	document.getElementById('ctraddon_pw_hideurelstop2').style.visibility = itemvis;
   },
-  
+ 
   ctrpwCtrOldSearch: function(which) {
 	var itemvis = 'collapse';
 	
