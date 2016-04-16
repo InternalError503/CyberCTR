@@ -279,6 +279,9 @@ pref("extensions.classicthemerestorer.aboutprefswh",670);
 // first run/reset preference
 pref("extensions.classicthemerestorer.ctrreset",true);
 
+// other
+pref("extensions.classicthemerestorer.cstatextlb",false);
+
 /*CyberCTR customization settings*/
 
 //Custom tab font size
