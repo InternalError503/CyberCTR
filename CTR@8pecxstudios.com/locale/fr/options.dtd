@@ -238,6 +238,7 @@
 <!ENTITY Ctr_urlbardropm	"Placer le dropmarker en dernier">
 <!ENTITY Ctr_urlbardropm2	"Dropmarker toujours visible">
 <!ENTITY Ctr_altreaderico	"Autres icônes du « lecteur »">
+<!ENTITY Ctr_altautocompl	"Alternative 'autocomplete popup' (experimental)">
 <!ENTITY Ctr_hideprbutton	"Masquer l’icône de notification quand un popup est bloqué">
 <!ENTITY Ctr_urlbar_uc		"Disable 'Unified autocomplete' feature (about:config preference)">
 <!ENTITY Ctr_locsearchbw10	"Réduire la hauteur de la barre d’adresse et la barre de recherche (expérimental)">

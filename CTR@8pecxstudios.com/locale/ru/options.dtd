@@ -237,6 +237,7 @@
 <!ENTITY Ctr_urlbardropm	"Перемещать маркер на последнюю возможную позицию">
 <!ENTITY Ctr_urlbardropm2	"Сделать маркер видимым постоянно">
 <!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
+<!ENTITY Ctr_altautocompl	"Alternative 'autocomplete popup' (experimental)">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_urlbar_uc		"Отключить возможность 'Унифицированное автозавершение' (настройка about:config)">
 <!ENTITY Ctr_locsearchbw10	"Уменьшить высоту панелей адреса и поиска (экспериментально)">
