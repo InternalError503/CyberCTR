@@ -44,7 +44,7 @@
 	.tab-background-start[visuallyselected=true]:-moz-lwtheme::before,
 	.tab-background-end[visuallyselected=true]:-moz-lwtheme::before,
 	.tabbrowser-tab:hover > .tab-stack > .tab-background:not([visuallyselected=true]),
-	.tabbrowser-tab[pinned][titlechanged]:not([visuallyselected="true"]) > .tab-stack > .tab-content,
+	/*.tabbrowser-tab[pinned][titlechanged]:not([visuallyselected="true"]) > .tab-stack > .tab-content,*/
 	#tabbrowser-tabs::before {
 	  background-image: none !important;
 	}
@@ -124,6 +124,12 @@
 	  margin-bottom: 1px !important;
 	}
 
+	/*.tab-background-start[visuallyselected=true]::after,
+	.tab-background-start[visuallyselected=true]::before,
+	.tab-background-start,
+	.tab-background-end,
+	.tab-background-end[visuallyselected=true]::after,
+	.tab-background-end[visuallyselected=true]::before,*/
 	#tabbrowser-tabs,
 	#TabsToolbar {
 	  min-height: 0px !important;
