@@ -12,7 +12,7 @@
 <!ENTITY Ctr_separator		"Ločilo">
 <!ENTITY Ctr_puibseparator	"Ločilo (za ploščasti meni)">
 <!ENTITY Ctr_navthrobber	"Kazalnik dejavnosti">
-<!ENTITY Ctr_sidebarbutton	"(Stranska vrstica)">
+<!ENTITY Ctr_sidebarbutton	"(stranska vrstica)">
 <!ENTITY Ctr_windowcontrols	"Skrči/Razpni/Zapri (celozaslonski način)">
 <!ENTITY Ctr_rr				"Zahtevan je ponovni zagon!">
 <!ENTITY Ctr_window			"okno">
@@ -128,7 +128,7 @@
 <!ENTITY Ctr_options_rem	"Zapomni si nazadnje izbrano kategorijo">
 <!ENTITY Ctr_svgfilters		"Barve SVG za privzete ikone gumbov orodne vrstice">
 <!ENTITY Ctr_wincontrols	"Premakljive nadzorne tipke celozaslonskega okna">
-<!ENTITY Ctr_html5warning	"HTML5 full screen warning">
+<!ENTITY Ctr_html5warning	"Celozaslonsko opozorilo HTML5">
 <!ENTITY Ctr_oldtoplevimg	"Slike 'vrhnje domene': klasični videz">
 <!ENTITY Ctr_altalertbox	"'Okno opozorila': nadomestni videz">
 <!ENTITY Ctr_emptygfavico	"Nadomesti splošno zaznamko">
@@ -237,7 +237,7 @@
 <!ENTITY Ctr_urlbardropm	"Premakni spustno puščico na zadnji možni položaj">
 <!ENTITY Ctr_urlbardropm2	"Naj bo spustna puščica vedno vidna">
 <!ENTITY Ctr_altreaderico	"Nadomestne ikone 'Bralnika'">
-<!ENTITY Ctr_altautocompl	"Alternative 'autocomplete popup' (experimental)">
+<!ENTITY Ctr_altautocompl	"Nadomestni 'pojavni meni samodokončavanja' (preskusno)">
 <!ENTITY Ctr_hideprbutton	"Skrij ikono obvestil ob blokiranju pojavnega okna">
 <!ENTITY Ctr_urlbar_uc		"Onemogoči značilnost 'Poenotenega samodokončavanja' (možnost about:config)">
 <!ENTITY Ctr_locsearchbw10	"Zmanjšaj višino naslovne in iskalne vrstice (preskusno)">
