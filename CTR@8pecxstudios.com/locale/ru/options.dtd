@@ -61,7 +61,6 @@
 <!ENTITY Ctr_emptytfavico_n	"Нет">
 <!ENTITY Ctr_emptytfavico_g	"Стандартная">
 <!ENTITY Ctr_noemptypticon	"Удалить пустой значок из прикреплённой вкладки">
-<!ENTITY Ctr_e10stab_notd	"Вкладки E10s: удалить подчёркивание">
 <!ENTITY Ctr_closetab_0		"Кнопка закрытия вкладки">
 <!ENTITY Ctr_closetab_1		"на активной вкладке">
 <!ENTITY Ctr_closetab_2		"нигде">
@@ -129,6 +128,7 @@
 <!ENTITY Ctr_options_rem	"Запомнить последний выбор">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
+<!ENTITY Ctr_html5warning	"HTML5 full screen warning">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
 <!ENTITY Ctr_emptygfavico	"Заменять пустые значки избранного">
