@@ -1544,6 +1544,8 @@ classicthemerestorerjso.ctr = {
                     });
                 }
 
+                //Clear preferenceArray after export.
+                preferenceArray = [];
             } catch (e) {
                 // Report errors to console
                 Cu.reportError(e);
