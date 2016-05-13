@@ -662,6 +662,7 @@ classicthemerestorerjs.ctr = {
 			
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_red',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w7',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w7v2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w8',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicon_w10i',false);
@@ -678,6 +679,7 @@ classicthemerestorerjs.ctr = {
 			
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_red',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w7',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w7v2',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w8',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('closeicong_w10i',false);
@@ -2153,22 +2155,24 @@ classicthemerestorerjs.ctr = {
 		  case "hideeditbm":
 		    if(classicthemerestorerjs.ctr.appversion >= 47) {
 				if (branch.getBoolPref("hideeditbm")) {
-					var editBookmark_popup = document.getElementById('editBookmarkPanel');
+					var ctraddon_editBookmark_popup = document.getElementById('editBookmarkPanel');
 
 					document.getElementById("bookmarks-menu-button").addEventListener("click", function(e) {
+											
+						ctraddon_editBookmark_popup.style.visibility = 'hidden';
 						
-						editBookmark_popup.addEventListener("popupshown", function(){
+						ctraddon_editBookmark_popup.addEventListener("popupshown", function(){
 							
-						  if (document.getElementById('bookmarks-menu-button').getAttribute('notification')) {
+						  if (document.getElementById('bookmarks-menu-button').hasAttribute('notification')) {
 							StarUI.panel.hidePopup();
 							StarUI.quitEditMode();
-							editBookmark_popup.removeAttribute('panelopen');
-							editBookmark_popup.removeAttribute('animate');
+							ctraddon_editBookmark_popup.removeAttribute('panelopen');
+							ctraddon_editBookmark_popup.removeAttribute('animate');
 
 							if(e.target.localName == "toolbarbutton" && e.originalTarget.getAttribute("anonid") == "button"){
 								e.originalTarget.removeAttribute('open');
 							}
-						  }
+						  } else ctraddon_editBookmark_popup.style.visibility = 'visible';
 
 						}, false);
 
@@ -2948,7 +2952,7 @@ classicthemerestorerjs.ctr = {
   },
    
   // show backForwardMenu popup for CTRs movable back/forward buttons 'mouse hold event'
-  ctrBackMenuShow: function(anchorElem,event) {
+  ctrBackMenuShow: function(ctraddon_anchorElem,event) {
   
    if(this.prefs.getBoolPref("hide_bf_popup")==false) {
 	var timeoutID;
@@ -2957,22 +2961,22 @@ classicthemerestorerjs.ctr = {
 	var positionY = event.clientY;
 	
 	timeoutID = window.setTimeout(function(){
-	  document.getElementById("backForwardMenu").openPopupAtScreen(anchorElem.boxObject.screenX, anchorElem.boxObject.screenY+anchorElem.boxObject.height-1, false);
-	  anchorElem.onmouseleave = function(event) {}
+	  document.getElementById("backForwardMenu").openPopupAtScreen(ctraddon_anchorElem.boxObject.screenX, ctraddon_anchorElem.boxObject.screenY+ctraddon_anchorElem.boxObject.height-1, false);
+	  ctraddon_anchorElem.onmouseleave = function(event) {}
 	}, 600);
 		
-	anchorElem.onmouseleave = function(event) {
+	ctraddon_anchorElem.onmouseleave = function(event) {
 	  window.clearTimeout(timeoutID);
 	  
 	  // if mouse pointer position changes vertically, display popup menu without timeout
 	  if(event.clientY > positionY+5) {
-		document.getElementById("backForwardMenu").openPopupAtScreen(anchorElem.boxObject.screenX, anchorElem.boxObject.screenY+anchorElem.boxObject.height-1, false);
+		document.getElementById("backForwardMenu").openPopupAtScreen(ctraddon_anchorElem.boxObject.screenX, ctraddon_anchorElem.boxObject.screenY+ctraddon_anchorElem.boxObject.height-1, false);
 	  }
-	  anchorElem.onmouseleave = function(event) {}
+	  ctraddon_anchorElem.onmouseleave = function(event) {}
 	}
-	anchorElem.onmouseup = function() {
+	ctraddon_anchorElem.onmouseup = function() {
 	  window.clearTimeout(timeoutID);
-	  anchorElem.onmouseleave = function(event) {}
+	  ctraddon_anchorElem.onmouseleave = function(event) {}
 	}
 
    }
@@ -4055,6 +4059,7 @@ classicthemerestorerjs.ctr = {
 		
 		case "closeicon_red": 			manageCSS("close_icon_t_red.css");  	break;
 		case "closeicon_w7": 			manageCSS("close_icon_t_w7.css");  		break;
+		case "closeicon_w7v2": 			manageCSS("close_icon_t_w7v2.css");  	break;
 		case "closeicon_w8": 			manageCSS("close_icon_t_w8.css");  		break;
 		case "closeicon_w10": 			manageCSS("close_icon_t_w10.css");  	break;
 		case "closeicon_w10i": 			manageCSS("close_icon_t_w10i.css");  	break;
@@ -4063,6 +4068,7 @@ classicthemerestorerjs.ctr = {
 		
 		case "closeicong_red": 			manageCSS("close_icon_g_red.css");  	break;
 		case "closeicong_w7": 			manageCSS("close_icon_g_w7.css");  		break;
+		case "closeicong_w7v2": 		manageCSS("close_icon_g_w7v2.css");  	break;
 		case "closeicong_w8": 			manageCSS("close_icon_g_w8.css");  		break;
 		case "closeicong_w10": 			manageCSS("close_icon_g_w10.css");  	break;
 		case "closeicong_w10i": 		manageCSS("close_icon_g_w10i.css");  	break;
