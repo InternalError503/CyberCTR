@@ -160,6 +160,7 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter les éléments du panneau latéral (marque-pages, historique, etc.)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom sur une barre d’outils : Masquer « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet (about:newtab) : autre aspect">
+<!ENTITY Ctr_nosnippets		"Start page (about:home): hide snippets">
 <!ENTITY Ctr_search_ui		"Barre de recherche">
 <!ENTITY Ctr_ctroldsearch	"Ancienne barre de recherche">
 <!ENTITY Ctr_ctroldsearchc	"Effacer le champ de la boîte de recherche après une recherche">
@@ -184,6 +185,7 @@
 <!ENTITY Ctr_bmbutpanelm	"Popup : apparence Panneau menu">
 <!ENTITY Ctr_bmbunsortbm	"Popup : sous menu des « marque-pages non triés »">
 <!ENTITY Ctr_bmbunsortbm2	"Menu au-dessus des marque-pages">
+<!ENTITY Ctr_bmbviewbmsb	"Popup: show 'View Sidebar'">
 <!ENTITY Ctr_bmbviewbmtb	"Popup : afficher « Voir la barre d’outils »">
 <!ENTITY Ctr_bmbnounsort	"Popup : cacher les « marque-pages non triés »">
 <!ENTITY Ctr_bmbutnotext	"Masquer « Marque-pages » sur la barre personnelle">

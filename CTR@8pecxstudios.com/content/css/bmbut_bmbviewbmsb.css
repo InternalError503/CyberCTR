@@ -2,9 +2,8 @@
 
 @-moz-document url(chrome://browser/content/browser.xul) {
 
-	#ctraddon_addon-bar > * {
-	  margin-top: 4px !important;
-	  margin-bottom: 4px !important;
+	#ctraddon_BMB_viewBookmarksSidebar{
+	  display: block !important;
 	}
 
 }
