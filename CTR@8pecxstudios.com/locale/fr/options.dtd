@@ -144,7 +144,7 @@
 <!ENTITY Ctr_hideprivmask	"Navigation privée : masquer l’icône « masque »">
 <!ENTITY Ctr_navsmallicons	"Petites icônes">
 <!ENTITY Ctr_navlargeicons	"Grandes icônes">
-<!ENTITY Ctr_nbisizedelay0	"Délai avant l’activation (au démarrage du navigateur)">
+<!ENTITY Ctr_nbisizedelay0	"">
 <!ENTITY Ctr_nbisizedelay	"ms (1000 ms = 1 s)">
 <!ENTITY Ctr_findbar		"Position de la barre de recherche">
 <!ENTITY Ctr_findbar_def	"En bas (par défaut)">
@@ -160,10 +160,12 @@
 <!ENTITY Ctr_cpanelmenus	"Compacter les éléments du panneau latéral (marque-pages, historique, etc.)">
 <!ENTITY Ctr_hidezoomres	"Boutons de zoom sur une barre d’outils : Masquer « Réinitialiser le niveau de zoom »">
 <!ENTITY Ctr_alt_newtabp	"Page Nouvel onglet (about:newtab) : autre aspect">
+<!ENTITY Ctr_search_ui		"Barre de recherche">
 <!ENTITY Ctr_ctroldsearch	"Ancienne barre de recherche">
 <!ENTITY Ctr_ctroldsearchc	"Effacer le champ de la boîte de recherche après une recherche">
 <!ENTITY Ctr_search_oit		"Ouvrir la recherche dans un nouvel onglet (préférence about:config)">
 <!ENTITY Ctr_osearch_meoit	"Clic central : recherche dans un nouvel onglet au premier plan">
+<!ENTITY Ctr_osearch_iwidth	"Automatically adjust popup width">
 <!ENTITY Ctr_osearch_dm		"Petite « dropmarker »">
 <!ENTITY Ctr_addonmanager	"Gestionnaire de modules complémentaires">
 <!ENTITY Ctr_alt_addonsp	"Page « Plus de détails » des modules : autre aspect">
