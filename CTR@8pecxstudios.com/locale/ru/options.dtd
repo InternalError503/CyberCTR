@@ -241,9 +241,7 @@
 <!ENTITY Ctr_urlbardropm	"Перемещать маркер на последнюю возможную позицию">
 <!ENTITY Ctr_urlbardropm2	"Сделать маркер видимым постоянно">
 <!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
-<!ENTITY Ctr_altautocompl	"Alternative 'autocomplete popup' (experimental)">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
-<!ENTITY Ctr_urlbar_uc		"Отключить возможность 'Унифицированное автозавершение' (настройка about:config)">
 <!ENTITY Ctr_locsearchbw10	"Уменьшить высоту панелей адреса и поиска (экспериментально)">
 <!ENTITY Ctr_urlbar_ib		"Кнопка подлинности сайта">
 <!ENTITY Ctr_ib_nohovcolor	"Не отображать серый цвет при зависании">
@@ -262,6 +260,9 @@
 <!ENTITY Ctr_icopageinfo	"Значок Избранного/глобуса/'i': клик открывает окно 'информация о странице'">
 <!ENTITY Ctr_lbsbsize		"Настройка ширины панелей адреса и поиска">
 <!ENTITY Ctr_searchbar		"Панель поиска">
+<!ENTITY Ctr_autocomplete	"Autocomplete popup">
+<!ENTITY Ctr_altautocompl	"Alternative appearance (experimental)">
+<!ENTITY Ctr_urlbar_uc		"Отключить функцию «автозаполнение» (настройка about:config)">
 <!ENTITY Ctr_lbsugresi		"Отображать максимально возможное количество результатов в подсказках (без прокрутки)">
 <!ENTITY Ctr_lbsugres		"Количество всплывающих результатов (настройка about:config)">
 

@@ -44,7 +44,7 @@
 <!ENTITY Ctr_tabsontop3		"Kaardid pole kõige peal (v2) --- atribuut [tabsontop=false]">
 <!ENTITY Ctr_tabsontopW1	"v2 on ainult mõnede lisade ja täielike välimuste jaoks!">
 <!ENTITY Ctr_tabsontopI1	"Atribuut [tabsontop=true/false] lisatakse nendele:">
-<!ENTITY Ctr_tabsintitlebar	"&brandShortName;i tiitliriba (about:config eelistus)">
+<!ENTITY Ctr_tabsintitlebar	"Opsüsteemi tiitliriba asemel kasuta &brandShortName;i tiitliriba (about:config eelistus)">
 <!ENTITY Ctr_tabwidthdef	"(vaikimisi)">
 <!ENTITY Ctr_tabwidthcla	"(klassikaline)">
 <!ENTITY Ctr_tabminheight	"Kõrgus:">
@@ -70,7 +70,7 @@
 <!ENTITY Ctr_closetab_hfot	"Peida, kui näha on ainult üks kaart">
 <!ENTITY Ctr_closei_def		"Vaikimisi ikoonid">
 <!ENTITY Ctr_closeonleft	"Alternatiivne asukoht kaardil">
-<!ENTITY Ctr_closetabbig	"Suurem ikoon (20x20px)">
+<!ENTITY Ctr_closetabbig	"Suurem ikoon (20x20 px)">
 <!ENTITY Ctr_close_wwltab	"Viimase nähtava kaardi sulgemisel sulge kogu aken (about:config eelistus)">
 
 <!ENTITY Ctr_hctpinfotab	"Mõned kaardi variatsioonid ei ühildu lisaga 'Hide Caption Titlebar Plus'.">
@@ -80,9 +80,9 @@
 <!ENTITY Ctr_appbutton0		"Nupp keelatud">
 <!ENTITY Ctr_appbutton1		"Nupp tööriistaribal">
 <!ENTITY Ctr_appbutton1wt	"Nupp tööriistaribal (ainult tekst)">
-<!ENTITY Ctr_appbutton2		"Nupp [&brandShortName;]i tiitliribal">
-<!ENTITY Ctr_appbutton2h	"Nupp [&brandShortName;]i tiitliribal (peidetud)">
-<!ENTITY Ctr_appbutton2io	"Nupp [&brandShortName;]i tiitliribal (ainult ikoon)">
+<!ENTITY Ctr_appbutton2		"Nupp &brandShortName;i tiitliribal">
+<!ENTITY Ctr_appbutton2h	"Nupp &brandShortName;i tiitliribal (peidetud)">
+<!ENTITY Ctr_appbutton2io	"Nupp &brandShortName;i tiitliribal (ainult ikoon)">
 <!ENTITY Ctr_paneluibtweak	"Kasuta menüünupu jaoks &brandShortName;i nupu välimust...">
 <!ENTITY Ctr_paneluibtweak2	"Kasuta menüünupu jaoks &brandShortName;i nupu välimust (ainult ikoon)...">
 <!ENTITY Ctr_paneluibtweak3	"...kui see asub kaartide ribal">
@@ -159,7 +159,7 @@
 <!ENTITY Ctr_cpanelmenus	"Paneelimenüüd (järjehoidjad, ajalugu jms.): kompaktne vaade">
 <!ENTITY Ctr_hidezoomres	"Suurendamise juhtnupud tööriistaribal: peida suurendamise lähtestamise nupp">
 <!ENTITY Ctr_alt_newtabp	"Uue kaardi leht (about:newtab): alternatiivne välimus">
-<!ENTITY Ctr_nosnippets		"Start page (about:home): hide snippets">
+<!ENTITY Ctr_nosnippets		"Avaleht (about:home): peida katked">
 <!ENTITY Ctr_search_ui		"Otsing">
 <!ENTITY Ctr_ctroldsearch	"Vana otsing">
 <!ENTITY Ctr_ctroldsearchc	"Pärast otsingu teostamist tühjenda otsingukast">
@@ -184,7 +184,7 @@
 <!ENTITY Ctr_bmbutpanelm	"Menüühüpik: paneelimenüü välimus">
 <!ENTITY Ctr_bmbunsortbm	"Menüühüpik: alammenüü 'Sortimata järjehoidjad'">
 <!ENTITY Ctr_bmbunsortbm2	"Menüü järjehoidjate kohal">
-<!ENTITY Ctr_bmbviewbmsb	"Popup: show 'View Sidebar'">
+<!ENTITY Ctr_bmbviewbmsb	"Menüühüpik: näita kirjet 'Kuva järjehoidjate külgriba'">
 <!ENTITY Ctr_bmbviewbmtb	"Menüühüpik: näita kirjet 'Kuva järjehoidjariba'">
 <!ENTITY Ctr_bmbnounsort	"Menüühüpik: peida kirje 'sortimata järjehoidjad'">
 <!ENTITY Ctr_bmbutnotext	"Peida järjehoidjate ribal sildid">
@@ -241,9 +241,7 @@
 <!ENTITY Ctr_urlbardropm	"Liiguta rippmenüü avamise nupp võimalikult lõppu">
 <!ENTITY Ctr_urlbardropm2	"Tee rippmenüü avamise nupp alati nähtavaks">
 <!ENTITY Ctr_altreaderico	"Alternatiivsed 'Lugemisvaate' ikoonid">
-<!ENTITY Ctr_altautocompl	"Alternatiivne aadressiriba automaatlõpetamise hüpik (katsejärgus)">
 <!ENTITY Ctr_hideprbutton	"Peida blokeeritud hüpikakende teavitusikoon">
-<!ENTITY Ctr_urlbar_uc		"Keela ühendatud automaatlõpetamise funktsioon 'Unified autocomplete' (about:config eelistus)">
 <!ENTITY Ctr_locsearchbw10	"Vähenda aadressiriba ja otsinguriba kõrgust (katsejärgus)">
 <!ENTITY Ctr_urlbar_ib		"Saidi identiteedi nupp (identiteedi kast)">
 <!ENTITY Ctr_ib_nohovcolor	"Hiirekursoriga ikooni peale minnes ära näita halli taustavärvi">
@@ -262,8 +260,11 @@
 <!ENTITY Ctr_icopageinfo	"Lehe/gloobuse/'i'-ikoon: nendel klõpsamine avab akna 'veebilehe teave'">
 <!ENTITY Ctr_lbsbsize		"Aadressiriba ja otsinguriba kohandatud laius">
 <!ENTITY Ctr_searchbar		"Otsinguriba">
-<!ENTITY Ctr_lbsugresi		"Näita soovituste menüüs võimalikult palju tulemusi (ilma kerimisriba näitamata)">
-<!ENTITY Ctr_lbsugres		"Soovituste hüpikul kuvatavate tulemuste arv (about:config eelistus)">
+<!ENTITY Ctr_autocomplete	"Autocomplete popup">
+<!ENTITY Ctr_altautocompl	"Alternative appearance (experimental)">
+<!ENTITY Ctr_urlbar_uc		"Keela ühendatud automaatlõpetamise funktsioon 'unified autocomplete' (about:config eelistus)">
+<!ENTITY Ctr_lbsugresi		"Disable height limit">
+<!ENTITY Ctr_lbsugres		"Number of results (about:config preference)">
 
 <!ENTITY Ctr_menubar_items	"Menüükirjete asukoht">
 <!ENTITY Ctr_extrabar		"Lisa-tööriistaribad">
