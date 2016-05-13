@@ -11,7 +11,6 @@
 <!ENTITY Ctr_flexspace		"Espace flexible">
 <!ENTITY Ctr_space			"Espace">
 <!ENTITY Ctr_separator		"Séparateur">
-<!ENTITY Ctr_puibseparator	"Séparateur du bouton menu">
 <!ENTITY Ctr_navthrobber	"Indicateur d’activité">
 <!ENTITY Ctr_sidebarbutton	"(panneau latéral)">
 <!ENTITY Ctr_windowcontrols	"Réduire/Restaurer/Fermer (plein écran)">
@@ -113,7 +112,6 @@
 <!ENTITY Ctr_ui				"Interface générale">
 <!ENTITY Ctr_nbiconsize0	"Taille des icônes dans la barre de navigation">
 <!ENTITY Ctr_smallnavbut	"Petits boutons sur la barre de navigation">
-<!ENTITY Ctr_bfurlbarfix 	"Corriger le rayon de courbure de la barre d’adresse">
 <!ENTITY Ctr_backforward	"Boutons avancer/reculer déplaçables">
 <!ENTITY Ctr_nbcompact		"Diminuer la hauteur des barres de navigation">
 <!ENTITY Ctr_hide_bf_popup	"Masquer le menu historique lors du clic droit">
@@ -266,6 +264,7 @@
 <!ENTITY Ctr_altautocompl	"Alternative appearance (experimental)">
 <!ENTITY Ctr_lbsugresi		"Disable height limit">
 <!ENTITY Ctr_lbsugres		"Number of results (about:config preference)">
+<!ENTITY Ctr_lbsbradius		"Custom border radius for location bar and search bar">
 
 <!ENTITY Ctr_menubar_items	"Position de la barre de menus">
 <!ENTITY Ctr_extrabar		"Barres d’outils supplémentaires">
