@@ -263,7 +263,7 @@
 <!ENTITY Ctr_urlbar_uc		"Keela ühendatud automaatlõpetamise funktsioon 'unified autocomplete' (about:config eelistus)">
 <!ENTITY Ctr_lbsugresi		"Keela kõrguse piirang">
 <!ENTITY Ctr_lbsugres		"Tulemuste arv (about:config eelistus)">
-<!ENTITY Ctr_lbsbradius		"Custom border radius for location bar and search bar">
+<!ENTITY Ctr_lbsbradius		"Aadressiriba ja otsinguriba piirjoonte kohandatud raadius">
 
 <!ENTITY Ctr_menubar_items	"Menüükirjete asukoht">
 <!ENTITY Ctr_extrabar		"Lisa-tööriistaribad">
@@ -380,6 +380,10 @@
 <!ENTITY goCmd.label					"Mine">
 <!ENTITY Ctr_menu_restart.label			"Taaskäivita">
 <!ENTITY Ctr_restartapp					"'Taaskäivita' &brandShortName;i nupu menüüs ja menüüs Fail">
+
+<!ENTITY Ctr_openInCurrentTab			"Open inputs in current tab">
+<!ENTITY Ctr_openInNewTab				"Open inputs in a new tab">
+<!ENTITY Ctr_openInNewWindow			"Open inputs in a new window">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey				"T">

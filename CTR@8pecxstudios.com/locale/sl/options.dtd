@@ -263,7 +263,7 @@
 <!ENTITY Ctr_urlbar_uc		"Onemogoči značilnost 'poenotenega samodokončevanja' (možnost about:config)">
 <!ENTITY Ctr_lbsugresi		"Onemogoči omejitev višine">
 <!ENTITY Ctr_lbsugres		"Število rezultatov (možnost about:config)">
-<!ENTITY Ctr_lbsbradius		"Custom border radius for location bar and search bar">
+<!ENTITY Ctr_lbsbradius		"Polmer obrobe po meri naslovne in iskalne vrstice">
 
 <!ENTITY Ctr_menubar_items	"Položaj predmetov menija">
 <!ENTITY Ctr_extrabar		"Dodatne orodne vrstice">
@@ -380,6 +380,10 @@
 <!ENTITY goCmd.label					"Pojdi">
 <!ENTITY Ctr_menu_restart.label			"Ponovno zaženi">
 <!ENTITY Ctr_restartapp					"'Ponovno zaženi' v programskem meniju in meniju Datoteka">
+
+<!ENTITY Ctr_openInCurrentTab			"Open inputs in current tab">
+<!ENTITY Ctr_openInNewTab				"Open inputs in a new tab">
+<!ENTITY Ctr_openInNewWindow			"Open inputs in a new window">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey				"N">
