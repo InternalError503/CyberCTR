@@ -63,6 +63,7 @@ classicthemerestorerjs.ctr = {
 
   locsearchbarsize: sheetIO,
   locsearchbarradius:	sheetIO,
+  searchpopupwidth:	sheetIO,
 
   navbarpadding: sheetIO,
   
@@ -2015,6 +2016,13 @@ classicthemerestorerjs.ctr = {
 		  case "osearch_iwidth":
 			if (branch.getBoolPref("osearch_iwidth")) classicthemerestorerjs.ctr.loadUnloadCSS("osearch_iwidth",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("osearch_iwidth",false);
+		  break;
+		  
+		  case "osearch_cwidth": case "os_spsize_minw": case "os_spsize_maxw":
+		    if (branch.getBoolPref("osearch_cwidth")) 
+			  classicthemerestorerjs.ctr.loadUnloadCSS("osearch_cwidth",true);
+		    else
+			  classicthemerestorerjs.ctr.loadUnloadCSS("osearch_cwidth",false);
 		  break;
 
 		  case "osearch_dm":
@@ -6545,6 +6553,24 @@ classicthemerestorerjs.ctr = {
 				'), null, null);
 				
 				applyNewSheet(this.navbarpadding);
+			}
+		
+		break;
+		
+		case "osearch_cwidth":
+			removeOldSheet(this.searchpopupwidth);
+			
+			if(enable==true && this.prefs.getBoolPref('osearch_cwidth')){			
+				
+				this.searchpopupwidth=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					#PopupAutoComplete[autocompleteinput="searchbar"],\
+					#searchbar .searchbar-popup {\
+					  min-width: '+this.prefs.getIntPref('os_spsize_minw')+'px !important;\
+					  max-width: '+this.prefs.getIntPref('os_spsize_maxw')+'px !important;\
+					}\
+				'), null, null);
+				
+				applyNewSheet(this.searchpopupwidth);
 			}
 		
 		break;

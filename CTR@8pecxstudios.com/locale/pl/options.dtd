@@ -126,6 +126,10 @@
 <!ENTITY Ctr_options_rem	"Pamiętaj ostatnio wybraną kategorię">
 <!ENTITY Ctr_svgfilters		"Kolory SVG ikon przycisków domyślnego paska narzędzi">
 <!ENTITY Ctr_wincontrols	"Ruchome kontrolki okna pełnego ekranu">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
 <!ENTITY Ctr_html5warning	"Ostrzeżenie o pełnym ekranie HTML5">
 <!ENTITY Ctr_oldtoplevimg	"Obrazy 'domeny najwyższego poziomu': klasyczny wygląd">
 <!ENTITY Ctr_altalertbox	"'Pole powiadomień': alternatywny wygląd">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_mstatusbar		"Ruchomy panel paska statusu">
 <!ENTITY Ctr_mstatusbars4e	"Panel paska statusu jest kontrolowany przez 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Panel paska statusu jest kontrolowany przez 'ThePuzzlePiece'">
-<!ENTITY Ctr_mstatusbarpzt	"Panel paska statusu jest kontrolowany przez 'Puzzle Toolbars'">
+<!ENTITY Ctr_mstatusbarpzt	"Panel paska statusu jest kontrolowany przez 'Puzzle Bars'">
 <!ENTITY Ctr_mstatusbarabr	"Panel paska statusu jest kontrolowany przez 'The Addon Bar (Restored)'">
 <!ENTITY Ctr_combrelstop	"Połącz przyciski zatrzymania i odświeżania">
 <!ENTITY Ctr_stoprel1		"Ważne: umieść przycisk odświeżania za przyciskiem zatrzymania!">
@@ -164,6 +168,7 @@
 <!ENTITY Ctr_search_oit		"Otwórz wyszukiwanie w nowej karcie (ustawienie about:config)">
 <!ENTITY Ctr_osearch_meoit	"Kliknięcia środkowym przyciskiem: wyszukaj w nowej 'karcie pierwszoplanowej'">
 <!ENTITY Ctr_osearch_iwidth	"Automatycznie dostosuj szerokość menu podręcznego">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Mały przycisk podręczny">
 <!ENTITY Ctr_addonmanager	"Menedżer dodatków">
 <!ENTITY Ctr_alt_addonsp	"Strona 'więcej informacji': alternatywny porządek">

@@ -127,6 +127,10 @@
 <!ENTITY Ctr_options_rem	"Se rappeler de la dernière catégorie choisie">
 <!ENTITY Ctr_svgfilters		"Couleurs SVG pour les icônes par défaut de la barre d’outils">
 <!ENTITY Ctr_wincontrols	"Mode plein écran : boutons déplaçables">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
 <!ENTITY Ctr_html5warning	"HTML5 full screen warning">
 <!ENTITY Ctr_oldtoplevimg	"Images du domaine de 1er niveau : présentation classique">
 <!ENTITY Ctr_altalertbox	"Boîtes d’alerte: autre présentation">
@@ -134,7 +138,7 @@
 <!ENTITY Ctr_mstatusbar		"Barre d’état déplaçable">
 <!ENTITY Ctr_mstatusbars4e	"Configuration de la barre d’état régie par « Status-4-Evar »">
 <!ENTITY Ctr_mstatusbartpp	"Configuration de la barre d’état régie par « ThePuzzlePiece »">
-<!ENTITY Ctr_mstatusbarpzt	"Configuration de la barre d’état régie par « Puzzle Toolbars »">
+<!ENTITY Ctr_mstatusbarpzt	"Configuration de la barre d’état régie par « Puzzle Bars »">
 <!ENTITY Ctr_mstatusbarabr	"Configuration de la barre d’état régie par « The Addon Bar (Restored) »">
 <!ENTITY Ctr_combrelstop 	"Combiner les boutons « stop-actualiser »">
 <!ENTITY Ctr_stoprel1		"Barres d’outils : placer le bouton actualiser après le bouton stop">
@@ -165,6 +169,7 @@
 <!ENTITY Ctr_search_oit		"Ouvrir la recherche dans un nouvel onglet (préférence about:config)">
 <!ENTITY Ctr_osearch_meoit	"Clic central : recherche dans un nouvel onglet au premier plan">
 <!ENTITY Ctr_osearch_iwidth	"Automatically adjust popup width">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Petite « dropmarker »">
 <!ENTITY Ctr_addonmanager	"Gestionnaire de modules complémentaires">
 <!ENTITY Ctr_alt_addonsp	"Page « Plus de détails » des modules : autre aspect">

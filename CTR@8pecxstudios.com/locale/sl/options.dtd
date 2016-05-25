@@ -126,6 +126,10 @@
 <!ENTITY Ctr_options_rem	"Zapomni si nazadnje izbrano kategorijo">
 <!ENTITY Ctr_svgfilters		"Barve SVG za privzete ikone gumbov orodne vrstice">
 <!ENTITY Ctr_wincontrols	"Premakljive nadzorne tipke celozaslonskega okna">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
 <!ENTITY Ctr_html5warning	"Celozaslonsko opozorilo HTML5">
 <!ENTITY Ctr_oldtoplevimg	"Slike 'vrhnje domene': klasični videz">
 <!ENTITY Ctr_altalertbox	"'Okno opozorila': nadomestni videz">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_mstatusbar		"Premakljivo podokno stanja">
 <!ENTITY Ctr_mstatusbars4e	"Podokno stanja nadzira 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Podokno stanja nadzira 'ThePuzzlePiece'">
-<!ENTITY Ctr_mstatusbarpzt	"Podokno stanja nadzira 'Puzzle Toolbars'">
+<!ENTITY Ctr_mstatusbarpzt	"Podokno stanja nadzira 'Puzzle Bars'">
 <!ENTITY Ctr_mstatusbarabr	"Podokno stanja nadzira 'The Addon Bar (Restored)'">
 <!ENTITY Ctr_combrelstop	"Ustavi in Ponovno naloži: združi gumba na orodni vrstici">
 <!ENTITY Ctr_stoprel1		"Pomembno: gumb Ponovno naloži vstavite za gumb Ustavi!">
@@ -164,6 +168,7 @@
 <!ENTITY Ctr_search_oit		"Odpri iskanje v novem zavihku (možnost about:config)">
 <!ENTITY Ctr_osearch_meoit	"Srednji kliki: išči v novem 'zavihku v ospredju'">
 <!ENTITY Ctr_osearch_iwidth	"Samodejno prilagodi širino pojavnega okna">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Majhna spustna puščica">
 <!ENTITY Ctr_addonmanager	"Upravitelj dodatkov">
 <!ENTITY Ctr_alt_addonsp	"Stran dodatkov 'Več': nadomestni videz">
@@ -381,9 +386,9 @@
 <!ENTITY Ctr_menu_restart.label			"Ponovno zaženi">
 <!ENTITY Ctr_restartapp					"'Ponovno zaženi' v programskem meniju in meniju Datoteka">
 
-<!ENTITY Ctr_openInCurrentTab			"Open inputs in current tab">
-<!ENTITY Ctr_openInNewTab				"Open inputs in a new tab">
-<!ENTITY Ctr_openInNewWindow			"Open inputs in a new window">
+<!ENTITY Ctr_openInCurrentTab			"Odpri vnose v trenutnem zavihku">
+<!ENTITY Ctr_openInNewTab				"Odpri vnose v novem zavihku">
+<!ENTITY Ctr_openInNewWindow			"Odpri vnose v novem oknu">
 
 <!-- For page context entries. Have to be adjusted for every locale! -->
 <!ENTITY backCmd.accesskey				"N">

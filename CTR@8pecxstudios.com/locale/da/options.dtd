@@ -127,6 +127,10 @@
 <!ENTITY Ctr_options_rem	"Husk seneste valgte kategori">
 <!ENTITY Ctr_svgfilters		"SVG-farver til standard værktøjslinje knap ikoner">
 <!ENTITY Ctr_wincontrols	"Flytbar fuldskærmsvindue kontrolelementer">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
 <!ENTITY Ctr_html5warning	"HTML5 full screen warning">
 <!ENTITY Ctr_oldtoplevimg	"'Top level domæne'-billeder: klassisk udseende">
 <!ENTITY Ctr_altalertbox	"'Alert-boks': alternativt udseende">
@@ -134,7 +138,7 @@
 <!ENTITY Ctr_mstatusbar		"Flytbare statuspanel">
 <!ENTITY Ctr_mstatusbars4e	"Statuslinje-panel styres af 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Statuslinje-panel styres af 'ThePuzzlePiece'">
-<!ENTITY Ctr_mstatusbarpzt	"Statuslinje-panel styres af 'Puzzle Toolbars'">
+<!ENTITY Ctr_mstatusbarpzt	"Statuslinje-panel styres af 'Puzzle Bars'">
 <!ENTITY Ctr_mstatusbarabr	"Statuslinje-panel styres af 'The Addon Bar (Restored)'">
 <!ENTITY Ctr_combrelstop	"Stop &amp; genindlæs: kombinér knapper på værktøjslinje">
 <!ENTITY Ctr_stoprel1		"Vigtigt: placér genindlæs efter stop!">
@@ -165,6 +169,7 @@
 <!ENTITY Ctr_search_oit		"Åbn søgning i nyt faneblad (about:config-indstilling)">
 <!ENTITY Ctr_osearch_meoit	"Mellemklik: søg i nyt 'forgrundsfaneblad'">
 <!ENTITY Ctr_osearch_iwidth	"Automatically adjust popup width">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Lille rullepil">
 <!ENTITY Ctr_addonmanager	"Tilføjelseshåndtering">
 <!ENTITY Ctr_alt_addonsp	"'Mere info'-side: alternativ rækkefølge">

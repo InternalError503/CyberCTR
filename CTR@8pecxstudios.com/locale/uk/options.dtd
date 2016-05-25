@@ -126,6 +126,10 @@
 <!ENTITY Ctr_options_rem	"Пам’ятати останню обрану категорію">
 <!ENTITY Ctr_svgfilters		"SVG кольори для типових іконок кнопок панелі інструментів">
 <!ENTITY Ctr_wincontrols	"Рухоме управління повноекранним режимом">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
 <!ENTITY Ctr_html5warning	"HTML5 повноекранне попередження">
 <!ENTITY Ctr_oldtoplevimg	"Зображення «домену верхнього рівня»: класичний вигляд">
 <!ENTITY Ctr_altalertbox	"«Вікно попереджень»: альтернативний вигляд">
@@ -133,7 +137,7 @@
 <!ENTITY Ctr_mstatusbar		"Рухомий рядок стану">
 <!ENTITY Ctr_mstatusbars4e	"Панель статусу контролюється додатком «Status-4-Evar»">
 <!ENTITY Ctr_mstatusbartpp	"Панель статусу контролюється додатком «ThePuzzlePiece»">
-<!ENTITY Ctr_mstatusbarpzt	"Панель статусу контролюється додатком «Puzzle Toolbars»">
+<!ENTITY Ctr_mstatusbarpzt	"Панель статусу контролюється додатком «Puzzle Bars»">
 <!ENTITY Ctr_mstatusbarabr	"Панель статусу контролюється додатком «The Addon Bar (Restored)»">
 <!ENTITY Ctr_combrelstop	"Об’єднати кнопки «Зупинити» та «Перезавантажити»">
 <!ENTITY Ctr_stoprel1		"Важливо: з’являється кнопка «Перезавантаження» на місці кнопки «Зупинити»!">
@@ -164,6 +168,7 @@
 <!ENTITY Ctr_search_oit		"Відкрити пошук у новій вкладці (about:config preference)">
 <!ENTITY Ctr_osearch_meoit	"Середні-кліки: пошук в новій «передньоплановій вкладці»">
 <!ENTITY Ctr_osearch_iwidth	"Автоматично налаштовувати ширину спливаючого вікна">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Мала позначка випадного списку">
 <!ENTITY Ctr_addonmanager	"Менеджер додатків">
 <!ENTITY Ctr_alt_addonsp	"Сторінка «Детальніше» в Додатках: альтернативний вигляд">

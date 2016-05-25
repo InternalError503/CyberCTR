@@ -127,6 +127,10 @@
 <!ENTITY Ctr_options_rem	"Kategoriju se spomnjeś, kótaraž jo se ako slědna wubrała">
 <!ENTITY Ctr_svgfilters		"SVG-barwy za symbole tłocaškow symbolowych rědkow">
 <!ENTITY Ctr_wincontrols	"Pśesuwajobne wóźeńske elementy połneje wobrazowki">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
 <!ENTITY Ctr_html5warning	"Warnowanje połneje wobrazowki HTML5">
 <!ENTITY Ctr_oldtoplevimg	"Wobraze 'nejwušeje domeny': Klasiski wenkowny naglěd">
 <!ENTITY Ctr_altalertbox	"'Warnowański kašćik': Alternatiwny wenkowny naglěd">
@@ -134,7 +138,7 @@
 <!ENTITY Ctr_mstatusbar		"Pśesuwajobny wobcerk statusoweje rědki">
 <!ENTITY Ctr_mstatusbars4e	"Wobcerk statusoweje rědki kontrolěrujo se pśez 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Wobcerk statusoweje rědki kontrolěrujo se pśez 'ThePuzzlePiece'">
-<!ENTITY Ctr_mstatusbarpzt	"Wobcerk statusoweje rědki kontrolěrujo se pśez 'Puzzle Toolbars'">
+<!ENTITY Ctr_mstatusbarpzt	"Wobcerk statusoweje rědki kontrolěrujo se pśez 'Puzzle Bars'">
 <!ENTITY Ctr_mstatusbarabr	"Wobcerk statusoweje rědki kontrolěrujo se pśez 'The Addon Bar (Restored)'">
 <!ENTITY Ctr_combrelstop	"Tłocaška Stoj a Znowego kombiněrowaś">
 <!ENTITY Ctr_stoprel1		"Wažny: Tłocašk Znowego za tłocaškom Stoj placěrowaś!">
@@ -165,6 +169,7 @@
 <!ENTITY Ctr_search_oit		"Pytanje w nowem rejtarku wócyniś (nastajenje about:config)">
 <!ENTITY Ctr_osearch_meoit	"Srjejźne kliknjenja: Pytanje w nowem 'prědkowem rejtarku'">
 <!ENTITY Ctr_osearch_iwidth	"Šyrokosć wuskokujucego wokna awtomatiski pśiměriś">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Mały wuběrański tłocašk">
 <!ENTITY Ctr_addonmanager	"Zastojnik dodankow">
 <!ENTITY Ctr_alt_addonsp	"'Bok Dalšne info': Alternatiwny pórěd">

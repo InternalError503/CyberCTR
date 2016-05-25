@@ -69,7 +69,7 @@
 <!ENTITY Ctr_closetab_hfot	"Скрыть для одной вкладки">
 <!ENTITY Ctr_closei_def		"Стандартный значок 'Закрыть'">
 <!ENTITY Ctr_closeonleft	"Альтернативная позиция на вкладке">
-<!ENTITY Ctr_closetabbig	"Увеличенный значок (20x20px)">
+<!ENTITY Ctr_closetabbig	"Увеличенный значок (20x20 пикс.)">
 <!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки (настройка about:config)">
 
 <!ENTITY Ctr_hctpinfotab	"Некоторые виды оформления вкладок несовместимы с расширением 'Hide Caption Titlebar Plus'.">
@@ -126,14 +126,18 @@
 <!ENTITY Ctr_options_rem	"Запомнить последний выбор">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
-<!ENTITY Ctr_html5warning	"HTML5 full screen warning">
+<!ENTITY Ctr_puibuttonsep	"Menu button separator">
+<!ENTITY Ctr_puibut_no_sep	"Hidden">
+<!ENTITY Ctr_puibut_l_sep	"Left">
+<!ENTITY Ctr_puibut_r_sep	"Right">
+<!ENTITY Ctr_html5warning	"HTML5 предупреждение полноэкранного режима">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
 <!ENTITY Ctr_emptygfavico	"Заменять пустые значки избранного">
 <!ENTITY Ctr_mstatusbar		"Подвижная строка состояния">
 <!ENTITY Ctr_mstatusbars4e	"Панель статуса управляется переменной 'Status-4-Evar'">
 <!ENTITY Ctr_mstatusbartpp	"Панель статуса управляется переменной 'ThePuzzlePiece'">
-<!ENTITY Ctr_mstatusbarpzt	"Панель статуса управляется переменной 'Puzzle Toolbars'">
+<!ENTITY Ctr_mstatusbarpzt	"Панель статуса управляется переменной 'Puzzle Bars'">
 <!ENTITY Ctr_mstatusbarabr	"Панель статуса управляется переменной 'The Addon Bar (Restored)'">
 <!ENTITY Ctr_combrelstop	"Совместить кнопки «Остановить» и «Перезагрузить»">
 <!ENTITY Ctr_stoprel1		"Кнопка остановки  после остановки заменяется на панели инструментов кнопкой перезагрузки!">
@@ -164,6 +168,7 @@
 <!ENTITY Ctr_search_oit		"Открывать поиск в ноовй вкладке (опция about:config)">
 <!ENTITY Ctr_osearch_meoit	"Клик средней кнопкой: поиск в новой активной вкладке">
 <!ENTITY Ctr_osearch_iwidth	"Автоматически подгонять ширину всплывающего меню">
+<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
 <!ENTITY Ctr_osearch_dm		"Маленький маркер">
 <!ENTITY Ctr_addonmanager	"Управление дополнениями">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
