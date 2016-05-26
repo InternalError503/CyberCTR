@@ -2742,14 +2742,9 @@ classicthemerestorerjs.ctr = {
 		  case "colapsesearchaddons":
 			  	try{		  
 					if (branch.getBoolPref("colapsesearchaddons")) {				
-						if (classicthemerestorerjs.ctr.appversion >= 40) {
-							classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch40plus",true);
-						} else {	
-							classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch",true);
-						}	
+							classicthemerestorerjs.ctr.loadUnloadCSS("colapsesearchaddons",true);
 					}else{
-						classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch",false);
-						classicthemerestorerjs.ctr.loadUnloadCSS("rndadonssearch40plus",false);
+						classicthemerestorerjs.ctr.loadUnloadCSS("colapsesearchaddons",false);
 					}	
 				} catch(e){}			
 		  break;
@@ -4415,48 +4410,24 @@ classicthemerestorerjs.ctr = {
 		case "appbuttonc_salmon":		manageCSS("cctr/appbutton_salmon.css");		break;
 
 		case "alt_newtabpalt":
-			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
-				manageCSS("cctr/alt_newtabpage_alt42p.css");
-			}else{
-				manageCSS("cctr/alt_newtabpage_alt.css");
-			}				
+				manageCSS("cctr/alt_newtabpage_alt.css");			
 			break;
 		case "tree_style_fix": 		manageCSS("cctr/tree_style_fix.css");	break;
 		
 		case "abouthomedark":
-			if (classicthemerestorerjs.ctr.appversion >= 42)	{	
-				manageCSS("cctr/abouthomedark42p.css");	
-			}else{
-				manageCSS("cctr/abouthomedark.css");
-			}				
+				manageCSS("cctr/abouthomedark.css");				
 		break;
 		case "abouthomedarkalt":
-			if (classicthemerestorerjs.ctr.appversion >= 42)	{
-				manageCSS("cctr/abouthomedarkalt42p.css");
-			}else{
-				manageCSS("cctr/abouthomedarkalt.css");
-			}				
+				manageCSS("cctr/abouthomedarkalt.css");			
 		break;
 		case "abouthomelight": 
-			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
-				manageCSS("cctr/abouthomelight42p.css");	
-			}else{
-				manageCSS("cctr/abouthomelight.css");	
-			}
+			  manageCSS("cctr/abouthomelight.css");
 		break;
 		case "abouthomelightalt": 
-			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
-				manageCSS("cctr/abouthomelightalt42p.css");	
-			}else{
 				manageCSS("cctr/abouthomelightalt.css");
-			}
 		break;
 		case "abouthomesimplicity":
-			if (classicthemerestorerjs.ctr.appversion >= 42)	{		
-				manageCSS("cctr/abouthomesimplicity42p.css");
-			}else{
-				manageCSS("cctr/abouthomesimplicity.css");
-			}				
+				manageCSS("cctr/abouthomesimplicity.css");				
 		break;	
 		case "abouthomesimplicityblue": 				manageCSS("cctr/abouthomesimplicityintel.css");	break;		
 		case "abouthomesimplicityred": 				manageCSS("cctr/abouthomesimplicityamd.css");	break;
@@ -4467,8 +4438,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomenoicons": 						manageCSS("cctr/abouthomenoicons.css");	break;	
 		case "abouthomenosnippets": 					manageCSS("cctr/abouthomenosnippets.css");	break;
 		case "abouthomeanimate": 						manageCSS("cctr/abouthomeanimate.css");	break;
-		case "rndadonssearch": 						manageCSS("cctr/rndadonssearch.css"); break;
-		case "rndadonssearch40plus": 						manageCSS("cctr/rndadonssearch40plus.css");	break;
+		case "colapsesearchaddons": 						manageCSS("cctr/colapsesearchaddons.css"); break;
 		case "nopocket": 						manageCSS("cctr/nopocket.css"); break;
 		
 		case "throbber_alt1": 		manageCSS("cctr/throbberalt_1.css");			break;
