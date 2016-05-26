@@ -166,6 +166,7 @@
 <!ENTITY Ctr_search_ui		"Barre de recherche">
 <!ENTITY Ctr_ctroldsearch	"Ancienne barre de recherche">
 <!ENTITY Ctr_ctroldsearchc	"Effacer le champ de la boîte de recherche après une recherche">
+<!ENTITY Ctr_ctroldsearchr	"Revert to default search engine after search">
 <!ENTITY Ctr_search_oit		"Ouvrir la recherche dans un nouvel onglet (préférence about:config)">
 <!ENTITY Ctr_osearch_meoit	"Clic central : recherche dans un nouvel onglet au premier plan">
 <!ENTITY Ctr_osearch_iwidth	"Automatically adjust popup width">
@@ -305,6 +306,7 @@
 <!ENTITY Ctr_menubarnofog	"Enlever l’effet de flou/l’arrière-plan des éléments (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Couleur aero bleue pour les barres d’outils (et les onglets)">
+<!ENTITY Ctr_aerocolorsg	"Grey-blue Aero colors">
 <!ENTITY Ctr_transpttbw10	"Titre, barre de menus et barre d’onglets : supprimer la couleur d’arrière-plan">
 <!ENTITY Ctr_transpttbew10	"Réglages supplémentaires pour certains thèmes">
 <!ENTITY Ctr_transptcw10	"Masquer les boutons par défaut min/max/fermeture">

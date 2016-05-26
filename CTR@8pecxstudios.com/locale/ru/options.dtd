@@ -126,10 +126,10 @@
 <!ENTITY Ctr_options_rem	"Запомнить последний выбор">
 <!ENTITY Ctr_svgfilters		"Цвета SVG для кнопок панели инструментов">
 <!ENTITY Ctr_wincontrols	"Подвижное управление полноэкранным режимом">
-<!ENTITY Ctr_puibuttonsep	"Menu button separator">
-<!ENTITY Ctr_puibut_no_sep	"Hidden">
-<!ENTITY Ctr_puibut_l_sep	"Left">
-<!ENTITY Ctr_puibut_r_sep	"Right">
+<!ENTITY Ctr_puibuttonsep	"Разделитель кнопки меню">
+<!ENTITY Ctr_puibut_no_sep	"Скрыть">
+<!ENTITY Ctr_puibut_l_sep	"Слева">
+<!ENTITY Ctr_puibut_r_sep	"Справа">
 <!ENTITY Ctr_html5warning	"HTML5 предупреждение полноэкранного режима">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
@@ -165,10 +165,11 @@
 <!ENTITY Ctr_search_ui		"Поиск">
 <!ENTITY Ctr_ctroldsearch	"Старая форма поиска">
 <!ENTITY Ctr_ctroldsearchc	"Очистить форму после поиска">
+<!ENTITY Ctr_ctroldsearchr	"Revert to default search engine after search">
 <!ENTITY Ctr_search_oit		"Открывать поиск в ноовй вкладке (опция about:config)">
 <!ENTITY Ctr_osearch_meoit	"Клик средней кнопкой: поиск в новой активной вкладке">
 <!ENTITY Ctr_osearch_iwidth	"Автоматически подгонять ширину всплывающего меню">
-<!ENTITY Ctr_osearch_cwidth	"Custom width for search popups">
+<!ENTITY Ctr_osearch_cwidth	"Пользовательская ширина всплывающего меню">
 <!ENTITY Ctr_osearch_dm		"Маленький маркер">
 <!ENTITY Ctr_addonmanager	"Управление дополнениями">
 <!ENTITY Ctr_alt_addonsp	"Альтернативное представление страницы дополнительной информации о дополнениях">
@@ -304,6 +305,7 @@
 <!ENTITY Ctr_menubarnofog	"Удалить туман из фона меню (Windows AeroGlass / Win8)">
 
 <!ENTITY Ctr_aerocolors		"Цвета Blue Aero для основных панелей и вкладок">
+<!ENTITY Ctr_aerocolorsg	"Grey-blue Aero colors">
 <!ENTITY Ctr_transpttbw10	"Панели заголовка/меню/вкладок: убрать цвет фона">
 <!ENTITY Ctr_transpttbew10	"Дополнительные опции для некоторых тем оформления ОС">
 <!ENTITY Ctr_transptcw10	"Скрыть стандартные кнопки ОС (Свернуть, Развернуть, Закрыть)">
