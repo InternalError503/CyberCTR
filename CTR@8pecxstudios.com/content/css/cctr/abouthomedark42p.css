@@ -21,7 +21,7 @@
         width: 100%;
         height: 100%;
         background-color: #222 !important;
-        background-image: url("chrome://classic_theme_restorer/content/images/abouthome/noise.png") !important;
+        background-image: url("chrome://classic_theme_restorer/content/images/abouthome/noise.png");
     }
     input,
     button {

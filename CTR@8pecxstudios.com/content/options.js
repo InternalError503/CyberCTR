@@ -602,26 +602,20 @@ classicthemerestorerjso.ctr = {
 					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = false;
 					document.getElementById('ctraddon_ctabouthomecusthltcp').disabled = false;
 				}
-				//Disable custom background image on Light|dark theme styles.
-				if (branch.getCharPref("abouthome") === "dark" || 
-					branch.getCharPref("abouthome") === "darkalt" ||
-					branch.getCharPref("abouthome") === "light" ||
+				
+				
+				//Custom background image on lightalt|darkalt theme styles have bg image streched.
+				if (branch.getCharPref("abouthome") === "darkalt" ||
 					branch.getCharPref("abouthome") === "lightalt"){
-					document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
-					document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
-					document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
 					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
-					branch.setBoolPref("abouthomecustombg", false);
-
 				}else{
-					document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
-					document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
-					document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
 					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 				}
+
 				if (branch.getCharPref("abouthome") === "simplicitycustom"){
 					document.getElementById('noicons').disabled = true;
 				}
+							
 			break;
 
 			case "abouthomecustomurl":
@@ -768,24 +762,15 @@ classicthemerestorerjso.ctr = {
 		if (this.prefs.getCharPref("abouthome") === "simplicitycustom"){
 			document.getElementById('noicons').disabled = true;
 		}	
-	
-		//Disable custom background image on Light|dark theme styles.
-		if (this.prefs.getCharPref("abouthome") === "dark" || 
-			this.prefs.getCharPref("abouthome") === "darkalt" ||
-			this.prefs.getCharPref("abouthome") === "light" ||
+
+		//Custom background image on lightalt|darkalt theme styles have bg image streched.
+		if (this.prefs.getCharPref("abouthome") === "darkalt" ||
 			this.prefs.getCharPref("abouthome") === "lightalt"){
-			document.getElementById('ctraddon_ctabouthome_custbg').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = true;
-			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;			
-			this.prefs.setBoolPref("abouthomecustombg", false);
+			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
 			
 		}else{
-			document.getElementById('ctraddon_ctabouthome_custbg').disabled = false;
-			document.getElementById('ctraddon_ctabouthome_custbgl').disabled = false;
-			document.getElementById('ctraddon_ctabouthome_bg_urlbox').disabled = false;
 			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
-		}
+		}	
 
 		//Disable custom highlight colors on default theme in firefox.	
 		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {

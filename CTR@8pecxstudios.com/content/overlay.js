@@ -6703,7 +6703,8 @@ classicthemerestorerjs.ctr = {
 				this.abouthome_bg=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 					@namespace url(http://www.w3.org/1999/xhtml);\
 					@-moz-document url("about:home") {\
-						html{\
+						html,\
+						body{\
 							background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
 						}\
 					}\
@@ -6723,7 +6724,8 @@ classicthemerestorerjs.ctr = {
 				this.abouthome_bg_strech=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 					@namespace url(http://www.w3.org/1999/xhtml);\
 					@-moz-document url("about:home") {\
-						html{\
+						html,\
+						body{\
 							background-size: 100% 100%!important;\
 						}\
 					}\
