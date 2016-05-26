@@ -1592,6 +1592,8 @@ classicthemerestorerjso.ctr = {
         }
         // Use new less bulky export for text.
         classicthemerestorerjso.ctr.saveToFile(preferenceArray, aPattern);
+        //Clear preferenceArray after export.
+        preferenceArray = [];
         return true;
     },
 	
