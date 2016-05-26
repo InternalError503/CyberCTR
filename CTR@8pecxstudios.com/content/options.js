@@ -1524,6 +1524,8 @@ classicthemerestorerjso.ctr = {
 
 	/* Export CTR preferences Text|Json */
     ExportPreferences: function(aPattern) {
+			
+			if (!aPattern == "txt" || !aPattern == "json") return false;
 		
         var preferenceList = Services.prefs.getChildList("extensions.classicthemerestorer.");
         var preferenceArray = null;
@@ -1599,6 +1601,8 @@ classicthemerestorerjso.ctr = {
 	
 	/* Import CTR preferences Text|Json */
 	ImportPreferences: function(aPattern) {
+		
+		if (!aPattern == "txt" || !aPattern == "json") return false;
 		
 		var stringBundle = Services.strings.createBundle("chrome://classic_theme_restorer/locale/messages.file");
 		var pattern = null;
@@ -1682,9 +1686,8 @@ classicthemerestorerjso.ctr = {
 	
 	saveToFile: function(aPattern, aType) {
 		try{
-			if (aType === "txt" || aType === "json") {} else {
-			  return false;
-			}
+			
+			if (!aType === "txt" || !aType === "json" || aPattern.length === 0) return false;
 
 			const nsIFilePicker = Ci.nsIFilePicker;
 			var fp = Cc["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
