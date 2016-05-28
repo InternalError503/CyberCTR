@@ -336,7 +336,7 @@ pref("extensions.classicthemerestorer.abouthomecustomhighlightcolor", "#fe634a")
 pref("extensions.classicthemerestorer.abouthomecustombase", false);
 pref("extensions.classicthemerestorer.abouthomecustombasecolor", "#fff");
 pref("extensions.classicthemerestorer.abouthomeanimate", false);
-pref("extensions.classicthemerestorer.abouthomebgstretch", true);
+pref("extensions.classicthemerestorer.abouthomebgstretch", false);
 
 //Custom search-bar width
 pref("extensions.classicthemerestorer.customsearchbarwidth", false);
