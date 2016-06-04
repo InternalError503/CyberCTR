@@ -165,7 +165,7 @@
 <!ENTITY Ctr_search_ui		"Поиск">
 <!ENTITY Ctr_ctroldsearch	"Старая форма поиска">
 <!ENTITY Ctr_ctroldsearchc	"Очистить форму после поиска">
-<!ENTITY Ctr_ctroldsearchr	"После выполнения поиска переключиться на поисковую систему по умолчанию">
+<!ENTITY Ctr_ctroldsearchr	"Revert to first search engine in list after search">
 <!ENTITY Ctr_search_oit		"Открывать поиск в ноовй вкладке (опция about:config)">
 <!ENTITY Ctr_osearch_meoit	"Клик средней кнопкой: поиск в новой активной вкладке">
 <!ENTITY Ctr_osearch_iwidth	"Автоматически подгонять ширину всплывающего меню">
