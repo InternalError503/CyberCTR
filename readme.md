@@ -208,6 +208,32 @@ Note: This list was current at the time of quoting and may have changed during t
 
 Dedicated thread for [CyberCTR Localization] (https://8pecxstudios.com/Forums/viewtopic.php?f=13&t=536)
 
+
+###  To build (Platform):
+
+- `Windows:` __CTRL + SHIFT + B__
+- `Linux:` __CTRL + SHIFT + B__
+- `Mac:` __CMD + SHIFT + B__
+
+
+#### Task Runner (Visual Studio Code):
+
+- `Windows:` __CTRL + SHIFT + P__
+- `Linux:` __CTRL + SHIFT + P__
+- `Mac:` __CMD + SHIFT + P__
+
+| Task | Command | Result |
+|----------|:-------------:|------:|
+| Build | task build | Builds addon *.xpi |
+
+##### You must set the version number in the arguments field of tasks.json when bumping the XPI package version.
+
+
+#### Build Notes (Visual Studio Code) (Platform):
+
+- `Windows:` You must have __python 2.7__ or higher installed to run the build script.
+- `Linux:` You must on the __`build.py`__ set in its properties permissions tab, To allow execution or __`EACCESS`__ error will ensue.
+
 ### Credits:
 
 Built from popular open source addon.
