@@ -45,6 +45,10 @@
 		#ctraddon_appbutton2 > .toolbarbutton-icon {
 		  padding: 1px 9px !important;
 		}
+		#main-window[fx47plus="true"][sizemode="maximized"] #ctraddon_appbutton2{
+		  margin-top:-1px !important;
+		  margin: -1px 0 2px -2px !important;
+		}
 	}
 	
 	@media (min-resolution: 1.1dppx) {
