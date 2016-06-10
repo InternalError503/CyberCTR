@@ -24,11 +24,11 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 
 ### App-Menu button
 
-- Button color Aurora (Light).
-- Button color Cyberfox (Default Cyberfox Button Color).
-- Button color Green (Dark).
-- Button color Orange (Dark).
-- Button color Red (Dark).
+- Button color Aurora __(Light)__.
+- Button color Cyberfox __(Default Cyberfox Button Color)__.
+- Button color Green __(Dark)__.
+- Button color Orange __(Dark)__.
+- Button color Red __(Dark)__.
 - Button color Salmon.
 
 ### Shipped Pre-Sets:
@@ -37,87 +37,105 @@ features and functions to `CyberCTR` that `Classic Theme Restorer` does not offe
 
 ### Additional Features:
 
-- Pre-Configure CyberCTR Settings [FAQ article] (https://8pecxstudios.com/Forums/viewtopic.php?f=8&t=672)
+- Pre-Configure CyberCTR Settings in __*.txt__ or __*.json__ formats. [FAQ article] (https://8pecxstudios.com/Forums/viewtopic.php?f=8&t=672)
 - Pre-Configure CyberCTR Settings file change detection & notification.
-- Pre-Configure CyberCTR Settings backup and backup restore.
+- Pre-Configure CyberCTR Settings backup and backup restore in __*.txt__ or __*.json__ formats.
 - Tab text in title-bar.
-- Import\Export preferences in JSON file format.
-- Remove text shadow from persona themes.
+- Import\Export preferences in **JSON** file format.
+- Hide text shadow from tool-bar items and tabs. __(Thanks Aris)__
 - Control gradient percentage on custom button color.
 - Custom button color with 3 colors.
 - Set custom button color text color.
 - Remove custom button color text shadow.
-- Set default maximum width for tool-bar search-bar (Range 120px - 295px)
-- Switch between custom about:home page style pre-sets.
-- Change about:home page background with custom image (Locale file or from URL).	
-- Hide icons on about:home page.
-- Hide logo on about:home page.
-- Hide snippets (Ads) on about:home page (Firefox Only)
-- Remove links on about:home page (Cyberfox Only)
-- Change highlight color of about:home page links, search-bar and buttons.
+- Set default maximum width for tool-bar search-bar. __(Range 120px - 295px)__
+- Switch between custom `about:home` page style pre-sets.
+- Change `about:home` page background with custom image __(Locale file or from URL)__.	
+- Hide icons on `about:home` page.
+- Hide logo on `about:home` page.
+- Hide snippets __(Ads)__ on `about:home` page. __(Firefox Only)__
+- Remove links on `about:home page`. __(Cyberfox Only)__
+- Change highlight color of `about:home` page links, search-bar and buttons.
 - Hide elements by class or id with css using the elements filter.  See list of [elements](https://github.com/InternalError503/CyberCTR/blob/master/ID_List.md)
-- Alternate about:newtab page style
-- Change highlight color of about:newtab page elements
-- Change default text color of about:newtab page text and grid color.
-- Set custom font size for bookmark-bar tool-bar (Range 2px - 30px)
+- Alternate `about:newtab` page style.
+- Change highlight color of `about:newtab` page elements.
+- Change default text color of `about:newtab` page text and grid color.
+- Set custom font size for bookmark-bar tool-bar. __(Range 2px - 30px)__
+- Set custom font size for tab text __(Range 2px - 30px)__
+- Custom background for `about:newtab` page.
+- Stretch `about:newtab` custom background image to window.
+- 5 more default tab throbbers to select from.
+- Use custom tab throbbers. __(Use custom tab throbber image)__
+- Animate animated lightweight themes on browser start-up.
+- Users can load custom CSS with CyberCTR custom css.
 
 Plus many under the hood changes and many more visual changes to come.
 
 ### Main features (on options window):
 
 
-- Tab appearance: Squared classic tabs
-- Tab appearance: Curved tabs (all colored and visible)
-- Tabs not on top + [tabsontop="false/true"] attribute
-- Tabs height settings
-- Tabs min/max-width settings
-- Tab close on all tabs, active tab, tool-bars start/end
-- Custom colors for tab backgrounds, text and text shadow
-- Application button on tool-bars
-- Application button on title-bar [Windows only]
-- Own title for application button on titlebar [Windows only]
-- Predefined/custom application button colors
-- Small navigation tool-bar buttons
-- Movable back-forward button
-- Star button in location bar
-- Rss-Feed button in location bar
+- Tab appearance: Squared classic tabs.
+- Tab appearance: Curved tabs. __(all colored and visible)__
+- Tabs not on top + **[tabsontop="false/true"]** attribute.
+- Tabs height settings.
+- Tabs min/max-width settings.
+- Tab title in Firefox titlebar.
+- Tab loading animations.
+- Tab close on all tabs, active tab, tool-bars start/end.
+- Double click on tabs toolbar opens a 'new' tab. __[Windows only]__
+- Hide tabs toolbar with one visible tab.
+- Custom colors for tab backgrounds, text and text shadow.
+- Custom tab separators.
+- Application button on tool-bars.
+- Application button on title-bar. __[Windows only]__
+- Own title for application button on titlebar. __[Windows only]__
+- Predefined/custom application button colors.
+- Small navigation tool-bar buttons.
+- Movable back-forward button.
+- Alternative appearance for `'about:preferences'` page.
+- Open `'about:preferences'` page in a window. __(simulates preference window)__
+- Alternative `about:add-ons` __(add-ons manager)__ appearance. __(Firefox 40+)__
+- Activity indicator __(throbber)__ on toolbars.
+- Bookmarks-star button in location bar.
+- Rss-Feed button in location bar.
+- Old Search ui for __Firefox 43+__.
 - Movable status-bar panel
-- Combine stop & reload buttons
-- Hide location bars stop & reload buttons
-- Hide private browsing mask
-- Find bar on top or bottom
-- 'Icons & Text' and 'Text only' modes
-- Add [iconsize="large"]/[iconsize="small"] attributes to #nav-bar node
-- Compact panel menus (bookmarks, history...)
-- Green/blue site identity button for verified websites and secure connections
-- Replace context menu icons with labels (Back, Forward...)
-- Add up to 20 additional toolbars
-- Restore tabs empty favicon
-- Replace generic favicon (empty and dotted) with sheet favicon
-- Favicon in urlbars identity box (location bars left)
-- Different padlock icons
-- AeroBlue toolbar colors for Windows 8/Classic, Linux, MacOSX
-- Hide navigation tool-bar
-- Inverted (white) tool-bar button icons
-- Double click on tabs toolbar opens a 'new' tab [Windows only]
-- Hide tabs tool-bar with one visible tab
-- Tool-bar settings to alter colors, sizes, borders
-- Disable some ui animations
-- Switch between old and new search
+- Additional location bar.
+- Combine stop & reload buttons.
+- Hide location bars stop & reload buttons.
+- Hide private browsing mask.
+- Find bar on top or bottom.
+- 'Icons & Text' and 'Text only' modes.
+- Add [iconsize="large"]/[iconsize="small"] attributes to #nav-bar node.
+- Compact panel menus. __(bookmarks, history...)__
+- Green/blue site identity button for verified websites and secure connections.
+- Replace context menu icons with labels. __(Back, Forward...)__
+- Add up to 20 additional toolbars.
+- Restore tabs empty favicon.
+- Replace generic favicon __(empty and dotted)__ with sheet favicon.
+- Favicon in urlbars identity box. __(location bars left)__
+- Different padlock icons.
+- AeroBlue toolbar colors for Windows 8/Classic, Linux, MacOSX.
+- Hide navigation tool-bar.
+- Inverted __(white)__ tool-bar button icons.
+- Tool-bar settings to alter colors, sizes, borders.
+- Disable some ui animations.
+- Force some toolbars to appear in fullscreen mode.
+- Remove title/menu/tabs toolbars background for __Windows 10__.
+- Disable browsers Loop __(chat)__, Reader & Pocket features.
 
 ### Features (not on options window):
 
-- Enable/disable 'Add-on Bar' (tool-bar context menu)
+- about:preferences keeps last selected category/tab.
+- Enable/disable 'Add-on Bar' __(tool-bar context menu)__.
 - Toggle 'Add-on Bar' using 'Ctrl + /' btw. 'Cmd + /'
-- Enable/disable 'Additional Tool-bar' (tool-bar context menu)
-- Spaces, Flexible spaces, Separators
-- Activity indicator on toolbars
-- Bookmarks menu & sidebar buttons
-- History menu & sidebar buttons
-- Additional movable reload & stop buttons
-- Movable url bar container
-- Movable (Firefox main) menu button
-- Movable alltabs-button, webrtc-status-button, social-share-button
+- Enable/disable 'Additional Tool-bar' __(tool-bar context menu)__.
+- Spaces, Flexible spaces, Separators.
+- Bookmarks menu & sidebar buttons.
+- History menu & sidebar buttons.
+- Additional movable reload & stop buttons.
+- Movable url bar container.
+- Movable __(Firefox main)__ menu button.
+- Movable alltabs-button, webrtc-status-button, social-share-button.
 
 #### Squared tabs
 
@@ -130,7 +148,7 @@ All tabs are curved and use colours known from squared tabs.
 
 #### Tabs 'not' on top
 
-Simulates 'tabs.onTop=false' setting and moves tabs below navigation tool-bar. On MacOSX tabs also get a
+Simulates **'tabs.onTop=false'** setting and moves tabs below navigation tool-bar. On MacOSX tabs also get a
 'reversed appearance'.
 
 #### Application button / application menu settings
@@ -146,7 +164,7 @@ The button can also be used on tool-bars and appears like a default tool-bar but
 
 #### Application button colours
 
-On tabs tool-bar and title-bar application button can be orange, blue (Aurora), black (Nightly), red, green and 
+On tabs tool-bar and title-bar application button can be orange, blue __(Aurora), black (Nightly)__, red, green and 
 gray in normal browsing mode and purple in private browsing mode like on previous Firefox versions.
 
 ####Note: 
@@ -165,8 +183,8 @@ Hiding navigation toolbar might be interesting after all items got moved to othe
 #### 'Add-on Bar'
 
 A tool-bar at the bottom of the window. All movable buttons and items can be placed on it. Add-on bar can 
-be enabled/disabled using tool-bars context menu (right-click on a tool-bar) or using 'Ctrl + /' (Windows/Linux) 
-btw. 'Cmd + /' (MacOSX).
+be enabled/disabled using tool-bars context menu __(right-click on a tool-bar)__ or using 'Ctrl + /' __(Windows/Linux)__ 
+btw. 'Cmd + /' __(MacOSX)__.
 
 #### 'Additional Tool-bar'
 
@@ -196,9 +214,25 @@ different tool-bars. CTR adds duplicates of these buttons to the customization p
 Place reload button AFTER stop button and enable the corresponding option on CTRs preference window. 
 Hovering the option on preference window to get extra information. Tool-bar: [something]...[stop-button][reload-button]...[something]
 
-#### Spaces, flexible spaces ans separators
+#### Spaces, flexible spaces and separators
 
 These tool-bar items appear in customizing mode and can be moved to tool-bars like on previous Firefox versions.
+
+#### Windows - Linux - MacOSX
+
+This add-on was tested on Windows 7 __(AeroBasic, AeroGlass, Classic)__ & 8**(.1)** & 10 & XP __(Classic, Luna-Blue/Silver/Olive, Zune, Royale)__, 
+Linux Mint KDE, Ubuntu and MacOSX 10.8/10.9/10.10/10.11. On other Systems or non OS-default themes tab colors may look wrong. 
+Bookmarks, history, stop, reload, back and forward toolbar buttons use default OS icons __(Firefox Windows icons on Windows systems, 
+Firefox Mac icons on MacOSX and Firefox Linux icons on Linux systems)__.
+
+#### Info, known 'issues', 'glitches', problems
+
+- __(1)__ Application menus 'cut', 'copy' and 'paste' buttons do not always work like they should.
+- __(2)__ Switching between AeroGlass and AeroBasic on Windows 7/Vista can change application buttons position, if the menubar is disabled. Maximizing/restoring browsers main window or restarting Firefox resolves the problem. This glitch is caused by Microsoft Windows and titlebars behavior and not by this add-on.
+- __(3)__ Entering and leaving customizing mode 'disables' right-click menu items for bookmarks inside bookmarks menu button. A restart resolves this issue.
+- __(4)__ Tab colors on MacOSX fit to current ui instead of using Firefox 28 colors. This is intended and not a bug.
+- __(5)__ It is strongly recommended to remove Foxtab and Shareaholic before installing Firefox 29 or newer, because both add-ons break Firefox ui in Fx29+. Using Foxtab and/or Shareaholic with CTR causes even more errors, because CTR allows to move/remove more items than the default Firefox does.
+If one of these add-ons has corrupted the ui, the add-ons manager has to be accessed via menubar __(right-click on a toolbar -> select menubar, Tools -> add-ons)__ and Shareaholic and Foxtab have to be uninstalled and CTR has to be disabled. After a browser restart, CTR can be enabled again. After another restart "restore defaults" in customizing mode has to be hit once.
 
 Quoted from [original addons page] (https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer#addon-description) 
 
@@ -226,7 +260,7 @@ Dedicated thread for [CyberCTR Localization] (https://8pecxstudios.com/Forums/vi
 |----------|:-------------:|------:|
 | Build | task build | Builds addon *.xpi |
 
-##### You must set the version number in the arguments field of tasks.json when bumping the XPI package version.
+##### You must set the version number in the arguments field of tasks.json when bumping the **XPI** package version.
 
 
 #### Build Notes (Visual Studio Code) (Platform):
