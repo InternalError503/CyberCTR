@@ -186,8 +186,8 @@ classicthemerestorerjs.ctr = {
 	this.disableSettingsforThemes();
 	
 	treeStyleCompatMode = Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle.disable");
-		//Check if browser Firefox (Added just in-case users decide to install in firefox reported: https://8pecxstudios.com/Forums/viewtopic.php?f=3&t=475&p=4368#p4366)
-		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
+		//Check if browser Firefox\Other (Added just in-case users decide to install in firefox reported: https://8pecxstudios.com/Forums/viewtopic.php?f=3&t=475&p=4368#p4366)
+		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {
 			Services.prefs.setBoolPref("browser.restart.enabled", false);	
 			Services.prefs.setBoolPref("clean.ram.cache", false);
 			Services.prefs.setBoolPref("browser.menu.aboutconfig", false);

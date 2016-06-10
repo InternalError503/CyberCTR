@@ -663,8 +663,8 @@ classicthemerestorerjso.ctr = {
 			break;
 
 			case "abouthomecustomurl":
-				//Disable custom highlight colors on default theme in firefox.	
-				if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && 
+				//Disable custom highlight colors on default theme in firefox\Other.	
+				if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase() && 
 					branch.getCharPref("abouthome") === "default") {
 						document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
 						document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
@@ -774,8 +774,8 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_pw_noconicons').disabled = false;
 		}
 
-		//Hide no links start page check-box in firefox.	
-		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
+		//Hide no links start page check-box in firefox\other.	
+		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {
 			document.getElementById('nolinks').hidden = true;
 		}	
 
@@ -816,8 +816,8 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 		}	
 
-		//Disable custom highlight colors on default theme in firefox.	
-		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {
+		//Disable custom highlight colors on default theme in firefox\other.	
+		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {
 				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
 				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
 				document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
