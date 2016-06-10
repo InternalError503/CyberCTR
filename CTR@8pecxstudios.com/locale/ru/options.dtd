@@ -72,9 +72,9 @@
 <!ENTITY Ctr_closetabbig	"Увеличенный значок (20x20 пикс.)">
 <!ENTITY Ctr_close_wwltab	"Закрыть окно при закрытии последней вкладки">
 
-<!ENTITY Ctr_hctpinfotab	"Некоторые виды оформления вкладок несовместимы с расширением 'Hide Caption Titlebar Plus'.">
-<!ENTITY Ctr_hctpinfoab		"Кнопка на панели заголовка несовместима с расширением 'Hide Caption Titlebar Plus'.">
-<!ENTITY Ctr_tobainfotab	"The add-on 'Tabs on Bottom' is not compatible with '&Ctr_title;' and should be disabled. Use available '&Ctr_cuitabsnontop;' settings instead!">
+<!ENTITY Ctr_hctpinfotab	"Некоторые виды оформления вкладок не совместимы с расширением 'Hide Caption Titlebar Plus'.">
+<!ENTITY Ctr_hctpinfoab		"Кнопка на панели заголовка не совместима с расширением 'Hide Caption Titlebar Plus'.">
+<!ENTITY Ctr_tobainfotab	"Дополнение 'Tabs on Bottom' не совместимо с '&Ctr_title;' и должно быть отключено. Используйте настройки '&Ctr_cuitabsnontop;'!">
 
 <!ENTITY Ctr_appbutton		"Кнопка &brandShortName;">
 <!ENTITY Ctr_appbutton0		"отключена">
@@ -166,8 +166,8 @@
 <!ENTITY Ctr_search_ui		"Поиск">
 <!ENTITY Ctr_ctroldsearch	"Старая форма поиска">
 <!ENTITY Ctr_ctroldsearchc	"Очистить форму после поиска">
-<!ENTITY Ctr_ctroldsearchr	"Revert to first search engine in list after search">
-<!ENTITY Ctr_search_oit		"Открывать поиск в ноовй вкладке">
+<!ENTITY Ctr_ctroldsearchr	"По окончании поиска переключаться на первую в списке поисковую систему">
+<!ENTITY Ctr_search_oit		"Открывать поиск в новой вкладке">
 <!ENTITY Ctr_osearch_meoit	"Клик средней кнопкой: поиск в новой активной вкладке">
 <!ENTITY Ctr_osearch_iwidth	"Автоматически подгонять ширину всплывающего меню">
 <!ENTITY Ctr_osearch_cwidth	"Пользовательская ширина всплывающего меню">
@@ -270,7 +270,7 @@
 <!ENTITY Ctr_urlbar_uc		"Отключить функцию «автозаполнение»">
 <!ENTITY Ctr_lbsugresi		"Отображать максимально возможное количество результатов в подсказках (без прокрутки)">
 <!ENTITY Ctr_lbsugres		"Количество всплывающих результатов">
-<!ENTITY Ctr_lbsbradius		"Custom border radius for location bar and search bar">
+<!ENTITY Ctr_lbsbradius		"Задать радиус границ панелей адреса и поиска">
 
 <!ENTITY Ctr_menubar_items	"Позиция пунктов меню">
 <!ENTITY Ctr_extrabar		"Дополнительные панели инструментов">
