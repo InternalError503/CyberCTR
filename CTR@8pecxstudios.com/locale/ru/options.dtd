@@ -407,7 +407,7 @@
 
 <!-- Extra CyberCTR Additions -->
  
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; (по умолчанию)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox (по умолчанию)">
 <!ENTITY Ctr_appbuttonc_s	"Оранжево-розовая кнопка">
 
 <!ENTITY Ctr_alt_newtabpalt	"Стиль представления страницы новой вкладки">

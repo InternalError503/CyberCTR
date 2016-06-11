@@ -407,7 +407,7 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; buton rengi (varsayılan)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox buton rengi (varsayılan)">
 <!ENTITY Ctr_appbuttonc_s	"Somon Buton Rengi">
 
 <!ENTITY Ctr_alt_newtabpalt	"Yeni sekme sayfası: tarz görünüm">

@@ -3,8 +3,7 @@
   %overlayDTD;
 <!-- Do not edit above this line and do not edit the variable '&brandShortName;' inside translated strings -->
 
-
-<!ENTITY Ctr_title      	"&brandShortName; anpassen">
+<!ENTITY Ctr_title			"&brandShortName; anpassen">
 
 <!ENTITY Ctr_addonbar		"Add-on-Leiste">
 <!ENTITY Ctr_statusbar		"Statusleiste">
@@ -408,7 +407,7 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 
 <!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">

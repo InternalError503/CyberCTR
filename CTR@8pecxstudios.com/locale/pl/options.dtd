@@ -407,7 +407,7 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"&brandShortName; button color (default)">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
 <!ENTITY Ctr_appbuttonc_s	"Salmon button color">
 
 <!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
