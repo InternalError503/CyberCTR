@@ -162,13 +162,7 @@ cyberctrFeatures = {
 		}	
 		
 		return this.getMessage.GetStringFromName(message_id);
-	},	
-
-    get_localized_document: function() {
-
-        window.location.assign("chrome://classic_theme_restorer/content/compatibility/documentation/CyberCTR_Documentation.pdf");
-
-    }
+	}
 
 }
 window.addEventListener("load", function() {
