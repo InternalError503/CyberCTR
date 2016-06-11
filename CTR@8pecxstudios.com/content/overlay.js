@@ -74,13 +74,11 @@ classicthemerestorerjs.ctr = {
   bookmarkbarfontsize: sheetIO,
   tabfontsize: sheetIO,
   abouthome_bg: sheetIO,
-  abouthome_bg_strech: sheetIO,
   abouthome_custcolor: sheetIO,
   abouthome_custbasecolor: sheetIO,
   aboutnewtab_custcolor: sheetIO,
   hideElements: sheetIO,
   aboutnewtab_bg: sheetIO,
-  aboutnewtab_bg_strech: sheetIO,
   custtabthorbber: sheetIO,
   cctrcustomcsss: sheetIO,
   
@@ -2705,7 +2703,7 @@ classicthemerestorerjs.ctr = {
 
 		   case "abouthomebgstretch":
 			  	try{		  			
-					classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg_strech",branch.getBoolPref("abouthomebgstretch"));
+					classicthemerestorerjs.ctr.loadUnloadCSS("abouthomebgstretch",branch.getBoolPref("abouthomebgstretch"));
 				} catch(e){}			
 		  break;
 		  
@@ -2735,7 +2733,7 @@ classicthemerestorerjs.ctr = {
 		  
 		   case "aboutnewtabbgstretch":
 			  	try{		  			
-					classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_bg_strech",branch.getBoolPref("aboutnewtabbgstretch"));
+					classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtabbgstretch",branch.getBoolPref("aboutnewtabbgstretch"));
 				} catch(e){}			
 		  break;
 		  
@@ -4409,9 +4407,8 @@ classicthemerestorerjs.ctr = {
 		case "appbuttonc_green_dark":	manageCSS("cctr/appbutton_green_dark.css");		break;
 		case "appbuttonc_salmon":		manageCSS("cctr/appbutton_salmon.css");		break;
 
-		case "alt_newtabpalt":
-				manageCSS("cctr/alt_newtabpage_alt.css");			
-			break;
+		case "alt_newtabpalt": manageCSS("cctr/alt_newtabpage_alt.css"); break;
+		case "aboutnewtabbgstretch": manageCSS("cctr/aboutnewtabbgstretch.css"); break;
 		case "tree_style_fix": 		manageCSS("cctr/tree_style_fix.css");	break;
 		
 		case "abouthomedark":
@@ -4433,6 +4430,7 @@ classicthemerestorerjs.ctr = {
 		case "abouthomesimplicityred": 				manageCSS("cctr/abouthomesimplicityamd.css");	break;
 		case "abouthomesimplicitygreen": 			manageCSS("cctr/abouthomesimplicitylinux.css");	break;
 		case "abouthomesimplicityyellow": 			manageCSS("cctr/abouthomesimplicitybeta.css");	break;
+		case "abouthomebgstretch": 							manageCSS("cctr/abouthomebgstretch.css");	break;
 		case "abouthomenobar": 							manageCSS("cctr/abouthomenobar.css");	break;		
 		case "abouthomenologo": 						manageCSS("cctr/abouthomenologo.css");	break;		
 		case "abouthomenoicons": 						manageCSS("cctr/abouthomenoicons.css");	break;	
@@ -6699,27 +6697,6 @@ classicthemerestorerjs.ctr = {
 
 		break;
 
-		case "abouthome_bg_strech":
-
-			removeOldSheet(this.abouthome_bg_strech);
-			
-			if(enable==true && this.prefs.getBoolPref("abouthomebgstretch")){
-	
-				this.abouthome_bg_strech=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-					@namespace url(http://www.w3.org/1999/xhtml);\
-					@-moz-document url("about:home") {\
-						html,\
-						body{\
-							background-size: 100% 100%!important;\
-						}\
-					}\
-				'), null, null);
-				
-				applyNewSheet(this.abouthome_bg_strech);
-			}
-
-		break;
-
 		case "abouthome_custcolor":
 
 			removeOldSheet(this.abouthome_custcolor);
@@ -6833,27 +6810,7 @@ classicthemerestorerjs.ctr = {
 			}
 
 		break;	
-		
-		case "aboutnewtab_bg_strech":
-
-			removeOldSheet(this.aboutnewtab_bg_strech);
-			
-			if(enable==true && this.prefs.getBoolPref("aboutnewtabbgstretch")){
 	
-				this.aboutnewtab_bg_strech=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-					@namespace url(http://www.w3.org/1999/xhtml);\
-					@-moz-document url("about:newtab") {\
-						body{\
-							background-size: 100% 100%!important;\
-						}\
-					}\
-				'), null, null);
-				
-				applyNewSheet(this.aboutnewtab_bg_strech);
-			}
-
-		break;
-		
 		case "custtabthorbber":
 
 			removeOldSheet(this.custtabthorbber);
