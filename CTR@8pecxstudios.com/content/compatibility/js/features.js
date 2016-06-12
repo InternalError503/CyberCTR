@@ -22,7 +22,8 @@ cyberctrFeatures = {
 		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase()) {
 			this.updateCheck(false);
 		}
-		if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {
+        // Hide update check if firefox\other.
+		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {
 			document.getElementById("up-check").hidden = true;
 		}
 		
@@ -44,8 +45,8 @@ cyberctrFeatures = {
 	updateCheck: function (manual) {
 		
 		 try {
-
-			if (Services.appinfo.name.toLowerCase() === "Firefox".toLowerCase()) {return;}
+            // If firefox or other then return and don't check for updates.
+			if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {return;}
 		 
             //Set Global to disable update checks entirely 
             if (Services.prefs.getBoolPref("extensions.classicthemerestorer.features.updatecheck")) {
