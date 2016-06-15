@@ -49,9 +49,6 @@
 		  margin-top:-1px !important;
 		  margin: -1px 0 2px -2px !important;
 		}
-		#main-window[fx47plus="true"][sizemode="maximized"] #TabsToolbar #ctraddon_appbutton{
-		  margin-bottom:-1px !important;
-		}
 		@media not all and (-moz-windows-theme:aero) {
 		  #main-window[tabsintitlebar][sizemode="normal"] #TabsToolbar .titlebar-placeholder{
 			visibility:collapse !important;
