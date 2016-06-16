@@ -270,7 +270,7 @@ classicthemerestorerjs.ctr = {
 	
 	//Pocket (Restart Required)
 	try{	
-		if (Services.prefs.getBoolPref("browser.pocket.enabled")) {
+		if (Services.prefs.getBoolPref("extensions.pocket.enabled")) {
 			classicthemerestorerjs.ctr.loadUnloadCSS("nopocket",false);
 		}else{
 			classicthemerestorerjs.ctr.loadUnloadCSS("nopocket",true);
@@ -755,6 +755,9 @@ classicthemerestorerjs.ctr = {
 				}
       }
 
+ 			//custom tab height adjustment
+			if (branch.getBoolPref("ctabheightcb")) classicthemerestorerjs.ctr.loadUnloadCSS("ctabheight",true);
+
 		  break;
 		  
 		  case "appbuttonc": case "appbuttonct":
@@ -969,11 +972,6 @@ classicthemerestorerjs.ctr = {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("lbsbradius",true);
 		    else
 			  classicthemerestorerjs.ctr.loadUnloadCSS("lbsbradius",false);
-		  break;
-		  
-		  case "urlresults":
-			if (branch.getBoolPref("urlresults")) classicthemerestorerjs.ctr.loadUnloadCSS("urlresults",true);
-			  else classicthemerestorerjs.ctr.loadUnloadCSS("urlresults",false);
 		  break;
 
 		  case "backforward":
@@ -1334,6 +1332,14 @@ classicthemerestorerjs.ctr = {
 		  case "altautocompl":
 			if (branch.getBoolPref("altautocompl") && classicthemerestorerjs.ctr.appversion >= 48) classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",false);
+		  break;
+		  
+		  case "urlresults": case "autocompl_it":
+			if (branch.getBoolPref("urlresults")) classicthemerestorerjs.ctr.loadUnloadCSS("urlresults",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("urlresults",false);
+		  
+			if (branch.getBoolPref("autocompl_it") && branch.getBoolPref("urlresults") && classicthemerestorerjs.ctr.appversion >= 48) classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_it",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_it",false);
 		  break;
 
 		  case "locsearchbw10":
@@ -2535,6 +2541,11 @@ classicthemerestorerjs.ctr = {
 			else classicthemerestorerjs.ctr.loadUnloadCSS("hightabpososx",false);
 		  break;
 		  
+		  case "showalltabsb":
+			if (branch.getBoolPref("showalltabsb")) classicthemerestorerjs.ctr.loadUnloadCSS("showalltabsb",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("showalltabsb",false);
+		  break;
+		  
 		  case "alttabstb":
 			if (branch.getBoolPref("alttabstb") && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("alttabstb",true);
@@ -3350,8 +3361,10 @@ classicthemerestorerjs.ctr = {
 		// optionally reduces delay on startup (because it can cause glitches with Windows Classic visual style)
 		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote"))
 		  document.getElementById("TabsToolbar").style.visibility = 'collapse';
-		else
+		else {
+		  classicthemerestorerjs.ctr.loadUnloadCSS("hidetabsbarwot",true);
 		  document.getElementById("TabsToolbar").collapsed = true;
+		}
 		
 		// correct titlebar appearance, if the user wants it (not required for all visual styles)
 		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote2")) {
@@ -3370,9 +3383,11 @@ classicthemerestorerjs.ctr = {
 	  else {
 		
 		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote"))
-		  document.getElementById("TabsToolbar").style.visibility = 'visible';
-		else
+		   document.getElementById("TabsToolbar").style.visibility = 'visible';
+		else {
+		  classicthemerestorerjs.ctr.loadUnloadCSS("hidetabsbarwot",false);
 		  document.getElementById("TabsToolbar").collapsed = false;
+		}
 		
 		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote2")) {
 			
@@ -3638,40 +3653,48 @@ classicthemerestorerjs.ctr = {
   
   // add tab title to browsers titlebar
   tabTitleInBrowsersTitlebar: function(){
-	if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tttitlebar")==true
-		&& classicthemerestorerjs.ctr.osstring=="WINNT"
-			&& classicthemerestorerjs.ctr.fxdefaulttheme==true) {
+	if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("tttitlebar")==true){
+	
+	  window.addEventListener("DOMContentLoaded", function ctr_tabTitleInBrowsersTitlebar() {
+		window.removeEventListener("DOMContentLoaded", ctr_tabTitleInBrowsersTitlebar, false);
+		
+		setTimeout(function(){
 
-	  try {
+		 if(classicthemerestorerjs.ctr.osstring=="WINNT" && classicthemerestorerjs.ctr.fxdefaulttheme==true) {
 
-		var titlebartitle = document.createElement("toolbarbutton");
-		titlebartitle.setAttribute("id", "ctraddon_titlebartitle");
-		titlebartitle.setAttribute("ordinal", "0");
-		titlebartitle.setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+		  try {
 
-		document.getElementById("titlebar-content").appendChild(titlebartitle);
+			var titlebartitle = document.createElement("toolbarbutton");
+			titlebartitle.setAttribute("id", "ctraddon_titlebartitle");
+			titlebartitle.setAttribute("ordinal", "0");
+			titlebartitle.setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
 
-		window.addEventListener("load", function update_title() {
-		   document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
-		}, false);
-		window.addEventListener("DOMContentLoaded", function update_title() {
-		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
-		}, false);
-		window.addEventListener("TabOpen", function update_title() {
-		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
-		}, false);
-		window.addEventListener("TabSelect", function update_title() {
-		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
-		}, false);
-		window.addEventListener("TabAttrModified", function update_title() {
-		  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
-		}, false);
+			document.getElementById("titlebar-content").appendChild(titlebartitle);
 
-	  
-	  } catch(e) {}
-	  
-	  classicthemerestorerjs.ctr.loadUnloadCSS("tttitlebar",true);
-	}
+			window.addEventListener("load", function update_title() {
+			   document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+			}, false);
+			window.addEventListener("DOMContentLoaded", function update_title() {
+			  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+			}, false);
+			window.addEventListener("TabOpen", function update_title() {
+			  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+			}, false);
+			window.addEventListener("TabSelect", function update_title() {
+			  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+			}, false);
+			window.addEventListener("TabAttrModified", function update_title() {
+			  document.getElementById("ctraddon_titlebartitle").setAttribute("label", gBrowser.selectedTab.getAttribute("label"));
+			}, false);
+
+		  } catch(e) {}
+		  
+		  classicthemerestorerjs.ctr.loadUnloadCSS("tttitlebar",true);
+
+		 }
+		},200);
+	  }, false);
+    }
   },
   
   // prevent accidental location bar removal by using context menu 
@@ -4261,6 +4284,7 @@ classicthemerestorerjs.ctr = {
 		case "urlbardropm2": 		manageCSS("urlbar_dropm2.css"); 		break;
 		case "altreaderico": 		manageCSS("alt_reader_icons.css");		break;
 		case "altautocompl": 		manageCSS("alt_autocomplete.css");		break;
+		case "autocompl_it": 		manageCSS("alt_autocompl_items.css");	break;
 		case "locsearchbw10": 		manageCSS("locationsearchbarw10.css");	break;
 		case "combrelstop":			manageCSS("combrelstop.css");			break;
 		case "panelmenucol": 		manageCSS("panelmenucolor.css");		break;
@@ -4290,9 +4314,11 @@ classicthemerestorerjs.ctr = {
 		case "lessaddonsbar": 		manageCSS("addonsbar_smaller.css");		break;
 		case "addonbarfs": 			manageCSS("addonbar_infullscreen.css");	break;
 		case "hightabpososx": 		manageCSS("higher_tabs_pos.css");		break;
+		case "showalltabsb": 		manageCSS("showalltabsbutton.css");		break;
 		case "alttabstb": 			manageCSS("alttabstoolbar.css");		break;
 		case "alttabstb2": 			manageCSS("alttabstoolbar2.css");		break;
 		case "hidetbwotextra": 		manageCSS("hidetbwot_extra.css");		break;
+		case "hidetabsbarwot": 		manageCSS("hidetabsbarwot.css");		break;
 		
 		case "emptyfavico_t_gen": 	manageCSS("empty_favicon_t0.css");		break;
 		case "emptyfavico_t_gen2": 	manageCSS("empty_favicon_t0v2.css");	break;
@@ -4679,7 +4705,7 @@ classicthemerestorerjs.ctr = {
 						  box-shadow:unset !important;\
 						}\
 						#main-window[defaultfxtheme="true"][tabsontop="false"] #TabsToolbar:not(:-moz-lwtheme),\
-						#main-window[defaultfxtheme="true"] :not(#theFoxOnlyBetter-slimChrome-toolbars) > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):not(.devtools-tabbar):not(#developer-toolbar):not(#puzzleBars-urlbar-bar):not(#theFoxOnlyBetter-skyLights-container):not(#theFoxOnlyBetter-slimChrome-slimmer),\
+						#main-window[defaultfxtheme="true"] :not(#theFoxOnlyBetter-slimChrome-toolbars) > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):not(.devtools-tabbar):not(#developer-toolbar):not(.devtools-responsiveui-toolbar):not(#puzzleBars-urlbar-bar):not(#theFoxOnlyBetter-skyLights-container):not(#theFoxOnlyBetter-slimChrome-slimmer),\
 						#main-window[defaultfxtheme="true"] #theFoxOnlyBetter-slimChrome-container > *:not(#theFoxOnlyBetter-slimChrome-toolbars-bottom):not(:-moz-lwtheme),\
 						#main-window[defaultfxtheme="true"] #ctraddon_urlextrabar:not(:-moz-lwtheme){\
 						  background-image:unset !important;\
@@ -5188,7 +5214,8 @@ classicthemerestorerjs.ctr = {
 			
 				var linuxbutton='';
 				
-				var windows10fx47='';
+				var windows10fx47captionb='';
+				var windows10fx47appbuttonicon='';
 				
 				if (classicthemerestorerjs.ctr.osstring!="Darwin" && classicthemerestorerjs.ctr.osstring!="WINNT") {
 					linuxbutton='\
@@ -5199,8 +5226,8 @@ classicthemerestorerjs.ctr = {
 					';
 				}
 				
-				if (classicthemerestorerjs.ctr.osstring=="WINNT" && this.prefs.getIntPref('ctabheight')<26) {
-					windows10fx47='\
+				if (classicthemerestorerjs.ctr.osstring=="WINNT" && this.prefs.getIntPref('ctabheight')<28) {
+					windows10fx47captionb='\
 					  @media (-moz-os-version: windows-win10) {\
 						#main-window[fx47plus="true"][sizemode="maximized"] #titlebar-buttonbox toolbarbutton {\
 						  padding-top: 5px !important;\
@@ -5208,6 +5235,19 @@ classicthemerestorerjs.ctr = {
 						}\
 					  }\
 					';
+				}
+			
+				if(this.prefs.getCharPref("appbutton")=="appbutton_v2io" || this.prefs.getCharPref("appbutton")=="appbutton_v2io2") {
+				  if (classicthemerestorerjs.ctr.osstring=="WINNT" && this.prefs.getIntPref('ctabheight')<28) {
+					windows10fx47appbuttonicon='\
+					  @media (-moz-os-version: windows-win10) {\
+						#main-window[fx47plus="true"][sizemode="maximized"] #ctraddon_appbutton2{\
+						  margin-top:-1px !important;\
+						  margin: -1px 0 2px -2px !important;\
+						}\
+					  }\
+					';
+				  }
 				}
 			
 				this.tabheight=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
@@ -5232,7 +5272,8 @@ classicthemerestorerjs.ctr = {
 					  height: '+this.prefs.getIntPref('ctabheight')+'px !important;\
 					}\
 					'+linuxbutton+'\
-					'+windows10fx47+'\
+					'+windows10fx47captionb+'\
+					'+windows10fx47appbuttonicon+'\
 				'), null, null);
 				
 				applyNewSheet(this.tabheight);
@@ -6956,7 +6997,7 @@ classicthemerestorerjs.ctr = {
 		}
 		window.open(optionsURL,'', 'chrome').focus();	
   },
-  
+
   // open prefwindow and specific category
   additionalToolbars: function(){
 	Services.prefs.getBranch("extensions.classicthemerestorer.").setIntPref('pref_actindx',13);

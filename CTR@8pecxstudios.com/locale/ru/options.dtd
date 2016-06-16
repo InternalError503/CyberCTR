@@ -267,6 +267,7 @@
 <!ENTITY Ctr_searchbar		"Панель поиска">
 <!ENTITY Ctr_autocomplete	"Автозавершение">
 <!ENTITY Ctr_altautocompl	"Альтернативный внешний вид">
+<!ENTITY Ctr_autocompl_it	"Удалить пункты «Искать в...» и «Посетить» (при наличии)">
 <!ENTITY Ctr_urlbar_uc		"Отключить функцию «автозаполнение»">
 <!ENTITY Ctr_lbsugresi		"Отображать максимально возможное количество результатов в подсказках (без прокрутки)">
 <!ENTITY Ctr_lbsugres		"Количество всплывающих результатов">
@@ -297,6 +298,7 @@
 <!ENTITY Ctr_notabfog		"Отключить затуманивание фона панели вкладок (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_notabbg		"Удалить цвет фона (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"Уменьшить пространство над панелями инструментов (если возможно)">
+<!ENTITY Ctr_showalltabsb	"Always show 'all tabs' button">
 <!ENTITY Ctr_alttabstb		"Заменить цвет фона">
 <!ENTITY Ctr_alttabstb2		"В развернутом режиме (вкладки сверху)">
 

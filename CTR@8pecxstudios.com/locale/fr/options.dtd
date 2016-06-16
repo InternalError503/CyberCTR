@@ -268,6 +268,7 @@
 <!ENTITY Ctr_urlbar_uc		"Désactiver la fonctionnalité « Autocomplétion unifiée »">
 <!ENTITY Ctr_autocomplete	"Fenêtre surgissante d'autocomplétion">
 <!ENTITY Ctr_altautocompl	"Apparence alternative">
+<!ENTITY Ctr_autocompl_it	"Remove 'Search with...' and 'Visit' items (if present)">
 <!ENTITY Ctr_lbsugresi		"Désactiver la limite de hauteur">
 <!ENTITY Ctr_lbsugres		"Nombre de résultats :">
 <!ENTITY Ctr_lbsbradius		"Rayon de bordure personnalisé pour la barre d'adresse et la barre de recherche">
@@ -297,6 +298,7 @@
 <!ENTITY Ctr_notabfog		"Enlever l’effet de flou (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_notabbg		"Enlever l’arrière-plan (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"Réduire l’espace en haut (si possible)">
+<!ENTITY Ctr_showalltabsb	"Always show 'all tabs' button">
 <!ENTITY Ctr_alttabstb		"Arrière-plan d’une autre couleur">
 <!ENTITY Ctr_alttabstb2		"En mode maximisé (onglets en haut)">
 

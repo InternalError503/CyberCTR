@@ -267,6 +267,7 @@
 <!ENTITY Ctr_searchbar		"Suchleiste">
 <!ENTITY Ctr_autocomplete	"Autovervollständigungs-Pop-up">
 <!ENTITY Ctr_altautocompl	"Alternative Darstellung">
+<!ENTITY Ctr_autocompl_it	"'Mit ... suchen' und 'Aufrufen' Elemente entfernen (falls vorhanden)">
 <!ENTITY Ctr_urlbar_uc		"'Vereinigte Autovervollständigung' deaktivieren">
 <!ENTITY Ctr_lbsugresi		"Höhenlimit deaktivieren">
 <!ENTITY Ctr_lbsugres		"Anzahl der Vorschläge">
@@ -289,14 +290,15 @@
 <!ENTITY Ctr_mbarforceright	"Letztes Element">
 
 <!ENTITY Ctr_toolbars		"Leisten">
-<!ENTITY Ctr_dblclnewtab	"Doppelklick öffnet einen neuen Tab">
-<!ENTITY Ctr_hidetbwot		"Tableiste mit nur einem sichtbaren Tab verstecken">
+<!ENTITY Ctr_dblclnewtab	"Doppelklick auf Leiste öffnet einen neuen Tab">
+<!ENTITY Ctr_hidetbwot		"Leiste mit nur einem sichtbaren Tab verstecken">
 <!ENTITY Ctr_hidetbwote		"Verzögerung beim Start reduzieren">
 <!ENTITY Ctr_hidetbwote_i	"Hintergrundfarbe der Tableiste könnte fehlerhaft sein">
 <!ENTITY Ctr_hidetbwote2	"Titelleiste beibehalten (Tabs oben)">
 <!ENTITY Ctr_notabfog		"Hintergrundnebel entfernen (Windows Aero Glass / Windows 8)">
 <!ENTITY Ctr_notabbg		"Hintergrundfarbe entfernen (Windows Aero Glass / Windows 8)">
 <!ENTITY Ctr_hightabpos		"Oberen Leistenabstand reduzieren (falls möglich)">
+<!ENTITY Ctr_showalltabsb	"'Alle Tabs auflisten'-Schaltfläche immer anzeigen">
 <!ENTITY Ctr_alttabstb		"Alternative Hintergrundfarbe">
 <!ENTITY Ctr_alttabstb2		"Im maximierten Fenster (Tabs oben)">
 
@@ -359,7 +361,7 @@
 <!ENTITY Ctr_fx38pocket		"Das Deaktivieren dieser Option entfernt die 'Pocket'-Funktion und deren Leistenschaltfläche.">
 <!ENTITY Ctr_fx38pocket2	"Info: Das Verschieben der 'Pocket'-Schaltfläche zu den nicht verwendeten Schaltflächen im 'Anpassen-Modus' vor der Deaktivierung dieser Option entfernt zusätzlich die 'Pocket'-Einträge aus den Lesezeichen- und 'Lese'-Bereichen.">
 <!ENTITY Ctr_e_searchui		"Suchoberfläche">
-<!ENTITY Ctr_e_loop			"Anruf- und Konversationsfunktionen">
+<!ENTITY Ctr_e_loop			"'Hello' / Anruf- und Konversationsfunktionen / Loop">
 <!ENTITY Ctr_e_deved		"Entwickler-Thema">
 <!ENTITY Ctr_e_prefsui		"Einstellungen im Tab">
 <!ENTITY Ctr_e_readermode	"Lesemodus">
