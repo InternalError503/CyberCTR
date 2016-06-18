@@ -298,7 +298,7 @@
 <!ENTITY Ctr_notabfog		"Отключить затуманивание фона панели вкладок (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_notabbg		"Удалить цвет фона (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"Уменьшить пространство над панелями инструментов (если возможно)">
-<!ENTITY Ctr_showalltabsb	"Always show 'all tabs' button">
+<!ENTITY Ctr_showalltabsb	"Всегда показывать кнопку 'все вкладки'">
 <!ENTITY Ctr_alttabstb		"Заменить цвет фона">
 <!ENTITY Ctr_alttabstb2		"В развернутом режиме (вкладки сверху)">
 
