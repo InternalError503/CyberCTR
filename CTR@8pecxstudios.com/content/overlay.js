@@ -1342,6 +1342,11 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("autocompl_it") && branch.getBoolPref("urlresults") && classicthemerestorerjs.ctr.appversion >= 48) classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_it",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_it",false);
 		  break;
+		  
+		  case "autocompl_hl":
+			if (branch.getBoolPref("autocompl_hl")) classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_hl",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_hl",false);
+		  break;
 
 		  case "locsearchbw10":
 			if (branch.getBoolPref("locsearchbw10") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("locsearchbw10",true);
@@ -4287,6 +4292,7 @@ classicthemerestorerjs.ctr = {
 		case "altreaderico": 		manageCSS("alt_reader_icons.css");		break;
 		case "altautocompl": 		manageCSS("alt_autocomplete.css");		break;
 		case "autocompl_it": 		manageCSS("alt_autocompl_items.css");	break;
+		case "autocompl_hl": 		manageCSS("alt_autocompl_highl.css");	break;
 		case "locsearchbw10": 		manageCSS("locationsearchbarw10.css");	break;
 		case "combrelstop":			manageCSS("combrelstop.css");			break;
 		case "panelmenucol": 		manageCSS("panelmenucolor.css");		break;

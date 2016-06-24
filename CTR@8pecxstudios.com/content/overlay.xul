@@ -434,9 +434,9 @@
 					  class="menuitem-iconic"/>-->
 <!--- CyberCTR customization settings -->
 	  <menuitem id="appmenu_restartBrowser"
-	  					class="menuitem-iconic"
 				        label="&restartBrowser.label;"
-				        oncommand="gCyberfoxCustom.restartBrowser();"/>	
+				        oncommand="gCyberfoxCustom.restartBrowser();"
+					  class="menuitem-iconic"/>
 <!--- CyberCTR customization settings -->			  
 			<menuitem id="appmenu-quit"
 					  class="menuitem-iconic ctraddon_windowsonly"
