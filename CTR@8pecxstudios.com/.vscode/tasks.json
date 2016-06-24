@@ -11,7 +11,7 @@
             "taskName": "build",
             "isBuildCommand": true,
             // You must set the version number in the arguments field when bumping the XPI package version.
-			"args": ["1.5.5"],
+			"args": ["1.5.6"],
             "showOutput": "always"
         }
     ]
