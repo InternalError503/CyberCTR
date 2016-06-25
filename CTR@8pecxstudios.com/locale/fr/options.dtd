@@ -450,6 +450,7 @@
 <!ENTITY ctr_toolbarsearchbarcustwidth.label "Permettre de personnaliser la largeur maximale">
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Largeur maximale de la barre de recherche : ">
 <!ENTITY ctr_colapseaddonsearchbar.label	"Barre de recherche de about:addons compressible">
+<!ENTITY Ctr_alwaysshowaddonversion.label	"(Always Show)">
 
 <!ENTITY ctr_bookmarkfontsize.description	"Barre personnelle">
 <!ENTITY ctr_custombookmarkfontsize.label	"Permettre de choisir la taille de la police utilisée dans la barre personnelle">

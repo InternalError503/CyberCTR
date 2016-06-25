@@ -367,7 +367,8 @@
 	<preference id="ctraddon_ctaboutnewtab_bg_stretch"	name="extensions.classicthemerestorer.aboutnewtabbgstretch"	type="bool"	instantApply="true"/>	
 	<preference id="ctraddon_tabthrobber_usecust"	name="extensions.classicthemerestorer.tabthrobberusecust"	type="bool"		instantApply="true"/>
 	<preference id="ctraddon_tabthrobber_cust"	name="extensions.classicthemerestorer.tabthrobbercusturl" 	type="string"	instantApply="true"/>
-	<preference id="ctraddon_animatelwtheme"	name="extensions.classicthemerestorer.animatedlwtthemes"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_animatelwtheme"	name="extensions.classicthemerestorer.animatedlwtthemes"	type="bool"	instantApply="true"/>
+	<preference id="ctraddon_alwaysshowaddonversion"	name="extensions.classicthemerestorer.alwaysshowaddonversion"	 type="bool"	instantApply="true"/>	
  <!--- CyberCTR customization settings -->
 
 	</preferences>
@@ -1262,6 +1263,7 @@
  <!--- CyberCTR customization settings -->
 		<checkbox label="&Ctr_alt_addonsm;"		preference="ctraddon_alt_addonsm" id="ctraddon_pw_alt_addonsm"/>
 		<checkbox label="&Ctr_addonversion;"	preference="ctraddon_addonversion" id="ctraddon_pw_addonversion" style="visibility:collapse;"/>
+		<checkbox label="&Ctr_addonversion; &Ctr_alwaysshowaddonversion.label;"	preference="ctraddon_alwaysshowaddonversion" id="ctraddon_pw_alwaysshowaddonversion"/>
 		<checkbox label="&Ctr_am_nowarning;"	preference="ctraddon_am_nowarning" id="ctraddon_pw_am_nowarning"/>
 		<checkbox label="&Ctr_am_compact;"		preference="ctraddon_am_compact" id="ctraddon_pw_am_compact" oncommand="if(this.checked) {classicthemerestorerjso.ctr.ctrpwCompactAddonList(true);} else {classicthemerestorerjso.ctr.ctrpwCompactAddonList(false);}"/>
 		<checkbox label="&Ctr_am_compact2;"		preference="ctraddon_am_compact2" id="ctraddon_pw_am_compact2" class="ctraddonsuboption"/>

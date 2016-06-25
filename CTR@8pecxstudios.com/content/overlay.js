@@ -2110,10 +2110,11 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsm",false);
 		  break;
 
-		  case "addonversion":
+/*		  case "addonversion":
 			if (branch.getBoolPref("addonversion") && classicthemerestorerjs.ctr.appversion >= 40) classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("addonversion",false);
 		  break;
+*/
 		  
 		  case "hiderecentbm":
 		    if(classicthemerestorerjs.ctr.appversion >= 47) {
@@ -2792,9 +2793,15 @@ classicthemerestorerjs.ctr = {
 		  break;	
 
 		  case "loadcustomcss": case "customcssurl":
-		  try{ 	
+				try{ 	
 					classicthemerestorerjs.ctr.loadUnloadCSS("cctrcustomcsss",branch.getBoolPref("loadcustomcss"));
 			  	} catch(e){}		
+		  break;
+		  
+		  case "alwaysshowaddonversion":
+				try{ 	
+				classicthemerestorerjs.ctr.loadUnloadCSS("alwaysshowaddonversion",branch.getBoolPref("alwaysshowaddonversion") );
+			  	} catch(e){}	
 		  break;
 		  
 		}
@@ -4383,11 +4390,13 @@ classicthemerestorerjs.ctr = {
 		case "am_hovshowb": 		manageCSS("am_hovshowbut.css");			break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
-		
+
+/*		
 		case "addonversion":
 			if (classicthemerestorerjs.ctr.appversion < 46) manageCSS("addonversion.css");
 			else manageCSS("addonversion46.css");
 		break;
+*/
 		
 		case "hiderecentbm": 		manageCSS("hide_recently_bm.css");		break;
 		case "bmbutpanelm": 		manageCSS("bmbut_pmenu.css");			break;
@@ -4509,6 +4518,10 @@ classicthemerestorerjs.ctr = {
 		case "throbber_alt3": 		manageCSS("cctr/throbberalt_3.css");			break;
 		case "throbber_alt4": 		manageCSS("cctr/throbberalt_4.css");			break;
 		case "throbber_alt5": 		manageCSS("cctr/throbberalt_5.css");			break;
+		
+		case "alwaysshowaddonversion":
+			manageCSS("cctr/alwaysshowaddonversion.css");
+		break;
 		
 		case "thirdpartythemes": 	manageCSS("thirdpartythemes.css");		break;
 		
