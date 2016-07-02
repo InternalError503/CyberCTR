@@ -271,6 +271,7 @@
 <!ENTITY Ctr_altautocompl	"Apparence alternative">
 <!ENTITY Ctr_autocompl_it	"Remove 'Search with...' and 'Visit' items (if present)">
 <!ENTITY Ctr_autocompl_hl	"Highlighting of text hits">
+<!ENTITY Ctr_autocompl_rhl	"Aero colors for highlighted results">
 <!ENTITY Ctr_autocompl_sep	"Show separator between results">
 <!ENTITY Ctr_lbsugresi		"Désactiver la limite de hauteur">
 <!ENTITY Ctr_lbsugres		"Nombre de résultats :">
@@ -355,18 +356,11 @@
 <!ENTITY Ctr_nodevtheme		"Empêcher l’application du théme développeur">
 
 <!ENTITY Ctr_experttweaks	"Avancé">
-<!ENTITY Ctr_fx34search		"Si ce paramètre est décoché, l’ancienne barre de recherche est activée.">
 <!ENTITY Ctr_fx34loop		"Si ce paramètre est décoché, les fonctions d’appels et de conversations sont désactivées.">
-<!ENTITY Ctr_fx35devtheme	"Si ce paramètre est décoché, le thème développeur est desactivé.">
-<!ENTITY Ctr_fx36prefs		"Si ce paramètre est décoché, les préférences sont affichées dans une fenêtre distincte (mode traditionnel).">
-<!ENTITY Ctr_fx36prefs2		"Note: L’ancienne fenêtre de préférences ne contient pas les préférences récemment ajoutées à &brandShortName;.">
 <!ENTITY Ctr_fx38reader		"Si ce paramètre est décoché, le « mode lecture » est desactivé et son icône est retirée de la barre d’adresse.">
 <!ENTITY Ctr_fx38pocket		"Si ce paramètre est décoché, « Pocket » est desactivé et son bouton retiré des barres d’outils.">
 <!ENTITY Ctr_fx38pocket2	"Note: Déplacer le bouton « Pocket » vers la fenêtre de personnalisation avant de désactiver cette option, permet également de l’enlever des marques pages et du menu de lecture.">
-<!ENTITY Ctr_e_searchui		"Aspect de la barre de recherche">
 <!ENTITY Ctr_e_loop			"Appel et conversation">
-<!ENTITY Ctr_e_deved		"Thème développeur">
-<!ENTITY Ctr_e_prefsui		"Préférences dans un onglet">
 <!ENTITY Ctr_e_readermode	"Mode de lecture d’articles">
 <!ENTITY Ctr_e_pocket		"Sac de rangement (« Pocket »)">
 <!ENTITY Ctr_e_tabsaudioico	"Icône de lecture audio sur les onglets">

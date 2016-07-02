@@ -129,6 +129,7 @@ pref("extensions.classicthemerestorer.autocompl_hlb",false);
 pref("extensions.classicthemerestorer.autocompl_hlu",false);
 pref("extensions.classicthemerestorer.autocompl_hli",false);
 pref("extensions.classicthemerestorer.autocompl_sep",false);
+pref("extensions.classicthemerestorer.autocompl_rhl",false);
 
 pref("extensions.classicthemerestorer.ib_nohovcolor",false);
 pref("extensions.classicthemerestorer.ib_graycolor",false);
@@ -369,8 +370,8 @@ pref("extensions.classicthemerestorer.animatedlwtthemes", true);
 pref("extensions.classicthemerestorer.loadcustomcss", false);
 pref("extensions.classicthemerestorer.customcssurl", "");
 
-//CyberCTR version
-pref("extensions.classicthemerestorer.version", "1.5.6");
+//CyberCTR version, Set by options.js
+pref("extensions.classicthemerestorer.version", "0.0.0");
 
 //CyberCTR Pre-set Configuration
 pref("extensions.classicthemerestorer.ctrpref.firstrun", true);
