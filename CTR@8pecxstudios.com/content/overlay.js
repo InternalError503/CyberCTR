@@ -7185,7 +7185,6 @@ switch (appButtonState){
             case "txt":
               var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
               return input.split(linebreak);
-              break;
             case "json":
               var text = input;
               if (!classicthemerestorerjs.ctr.IsJsonValid(text)) {
@@ -7193,7 +7192,6 @@ switch (appButtonState){
               } else {
                 return JSON.parse(input);
               }
-              break;
           }
         } else {
           if (Services.prefs.getBoolPref("extensions.classicthemerestorer.ctrpref.lastmodapply")) {
@@ -7220,7 +7218,6 @@ switch (appButtonState){
                 }
 
                 return input.split(linebreak);
-                break;
               case "json":
                 var text = input;
                 if (!classicthemerestorerjs.ctr.IsJsonValid(text)) {
@@ -7237,7 +7234,6 @@ switch (appButtonState){
                   }
                   return JSON.parse(input);
                 }
-                break;
             }
           }
 
@@ -7275,11 +7271,11 @@ switch (appButtonState){
       function setPrefValue(pref, val) {
 
         switch (Services.prefs.getPrefType(pref)) {
-          case 32: return Services.prefs.setCharPref(pref, val); break;
-          case 64: return Services.prefs.setIntPref(pref, val); break;
-          case 128: return Services.prefs.setBoolPref(pref, val); break;
+          case 32: return Services.prefs.setCharPref(pref, val);
+          case 64: return Services.prefs.setIntPref(pref, val);
+          case 128: return Services.prefs.setBoolPref(pref, val);
         }
-
+				
       }
       try {
         //Check that only one type is used.

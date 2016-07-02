@@ -1528,18 +1528,18 @@ classicthemerestorerjso.ctr = {
         // Filter preference type and return its value.
         function _prefValue(pref) {
             switch (Services.prefs.getPrefType(pref)) {
-                case 32:return Services.prefs.getCharPref(pref);break;
-                case 64:return Services.prefs.getIntPref(pref);break;
-                case 128:return Services.prefs.getBoolPref(pref);break;
+                case 32:return Services.prefs.getCharPref(pref);
+                case 64:return Services.prefs.getIntPref(pref);
+                case 128:return Services.prefs.getBoolPref(pref);
             }
         }
 
         // Filter preference type and return its filter value.	
         function _prefType(pref) {
             switch (Services.prefs.getPrefType(pref)) {
-                case 32:return ":";break;
-                case 64:return "~";break;
-                case 128:return "=";break;
+                case 32:return ":";
+                case 64:return "~";
+                case 128:return "=";
             }
         }
 
@@ -1610,9 +1610,9 @@ classicthemerestorerjso.ctr = {
 		function _setPrefValue(pref, val){
 
 		  switch (Services.prefs.getPrefType(pref)){
-			case 32:	return Services.prefs.setCharPref(pref, val);	break;
-			case 64:	return Services.prefs.setIntPref(pref, val);	break;
-			case 128:	return Services.prefs.setBoolPref(pref, val);	break;	
+			case 32:	return Services.prefs.setCharPref(pref, val);
+			case 64:	return Services.prefs.setIntPref(pref, val);
+			case 128:	return Services.prefs.setBoolPref(pref, val);	
 		  }
 
 
@@ -1755,7 +1755,6 @@ classicthemerestorerjso.ctr = {
 				case "txt":
 				  var linebreak = input.match(/(((\n+)|(\r+))+)/m)[1];
 				  return input.split(linebreak);
-				  break;
 				case "json":
 				  var text = input;
 				  if (!classicthemerestorerjso.ctr.IsJsonValid(text)) {
@@ -1764,7 +1763,6 @@ classicthemerestorerjso.ctr = {
 				  } else {
 					return JSON.parse(input);
 				  }
-				  break;
 			  }
 
 			}
