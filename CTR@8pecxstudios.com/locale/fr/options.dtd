@@ -232,7 +232,7 @@
 <!ENTITY Ctr_ntabhov		"Nouvel onglet (au survol)">
 <!ENTITY Ctr_bold			"Gras">
 <!ENTITY Ctr_italic			"Italique">
-<!ENTITY Ctr_underlined		"Underlined">
+<!ENTITY Ctr_underlined		"Souligné">
 <!ENTITY Ctr_notabhov		"Les valeurs paramétrées supplantent celles « au survol »">
 <!ENTITY Ctr_tabc_act_tb	"Couleur d’arrière-plan des barres d’outils">
 
@@ -254,8 +254,8 @@
 <!ENTITY Ctr_ib_graycolor	"Arrière-plan gris pour les pages dont l’identité est inconnue et celles du chrome">
 <!ENTITY Ctr_verifiedcolors	"Couleurs de bouton pour les sites certifiés sécurisés, les connexions sécurisées et non sécurisées">
 <!ENTITY Ctr_ibinfoico		"Remplacer l’icône « i » par celle du globe">
-<!ENTITY Ctr_ibinfoico2		"Hide 'i'-icon (if possible)">
-<!ENTITY Ctr_iblabels		"Hide labels">
+<!ENTITY Ctr_ibinfoico2		"Masquer l'icône « i » (si possible)">
+<!ENTITY Ctr_iblabels		"Masquer le texte">
 <!ENTITY Ctr_faviconurl		"Afficher le favicon du site dans la barre d’adresse">
 <!ENTITY Ctr_padlock		"Cadenas pour les connexions sécurisées">
 <!ENTITY Ctr_padlock_hid	" masqué">
@@ -269,10 +269,10 @@
 <!ENTITY Ctr_urlbar_uc		"Désactiver la fonctionnalité « Autocomplétion unifiée »">
 <!ENTITY Ctr_autocomplete	"Fenêtre surgissante d'autocomplétion">
 <!ENTITY Ctr_altautocompl	"Apparence alternative">
-<!ENTITY Ctr_autocompl_it	"Remove 'Search with...' and 'Visit' items (if present)">
-<!ENTITY Ctr_autocompl_hl	"Highlighting of text hits">
-<!ENTITY Ctr_autocompl_rhl	"Aero colors for highlighted results">
-<!ENTITY Ctr_autocompl_sep	"Show separator between results">
+<!ENTITY Ctr_autocompl_it	"Supprimer les éléments « Rechercher avec... » et « Consulter » (si présents)">
+<!ENTITY Ctr_autocompl_hl	"Mettre les correspondances de texte dans les résultats en :">
+<!ENTITY Ctr_autocompl_rhl	"Utiliser des couleurs Aero pour les résultats surlignés">
+<!ENTITY Ctr_autocompl_sep	"Afficher un séparateur entre les résultats">
 <!ENTITY Ctr_lbsugresi		"Désactiver la limite de hauteur">
 <!ENTITY Ctr_lbsugres		"Nombre de résultats :">
 <!ENTITY Ctr_lbsbradius		"Rayon de bordure personnalisé pour la barre d'adresse et la barre de recherche">
@@ -302,7 +302,7 @@
 <!ENTITY Ctr_notabfog		"Enlever l’effet de flou (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_notabbg		"Enlever l’arrière-plan (Windows AeroGlass / Win8)">
 <!ENTITY Ctr_hightabpos		"Réduire l’espace en haut (si possible)">
-<!ENTITY Ctr_showalltabsb	"Always show 'all tabs' button">
+<!ENTITY Ctr_showalltabsb	"Toujours afficher le bouton « Lister tous les onglets »">
 <!ENTITY Ctr_alttabstb		"Arrière-plan d’une autre couleur">
 <!ENTITY Ctr_alttabstb2		"En mode maximisé (onglets en haut)">
 
@@ -351,7 +351,7 @@
 <!ENTITY Ctr_contextitem	"« Personnaliser &brandShortName; » dans le menu contextuel des barres d’outils">
 <!ENTITY Ctr_puictrbutton	"« Personnaliser &brandShortName; » dans le Panneau menu">
 
-<!ENTITY Ctr_otherctroptns	"Autres options">
+<!ENTITY Ctr_otherctroptns	"Autres réglages">
 <!ENTITY Ctr_cuibotbuttons	"Boutons supplémentaires en mode personnalisation">
 <!ENTITY Ctr_nodevtheme		"Empêcher l’application du théme développeur">
 
@@ -365,12 +365,13 @@
 <!ENTITY Ctr_e_pocket		"Sac de rangement (« Pocket »)">
 <!ENTITY Ctr_e_tabsaudioico	"Icône de lecture audio sur les onglets">
 <!ENTITY Ctr_fx42tabsaudico	"Décocher cette préférence pour ne plus afficher d’icône audio sur les onglets.">
-<!ENTITY Ctr_e_containertab	"Container Tabs">
-<!ENTITY Ctr_fx50containert	"Unchecking this preference removes 'container tabs'.">
-<!ENTITY Ctr_e_findbarhl	"Findbar highlighting">
-<!ENTITY Ctr_fx50findbarhl	"Unchecking these preferences removes findbars 'highlight' features.">
-<!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_fx50flyweb		"Unchecking this preference disables 'flyweb'.">
+<!ENTITY Ctr_e_containertab	"Onglets conteneurs">
+<!ENTITY Ctr_fx50containert	"Décocher ce paramètre désactive les onglets conteneurs.">
+<!ENTITY Ctr_e_findbarhl	"Surlignage avancé de la barre de recherche">
+<!ENTITY Ctr_fx50findbarhl	"Décocher ces paramètres désactive les fonctionnalités avancées de surlignage de la barre de recherche.">
+<!ENTITY Ctr_e_flyweb		"FlyWeb">
+<!ENTITY Ctr_fx50flyweb		"Décocher ce paramètre désactive « FlyWeb ».">
+
 
 <!ENTITY Ctr_pw_settings	"Réglages">
 <!ENTITY Ctr_pw_set_reset	"Restaurer les réglages par défaut">
