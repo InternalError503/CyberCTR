@@ -232,7 +232,7 @@
 <!ENTITY Ctr_ntabhov		"Ожидающая новая вкладка">
 <!ENTITY Ctr_bold			"Полужирный">
 <!ENTITY Ctr_italic			"Курсив">
-<!ENTITY Ctr_underlined		"Underlined">
+<!ENTITY Ctr_underlined		"Подчеркнутый">
 <!ENTITY Ctr_notabhov		"Разрешить перезапись настроек при 'зависании'">
 <!ENTITY Ctr_tabc_act_tb	"Цвет фона панели инструментов">
 
@@ -269,9 +269,9 @@
 <!ENTITY Ctr_autocomplete	"Автозавершение">
 <!ENTITY Ctr_altautocompl	"Альтернативный внешний вид">
 <!ENTITY Ctr_autocompl_it	"Удалить пункты «Искать в...» и «Посетить» (при наличии)">
-<!ENTITY Ctr_autocompl_hl	"Highlighting of text hits">
-<!ENTITY Ctr_autocompl_rhl	"Aero colors for highlighted results">
-<!ENTITY Ctr_autocompl_sep	"Show separator between results">
+<!ENTITY Ctr_autocompl_hl	"Подсветка найденных фрагментов текста">
+<!ENTITY Ctr_autocompl_rhl	"Цвета Aero для подсвеченных результатов">
+<!ENTITY Ctr_autocompl_sep	"Разделитель между результатами">
 <!ENTITY Ctr_urlbar_uc		"Отключить функцию «автозаполнение»">
 <!ENTITY Ctr_lbsugresi		"Отображать максимально возможное количество результатов в подсказках (без прокрутки)">
 <!ENTITY Ctr_lbsugres		"Количество всплывающих результатов">
@@ -366,11 +366,11 @@
 <!ENTITY Ctr_e_tabsaudioico	"Значок проигрывания аудио на вкладках">
 <!ENTITY Ctr_fx42tabsaudico	"Снимите галочку для удаления с вкладок значка 'проигрывание аудио'.">
 <!ENTITY Ctr_e_containertab	"Container Tabs">
-<!ENTITY Ctr_fx50containert	"Unchecking this preference removes 'container tabs'.">
-<!ENTITY Ctr_e_findbarhl	"Findbar highlighting">
-<!ENTITY Ctr_fx50findbarhl	"Unchecking these preferences removes findbars 'highlight' features.">
+<!ENTITY Ctr_fx50containert	"Отключение этой опции отключает 'container tabs'.">
+<!ENTITY Ctr_e_findbarhl	"Подсветка панели поиска">
+<!ENTITY Ctr_fx50findbarhl	"Отключение этих опций отключает функцию подсветки панели поиска.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_fx50flyweb		"Unchecking this preference disables 'flyweb'.">
+<!ENTITY Ctr_fx50flyweb		"Отключение этой опции отключает 'flyweb'.">
 
 
 <!ENTITY Ctr_pw_settings	"Настройки">
@@ -442,7 +442,7 @@
 <!ENTITY ctr_toolbarsearchbarcustwidth.label	"Разрешить изменение максимальной ширины">
 <!ENTITY ctr_toolbarsearchbarwidth.label	"Максимальная ширина панели поиска: ">
 <!ENTITY ctr_colapseaddonsearchbar.label	"Сворачиваемая панель поиска дополнений на странице about:addons">
-<!ENTITY Ctr_alwaysshowaddonversion.label	"(Always Show)">
+<!ENTITY Ctr_alwaysshowaddonversion.label	"(Всегда отображать)">
 
 <!ENTITY ctr_bookmarkfontsize.description   "Панель закладок">
 <!ENTITY ctr_custombookmarkfontsize.label   "Изменить размер шрифта панели закладок">
