@@ -187,11 +187,11 @@
 <!ENTITY Ctr_hiderecentbm	"Menu podręczne zakładek: ukryj ostatnio dodane zakładki">
 <!ENTITY Ctr_hideeditbm		"Gwiazdka zakładek: ukryj menu podręczne (jeżeli zakładka nie jest dodana do strony)">
 <!ENTITY Ctr_bmbutpanelm	"Menu podręczne: wygląd menu panelu">
-<!ENTITY Ctr_bmbunsortbm	"Menu podręczne: podmenu 'Zakładki nieprzypisane'">
+<!ENTITY Ctr_bmbunsortbm	"Menu podręczne: podmenu 'Zakładki nieposortowane'">
 <!ENTITY Ctr_bmbunsortbm2	"Menu ponad zakładkami">
 <!ENTITY Ctr_bmbviewbmsb	"Menu podręczne: pokaż 'Wyświetl panel zakładek'">
 <!ENTITY Ctr_bmbviewbmtb	"Menu podręczne: pokaż 'Wyświetl pasek zakładek'">
-<!ENTITY Ctr_bmbnounsort	"Menu podręczne: ukryj 'Zakładki nieprzypisane'">
+<!ENTITY Ctr_bmbnounsort	"Menu podręczne: ukryj 'Zakładki nieposortowane'">
 <!ENTITY Ctr_bmbutnotext	"Ukryj etykietę na pasku zakładek">
 <!ENTITY Ctr_skipprintpr	"Przycisk drukowania: pomiń podgląd wydruku">
 <!ENTITY Ctr_tbconmenu		"Menu kontekstowe paska narzędzi: ukryj 'Przenieś do menu', 'Usuń z paska narzędzi', 'Odśwież wszystkie karty', 'Dodaj zakładki do wszystkich kart...' oraz 'Przywróć zamkniętą kartę'">
@@ -385,8 +385,12 @@
 <!ENTITY Ctr_special_font	"Ustawienia koloru tła są tylko dla domyślnego motywu!">
 <!ENTITY Ctr_special_info	"Niektóre opcje mogą nie oferować widocznych zmian we wszystkich przypadkach">
 <!ENTITY Ctr_special_info2	"Wykryto motyw autorstwa osób trzecich! Niektóre opcje nie działają z motywami autorstwa osób trzecich!">
-<!ENTITY Ctr_support		"Forum wsparcia">
-<!ENTITY Ctr_newversion		"Nowa wersja?">
+<!ENTITY Ctr_special_acr	"Only report issues through official support channels and not by using 'Add-on Compatibility Reporter'!">
+<!ENTITY Ctr_support		"Support">
+<!ENTITY Ctr_support_forum1	"MozillaZine (English forum)">
+<!ENTITY Ctr_support_forum2	"Camp Firefox (German forum)">
+<!ENTITY Ctr_github_issues	"Report issue on Github">
+<!ENTITY Ctr_newversion		"Check for new version">
 
 <!ENTITY Ctr_addon-bar.accesskey		"A">
 <!ENTITY appMenuGettingStarted.label	"Pierwsze kroki">

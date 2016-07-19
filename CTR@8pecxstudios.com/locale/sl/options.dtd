@@ -270,7 +270,7 @@
 <!ENTITY Ctr_altautocompl	"Nadomestni videz">
 <!ENTITY Ctr_autocompl_it	"Odstrani predmeta 'Išči s/z …' in 'Obišči' (če sta prisotna)">
 <!ENTITY Ctr_autocompl_hl	"Označevanje zadetkov">
-<!ENTITY Ctr_autocompl_rhl	"Aero colors for highlighted results">
+<!ENTITY Ctr_autocompl_rhl	"Barve Aero za poudarjene rezultate">
 <!ENTITY Ctr_autocompl_sep	"Prikaži ločilo med rezultati">
 <!ENTITY Ctr_urlbar_uc		"Onemogoči značilnost 'poenotenega samodokončevanja'">
 <!ENTITY Ctr_lbsugresi		"Onemogoči omejitev višine">
@@ -385,8 +385,12 @@
 <!ENTITY Ctr_special_font	"Nastavitve barve ozadja so samo za privzeto temo!">
 <!ENTITY Ctr_special_info	"Nekatere možnosti v vseh primerih morda ne bodo povzročile vidnih sprememb">
 <!ENTITY Ctr_special_info2	"Nastavitve so narejene za &brandShortName;ovo privzeto temo in morda ne bodo delovale z vsemi temami tretjih oseb!">
-<!ENTITY Ctr_support		"Forum za podporo">
-<!ENTITY Ctr_newversion		"Nova različica?">
+<!ENTITY Ctr_special_acr	"Only report issues through official support channels and not by using 'Add-on Compatibility Reporter'!">
+<!ENTITY Ctr_support		"Support">
+<!ENTITY Ctr_support_forum1	"MozillaZine (English forum)">
+<!ENTITY Ctr_support_forum2	"Camp Firefox (German forum)">
+<!ENTITY Ctr_github_issues	"Report issue on Github">
+<!ENTITY Ctr_newversion		"Check for new version">
 
 <!ENTITY Ctr_addon-bar.accesskey		"d">
 <!ENTITY appMenuGettingStarted.label	"Začetek">

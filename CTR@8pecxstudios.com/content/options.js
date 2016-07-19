@@ -158,7 +158,7 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_ib_nohovcolor').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_altreaderico').style.visibility = 'collapse';
 	} else {
-		document.getElementById('ctraddon_pw_special_info2').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_themes_note').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_special_font').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_tabforminfo').style.visibility = 'collapse';
 		document.getElementById('ctraddon_altoptions_list2').style.visibility = 'collapse';
@@ -169,7 +169,7 @@ classicthemerestorerjso.ctr = {
 	document.getElementById('ctraddon_pw_cappbutctcc').disabled = true;
 	document.getElementById('ctraddon_cappbutnotxtsh').disabled = true;
 	
-	//ColorfulTabs info label
+	// ColorfulTabs info label
 	document.getElementById('ctraddon_coltabsinfo').style.visibility = 'collapse';
 
 	// radio restart label
@@ -188,7 +188,11 @@ classicthemerestorerjso.ctr = {
 	// 'Tabs on bottom' add-ons
 	document.getElementById('ctraddon_tobinfotab').style.visibility = 'collapse';
 	
-	//Custom search bar width
+	// Add-on comaptibiliy reporter note
+	document.getElementById('ctraddon_pw_acr_note').style.visibility = 'collapse';
+	
+	
+	// Custom search bar width
 	if (this.prefs.getBoolPref("customsearchbarwidth")){
 		document.getElementById('ctraddon_searchbarwidth').disabled = false;
 		document.getElementById('ctraddon_searchbarwidthl').disabled = false;
@@ -232,7 +236,7 @@ classicthemerestorerjso.ctr = {
 	  }
 	});
 	
-	//Colorful Tabs add-on extra info
+	// Colorful Tabs add-on extra info
 	AddonManager.getAddonByID('{0545b830-f0aa-4d7e-8820-50a4629a56fe}', function(addon) {
 	  if(addon && addon.isActive) {
 		document.getElementById('ctraddon_coltabsinfo').style.visibility = 'visible';
@@ -317,7 +321,7 @@ classicthemerestorerjso.ctr = {
     Services.prefs.setCharPref("extensions.classicthemerestorer.version", addon.version);
 	});
 	
-	//HCTP add-on extra info
+	// HCTP add-on extra info
 	AddonManager.getAddonByID('hidecaptionplus-dp@dummy.addons.mozilla.org', function(addon) {
 	  if(addon && addon.isActive) {
 		document.getElementById('ctraddon_hctpinfotab').style.visibility = 'visible';
@@ -379,8 +383,28 @@ classicthemerestorerjso.ctr = {
 	   }
 	};
 	AddonManager.addAddonListener(TOB2Listener);
+	
+	// 'Add-on comaptibiliy reporter' note
+	AddonManager.getAddonByID('compatibility@addons.mozilla.org', function(addon) {
+	  if(addon && addon.isActive) {
+		document.getElementById('ctraddon_pw_acr_note').style.visibility = 'visible';
+	  }
+	});
+	var ACRListener = {
+	   onEnabled: function(addon) {
+		  if(addon.id == 'compatibility@addons.mozilla.org') {
+			document.getElementById('ctraddon_pw_acr_note').style.visibility = 'visible';
+		  }
+	   },
+	   onDisabled: function(addon) {
+		  if(addon.id == 'compatibility@addons.mozilla.org') {
+			document.getElementById('ctraddon_pw_acr_note').style.visibility = 'collapse';
+		  }
+	   }
+	};
+	AddonManager.addAddonListener(ACRListener);
 
-	//Personal menu
+	// Personal menu
 	AddonManager.getAddonByID('CompactMenuCE@Merci.chao', function(addon) {
 		if(addon && addon.isActive) { 
 			document.getElementById('ctraddon_appbuttonboxtab').style.visibility = 'collapse';
@@ -506,7 +530,7 @@ classicthemerestorerjso.ctr = {
 		  
 		  break;
 		  
-			//Temp fix visual glitch changing from square to curved tabs after installing TMP
+			// Temp fix visual glitch changing from square to curved tabs after installing TMP
 			case "tabs":
 				AddonManager.getAddonByID('{dc572301-7619-498c-a57d-39143191b318}', function(addon) {
 					if(addon && addon.isActive && branch.getCharPref("tabs") === "tabs_default" && branch.getBoolPref("compatibility.tabmix") === false) {
@@ -518,7 +542,7 @@ classicthemerestorerjso.ctr = {
 				});
 			break;
 		  
-			//Custom Button Color Text Color
+			// Custom Button Color Text Color
 			case "appbutton":
 			var isButton = branch.getCharPref("appbutton");
 					if (isButton ==="appbutton_off" || 
@@ -564,7 +588,7 @@ classicthemerestorerjso.ctr = {
 					branch.getCharPref("abouthome") === "simplicitygreen"|| 
 					branch.getCharPref("abouthome") === "simplicityyellow"){
 					document.getElementById('noicons').disabled = true;
-					//Disable custom highlight color on pre-sets.
+					// Disable custom highlight color on pre-sets.
 					document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
 					document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
 					document.getElementById('ctraddon_ctabouthomecusthlttb').disabled = true;
@@ -579,7 +603,7 @@ classicthemerestorerjso.ctr = {
 				}
 				
 				
-				//Custom background image on lightalt|darkalt theme styles have bg image streched.
+				// Custom background image on lightalt|darkalt theme styles have bg image streched.
 				if (branch.getCharPref("abouthome") === "darkalt" ||
 					branch.getCharPref("abouthome") === "lightalt"){
 					document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
@@ -594,7 +618,7 @@ classicthemerestorerjso.ctr = {
 			break;
 
 			case "abouthomecustomurl":
-				//Disable custom highlight colors on default theme in firefox\Other.	
+				// Disable custom highlight colors on default theme in firefox\Other.	
 				if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase() && 
 					branch.getCharPref("abouthome") === "default") {
 						document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
@@ -609,7 +633,7 @@ classicthemerestorerjso.ctr = {
 				} catch (e){ }
 			break;
 
-			//Alternate about:newtab page style listener
+			// Alternate about:newtab page style listener
 			case "alt_newtabpalt":
 				if(branch.getBoolPref("alt_newtabpalt") === true){
 					document.getElementById('ctraddon_pw_alt_newtabp').disabled = true;
@@ -706,17 +730,17 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_pw_noconicons').disabled = false;
 		}
 
-		//Hide no links start page check-box in firefox\other.	
+		// Hide no links start page check-box in firefox\other.	
 		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {
 			document.getElementById('nolinks').hidden = true;
 		}	
 
-		//Hide no snippets start page check-box in Cyberfox as there are removed by default.	
+		// Hide no snippets start page check-box in Cyberfox as there are removed by default.	
 		if (Services.appinfo.name.toLowerCase() === "Cyberfox".toLowerCase()) {
 			document.getElementById('nosnippets').hidden = true;	
 		}
 		
-		//Disable no links & custom highlight color option on simplicity theme(s)
+		// Disable no links & custom highlight color option on simplicity theme(s)
 		if (this.prefs.getCharPref("abouthome") === "simplicityred" || 
 			this.prefs.getCharPref("abouthome") === "simplicityblue"|| 
 			this.prefs.getCharPref("abouthome") === "simplicitygreen" || 
@@ -739,7 +763,7 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('noicons').disabled = true;
 		}	
 
-		//Custom background image on lightalt|darkalt theme styles have bg image streched.
+		// Custom background image on lightalt|darkalt theme styles have bg image streched.
 		if (this.prefs.getCharPref("abouthome") === "darkalt" ||
 			this.prefs.getCharPref("abouthome") === "lightalt"){
 			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = true;
@@ -748,7 +772,7 @@ classicthemerestorerjso.ctr = {
 			document.getElementById('ctraddon_ctabouthome_custbgstretch').disabled = false;
 		}	
 
-		//Disable custom highlight colors on default theme in firefox\other.	
+		// Disable custom highlight colors on default theme in firefox\other.	
 		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase() && this.prefs.getCharPref("abouthome") === "default") {
 				document.getElementById('ctraddon_ctabouthomecusthltck').disabled = true;
 				document.getElementById('ctraddon_ctabouthomecusthltlb').disabled = true;
@@ -757,7 +781,7 @@ classicthemerestorerjso.ctr = {
 				this.prefs.setBoolPref("abouthomehighlight", false);
 		}
 		
-		//Alternate about:newtab page style 		
+		// Alternate about:newtab page style 		
 			if(this.prefs.getBoolPref("alt_newtabpalt") === true){
 				document.getElementById('ctraddon_pw_alt_newtabp').disabled = true;
 				this.prefs.setBoolPref("alt_newtabp", false);
@@ -1398,14 +1422,14 @@ classicthemerestorerjso.ctr = {
 	if (this.oswindows && tabsintitlebar) {
 	  this.prefs.setCharPref("appbutton",'appbutton_v2');
 	}
-	//Move buttons back to there default location, Need a small delay so prevent restart or ok button.
+	// Move buttons back to there default location, Need a small delay so prevent restart or ok button.
 	document.getElementById("ctraddon_pw_okbutton").disabled = true;
 	setTimeout(function(){
 		CustomizableUI.moveWidgetWithinArea("bookmarks-menu-button",5);	
 		CustomizableUI.removeWidgetFromArea("feed-button", CustomizableUI.TYPE_TOOLBAR);
 		classicthemerestorerjso.ctr.needsBrowserRestart();
 		document.getElementById("ctraddon_pw_okbutton").disabled = false;
-	},1350);//If changed here must update feedinurl timer in classic pre-set	
+	},1350);// If changed here must update feedinurl timer in classic pre-set	
   },
 
   // 'classic' preset
@@ -1447,7 +1471,7 @@ classicthemerestorerjso.ctr = {
 	setTimeout(function(){
 		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("starinurl",true);
 		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("feedinurl",true);
-	},1350);//If changed here must update CustomizableUI timer in restore defaults.	
+	},1350);// If changed here must update CustomizableUI timer in restore defaults.	
 	
 	if (this.oswindows && classicthemerestorerjso.ctr.tmp_tu_active==false)
 		Services.prefs.getBranch("extensions.classicthemerestorer.").setBoolPref("dblclnewtab",true);
@@ -1825,7 +1849,7 @@ classicthemerestorerjso.ctr = {
 			  }
 			  
 		}catch (e){
-			//Catch any nasty errors and output to dialogue
+			// Catch any nasty errors and output to dialogue
 			alert("We are sorry but something has gone wrong! " + e);	
 		}
 			  
@@ -1835,7 +1859,7 @@ classicthemerestorerjso.ctr = {
 	try{	
 			this.ReuseFeaturesTab("cyberctrfeatruestab", "chrome://classic_theme_restorer/content/compatibility/features.html");
 		}catch (e){
-			//Catch any nasty errors and output to dialogue
+			// Catch any nasty errors and output to dialogue
 			alert("We are sorry but something has gone wrong! " + e);	
 		}		
 	},

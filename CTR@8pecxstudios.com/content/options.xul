@@ -1734,11 +1734,13 @@
   </deck>
 </hbox>
 
-  <hbox flex="1" id="ctraddon_pw_special_info2">
-	<spacer flex="1" />
+  <vbox id="ctraddon_pw_themes_note" align="center">
 	<description class="ctraddon_topic">&Ctr_special_info2;</description>
-	<spacer flex="1" />
-  </hbox>
+  </vbox>
+  
+  <vbox id="ctraddon_pw_acr_note" align="center">
+	<description class="ctraddon_topic">&Ctr_special_acr;</description>
+  </vbox>
 
   <popupset>
 	<menupopup id="ctr_pw_settingsPopup" position="before_start">
