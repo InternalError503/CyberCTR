@@ -1886,7 +1886,7 @@ classicthemerestorerjso.ctr = {
 	
 	showFeaturesTab	: function(){
 	try{	
-			this.ReuseFeaturesTab("cyberctrfeatruestab", "chrome://classic_theme_restorer/content/compatibility/features.html");
+			this.ReuseFeaturesTab("cyberctrfeatruestab", "chrome://classic_theme_restorer/content/cctr/features.html");
 		}catch (e){
 			// Catch any nasty errors and output to dialogue
 			alert("We are sorry but something has gone wrong! " + e);	
