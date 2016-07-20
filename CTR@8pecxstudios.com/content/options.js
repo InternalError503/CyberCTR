@@ -21,6 +21,7 @@ classicthemerestorerjso.ctr = {
   tmp_tu_active:	false,
   contexts: Services.prefs.getBranch("browser.context."),
   // Exclude all preferences we don't want to sync, export or import.
+	// When adding/removing update the list in overlay.js
   blacklist: [
 	"extensions.classicthemerestorer.pref_actindx",
 	"extensions.classicthemerestorer.pref_actindx2",
@@ -39,7 +40,8 @@ classicthemerestorerjso.ctr = {
 	"extensions.classicthemerestorer.ctrpref.lastmod.backup",
 	"extensions.classicthemerestorer.ctrpref.importjson",
 	"extensions.classicthemerestorer.ctrpref.active",
-	"extensions.classicthemerestorer.compatibility.personalmenu"
+	"extensions.classicthemerestorer.compatibility.personalmenu",
+	"extensions.classicthemerestorer.syncprefs"
 	],
 
   initprefwindow: function() {
@@ -1524,28 +1526,6 @@ classicthemerestorerjso.ctr = {
 	
 	this.needsBrowserRestart();
 
-  },
-  
-  enableSyncCTRprefs: function() {
-	
-	var preflist = Services.prefs.getChildList("extensions.classicthemerestorer.");
-	
-	try {
-	  for (var i=0; i < preflist.length; i++) {
-		var index = preflist.indexOf(this.blacklist[i]);
-
-		if (index > -1) {
-		  preflist.splice(index, 1);
-		}
-		Services.prefs.getBranch("services.sync.prefs.sync.").setBoolPref(preflist[i],'true');
-	  }
-	} catch(e) {}
-  },
-  
-  disableSyncCTRprefs: function() {
-	try {
-	  Services.prefs.getBranch("services.sync.prefs.sync.extensions.classicthemerestorer.").deleteBranch("");
-	} catch(e) {}
   },
 
 	// Need to check if json is valid. If json not valid. don't continue and show error.

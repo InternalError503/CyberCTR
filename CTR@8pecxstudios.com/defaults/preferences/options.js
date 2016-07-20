@@ -380,6 +380,12 @@ pref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
 pref("extensions.classicthemerestorer.ctrpref.active", false);
 
+//CyberCTR first run
+pref("extensions.classicthemerestorer.firstrun", false);
+
+//CyberCTR sync preferences to firefox accounts
+pref("extensions.classicthemerestorer.syncprefs", false);
+
 //CyberCTR features & information.
 pref("extensions.classicthemerestorer.features.firstrun", false);
 pref("extensions.classicthemerestorer.features.updatecheck", true);
