@@ -67,6 +67,7 @@
     color: #888;
     cursor: pointer;
   }
+
   .radio_item:hover + label,
   input:checked + label{
     color: #555;
@@ -92,8 +93,8 @@
   }
 
   .radio_item:hover {
-      margin-top: -1px;
-      opacity: 1;
+    margin-top: -1px;
+    opacity: 1;
   }
 
   @media screen and (max-width: 750px) {

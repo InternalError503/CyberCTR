@@ -49,7 +49,8 @@
 				throw new Error("Error document.getElementById(id) is null!");
 			}
 
-			// Set operating specific features for linux.
+			// Set operating system specific features for linux.
+			// TODO: Maybe make operating system specific css.
 			try {
 				if (this.OS === "Linux"){
 					document.getElementById("appmenubutton_img").src = "images/appmenubutton_linux.jpg";
@@ -69,7 +70,7 @@
 				throw new Error("Error aTab is null!");
 			}
 		},
-
+		
 		userDone: function () {
 
 			if (Services.prompt.confirm(null, "Please confirm your changes!","Would you like to apply your settings?")){
