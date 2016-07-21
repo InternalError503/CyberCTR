@@ -73,7 +73,7 @@
 		
 		userDone: function () {
 
-			if (Services.prompt.confirm(null, "Please confirm your changes!","Would you like to apply your settings?")){
+			if (Services.prompt.confirm(null, this.getMessage.GetStringFromName("change-confirm-title"),this.getMessage.GetStringFromName("change-confirm-message"))){
 				var _tabbrowser = Cc["@mozilla.org/appshell/window-mediator;1"]
 						.getService(Ci.nsIWindowMediator).getEnumerator('navigator:browser').getNext().gBrowser;
 				var _doc = null;
