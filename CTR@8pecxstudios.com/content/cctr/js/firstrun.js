@@ -20,6 +20,7 @@
 
 	cyberctrFirstrun = {
 		getMessage: Services.strings.createBundle("chrome://classic_theme_restorer/locale/firstrun.file"),
+		OS: Services.appinfo.OS,
 		initialize_Firstrun: function () {
 
 			if (!Services.prefs.getBoolPref("extensions.classicthemerestorer.firstrun")) {
@@ -47,6 +48,18 @@
 			} catch (e) {
 				throw new Error("Error document.getElementById(id) is null!");
 			}
+
+			// Set operating specific features for linux.
+			try {
+				if (this.OS === "Linux"){
+					document.getElementById("appmenubutton_img").src = "images/appmenubutton_linux.jpg";
+					document.getElementById("appmenu_img").src = "images/appmenu_linux.jpg";
+					document.getElementById("classicthemestyle_img").src = "images/classicthemestyle_linux.jpg";
+					document.getElementById("australisthemestyle_img").src = "images/australisthemestyle_linux.jpg";
+				}
+			} catch (e) {
+				throw new Error("Error unable to set images for linux!");
+			}
 		},
 
 		nav_to: function (aTab) {
@@ -72,8 +85,18 @@
 				}
 				if (document.getElementById("appmenubuttonradio").checked) {
 					try {
-						Services.prefs.setCharPref("extensions.classicthemerestorer.appbutton", "appbutton_v2");
-						_doc.getElementById("toolbar-menubar").setAttribute('autohide', true);
+
+						switch (this.OS){
+							case "WINNT": 
+								Services.prefs.setCharPref("extensions.classicthemerestorer.appbutton", "appbutton_v2");
+							break;
+							case "Linux": 
+								Services.prefs.setCharPref("extensions.classicthemerestorer.appbutton", "appbutton_v1");
+							break;
+						}
+
+							_doc.getElementById("toolbar-menubar").setAttribute('autohide', true);
+
 					} catch (e) {}
 				}
 				if (document.getElementById("appmenuradio").checked) {
