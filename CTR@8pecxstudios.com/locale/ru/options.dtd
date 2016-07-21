@@ -131,7 +131,7 @@
 <!ENTITY Ctr_puibut_no_sep	"Скрыть">
 <!ENTITY Ctr_puibut_l_sep	"Слева">
 <!ENTITY Ctr_puibut_r_sep	"Справа">
-<!ENTITY Ctr_html5warning	"HTML5 предупреждение полноэкранного режима">
+<!ENTITY Ctr_html5warning	"Предупреждение о полноэкранном режиме в HTML5">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
 <!ENTITY Ctr_emptygfavico	"Заменять пустые значки избранного">
@@ -295,7 +295,7 @@
 
 <!ENTITY Ctr_toolbars		"Панели">
 <!ENTITY Ctr_dblclnewtab	"Двойной клик открывает новую вкладку">
-<!ENTITY Ctr_dblclnewtabdes	"Not suitable for all complete themes while Windows titlebar is active.">
+<!ENTITY Ctr_dblclnewtabdes	"Не работает с полноценными темами оформления при активной панели заголовка окна.">
 <!ENTITY Ctr_hidetbwot		"Скрывать панель вкладок при одной вкладке">
 <!ENTITY Ctr_hidetbwote		"Уменьшить задержку скрытия при запуске">
 <!ENTITY Ctr_hidetbwote_i	"Может вызвать сбои на вкладке панели инструментов">
@@ -386,12 +386,12 @@
 <!ENTITY Ctr_special_font	"Настройки цвета фона — только для темы по умолчанию!">
 <!ENTITY Ctr_special_info	"Некоторые варианты могут предложить визуальные изменения только в определенных случаях!">
 <!ENTITY Ctr_special_info2	"Настройки предзназначены для темы &brandShortName; по умолчанию и не могут работать со всеми сторонними темами!">
-<!ENTITY Ctr_special_acr	"Only report issues through official support channels and not by using 'Add-on Compatibility Reporter'!">
-<!ENTITY Ctr_support		"Support">
-<!ENTITY Ctr_support_forum1	"MozillaZine (English forum)">
-<!ENTITY Ctr_support_forum2	"Camp Firefox (German forum)">
-<!ENTITY Ctr_github_issues	"Report issue on Github">
-<!ENTITY Ctr_newversion		"Check for new version">
+<!ENTITY Ctr_special_acr	"Сообщать о проблемах только через официальные каналы поддержки, не используя 'Add-on Compatibility Reporter'!">
+<!ENTITY Ctr_support		"Поддержка">
+<!ENTITY Ctr_support_forum1	"MozillaZine (Английский форум)">
+<!ENTITY Ctr_support_forum2	"Camp Firefox (Немецкий форум)">
+<!ENTITY Ctr_github_issues	"Сообщить о проблеме на Github">
+<!ENTITY Ctr_newversion		"Проверить наличие новой версии">
 
 <!ENTITY Ctr_addon-bar.accesskey		"A">
 <!ENTITY appMenuGettingStarted.label	"Начало работы">
