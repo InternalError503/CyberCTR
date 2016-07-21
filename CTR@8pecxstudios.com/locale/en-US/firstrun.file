@@ -12,4 +12,4 @@ nav-tab-skip=Skip
 nav-tab-done=Apply & close
 
 change-confirm-title=Please confirm your changes!
-change-confirm=message=Would you like to apply your settings?
+change-confirm-message=Would you like to apply your settings?

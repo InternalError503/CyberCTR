@@ -12,4 +12,4 @@ nav-tab-skip=Пропустить
 nav-tab-done=Применить и закрыть
 
 change-confirm-title=Пожалуйста, подтвердите изменения!
-change-confirm=message=Вы хотите применить новые настройки?
+change-confirm-message=Вы хотите применить новые настройки?
