@@ -135,8 +135,6 @@
 	
 	<menuitem id="menu_preferences" oncommand="classicthemerestorerjs.ctr.openContentPrefsInWin();"/>
 	
-	<toolbarbutton id="lpt_lastpass-compact-btn" class="toolbarbutton-1 chromeclass-toolbar-additional"/>
-	
 	<!--<menupopup id="menu_FilePopup">
 	  <menuitem id="ctraddon_restart-menu"
 				label="&Ctr_menu_restart.label;"
@@ -480,7 +478,7 @@
 							label="&showAllBookmarks2.label;"
 							command="Browser:ShowAllBookmarks"
 							key="manBookmarkKb"/>
-				<menuseparator/>
+				  <menuseparator/>
 <!--- CyberCTR customization settings -->
 					<menuitem id="menu_pocket" label="&pocketMenuitem.label;"
 								class="menuitem-iconic"

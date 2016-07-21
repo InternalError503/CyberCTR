@@ -1,4 +1,4 @@
-<!ENTITY % overlayDTD
+﻿<!ENTITY % overlayDTD
     SYSTEM "chrome://classic_theme_restorer/content/overlay.dtd">
   %overlayDTD;
 <!-- Do not edit above this line and do not edit the variable '&brandShortName;' inside translated strings -->
@@ -187,11 +187,11 @@
 <!ENTITY Ctr_hiderecentbm	"Menu podręczne zakładek: ukryj ostatnio dodane zakładki">
 <!ENTITY Ctr_hideeditbm		"Gwiazdka zakładek: ukryj menu podręczne (jeżeli zakładka nie jest dodana do strony)">
 <!ENTITY Ctr_bmbutpanelm	"Menu podręczne: wygląd menu panelu">
-<!ENTITY Ctr_bmbunsortbm	"Menu podręczne: podmenu 'Zakładki nieprzypisane'">
+<!ENTITY Ctr_bmbunsortbm	"Menu podręczne: podmenu 'Zakładki nieposortowane'">
 <!ENTITY Ctr_bmbunsortbm2	"Menu ponad zakładkami">
 <!ENTITY Ctr_bmbviewbmsb	"Menu podręczne: pokaż 'Wyświetl panel zakładek'">
 <!ENTITY Ctr_bmbviewbmtb	"Menu podręczne: pokaż 'Wyświetl pasek zakładek'">
-<!ENTITY Ctr_bmbnounsort	"Menu podręczne: ukryj 'Zakładki nieprzypisane'">
+<!ENTITY Ctr_bmbnounsort	"Menu podręczne: ukryj 'Zakładki nieposortowane'">
 <!ENTITY Ctr_bmbutnotext	"Ukryj etykietę na pasku zakładek">
 <!ENTITY Ctr_skipprintpr	"Przycisk drukowania: pomiń podgląd wydruku">
 <!ENTITY Ctr_tbconmenu		"Menu kontekstowe paska narzędzi: ukryj 'Przenieś do menu', 'Usuń z paska narzędzi', 'Odśwież wszystkie karty', 'Dodaj zakładki do wszystkich kart...' oraz 'Przywróć zamkniętą kartę'">
@@ -269,7 +269,8 @@
 <!ENTITY Ctr_autocomplete	"Menu podręczne autouzupełniania">
 <!ENTITY Ctr_altautocompl	"Alternatywny wygląd">
 <!ENTITY Ctr_autocompl_it	"Usuń elementy 'szukaj w...' oraz 'otwórz stronę' (jeżeli obecne)">
-<!ENTITY Ctr_autocompl_hl	"Znakowanie wystąpień tekstu">
+<!ENTITY Ctr_autocompl_hl	"Podświetlanie wystąpień tekstu">
+<!ENTITY Ctr_autocompl_rhl	"Kolory Aero dla podświetlonych wyników">
 <!ENTITY Ctr_autocompl_sep	"Pokaż separator pomiędzy wynikami">
 <!ENTITY Ctr_urlbar_uc		"Wyłącz funkcję 'ujednolicone autouzupełnianie'">
 <!ENTITY Ctr_lbsugresi		"Wyłącz ograniczenie wysokości">
@@ -294,6 +295,7 @@
 
 <!ENTITY Ctr_toolbars		"Paski narzędzi">
 <!ENTITY Ctr_dblclnewtab	"Podwójne kliknięcie paska narzędzi otwiera nową kartę">
+<!ENTITY Ctr_dblclnewtabdes	"Nie nadaje się do wszystkich kompletnych motywów, podczas gdy pasek tytułu Windows jest aktywny.">
 <!ENTITY Ctr_hidetbwot		"Ukryj pasek kart z widoczną tylko jedną kartą">
 <!ENTITY Ctr_hidetbwote		"Zmniejsz opóźnienie ukrywania przy uruchamianiu">
 <!ENTITY Ctr_hidetbwote_i	"Może powodować usterki kart paska narzędzi">
@@ -355,18 +357,11 @@
 <!ENTITY Ctr_nodevtheme		"Zapobiegaj włączeniu 'Motywu Edycji Deweloperskiej'">
 
 <!ENTITY Ctr_experttweaks	"Zaawansowane">
-<!ENTITY Ctr_fx34search		"Odznaczenie tego ustawienia usuwa 'nowy wygląd wyszukiwania' i przywraca stary.">
 <!ENTITY Ctr_fx34loop		"Odznaczenie tego ustawienia usuwa funkcje 'dzwonienia i konwersacji'.">
-<!ENTITY Ctr_fx35devtheme	"Odznaczenie tych ustawień wyłącza 'Motyw Edycji Deweloperskiej'.">
-<!ENTITY Ctr_fx36prefs		"Odznaczenie tego ustawienia przywraca stare okno opcji.">
-<!ENTITY Ctr_fx36prefs2		"Uwaga: stare okno opcji nie zawiera wszystkich ostatnio dodanych ustawień przeglądarki!">
 <!ENTITY Ctr_fx38reader		"Odznaczenie tych ustawienia wyłącza funkcję 'Popraw czytelność' oraz usuwa jej ikonę z paska adresu.">
 <!ENTITY Ctr_fx38pocket		"Odznaczenie tego ustawienia wyłącza funkcję 'Pocket' oraz usuwa jej ikonę z pasków narzędzi.">
 <!ENTITY Ctr_fx38pocket2	"Uwaga: przesunięcie przycisku Pocket do strefy 'Dodatkowe funkcje i opcje' w trybie 'Dostosuj' przed wyłączeniem tego ustawienia usunie z menu podręcznych Zakładki oraz Popraw czytelność wszystkie elementy związane z Pocket.">
-<!ENTITY Ctr_e_searchui		"Wygląd wyszukiwania">
 <!ENTITY Ctr_e_loop			"Hello / Dzwonienie i konwersacja / Loop">
-<!ENTITY Ctr_e_deved		"Motyw Edycji Deweloperskiej">
-<!ENTITY Ctr_e_prefsui		"Ustawienia w karcie">
 <!ENTITY Ctr_e_readermode	"Popraw czytelność">
 <!ENTITY Ctr_e_pocket		"Pocket">
 <!ENTITY Ctr_e_tabsaudioico	"Ikona odtwarzania dźwięku na kartach">
@@ -391,8 +386,12 @@
 <!ENTITY Ctr_special_font	"Ustawienia koloru tła są tylko dla domyślnego motywu!">
 <!ENTITY Ctr_special_info	"Niektóre opcje mogą nie oferować widocznych zmian we wszystkich przypadkach">
 <!ENTITY Ctr_special_info2	"Wykryto motyw autorstwa osób trzecich! Niektóre opcje nie działają z motywami autorstwa osób trzecich!">
-<!ENTITY Ctr_support		"Forum wsparcia">
-<!ENTITY Ctr_newversion		"Nowa wersja?">
+<!ENTITY Ctr_special_acr	"Zgłaszaj problemy tylko za pomocą oficjalnych kanałów wsparcia, a nie korzystając z 'Reportera kompatybilności dodatków'!">
+<!ENTITY Ctr_support		"Pomoc">
+<!ENTITY Ctr_support_forum1	"MozillaZine (forum w języku angielskim)">
+<!ENTITY Ctr_support_forum2	"Camp Firefox (forum w języku niemieckim)">
+<!ENTITY Ctr_github_issues	"Zgłoś problem na GitHubie">
+<!ENTITY Ctr_newversion		"Sprawdź, czy jest nowa wersja">
 
 <!ENTITY Ctr_addon-bar.accesskey		"A">
 <!ENTITY appMenuGettingStarted.label	"Pierwsze kroki">

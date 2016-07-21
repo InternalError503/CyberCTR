@@ -112,35 +112,38 @@
                   0 0 2px hsla(210,54%,20%,.1) !important;
 	}
 
-	#navigator-toolbox #nav-bar #urlbar-container {
-	  -moz-margin-start: 0px !important;
-	}
-
-	#nav-bar #notification-popup-box[hidden] + *,
-	#nav-bar #notification-popup-box + * {
-	  -moz-padding-start: 4px !important;
-	  transition: none !important;
+	/*#navigator-toolbox #nav-bar #urlbar-container {
+	  -moz-margin-start: 2px !important;
+	}*/
+	
+	#main-window[fx50plus="true"][defaultfxtheme="true"] #forward-button[disabled="true"] + #urlbar #identity-icon {
+	  margin-inline-start: -6px !important;
 	}
 	
-	#main-window[fx42plus="true"] #nav-bar #notification-popup-box[hidden] + *,
-	#main-window[fx42plus="true"] #nav-bar #notification-popup-box + * {
+	#main-window[fx50plus="true"][defaultfxtheme="true"] #forward-button + #urlbar > * {
+	  transition: none !important;
+	}
+
+	#main-window:not([fx50plus="true"]) #nav-bar #notification-popup-box[hidden] + *,
+	#main-window:not([fx50plus="true"]) #nav-bar #notification-popup-box + * {
 	  -moz-padding-start: 6px !important;
+	  transition: none !important;
 	}
 
 	#nav-bar #urlbar-container[forwarddisabled]:hover:not([switchingtabs]) > #urlbar-wrapper > #urlbar {
 	  transition-delay: 0s !important;
 	}
 
-	#nav-bar #urlbar-container > #urlbar-wrapper > #urlbar,
-	#nav-bar #urlbar-container[forwarddisabled] > #urlbar-wrapper > #urlbar {
-	  margin-left: 4px !important; /* for both ltr and rtl*/
+	/*toolbar*/ #urlbar-container /*> #urlbar-wrapper > #urlbar*/,
+	/*toolbar*/ #urlbar-container[forwarddisabled] /*> #urlbar-wrapper > #urlbar*/ {
+	  -moz-margin-start: 4px !important;
 	}
 	
 	#main-window #navigator-toolbox #nav-bar #urlbar-wrapper {
 	  -moz-box-align: center !important;
 	}
 
-	#main-window[fx42plus="true"][defaultfxtheme="true"] #urlbar {
+	#main-window[defaultfxtheme="true"] #urlbar {
 	  min-height: 24px;
 	}
 

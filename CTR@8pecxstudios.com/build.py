@@ -8,11 +8,11 @@ from zipfile import ZipFile, ZIP_STORED, ZIP_DEFLATED
 # XPI package files, Note must update when adding or removing files.
 resources = [
 	"content/*",
-	"content/compatibility/*",
-	"content/compatibility/css/*",
-	"content/compatibility/fonts/*",
-	"content/compatibility/images/*",
-	"content/compatibility/js/*",
+	"content/cctr/*",
+	"content/cctr/css/*",
+	"content/cctr/fonts/*",
+	"content/cctr/images/*",
+	"content/cctr/js/*",
 	"content/css/*",
 	"content/css/cctr/*",
 	"content/css/linux/*",

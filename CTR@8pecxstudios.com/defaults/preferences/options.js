@@ -129,6 +129,7 @@ pref("extensions.classicthemerestorer.autocompl_hlb",false);
 pref("extensions.classicthemerestorer.autocompl_hlu",false);
 pref("extensions.classicthemerestorer.autocompl_hli",false);
 pref("extensions.classicthemerestorer.autocompl_sep",false);
+pref("extensions.classicthemerestorer.autocompl_rhl",false);
 
 pref("extensions.classicthemerestorer.ib_nohovcolor",false);
 pref("extensions.classicthemerestorer.ib_graycolor",false);
@@ -369,8 +370,8 @@ pref("extensions.classicthemerestorer.animatedlwtthemes", true);
 pref("extensions.classicthemerestorer.loadcustomcss", false);
 pref("extensions.classicthemerestorer.customcssurl", "");
 
-//CyberCTR version
-pref("extensions.classicthemerestorer.version", "1.5.6");
+//CyberCTR version, Set by options.js
+pref("extensions.classicthemerestorer.version", "0.0.0");
 
 //CyberCTR Pre-set Configuration
 pref("extensions.classicthemerestorer.ctrpref.firstrun", true);
@@ -378,6 +379,12 @@ pref("extensions.classicthemerestorer.ctrpref.lastmod", "0");
 pref("extensions.classicthemerestorer.ctrpref.lastmodapply", false);
 pref("extensions.classicthemerestorer.ctrpref.updatekey", false);
 pref("extensions.classicthemerestorer.ctrpref.active", false);
+
+//CyberCTR first run
+pref("extensions.classicthemerestorer.firstrun", false);
+
+//CyberCTR sync preferences to firefox accounts
+pref("extensions.classicthemerestorer.syncprefs", false);
 
 //CyberCTR features & information.
 pref("extensions.classicthemerestorer.features.firstrun", false);
