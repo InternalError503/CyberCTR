@@ -384,6 +384,7 @@
 <!ENTITY Ctr_pw_set_syncoff	"Usuń z Sync">
 
 <!ENTITY Ctr_special_font	"Ustawienia koloru tła są tylko dla domyślnego motywu!">
+<!ENTITY Ctr_special_info	"Niektóre opcje mogą nie zawsze oferować widoczne zmiany">
 <!ENTITY Ctr_special_info2	"Wykryto motyw autorstwa osób trzecich! Niektóre opcje nie działają z motywami autorstwa osób trzecich!">
 <!ENTITY Ctr_special_acr	"Zgłaszaj problemy tylko za pomocą oficjalnych kanałów wsparcia, a nie korzystając z 'Reportera kompatybilności dodatków'!">
 <!ENTITY Ctr_support		"Pomoc">
