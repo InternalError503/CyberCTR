@@ -475,7 +475,7 @@
 
 <!ENTITY ctr_aboutnewtab.caption "Zmień styl strony nowej karty">
 
-<!ENTITY cssClassId.description "Hide element classes - element ids">
+<!ENTITY cssClassId.description "Ukryj elementy klas - id elementów">
 <!ENTITY cssClassId.label "Podaj klasę lub id:">
 <!ENTITY useFilterElement.label "Używaj niestandardowego filtru, by ukryć elementy klas lub id">
 <!ENTITY filterElement.placehold "Możesz określić, który element klasy lub id.">
