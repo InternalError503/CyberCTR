@@ -72,30 +72,36 @@
 				document.getElementById('appmenubuttonradio').addEventListener('click', function () {
 					document.getElementById("menunextbutton").style.display = 'inline-block';
 					document.getElementById("menunextbuttonclear").style.display = 'inline-block';
+					document.getElementById("menuskipbutton").style.display = 'none';
 				}, false);
 				document.getElementById('appmenuradio').addEventListener('click', function () {
 					document.getElementById("menunextbutton").style.display = 'inline-block';
 					document.getElementById("menunextbuttonclear").style.display = 'inline-block';
+					document.getElementById("menuskipbutton").style.display = 'none';
 				}, false);
 
 				// Tab Style
 				document.getElementById('classicthemestyleradio').addEventListener('click', function () {
 					document.getElementById("themenextbutton").style.display = 'inline-block';
 					document.getElementById("themenextbuttonclear").style.display = 'inline-block';
+					document.getElementById("themeskipbutton").style.display = 'none';
 				}, false);
 				document.getElementById('australisthemestyleradio').addEventListener('click', function () {
 					document.getElementById("themenextbutton").style.display = 'inline-block';
 					document.getElementById("themenextbuttonclear").style.display = 'inline-block';
+					document.getElementById("themeskipbutton").style.display = 'none';
 				}, false);
 
 				// Home Page Color
 				document.getElementById('homestyledarkradio').addEventListener('click', function () {
 					document.getElementById("homenextbutton").style.display = 'inline-block';
 					document.getElementById("homenextbuttonclear").style.display = 'inline-block';
+					document.getElementById("homeskipbutton").style.display = 'none';
 				}, false);
 				document.getElementById('homestylelightradio').addEventListener('click', function () {
 					document.getElementById("homenextbutton").style.display = 'inline-block';
 					document.getElementById("homenextbuttonclear").style.display = 'inline-block';
+					document.getElementById("homeskipbutton").style.display = 'none';
 				}, false);
 				document.getElementById('syncstyleradio').addEventListener('click', function () {
 					document.getElementById("nav-tab-doneclear").style.display = 'inline-block';
@@ -113,13 +119,14 @@
 			}
 		},
 
-		clearSelection: function (aName, aTab) {
+		clearSelection: function (aName, aTab, aSkip) {
 			try {
 				for (var i = 0; i < document.getElementsByName(aName).length; i++) {
 					document.getElementsByName(aName)[i].checked = false;
 				}
 				if (aTab != 'nav-tab-done') {
 					document.getElementById(aTab).style.display = 'none';
+					document.getElementById(aSkip).style.display = 'inline-block';
 				}
 				document.getElementById(aTab + "clear").style.display = 'none';
 			} catch (e) {
@@ -202,7 +209,7 @@
 					window.close();
 			}
 		},
-
+		
 		i18n: function (message_id) {
 			try {
 				return cyberctrFirstrun.getMessage.GetStringFromName(message_id);
