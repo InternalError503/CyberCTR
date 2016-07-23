@@ -8,16 +8,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-user-select: none;
   }
 
   html, body {
     height: 100%;
+    background: rgb(238, 238, 238);
   }
 
   body {
     font: 14px/1 'Open Sans', sans-serif;
     color: #555;
-    background: #eee;
   }
 
   h1 {
@@ -49,7 +50,6 @@
     text-align: center;
     color: #bbb;
     border: 1px solid transparent;
-    -moz-user-select: none;
   }
 
   label:before {
@@ -95,6 +95,17 @@
   .radio_item:hover {
     margin-top: -1px;
     opacity: 1;
+  }
+
+  /* Initially Hide Next Buttons */
+  #menunextbutton,
+  #themenextbutton,
+  #homenextbutton,
+  #menunextbuttonclear,
+  #themenextbuttonclear,
+  #homenextbuttonclear,
+  #nav-tab-doneclear {
+    display: none;
   }
 
   @media screen and (max-width: 750px) {
