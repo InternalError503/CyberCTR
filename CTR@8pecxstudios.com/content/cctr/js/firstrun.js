@@ -129,17 +129,38 @@
 
 		userDone: function () {
 
-			if (Services.prompt.confirm(null, this.getMessage.GetStringFromName("change-confirm-title"), this.getMessage.GetStringFromName("change-confirm-message"))) {
-				var _tabbrowser = Cc["@mozilla.org/appshell/window-mediator;1"]
-					.getService(Ci.nsIWindowMediator).getEnumerator('navigator:browser').getNext().gBrowser;
-				var _doc = null;
-				var canCloseWindow = false;
-				for (var found = false, index = 0; index < _tabbrowser.tabContainer.childNodes.length && !found; index++) {
-					if (_tabbrowser.tabContainer.childNodes.length >= 2) {
-						canCloseWindow = true
+			// Check if user has selected any features.
+			var _tabsGroups = ['menutype', 'themetype', 'hometype', 'item'];
+			var userHasSelection = false;
+			for (var i = 0; i < _tabsGroups.length; i++) {
+				for (var j = 0; j < document.getElementsByName(_tabsGroups[i]).length; j++) {
+					if (document.getElementsByName(_tabsGroups[i])[j].checked) {
+						userHasSelection = true;
 					}
-					_doc = _tabbrowser.ownerDocument;
 				}
+			}
+
+			// Get current browser window.
+			var _tabbrowser = Cc["@mozilla.org/appshell/window-mediator;1"]
+				.getService(Ci.nsIWindowMediator).getEnumerator('navigator:browser').getNext().gBrowser;
+			var _doc = null;
+			var canCloseWindow = false;
+			for (var found = false, index = 0; index < _tabbrowser.tabContainer.childNodes.length && !found; index++) {
+				if (_tabbrowser.tabContainer.childNodes.length >= 2) {
+					canCloseWindow = true
+				}
+				_doc = _tabbrowser.ownerDocument;
+			}
+
+			// If no user selection close firstrun.
+			if (!userHasSelection) {
+				if (canCloseWindow)
+					window.close();
+				return;
+			}
+
+			// Get user confirmation before applying any changes.
+			if (Services.prompt.confirm(null, this.getMessage.GetStringFromName("change-confirm-title"), this.getMessage.GetStringFromName("change-confirm-message"))) {
 				if (document.getElementById("appmenubuttonradio").checked) {
 					try {
 
