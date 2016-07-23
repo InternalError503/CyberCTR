@@ -38,17 +38,10 @@
 				document.getElementById("tab-title-themestyle").textContent = cyberctrFirstrun.i18n("tab-title-themestyle");
 				document.getElementById("tab-title-homestyle").textContent = cyberctrFirstrun.i18n("tab-title-homestyle");
 				document.getElementById("tab-title-syncstyle").textContent = cyberctrFirstrun.i18n("tab-title-syncstyle");
-				document.getElementById("menunextbutton").textContent = cyberctrFirstrun.i18n("nav-tab-next");
-				document.getElementById("themenextbutton").textContent = cyberctrFirstrun.i18n("nav-tab-next");
-				document.getElementById("homenextbutton").textContent = cyberctrFirstrun.i18n("nav-tab-next");
-				document.getElementById("menuskipbutton").textContent = cyberctrFirstrun.i18n("nav-tab-skip");
-				document.getElementById("themeskipbutton").textContent = cyberctrFirstrun.i18n("nav-tab-skip");
-				document.getElementById("homeskipbutton").textContent = cyberctrFirstrun.i18n("nav-tab-skip");
+				cyberctrFirstrun.i18nm("#menunextbutton, #themenextbutton, #homenextbutton", cyberctrFirstrun.i18n("nav-tab-next"));
+				cyberctrFirstrun.i18nm("#menuskipbutton, #themeskipbutton, #homeskipbutton", cyberctrFirstrun.i18n("nav-tab-skip"));
+				cyberctrFirstrun.i18nm("#menunextbuttonclear, #themenextbuttonclear, #homenextbuttonclear, #nav-tab-doneclear", cyberctrFirstrun.i18n("nav-tab-clear"));
 				document.getElementById("nav-tab-done").textContent = cyberctrFirstrun.i18n("nav-tab-done");
-				document.getElementById("menunextbuttonclear").textContent = cyberctrFirstrun.i18n("nav-tab-clear");
-				document.getElementById("themenextbuttonclear").textContent = cyberctrFirstrun.i18n("nav-tab-clear");
-				document.getElementById("homenextbuttonclear").textContent = cyberctrFirstrun.i18n("nav-tab-clear");
-				document.getElementById("nav-tab-doneclear").textContent = cyberctrFirstrun.i18n("nav-tab-clear");
 			} catch (e) {
 				throw new Error("Error document.getElementById(id) is null!");
 			}
@@ -207,6 +200,17 @@
 				}
 				if (canCloseWindow)
 					window.close();
+			}
+		},
+
+		i18nm: function (aIds, aText){
+			try {
+				var elements = document.querySelectorAll(aIds);
+				for (var i = 0; i < elements .length; i++) {
+					elements[i].textContent = aText;
+				}
+			} catch (e) {
+				throw new Error("Error getting localized text for querySelectorAll!");
 			}
 		},
 		
