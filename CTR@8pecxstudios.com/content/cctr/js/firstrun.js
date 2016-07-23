@@ -8,7 +8,7 @@
 		Constructor, ctor
 	} = Components;
 
-	//Import services use one service for preferences.
+	// Import services use one service for preferences.
 	var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
 
 	if (typeof cyberctrFirstrun == "undefined") {
@@ -96,14 +96,18 @@
 					document.getElementById("homenextbuttonclear").style.display = 'inline-block';
 					document.getElementById("homeskipbutton").style.display = 'none';
 				}, false);
+
+				// Sync
 				document.getElementById('syncstyleradio').addEventListener('click', function () {
 					document.getElementById("nav-tab-doneclear").style.display = 'inline-block';
 				}, false);
+
 			} catch (e) {
 				throw new Error("Error unable to setup event listeners!");
 			}
 		},
 
+		// Tab navigation helper
 		nav_to: function (aTab) {
 			try {
 				document.getElementById(aTab).checked = true;
@@ -112,11 +116,13 @@
 			}
 		},
 
+		// Clear current tab selection.
 		clearSelection: function (aName, aTab, aSkip) {
 			try {
 				for (var i = 0; i < document.getElementsByName(aName).length; i++) {
 					document.getElementsByName(aName)[i].checked = false;
 				}
+				// Make sure not to hide "nav-tab-done" element
 				if (aTab != 'nav-tab-done') {
 					document.getElementById(aTab).style.display = 'none';
 					document.getElementById(aSkip).style.display = 'inline-block';
@@ -127,9 +133,13 @@
 			}
 		},
 
+		// User selection complete.
 		userDone: function () {
 
-			// Check if user has selected any features.
+			/*
+				Check if user has selected any features.
+				If adding more tabs update _tabsGroups array for validation of user selection.
+			*/
 			var _tabsGroups = ['menutype', 'themetype', 'hometype', 'item'];
 			var userHasSelection = false;
 			for (var i = 0; i < _tabsGroups.length; i++) {
@@ -198,22 +208,26 @@
 				if (document.getElementById("syncstyleradio").checked) {
 					Services.prefs.setBoolPref("extensions.classicthemerestorer.syncprefs", true);
 				}
+
+				// Everything should be done by this point.
 				if (canCloseWindow)
 					window.close();
 			}
 		},
 
+		// Localize multiple ID's with same string value.
 		i18nm: function (aIds, aText){
 			try {
-				var elements = document.querySelectorAll(aIds);
-				for (var i = 0; i < elements .length; i++) {
-					elements[i].textContent = aText;
+				var _elements = document.querySelectorAll(aIds);
+				for (var i = 0; i < _elements .length; i++) {
+					_elements[i].textContent = aText;
 				}
 			} catch (e) {
 				throw new Error("Error getting localized text for querySelectorAll!");
 			}
 		},
-		
+
+		// Localize single ID with string value.	
 		i18n: function (message_id) {
 			try {
 				return cyberctrFirstrun.getMessage.GetStringFromName(message_id);
@@ -223,6 +237,8 @@
 		}
 
 	}
+
+	// Window load initialize firstrun.
 	window.addEventListener("load", function () {
 		window.removeEventListener("load", cyberctrFirstrun.initialize_Firstrun(), false);
 		cyberctrFirstrun.initialize_Firstrun();

@@ -1,7 +1,6 @@
 (function(global) {
 	
 var Cc = Components.classes, Cu = Components.utils;
-//Import services use one service for preferences.
 var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
 
 if (typeof cyberctrFeatures == "undefined") {
@@ -26,31 +25,35 @@ cyberctrFeatures = {
 		if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {
 			document.getElementById("up-check").hidden = true;
 		}
-		
-		//Localize UI elements.
-		document.getElementById("btn-check-update").textContent =cyberctrFeatures.i18n("btn-check-update");
-		document.getElementById("btn-Documentation").textContent =cyberctrFeatures.i18n("btn-Documentation");
-		document.getElementById("btn-faq").textContent =cyberctrFeatures.i18n("btn-faq");
-		document.getElementById("btn-support-forums").textContent =cyberctrFeatures.i18n("btn-support-forums");
-		document.getElementById("btn-contact-us").textContent =cyberctrFeatures.i18n("btn-contact-us");
-		//Updates
-		document.getElementById("msg-firstrun-welcome").textContent =cyberctrFeatures.i18n("msg-firstrun-welcome");
-		document.getElementById("msg-new-version-blob").innerHTML = cyberctrFeatures.i18n("msg-new-version-blob");
-		document.getElementById("url-new-download").setAttribute('href', 'https://8pecxstudios.com/Forums/viewtopic.php?f=6&t=475#download');
-		document.getElementById("url-new-notes").setAttribute('href', 'https://8pecxstudios.com/Forums/viewtopic.php?f=6&t=475#release-notes');
-		document.getElementById("msg-no-new-version").textContent =cyberctrFeatures.i18n("msg-no-new-version");
 
+		try {		
+            // Localize UI elements.
+            document.getElementById("btn-check-update").textContent =cyberctrFeatures.i18n("btn-check-update");
+            document.getElementById("btn-Documentation").textContent =cyberctrFeatures.i18n("btn-Documentation");
+            document.getElementById("btn-faq").textContent =cyberctrFeatures.i18n("btn-faq");
+            document.getElementById("btn-support-forums").textContent =cyberctrFeatures.i18n("btn-support-forums");
+            document.getElementById("btn-contact-us").textContent =cyberctrFeatures.i18n("btn-contact-us");
+            // Updates
+            document.getElementById("msg-firstrun-welcome").textContent =cyberctrFeatures.i18n("msg-firstrun-welcome");
+            document.getElementById("msg-new-version-blob").innerHTML = cyberctrFeatures.i18n("msg-new-version-blob");
+            document.getElementById("url-new-download").setAttribute('href', 'https://8pecxstudios.com/Forums/viewtopic.php?f=6&t=475#download');
+            document.getElementById("url-new-notes").setAttribute('href', 'https://8pecxstudios.com/Forums/viewtopic.php?f=6&t=475#release-notes');
+            document.getElementById("msg-no-new-version").textContent =cyberctrFeatures.i18n("msg-no-new-version");
+		} catch (e) {
+			throw new Error("Error unable to setup event listeners!");
+		}
     },
 	
+    // CyberCTR update check.
 	updateCheck: function (manual) {
 		
 		 try {
             // If firefox or other then return and don't check for updates.
 			if (Services.appinfo.name.toLowerCase() != "Cyberfox".toLowerCase()) {return;}
 		 
-            //Set Global to disable update checks entirely 
+            // Set Global to disable update checks entirely 
             if (Services.prefs.getBoolPref("extensions.classicthemerestorer.features.updatecheck")) {
-				//Only allow check once per day as update is not a priority.
+				// Only allow check once per day as update is not a priority.
 				var curTime = new Date()
 				if (manual === true && document.getElementById("first_run_message").getAttribute("hidden") === "true"){ 
 					Services.prefs.clearUserPref("extensions.classicthemerestorer.features.lastcheck");
@@ -58,7 +61,7 @@ cyberctrFeatures = {
 				if 	(Services.prefs.getCharPref("extensions.classicthemerestorer.features.lastcheck") != curTime.getDate()) {
 					Services.prefs.setCharPref("extensions.classicthemerestorer.features.lastcheck", curTime.getDate())
 					
-                //Get Latest CyberCTR Version
+                // Get Latest CyberCTR Version
                 var url = Services.prefs.getCharPref("app.update.check.url");
                 var request = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"]
                     .createInstance(Components.interfaces.nsIXMLHttpRequest);
@@ -67,7 +70,7 @@ cyberctrFeatures = {
 
                     var text = aEvent.target.responseText;
 
-                    //Need to check if json is valid, If json not valid don't continue and show error.
+                    // Need to check if json is valid, If json not valid don't continue and show error.
                     function IsJsonValid(text) {
                         try {
                             JSON.parse(text);
@@ -77,20 +80,20 @@ cyberctrFeatures = {
                         return true;
                     }
 
-                    var jsObject = "";
+                    var _jsObject = "";
 
                     if (!IsJsonValid(text)) {
-                        //hide update notification 
+                        // Hide update notification 
                         document.getElementById("update_message").hidden = true;
-                        //Throw error message	
+                        // Throw error message	
                         console.log("Were sorry but something has gone wrong while trying to parse update.json (json is not valid!)");
-                        //Return error
+                        // Return error
                         return;
                     } else {
-                        jsObject = JSON.parse(text);
+                        _jsObject = JSON.parse(text);
                     }
 
-                    if (jsObject.cyberctr.toString() > Services.prefs.getCharPref("extensions.classicthemerestorer.version")) {
+                    if (_jsObject.cyberctr.toString() > Services.prefs.getCharPref("extensions.classicthemerestorer.version")) {
                         document.getElementById("update_message").hidden = false;
                     } else {
                         document.getElementById("update_message").hidden = true;
@@ -100,49 +103,33 @@ cyberctrFeatures = {
                 };
 
                 request.ontimeout = function(aEvent) {
-
-                    //Log return failed check message for request time-out!
-                    console.log("Request timed out");
+                    // Log return failed check message for request time-out!
                     document.getElementById("update_message").hidden = true;
+                    throw new Error("Request timed out");
                 };
 
                 request.onerror = function(aEvent) {
 
-                    //Marked to add better error handling and messages.
+                    // Marked to add better error handling and messages.
                     switch (aEvent.target.status) {
 
                         case 0:
-                            //log return failed request message for status 0 unsent
-                            console.log("Request failed " + aEvent.target.status);
-                            break;
-
+                            // Log return failed request message for status 0 unsent
+                            throw new Error("Request failed " + aEvent.target.status);
                         case 1:
-                            console.log("Error Status: " + aEvent.target.status);
-                            break;
-
+                            throw new Error("Error Status: " + aEvent.target.status);
                         case 2:
-                            console.log("Error Status: " + aEvent.target.status);
-                            break;
-
+                            throw new Error("Error Status: " + aEvent.target.status);
                         case 3:
-                            console.log("Error Status: " + aEvent.target.status);
-                            break;
-
+                            throw new Error("Error Status: " + aEvent.target.status);
                         case 4:
-                            console.log("Error Status: " + aEvent.target.status);
-                            break;
-
-                        default:
-                            aEvent.target.status
-                            console.log("Error Status: " + aEvent.target.status);
-                            break;
-
+                            throw new Error("Error Status: " + aEvent.target.status);
                     }
-                    //hide message		  
+                    // Hide message		  
                     document.getElementById("update_message").hidden = true;
                 };
 
-                //Only send async requests
+                // Only send async requests
                 request.timeout = 5000;
                 request.open("GET", url + ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime(), true);
                 request.setRequestHeader("Content-Type", "application/json");
@@ -150,22 +137,26 @@ cyberctrFeatures = {
 				}
             }
 
-        } catch (eve) {
-            //Show error
-            Cu.reportError(eve);
+        } catch (e) {
+            throw new Error("Update Check: " + e);
         }
 	},	
 	
+	// Localize single ID with string value.
 	i18n: function(message_id){
-		
-		if (!document.getElementById(message_id)){
-			return;
-		}	
-		
-		return this.getMessage.GetStringFromName(message_id);
+		try {
+            if (!document.getElementById(message_id)){
+                return;
+            }		
+            return this.getMessage.GetStringFromName(message_id);
+		} catch (e) {
+			throw new Error("Error getting localized text!");
+		}
 	}
 
 }
+
+// Window load initialize features.
 window.addEventListener("load", function() {
 	window.removeEventListener("load", cyberctrFeatures.initialize_features(), false);
     cyberctrFeatures.initialize_features();
