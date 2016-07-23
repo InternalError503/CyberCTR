@@ -122,6 +122,17 @@ classicthemerestorerjs.ctr = {
 			}
 		} catch(e){}
 	}
+
+	// Listen for addon uninstall and clear firstrun preference.
+	try {
+		AddonManager.addAddonListener({
+			onUninstalling: function(addon){
+				if (addon.id === "CTR@8pecxstudios.com"){
+					Services.prefs.clearUserPref("extensions.classicthemerestorer.firstrun");
+				}
+			}
+		});
+	} catch(e){}
 	
 	// move default non-movable PanelUI-button/PanelUI-menu-button into a movable container
 	window.addEventListener("DOMContentLoaded", function toggleNavBarSwitch(event){
