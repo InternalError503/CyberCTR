@@ -97,6 +97,17 @@
     opacity: 1;
   }
 
+  /* Initially Hide Next Buttons */
+  #menunextbutton,
+  #themenextbutton,
+  #homenextbutton,
+  #menunextbuttonclear,
+  #themenextbuttonclear,
+  #homenextbuttonclear,
+  #nav-tab-doneclear {
+    display: none;
+  }
+
   @media screen and (max-width: 750px) {
     label {
       font-size: 0;

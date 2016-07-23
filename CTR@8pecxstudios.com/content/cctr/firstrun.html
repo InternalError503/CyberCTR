@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" id="favicon" href="images/icon.png">
   <link rel="stylesheet" href="css/uikit.almost-flat.min.css" type="text/css" />
   <link rel="stylesheet" href="css/firstrun.css" type="text/css" />
-	<script src="js/firstrun.js"></script>
+  <script src="js/firstrun.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <input id="syncstyletab" type="radio" name="tabs">
             <label for="syncstyletab" id="tab-syncstyletab">Sync</label>
             <!-- Tabs -->
-            
+
             <section id="menustyle">
               <h2 id="tab-title-menustyle">Select Menu Type:</h2>
               <div class="uk-grid">
@@ -55,10 +55,14 @@
                 </div>
                 <hr class="uk-grid-divider" style="border:none;"></hr>
                 <div class="uk-width-1-1">
-                  <!-- Next -->
-                  <a id="menunextbutton" class="uk-button uk-button-success uk-align-right" onclick="cyberctrFirstrun.nav_to('themestyletab');">Next</a>
-                  <!-- Skip -->
-                  <a id="menuskipbutton" class="uk-button uk-button-primary uk-align-right" onclick="cyberctrFirstrun.nav_to('themestyletab');">Skip</a>
+                  <div class="uk-align-right">
+                    <!-- Skip -->
+                    <a id="menuskipbutton" class="uk-button uk-button-primary" onclick="cyberctrFirstrun.nav_to('themestyletab');">Skip</a>
+                    <!-- Next -->
+                    <a id="menunextbutton" class="uk-button uk-button-success" onclick="cyberctrFirstrun.nav_to('themestyletab');">Next</a>
+                    <!-- clear -->
+                    <a id="menunextbuttonclear" class="uk-button uk-button-danger" onclick="cyberctrFirstrun.clearSelection('menutype', 'menunextbutton');">Clear</a>
+                  </div>
                 </div>
               </div>
             </section>
@@ -77,10 +81,14 @@
                 </div>
                 <hr class="uk-grid-divider" style="border:none;"></hr>
                 <div class="uk-width-1-1">
-                  <!-- Next -->
-                  <a id="themenextbutton" class="uk-button uk-button-success uk-align-right" onclick="cyberctrFirstrun.nav_to('homestyletab');">Next</a>
-                  <!-- Skip -->
-                  <a id="themeskipbutton" class="uk-button uk-button-primary uk-align-right" onclick="cyberctrFirstrun.nav_to('homestyletab');">Skip</a>
+                  <div class="uk-align-right">
+                    <!-- Skip -->
+                    <a id="themeskipbutton" class="uk-button uk-button-primary" onclick="cyberctrFirstrun.nav_to('homestyletab');">Skip</a>
+                    <!-- Next -->
+                    <a id="themenextbutton" class="uk-button uk-button-success" onclick="cyberctrFirstrun.nav_to('homestyletab');">Next</a>
+                    <!-- clear -->
+                    <a id="themenextbuttonclear" class="uk-button uk-button-danger" onclick="cyberctrFirstrun.clearSelection('themetype', 'themenextbutton');">Clear</a>
+                  </div>
                 </div>
               </div>
             </section>
@@ -99,10 +107,14 @@
                 </div>
                 <hr class="uk-grid-divider" style="border:none;"></hr>
                 <div class="uk-width-1-1">
-                  <!-- Next -->
-                  <a id="homenextbutton" class="uk-button uk-button-success uk-align-right" onclick="cyberctrFirstrun.nav_to('syncstyletab');">Next</a>
-                  <!-- Skip -->
-                  <a id="homeskipbutton" class="uk-button uk-button-primary uk-align-right" onclick="cyberctrFirstrun.nav_to('syncstyletab');">Skip</a>
+                  <div class="uk-align-right">
+                    <!-- Skip -->
+                    <a id="homeskipbutton" class="uk-button uk-button-primary" onclick="cyberctrFirstrun.nav_to('syncstyletab');">Skip</a>
+                    <!-- Next -->
+                    <a id="homenextbutton" class="uk-button uk-button-success" onclick="cyberctrFirstrun.nav_to('syncstyletab');">Next</a>
+                    <!-- clear -->
+                    <a id="homenextbuttonclear" class="uk-button uk-button-danger" onclick="cyberctrFirstrun.clearSelection('hometype', 'homenextbutton');">Clear</a>
+                  </div>
                 </div>
               </div>
             </section>
@@ -117,8 +129,12 @@
                 </div>
                 <hr class="uk-grid-divider" style="border:none;"></hr>
                 <div class="uk-width-1-1">
-                  <!-- Skip -->
-                  <a id="nav-tab-done" class="uk-button uk-button-danger uk-align-right" onclick="cyberctrFirstrun.userDone();">Apply &amp; Close</a>
+                  <div class="uk-align-right">
+                    <!-- Skip -->
+                    <a id="nav-tab-done" class="uk-button uk-button" onclick="cyberctrFirstrun.userDone();">Apply &amp; Close</a>
+                    <!-- clear -->
+                    <a id="nav-tab-doneclear" class="uk-button uk-button-danger" onclick="cyberctrFirstrun.clearSelection('item', 'nav-tab-done');">Clear</a>
+                  </div>
                 </div>
               </div>
             </section>
