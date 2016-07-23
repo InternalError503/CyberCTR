@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-user-select: none;
   }
 
   html, body {
@@ -49,7 +50,6 @@
     text-align: center;
     color: #bbb;
     border: 1px solid transparent;
-    -moz-user-select: none;
   }
 
   label:before {
