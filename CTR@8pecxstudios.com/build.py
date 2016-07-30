@@ -60,7 +60,7 @@ def buildXPI( version ):
 	with ZipOutFile(destination) as zip:
 		for file in sorted(get_files(resources), key=str.lower):
 			compress_type = ZIP_STORED if file.endswith(".png") else ZIP_DEFLATED
-			print("Compressing: " + file)
+			print("Compressing: " + file.replace('\\', '/'))
 			zip.write(file, compress_type=compress_type)		
 	return;
 
