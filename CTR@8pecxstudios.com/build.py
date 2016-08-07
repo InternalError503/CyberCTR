@@ -16,7 +16,6 @@ resources = [
 	"content/css/*",
 	"content/css/cctr/*",
 	"content/css/linux/*",
-	"content/css/mac/*",
 	"content/css/win8/*",
 	"content/css/winaero/*",
 	"content/images/*",
