@@ -107,6 +107,7 @@
 		<preference id="ctraddon_wincontrols"	name="extensions.classicthemerestorer.wincontrols"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_puibuttonsep"	name="extensions.classicthemerestorer.puibuttonsep"	type="string"	instantApply="true"/>
 		<preference id="ctraddon_oldtoplevimg"	name="extensions.classicthemerestorer.oldtoplevimg"	type="bool"		instantApply="true"/>
+		<preference id="ctraddon_oldtoplevimg2"	name="extensions.classicthemerestorer.oldtoplevimg2" type="bool"	instantApply="true"/>
 		<preference id="ctraddon_altalertbox"	name="extensions.classicthemerestorer.altalertbox"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_hideprbutton"	name="extensions.classicthemerestorer.hideprbutton"	type="bool"		instantApply="true"/>
 		<preference id="ctraddon_extraurlkeycb"	name="extensions.classicthemerestorer.extraurlkeycb" type="bool"	instantApply="true"/>
@@ -566,7 +567,8 @@
 		</menulist>
 		<checkbox label="&Ctr_closetab_hfot;"	preference="ctraddon_closetabhfl" id="ctraddon_pw_closetabhfl"/>
 		<checkbox label="&Ctr_closeonleft;"		preference="ctraddon_closeonleft" id="ctraddon_pw_closeonleft"/>
-		<checkbox label="&Ctr_close_wwltab;"	preference="ctraddon_closewwltab" tooltiptext="browser.tabs.closeWindowWithLastTab"/>
+		<checkbox label="&Ctr_close_wwltab;"	preference="ctraddon_closewwltab" id="ctraddon_pw_closewwltab"/>
+		<description class="ctraddonsuboption">about:config &gt;&gt; browser.tabs.closeWindowWithLastTab</description>
 		<checkbox label="&Ctr_closetabbig;"		preference="ctraddon_closetabbig" id="ctraddon_pw_closetabbig" class="ctraddon_winmaconly"/>
 
 		<radiogroup preference="ctraddon_closeicon" id="ctraddon_pw_closeicon" orient="horizontal" value="">
@@ -619,7 +621,7 @@
 	  <description class="ctraddon_tabcolorlabel" id="ctraddon_ccap_t_curved">&Ctr_tabs2;</description>
 	  <description class="ctraddon_tabcolorlabel" id="ctraddon_ccap_t_curvedaero">&Ctr_tabs3;</description>
 	  <description>&Ctr_tab_tf_info1;</description>
-	  <description class="ctraddonsuboption text-link"  onclick="if(event.button == 0) { window.close(); window.opener.openURL('https://developer.mozilla.org/docs/Web/CSS/color_value/'); };">blue - #0000ff - rgba(0,0,255,0.8) - hsla(240,100%,50%,0.8)</description>
+	  <description class="ctraddonsuboption text-link"  onclick="if(event.button == 0) { window.close(); window.opener.gBrowser.loadOneTab('https://developer.mozilla.org/docs/Web/CSS/color_value/', {inBackground: false}); };">blue - #0000ff - rgba(0,0,255,0.8) - hsla(240,100%,50%,0.8)</description>
 	  <description>&Ctr_tab_tf_info2;</description>
 	  <label value=""/>
 
@@ -1050,7 +1052,8 @@
 
 	  <groupbox>
 	    <caption  label="&Ctr_ui;" class="ctraddon_topic"/>
-		<checkbox label="&Ctr_oldtoplevimg;"	preference="ctraddon_oldtoplevimg" id="ctraddon_pw_oldtoplevimg"/>
+		<checkbox label="&Ctr_oldtoplevimg;"	preference="ctraddon_oldtoplevimg" id="ctraddon_pw_oldtoplevimg" oncommand="if(this.checked) {classicthemerestorerjso.ctr.ctrpwOldTopLevelImg(true);} else {classicthemerestorerjso.ctr.ctrpwOldTopLevelImg(false);}"/>
+		<checkbox label="&Ctr_oldtoplevimg; (v2)" preference="ctraddon_oldtoplevimg2" id="ctraddon_pw_oldtoplevimg2" class="ctraddonsuboption"/>
 		<checkbox label="&Ctr_altalertbox;"		preference="ctraddon_altalertbox" id="ctraddon_pw_altalertbox"/>
 		<checkbox label="&Ctr_skipprintpr;"		preference="ctraddon_skipprintpr" id="ctraddon_pw_skipprintpr" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 		<checkbox label="&Ctr_panelmenucol;"	preference="ctraddon_panelmenucol" id="ctraddon_pw_panelmenucolor"/>

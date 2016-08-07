@@ -169,6 +169,7 @@ classicthemerestorerjs.ctr = {
 	try{if (this.appversion >= 47) document.getElementById("main-window").setAttribute('fx47plus',true);} catch(e){}
 	try{if (this.appversion >= 48) document.getElementById("main-window").setAttribute('fx48plus',true);} catch(e){}
 	try{if (this.appversion >= 50) document.getElementById("main-window").setAttribute('fx50plus',true);} catch(e){}
+	try{if (this.appversion >= 51) document.getElementById("main-window").setAttribute('fx51plus',true);} catch(e){}
 
 	// add CTR version number to '#main-window' node, so other add-ons/themes can easier distinguish between versions
 	AddonManager.getAddonByID('ClassicThemeRestorer@ArisT2Noia4dev', function(addon) {
@@ -1050,9 +1051,17 @@ classicthemerestorerjs.ctr = {
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("altalertbox",false);
 		  break;
 
-		  case "oldtoplevimg":
-			if (branch.getBoolPref("oldtoplevimg")) classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg",true);
-			  else classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg",false);
+		  case "oldtoplevimg": case "oldtoplevimg2":
+			if (branch.getBoolPref("oldtoplevimg") && branch.getBoolPref("oldtoplevimg2")) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg2",true);
+			} else if (branch.getBoolPref("oldtoplevimg") && branch.getBoolPref("oldtoplevimg2")==false) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg",true);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg2",false);
+			} else {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("oldtoplevimg2",false);
+			}
 		  break;
 		  
 		  case "activndicat":
@@ -3357,6 +3366,7 @@ classicthemerestorerjs.ctr = {
 		try{
 		  document.getElementById("ctraddon_BMB_unsortedBookmarks_mm").collapsed = true;
 		  document.getElementById("ctraddon_BMB_unsortedBookmarks_mm2").collapsed = true;
+		  document.getElementById("ctraddon_BMB_unsortedBookmarks_mm2sep").collapsed = true;
 		} catch(e){}
 	  },1000);
 	}
@@ -3437,68 +3447,82 @@ classicthemerestorerjs.ctr = {
 	mainWindow.addEventListener("load", ctrHideTabbar, false);
 	mainWindow.addEventListener("DOMContentLoaded", ctrHideTabbar, false);
 	observer.observe(mainWindow.document.querySelector('#toolbar-menubar'), { attributes: true, attributeFilter: ['inactive','autohide'] });
-	observer_mw.observe(mainWindow.document.querySelector('#main-window'), { attributes: true, attributeFilter: ['sizemode'] });
+	observer_mw.observe(mainWindow.document.querySelector('#main-window'), { attributes: true, attributeFilter: ['sizemode','tabsintitlebar'] });
 
 	function ctrHideTabbar(event){
-		
+
+	  var recentWindow = mainWindow;
 	  var tabsintitlebar = Services.prefs.getBranch("browser.tabs.").getBoolPref("drawInTitlebar");
-	  var mainWindow = Components.classes["@mozilla.org/appshell/window-mediator;1"].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow("navigator:browser");
 	  var tabsontop = classicthemerestorerjs.ctr.prefs.getCharPref("tabsontop");
 		
-	  if(mainWindow.gBrowser.tabContainer.tabbrowser.visibleTabs.length < 2) {
+	  if(recentWindow.gBrowser.tabContainer.tabbrowser.visibleTabs.length < 2) {
 		if(classicthemerestorerjs.ctr.appversion >= 47) {
-		  mainWindow.document.getElementById("TabsToolbar").style.visibility = 'collapse';
+		  recentWindow.document.getElementById("TabsToolbar").style.visibility = 'collapse';
 		} else {
 		  if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote")) {
-			mainWindow.document.getElementById("TabsToolbar").style.visibility = 'collapse';
+			recentWindow.document.getElementById("TabsToolbar").style.visibility = 'collapse';
 		  } else {
-			mainWindow.document.getElementById("TabsToolbar").collapsed = true;
+			recentWindow.document.getElementById("TabsToolbar").collapsed = true;
 		  }
 		}
 		
 		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote2")) {
 		  
 		  if(classicthemerestorerjs.ctr.osstring=="WINNT" && tabsintitlebar==true){ // Windows
-			if (document.getElementById("toolbar-menubar").getAttribute("autohide") == "true"
-				&& document.getElementById("toolbar-menubar").getAttribute("inactive") == "true") {
-			  document.getElementById("toolbar-menubar").style.marginBottom="26px";
+			if (recentWindow.document.getElementById("toolbar-menubar").getAttribute("autohide") == "true"
+				&& recentWindow.document.getElementById("toolbar-menubar").getAttribute("inactive") == "true") {
+			  recentWindow.document.getElementById("toolbar-menubar").style.marginBottom="26px";
 			} else document.getElementById("toolbar-menubar").style.marginBottom="unset";
+		  } else if (classicthemerestorerjs.ctr.osstring=="WINNT" && tabsintitlebar==false) {
+			  document.getElementById("toolbar-menubar").style.marginBottom="unset";
 		  } else if(classicthemerestorerjs.ctr.osstring=="Darwin" && tabsintitlebar==true) { // MacOSX
 			if(classicthemerestorerjs.ctr.appversion >= 47) {
-			  document.getElementById("TabsToolbar").style.marginTop="unset";
+			  recentWindow.document.getElementById("TabsToolbar").style.marginTop="unset";
 			  if(tabsontop == 'false' || tabsontop == 'false2')
-			    document.getElementById("titlebar").style.marginBottom="-28px";
+			    recentWindow.document.getElementById("titlebar").style.marginBottom="-28px";
 			  else
-				document.getElementById("titlebar").style.marginBottom="-10px";
+				recentWindow.document.getElementById("titlebar").style.marginBottom="-10px";
 			} else {
-			  document.getElementById("titlebar").style.paddingBottom="28px";
+			  recentWindow.document.getElementById("titlebar").style.paddingBottom="28px";
 			}
 		  } else {} //Linux does not need special treatment
 		  
+		} else if(classicthemerestorerjs.ctr.osstring=="WINNT" && tabsintitlebar==true){
+			if(classicthemerestorerjs.ctr.appversion >= 47)
+		      recentWindow.document.getElementById("titlebar").style.marginBottom="-23px";
+		} else if(classicthemerestorerjs.ctr.osstring=="Darwin" && tabsintitlebar==true){
+			if(classicthemerestorerjs.ctr.appversion >= 47)
+		      recentWindow.document.getElementById("titlebar").style.marginBottom="-28px";
 		}
 	  } else {
 
 		if(classicthemerestorerjs.ctr.appversion >= 47) {
-		  mainWindow.document.getElementById("TabsToolbar").style.visibility = 'visible';
+		  recentWindow.document.getElementById("TabsToolbar").style.visibility = 'visible';
 		} else {
 		  if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote")) {
-			mainWindow.document.getElementById("TabsToolbar").style.visibility = 'visible';
+			recentWindow.document.getElementById("TabsToolbar").style.visibility = 'visible';
 		  } else {
-			mainWindow.document.getElementById("TabsToolbar").collapsed = false;
+			recentWindow.document.getElementById("TabsToolbar").collapsed = false;
 		  }
 		}
 		
 		if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("hidetbwote2")) {
 		  if(classicthemerestorerjs.ctr.osstring=="WINNT") 
-			document.getElementById("toolbar-menubar").style.marginBottom="unset";		
-		  else if(classicthemerestorerjs.ctr.osstring=="Darwin") {
+			recentWindow.document.getElementById("toolbar-menubar").style.marginBottom="unset";		
+		  else if(classicthemerestorerjs.ctr.osstring=="Darwin" && tabsintitlebar==true) {
 			if(classicthemerestorerjs.ctr.appversion >= 47) {
-			  document.getElementById("TabsToolbar").style.marginTop="-10px";
-			  document.getElementById("titlebar").style.marginBottom="-28px";
+			  recentWindow.document.getElementById("TabsToolbar").style.marginTop="-10px";
+			  recentWindow.document.getElementById("titlebar").style.marginBottom="-28px";
 			} else {
-			  document.getElementById("titlebar").style.paddingBottom="unset";
+			  recentWindow.document.getElementById("titlebar").style.paddingBottom="unset";
 			}
 		  } else {} //Linux does not need special treatment
+		} else if(classicthemerestorerjs.ctr.osstring=="WINNT" && tabsintitlebar==true){
+			if(classicthemerestorerjs.ctr.appversion >= 47)
+		      recentWindow.document.getElementById("titlebar").style.marginBottom="-23px";
+		} else if(classicthemerestorerjs.ctr.osstring=="Darwin" && tabsintitlebar==true){
+			if(classicthemerestorerjs.ctr.appversion >= 47)
+		      recentWindow.document.getElementById("titlebar").style.marginBottom="-28px";
 		}
 	  }
 
@@ -4368,6 +4392,7 @@ classicthemerestorerjs.ctr = {
 		case "puib_leftsep": 		manageCSS("puibutton_leftsep.css");		break;
 		case "puib_rightsep": 		manageCSS("puibutton_rightsep.css");	break;
 		case "oldtoplevimg": 		manageCSS("old_toplevel_img.css");		break;
+		case "oldtoplevimg2": 		manageCSS("old_toplevel_img2.css");		break;
 		case "altalertbox": 		manageCSS("alt_alertboxfx44.css");		break;
 		case "navthrobber": 		manageCSS("navthrobber.css");			break;
 		case "hideprbutton": 		manageCSS("hidepagereportbutton.css");	break;

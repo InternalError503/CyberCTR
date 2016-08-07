@@ -6,7 +6,8 @@
  and
  chrome://browser/content/urlbarBindings.xml#urlbar-rich-result-popup
  to simulate pre-Fx48 look of location bars autocomplete popup.
- Remove all default comentets to reduce file size. 
+ All default coments removed to reduce file size.
+ Many "empty" methods to provide compatibility with future Fx builds.  
 -->
 
 <!DOCTYPE bindings [
@@ -54,6 +55,10 @@
                        flex="1"/>
       <xul:hbox anonid="footer">
         <children/>
+        <xul:vbox anonid="one-off-search-buttons"
+                  class="search-one-offs"
+                  compact="true"
+                  flex="1"/>
       </xul:hbox>
     </content>
 
@@ -75,6 +80,19 @@
       <field name="footer" readonly="true">
         document.getAnonymousElementByAttribute(this, "anonid", "footer");
       </field>
+
+      <field name="oneOffSearchButtons" readonly="true">
+        document.getAnonymousElementByAttribute(this, "anonid",
+                                                "one-off-search-buttons");
+      </field>
+
+      <field name="_oneOffSearchesEnabled">false</field>
+
+      <method name="enableOneOffSearches">
+        <parameter name="enable"/>
+        <body><![CDATA[
+        ]]></body>
+      </method>
 
       <method name="openSearchSuggestionsNotificationLearnMoreURL">
         <body><![CDATA[
@@ -417,6 +435,32 @@
           ]]>
         </body>
       </method>
+	  
+      <method name="_visuallySelectedOneOffChanged">
+        <body><![CDATA[
+        ]]></body>
+      </method>
+
+      <method name="handleKeyPress">
+        <parameter name="aEvent"/>
+        <body><![CDATA[
+          /*return aEvent.defaultPrevented;*/
+        ]]></body>
+      </method>
+
+      <method name="handleOneOffSearch">
+        <parameter name="event"/>
+        <parameter name="engine"/>
+        <parameter name="where"/>
+        <parameter name="params"/>
+        <body><![CDATA[
+        ]]></body>
+      </method>
+
+      <property name="overrideSearchEngineName" readonly="true">
+        <getter><![CDATA[
+        ]]></getter>
+      </property>
 
       <method name="onResultsAdded">
         <body>
@@ -451,6 +495,8 @@
     </implementation>
     <handlers>
 
+      <handler event="OneOffsVisuallySelectedButtonChanged"><![CDATA[
+      ]]></handler>
       <handler event="mousedown"><![CDATA[
         event.preventDefault();
       ]]></handler>
@@ -463,59 +509,59 @@
     <content align="start"
              onoverflow="this._onOverflow();"
              onunderflow="this._onUnderflow();">
-      <xul:hbox align="center">
-		  <xul:image anonid="site-icon"
-					 class="ac-site-icon"
-					 xbl:inherits="src=image,selected"/>
-		  <xul:hbox class="ac-title"
-					align="center"
-					xbl:inherits="selected">
-			<xul:description class="ac-text-overflow-container">
-			  <xul:description anonid="title-text"
-							   class="ac-title-text"
-							   xbl:inherits="selected"/>
-			</xul:description>
-		    <xul:image anonid="type-icon"
-					 class="ac-type-icon"
-					 xbl:inherits="selected,current"/>
-		  </xul:hbox>
-		  <xul:hbox anonid="tags"
-					class="ac-tags"
-					align="center"
-					xbl:inherits="selected">
-			<xul:description class="ac-text-overflow-container">
-			  <xul:description anonid="tags-text"
-							   class="ac-tags-text"
-							   xbl:inherits="selected"/>
-			</xul:description>
-		  </xul:hbox>
-	  </xul:hbox>
-	  <xul:hbox align="center">
-		  <xul:hbox anonid="separator"
-					class="ac-separator"
-					align="center"
-					xbl:inherits="selected,actiontype">
-			<xul:description class="ac-separator-text">—</xul:description>
-		  </xul:hbox>
-		  <xul:hbox class="ac-url"
-					align="center"
-					xbl:inherits="selected,actiontype">
-			<xul:description class="ac-text-overflow-container">
-			  <xul:description anonid="url-text"
-							   class="ac-url-text"
-							   xbl:inherits="selected"/>
-			</xul:description>
-		  </xul:hbox>
-		  <xul:hbox class="ac-action"
-					align="center"
-					xbl:inherits="selected,actiontype">
-			<xul:description class="ac-text-overflow-container">
-			  <xul:description anonid="action-text"
-							   class="ac-action-text"
-							   xbl:inherits="selected"/>
-			</xul:description>
-		  </xul:hbox>
-	  </xul:hbox>
+	<xul:hbox align="center">
+      <xul:image anonid="site-icon"
+                 class="ac-site-icon"
+                 xbl:inherits="src=image,selected,type"/>
+      <xul:hbox class="ac-title"
+                align="center"
+                xbl:inherits="selected">
+        <xul:description class="ac-text-overflow-container">
+          <xul:description anonid="title-text"
+                           class="ac-title-text"
+                           xbl:inherits="selected"/>
+        </xul:description>
+      <xul:image anonid="type-icon"
+                 class="ac-type-icon"
+                 xbl:inherits="selected,current,type"/>
+      </xul:hbox>
+      <xul:hbox anonid="tags"
+                class="ac-tags"
+                align="center"
+                xbl:inherits="selected">
+        <xul:description class="ac-text-overflow-container">
+          <xul:description anonid="tags-text"
+                           class="ac-tags-text"
+                           xbl:inherits="selected"/>
+        </xul:description>
+      </xul:hbox>
+	</xul:hbox>
+	<xul:hbox align="center">
+      <xul:hbox anonid="separator"
+                class="ac-separator"
+                align="center"
+                xbl:inherits="selected,actiontype,type">
+        <xul:description class="ac-separator-text">—</xul:description>
+      </xul:hbox>
+      <xul:hbox class="ac-url"
+                align="center"
+                xbl:inherits="selected,actiontype">
+        <xul:description class="ac-text-overflow-container">
+          <xul:description anonid="url-text"
+                           class="ac-url-text"
+                           xbl:inherits="selected"/>
+        </xul:description>
+      </xul:hbox>
+      <xul:hbox class="ac-action"
+                align="center"
+                xbl:inherits="selected,actiontype">
+        <xul:description class="ac-text-overflow-container">
+          <xul:description anonid="action-text"
+                           class="ac-action-text"
+                           xbl:inherits="selected"/>
+        </xul:description>
+      </xul:hbox>
+	</xul:hbox>
     </content>
 
     <implementation implements="nsIDOMXULSelectControlItemElement">
@@ -552,7 +598,6 @@
       <property name="label" readonly="true">
         <getter>
           <![CDATA[
-
             let parts = [
               this.getAttribute("title"),
               this.getAttribute("displayurl"),
@@ -643,10 +688,8 @@
           let boundaries = [];
           let len = regions.length;
           for (let i = 0; i < len; i++) {
-
             let region = regions[i];
             if (region[0] > end) {
-
               boundaries.push(start);
               boundaries.push(end);
 
@@ -683,7 +726,6 @@
         <parameter name="aNoEmphasis"/>
         <body>
           <![CDATA[
-
           while (aDescriptionElement.hasChildNodes())
             aDescriptionElement.removeChild(aDescriptionElement.firstChild);
 
@@ -712,20 +754,17 @@
           let next;
           let start = 0;
           let len = indices.length;
-
           for (let i = indices[0] == 0 ? 1 : 0; i < len; i++) {
             next = indices[i];
             let spanText = text.substr(start, next - start);
             start = next;
 
             if (i % 2 == 0) {
-
               let span = spansParentElement.appendChild(
                 document.createElementNS("http://www.w3.org/1999/xhtml", "span"));
               this._setUpEmphasisSpan(span, descriptionElement);
               span.textContent = spanText;
             } else {
-
               spansParentElement.appendChild(document.createTextNode(spanText));
             }
           }
@@ -743,9 +782,7 @@
 
           let anyTagsMatch = false;
 
-
           for (let tag of tags) {
-
             let search = this.getAttribute("text");
             let tokens = this._getSearchTokens(search);
             let indices = this._getBoundaryIndices(tag, tokens);
@@ -753,7 +790,6 @@
             if (indices.length == 2 &&
                 indices[0] == 0 &&
                 indices[1] == tag.length) {
-
               continue;
             }
 
@@ -796,6 +832,7 @@
         </body>
       </method>
 
+
       <method name="_generateEmphasisPairs">
         <parameter name="aSourceString"/>
         <parameter name="aReplacements"/>
@@ -812,7 +849,6 @@
               let match = part.match(/^%(?:([0-9]+)\$)?S$/);
 
               if (match) {
-
                 let index = (match[1] || 1) - 1;
 
                 if (index >= 0 && index < aReplacements.length) {
@@ -833,7 +869,6 @@
         <parameter name="aTextPairs"/>
         <body>
           <![CDATA[
-
           while (aDescriptionElement.hasChildNodes())
             aDescriptionElement.firstChild.remove();
 
@@ -873,7 +908,10 @@
       <method name="_adjustAcItem">
         <body>
           <![CDATA[
-          this._removeMaxWidths();
+          let popup = this.parentNode.parentNode;
+          if (!popup.popupOpen) {
+            this._removeMaxWidths();
+          }
 
           let title = this.getAttribute("title");
 
@@ -881,10 +919,9 @@
           let originalUrl = this.getAttribute("url");
           let emphasiseUrl = true;
 
-          let type = this.getAttribute("type");
+          let type = this.getAttribute("originaltype");
           let types = new Set(type.split(/\s+/));
           let initialTypes = new Set(types);
-
           types.delete("action");
           types.delete("autofill");
           types.delete("heuristic");
@@ -923,6 +960,16 @@
               emphasiseUrl = false;
 
               let {engineName, searchSuggestion, searchQuery} = action.params;
+
+              let override = popup.overrideSearchEngineName;
+              if (override && override != engineName) {
+                engineName = override;
+                action.params.engineName = override;
+                let newURL =
+                  PlacesUtils.mozActionURI(action.type, action.params);
+                this.setAttribute("url", newURL);
+              }
+
               let engineStr =
                 this._stringBundle.formatStringFromName("searchWithEngine",
                                                         [engineName], 1);
@@ -930,7 +977,6 @@
 
               let pairs;
               if (searchSuggestion) {
-
                 let idx = searchSuggestion.indexOf(searchQuery);
                 if (idx >= 0) {
                   pairs = [
@@ -964,11 +1010,15 @@
           }
 
           if (!displayUrl) {
-            let input = this.parentNode.parentNode.input;
+            let input = popup.input;
             let url = typeof(input.trimValue) == "function" ?
                       input.trimValue(originalUrl) :
                       originalUrl;
             displayUrl = this._unescapeUrl(url);
+          }
+
+          if (popup.textRunsMaxLen) {
+            displayUrl = displayUrl.substr(0, popup.textRunsMaxLen);
           }
           this.setAttribute("displayurl", displayUrl);
 
@@ -985,7 +1035,6 @@
           this._tags.setAttribute("empty", "true");
 
           if (type == "tag" || type == "bookmark-tag") {
-
             let tags;
             [, title, tags] = title.match(/^(.+) \u2013 (.+)$/);
 
@@ -1001,11 +1050,9 @@
               type = "bookmark";
             }
           } else if (type == "keyword") {
-
             emphasiseUrl = false;
             let keywordArg = this.getAttribute("text").replace(/^[^\s]+\s*/, "");
             if (!keywordArg) {
-
               type = "visiturl";
               this.setAttribute("actiontype", "visiturl");
               let visitStr = this._stringBundle.GetStringFromName("visit");
@@ -1015,17 +1062,22 @@
               let interpStr =
                 this._stringBundle.GetStringFromName("bookmarkKeywordSearch");
               title = this._generateEmphasisPairs(interpStr, pairs);
-
               this._setUpDescription(this._actionText, "", false);
             }
           }
 
-          this._typeIcon.setAttribute("type", type);
-          this._siteIcon.setAttribute("type", type);
+          this.setAttribute("type", type);
 
           if (Array.isArray(title)) {
+            if (popup.textRunsMaxLen) {
+              title = title.map(t => t.substr(0, popup.textRunsMaxLen));
+            }
             this._setUpEmphasisedSections(this._titleText, title);
           } else {
+
+            if (popup.textRunsMaxLen) {
+              title = title.substr(0, popup.textRunsMaxLen);
+            }
             this._setUpDescription(this._titleText, title, false);
           }
           this._setUpDescription(this._urlText, displayUrl, !emphasiseUrl);
@@ -1047,27 +1099,25 @@
           ]]>
         </body>
       </method>
-	  
       <method name="adjustSiteIconStart">
         <parameter name="newStart"/>
         <body>
           <![CDATA[
           if (typeof(newStart) != "number") {
-            this._typeIcon.style.removeProperty("-moz-margin-start");
+            this._typeIcon.style.removeProperty("margin-inline-start");
             return true;
           }
           let rect = this._siteIcon.getBoundingClientRect();
           let dir = this.getAttribute("dir");
           let delta = dir == "rtl" ? rect.right - newStart
                                    : newStart - rect.left;
-          let px = this._typeIcon.style.MozMarginStart;
+          let px = this._typeIcon.style.marginInlineStart;
           if (!px) {
-
             let style = window.getComputedStyle(this._typeIcon);
             px = dir == "rtl" ? style.marginRight : style.marginLeft;
           }
           let typeIconStart = Number(px.substr(0, px.length - 2));
-          this._typeIcon.style.MozMarginStart = (typeIconStart + delta) + "px";
+          this._typeIcon.style.marginInlineStart = (typeIconStart + delta) + "px";
           return delta > 0;
           ]]>
         </body>
@@ -1092,14 +1142,12 @@
           let itemWidth = itemRect.width - titleStart - extraPadding;
 
           if (this._tags.hasAttribute("empty")) {
-
             tagsRect.width = 0;
           }
 
           let titleTagsWidth = titleRect.width + tagsRect.width;
           if (titleTagsWidth + separatorURLActionWidth > itemWidth) {
 
-            // The percentage of the item width allocated to the title and tags.
             let titleTagsPct = 1.00;
 
             let titleTagsAvailable = itemWidth - separatorURLActionWidth;
@@ -1108,7 +1156,6 @@
               itemWidth * titleTagsPct
             );
             if (titleTagsWidth > titleTagsMaxWidth) {
-
               let titlePct = 0.33;
 
               let titleAvailable = titleTagsMaxWidth - tagsRect.width;
@@ -1121,19 +1168,17 @@
                 tagsAvailable,
                 titleTagsMaxWidth * (1 - titlePct)
               );
-			  this._titleText.style.maxWidth = titleMaxWidth + "px";
+              this._titleText.style.maxWidth = titleMaxWidth + "px";
               this._tagsText.style.maxWidth = titleMaxWidth + "px";
             }
             let urlActionMaxWidth = Math.max(
               itemWidth - titleTagsWidth,
               itemWidth * (1 - titleTagsPct)
             );
-			
             let titleMaxWidth = Math.max(
               (titleTagsMaxWidth - tagsRect.width),
               titleTagsMaxWidth * 0.33
             );
-
             urlActionMaxWidth -= separatorRect.width;
 			this._urlText.style.maxWidth = titleMaxWidth + "px";
             this._actionText.style.maxWidth = titleMaxWidth + "px";
@@ -1168,6 +1213,7 @@
               action.params[key] = decodeURIComponent(action.params[key]);
             }
           } catch (e) {
+
             action.params = {
               url: params,
             }
@@ -1177,5 +1223,6 @@
         ]]></body>
       </method>
     </implementation>
-  </binding>	  
-</bindings>
+  </binding>
+
+  </bindings>
