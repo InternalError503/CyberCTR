@@ -104,11 +104,6 @@ classicthemerestorerjs.ctr = {
   activityObserverOn:	false, // activity observer is always disabled, when a window get initialized
 
   init: function() {
-	  
-	  //Clean up old preferences
-	try{
-	  Services.prefs.clearUserPref("extensions.classicthemerestorer.movableurlbar");
-	} catch(e){}
 
 	// Here we do first run globally, Show firstrun page.
 	if (Services.prefs.getBoolPref("extensions.classicthemerestorer.firstrun") == false){
