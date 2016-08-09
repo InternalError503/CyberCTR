@@ -22,7 +22,8 @@
 	ondialogaccept="return true"
 	persist="screenX screenY sizemode"
 >
-
+<!--- blacklist.js must be loaded before options.js -->
+<script type="application/x-javascript" src="blacklist.js"/>
 <script type="application/x-javascript" src="options.js"/>
 
 <prefpane id="ClassicTRoptionsPane" flex="1">

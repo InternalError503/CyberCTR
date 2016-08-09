@@ -2796,30 +2796,10 @@ classicthemerestorerjs.ctr = {
 			case "syncprefs":
 				if (branch.getBoolPref("syncprefs")){
 				var preflist = Services.prefs.getChildList("extensions.classicthemerestorer.");
-				var blacklist = [
-					"extensions.classicthemerestorer.pref_actindx",
-					"extensions.classicthemerestorer.pref_actindx2",
-					"extensions.classicthemerestorer.ctrreset",
-					"extensions.classicthemerestorer.compatibility.treestyle",
-					"extensions.classicthemerestorer.compatibility.treestyle.disable",
-					"extensions.classicthemerestorer.compatibility.tabmix",
-					"extensions.classicthemerestorer.ctrpref.firstrun",
-					"extensions.classicthemerestorer.features.firstrun",
-					"extensions.classicthemerestorer.features.lastcheck",
-					"extensions.classicthemerestorer.features.updatecheck",
-					"extensions.classicthemerestorer.ctrpref.lastmod",
-					"extensions.classicthemerestorer.ctrpref.lastmodapply",
-					"extensions.classicthemerestorer.ctrpref.updatekey",
-					"extensions.classicthemerestorer.version",
-					"extensions.classicthemerestorer.ctrpref.lastmod.backup",
-					"extensions.classicthemerestorer.ctrpref.importjson",
-					"extensions.classicthemerestorer.ctrpref.active",
-					"extensions.classicthemerestorer.compatibility.personalmenu",
-					"extensions.classicthemerestorer.syncprefs"
-					];
+					// Blacklist is handled in blacklist.js, blacklist.js must be loaded first before overlay.js and options.js
 					try {
 						for (var i=0; i < preflist.length; i++) {
-							var index = preflist.indexOf(blacklist[i]);
+							var index = preflist.indexOf(ctrblacklist[i]);
 							if (index > -1) {
 								preflist.splice(index, 1);
 							}

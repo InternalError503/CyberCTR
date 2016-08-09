@@ -20,30 +20,7 @@ classicthemerestorerjso.ctr = {
   needsRestart: 	false,
   tmp_tu_active:	false,
   contexts: Services.prefs.getBranch("browser.context."),
-  // Exclude all preferences we don't want to sync, export or import.
-	// When adding/removing update the list in overlay.js
-  blacklist: [
-	"extensions.classicthemerestorer.pref_actindx",
-	"extensions.classicthemerestorer.pref_actindx2",
-	"extensions.classicthemerestorer.ctrreset",
-	"extensions.classicthemerestorer.compatibility.treestyle",
-	"extensions.classicthemerestorer.compatibility.treestyle.disable",
-	"extensions.classicthemerestorer.compatibility.tabmix",
-	"extensions.classicthemerestorer.ctrpref.firstrun",
-	"extensions.classicthemerestorer.features.firstrun",
-	"extensions.classicthemerestorer.features.lastcheck",
-	"extensions.classicthemerestorer.features.updatecheck",
-	"extensions.classicthemerestorer.ctrpref.lastmod",
-	"extensions.classicthemerestorer.ctrpref.lastmodapply",
-	"extensions.classicthemerestorer.ctrpref.updatekey",
-	"extensions.classicthemerestorer.version",
-	"extensions.classicthemerestorer.ctrpref.lastmod.backup",
-	"extensions.classicthemerestorer.ctrpref.importjson",
-	"extensions.classicthemerestorer.ctrpref.active",
-	"extensions.classicthemerestorer.compatibility.personalmenu",
-	"extensions.classicthemerestorer.syncprefs"
-	],
-
+ 
   initprefwindow: function() {
   
 	// adds a new global attribute 'defaultfxtheme' -> better parting css for default and non-default themes
@@ -1598,8 +1575,11 @@ classicthemerestorerjso.ctr = {
 
         for (var i = 0; i < preferenceList.length; i++) {
             try {
-                // Run Blacklist filter. Exclude all preferences we don't want to export/import.
-                var index = preferenceList.indexOf(this.blacklist[i]);
+                /* 
+									Run Blacklist filter. Exclude all preferences we don't want to export/import.
+									Blacklist is handled in blacklist.js, blacklist.js must be loaded first before overlay.js
+								*/
+                var index = preferenceList.indexOf(ctrblacklist[i]);
 
                 if (index > -1) {
                     preferenceList.splice(index, 1);
@@ -1616,7 +1596,7 @@ classicthemerestorerjso.ctr = {
                 }
 
                 if (aPattern == "json") {
-					// Populate array
+										// Populate array
                     preferenceArray.preference.push({
                         "preference": preferenceList[i].replace("extensions.classicthemerestorer.", ""),
                         "value": _prefValue(preferenceList[i])
