@@ -211,6 +211,7 @@
 <!ENTITY Ctr_navthrobber2	"Saisir une adresse ou laisser vide">
 <!ENTITY Ctr_anewtaburl		"Adresse de la page Nouvel onglet">
 <!ENTITY Ctr_anewtaburlcb	"Adresse personnalisée de la page Nouvel onglet (défaut : « about:newtab »)">
+<!ENTITY Ctr_anewtaburlpcb	"Custom private new tab page url (default: 'about:privatebrowsing')">
 
 <!ENTITY Ctr_tab_tf_info1	"Les noms de couleurs, les codes hexadécimaux, les valeurs rgb(a) et hsl(a) sont pris en charge.">
 <!ENTITY Ctr_tab_tf_info2	"Les valeurs saisies ne sont pas validées.">

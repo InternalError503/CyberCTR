@@ -211,6 +211,7 @@
 <!ENTITY Ctr_navthrobber2	"Укажите url страницы или оставьте пустое место">
 <!ENTITY Ctr_anewtaburl		"Адрес url новой вкладки">
 <!ENTITY Ctr_anewtaburlcb	"Изменение адреса url новой вкладки (по умолчанию - 'about:newtab')">
+<!ENTITY Ctr_anewtaburlpcb	"Custom private new tab page url (default: 'about:privatebrowsing')">
 
 <!ENTITY Ctr_tab_tf_info1	"Текстовые поля поддерживают названия цветов на английском, шестнадцатеричные коды, rgb(a) и значения hsl(a).">
 <!ENTITY Ctr_tab_tf_info2	"Введённое не будет проверяться!">

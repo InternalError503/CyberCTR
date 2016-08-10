@@ -211,6 +211,7 @@
 <!ENTITY Ctr_navthrobber2	"Dodajte URL ali pustite prazno">
 <!ENTITY Ctr_anewtaburl		"URL strani novega zavihka">
 <!ENTITY Ctr_anewtaburlcb	"URL strani novega zavihka po meri (privzeto: 'about:newtab')">
+<!ENTITY Ctr_anewtaburlpcb	"Custom private new tab page url (default: 'about:privatebrowsing')">
 
 <!ENTITY Ctr_tab_tf_info1	"Podprta so imena barv, šestnajstiške kode, rga(a) in hsl(a).">
 <!ENTITY Ctr_tab_tf_info2	"Vnosi ne bodo preverjeni!">
@@ -299,7 +300,7 @@
 <!ENTITY Ctr_hidetbwot		"Skrij orodno vrstico zavihkov okna s samo enim zavihkom">
 <!ENTITY Ctr_hidetbwote		"Zmanjšaj zakasnitev skritja ob zagonu">
 <!ENTITY Ctr_hidetbwote_i	"Lahko povzroči napake na vrstici zavihkov">
-<!ENTITY Ctr_hidetbwote2	"Automatically adjust titlebar space">
+<!ENTITY Ctr_hidetbwote2	"Samodejno prilagodi prostor nazivne vrstice">
 <!ENTITY Ctr_notabfog		"Odstrani meglo ozadja (Windows AeroGlass/8)">
 <!ENTITY Ctr_notabbg		"Odstrani barvo ozadja (Windows AeroGlass/8)">
 <!ENTITY Ctr_hightabpos		"Zmanjšaj prostor nad orodno vrstico (če je možno)">

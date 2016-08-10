@@ -252,7 +252,7 @@ classicthemerestorerjs.ctr = {
 	
 	// prevent browser from disabling CTRs reload button for no reason
 	this.preventReloaddisabling();
-	
+
 	// CTR Preferences listener
 	function PrefListener(branch_name, callback) {
 	  // Keeping a reference to the observed preference branch or it will get
@@ -2433,6 +2433,16 @@ classicthemerestorerjs.ctr = {
 			}
 
 		  break;
+		  
+		  case "anewtaburlpcb":
+		  
+			if (branch.getBoolPref("anewtaburlpcb") && classicthemerestorerjs.ctr.appversion >= 48) {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("anewtaburlpcb",true);
+			  classicthemerestorerjs.ctr.newPrivateTabPageForwarding();
+			}
+			else classicthemerestorerjs.ctr.loadUnloadCSS("anewtaburlpcb",false);
+		  
+		  break;
 
 		  case "dblclnewtab":
 			
@@ -3521,6 +3531,27 @@ classicthemerestorerjs.ctr = {
 
   },
   
+  // forward new private browsing tab to custom url
+  newPrivateTabPageForwarding: function() {
+	  
+	function _newPrivateTabPageForwarding(){
+		
+	  var newURLp = classicthemerestorerjs.ctr.prefs.getCharPref("anewtaburlp");
+				
+	  if (newURLp=='') newURLp='about:privatebrowsing';
+	  
+	  setTimeout(function(){
+		if(gBrowser.currentURI.spec=="about:privatebrowsing") openUILinkIn(newURLp, "current");
+	  },500);
+	}
+	
+	window.addEventListener("TabClose", _newPrivateTabPageForwarding, false);  
+	window.addEventListener("TabOpen", _newPrivateTabPageForwarding, false);
+	window.addEventListener("load", _newPrivateTabPageForwarding, false);
+	window.addEventListener("DOMContentLoaded", _newPrivateTabPageForwarding, false);
+
+  },
+  
   // replace default icons with tab-favicons
   favIconinUrlbarCTR: function() {
 
@@ -4510,6 +4541,8 @@ classicthemerestorerjs.ctr = {
 		case "tabmokcolor": 		manageCSS("tabmokcolor.css");			break;
 		case "tabmokcolor2": 		manageCSS("tabmokcolor2.css");			break;
 		case "tabmokcolor4": 		manageCSS("tabmokcolor4.css");			break;
+		
+		case "anewtaburlpcb": 		manageCSS("no_pbrowsing_page.css");		break;
 		
 		case "padlock_default": 	manageCSS("padlock_default.css");		break;
 		case "padlock_classic": 	manageCSS("padlock_classic.css");		break;
