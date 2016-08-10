@@ -398,6 +398,7 @@
 <!ENTITY goCmd.label					"Aller à">
 <!ENTITY Ctr_menu_restart.label			"Redémarrer">
 <!ENTITY Ctr_restartapp					"« Redémarrer » dans le menu &brandShortName; et le menu Fichier">
+<!ENTITY Ctr_ctrnewinv					"Underline new options for current &brandShortName; version">
 
 <!ENTITY Ctr_openInCurrentTab			"Ouvrir les entrées dans l'onglet actuel">
 <!ENTITY Ctr_openInNewTab				"Ouvrir les entrées dans un nouvel onglet">

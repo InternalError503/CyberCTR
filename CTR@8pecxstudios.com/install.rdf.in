@@ -20,7 +20,7 @@
 		<em:targetApplication>
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-				<em:minVersion>29.0</em:minVersion>
+				<em:minVersion>45.0</em:minVersion>
 				<em:maxVersion>@MOZ_APP_MAXVERSION@</em:maxVersion>
 			</Description>
 		</em:targetApplication>
@@ -51,6 +51,8 @@
 		<em:translator>ma2moto (ja) - Japanese</em:translator>
 		<em:translator>momdo (ja) - Japanese</em:translator>
 		<em:translator>Mrere (pl) - Polish</em:translator>
+		<em:translator>hawkeye116477 (pl) - Polish</em:translator>
+		<em:translator>igorruckert (pt-BR) - Portuguese [Brazil]</em:translator>
 		<em:translator>Claudio (pt-BR) - Portuguese [Brazil]</em:translator>
 		<em:translator>3deshka (ru) - Russian</em:translator>
 		<em:translator>Alexei (ru) - Russian</em:translator>

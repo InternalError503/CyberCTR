@@ -398,6 +398,7 @@
 <!ENTITY goCmd.label					"Перейти">
 <!ENTITY Ctr_menu_restart.label			"Перезапуск">
 <!ENTITY Ctr_restartapp					"'Перезапуск' в меню приложения/файл">
+<!ENTITY Ctr_ctrnewinv					"Underline new options for current &brandShortName; version">
 
 <!ENTITY Ctr_openInCurrentTab			"Открыть введенное в текущей вкладке">
 <!ENTITY Ctr_openInNewTab				"Открыть введенное в новой вкладке">
