@@ -125,6 +125,7 @@
 <!ENTITY Ctr_altoptionswh	"Hauteur">
 <!ENTITY Ctr_altoptionsi	"La fenêtre des paramètres n’est plus une boîte de dialogue, mais une «fenêtre de navigateur » dont les barres d’outils sont cachées. La fonctionnalité « Utiliser la page courante » ne fait qu'ajouter les adresses des pages ouvertes dans la fenêtre active (« about:preferences »).  Le bouton d’« options » de la barre d’outils est remplacé par un nouveau bouton qui permet l’ouverture d’une fenêtre spécifique pour les options.">
 <!ENTITY Ctr_options_rem	"Se rappeler de la dernière catégorie choisie">
+<!ENTITY Ctr_aboutpages		"General 'about:' pages: alternative appearance">
 <!ENTITY Ctr_svgfilters		"Couleurs SVG pour les icônes par défaut de la barre d’outils">
 <!ENTITY Ctr_wincontrols	"Mode plein écran : boutons déplaçables">
 <!ENTITY Ctr_puibuttonsep	"Séparateur du bouton de menu :">
@@ -186,6 +187,7 @@
 <!ENTITY Ctr_bmbutton		"Bouton marque-pages">
 <!ENTITY Ctr_hiderecentbm	"Popup marque-pages : masquer le groupe « marqués récemment »">
 <!ENTITY Ctr_hideeditbm		"Étoile des marque-pages : masquer le menu déroulant (si la page n'a pas été marquée)">
+<!ENTITY Ctr_oldplacesbut	"Bookmarks on toolbar: old appearance">
 <!ENTITY Ctr_bmbutpanelm	"Menu déroulant : apparence de menu de type « panneau »">
 <!ENTITY Ctr_bmbunsortbm	"Popup : sous menu des « marque-pages non triés »">
 <!ENTITY Ctr_bmbunsortbm2	"Menu au-dessus des marque-pages">
@@ -275,6 +277,7 @@
 <!ENTITY Ctr_autocompl_rhl	"Utiliser des couleurs Aero pour les résultats surlignés">
 <!ENTITY Ctr_autocompl_sep	"Afficher un séparateur entre les résultats">
 <!ENTITY Ctr_lbsugresi		"Désactiver la limite de hauteur">
+<!ENTITY Ctr_cresultshcb	"Limite de hauteur personnalisée :">
 <!ENTITY Ctr_lbsugres		"Nombre de résultats :">
 <!ENTITY Ctr_lbsbradius		"Rayon de bordure personnalisé pour la barre d'adresse et la barre de recherche">
 
@@ -373,6 +376,8 @@
 <!ENTITY Ctr_fx50findbarhl	"Décocher ces paramètres désactive les fonctionnalités avancées de surlignage de la barre de recherche.">
 <!ENTITY Ctr_e_flyweb		"FlyWeb">
 <!ENTITY Ctr_fx50flyweb		"Décocher ce paramètre désactive « FlyWeb ».">
+<!ENTITY Ctr_e_oneoffsearch	"Sélection de recherche des fenêtres surgissantes d'autocomplétion">
+<!ENTITY Ctr_fx51OOSeach	"Décocher ce paramètre retire la sélection de recherche des fenêtres surgissantes de la barre de navigation.">
 
 
 <!ENTITY Ctr_pw_settings	"Réglages">

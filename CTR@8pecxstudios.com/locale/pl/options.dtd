@@ -125,6 +125,7 @@
 <!ENTITY Ctr_altoptionswh	"Wysokość">
 <!ENTITY Ctr_altoptionsi	"Symulowane okno opcji nie jest już oknem dialogowym, ale 'oknem przeglądarki' z ukrytymi wszystkimi paskami narzędzi. Funkcja 'Użyj bieżących stron' dodaje tylko adresy stron otwartych w bieżącym oknie, w tym przypadku tylko 'about:preferences'. 'Przycisk opcji paska narzędzi' zostaje zastąpiony nowym, aby mógł otwierać opcje w oknie.">
 <!ENTITY Ctr_options_rem	"Pamiętaj ostatnio wybraną kategorię">
+<!ENTITY Ctr_aboutpages		"General 'about:' pages: alternative appearance">
 <!ENTITY Ctr_svgfilters		"Kolory SVG ikon przycisków domyślnego paska narzędzi">
 <!ENTITY Ctr_wincontrols	"Ruchome kontrolki okna pełnego ekranu">
 <!ENTITY Ctr_puibuttonsep	"Separator przycisku menu">
@@ -186,6 +187,7 @@
 <!ENTITY Ctr_bmbutton		"Przycisk menu zakładek">
 <!ENTITY Ctr_hiderecentbm	"Menu podręczne zakładek: ukryj ostatnio dodane zakładki">
 <!ENTITY Ctr_hideeditbm		"Gwiazdka zakładek: ukryj menu podręczne (jeżeli zakładka nie jest dodana do strony)">
+<!ENTITY Ctr_oldplacesbut	"Bookmarks on toolbar: old appearance">
 <!ENTITY Ctr_bmbutpanelm	"Menu podręczne: wygląd menu panelu">
 <!ENTITY Ctr_bmbunsortbm	"Menu podręczne: podmenu 'Pozostałe zakładki'">
 <!ENTITY Ctr_bmbunsortbm2	"Menu ponad zakładkami">
@@ -275,6 +277,7 @@
 <!ENTITY Ctr_autocompl_sep	"Pokaż separator pomiędzy wynikami">
 <!ENTITY Ctr_urlbar_uc		"Wyłącz funkcję 'ujednolicone autouzupełnianie'">
 <!ENTITY Ctr_lbsugresi		"Wyłącz ograniczenie wysokości">
+<!ENTITY Ctr_cresultshcb	"Niestandardowe ograniczenie wysokości: ">
 <!ENTITY Ctr_lbsugres		"Liczba wyników">
 <!ENTITY Ctr_lbsbradius		"Niestandardowe zaokrąglenia obrzeży paska adresu i paska wyszukiwania">
 
@@ -373,6 +376,8 @@
 <!ENTITY Ctr_fx50findbarhl	"Odznaczenie tych ustawień usuwa funkcje 'podświetlania' paska wyszukiwania.">
 <!ENTITY Ctr_e_flyweb		"FlyWeb">
 <!ENTITY Ctr_fx50flyweb		"Odznaczenie tego ustawienia wyłącza 'FlyWeb'.">
+<!ENTITY Ctr_e_oneoffsearch	"Wybór wyszukiwarki w menu podręcznym autouzupełniania">
+<!ENTITY Ctr_fx51OOSeach	"Odznaczenie tego ustawienia usuwa wybór wyszukiwarki z menu podręcznego paska adresu.">
 
 
 <!ENTITY Ctr_pw_settings	"Ustawienia">

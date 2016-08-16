@@ -125,6 +125,7 @@
 <!ENTITY Ctr_altoptionswh	"Höhe:">
 <!ENTITY Ctr_altoptionsi	"Das simulierte Einstellungsfenster ist kein Dialogfenster mehr, sondern ein leistenloses normales Fenster. Die Leistenschaltfläche 'Einstellungen' wird durch 'Einstellungen (Fenster)' ersetzt. Diese Schaltfläche muss einmalig im Modus 'Anpassen' zur Menüleiste hinzugefügt werden.">
 <!ENTITY Ctr_options_rem	"Zuletzt besuchte Kategorie speichern">
+<!ENTITY Ctr_aboutpages		"Allgemeine 'about:'-Seiten: alternative Darstellung">
 <!ENTITY Ctr_svgfilters		"SVG-Farben für Symbole von 'Standard-Schaltflächen'">
 <!ENTITY Ctr_wincontrols	"Verschiebbare Fenster-Schaltflächen im Vollbildmodus">
 <!ENTITY Ctr_puibuttonsep	"Menüschaltfläche">
@@ -133,7 +134,7 @@
 <!ENTITY Ctr_puibut_r_sep	"Trennlinie rechts">
 <!ENTITY Ctr_html5warning	"HTML5-Vollbildwarnung">
 <!ENTITY Ctr_oldtoplevimg	"Klassische 'Bilddarstellung' auf weißem Hintergrund">
-<!ENTITY Ctr_altalertbox	"'Benachrichtigungs-Box': alternative Darstellung">
+<!ENTITY Ctr_altalertbox	"Benachrichtigungs-Box: alternative Darstellung">
 <!ENTITY Ctr_emptygfavico	"Allgemeines Lesezeichensymbol ersetzen">
 <!ENTITY Ctr_mstatusbar		"Statusbereich: sichtbar und verschiebbar">
 <!ENTITY Ctr_mstatusbars4e	"Statusbereich wird von 'Status-4-Evar' kontrolliert">
@@ -186,6 +187,7 @@
 <!ENTITY Ctr_bmbutton		"Lesezeichen-Menüschaltfläche">
 <!ENTITY Ctr_hiderecentbm	"Lesezeichen-Pop-up: zuletzt hinzugefügte Lesezeichen verstecken">
 <!ENTITY Ctr_hideeditbm		"Lesezeichen-Stern: Pop-up verstecken (wenn Seite noch kein Lesezeichen ist)">
+<!ENTITY Ctr_oldplacesbut	"Leisten-Lesezeichen: Alte Darstellung">
 <!ENTITY Ctr_bmbutpanelm	"Aufklappmenü: 'Panel'-Darstellung">
 <!ENTITY Ctr_bmbunsortbm	"Aufklappmenü: 'Weitere Lesezeichen'-Menü anzeigen">
 <!ENTITY Ctr_bmbunsortbm2	"Menü über den Lesezeichen">
@@ -275,6 +277,7 @@
 <!ENTITY Ctr_autocompl_sep	"Trennlinie zwischen den Ergebnissen anzeigen">
 <!ENTITY Ctr_urlbar_uc		"'Vereinigte Autovervollständigung' deaktivieren">
 <!ENTITY Ctr_lbsugresi		"Höhenlimit deaktivieren">
+<!ENTITY Ctr_cresultshcb	"Eigenes Höhenlimit setzen: ">
 <!ENTITY Ctr_lbsugres		"Anzahl der Vorschläge">
 <!ENTITY Ctr_lbsbradius		"Benutzerdefinierte Krümmung für Adressleisten- und Suchleistenrand">
 
@@ -373,6 +376,8 @@
 <!ENTITY Ctr_fx50findbarhl	"Das Deaktivieren dieser Optionen entfernt die 'Seitensuchhervorhebung'.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
 <!ENTITY Ctr_fx50flyweb		"Das Deaktivieren dieser Option entfernt 'Flyweb'.">
+<!ENTITY Ctr_e_oneoffsearch	"Autovervollständigungs-Pop-ups Suchauswahl">
+<!ENTITY Ctr_fx51OOSeach	"Das Deaktivieren dieser Optionen entfernt die Suchauswahl des Autovervollständigungs-Pop-ups.">
 
 
 <!ENTITY Ctr_pw_settings	"Einstellungen">
