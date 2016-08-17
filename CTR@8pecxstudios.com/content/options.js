@@ -412,7 +412,6 @@ classicthemerestorerjso.ctr = {
 	}
 
 	if (this.appversion < 47) {
-	  document.getElementById('ctraddon_pw_hiderecentbm').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_hideeditbm').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_dblclnewtabdes').style.visibility = 'collapse';
 	}
@@ -434,6 +433,11 @@ classicthemerestorerjso.ctr = {
 	if (this.appversion >= 48) {
 	  document.getElementById('ctraddon_pw_urlbar_uc').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_urlbar_uc_desc').style.visibility = 'collapse';
+	}
+	
+	if (this.appversion < 49) {
+	  document.getElementById('ctraddon_pw_hiderecentbm').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_hiderecentbmdes').style.visibility = 'collapse';
 	}
 	
 	if (this.appversion >= 49) {
