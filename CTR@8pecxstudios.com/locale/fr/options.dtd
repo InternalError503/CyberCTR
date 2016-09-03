@@ -187,7 +187,7 @@
 <!ENTITY Ctr_bmbutton		"Bouton marque-pages">
 <!ENTITY Ctr_hiderecentbm	"Popup marque-pages : masquer le groupe « marqués récemment »">
 <!ENTITY Ctr_hideeditbm		"Étoile des marque-pages : masquer le menu déroulant (si la page n'a pas été marquée)">
-<!ENTITY Ctr_oldplacesbut	"Bookmarks on toolbar: old appearance">
+<!ENTITY Ctr_oldplacesbut	"Bookmark items and folders on toolbar: old appearance">
 <!ENTITY Ctr_bmbutpanelm	"Menu déroulant : apparence de menu de type « panneau »">
 <!ENTITY Ctr_bmbunsortbm	"Popup : sous menu des « marque-pages non triés »">
 <!ENTITY Ctr_bmbunsortbm2	"Menu au-dessus des marque-pages">
@@ -250,6 +250,7 @@
 <!ENTITY Ctr_urlbardropm	"Placer le dropmarker en dernier">
 <!ENTITY Ctr_urlbardropm2	"Dropmarker toujours visible">
 <!ENTITY Ctr_altreaderico	"Autres icônes du « lecteur »">
+<!ENTITY Ctr_hideurlzoom	"Hide zoom button (if present)">
 <!ENTITY Ctr_hideprbutton	"Masquer l’icône de notification quand un popup est bloqué">
 <!ENTITY Ctr_locsearchbw10	"Réduire la hauteur de la barre d’adresse et la barre de recherche (expérimental)">
 <!ENTITY Ctr_urlbar_ib		"Bouton d’identité du site">
@@ -362,20 +363,16 @@
 
 <!ENTITY Ctr_experttweaks	"Avancé">
 <!ENTITY Ctr_fx34loop		"Si ce paramètre est décoché, les fonctions d’appels et de conversations sont désactivées.">
-<!ENTITY Ctr_fx38reader		"Si ce paramètre est décoché, le « mode lecture » est desactivé et son icône est retirée de la barre d’adresse.">
 <!ENTITY Ctr_fx38pocket		"Si ce paramètre est décoché, « Pocket » est desactivé et son bouton retiré des barres d’outils.">
 <!ENTITY Ctr_fx38pocket2	"Note: Déplacer le bouton « Pocket » vers la fenêtre de personnalisation avant de désactiver cette option, permet également de l’enlever des marques pages et du menu de lecture.">
 <!ENTITY Ctr_e_loop			"Appel et conversation">
 <!ENTITY Ctr_e_readermode	"Mode de lecture d’articles">
 <!ENTITY Ctr_e_pocket		"Sac de rangement (« Pocket »)">
 <!ENTITY Ctr_e_tabsaudioico	"Icône de lecture audio sur les onglets">
-<!ENTITY Ctr_fx42tabsaudico	"Décocher cette préférence pour ne plus afficher d’icône audio sur les onglets.">
 <!ENTITY Ctr_e_containertab	"Onglets conteneurs">
-<!ENTITY Ctr_fx50containert	"Décocher ce paramètre désactive les onglets conteneurs.">
 <!ENTITY Ctr_e_findbarhl	"Surlignage avancé de la barre de recherche">
 <!ENTITY Ctr_fx50findbarhl	"Décocher ces paramètres désactive les fonctionnalités avancées de surlignage de la barre de recherche.">
 <!ENTITY Ctr_e_flyweb		"FlyWeb">
-<!ENTITY Ctr_fx50flyweb		"Décocher ce paramètre désactive « FlyWeb ».">
 <!ENTITY Ctr_e_oneoffsearch	"Sélection de recherche des fenêtres surgissantes d'autocomplétion">
 <!ENTITY Ctr_fx51OOSeach	"Décocher ce paramètre retire la sélection de recherche des fenêtres surgissantes de la barre de navigation.">
 
