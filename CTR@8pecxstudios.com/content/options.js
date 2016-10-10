@@ -1540,6 +1540,13 @@ classicthemerestorerjso.ctr = {
 
   },
 
+  openNewTabLinkFromPW: function(url) {
+	var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+					   .getService(Components.interfaces.nsIWindowMediator);
+	var mainWindow = wm.getMostRecentWindow("navigator:browser");
+	mainWindow.gBrowser.selectedTab = mainWindow.gBrowser.addTab(url);
+  },
+
 	// Need to check if json is valid. If json not valid. don't continue and show error.
 	IsJsonValid: function(aData) {
         try {
