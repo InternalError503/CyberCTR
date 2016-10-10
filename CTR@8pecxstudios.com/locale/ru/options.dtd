@@ -339,6 +339,7 @@
 <!ENTITY Ctr_nonavbarbg2	"Поддержка всех панелей инструментов в стиле Slim Chrome при использовании расширения «Beyond Australis».">
 <!ENTITY Ctr_nonavborder	"Панель закладок: добавить верхнюю границу для панели инструментов">
 <!ENTITY Ctr_nonavtbborder	"Популярные панели инструментов: удалить границы панелей инструментов">
+<!ENTITY Ctr_toptb_oldpad	"Top toolbars: old left and right paddings">
 <!ENTITY Ctr_hidesbclose	"Боковые панели: скрыть кнопку «Закрыть» на боковой панели">
 <!ENTITY Ctr_notextshadow	"Скрыть тень под шрифтами вкладок и панелей инструментов">
 <!ENTITY Ctr_chevronfix		"Панель навигации: скрыть двойную стрелку ('шеврон') в конце панели">

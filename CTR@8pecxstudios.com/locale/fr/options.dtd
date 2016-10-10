@@ -338,6 +338,7 @@
 <!ENTITY Ctr_nonavbarbg2	"Affecte toutes les barres d’outils en mode Slim Chrome du module « Beyond Australis ».">
 <!ENTITY Ctr_nonavborder	"Ajouter une bordure en haut de la barre">
 <!ENTITY Ctr_nonavtbborder	"Barres d’outils en haut: enlever les bordures">
+<!ENTITY Ctr_toptb_oldpad	"Top toolbars: old left and right paddings">
 <!ENTITY Ctr_hidesbclose	"Panneaux latéraux : masquer le bouton de fermeture">
 <!ENTITY Ctr_notextshadow	"Barres d’outils : masquer l’ombre du texte des barres d’outils et des onglets">
 <!ENTITY Ctr_chevronfix		"Barre de navigation : masquer le chevron (davantage d’outils) à la fin de la barre">

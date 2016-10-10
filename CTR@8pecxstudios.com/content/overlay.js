@@ -1985,6 +1985,11 @@ classicthemerestorerjs.ctr = {
 			else classicthemerestorerjs.ctr.loadUnloadCSS("nonavtbborder",false);
 		  break;
 		  
+		  case "toptb_oldpad":
+			if (branch.getBoolPref("toptb_oldpad") && classicthemerestorerjs.ctr.appversion >= 51) classicthemerestorerjs.ctr.loadUnloadCSS("toptb_oldpad",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("toptb_oldpad",false);
+		  break;
+
 		  case "hidesbclose":
 			if (branch.getBoolPref("hidesbclose")) classicthemerestorerjs.ctr.loadUnloadCSS("hidesbclose",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("hidesbclose",false);
@@ -4465,6 +4470,7 @@ classicthemerestorerjs.ctr = {
 		case "nonavbarbg": 			manageCSS("nonavbarbg.css");			break;
 		case "nonavborder": 		manageCSS("nonavborder.css");			break;
 		case "nonavtbborder": 		manageCSS("nonavtbborder.css");			break;
+		case "toptb_oldpad": 		manageCSS("toptb_oldpadding.css");		break;
 		case "hidesbclose": 		manageCSS("hidesidebarclose.css");		break;
 		case "notextshadow": 		manageCSS("notextshadow.css");			break;
 		case "chevronfix": 			manageCSS("chevronfix.css");			break;
