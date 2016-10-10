@@ -2877,7 +2877,8 @@ classicthemerestorerjs.ctr = {
 				case "appbutton_off":
 					classicthemerestorerjs.ctr.loadUnloadCSS("tree_style_fix",false);
 					if (menutoolbarHasAttribute.getAttribute('autohide', true)){
-						if (treeStyleCompatMode === false){Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);}else{}
+						if (!treeStyleCompatMode)
+							Services.prefs.setBoolPref("browser.tabs.drawInTitlebar", false);
 					}
 					Services.prefs.setBoolPref("extensions.classicthemerestorer.titleintitlebar", false);
 					classicthemerestorerjs.ctr.loadUnloadCSS("tabs_titlebar",false);	
