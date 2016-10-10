@@ -56,6 +56,9 @@ classicthemerestorerjs.ctr = {
   tabitasheet_hov: sheetIO,
   tabitasheet_pen: sheetIO,
   tabitasheet_unr: sheetIO,
+ 
+  tablowsheet_pen:	sheetIO,
+  tablowopa_unr:		sheetIO,
   
   aerocolors: sheetIO,
   
@@ -775,6 +778,8 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_dark_nd',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_grey',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_grey_nd',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_white_pm',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('altabico_dark_pm',false);
 		
 			if (branch.getCharPref("altabico")!="altabico_white"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("altabico"),true);
@@ -946,7 +951,7 @@ classicthemerestorerjs.ctr = {
 			if (branch.getBoolPref("backforward")) {
 			  classicthemerestorerjs.ctr.loadUnloadCSS("backforward",true);
 			  
-			  if (branch.getBoolPref("nbcompact") && classicthemerestorerjs.ctr.osstring!="Darwin" && branch.getBoolPref("smallnavbut")==false){
+			  if (branch.getBoolPref("nbcompact") && branch.getBoolPref("smallnavbut")==false){
 				classicthemerestorerjs.ctr.loadUnloadCSS("nbcompact",true);
 			  }
 			}
@@ -960,7 +965,7 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "nbcompact":
-			if (branch.getBoolPref("nbcompact") && branch.getBoolPref("backforward") && classicthemerestorerjs.ctr.osstring!="Darwin" && branch.getBoolPref("smallnavbut")==false){
+			if (branch.getBoolPref("nbcompact") && branch.getBoolPref("backforward") && branch.getBoolPref("smallnavbut")==false){
 			  classicthemerestorerjs.ctr.loadUnloadCSS("nbcompact",true);
 
 			  if (branch.getCharPref("nav_txt_ico").indexOf('iconstxt')!=-1)
@@ -1406,6 +1411,21 @@ classicthemerestorerjs.ctr = {
 			}
 		  break;
 		  
+		  case "findb_hide_ws":
+		    if (branch.getBoolPref("findb_hide_ws")) {
+				// close findbar, once mouse wheel is used
+				window.addEventListener("wheel", function() {
+				  if(!gFindBar.hidden) gFindBar.close();
+				}, false);
+				
+				// close findbar, once UP/DOWN keys are used
+				window.addEventListener("keydown", function(event) {
+				  if(event.key=="ArrowUp" || event.key=="ArrowDown")
+					if(!gFindBar.hidden) gFindBar.close();
+				}, false);
+			}
+		  break;
+		  
 		  case "nav_txt_ico":
 			classicthemerestorerjs.ctr.loadUnloadCSS('iconsbig',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('iconstxt',false);
@@ -1727,6 +1747,16 @@ classicthemerestorerjs.ctr = {
 		  case "tabfita_unr":
 			if (branch.getBoolPref("tabfita_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("tabfita_unr",false);
+		  break;
+		  
+		  case "tablowopa_pen":
+			if (branch.getBoolPref("tablowopa_pen")) classicthemerestorerjs.ctr.loadUnloadCSS("tablowopa_pen",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tablowopa_pen",false);
+		  break;
+		  
+		  case "tablowopa_unr":
+			if (branch.getBoolPref("tablowopa_unr")) classicthemerestorerjs.ctr.loadUnloadCSS("tablowopa_unr",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("tablowopa_unr",false);
 		  break;
 		  
 		  /* exclude hover settings from unloaded/pending tab */
@@ -2146,6 +2176,11 @@ classicthemerestorerjs.ctr = {
 		  case "alt_addonsp":
 			if (branch.getBoolPref("alt_addonsp")) classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("alt_addonsp",false);
+		  break;
+
+		  case "am_showrecup":
+			if (branch.getBoolPref("am_showrecup")) classicthemerestorerjs.ctr.loadUnloadCSS("am_showrecup",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("am_showrecup",false);
 		  break;
 		  
 		  case "alt_addonsm":
@@ -4360,6 +4395,8 @@ classicthemerestorerjs.ctr = {
 		case "altabico_dark_nd": 	manageCSS("alt_appbutton_icons3.css");	break;
 		case "altabico_grey": 		manageCSS("alt_appbutton_icons4.css");	break;
 		case "altabico_grey_nd": 	manageCSS("alt_appbutton_icons5.css");	break;
+		case "altabico_white_pm": 	manageCSS("alt_appbutton_icons6.css");	break;
+		case "altabico_dark_pm": 	manageCSS("alt_appbutton_icons7.css");	break;
 		case "appbutmhi": 			manageCSS("appbuthigherposition.css");  break;
 		case "appbutbdl": 			manageCSS("appbutton_borderless.css");  break;
 		
@@ -4465,6 +4502,7 @@ classicthemerestorerjs.ctr = {
 		case "am_buticons": 		manageCSS("am_buttonicons.css");		break;
 		case "am_hovshowb": 		manageCSS("am_hovshowbut.css");			break;
 		case "alt_addonsp": 		manageCSS("alt_addonspage.css");		break;
+		case "am_showrecup": 		manageCSS("am_showrecentupdates.css");	break;
 		case "alt_addonsm": 		manageCSS("alt_addonsmanager.css");		break;
 
 /*		
@@ -6466,6 +6504,40 @@ classicthemerestorerjs.ctr = {
 			  }
 
 			  applyNewSheet(this.tabitasheet_unr);
+			}
+
+		break;
+	
+		case "tablowopa_pen":
+
+			removeOldSheet(this.tablowsheet_pen);
+			
+			if(enable==true){
+				
+				this.tablowsheet_pen=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					.tabbrowser-tab[pending] {\
+					  opacity: 0.6 !important;\
+					}\
+				'), null, null);
+
+				applyNewSheet(this.tablowsheet_pen);
+			}
+
+		break;
+		
+		case "tablowopa_unr":
+
+			removeOldSheet(this.tablowopa_unr);
+			
+			if(enable==true){
+				
+				this.tablowopa_unr=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
+					.tabbrowser-tab[unread] {\
+					  opacity: 0.6 !important;\
+					}\
+				'), null, null);
+
+				applyNewSheet(this.tablowopa_unr);
 			}
 
 		break;

@@ -48,6 +48,7 @@
 <!ENTITY Ctr_tabwidthcla	"(clássica)">
 <!ENTITY Ctr_tabminheight	"Altura:">
 <!ENTITY Ctr_tabheightinfo	"Baixos valores causarão falhas no modo maximizado!">
+<!ENTITY Ctr_ctrltabprev	"Preview tabs using 'Ctrl + Tab'">
 <!ENTITY Ctr_tabmaxwidth	"Largura máxima:">
 <!ENTITY Ctr_tabminwidth	"Largura mínima:">
 <!ENTITY Ctr_tabwidthinfo	"Larguras mínimas e máximas são controladas pelo 'TabMixPlus'">
@@ -125,9 +126,9 @@
 <!ENTITY Ctr_altoptionswh	"Altura">
 <!ENTITY Ctr_altoptionsi	"A janela de opções simulada não é mais um diálogo, mas uma 'janela do navegador' com todas as barras de ferramentas ocultadas. O recurso 'Usar página atual' somente adicionas URLs de páginas abertas na janela atual, que é somente 'about:preferences' neste caso. O botão 'Opções' na barra de ferramentas foi substituída por uma nova para ser possível abrir as opções em uma janela.">
 <!ENTITY Ctr_options_rem	"Lembrar última categoria selecionada">
-<!ENTITY Ctr_aboutpages		"General 'about:' pages: alternative appearance">
+<!ENTITY Ctr_aboutpages		"Páginas 'about:' gerais: aparência alternativa">
 <!ENTITY Ctr_svgfilters		"Cores sVG para os ícones dos botões da barra de ferramentas padrão">
-<!ENTITY Ctr_wincontrols	"Controles móveis da janela em tela cheia">
+<!ENTITY Ctr_wincontrols	"Controles móveis da janela para o modo tela cheia">
 <!ENTITY Ctr_puibuttonsep	"Separador de botões do menu">
 <!ENTITY Ctr_puibut_no_sep	"Oculto">
 <!ENTITY Ctr_puibut_l_sep	"Esquerda">
@@ -149,7 +150,9 @@
 <!ENTITY Ctr_navlargeicons	"Ícones grandes">
 <!ENTITY Ctr_nbisizedelay0	"Atraso (em msegs.) na execução">
 <!ENTITY Ctr_nbisizedelay	"msegs. (1000 msegs. = 1 seg.)">
-<!ENTITY Ctr_findbar		"Barra de pesquisas">
+<!ENTITY Ctr_findbar		"Findbar">
+<!ENTITY Ctr_findbar_hws	"Close findbar when scrolling page">
+<!ENTITY Ctr_findbarpos		"Barra de pesquisas">
 <!ENTITY Ctr_findbar_def	"Posição padrão">
 <!ENTITY Ctr_findbar_top	"Posição no topo">
 <!ENTITY Ctr_findbar_topa	"Posição no topo - alternativa">
@@ -175,6 +178,7 @@
 <!ENTITY Ctr_osearch_dm		"Marcador pequeno">
 <!ENTITY Ctr_addonmanager	"Gerenciador de complementos">
 <!ENTITY Ctr_alt_addonsp	"Página 'Mais informações': ordem alternativa">
+<!ENTITY Ctr_am_showrecup	"Always show 'Recent updates' category">
 <!ENTITY Ctr_alt_addonsm	"Aparência alternativa">
 <!ENTITY Ctr_am_nowarning	"Lista de complementos: ocultar avisos">
 <!ENTITY Ctr_am_compact		"Lista de complementos: visualização compacta">
@@ -187,7 +191,8 @@
 <!ENTITY Ctr_bmbutton		"Botão do menu de favoritos">
 <!ENTITY Ctr_hiderecentbm	"Popup de favoritos: ocultar favoritos adicionados recentemente">
 <!ENTITY Ctr_hideeditbm		"Estrela de favoritos: ocultar popup (se a página não está nos favoritos)">
-<!ENTITY Ctr_oldplacesbut	"Bookmark items and folders on toolbar: old appearance">
+<!ENTITY Ctr_oldplacesbut	"Itens e pastas de favoritos na barra de ferramentas: aparência antiga">
+<!ENTITY Ctr_dl_pm_drop		"Download buttons panel: show dropmarker">
 <!ENTITY Ctr_bmbutpanelm	"Popup: aparência do menu do painel">
 <!ENTITY Ctr_bmbunsortbm	"Popup: menu 'outros favoritos'">
 <!ENTITY Ctr_bmbunsortbm2	"Menu acima dos favoritos">
@@ -213,7 +218,7 @@
 <!ENTITY Ctr_navthrobber2	"Adicione uma uRL ou deixe em branco">
 <!ENTITY Ctr_anewtaburl		"URL da página 'Nova Aba'">
 <!ENTITY Ctr_anewtaburlcb	"URL personalizada da página 'Nova Aba' (padrão: 'about:newtab')">
-<!ENTITY Ctr_anewtaburlpcb	"Custom private new tab page url (default: 'about:privatebrowsing')">
+<!ENTITY Ctr_anewtaburlpcb	"URL personalizada da página nova aba privativa (padrão: 'about:privatebrowsing')">
 
 <!ENTITY Ctr_tab_tf_info1	"Nomes de cores, códigos hex., valores rgb(a) e hsl(a) são suportados.">
 <!ENTITY Ctr_tab_tf_info2	"As entradas não serão validadas!">
@@ -237,6 +242,7 @@
 <!ENTITY Ctr_italic			"Itálico">
 <!ENTITY Ctr_underlined		"Sublinhado">
 <!ENTITY Ctr_notabhov		"As configurações habilitadas substituirão as configurações 'flutuantes'">
+<!ENTITY Ctr_tablowopa		"Reduce tab visibility">
 <!ENTITY Ctr_tabc_act_tb	"Cor de fundo nas barras de ferramentas">
 
 <!ENTITY Ctr_urlbar			"Barra de URLs">
@@ -250,7 +256,7 @@
 <!ENTITY Ctr_urlbardropm	"Mover marcador para a última posição possível">
 <!ENTITY Ctr_urlbardropm2	"Tornar marcador sempre visível">
 <!ENTITY Ctr_altreaderico	"Ícones alternativos do 'Leitor'">
-<!ENTITY Ctr_hideurlzoom	"Hide zoom button (if present)">
+<!ENTITY Ctr_hideurlzoom	"Ocultar botão de zoom (se disponível)">
 <!ENTITY Ctr_hideprbutton	"Ocultar o Ícone de notificação quando um pop-up ficar bloqueado">
 <!ENTITY Ctr_locsearchbw10	"Reduzir altura das barras de localização e barras de pesquisa (experimental)">
 <!ENTITY Ctr_urlbar_ib		"Botão de identidade do site (caixa de identidade)">
@@ -278,7 +284,7 @@
 <!ENTITY Ctr_autocompl_sep	"Exibir separador entre resultados">
 <!ENTITY Ctr_urlbar_uc		"Desativar recurso 'auto completar unificado'">
 <!ENTITY Ctr_lbsugresi		"Desativar limite de altura">
-<!ENTITY Ctr_cresultshcb	"Custom height limit: ">
+<!ENTITY Ctr_cresultshcb	"Limite de altura personalizado: ">
 <!ENTITY Ctr_lbsugres		"Número de resultados">
 <!ENTITY Ctr_lbsbradius		"Tamanho personalizado da borda para barra de localização e busca">
 
@@ -373,8 +379,8 @@
 <!ENTITY Ctr_e_findbarhl	"Realce da barra de localização">
 <!ENTITY Ctr_fx50findbarhl	"Desmarcar estas preferências remove os recursos de 'realce' das barra de localização.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"Autocomplete popups search selection">
-<!ENTITY Ctr_fx51OOSeach	"Unchecking this preference removes search selection from location bars autocomplete popup.">
+<!ENTITY Ctr_e_oneoffsearch	"Seleção de pesquisa no popup de preenchimento automático">
+<!ENTITY Ctr_fx51OOSeach	"Desmarcar esta preferência remove a seleção de pesquisa do popup de preenchimento automático das barras de localização.">
 
 
 <!ENTITY Ctr_pw_settings	"Configurações">

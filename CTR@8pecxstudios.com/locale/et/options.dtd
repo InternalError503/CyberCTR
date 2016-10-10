@@ -48,6 +48,7 @@
 <!ENTITY Ctr_tabwidthcla	"(klassikaline)">
 <!ENTITY Ctr_tabminheight	"Kõrgus:">
 <!ENTITY Ctr_tabheightinfo	"Madalad kõrguse väärtused põhjustavad maksimeeritud režiimis vigu!">
+<!ENTITY Ctr_ctrltabprev	"Preview tabs using 'Ctrl + Tab'">
 <!ENTITY Ctr_tabmaxwidth	"Suurim laius:">
 <!ENTITY Ctr_tabminwidth	"Vähim laius:">
 <!ENTITY Ctr_tabwidthinfo	"Kaartide laiust kontrollib TabMixPlus">
@@ -125,9 +126,9 @@
 <!ENTITY Ctr_altoptionswh	"Kõrgus">
 <!ENTITY Ctr_altoptionsi	"Simuleeritud sätete aken ei ole enam dialoogiaken, vaid peidetud tööriistaribadega 'brauseri aken'. Säte 'Kasuta aktiivset veebilehte' lisab avalehtede hulka ainult aktiivses aknas avatud lehtede aadressid, mis on antud juhul ainult 'about:preferences'. Sätete nupp tööriistaribal asendatakse uuega, et sätteid saaks aknas avada.">
 <!ENTITY Ctr_options_rem	"Jäta meelde viimati valitud kategooria">
-<!ENTITY Ctr_aboutpages		"General 'about:' pages: alternative appearance">
+<!ENTITY Ctr_aboutpages		"Üldised 'about:'-lehed: alternatiivne välimus">
 <!ENTITY Ctr_svgfilters		"Kasuta vaikimisi tööriistariba nuppude jaoks SVG-värve">
-<!ENTITY Ctr_wincontrols	"Liigutatavad akna juhtelemendid täisekraani režiimis">
+<!ENTITY Ctr_wincontrols	"Liigutatavad akna juhtelemendid täisekraani režiimi jaoks">
 <!ENTITY Ctr_puibuttonsep	"Menüünupu eraldaja">
 <!ENTITY Ctr_puibut_no_sep	"Peidetud">
 <!ENTITY Ctr_puibut_l_sep	"Vasakul">
@@ -149,7 +150,9 @@
 <!ENTITY Ctr_navlargeicons	"Suured ikoonid">
 <!ENTITY Ctr_nbisizedelay0	"Täitmise viivitus brauseri käivitumisel">
 <!ENTITY Ctr_nbisizedelay	"ms (1000 ms = 1 sekund)">
-<!ENTITY Ctr_findbar		"Otsinguriba asukoht">
+<!ENTITY Ctr_findbar		"Findbar">
+<!ENTITY Ctr_findbar_hws	"Close findbar when scrolling page">
+<!ENTITY Ctr_findbarpos		"Otsinguriba asukoht">
 <!ENTITY Ctr_findbar_def	"All (vaikimisi)">
 <!ENTITY Ctr_findbar_top	"Üleval">
 <!ENTITY Ctr_findbar_topa	"Üleval (alternatiivne sisu järjekord)">
@@ -175,6 +178,7 @@
 <!ENTITY Ctr_osearch_dm		"Väike rippmenüü avamise nupp">
 <!ENTITY Ctr_addonmanager	"Lisade haldur">
 <!ENTITY Ctr_alt_addonsp	"'Rohkem teavet' leht: alternatiivne järjestus">
+<!ENTITY Ctr_am_showrecup	"Always show 'Recent updates' category">
 <!ENTITY Ctr_alt_addonsm	"Alternatiivne välimus">
 <!ENTITY Ctr_am_nowarning	"Laienduste loendid: peida hoiatused">
 <!ENTITY Ctr_am_compact		"Laienduste loendid: kompaktne vaade">
@@ -187,7 +191,8 @@
 <!ENTITY Ctr_bmbutton		"Järjehoidjate menüü nupp">
 <!ENTITY Ctr_hiderecentbm	"Järjehoidjate hüpik: peida viimati lisatud järjehoidjad">
 <!ENTITY Ctr_hideeditbm		"Järjehoidjate täht: peida hüpik (kui leht pole järjehoidjates)">
-<!ENTITY Ctr_oldplacesbut	"Bookmark items and folders on toolbar: old appearance">
+<!ENTITY Ctr_oldplacesbut	"Järjehoidjate kirjed ja kaustad tööriistaribal: vana välimus">
+<!ENTITY Ctr_dl_pm_drop		"Download buttons panel: show dropmarker">
 <!ENTITY Ctr_bmbutpanelm	"Menüühüpik: paneelimenüü välimus">
 <!ENTITY Ctr_bmbunsortbm	"Menüühüpik: alammenüü 'Muud järjehoidjad'">
 <!ENTITY Ctr_bmbunsortbm2	"Menüü järjehoidjate kohal">
@@ -237,6 +242,7 @@
 <!ENTITY Ctr_italic			"Kaldkiri">
 <!ENTITY Ctr_underlined		"Allajoonitud">
 <!ENTITY Ctr_notabhov		"Valitud sätted tühistavad 'osutatud' sätted">
+<!ENTITY Ctr_tablowopa		"Reduce tab visibility">
 <!ENTITY Ctr_tabc_act_tb	"Tööriistaribade taustavärv">
 
 <!ENTITY Ctr_urlbar			"Aadressiriba">
@@ -250,7 +256,7 @@
 <!ENTITY Ctr_urlbardropm	"Liiguta rippmenüü avamise nupp võimalikult lõppu">
 <!ENTITY Ctr_urlbardropm2	"Tee rippmenüü avamise nupp alati nähtavaks">
 <!ENTITY Ctr_altreaderico	"Alternatiivsed 'Lugemisvaate' ikoonid">
-<!ENTITY Ctr_hideurlzoom	"Hide zoom button (if present)">
+<!ENTITY Ctr_hideurlzoom	"Peida suurenduse nupp (kui on)">
 <!ENTITY Ctr_hideprbutton	"Peida blokeeritud hüpikakende teavitusikoon">
 <!ENTITY Ctr_locsearchbw10	"Vähenda aadressiriba ja otsinguriba kõrgust (katsejärgus)">
 <!ENTITY Ctr_urlbar_ib		"Saidi identiteedi nupp (identiteedi kast)">
@@ -278,7 +284,7 @@
 <!ENTITY Ctr_autocompl_sep	"Näita tulemuste vahel eraldusjooni">
 <!ENTITY Ctr_urlbar_uc		"Keela ühtse automaatlõpetamise funktsioon 'unified autocomplete'">
 <!ENTITY Ctr_lbsugresi		"Keela kõrguse piirang">
-<!ENTITY Ctr_cresultshcb	"Custom height limit: ">
+<!ENTITY Ctr_cresultshcb	"Kõrguse kohandatud piirang: ">
 <!ENTITY Ctr_lbsugres		"Tulemuste arv">
 <!ENTITY Ctr_lbsbradius		"Aadressiriba ja otsinguriba piirjoonte kohandatud ümarus">
 
@@ -373,8 +379,8 @@
 <!ENTITY Ctr_e_findbarhl	"Otsinguribal esiletõstmine">
 <!ENTITY Ctr_fx50findbarhl	"Nendelt eelistustelt märke eemaldamine keelab otsinguribal esiletõstmise võimalused.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"Autocomplete popups search selection">
-<!ENTITY Ctr_fx51OOSeach	"Unchecking this preference removes search selection from location bars autocomplete popup.">
+<!ENTITY Ctr_e_oneoffsearch	"Otsimootorite valik automaatlõpetuse hüpikus">
+<!ENTITY Ctr_fx51OOSeach	"Sellelt eelistuselt märke eemaldamine eemaldab aadressiriba automaatlõpetuse hüpikust otsimootorite valiku.">
 
 
 <!ENTITY Ctr_pw_settings	"Sätted">
