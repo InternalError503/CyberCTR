@@ -741,6 +741,8 @@ classicthemerestorerjs.ctr = {
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_red_dark',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_salmon',false);
 			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_custom1',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_ontoolbar',false);
+			classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_buttoncolor',false);
 
 			if (branch.getCharPref("appbuttonc")!="off"){
 			  classicthemerestorerjs.ctr.loadUnloadCSS(branch.getCharPref("appbuttonc"),true);
@@ -4601,7 +4603,8 @@ classicthemerestorerjs.ctr = {
 		case "spaces_extra": 		manageCSS("spaces_extra.css");			break;
 
 
-
+ 		case "appbuttonc_ontoolbar":	manageCSS("appbuttonontoolbar.css");		break;
+ 		case "appbuttonc_buttoncolor":	manageCSS("appbuttoncolor.css");		break;
  		case "appbuttonc_default":	manageCSS("cctr/appbutton_base.css");		break;
 		case "appbuttonc_orange_dark":	manageCSS("cctr/appbutton_orange_dark.css");		break;
 		case "appbuttonc_cyan":	manageCSS("cctr/appbutton_cyan.css");		break;
@@ -4938,38 +4941,22 @@ classicthemerestorerjs.ctr = {
 				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button {\
-						  background: linear-gradient('+newColor+') !important;\
-						  border-color: rgba(83,42,6,.9) !important;\
-						  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset,\
-									  0 0 0 1px rgba(255,255,255,.25) inset !important;\
+						:root {\
+							--color-button-main: linear-gradient('+newColor+');\
 						}\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button:hover:not(:active):not([open]){\
-						  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),\
-																radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),\
-																linear-gradient('+newColor+') !important;\
-						  border-color: rgba(83,42,6,.9) !important;\
-						  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,\
-									  0 0 2px 1px rgba(250,234,169,.7) inset,\
-									  0 -1px 0 rgba(250,234,169,.5) inset !important;\
-						}\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button:hover:active,\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button[open]{\
-						  background-image: linear-gradient('+newColor+') !important;\
-						  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,\
-									  0 1px 1px rgba(0,0,0,.2) inset !important;\
-						}\
+					}\
 				'), null, null);
-			
+
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_buttoncolor',true);
 				applyNewSheet(this.appbutton_color);
 			
 			} else if(enable==true && this.prefs.getCharPref('appbuttonc')=='appbuttonc_custom') {
 				
 				var appbuttonontoolbar='';
 				
-				if(this.prefs.getBoolPref('appbuttonct'))
+				if(this.prefs.getBoolPref('appbuttonct')){
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_ontoolbar',true);
 				appbuttonontoolbar='\
-					@import url(chrome://classic_theme_restorer/content/css/appbuttonontoolbar.css);\
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
 						:root {\
@@ -4979,9 +4966,9 @@ classicthemerestorerjs.ctr = {
 						}\
 					}\
 				';
-				
+				}
+
 				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-				@import url(chrome://classic_theme_restorer/content/css/appbutton_base.css);\
 				@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 				@-moz-document url(chrome://browser/content/browser.xul), url(chrome://classic_theme_restorer/content/options.xul) {\
 					:root {\
@@ -4995,7 +4982,8 @@ classicthemerestorerjs.ctr = {
 					}\
 				'+appbuttonontoolbar+'\
 				'), null, null);
-			
+
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange',true);			
 				applyNewSheet(this.appbutton_color);
 			
 			}
@@ -5017,29 +5005,13 @@ classicthemerestorerjs.ctr = {
 				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button {\
-						  background: linear-gradient('+newColor+') !important;\
-						  border-color: rgba(83,42,6,.9) !important;\
-						  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset,\
-									  0 0 0 1px rgba(255,255,255,.25) inset !important;\
+						:root {\
+							--color-button-main: linear-gradient('+newColor+');\
 						}\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button:hover:not(:active):not([open]){\
-						  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),\
-																radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),\
-																linear-gradient('+newColor+') !important;\
-						  border-color: rgba(83,42,6,.9) !important;\
-						  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,\
-									  0 0 2px 1px rgba(250,234,169,.7) inset,\
-									  0 -1px 0 rgba(250,234,169,.5) inset !important;\
-						}\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button:hover:active,\
-						#navigator-toolbox #TabsToolbar #ctraddon_panelui-button #PanelUI-menu-button[open]{\
-						  background-image: linear-gradient('+newColor+') !important;\
-						  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,\
-									  0 1px 1px rgba(0,0,0,.2) inset !important;\
-						}\
+					}\
 				'), null, null);
-			
+
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_buttoncolor',true);			
 				applyNewSheet(this.appbutton_color);
 			
 			} else if(enable==true && this.prefs.getCharPref('appbuttonc')=='appbuttonc_custom1') {
@@ -5047,9 +5019,9 @@ classicthemerestorerjs.ctr = {
 				
 				var appbuttonontoolbar='';
 				
-				if(this.prefs.getBoolPref('appbuttonct'))
+				if(this.prefs.getBoolPref('appbuttonct')){
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_ontoolbar',true);
 				appbuttonontoolbar='\
-					@import url(chrome://classic_theme_restorer/content/css/appbuttonontoolbar.css);\
 					@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 					@-moz-document url(chrome://browser/content/browser.xul) {\
 						:root {\
@@ -5059,9 +5031,9 @@ classicthemerestorerjs.ctr = {
 						}\
 					}\
 				';
-			
+				}
+
 				this.appbutton_color=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-				@import url(chrome://classic_theme_restorer/content/css/appbutton_base.css);\
 				@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
 				@-moz-document url(chrome://browser/content/browser.xul), url(chrome://classic_theme_restorer/content/options.xul) {\
 					:root {\
@@ -5075,7 +5047,8 @@ classicthemerestorerjs.ctr = {
 					}\
 				'+appbuttonontoolbar+'\
 				'), null, null);
-			
+
+				classicthemerestorerjs.ctr.loadUnloadCSS('appbuttonc_orange',true);			
 				applyNewSheet(this.appbutton_color);
 			
 			}
