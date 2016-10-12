@@ -152,6 +152,7 @@
 <!ENTITY Ctr_nbisizedelay	"ms (1000 ms = 1 s)">
 <!ENTITY Ctr_findbar		"Iskalna vrstica">
 <!ENTITY Ctr_findbar_hws	"Zapri iskalno vrstico ob pomikanju po strani">
+<!ENTITY Ctr_findbar_width	"Findboxes width">
 <!ENTITY Ctr_findbarpos		"Položaj iskalne vrstice">
 <!ENTITY Ctr_findbar_def	"Spodaj (privzeto)">
 <!ENTITY Ctr_findbar_top	"Zgoraj">
@@ -339,7 +340,7 @@
 <!ENTITY Ctr_nonavbarbg2	"To vpliva na vse orodne vrstice izbire Slim Chrome dodatka 'Beyond Australis'.">
 <!ENTITY Ctr_nonavborder	"Orodna vrstica zaznamkov: dodaj zgornjo obrobo orodni vrstici">
 <!ENTITY Ctr_nonavtbborder	"Orodne vrstice na vrhu: odstrani obrobe orodnih vrstic">
-<!ENTITY Ctr_toptb_oldpad	"Top toolbars: old left and right paddings">
+<!ENTITY Ctr_toptb_oldpad	"Zgornje orodne vrstice: staro levo in desno blazinjenje">
 <!ENTITY Ctr_hidesbclose	"Stranske vrstice: skrij gumb Zapri stranske vrstice">
 <!ENTITY Ctr_notextshadow	"Orodne vrstice: skrij senco besedila orodnih vrstic in zavihkov">
 <!ENTITY Ctr_chevronfix		"Orodna vrstica za krmarjenje: skrij dvojno puščico ('Več orodij') na koncu orodne vrstice">

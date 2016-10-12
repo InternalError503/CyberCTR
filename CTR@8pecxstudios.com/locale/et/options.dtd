@@ -152,6 +152,7 @@
 <!ENTITY Ctr_nbisizedelay	"ms (1000 ms = 1 sekund)">
 <!ENTITY Ctr_findbar		"Leidmisriba">
 <!ENTITY Ctr_findbar_hws	"Lehte kerides sulge leidmisriba">
+<!ENTITY Ctr_findbar_width	"Findboxes width">
 <!ENTITY Ctr_findbarpos		"Leidmisriba asukoht">
 <!ENTITY Ctr_findbar_def	"All (vaikimisi)">
 <!ENTITY Ctr_findbar_top	"Üleval">
@@ -339,7 +340,7 @@
 <!ENTITY Ctr_nonavbarbg2	"Mõjutab kõiki laienduse 'Beyond Australis' Slim Chrome'i tööriistaribasid.">
 <!ENTITY Ctr_nonavborder	"Lisa ribale ülemine piirjoon">
 <!ENTITY Ctr_nonavtbborder	"Ülemised tööriistaribad: eemalda tööriistariba piirjooned">
-<!ENTITY Ctr_toptb_oldpad	"Top toolbars: old left and right paddings">
+<!ENTITY Ctr_toptb_oldpad	"Ülemised tööriistaribad: vana vasak- ja parempoolse tühimiku suurus">
 <!ENTITY Ctr_hidesbclose	"Külgribad: peida sulgemise nupp">
 <!ENTITY Ctr_notextshadow	"Tööriistaribad: peida tööriistariba teksti ja kaardi teksti vari">
 <!ENTITY Ctr_chevronfix		"Asukohariba: peida topeltnool ('Rohkem tööriistu') tööriistariba lõpus">
