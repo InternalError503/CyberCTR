@@ -428,6 +428,7 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_cresultshbox').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_aboutpages').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_ctrltabprev').style.visibility = 'collapse';
+	  document.getElementById('ctraddon_pw_autocompl_not').style.visibility = 'collapse';
 	}
 
 	if (this.appversion >= 48) {

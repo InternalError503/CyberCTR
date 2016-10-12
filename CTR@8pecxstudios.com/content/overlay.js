@@ -426,11 +426,11 @@ classicthemerestorerjs.ctr = {
 			  
 			  // TreeStyleTabs add-on works better with tabs not on top, so this is enabled on reset/first run
 			  AddonManager.getAddonByID('treestyletab@piro.sakura.ne.jp', function(addon) {
-			if(addon && addon.isActive && classicthemerestorerjs.ctr.osstring=="WINNT"){
-				Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabsontop','false');
-				classicthemerestorerjs.ctr.fixThatTreeStyleBro();			
-				Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);											
-					}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);}
+				if(addon && addon.isActive && classicthemerestorerjs.ctr.osstring=="WINNT"){
+				  Services.prefs.getBranch("extensions.classicthemerestorer.").setCharPref('tabsontop','false');
+				  classicthemerestorerjs.ctr.fixThatTreeStyleBro();			
+				  Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);											
+				}else{ Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", false);}
 				
 			  });
 			  
@@ -1309,7 +1309,7 @@ classicthemerestorerjs.ctr = {
 		  break;
 
 		  case "altautocompl":
-			if (branch.getBoolPref("altautocompl") && classicthemerestorerjs.ctr.appversion >= 48) classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",true);
+			if (branch.getBoolPref("altautocompl") && branch.getBoolPref("autocompl_not")==false && classicthemerestorerjs.ctr.appversion >= 48) classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",false);
 		  break;
 		  
@@ -1389,6 +1389,26 @@ classicthemerestorerjs.ctr = {
 			  if (branch.getBoolPref("autocompl_hlb")) branch.setBoolPref("autocompl_hlb",false);
 			}
 			else classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_hln",false);
+		  break;
+		  
+		  case "autocompl_not":
+			if (branch.getBoolPref("autocompl_not") && classicthemerestorerjs.ctr.appversion >= 48) {
+				
+			  if (branch.getBoolPref("altautocompl")) {
+			    classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_no_t1",false);
+				classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_no_t2",true);  // for alt ac popup
+			  } else {
+			    classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_no_t1",true); // for default ac popup
+				classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_no_t2",false);
+			  }
+			} else {
+			  classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_no_t1",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("autocompl_no_t2",false);
+			  
+			  if (branch.getBoolPref("altautocompl"))
+			    classicthemerestorerjs.ctr.loadUnloadCSS("altautocompl",true);
+			}
 		  break;
 
 		  case "autocompl_sep":
@@ -4494,6 +4514,8 @@ classicthemerestorerjs.ctr = {
 		case "autocompl_hli": 		manageCSS("alt_autocompl_hl_i.css");	break;
 		case "autocompl_hln": 		manageCSS("alt_autocompl_hl_n.css");	break;
 		case "autocompl_sep": 		manageCSS("alt_autocompl_sep.css");		break;
+		case "autocompl_no_t1": 	manageCSS("autocompl_no_title1.css");	break;
+		case "autocompl_no_t2": 	manageCSS("autocompl_no_title2.css");	break;
 		case "autocompl_rhl": 		manageCSS("alt_autocompl_rhl.css");		break;
 		case "locsearchbw10": 		manageCSS("locationsearchbarw10.css");	break;
 		case "combrelstop":			manageCSS("combrelstop.css");			break;
