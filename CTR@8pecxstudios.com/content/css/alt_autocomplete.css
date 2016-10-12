@@ -72,6 +72,10 @@
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-url, .ac-action){
 	  -moz-margin-start: 25px !important;
 	  margin-top: 1px !important;
+	}
+	
+	panel[type="autocomplete-richlistbox"] .autocomplete-richlistitem .ac-url,
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url{
 	  padding-bottom: 1px !important;
 	}
 
