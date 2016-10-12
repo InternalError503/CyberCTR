@@ -172,6 +172,7 @@
 <!ENTITY Ctr_ctroldsearch	"Ancienne barre de recherche">
 <!ENTITY Ctr_ctroldsearchc	"Effacer le champ de la boîte de recherche après une recherche">
 <!ENTITY Ctr_ctroldsearchr	"Revenir au moteur de recherche par défaut après une recherche">
+<!ENTITY Ctr_ctrosearchdel	"delay">
 <!ENTITY Ctr_search_oit		"Ouvrir la recherche dans un nouvel onglet">
 <!ENTITY Ctr_osearch_meoit	"Clic central : recherche dans un nouvel onglet au premier plan">
 <!ENTITY Ctr_osearch_iwidth	"Ajuster automatiquement la largeur de la fenêtre surgissante">
