@@ -40,7 +40,7 @@ pref("extensions.classicthemerestorer.hide_bf_popup",false);
 pref("extensions.classicthemerestorer.nbcompact",false);
 pref("extensions.classicthemerestorer.statusbar",true);
 pref("extensions.classicthemerestorer.noconicons",false);
-pref("extensions.classicthemerestorer.altoptions",'options_alt');
+pref("extensions.classicthemerestorer.altoptions",'options_default');
 pref("extensions.classicthemerestorer.aboutpages",false);
 pref("extensions.classicthemerestorer.svgfilters",false);
 pref("extensions.classicthemerestorer.combrelstop",false);
