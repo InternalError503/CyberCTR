@@ -2819,8 +2819,10 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "abouthomecustombg": case "abouthomecustomurl":
-			  	try{		  		
-					classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg",branch.getBoolPref("abouthomecustombg"));
+			  	try{
+						setTimeout(function() {		  		
+							classicthemerestorerjs.ctr.loadUnloadCSS("abouthome_bg",branch.getBoolPref("abouthomecustombg"));
+						}, 90);
 				} catch(e){}			
 		  break;	
 
@@ -2849,8 +2851,10 @@ classicthemerestorerjs.ctr = {
 		  break;
 		  
 		  case "aboutnewtabcustombg": case "aboutnewtabcustomurl":
-			  	try{		  			
-					classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_bg",branch.getBoolPref("aboutnewtabcustombg"));	
+			  	try{
+						setTimeout(function() {			  			
+							classicthemerestorerjs.ctr.loadUnloadCSS("aboutnewtab_bg",branch.getBoolPref("aboutnewtabcustombg"));
+						}, 90);
 				} catch(e){}			
 		  break;
 		  
