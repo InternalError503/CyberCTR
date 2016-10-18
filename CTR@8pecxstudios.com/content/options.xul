@@ -902,7 +902,7 @@
 	<box class="ctraddontabpanel" orient="vertical" id="ctraddon_appbuttonbox">
 
 	  <hbox><checkbox label="&Ctr_tabsintitlebar;"	preference="ctraddon_tabsintitlebar" id="ctraddon_tabs_in_titlebar" tooltiptext="browser.tabs.drawInTitlebar"/></hbox>
-	  <description class="ctraddonsuboption">about:config &gt;&gt; browser.tabs.drawInTitlebar</description>
+	  <description class="ctraddonsuboption ctraddon_winmaconly">about:config &gt;&gt; browser.tabs.drawInTitlebar</description>
 
 	  <groupbox>
 		<caption  label="&Ctr_appbutton;" class="ctraddon_topic" id="ctraddon_pw_appbuttonname"/>
