@@ -6621,14 +6621,22 @@ classicthemerestorerjs.ctr = {
 			removeOldSheet(this.abouthome_bg);
 			
 			if(enable==true && this.prefs.getBoolPref("abouthomecustombg")){
+				var IsDefault = "";
+				if (this.prefs.getCharPref("abouthome") === "default"){
+					IsDefault = '\
+						html{\
+							background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
+						}\
+					';
+				}
 	
 				this.abouthome_bg=ios.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
 					@namespace url(http://www.w3.org/1999/xhtml);\
 					@-moz-document url("about:home") {\
-						html,\
-						body{\
-							background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
+						:root{\
+							--main-background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
 						}\
+						'+ IsDefault +'\
 					}\
 				'), null, null);
 				
