@@ -124,8 +124,8 @@
 <!ENTITY Ctr_altoptionsd	"Вид по умолчанию">
 <!ENTITY Ctr_altoptionsp	"Альтернативный вид">
 <!ENTITY Ctr_altoptionsw	"Открывать страницу «Настройки» в окне">
-<!ENTITY Ctr_altoptions_hm	"horizontal menu">
-<!ENTITY Ctr_altoptions_vm	"vertical menu">
+<!ENTITY Ctr_altoptions_hm	"горизонтальное меню">
+<!ENTITY Ctr_altoptions_vm	"вертикальное меню">
 <!ENTITY Ctr_altoptionsww	"Ширина">
 <!ENTITY Ctr_altoptionswh	"Высота">
 <!ENTITY Ctr_altoptionsi	"Окно настроек больше не является диалогом – теперь это полноценное 'окно браузера', в котором скрыты все панели инструментов. Опция 'Использовать текущие страницы' добавляет адреса открытых в текущем окне страниц, то есть в данном случае 'about:preferences'. Старая кнопка панели инструментов 'Настройки' заменяется новой, позволяющей открывать соответствующее окно">
@@ -285,7 +285,7 @@
 <!ENTITY Ctr_autocomplete	"Автозавершение">
 <!ENTITY Ctr_altautocompl	"Альтернативный внешний вид">
 <!ENTITY Ctr_autocompl_it	"Удалить пункты «Искать в...» и «Посетить» (при наличии)">
-<!ENTITY Ctr_acompl_search	"Show search engines">
+<!ENTITY Ctr_acompl_search	"Отображать поисковые системы">
 <!ENTITY Ctr_autocompl_hl	"Подсветка найденных фрагментов текста">
 <!ENTITY Ctr_autocompl_rhl	"Цвета Aero для подсвеченных результатов">
 <!ENTITY Ctr_autocompl_not	"Скрывать заголовок страницы">
