@@ -487,47 +487,6 @@
 				  <checkbox label="&Ctr_centered;"		preference="ctraddon_tttitlebar_c" id="ctraddon_pw_tttitlebar_c"/>
 				</hbox>
 				
-				<description class="ctraddon_font1">&Ctr_emptytfavico;</description>
-				<radiogroup preference="ctraddon_emptyfavico_t" id="ctraddon_pw_emptyfavico_t" orient="horizontal" value="">
-					<radio value="emptyfavico_t_none"	label="&Ctr_emptytfavico_n;" id="ctraddon_emptyfavico_t_none"/>
-					<radio value="emptyfavico_t_gen"	label="&Ctr_tabwidthdef;"	id="ctraddon_emptyfavico_t_gen"/>
-					<radio value="emptyfavico_t_gen2"	label=""	id="ctraddon_emptyfavico_t_gen2"/>
-					<radio value="emptyfavico_t_dot"	label=""	id="ctraddon_emptyfavico_t_dot"/>
-					<radio value="emptyfavico_t_dot2"	label=""	id="ctraddon_emptyfavico_t_dot2"/>
-					<radio value="emptyfavico_t_sheet"	label=""	id="ctraddon_emptyfavico_t_sheet"/>
-				</radiogroup>
-				
-				<checkbox label="&Ctr_noemptypticon;"	preference="ctraddon_noemptypticon" id="ctraddon_pw_tab_noemptypticon"/>
-				<radiogroup preference="ctraddon_tabthrobber" id="ctraddon_pw_tabthrobber" orient="horizontal" value="">
-					<radio value="throbber_default" label="&Ctr_tabthrobber;" id="ctraddon_closeicon_def"/>
-					<radio value="throbber_alt"		label=""	id="ctraddon_pw_tabthrobber_alt"/>
-					<radio value="throbber_fx39"	label=""	id="ctraddon_pw_tabthrobber_f39"/>
-					<radio value="throbber_nav"		label=""	id="ctraddon_pw_tabthrobber_nav"/>
-		 <!--- CyberCTR customization settings -->
-					<radio value="throbber_alt1"	label=""	id="ctraddon_pw_throbber_loading_1"/>
-					<radio value="throbber_alt2"	label=""	id="ctraddon_pw_throbber_loading_2"/>
-					<radio value="throbber_alt3"	label=""	id="ctraddon_pw_throbber_loading_3"/>
-					<radio value="throbber_alt4"	label=""	id="ctraddon_pw_throbber_loading_4"/>
-					<radio value="throbber_alt5"	label=""	id="ctraddon_pw_throbber_loading_5"/>
- 		<!--- CyberCTR customization settings -->			
-				</radiogroup>
-		 <!--- CyberCTR customization settings -->
-		 		<checkbox label="&Ctr_tabthrobber_usecust.label;"	preference="ctraddon_tabthrobber_usecust" id="ctraddon_tabthrobber_usecustcb"/>			
-				<hbox>
-				  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_tabthrobber_custlb"/>
-				  <textbox id="ctraddon_tabthrobber_cust_urlbox" 
-								  preference="ctraddon_tabthrobber_cust" 
-								  size="auto" 
-								  flex="1" 
-								  placeholder="&Ctr_tabthrobber_custurlph.label;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_tabthrobber_cust_urlbox', 'tabthrobbercusturl');"/><button id="ctraddon_tabthrobber_cust_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_tabthrobber_cust_urlbox', 'tabthrobbercusturl');"/>
-				</hbox>		
-				<hbox align="center">
-				  <checkbox label="&Ctr_custtabfontsize.label;"	preference="ctraddon_custtabfontsize" id="ctraddon_custtabfontsizel"/>
-				  <textbox size="2" maxlength="2" preference="ctraddon_ctabfontsize" type="number" min="2" max="30" id="ctraddon_ctabfontsizep"/>
-		  <label value="px"/>
-				</hbox>	
- 		<!--- CyberCTR customization settings -->
-				
 				<description id="ctraddon_pw_tabwidthinfo"  class="ctraddon_topic">&Ctr_tabwidthinfo;</description>
 				<description id="ctraddon_pw_tabwidthinfo2" class="ctraddon_topic">&Ctr_tabwidthinfo2;</description>
 				<description id="ctraddon_pw_tabwidthinfo3" class="ctraddon_topic">&Ctr_tabwidthinfo3;</description>
@@ -559,13 +518,59 @@
 				  <label value="px"/>
 				</hbox>
 				<description id="ctraddon_pw_tabheightinfo" class="ctraddon_topic">&Ctr_tabheightinfo;</description>
+
+				<checkbox label="&Ctr_e_tabsaudioico;" preference="ctraddon_tabsaudioico" id="ctraddon_pw_tabsaudioico"/>
+				<description class="ctraddonsuboption">about:config &gt;&gt; browser.tabs.showAudioPlayingIcon</description>
 				
 				<checkbox label="&Ctr_ctrltabprev;" preference="ctraddon_ctrltabprev" id="ctraddon_pw_ctrltabprev" class="ctraddon_new_in_v48"/>
 				<description class="ctraddonsuboption">about:config &gt;&gt; browser.ctrlTab.previews</description>
 				
 				<checkbox label="&Ctr_tabanimation;" preference="ctraddon_tabsanimate"/>
 				<description class="ctraddonsuboption">about:config &gt;&gt; browser.tabs.animate</description>
+				<checkbox label="&Ctr_noemptypticon;"	preference="ctraddon_noemptypticon" id="ctraddon_pw_tab_noemptypticon"/>
 
+				<description class="ctraddon_font1">&Ctr_emptytfavico;</description>
+				<radiogroup preference="ctraddon_emptyfavico_t" id="ctraddon_pw_emptyfavico_t" orient="horizontal" value="">
+					<radio value="emptyfavico_t_none"	label="&Ctr_emptytfavico_n;" id="ctraddon_emptyfavico_t_none"/>
+					<radio value="emptyfavico_t_gen"	label="&Ctr_tabwidthdef;"	id="ctraddon_emptyfavico_t_gen"/>
+					<radio value="emptyfavico_t_gen2"	label=""	id="ctraddon_emptyfavico_t_gen2"/>
+					<radio value="emptyfavico_t_dot"	label=""	id="ctraddon_emptyfavico_t_dot"/>
+					<radio value="emptyfavico_t_dot2"	label=""	id="ctraddon_emptyfavico_t_dot2"/>
+					<radio value="emptyfavico_t_sheet"	label=""	id="ctraddon_emptyfavico_t_sheet"/>
+				</radiogroup>
+
+				<description class="ctraddon_font1">&Ctr_tabthrobber;</description>
+				<radiogroup preference="ctraddon_tabthrobber" id="ctraddon_pw_tabthrobber" orient="horizontal" value="">
+					<radio value="throbber_default" label="&Ctr_tabwidthdef;" id="ctraddon_pw_tabthrobber_def"/>
+					<radio value="throbber_alt"		label="" id="ctraddon_pw_tabthrobber_alt"/>
+					<radio value="throbber_fx39"	label="" id="ctraddon_pw_tabthrobber_f39"/>
+					<radio value="throbber_ub"		label="" id="ctraddon_pw_tabthrobber_ub"/>
+					<radio value="throbber_nav"		label="" id="ctraddon_pw_tabthrobber_nav"/>
+		 <!--- CyberCTR customization settings -->
+					<radio value="throbber_alt1"	label=""	id="ctraddon_pw_throbber_loading_1"/>
+					<radio value="throbber_alt2"	label=""	id="ctraddon_pw_throbber_loading_2"/>
+					<radio value="throbber_alt3"	label=""	id="ctraddon_pw_throbber_loading_3"/>
+					<radio value="throbber_alt4"	label=""	id="ctraddon_pw_throbber_loading_4"/>
+					<radio value="throbber_alt5"	label=""	id="ctraddon_pw_throbber_loading_5"/>
+ 		<!--- CyberCTR customization settings -->			
+				</radiogroup>
+		 <!--- CyberCTR customization settings -->
+		 		<checkbox label="&Ctr_tabthrobber_usecust.label;"	preference="ctraddon_tabthrobber_usecust" id="ctraddon_tabthrobber_usecustcb"/>			
+				<hbox>
+				  <label value="&ctr_abouthome.custombgurl;" id="ctraddon_tabthrobber_custlb"/>
+				  <textbox id="ctraddon_tabthrobber_cust_urlbox" 
+								  preference="ctraddon_tabthrobber_cust" 
+								  size="auto" 
+								  flex="1" 
+								  placeholder="&Ctr_tabthrobber_custurlph.label;" ondblclick="classicthemerestorerjso.ctr.selectImage('ctraddon_tabthrobber_cust_urlbox', 'tabthrobbercusturl');"/><button id="ctraddon_tabthrobber_cust_browse" label="&ctr_abouthome.custombgbrowse;" oncommand="classicthemerestorerjso.ctr.selectImage('ctraddon_tabthrobber_cust_urlbox', 'tabthrobbercusturl');"/>
+				</hbox>		
+				<hbox align="center">
+				  <checkbox label="&Ctr_custtabfontsize.label;"	preference="ctraddon_custtabfontsize" id="ctraddon_custtabfontsizel"/>
+				  <textbox size="2" maxlength="2" preference="ctraddon_ctabfontsize" type="number" min="2" max="30" id="ctraddon_ctabfontsizep"/>
+		  <label value="px"/>
+				</hbox>	
+ 		<!--- CyberCTR customization settings -->
+				
 			  </groupbox>
 
 		  </tabpanel>
@@ -1305,9 +1310,10 @@
 
 		<radiogroup preference="ctraddon_altoptions" id="ctraddon_altoptions_list" orient="vertical" value="">
 			<radio value="options_default"	label="&Ctr_altoptionsd;" id="ctraddon_pw_altoptions_default" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_default');"/>
-			<radio value="options_alt"	 	label="&Ctr_altoptionsp;" id="ctraddon_pw_options_alt" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt');"/>
-			<radio value="options_alt2"	 	label="&Ctr_altoptionsp; (v2)" id="ctraddon_pw_options_alt2" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt2');"/>
-			<radio value="options_alt3"	 	label="&Ctr_altoptionsp; (v3)" id="ctraddon_pw_options_alt3" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt3');"/>
+			<radio value="options_alt"	 	label="&Ctr_altoptionsp; [&Ctr_altoptions_vm;]" id="ctraddon_pw_options_alt" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt');"/>
+			<radio value="options_alt2"	 	label="&Ctr_altoptionsp; [&Ctr_altoptions_hm;]" id="ctraddon_pw_options_alt2" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt2');"/>
+			<radio value="options_alt3"	 	label="&Ctr_altoptionsp; (v2) [&Ctr_altoptions_hm;]" id="ctraddon_pw_options_alt3" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt3');"/>
+			<radio value="options_alt4"	 	label="&Ctr_altoptionsp; (v3) [&Ctr_altoptions_vm;]" id="ctraddon_pw_options_alt4" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_alt4');"/>
 			<radio value="options_win"		label="&Ctr_altoptionsw;" id="ctraddon_pw_options_win" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_win');"/>
 			<radio value="options_win_alt"	label="&Ctr_altoptionsw; (v2)" id="ctraddon_pw_options_win_alt" oncommand="classicthemerestorerjso.ctr.currentAboutPrefs('options_win_alt');"/>
 		</radiogroup>
@@ -1460,7 +1466,7 @@
 			<groupbox>
 
 				<caption  label="&Ctr_autocomplete;" class="ctraddon_topic"/>
-				<checkbox label="&Ctr_altautocompl;" preference="ctraddon_altautocompl"  id="ctraddon_pw_altautocompl" class="ctraddon_new_in_v48" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
+				<checkbox label="&Ctr_altautocompl; &Ctr_tabwidthcla;" preference="ctraddon_altautocompl"  id="ctraddon_pw_altautocompl" class="ctraddon_new_in_v48" oncommand="classicthemerestorerjso.ctr.needsBrowserRestart()"/>
 				<checkbox label="&Ctr_autocompl_it;" preference="ctraddon_autocompl_it2" id="ctraddon_pw_autocompl_it2" class="ctraddon_new_in_v50"/>
 				<checkbox label="&Ctr_urlbar_uc;" preference="ctraddon_urlbar_uc" id="ctraddon_pw_urlbar_uc"/>
 				<description class="ctraddonsuboption" id="ctraddon_pw_urlbar_uc_desc">about:config &gt;&gt; browser.urlbar.unifiedcomplete</description>
