@@ -16,6 +16,7 @@
 <!ENTITY Ctr_rr				"¡Requiere reiniciar!">
 <!ENTITY Ctr_window			"ventana">
 <!ENTITY Ctr_centered		"Centrado">
+<!ENTITY Ctr_page			"Página">
 
 <!ENTITY Ctr_cuibuttons		"Botones">
 <!ENTITY Ctr_cuibutnormal	"Normales">
@@ -262,7 +263,7 @@
 <!ENTITY Ctr_hideurlzoom	"Ocultar botón de zoom (si está presente)">
 <!ENTITY Ctr_hideprbutton	"Ocultar icono de notificación cuando se bloquee una ventana emergente">
 <!ENTITY Ctr_locsearchbw10	"Reducir altura de barras de direcciones y de búsqueda (experimental)">
-<!ENTITY Ctr_urlbar_ib		"Botón de identidad del sitio (recuadro de identidad)">
+<!ENTITY Ctr_urlbar_ib		"Botón de identidad del sitio">
 <!ENTITY Ctr_ib_nohovcolor	"No mostrar color gris al señalarlo">
 <!ENTITY Ctr_ib_graycolor	"Color gris para identidades desconocidas y páginas 'about:'">
 <!ENTITY Ctr_verifiedcolors	"Botón coloreado para sitios web verificados, y conexiones seguras y no seguras">
@@ -277,12 +278,13 @@
 <!ENTITY Ctr_padlock_mod	"moderno">
 <!ENTITY Ctr_padlock_ext	"Icono de '&brandShortName;' para páginas about: válidas">
 <!ENTITY Ctr_icopageinfo	"Favicon/icono de globo-terráqueo/icono-'i': Hacer clic abre la 'ventana de información de la página'">
-<!ENTITY Ctr_lbsbsize		"Ancho personalizado para barra de direcciones y barra de búsqueda">
+<!ENTITY Ctr_lbsbsize		"Ancho personalizado">
 <!ENTITY Ctr_searchbar		"Barra de búsqueda">
 <!ENTITY Ctr_autocomplete	"Ménu emergente de autocompletado">
 <!ENTITY Ctr_urlbar_uc		"Deshabilitar 'Autocompletado unificado'">
 <!ENTITY Ctr_altautocompl	"Apariencia alternativa">
 <!ENTITY Ctr_autocompl_it	"Eliminar los elementos 'Buscar con...' y 'Visitar' (si están presentes)">
+<!ENTITY Ctr_acompl_search	"Mostrar motores de búsqueda">
 <!ENTITY Ctr_autocompl_hl	"Resaltado de coincidencias">
 <!ENTITY Ctr_autocompl_rhl	"Colores Aero para resultados destacados">
 <!ENTITY Ctr_autocompl_not	"Ocultar título de página">
@@ -290,7 +292,7 @@
 <!ENTITY Ctr_lbsugresi		"Deshabilitar límite de altura">
 <!ENTITY Ctr_cresultshcb	"Límite de altura personalizado: ">
 <!ENTITY Ctr_lbsugres		"Número de resultados">
-<!ENTITY Ctr_lbsbradius		"Radio de borde redondeado personalizado para barra de direcciones y barra de búsqueda">
+<!ENTITY Ctr_lbsbradius		"Radio de borde redondeado personalizado">
 
 <!ENTITY Ctr_menubar_items	"Posición de los elementos del menú">
 <!ENTITY Ctr_extrabar		"Barras de herramientas adicionales">
@@ -354,14 +356,13 @@
 <!ENTITY Ctr_lessaddonsbar	"Reducir altura">
 <!ENTITY Ctr_addonbarfs		"En modo pantalla completa">
 
-<!ENTITY Ctr_animation		"Animación">
 <!ENTITY Ctr_tabthrobber	"Imagen predeterminada durante la carga">
-<!ENTITY Ctr_bmanimation	"Al añadir nuevos marcadores">
-<!ENTITY Ctr_pananimation	"De la apertura de menús de panel">
-<!ENTITY Ctr_tabanimation	"De la apertura/cierre de pestañas">
-<!ENTITY Ctr_dlanimation	"De las notificaciones de descarga">
-<!ENTITY Ctr_fsanimation	"Del cambio a pantalla completa">
-<!ENTITY Ctr_fsaduration	"Del cambio a pantalla completa para contenidos HTML5">
+<!ENTITY Ctr_bmanimation	"Animación: Al añadir nuevos marcadores">
+<!ENTITY Ctr_pananimation	"Animación: De la apertura de menús de panel">
+<!ENTITY Ctr_tabanimation	"Animación: De la apertura/cierre de pestañas">
+<!ENTITY Ctr_dlanimation	"Animación: De las notificaciones de descarga">
+<!ENTITY Ctr_fsanimation	"Animación: Del cambio a pantalla completa">
+<!ENTITY Ctr_fsaduration	"Animación: Del cambio a pantalla completa para contenidos HTML5">
 
 <!ENTITY Ctr_toolsitem		"Elemento en el menú Herramientas">
 <!ENTITY Ctr_appmenuitem	"Elemento en el menú de la aplicación">
@@ -378,14 +379,13 @@
 <!ENTITY Ctr_fx38pocket2	"Hacerlo con el botón 'Pocket' en 'Personalizar' elimina sus menús en marcadores y vista de lectura.">
 <!ENTITY Ctr_e_loop			"Hello / Llamada y conversación / Loop">
 <!ENTITY Ctr_e_readermode	"Modo de vista de lectura">
+<!ENTITY Ctr_e_geolocation	"Geolocation">
 <!ENTITY Ctr_e_pocket		"Pocket">
 <!ENTITY Ctr_e_tabsaudioico	"Icono de reproducción de audio en las pestañas">
 <!ENTITY Ctr_e_containertab	"Pestañas contenedor">
 <!ENTITY Ctr_e_findbarhl	"Función de resaltado de la barra de herramientas de búsqueda.">
 <!ENTITY Ctr_fx50findbarhl	"Desmarcarlas deshabilita el resaltado: estilo modal (con atenuación) / de todas las coincidencias">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"Selección de búsqueda en menús emergentes de autocompletado">
-<!ENTITY Ctr_fx51OOSeach	"Desmarcar esto elimina el selector de búsqueda del menú de autocompletado de las barras de direcciones.">
 
 
 <!ENTITY Ctr_pw_settings	"Configuración">

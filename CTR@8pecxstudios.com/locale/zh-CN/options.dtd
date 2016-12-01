@@ -15,7 +15,8 @@
 <!ENTITY Ctr_windowcontrols	"最小化/最大化/关闭 (全屏)">
 <!ENTITY Ctr_rr				"需要重启 &brandShortName;!">
 <!ENTITY Ctr_window			"window">
-<!ENTITY Ctr_centered		"Centered">
+<!ENTITY Ctr_centered		"已居中">
+<!ENTITY Ctr_page			"Page">
 
 <!ENTITY Ctr_cuibuttons		"按钮">
 <!ENTITY Ctr_cuibutnormal	"标准">
@@ -153,7 +154,7 @@
 <!ENTITY Ctr_nbisizedelay	"毫秒 (1000 毫秒 = 1 秒)">
 <!ENTITY Ctr_findbar		"查找栏">
 <!ENTITY Ctr_findbar_hws	"滚动页面时关闭查找栏">
-<!ENTITY Ctr_findbar_width	"Findboxes width: ">
+<!ENTITY Ctr_findbar_width	"查找框宽度: ">
 <!ENTITY Ctr_findbarpos		"查找栏位置">
 <!ENTITY Ctr_findbar_def	"底部(默认)">
 <!ENTITY Ctr_findbar_top	"顶部">
@@ -173,7 +174,7 @@
 <!ENTITY Ctr_ctroldsearch	"旧式搜索">
 <!ENTITY Ctr_ctroldsearchc	"搜索后清除搜索框">
 <!ENTITY Ctr_ctroldsearchr	"搜索后重置为列表中的第一个搜索引擎">
-<!ENTITY Ctr_ctrosearchdel	"delay">
+<!ENTITY Ctr_ctrosearchdel	"延迟">
 <!ENTITY Ctr_search_oit		"在新标签页中搜索">
 <!ENTITY Ctr_osearch_meoit	"中键点击: 在新的“前台标签页”中搜索">
 <!ENTITY Ctr_osearch_iwidth	"自动调整弹出框宽度">
@@ -262,7 +263,7 @@
 <!ENTITY Ctr_hideurlzoom	"隐藏缩放按钮(如果存在)">
 <!ENTITY Ctr_hideprbutton	"当弹出窗口被阻止时隐藏通知图标">
 <!ENTITY Ctr_locsearchbw10	"减小地址栏与搜索栏高度(实验性)">
-<!ENTITY Ctr_urlbar_ib		"网站身份标识按钮 (身份标识框)">
+<!ENTITY Ctr_urlbar_ib		"网站身份标识按钮">
 <!ENTITY Ctr_ib_nohovcolor	"鼠标悬停时不显示灰色">
 <!ENTITY Ctr_ib_graycolor	"未知网站标识与Chrome页面显示灰色">
 <!ENTITY Ctr_verifiedcolors	"已验证站点，安全站点和不安全站点显示不同颜色按钮">
@@ -277,20 +278,21 @@
 <!ENTITY Ctr_padlock_mod	"现代">
 <!ENTITY Ctr_padlock_ext	"合法的 'about' 页面显示 '&brandShortName;' 图标">
 <!ENTITY Ctr_icopageinfo	"网站图标/地球/“i”图标: “点击” 打开 “页面信息窗口”">
-<!ENTITY Ctr_lbsbsize		"自定义地址栏和搜索栏的宽度">
+<!ENTITY Ctr_lbsbsize		"Custom width">
 <!ENTITY Ctr_searchbar		"搜索栏">
 <!ENTITY Ctr_autocomplete	"自动完成弹出框">
 <!ENTITY Ctr_altautocompl	"备选的外观">
 <!ENTITY Ctr_autocompl_it	"移除 “使用...搜索” 和 “访问” 项目 (如果存在的话)">
+<!ENTITY Ctr_acompl_search	"显示搜索引擎">
 <!ENTITY Ctr_autocompl_hl	"文本匹配时高亮">
 <!ENTITY Ctr_autocompl_rhl	"高亮结果使用 Aero 颜色">
-<!ENTITY Ctr_autocompl_not	"Hide page title">
+<!ENTITY Ctr_autocompl_not	"隐藏页面标题">
 <!ENTITY Ctr_autocompl_sep	"在结果之间显示分隔符">
 <!ENTITY Ctr_urlbar_uc		"禁用 “统一自动完成” 功能">
 <!ENTITY Ctr_lbsugresi		"禁用高度限制">
 <!ENTITY Ctr_cresultshcb	"自定义高度限制: ">
 <!ENTITY Ctr_lbsugres		"结果数量">
-<!ENTITY Ctr_lbsbradius		"自定义地址栏与搜索栏边框弧度">
+<!ENTITY Ctr_lbsbradius		"Custom border roundness">
 
 <!ENTITY Ctr_menubar_items	"菜单项目位置">
 <!ENTITY Ctr_extrabar		"附加工具栏">
@@ -354,7 +356,6 @@
 <!ENTITY Ctr_lessaddonsbar	"减少高度">
 <!ENTITY Ctr_addonbarfs		"在全屏模式">
 
-<!ENTITY Ctr_animation		"动画">
 <!ENTITY Ctr_tabthrobber	"默认正在加载图片">
 <!ENTITY Ctr_bmanimation	"加入书签动画">
 <!ENTITY Ctr_pananimation	"打开面板动画">
@@ -378,14 +379,13 @@
 <!ENTITY Ctr_fx38pocket2	"注意: 在禁用该选项前移动“Pocket”按钮到 “定制面板” 同时会从书签和阅读菜单移除“Pocket”">
 <!ENTITY Ctr_e_loop			"呼叫与会话">
 <!ENTITY Ctr_e_readermode	"阅读模式">
+<!ENTITY Ctr_e_geolocation	"Geolocation">
 <!ENTITY Ctr_e_pocket		"Pocket">
 <!ENTITY Ctr_e_tabsaudioico	"标签页上显示正在播放音频图标">
 <!ENTITY Ctr_e_containertab	"容器标签页">
 <!ENTITY Ctr_e_findbarhl	"搜索栏高亮">
 <!ENTITY Ctr_fx50findbarhl	"不选中此项以移除搜索栏“高亮”功能。">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"自动完成弹出搜索">
-<!ENTITY Ctr_fx51OOSeach	"不选中此项以从地址栏自动完成弹出框中移除搜索选择。">
 
 
 <!ENTITY Ctr_pw_settings	"设置">

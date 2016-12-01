@@ -15,7 +15,8 @@
 <!ENTITY Ctr_windowcontrols	"Skrči/Razpni/Zapri (celozaslonski način)">
 <!ENTITY Ctr_rr				"Zahtevan je ponovni zagon!">
 <!ENTITY Ctr_window			"okno">
-<!ENTITY Ctr_centered		"Centered">
+<!ENTITY Ctr_centered		"Na sredini">
+<!ENTITY Ctr_page			"Stran">
 
 <!ENTITY Ctr_cuibuttons		"Gumbi">
 <!ENTITY Ctr_cuibutnormal	"Običajno">
@@ -173,7 +174,7 @@
 <!ENTITY Ctr_ctroldsearch	"Staro iskanje">
 <!ENTITY Ctr_ctroldsearchc	"Počisti iskalno polje po iskanju">
 <!ENTITY Ctr_ctroldsearchr	"Po iskanju povrni iskalnik na prvega s seznama">
-<!ENTITY Ctr_ctrosearchdel	"delay">
+<!ENTITY Ctr_ctrosearchdel	"zakasnitev">
 <!ENTITY Ctr_search_oit		"Odpri iskanje v novem zavihku">
 <!ENTITY Ctr_osearch_meoit	"Srednji kliki: išči v novem 'zavihku v ospredju'">
 <!ENTITY Ctr_osearch_iwidth	"Samodejno prilagodi širino pojavnega okna">
@@ -262,7 +263,7 @@
 <!ENTITY Ctr_hideurlzoom	"Skrij gumb za povečavo (če je prisoten)">
 <!ENTITY Ctr_hideprbutton	"Skrij ikono obvestil ob blokiranju pojavnega okna">
 <!ENTITY Ctr_locsearchbw10	"Zmanjšaj višino naslovne in iskalne vrstice (preskusno)">
-<!ENTITY Ctr_urlbar_ib		"Gumb identitete strani (polje identitete)">
+<!ENTITY Ctr_urlbar_ib		"Gumb identitete strani">
 <!ENTITY Ctr_ib_nohovcolor	"Ob prehodu ne prikaži sive barve">
 <!ENTITY Ctr_ib_graycolor	"Siva barva za neznano identiteto in strani chrome">
 <!ENTITY Ctr_verifiedcolors	"Barve gumbov za preverjene strani, varne in nezanesljive povezave">
@@ -277,11 +278,12 @@
 <!ENTITY Ctr_padlock_mod	"sodobna">
 <!ENTITY Ctr_padlock_ext	"Ikona '&brandShortName;' za veljavne strani 'about'">
 <!ENTITY Ctr_icopageinfo	"Ikona zaznamke/sveta/'i': 'klik' odpre 'okno s podatki o strani'">
-<!ENTITY Ctr_lbsbsize		"Prilagodljiva širina naslovne in iskalne vrstice">
+<!ENTITY Ctr_lbsbsize		"Prilagodljiva širina">
 <!ENTITY Ctr_searchbar		"Iskalna vrstica">
 <!ENTITY Ctr_autocomplete	"Pojavno okno samodokončevanja">
 <!ENTITY Ctr_altautocompl	"Nadomestni videz">
 <!ENTITY Ctr_autocompl_it	"Odstrani predmeta 'Išči s/z …' in 'Obišči' (če sta prisotna)">
+<!ENTITY Ctr_acompl_search	"Prikaži iskalnike">
 <!ENTITY Ctr_autocompl_hl	"Označevanje zadetkov">
 <!ENTITY Ctr_autocompl_rhl	"Barve Aero za poudarjene rezultate">
 <!ENTITY Ctr_autocompl_not	"Skrij naziv strani">
@@ -290,7 +292,7 @@
 <!ENTITY Ctr_lbsugresi		"Onemogoči omejitev višine">
 <!ENTITY Ctr_cresultshcb	"Omejitev višine po meri: ">
 <!ENTITY Ctr_lbsugres		"Število rezultatov">
-<!ENTITY Ctr_lbsbradius		"Polmer obrobe po meri naslovne in iskalne vrstice">
+<!ENTITY Ctr_lbsbradius		"Polmer obrobe po meri">
 
 <!ENTITY Ctr_menubar_items	"Položaj predmetov menija">
 <!ENTITY Ctr_extrabar		"Dodatne orodne vrstice">
@@ -354,7 +356,6 @@
 <!ENTITY Ctr_lessaddonsbar	"Zmanjšaj višino">
 <!ENTITY Ctr_addonbarfs		"V celozaslonskem načinu">
 
-<!ENTITY Ctr_animation		"Animacija">
 <!ENTITY Ctr_tabthrobber	"Privzeta slika nalaganja">
 <!ENTITY Ctr_bmanimation	"Animacija dodajanja med zaznamke">
 <!ENTITY Ctr_pananimation	"Animacija odpiranja podokna">
@@ -378,14 +379,13 @@
 <!ENTITY Ctr_fx38pocket2	"Opomba: premikanje gumba 'Pocket' v 'paleto za prilagoditev' pred onemogočanjem te nastavitve odstani tudi vnose 'Pocket' iz menijev zaznamkov in bralnika.">
 <!ENTITY Ctr_e_loop			"Hello / Loop / Klicanje in pogovori">
 <!ENTITY Ctr_e_readermode	"Način za branje">
+<!ENTITY Ctr_e_geolocation	"Lokacija">
 <!ENTITY Ctr_e_pocket		"Pocket">
 <!ENTITY Ctr_e_tabsaudioico	"Ikona predvajanja zvoka na zavihkih">
 <!ENTITY Ctr_e_containertab	"Zavihki vsebnika">
 <!ENTITY Ctr_e_findbarhl	"Poudarjanje iskalne vrstice">
 <!ENTITY Ctr_fx50findbarhl	"Odznačitev teh nastavitev odstrani možnosti 'poudarjanja' iskalne vrstice.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"Izbira iskanja pojavnega seznama samodokončevanja">
-<!ENTITY Ctr_fx51OOSeach	"Odznačitev te nastavitve odstrani izbiro iskanja pojavnega seznama naslovne vrstice.">
 
 
 <!ENTITY Ctr_pw_settings	"Nastavitve">

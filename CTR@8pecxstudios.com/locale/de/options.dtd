@@ -16,6 +16,7 @@
 <!ENTITY Ctr_rr				"Neustart benötigt!">
 <!ENTITY Ctr_window			"Fenster">
 <!ENTITY Ctr_centered		"Zentriert">
+<!ENTITY Ctr_page			"Seite">
 
 <!ENTITY Ctr_cuibuttons		"Schaltflächen">
 <!ENTITY Ctr_cuibutnormal	"Normal">
@@ -179,7 +180,7 @@
 <!ENTITY Ctr_osearch_iwidth	"Pop-up-Breite automatisch der Suchfeldbreite anpassen">
 <!ENTITY Ctr_osearch_cwidth	"Eigene Breite für Such-Pop-ups">
 <!ENTITY Ctr_osearch_dm		"Kleinere Aufklapp-Schaltfläche">
-<!ENTITY Ctr_addonmanager	"Add-ons-Manager">
+<!ENTITY Ctr_addonmanager	"Add-ons-Verwaltung">
 <!ENTITY Ctr_alt_addonsp	"'Mehr Details'-Seite: Alternative Anordnung">
 <!ENTITY Ctr_am_showrecup	"'Zuletzt durchgeführte Updates' immer anzeigen">
 <!ENTITY Ctr_alt_addonsm	"Alternative Darstellung">
@@ -277,11 +278,12 @@
 <!ENTITY Ctr_padlock_mod	"modern">
 <!ENTITY Ctr_padlock_ext	"'&brandShortName;'-Symbol für gültige 'about:'-Seiten">
 <!ENTITY Ctr_icopageinfo	"Globus-/Lesezeichen-/'i'-Symbol: 'Seiteninfo'-Fenster per Klick öffnen">
-<!ENTITY Ctr_lbsbsize		"Benutzerdefinierte Breite für Adressleiste und Suchleiste">
+<!ENTITY Ctr_lbsbsize		"Benutzerdefinierte Breite">
 <!ENTITY Ctr_searchbar		"Suchleiste">
 <!ENTITY Ctr_autocomplete	"Autovervollständigungs-Pop-up">
 <!ENTITY Ctr_altautocompl	"Alternative Darstellung">
 <!ENTITY Ctr_autocompl_it	"'Mit ... suchen'- und 'Aufrufen'-Elemente entfernen (falls vorhanden)">
+<!ENTITY Ctr_acompl_search	"Suchmaschinen anzeigen">
 <!ENTITY Ctr_autocompl_hl	"Hervorhebung von Texttreffern">
 <!ENTITY Ctr_autocompl_rhl	"Blaue 'Aero'-Farben für hervorgehobene Ergebnisse">
 <!ENTITY Ctr_autocompl_not	"Seitentitel verbergen">
@@ -290,7 +292,7 @@
 <!ENTITY Ctr_lbsugresi		"Höhenlimit deaktivieren">
 <!ENTITY Ctr_cresultshcb	"Eigenes Höhenlimit setzen: ">
 <!ENTITY Ctr_lbsugres		"Anzahl der Vorschläge">
-<!ENTITY Ctr_lbsbradius		"Benutzerdefinierte Krümmung für Adressleisten- und Suchleistenrand">
+<!ENTITY Ctr_lbsbradius		"Benutzerdefinierter Rundungsgrad">
 
 <!ENTITY Ctr_menubar_items	"Position der Menüeinträge">
 <!ENTITY Ctr_extrabar		"Extraleisten">
@@ -354,12 +356,11 @@
 <!ENTITY Ctr_lessaddonsbar	"Leistenhöhe verringern">
 <!ENTITY Ctr_addonbarfs		"Im 'Vollbildmodus'">
 
-<!ENTITY Ctr_animation		"Animationen">
 <!ENTITY Ctr_tabthrobber	"Standard-Ladeanzeige">
-<!ENTITY Ctr_bmanimation	"'Lesezeichen hinzufügen'">
-<!ENTITY Ctr_pananimation	"'Panel-Aufklappmenü öffnen'">
-<!ENTITY Ctr_tabanimation	"'Tab schließen und öffnen'">
-<!ENTITY Ctr_dlanimation	"'Download gestartet und beendet'">
+<!ENTITY Ctr_bmanimation	"'Lesezeichen hinzufügen'-Animation">
+<!ENTITY Ctr_pananimation	"'Panel-Aufklappmenü öffnen'-Animation">
+<!ENTITY Ctr_tabanimation	"'Tab schließen und öffnen'-Animation">
+<!ENTITY Ctr_dlanimation	"'Download gestartet und beendet'-Animation">
 <!ENTITY Ctr_fsanimation	"'Vollbild-Animationen'">
 <!ENTITY Ctr_fsaduration	"'Vollbild-Animationen' für HTML5-Inhalte">
 
@@ -378,14 +379,13 @@
 <!ENTITY Ctr_fx38pocket2	"Info: Das Verschieben der 'Pocket'-Schaltfläche zu den nicht verwendeten Schaltflächen im 'Anpassen-Modus' vor der Deaktivierung dieser Option entfernt zusätzlich die 'Pocket'-Einträge aus den Lesezeichen- und 'Lese'-Bereichen.">
 <!ENTITY Ctr_e_loop			"'Hello' / Anruf- und Konversationsfunktionen / Loop">
 <!ENTITY Ctr_e_readermode	"Lesemodus">
+<!ENTITY Ctr_e_geolocation	"Standortbestimmung">
 <!ENTITY Ctr_e_pocket		"Pocket">
 <!ENTITY Ctr_e_tabsaudioico	"Audio-Abspiel-Symbol auf Tabs">
 <!ENTITY Ctr_e_containertab	"'Tab in Umgebung' / 'Kontainer-Tabs'">
 <!ENTITY Ctr_e_findbarhl	"Seitensuchhervorhebung">
 <!ENTITY Ctr_fx50findbarhl	"Das Deaktivieren dieser Optionen entfernt die 'Seitensuchhervorhebung'.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"Suchauswahl im Autovervollständigungs-Pop-up">
-<!ENTITY Ctr_fx51OOSeach	"Das Deaktivieren dieser Optionen entfernt die Suchauswahl im Autovervollständigungs-Pop-up.">
 
 
 <!ENTITY Ctr_pw_settings	"Einstellungen">
@@ -412,7 +412,7 @@
 <!ENTITY goCmd.label					"Los">
 <!ENTITY Ctr_menu_restart.label			"Neustarten">
 <!ENTITY Ctr_restartapp					"'Neustarten'-Eintrag im '&brandShortName;'- und 'Datei-Menü'">
-<!ENTITY Ctr_ctrnewinv					"Neue Einstellungen in aktueller &brandShortName; Version unterstreichen">
+<!ENTITY Ctr_ctrnewinv					"Einstellungen für diese &brandShortName; Version 'unterstreichen'">
 
 <!ENTITY Ctr_openInCurrentTab			"Eingabe im aktiven Tab öffnen">
 <!ENTITY Ctr_openInNewTab				"Eingabe in neuem Tab öffnen">

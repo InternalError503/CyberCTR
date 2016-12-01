@@ -16,6 +16,7 @@
 <!ENTITY Ctr_rr				"Restartujte &brandShortName;!">
 <!ENTITY Ctr_window			"okno">
 <!ENTITY Ctr_centered		"Centered">
+<!ENTITY Ctr_page			"Page">
 
 <!ENTITY Ctr_cuibuttons		"Tlačítka">
 <!ENTITY Ctr_cuibutnormal	"Normální">
@@ -262,7 +263,7 @@
 <!ENTITY Ctr_hideurlzoom	"Hide zoom button (if present)">
 <!ENTITY Ctr_hideprbutton	"Nezobrazovat upozornění při blokování vyskakovacích oken">
 <!ENTITY Ctr_locsearchbw10	"Snížit výšku adresního řádku a vyhledávače (experimentální)">
-<!ENTITY Ctr_urlbar_ib		"Tlačítko identity webu (identity box)">
+<!ENTITY Ctr_urlbar_ib		"Tlačítko identity webu">
 <!ENTITY Ctr_ib_nohovcolor	"Nezobrazovat šedou barvu při přejetí myší">
 <!ENTITY Ctr_ib_graycolor	"Šedá barva pro neznámou identitu a stránky chrome">
 <!ENTITY Ctr_verifiedcolors	"Barvy tlačítka pro ověřené stránky, zabezpečené a nezabezpečené připojení">
@@ -277,11 +278,12 @@
 <!ENTITY Ctr_padlock_mod	"moderní">
 <!ENTITY Ctr_padlock_ext	"'&brandShortName;' ikona pro validní chrome stránky">
 <!ENTITY Ctr_icopageinfo	"Favicona/globe-/'i'-icon: 'klik' otevře okno 'Informace o stránce'">
-<!ENTITY Ctr_lbsbsize		"Volitelná šířka pro adresní řádek a vyhledávač">
+<!ENTITY Ctr_lbsbsize		"Volitelná šířka">
 <!ENTITY Ctr_searchbar		"Vyhledávač">
 <!ENTITY Ctr_autocomplete	"Okno autokompletace">
 <!ENTITY Ctr_altautocompl	"Alternativní vzhled">
 <!ENTITY Ctr_autocompl_it	"Odstranit položky 'Vyhledat pomocí...' a 'Navštívit' (pokud se vyskytují)">
+<!ENTITY Ctr_acompl_search	"Show search engines">
 <!ENTITY Ctr_autocompl_hl	"Highlighting of text hits">
 <!ENTITY Ctr_autocompl_rhl	"Aero colors for highlighted results">
 <!ENTITY Ctr_autocompl_not	"Hide page title">
@@ -290,7 +292,7 @@
 <!ENTITY Ctr_lbsugresi		"Zrušit limit pro výšku">
 <!ENTITY Ctr_cresultshcb	"Custom height limit: ">
 <!ENTITY Ctr_lbsugres		"Počet výsledků">
-<!ENTITY Ctr_lbsbradius		"Volitelné zaoblení pro adresní řádek a vyhledávání">
+<!ENTITY Ctr_lbsbradius		"Volitelné zaoblení">
 
 <!ENTITY Ctr_menubar_items	"Umístění menu">
 <!ENTITY Ctr_extrabar		"Přídavné lišty">
@@ -354,7 +356,6 @@
 <!ENTITY Ctr_lessaddonsbar	"Snížit výšku">
 <!ENTITY Ctr_addonbarfs		"V celoobrazovkovém módu (fullscreen)">
 
-<!ENTITY Ctr_animation		"Animace">
 <!ENTITY Ctr_tabthrobber	"Defaultní obrázek nahrávání">
 <!ENTITY Ctr_bmanimation	"Animace přidání záložky">
 <!ENTITY Ctr_pananimation	"Animace otevření panelu">
@@ -378,14 +379,13 @@
 <!ENTITY Ctr_fx38pocket2	"Poznámka: Přetažením tlačítka 'Pocket' do 'nastavení lišty' před změnou této předvolby zde, se odstraní vstupy v 'Pocket' z menu záložky a čtečky.">
 <!ENTITY Ctr_e_loop			"Hello / Loop / Volání a konverzace">
 <!ENTITY Ctr_e_readermode	"Mód čtečky">
+<!ENTITY Ctr_e_geolocation	"Geolocation">
 <!ENTITY Ctr_e_pocket		"Pocket">
 <!ENTITY Ctr_e_tabsaudioico	"Ikona audio na panelech">
 <!ENTITY Ctr_e_containertab	"Container Tabs">
 <!ENTITY Ctr_e_findbarhl	"Findbar highlighting">
 <!ENTITY Ctr_fx50findbarhl	"Unchecking these preferences removes findbars 'highlight' features.">
 <!ENTITY Ctr_e_flyweb		"Flyweb">
-<!ENTITY Ctr_e_oneoffsearch	"Autocomplete popups search selection">
-<!ENTITY Ctr_fx51OOSeach	"Unchecking this preference removes search selection from location bars autocomplete popup.">
 
 
 <!ENTITY Ctr_pw_settings	"Možnosti">
