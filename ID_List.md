@@ -245,6 +245,7 @@ Copy Tab Url | #context_CopyCurrentTabUrl
 Copy All Tab Urls | #context_CopyAllTabUrls
 Clone Current Tab | #context_CloneCurrentTab
 Clone In Window | #context_CloneCurrentTabNewWindow
+Clone In Window (Private) | #context_CloneCurrentTabNewWindowpb
 Reload All Tabs | #context_reloadAllTabs
 Bookmark This Page | #context_bookmarkThisPage
 Bookmark All Tabs | #context_bookmarkAllTabs
