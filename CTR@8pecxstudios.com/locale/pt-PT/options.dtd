@@ -183,36 +183,36 @@
 <!ENTITY Ctr_osearch_cwidth	"Largura personalizada para os popups da pesquisa">
 <!ENTITY Ctr_osearch_dm		"Botão pequeno com seta">
 <!ENTITY Ctr_addonmanager	"Gestor de extras">
-<!ENTITY Ctr_alt_addonsp	"'More info' page: alternative order">
-<!ENTITY Ctr_am_showrecup	"Always show 'Recent updates' category">
-<!ENTITY Ctr_alt_addonsm	"Alternative appearance">
-<!ENTITY Ctr_am_nowarning	"Add-on lists: hide warnings">
-<!ENTITY Ctr_am_compact		"Add-on lists: compact view">
-<!ENTITY Ctr_am_compact2	"Compact view +">
-<!ENTITY Ctr_am_highlight	"Add-on lists: highlight entry on 'hover'">
-<!ENTITY Ctr_am_buticons	"Add-on lists: replace button labels with icons">
-<!ENTITY Ctr_am_hovshowb	"Add-on lists: only show buttons on 'hover'">
-<!ENTITY Ctr_addonversion	"Add-on lists: show add-on version">
-<!ENTITY Ctr_xpinstallui	"Old add-on install window">
-<!ENTITY Ctr_bmbutton		"Bookmarks menu button">
-<!ENTITY Ctr_hiderecentbm	"Bookmarks popup: hide recently added bookmarks">
-<!ENTITY Ctr_hideeditbm		"Bookmarks star: hide popup (if page is not bookmarked)">
-<!ENTITY Ctr_oldplacesbut	"Bookmark items and folders on toolbar: old appearance">
-<!ENTITY Ctr_dl_pm_drop		"Download buttons panel: show dropmarker">
-<!ENTITY Ctr_bmbutpanelm	"Popup: panel menu appearance">
-<!ENTITY Ctr_bmbunsortbm	"Popup: 'Other Bookmarks' menu">
-<!ENTITY Ctr_bmbunsortbm2	"Menu above bookmarks">
-<!ENTITY Ctr_bmbviewbmsb	"Popup: show 'View Bookmarks Sidebar'">
-<!ENTITY Ctr_bmbviewbmtb	"Popup: show 'View Bookmarks Toolbar'">
-<!ENTITY Ctr_bmbnounsort	"Popup: hide 'Other Bookmarks'">
-<!ENTITY Ctr_bmbutnotext	"Hide label on bookmarks bar">
-<!ENTITY Ctr_skipprintpr	"Print button: skip print preview">
-<!ENTITY Ctr_tbconmenu		"Toolbar context menu: hide 'move to menu', 'remove from toolbar', 'reload/bookmark all tabs' and 'undo close tab'">
-<!ENTITY Ctr_noresizerxp	"Hide Resizer (Windows XP)">
-<!ENTITY Ctr_extraurlkeycb	"Open additional location bar (Cmd/Ctrl+">
-<!ENTITY Ctr_pmhidelabels	"Main panel menu popup: hide button labels">
-<!ENTITY Ctr_menupopupscr	"Menu popups: show scrollbars instead of scroll arrows">
-<!ENTITY Ctr_closegeneral	"General close icons">
+<!ENTITY Ctr_alt_addonsp	"Página 'Mais informação': ordem alternativa">
+<!ENTITY Ctr_am_showrecup	"Mostrar sempre a categoria 'Atualizações recentes'">
+<!ENTITY Ctr_alt_addonsm	"Aparência alternativa">
+<!ENTITY Ctr_am_nowarning	"Lista de extras: ocultar avisos">
+<!ENTITY Ctr_am_compact		"Lista de extras: vista compacta">
+<!ENTITY Ctr_am_compact2	"Vista compacta +">
+<!ENTITY Ctr_am_highlight	"Lista de extras: destacar entrada ao passar com o rato">
+<!ENTITY Ctr_am_buticons	"Lista de extras: substituir texto dos botões por ícones">
+<!ENTITY Ctr_am_hovshowb	"Lista de extras: apenas mostrar botões ao passar com o rato">
+<!ENTITY Ctr_addonversion	"Lista de extras: mostrar versão do extra">
+<!ENTITY Ctr_xpinstallui	"Janela antiga de instalação dos extras">
+<!ENTITY Ctr_bmbutton		"Botão do menu de marcadores">
+<!ENTITY Ctr_hiderecentbm	"Popup de marcadores: ocultar marcadores recentes">
+<!ENTITY Ctr_hideeditbm		"Estrela de marcador: ocultar popup (se a página não estiver nos marcadores)">
+<!ENTITY Ctr_oldplacesbut	"Itens e pastas na barra de marcadores: aparência antiga">
+<!ENTITY Ctr_dl_pm_drop		"Botões no painel de descargas: mostrar seta">
+<!ENTITY Ctr_bmbutpanelm	"Popup: aparência do menu">
+<!ENTITY Ctr_bmbunsortbm	"Popup: menu 'Outros marcadores'">
+<!ENTITY Ctr_bmbunsortbm2	"Menu acima dos marcadores">
+<!ENTITY Ctr_bmbviewbmsb	"Popup: mostrar 'Ver barra lateral de marcadores'">
+<!ENTITY Ctr_bmbviewbmtb	"Popup: mostrar 'Ver barra de marcadores'">
+<!ENTITY Ctr_bmbnounsort	"Popup: ocultar 'Outros marcadores'">
+<!ENTITY Ctr_bmbutnotext	"Ocultar texto na barra de marcadores">
+<!ENTITY Ctr_skipprintpr	"Botão de impressão: ignorar pré-visualização">
+<!ENTITY Ctr_tbconmenu		"Menu de contexto da barra de ferramentas: ocultar 'Mover para o menu', 'Remover da barra de ferramentas', 'Recarregar todos os separadores, 'Criar marcadores para todos os separadores' e 'Reabrir separador fechado'">
+<!ENTITY Ctr_noresizerxp	"Ocultar redimensionador (Windows XP)">
+<!ENTITY Ctr_extraurlkeycb	"Abrir barra de localização adicional (Cmd/Ctrl+)">
+<!ENTITY Ctr_pmhidelabels	"Popup de menu do painel principal: ocultar texto dos botões">
+<!ENTITY Ctr_menupopupscr	"Popups de menu: mostrar barra de deslocação em vez de setas de deslocação">
+<!ENTITY Ctr_closegeneral	"Ícone genérico de fecho">
 
 <!ENTITY Ctr_tabsep_def		"Default tab separators">
 <!ENTITY Ctr_fxmockup		"&brandShortName; Mockup">
@@ -220,14 +220,14 @@
 <!ENTITY Ctr_tabmokcolor2	"White color and dark shadow for text on non-active tabs">
 <!ENTITY Ctr_tabmokcolor4	"White color for empty dotted tab favicon">
 
-<!ENTITY Ctr_navthrobber1	"Clicking on activity indicator opens the following url in a new tab:">
-<!ENTITY Ctr_navthrobber2	"Add url or leave empty">
-<!ENTITY Ctr_anewtaburl		"New tab page url">
-<!ENTITY Ctr_anewtaburlcb	"Custom new tab page url (default: 'about:newtab')">
-<!ENTITY Ctr_anewtaburlpcb	"Custom private new tab page url (default: 'about:privatebrowsing')">
+<!ENTITY Ctr_navthrobber1	"Ao clicar no indicador de atividade abrir este URL num novo separador:">
+<!ENTITY Ctr_navthrobber2	"Adicione o URL ou deixe em branco">
+<!ENTITY Ctr_anewtaburl		"URL da págiona Novo separador">
+<!ENTITY Ctr_anewtaburlcb	"URL personalizado normal(padrão: about:newtab)">
+<!ENTITY Ctr_anewtaburlpcb	"URL personalizado privado (padrão: about:privatebrowsing)">
 
-<!ENTITY Ctr_tab_tf_info1	"Color names, hexcodes, rgb(a) and hsl(a) values are supported.">
-<!ENTITY Ctr_tab_tf_info2	"Inputs won't be validated!">
+<!ENTITY Ctr_tab_tf_info1	"Nomes de cores, códigos hex, valores rgb(a) e hsl(a) são permitidos.">
+<!ENTITY Ctr_tab_tf_info2	"As entradas não serão validadas!">
 <!ENTITY Ctr_tabact_t		"selecionado">
 <!ENTITY Ctr_tabhov_t		"hovered">
 <!ENTITY Ctr_tabnor_t		"padrão">
@@ -237,11 +237,11 @@
 <!ENTITY Ctr_customsqtab1	"Fundo">
 <!ENTITY Ctr_ctext			"Texto">
 <!ENTITY Ctr_ctextsh		"Sombra do texto">
-<!ENTITY Ctr_tabnor			"Default Tab">
+<!ENTITY Ctr_tabnor			"Separador padrão">
 <!ENTITY Ctr_tabhov			"Hovered Tab">
-<!ENTITY Ctr_tabact			"Selected Tab">
-<!ENTITY Ctr_tabpen			"Unloaded Tab">
-<!ENTITY Ctr_tabunr			"Unread Tab">
+<!ENTITY Ctr_tabact			"Separador selecionado">
+<!ENTITY Ctr_tabpen			"Separador não carregado">
+<!ENTITY Ctr_tabunr			"Separador não lido">
 <!ENTITY Ctr_ntabnor		"Default New tab">
 <!ENTITY Ctr_ntabhov		"Hovered New tab">
 <!ENTITY Ctr_bold			"Negrito">
@@ -262,23 +262,23 @@
 <!ENTITY Ctr_urlbardropm	"Move dropmarker to the last possible position">
 <!ENTITY Ctr_urlbardropm2	"Make dropmarker always visible">
 <!ENTITY Ctr_altreaderico	"Alternative 'Reader' icons">
-<!ENTITY Ctr_hideurlzoom	"Hide zoom button (if present)">
-<!ENTITY Ctr_hideprbutton	"Hide notification icon when a popup gets blocked">
-<!ENTITY Ctr_locsearchbw10	"Reduce location bars and search bars height (experimental)">
-<!ENTITY Ctr_urlbar_ib		"Site Identity Button">
+<!ENTITY Ctr_hideurlzoom	"Ocultar botão de ampliação (se existente)">
+<!ENTITY Ctr_hideprbutton	"Ocultar notificação ao bloqquear as janelas popup">
+<!ENTITY Ctr_locsearchbw10	"Reduzir altura das barras de localização e de pesquisa (experimental)">
+<!ENTITY Ctr_urlbar_ib		"Botão 'Identidade do site'">
 <!ENTITY Ctr_ib_nohovcolor	"Do not show gray color when hovered">
 <!ENTITY Ctr_ib_graycolor	"Gray color for unknown identity and 'about:' pages">
 <!ENTITY Ctr_verifiedcolors	"Button colors for verified websites, secure and not secure connections">
 <!ENTITY Ctr_ibinfoico		"Replace 'i'-icon with globe icon">
-<!ENTITY Ctr_ibinfoico2		"Hide 'i'-icon (if possible)">
-<!ENTITY Ctr_iblabels		"Hide labels">
-<!ENTITY Ctr_faviconurl		"Favicon: current websites icon">
-<!ENTITY Ctr_padlock		"Padlock icon for secure connections">
+<!ENTITY Ctr_ibinfoico2		"Ocultar o ícone 'i' (se possível)">
+<!ENTITY Ctr_iblabels		"Ocultar texto">
+<!ENTITY Ctr_faviconurl		"Favicon: ícone dos websites atuais">
+<!ENTITY Ctr_padlock		"Ícone para ligações seguras">
 <!ENTITY Ctr_padlock_hid	"oculto">
 <!ENTITY Ctr_padlock_def	"padrão">
 <!ENTITY Ctr_padlock_cla	"clássico">
 <!ENTITY Ctr_padlock_mod	"moderno">
-<!ENTITY Ctr_padlock_ext	"'&brandShortName;' icon for valid 'about' pages">
+<!ENTITY Ctr_padlock_ext	"Ícone '&brandShortName;' para páginas 'about' válidas">
 <!ENTITY Ctr_icopageinfo	"Favicon/globe-/'i'-icon: 'click' opens 'page info window'">
 <!ENTITY Ctr_lbsbsize		"Largura personalizada">
 <!ENTITY Ctr_searchbar		"Barra de pesquisa">
@@ -291,7 +291,7 @@
 <!ENTITY Ctr_autocompl_not	"Ocultar título da página>
 <!ENTITY Ctr_autocompl_sep	"Mostrar separador entre os resultados">
 <!ENTITY Ctr_urlbar_uc		"Disable 'unified autocomplete' feature">
-<!ENTITY Ctr_lbsugresi		"Disable height limit">
+<!ENTITY Ctr_lbsugresi		"Desativar limite de altura">
 <!ENTITY Ctr_cresultshcb	"Custom height limit: ">
 <!ENTITY Ctr_lbsugres		"Número de resultados">
 <!ENTITY Ctr_lbsbradius		"Custom border roundness">
@@ -313,31 +313,31 @@
 <!ENTITY Ctr_mbarforceright	"Último elemento">
 
 <!ENTITY Ctr_toolbars		"Barras de ferramentas">
-<!ENTITY Ctr_dblclnewtab	"Double click on toolbar opens a new tab">
-<!ENTITY Ctr_dblclnewtabdes	"Not suitable for all complete themes while Windows titlebar is active.">
-<!ENTITY Ctr_hidetbwot		"Hide tabs toolbar with only one visible tab">
-<!ENTITY Ctr_hidetbwote		"Reduce hiding delay on startup">
-<!ENTITY Ctr_hidetbwote_i	"Could cause glitches on tabs toolbar">
-<!ENTITY Ctr_hidetbwote2	"Automatically adjust titlebar space">
-<!ENTITY Ctr_notabfog		"Remove background fog (Windows AeroGlass/8)">
-<!ENTITY Ctr_notabbg		"Remove background color (Windows AeroGlass/8)">
-<!ENTITY Ctr_hightabpos		"Reduce space above toolbar (if possible)">
-<!ENTITY Ctr_showalltabsb	"Always show 'all tabs' button">
-<!ENTITY Ctr_alttabstb		"Alternative background color">
-<!ENTITY Ctr_alttabstb2		"In maximized mode (tabs on top)">
+<!ENTITY Ctr_dblclnewtab	"Duplo clique na barra de ferramentas abre um novo separador">
+<!ENTITY Ctr_dblclnewtabdes	"Não adequeada para temas completos se a barra de título do Windows estiver ativa.">
+<!ENTITY Ctr_hidetbwot		"Ocultar barra de separadores se apenas um estiver visível">
+<!ENTITY Ctr_hidetbwote		"Reduzir atraso de ocultação ao iniciar">
+<!ENTITY Ctr_hidetbwote_i	"Pode originar imperfeições na barra de separadores">
+<!ENTITY Ctr_hidetbwote2	"Ajustar espaço da barra de título automaticamente">
+<!ENTITY Ctr_notabfog		"Remover desfoque de fundo (Windows AeroGlass/8)">
+<!ENTITY Ctr_notabbg		"Remover cor de fundo (Windows AeroGlass/8)">
+<!ENTITY Ctr_hightabpos		"Reduzir espaço acima da barra de ferramentas (se possível)">
+<!ENTITY Ctr_showalltabsb	"Mostrar sempre o botão 'Todos os separadores'">
+<!ENTITY Ctr_alttabstb		"Cor de fundo alternativa">
+<!ENTITY Ctr_alttabstb2		"No modo maximizado (separadores em cima)">
 
 <!ENTITY Ctr_altmenubar		"Adicionar cor de fundo (barra de título do SO)">
 <!ENTITY Ctr_altmenubarpos	"posição alternativa">
 <!ENTITY Ctr_altmenubarpos2	"Abaixo da barra de título do &brandShortName;">
 <!ENTITY Ctr_menubarnofog	"Remover cor de fundo (Windows AeroGlass/8)">
 
-<!ENTITY Ctr_aerocolors		"Blue Aero colors for toolbars (and tabs)">
-<!ENTITY Ctr_aerocolorsg	"Grey-blue Aero colors">
-<!ENTITY Ctr_transpttbw10	"Title/menu/tabs toolbar: remove background color">
-<!ENTITY Ctr_transpttbew10	"Additional tweaks for some OS themes">
-<!ENTITY Ctr_transptcw10	"Hide default OS min/max/close buttons">
+<!ENTITY Ctr_aerocolors		"Cor Azul Aero para as barras de ferramentas (e separadores)">
+<!ENTITY Ctr_aerocolorsg	"Cor Cinzento-Azul Aero">
+<!ENTITY Ctr_transpttbw10	"Barra de titulo/menu/separadores: remover cor de fundo">
+<!ENTITY Ctr_transpttbew10	"Ajustes extra para alguns temas do sistema operativo">
+<!ENTITY Ctr_transptcw10	"Ocultar os botões min./max./fecahr do sistema operativo">
 <!ENTITY Ctr_hidenavbar		"Ocultar barra de ferramentas">
-<!ENTITY Ctr_navbarpad		"Additional left and right space">
+<!ENTITY Ctr_navbarpad		"Espaço extra à esquerda e à direita">
 <!ENTITY Ctr_navbarpad_l	"Esquerda:">
 <!ENTITY Ctr_navbarpad_r	"Direita:">
 <!ENTITY Ctr_nobookbarbg	"Remover cor de fundo">
@@ -345,31 +345,31 @@
 <!ENTITY Ctr_nonavbarbg		"Remover cor de fundo">
 <!ENTITY Ctr_nonavbarbg1	"This add-on's additional toolbars and other top toolbars are affected.">
 <!ENTITY Ctr_nonavbarbg2	"All toolbars in 'Beyond Australis' add-on's 'Slim Chrome' are affected.">
-<!ENTITY Ctr_nonavborder	"Add top border to toolbar">
+<!ENTITY Ctr_nonavborder	"Adicionar contorno superior à barra de ferramentas">
 <!ENTITY Ctr_nonavtbborder	"Top toolbars: remove toolbar borders">
 <!ENTITY Ctr_toptb_oldpad	"Top toolbars: old left and right padding">
-<!ENTITY Ctr_hidesbclose	"Sidebars: hide close button">
-<!ENTITY Ctr_notextshadow	"Toolbars: hide shadow for toolbar text and tab text">
-<!ENTITY Ctr_chevronfix		"Navigation toolbar: hide double arrow ('More Tools') at toolbars end">
-<!ENTITY Ctr_tbsep_winc		"Top toolbars: additional toolbar separators">
+<!ENTITY Ctr_hidesbclose	"Barra lateral: ocultar botão para fechar">
+<!ENTITY Ctr_notextshadow	"Barras de ferramentas: ocultar sombra para o texto da barra e dos separadores">
+<!ENTITY Ctr_chevronfix		"Barra de navegação: ocultar seta duplo ('Mais ferramentas') no fim da barra">
+<!ENTITY Ctr_tbsep_winc		"Barras de ferramentas superiores: separadores adicionais">
 
 <!ENTITY Ctr_closeabarbut	"Barra de extras: ocultar o botão Fechar">
 <!ENTITY Ctr_highaddonsbar	"Aumentar altura">
 <!ENTITY Ctr_lessaddonsbar	"Diminuir altura">
 <!ENTITY Ctr_addonbarfs		"No modo de ecrã completo">
 
-<!ENTITY Ctr_tabthrobber	"Loading image">
-<!ENTITY Ctr_bmanimation	"Bookmark stars bookmarking animation">
-<!ENTITY Ctr_pananimation	"Panel opening animation">
-<!ENTITY Ctr_tabanimation	"Tab closing/opening animation">
-<!ENTITY Ctr_dlanimation	"'Download notification' animation">
-<!ENTITY Ctr_fsanimation	"Full screen animations">
-<!ENTITY Ctr_fsaduration	"Full screen animations for HTML5 content">
+<!ENTITY Ctr_tabthrobber	"Carregar imagem">
+<!ENTITY Ctr_bmanimation	"Animação da estrela ao adicionar páginas aos marcadores">
+<!ENTITY Ctr_pananimation	"Animação ao abrir o painel">
+<!ENTITY Ctr_tabanimation	"Animação ao abrir/fechar separadores">
+<!ENTITY Ctr_dlanimation	"Animação de notificação de descargas">
+<!ENTITY Ctr_fsanimation	"Animação em ecrã completo">
+<!ENTITY Ctr_fsaduration	"Animação em ecrã completo para conteúdo HTML5">
 
-<!ENTITY Ctr_toolsitem		"Menuitem in tools menu">
-<!ENTITY Ctr_appmenuitem	"Menuitem in appbuttons menu">
-<!ENTITY Ctr_contextitem	"Menuitem in toolbars context menu">
-<!ENTITY Ctr_puictrbutton	"Button in main panel menu">
+<!ENTITY Ctr_toolsitem		"Item de menu no menu Ferramentas">
+<!ENTITY Ctr_appmenuitem	"Item de menu no menu Botão da aplicação">
+<!ENTITY Ctr_contextitem	"Item de menu no menu de contexto das barras de ferramentas">
+<!ENTITY Ctr_puictrbutton	"Botão de menu no Painel principal">
 
 <!ENTITY Ctr_otherctroptns	"Outras definições">
 <!ENTITY Ctr_cuibotbuttons	"Botões extra no modo 'Personalizar'">
@@ -457,7 +457,7 @@
 <!ENTITY ctr_restoreCTRPrefFile.label	"Restaurar backup">
 <!ENTITY ctr_resetCTRPrefFile.label		"Limpar backup">
 
-<!ENTITY ctr_appbuttoncusttextcolor	"Cor do texto do botão da aplicação.">
+<!ENTITY ctr_appbuttoncusttextcolor	"Cor de texto do botão da aplicação.">
 <!ENTITY ctr_appbuttoncusttextshadow	"Remover sombra do texto do botão da aplicação">
 
 <!ENTITY ctr_toolbarsearchbar.description	"Barra de pesquisa">
@@ -480,22 +480,22 @@
 <!ENTITY ctr_abouthome.icons "No icons on about:home page">
 <!ENTITY ctr_abouthome.snippets "No snippets on about:home page">
 <!ENTITY ctr_abouthome.custombg "Use custom background image">
-<!ENTITY ctr_abouthome.custombgbrowse "Browse">
-<!ENTITY ctr_abouthome.custombgurl "Enter url or file path">
-<!ENTITY ctr_abouthome.custombgurlph "Background image url|path">
-<!ENTITY ctr_abouthome.customhighlight "Use custom highlight color">
-<!ENTITY ctr_abouthome.customhighlightcol "Change custom highlight color">
-<!ENTITY ctr_abouthome.custombase "Use custom text color">
-<!ENTITY ctr_abouthome.custombasecol "Change base text color">
-<!ENTITY ctr_abouthome.animate "Use animations on about:home page">
-<!ENTITY ctr_abouthome.custombgstretch "Stretch background image to window (Default).">
+<!ENTITY ctr_abouthome.custombgbrowse "Navegar">
+<!ENTITY ctr_abouthome.custombgurl "Digitar URL ou o caminho do ficheiro">
+<!ENTITY ctr_abouthome.custombgurlph "Caminho/URL da imagem de fundo">
+<!ENTITY ctr_abouthome.customhighlight "Utilizar cor personalizada de destaque">
+<!ENTITY ctr_abouthome.customhighlightcol "Alterar cor personalizada de destaque">
+<!ENTITY ctr_abouthome.custombase "Utilizar cor de texto personalizada">
+<!ENTITY ctr_abouthome.custombasecol "Alterar cor base do texto">
+<!ENTITY ctr_abouthome.animate "Utilizar animações na página about:home">
+<!ENTITY ctr_abouthome.custombgstretch "Ajustar imagem de fundo à janela (padrão).">
 
-<!ENTITY ctr_aboutnewtab.caption "Change about:newtab page style">
+<!ENTITY ctr_aboutnewtab.caption "Alterar estilo da página about:newtab">
 
-<!ENTITY cssClassId.description "Hide element classes - element ids">
-<!ENTITY cssClassId.label "Enter a class or id:">
-<!ENTITY useFilterElement.label "Use custom filter to hide element classes or element ids">
-<!ENTITY filterElement.placehold "You can specify which element classes or element ids.">
+<!ENTITY cssClassId.description "Ocultar classes e ID dos elementos">
+<!ENTITY cssClassId.label "Digite a classe ou ID:">
+<!ENTITY useFilterElement.label "Utilizar filtro personalizado para ocultar as classes ou ID dos elementos">
+<!ENTITY filterElement.placehold "Pode especificar as classes e as ID dos elementos.">
 <!ENTITY add.label		"Adicionar">
 <!ENTITY clear.label	"Limpar filtro">
 <!ENTITY copy.label		"Copiar filtro">
