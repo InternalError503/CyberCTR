@@ -7197,7 +7197,7 @@ window.addEventListener("DOMWindowCreated", function load(event){
 	window.removeEventListener("DOMWindowCreated", load, false);
 
    AddonManager.getAddonByID('treestyletab@piro.sakura.ne.jp', function(addon) {
-				if(addon && addon.isActive) {
+				if(addon && addon.isActive && !treeStyleCompatMode) {
 					Services.prefs.setBoolPref("extensions.classicthemerestorer.compatibility.treestyle", true);
 					classicthemerestorerjs.ctr.fixThatTreeStyleBro();		
 				}else{ 
@@ -7220,7 +7220,7 @@ window.addEventListener("DOMWindowCreated", function load(event){
   
 	fixThatTreeStyleBro: function(){
 	
-if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle")){	
+if (Services.prefs.getBoolPref("extensions.classicthemerestorer.compatibility.treestyle") && !treeStyleCompatMode){	
 	var appButtonState = Services.prefs.getCharPref("extensions.classicthemerestorer.appbutton");
 				var menutoolbarHasAttribute = document.getElementById("toolbar-menubar");			
 switch (appButtonState){
