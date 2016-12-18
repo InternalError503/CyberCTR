@@ -814,17 +814,29 @@ classicthemerestorerjs.ctr = {
 		  case "appbautocol":
 		  
 		    if (branch.getBoolPref("appbautocol")) {
-		      var buttontitle = "Firefox";
+		      var buttontitle = "firefox";
 			
 			  try{
 				// make sure appbutton gets correct title
 				buttontitle = document.getElementById("main-window").getAttribute("title_normal");
-				if(buttontitle=="Firefox Developer Edition" || buttontitle=="DevFox" || buttontitle=="Aurora") {
-				  branch.setCharPref("appbuttonc",'appbuttonc_aurora')
-				} else if(buttontitle=="Nightly") {
-				  branch.setCharPref("appbuttonc",'appbuttonc_nightly')
-				} else branch.setCharPref("appbuttonc",'appbuttonc_orange')
-					
+				switch (buttontitle.toLowerCase()){
+					case "firefox developer edition": case "devfox": case "aurora":
+						branch.setCharPref("appbuttonc",'appbuttonc_aurora');
+					break;
+					case "nightly":
+						branch.setCharPref("appbuttonc",'appbuttonc_nightly');
+					break;
+					case "firefox": case "mozilla firefox":
+						branch.setCharPref("appbuttonc",'appbuttonc_orange');
+					break;
+					case "cyberfox":
+						branch.setCharPref("appbuttonc",'appbuttonc_default');
+					break;	
+					default:
+						branch.setCharPref("appbuttonc",'appbuttonc_gray');
+					break;	
+				}
+
 			  } catch(e){}
 			
 			}
