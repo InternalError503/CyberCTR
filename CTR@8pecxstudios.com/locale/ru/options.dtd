@@ -58,9 +58,9 @@
 <!ENTITY Ctr_tabwidthinfo3	"Значения ниже 48px часто приводят к сбоям!">
 <!ENTITY Ctr_square_edges	"Верхние углы без закругления">
 <!ENTITY Ctr_tttitlebar		"Название вкладки в панели вкладок &brandShortName;">
-<!ENTITY Ctr_ttnooverfl		"Remove overflow effect from long tab titles">
+<!ENTITY Ctr_ttnooverfl		"Убрать эффект overflow для длинных заголовков вкладок">
 <!ENTITY Ctr_tabinsertion	"Открывать связанную вкладку после текущей вкладки">
-<!ENTITY Ctr_emptytfavico	"Показывать фавиконку (если отсутствует)">
+<!ENTITY Ctr_emptytfavico	"Показывать иконку избранного (если отсутствует)">
 <!ENTITY Ctr_emptytfavico_n	"Нет">
 <!ENTITY Ctr_emptytfavico_g	"Стандартная">
 <!ENTITY Ctr_noemptypticon	"Удалить пустой значок из прикреплённой вкладки">
@@ -91,7 +91,7 @@
 <!ENTITY Ctr_paneluibtweak2	"Оранжевая кнопка меню (только значки)">
 <!ENTITY Ctr_paneluibtweak3	"...на панели вкладок">
 <!ENTITY Ctr_appbuttonc		"Кнопка">
-<!ENTITY Ctr_appbuttonc_o	"Оранжевая кнопка (Firefox)">
+<!ENTITY Ctr_appbuttonc_o	"Оранжевая (Firefox)">
 <!ENTITY Ctr_appbuttonc_a	"Синяя (Aurora)">
 <!ENTITY Ctr_appbuttonc_n	"Чёрная (Nightly)">
 <!ENTITY Ctr_appbuttonc_t	"Прозрачная">
@@ -265,7 +265,7 @@
 <!ENTITY Ctr_urlbardropm2	"Сделать маркер видимым постоянно">
 <!ENTITY Ctr_altreaderico	"Альтернативные иконки 'Режима чтения'">
 <!ENTITY Ctr_hideurlzoom	"Скрыть кнопку увеличения (если присутствует)">
-<!ENTITY Ctr_urlbardark		"Dark background color">
+<!ENTITY Ctr_urlbardark		"Темный цвет фона">
 <!ENTITY Ctr_hideprbutton	"Скрыть значок уведомления, когда блокируется всплывающее окно">
 <!ENTITY Ctr_locsearchbw10	"Уменьшить высоту панелей адреса и поиска (экспериментально)">
 <!ENTITY Ctr_urlbar_ib		"Кнопка подлинности сайта">
