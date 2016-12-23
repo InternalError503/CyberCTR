@@ -173,6 +173,7 @@ classicthemerestorerjs.ctr = {
 	try{if (this.appversion >= 50) document.getElementById("main-window").setAttribute('fx50plus',true);} catch(e){}
 	try{if (this.appversion >= 51) document.getElementById("main-window").setAttribute('fx51plus',true);} catch(e){}
 	try{if (this.appversion >= 52) document.getElementById("main-window").setAttribute('fx52plus',true);} catch(e){}
+	try{if (this.appversion >= 53) document.getElementById("main-window").setAttribute('fx53plus',true);} catch(e){}
 
 	// add CTR version number to '#main-window' node, so other add-ons/themes can easier distinguish between versions
 	AddonManager.getAddonByID('ClassicThemeRestorer@ArisT2Noia4dev', function(addon) {
@@ -642,6 +643,11 @@ classicthemerestorerjs.ctr = {
 		  case "tttitlebar_c":
 			if (branch.getBoolPref("tttitlebar_c") && branch.getBoolPref("tttitlebar")) classicthemerestorerjs.ctr.loadUnloadCSS("tttitlebar_c",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("tttitlebar_c",false);
+		  break;
+		  
+		  case "ttnooverfl":
+			if (branch.getBoolPref("ttnooverfl") && classicthemerestorerjs.ctr.appversion >= 53) classicthemerestorerjs.ctr.loadUnloadCSS("ttnooverfl",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("ttnooverfl",false);
 		  break;
 		  
 		  case "ctabheightcb":
@@ -1398,6 +1404,11 @@ classicthemerestorerjs.ctr = {
 		  case "hideurlzoom":
 			if (branch.getBoolPref("hideurlzoom") && classicthemerestorerjs.ctr.appversion >= 51) classicthemerestorerjs.ctr.loadUnloadCSS("hideurlzoom",true);
 			  else classicthemerestorerjs.ctr.loadUnloadCSS("hideurlzoom",false);
+		  break;
+		  
+		  case "urlbardark":
+			if (branch.getBoolPref("urlbardark") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("urlbardark",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("urlbardark",false);
 		  break;
 
 		  case "altautocompl":
@@ -2266,6 +2277,11 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS("osearch_dm",true);
 			else classicthemerestorerjs.ctr.loadUnloadCSS("osearch_dm",false);
 		  break;
+		  
+		  case "searchbardark":
+			if (branch.getBoolPref("searchbardark") && classicthemerestorerjs.ctr.fxdefaulttheme==true) classicthemerestorerjs.ctr.loadUnloadCSS("searchbardark",true);
+			  else classicthemerestorerjs.ctr.loadUnloadCSS("searchbardark",false);
+		  break;
 
 		  case "am_nowarning":
 			if (branch.getBoolPref("am_nowarning")) classicthemerestorerjs.ctr.loadUnloadCSS("am_nowarning",true);
@@ -2594,7 +2610,7 @@ classicthemerestorerjs.ctr = {
 			}
 
 		  break;
-		  
+  
 		  case "anewtaburlpcb":
 		  
 			if (branch.getBoolPref("anewtaburlpcb") && classicthemerestorerjs.ctr.appversion >= 48) {
@@ -2858,12 +2874,15 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv50",true);
 			  else if (classicthemerestorerjs.ctr.appversion == 51)
 				classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv51",true);
+			  else if (classicthemerestorerjs.ctr.appversion == 53)
+				classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv53",true);
 			}
 			else { 
 			  classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv47",false);
 			  classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv48",false);
 			  classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv50",false);
 			  classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv51",false);
+			  classicthemerestorerjs.ctr.loadUnloadCSS("ctrnewinv53",false);
 			}
 		  break;
 		  
@@ -3710,6 +3729,7 @@ classicthemerestorerjs.ctr = {
 
   },
   
+  
   // forward new private browsing tab to custom url
   newPrivateTabPageForwarding: function() {
 	  
@@ -4427,6 +4447,7 @@ classicthemerestorerjs.ctr = {
 		case "square_edges": 			manageCSS("tabssquare_edges.css");  	break;
 		case "tttitlebar": 				manageCSS("tabsttitleintitlebar.css");  break;
 		case "tttitlebar_c": 			manageCSS("tabsttitleintitlebar_centered.css");  break;
+		case "ttnooverfl": 				manageCSS("tabtitle_nooverflow.css");  	break;
 		
 		case "closetab_active": 		manageCSS("closetab_active.css");  		break;
 		case "closetab_none": 			manageCSS("closetab_none.css");  		break;
@@ -4631,6 +4652,7 @@ classicthemerestorerjs.ctr = {
 		case "urlbardropm2": 		manageCSS("urlbar_dropm2.css"); 		break;
 		case "altreaderico": 		manageCSS("alt_reader_icons.css");		break;
 		case "hideurlzoom": 		manageCSS("hide_ulbar_zoom.css");		break;
+		case "urlbardark": 			manageCSS("urlbar_darkbg.css");			break;
 		case "altautocompl": 		manageCSS("alt_autocomplete.css");		break;
 		case "autocompl_it": 		manageCSS("alt_autocompl_items.css");	break;
 		case "autocompl_it2": 		manageCSS("alt_autocompl_items2.css");	break;
@@ -4693,6 +4715,7 @@ classicthemerestorerjs.ctr = {
 		case "ctroldsearch": 		manageCSS("oldsearch.css");				break;
 		case "osearch_iwidth": 		manageCSS("oldsearch_iwidth.css");		break;
 		case "osearch_dm": 			manageCSS("oldsearch_dm.css");			break;
+		case "searchbardark": 		manageCSS("searchbar_darkbg.css");		break;
 		case "am_nowarning":		manageCSS("am_nowarnings.css");			break;
 		case "am_compact":			manageCSS("am_compact.css");			break;
 		case "am_compact2":			manageCSS("am_compact2.css");			break;
@@ -4786,6 +4809,7 @@ classicthemerestorerjs.ctr = {
 		case "ctrnewinv48":			manageCSS("ctraddon_new_in_v48.css");	break;
 		case "ctrnewinv50":			manageCSS("ctraddon_new_in_v50.css");	break;
 		case "ctrnewinv51":			manageCSS("ctraddon_new_in_v51.css");	break;
+		case "ctrnewinv53":			manageCSS("ctraddon_new_in_v53.css");	break;
 		
 		case "cuibuttons":			manageCSS("cuibuttons.css");			break;
 		

@@ -113,7 +113,8 @@ classicthemerestorerjso.ctr = {
 		document.getElementById('ctraddon_pw_altreaderico').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_alt_addonsm').style.visibility = 'collapse';
 		document.getElementById('ctraddon_altoptions_list').style.visibility = 'collapse';
-		
+		document.getElementById('ctraddon_pw_urlbardark').style.visibility = 'collapse';
+		document.getElementById('ctraddon_pw_searchbardark').style.visibility = 'collapse';
 	} else {
 		document.getElementById('ctraddon_pw_themes_note').style.visibility = 'collapse';
 		document.getElementById('ctraddon_pw_special_font').style.visibility = 'collapse';
@@ -448,6 +449,10 @@ classicthemerestorerjso.ctr = {
 	  document.getElementById('ctraddon_pw_dl_pm_drop').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_dl_pm_dropdes').style.visibility = 'collapse';
 	  document.getElementById('ctraddon_pw_toptb_oldpad').style.visibility = 'collapse';
+	}
+
+	if (this.appversion < 53) {
+	  document.getElementById('ctraddon_pw_ttnooverfl').style.visibility = 'collapse';
 	}
 	
 	function PrefListener(branch_name, callback) {
@@ -1559,6 +1564,7 @@ classicthemerestorerjso.ctr = {
 	this.prefs.setCharPref("altoptions",'options_default');
 	this.prefs.setBoolPref("alt_addonsm",false);
 	this.prefs.setBoolPref("am_highlight",false);
+	this.prefs.setBoolPref("ttnooverfl",false);
 	if (this.oswindows) this.prefs.setBoolPref("dblclnewtab",true);
 	
 	this.needsBrowserRestart();

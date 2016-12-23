@@ -58,6 +58,7 @@
 <!ENTITY Ctr_tabwidthinfo3	"Werte unter 48 px sorgen meistens für eine fehlerhafte Darstellung!">
 <!ENTITY Ctr_square_edges	"Eckige obere Tabränder">
 <!ENTITY Ctr_tttitlebar		"Tabtitel in der &brandShortName;-Titelleiste">
+<!ENTITY Ctr_ttnooverfl		"Überblendeffekt von langen Tabtiteln entfernen">
 <!ENTITY Ctr_tabinsertion	"Verwandten Tab nach aktivem Tab einfügen">
 <!ENTITY Ctr_emptytfavico	"Lesezeichensymbol auf Tabs zeigen (falls keines vorhanden ist)">
 <!ENTITY Ctr_emptytfavico_n	"Kein Symbol">
@@ -89,17 +90,18 @@
 <!ENTITY Ctr_paneluibtweak	"Menüschaltfläche visuell als &brandShortName;-Schaltfläche …">
 <!ENTITY Ctr_paneluibtweak2	"Menüschaltfläche visuell als &brandShortName;-Schaltfläche (nur Symbol) …">
 <!ENTITY Ctr_paneluibtweak3	"… darstellen, wenn sie sich auf der Tableiste befindet.">
-<!ENTITY Ctr_appbuttonc_o	"Orange Schaltflächenfarbe (Firefox)">
-<!ENTITY Ctr_appbuttonc_a	"Blaue Schaltflächenfarbe (Aurora)">
-<!ENTITY Ctr_appbuttonc_n	"Schwarze Schaltflächenfarbe (Nightly)">
-<!ENTITY Ctr_appbuttonc_t	"Transparente Schaltfläche">
-<!ENTITY Ctr_appbuttonc_p	"Blaue Schaltflächenfarbe (Palemoon)">
-<!ENTITY Ctr_appbuttonc_r	"Rote Schaltflächenfarbe">
-<!ENTITY Ctr_appbuttonc_g	"Grüne Schaltflächenfarbe">
-<!ENTITY Ctr_appbuttonc_gr	"Graue Schaltflächenfarbe">
-<!ENTITY Ctr_appbuttonc_pu	"Violette Schaltflächenfarbe (Privater Modus)">
-<!ENTITY Ctr_appbuttonc_wh	"Weiße Schaltflächenfarbe">
-<!ENTITY Ctr_appbuttonc_cu	"Eigene Schaltflächenfarbe">
+<!ENTITY Ctr_appbuttonc		"Schaltflächenfarbe">
+<!ENTITY Ctr_appbuttonc_o	"Orange  (Firefox)">
+<!ENTITY Ctr_appbuttonc_a	"Blau (Aurora)">
+<!ENTITY Ctr_appbuttonc_n	"Schwarz (Nightly)">
+<!ENTITY Ctr_appbuttonc_t	"Transparent">
+<!ENTITY Ctr_appbuttonc_p	"Blau (Palemoon)">
+<!ENTITY Ctr_appbuttonc_r	"Rot">
+<!ENTITY Ctr_appbuttonc_g	"Grün">
+<!ENTITY Ctr_appbuttonc_gr	"Grau">
+<!ENTITY Ctr_appbuttonc_pu	"Violett (Privater Modus)">
+<!ENTITY Ctr_appbuttonc_wh	"Weiß">
+<!ENTITY Ctr_appbuttonc_cu	"Eigene">
 <!ENTITY Ctr_appbuttonct	"Eigene Farbe für Schaltfläche auf Symbolleisten">
 <!ENTITY Ctr_appbuttonI1	"Nach einer Änderung wird ein Neustart empfohlen.">
 <!ENTITY Ctr_appbuttonI1e	"Die &brandShortName;-Schaltfläche ist auf der Windows-Titelleiste nicht sichtbar!">
@@ -263,6 +265,7 @@
 <!ENTITY Ctr_urlbardropm2	"Aufklapp-Schaltfläche immer anzeigen">
 <!ENTITY Ctr_altreaderico	"Alternatives Symbol für die 'Lesemodus'-Schaltfläche">
 <!ENTITY Ctr_hideurlzoom	"Zoom-Schaltfläche verstecken (falls vorhanden)">
+<!ENTITY Ctr_urlbardark		"Dunkle Hintergrundfarbe">
 <!ENTITY Ctr_hideprbutton	"'Infosymbol' verstecken (wenn ein Pop-up-Fenster blockiert wurde)">
 <!ENTITY Ctr_locsearchbw10	"Höhe der Adress- und Suchleiste reduzieren (experimentell)">
 <!ENTITY Ctr_urlbar_ib		"Schaltfläche zur Webseitenidentität">
@@ -434,8 +437,8 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon">
 
 <!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
 <!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">

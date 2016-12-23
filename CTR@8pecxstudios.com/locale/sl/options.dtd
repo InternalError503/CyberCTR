@@ -58,6 +58,7 @@
 <!ENTITY Ctr_tabwidthinfo3	"Vrednosti pod 48 sl. točk bodo v večini premerov povzročile napake!">
 <!ENTITY Ctr_square_edges	"Kvadratasti zgornji koti">
 <!ENTITY Ctr_tttitlebar		"Naziv zavihka v nazivni vrstici &brandShortName;a">
+<!ENTITY Ctr_ttnooverfl		"Remove overflow effect from long tab titles">
 <!ENTITY Ctr_tabinsertion	"Vstavi odprt zavihek poleg trenutnega">
 <!ENTITY Ctr_emptytfavico	"Prikaži zaznamko (če je stran ne dobavi)">
 <!ENTITY Ctr_emptytfavico_n	"Brez">
@@ -89,17 +90,18 @@
 <!ENTITY Ctr_paneluibtweak	"Oranžni gumb ploščastega menija …">
 <!ENTITY Ctr_paneluibtweak2	"Oranžni gumb ploščastega menija (samo ikona) …">
 <!ENTITY Ctr_paneluibtweak3	"… na orodni vrstici zavihkov">
-<!ENTITY Ctr_appbuttonc_o	"Oranžna barva gumba (Firefox)">
-<!ENTITY Ctr_appbuttonc_a	"Modra barva gumba (Aurora)">
-<!ENTITY Ctr_appbuttonc_n	"Črna barva gumba (Nightly)">
-<!ENTITY Ctr_appbuttonc_t	"Prosojen gumb">
-<!ENTITY Ctr_appbuttonc_p	"Modra barva gumba (Palemoon)">
-<!ENTITY Ctr_appbuttonc_r	"Rdeča barva gumba">
-<!ENTITY Ctr_appbuttonc_g	"Zelena barva gumba">
-<!ENTITY Ctr_appbuttonc_gr	"Siva barva gumba">
-<!ENTITY Ctr_appbuttonc_pu	"Vijolična barva gumba">
-<!ENTITY Ctr_appbuttonc_wh	"Bela barva gumba">
-<!ENTITY Ctr_appbuttonc_cu	"Barva gumba po meri">
+<!ENTITY Ctr_appbuttonc		"Barva gumba">
+<!ENTITY Ctr_appbuttonc_o	"Oranžna (Firefox)">
+<!ENTITY Ctr_appbuttonc_a	"Modra (Aurora)">
+<!ENTITY Ctr_appbuttonc_n	"Črna (Nightly)">
+<!ENTITY Ctr_appbuttonc_t	"Prosojen">
+<!ENTITY Ctr_appbuttonc_p	"Modra (Palemoon)">
+<!ENTITY Ctr_appbuttonc_r	"Rdeča">
+<!ENTITY Ctr_appbuttonc_g	"Zelena">
+<!ENTITY Ctr_appbuttonc_gr	"Siva">
+<!ENTITY Ctr_appbuttonc_pu	"Vijolična">
+<!ENTITY Ctr_appbuttonc_wh	"Bela">
+<!ENTITY Ctr_appbuttonc_cu	"Po meri">
 <!ENTITY Ctr_appbuttonct	"Barva po meri gumba na orodni vrstici">
 <!ENTITY Ctr_appbuttonI1	"Priporočen je ponovni zagon">
 <!ENTITY Ctr_appbuttonI1e	"Ni viden na orodni vrstici OS-a Windows, samo na orodni vrstici &brandShortName;a!">
@@ -124,8 +126,8 @@
 <!ENTITY Ctr_altoptionsd	"Privzeti videz">
 <!ENTITY Ctr_altoptionsp	"Nadomestni videz">
 <!ENTITY Ctr_altoptionsw	"Odpri stran z možnostmi v oknu">
-<!ENTITY Ctr_altoptions_hm	"horizontal menu">
-<!ENTITY Ctr_altoptions_vm	"vertical menu">
+<!ENTITY Ctr_altoptions_hm	"vodoravni meni">
+<!ENTITY Ctr_altoptions_vm	"navpični meni">
 <!ENTITY Ctr_altoptionsww	"Širina">
 <!ENTITY Ctr_altoptionswh	"Višina">
 <!ENTITY Ctr_altoptionsi	"Simulirano okno možnosti ni več pogovorno okno, ampak 'okno brskalnika' s skritimi orodnimi vrsticami. Značilnost 'Uporabi trenutno stran' samo doda v trenutnem oknu odprte URL-je strani, ki je v tem primeru samo 'about:preferences'. Gumb orodne vrstice 'možnosti' se nadomesti z novim, da se lahko možnosti odprejo v oknu.">
@@ -263,6 +265,7 @@
 <!ENTITY Ctr_urlbardropm2	"Naj bo spustna puščica vedno vidna">
 <!ENTITY Ctr_altreaderico	"Nadomestne ikone 'Bralnika'">
 <!ENTITY Ctr_hideurlzoom	"Skrij gumb za povečavo (če je prisoten)">
+<!ENTITY Ctr_urlbardark		"Dark background color">
 <!ENTITY Ctr_hideprbutton	"Skrij ikono obvestil ob blokiranju pojavnega okna">
 <!ENTITY Ctr_locsearchbw10	"Zmanjšaj višino naslovne in iskalne vrstice (preskusno)">
 <!ENTITY Ctr_urlbar_ib		"Gumb identitete strani">
@@ -434,8 +437,8 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"Cyberfoxa button color (default)">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfoxa (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon">
 
 <!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
 <!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">

@@ -58,6 +58,7 @@
 <!ENTITY Ctr_tabwidthinfo3	"Valores abaixo de 48 px causarão imperfeições na maioria dos casos!">
 <!ENTITY Ctr_square_edges	"Cantos superiores quadrados">
 <!ENTITY Ctr_tttitlebar		"Título do separador na barra de título do &brandShortName;">
+<!ENTITY Ctr_ttnooverfl		"Remove overflow effect from long tab titles">
 <!ENTITY Ctr_tabinsertion	"Inserir separadores relacionados após o separador atual">
 <!ENTITY Ctr_emptytfavico	"Mostrar 'favicon' (se o site não o disponibilizar)">
 <!ENTITY Ctr_emptytfavico_n	"Não">
@@ -89,17 +90,18 @@
 <!ENTITY Ctr_paneluibtweak	"Mostrar botão de menu como botão do &brandShortName;...">
 <!ENTITY Ctr_paneluibtweak2	"Mostrar botão de menu como botão do &brandShortName; (apenas ícone)...">
 <!ENTITY Ctr_paneluibtweak3	"...se na barra de separadores">
-<!ENTITY Ctr_appbuttonc_o	"Botão laranja (Firefox)">
-<!ENTITY Ctr_appbuttonc_a	"Botão azul (Aurora)">
-<!ENTITY Ctr_appbuttonc_n	"Botão preto (Nightly)">
-<!ENTITY Ctr_appbuttonc_t	"Botão transparente">
-<!ENTITY Ctr_appbuttonc_p	"Botão azul (Palemoon)">
-<!ENTITY Ctr_appbuttonc_r	"Botão vermelho">
-<!ENTITY Ctr_appbuttonc_g	"Botão verde">
-<!ENTITY Ctr_appbuttonc_gr	"Botão cinzento">
-<!ENTITY Ctr_appbuttonc_pu	"Botão púrpura">
-<!ENTITY Ctr_appbuttonc_wh	"Botão branco">
-<!ENTITY Ctr_appbuttonc_cu	"Botão com cor personalizada">
+<!ENTITY Ctr_appbuttonc		"Botão color">
+<!ENTITY Ctr_appbuttonc_o	"laranja (Firefox)">
+<!ENTITY Ctr_appbuttonc_a	"azul (Aurora)">
+<!ENTITY Ctr_appbuttonc_n	"preto (Nightly)">
+<!ENTITY Ctr_appbuttonc_t	"transparente">
+<!ENTITY Ctr_appbuttonc_p	"azul (Palemoon)">
+<!ENTITY Ctr_appbuttonc_r	"vermelho">
+<!ENTITY Ctr_appbuttonc_g	"verde">
+<!ENTITY Ctr_appbuttonc_gr	"cinzento">
+<!ENTITY Ctr_appbuttonc_pu	"púrpura">
+<!ENTITY Ctr_appbuttonc_wh	"branco">
+<!ENTITY Ctr_appbuttonc_cu	"Custom">
 <!ENTITY Ctr_appbuttonct	"Cor personalizada para o botão da barra de ferramentas">
 <!ENTITY Ctr_appbuttonI1	"Recomendamos que reinicie o navegador">
 <!ENTITY Ctr_appbuttonI1e	"Apenas visível na barra de título do &brandShortName; e não na barra de título do sistema Windows!">
@@ -263,6 +265,7 @@
 <!ENTITY Ctr_urlbardropm2	"Make dropmarker always visible">
 <!ENTITY Ctr_altreaderico	"Alternative 'Reader' icons">
 <!ENTITY Ctr_hideurlzoom	"Ocultar botão de ampliação (se existente)">
+<!ENTITY Ctr_urlbardark		"Dark background color">
 <!ENTITY Ctr_hideprbutton	"Ocultar notificação ao bloqquear as janelas popup">
 <!ENTITY Ctr_locsearchbw10	"Reduzir altura das barras de localização e de pesquisa (experimental)">
 <!ENTITY Ctr_urlbar_ib		"Botão 'Identidade do site'">
@@ -434,8 +437,8 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"Cor do botão Cyberfox (padrão)">
-<!ENTITY Ctr_appbuttonc_s	"Botão salmão">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox (padrão)">
+<!ENTITY Ctr_appbuttonc_s	"salmão">
 
 <!ENTITY Ctr_alt_newtabpalt	"Página Novo separador: aparência personalizada">
 <!ENTITY ctr_aboutnewtab.customhighlight "Utilizar cor personalizada de destaque">

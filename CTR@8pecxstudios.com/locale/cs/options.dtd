@@ -58,6 +58,7 @@
 <!ENTITY Ctr_tabwidthinfo3	"Hodnoty pod 48px působí většinou chyby!">
 <!ENTITY Ctr_square_edges	"Hranaté horní rohy">
 <!ENTITY Ctr_tttitlebar		"Název panelu v &brandShortName; liště aplikace">
+<!ENTITY Ctr_ttnooverfl		"Remove overflow effect from long tab titles">
 <!ENTITY Ctr_tabinsertion	"Vložit související panel za aktuální">
 <!ENTITY Ctr_emptytfavico	"Zobrazit faviconu (v případě, že ji stránka nenabízí)">
 <!ENTITY Ctr_emptytfavico_n	"Žádná">
@@ -89,17 +90,18 @@
 <!ENTITY Ctr_paneluibtweak	"Oranžový panel jako tlačítko...">
 <!ENTITY Ctr_paneluibtweak2	"Oranžový panel jako tlačítko (pouze ikona)...">
 <!ENTITY Ctr_paneluibtweak3	"...na liště s panely">
-<!ENTITY Ctr_appbuttonc_o	"Oranžové tlačítko (Firefox)">
-<!ENTITY Ctr_appbuttonc_a	"Modré tlačítko (Aurora)">
-<!ENTITY Ctr_appbuttonc_n	"Černé tlačítko (Nightly)">
-<!ENTITY Ctr_appbuttonc_t	"Průhledné tlačítko">
-<!ENTITY Ctr_appbuttonc_p	"Modré tlačítko (Palemoon)">
-<!ENTITY Ctr_appbuttonc_r	"Červené tlačítko">
-<!ENTITY Ctr_appbuttonc_g	"Zelené tlačítko">
-<!ENTITY Ctr_appbuttonc_gr	"Šedé tlačítko">
-<!ENTITY Ctr_appbuttonc_pu	"Fialové tlačítko">
-<!ENTITY Ctr_appbuttonc_wh	"Bílé tlačítko">
-<!ENTITY Ctr_appbuttonc_cu	"Zvolit barvu tlačítka">
+<!ENTITY Ctr_appbuttonc		"Tlačítko">
+<!ENTITY Ctr_appbuttonc_o	"Oranžové (Firefox)">
+<!ENTITY Ctr_appbuttonc_a	"Modré (Aurora)">
+<!ENTITY Ctr_appbuttonc_n	"Černé (Nightly)">
+<!ENTITY Ctr_appbuttonc_t	"Průhledné">
+<!ENTITY Ctr_appbuttonc_p	"Modré (Palemoon)">
+<!ENTITY Ctr_appbuttonc_r	"Červené">
+<!ENTITY Ctr_appbuttonc_g	"Zelené">
+<!ENTITY Ctr_appbuttonc_gr	"Šedé">
+<!ENTITY Ctr_appbuttonc_pu	"Fialové">
+<!ENTITY Ctr_appbuttonc_wh	"Bílé">
+<!ENTITY Ctr_appbuttonc_cu	"Zvolit barvu">
 <!ENTITY Ctr_appbuttonct	"Vlastní barva tlačítka a liště">
 <!ENTITY Ctr_appbuttonI1	"Doporučený restart">
 <!ENTITY Ctr_appbuttonI1e	"Není viditelné v záhlaví okna Windows OS, pouze v záhlaví okna &brandShortName;u!">
@@ -263,6 +265,7 @@
 <!ENTITY Ctr_urlbardropm2	"Rozevírací šipka vždy viditelná">
 <!ENTITY Ctr_altreaderico	"Alternativní ikona 'Readeru'">
 <!ENTITY Ctr_hideurlzoom	"Hide zoom button (if present)">
+<!ENTITY Ctr_urlbardark		"Dark background color">
 <!ENTITY Ctr_hideprbutton	"Nezobrazovat upozornění při blokování vyskakovacích oken">
 <!ENTITY Ctr_locsearchbw10	"Snížit výšku adresního řádku a vyhledávače (experimentální)">
 <!ENTITY Ctr_urlbar_ib		"Tlačítko identity webu">
@@ -434,8 +437,8 @@
 
 <!-- Extra CyberCTR Additions -->
 
-<!ENTITY Ctr_appbuttonc_d	"Cyberfox button color (default)">
-<!ENTITY Ctr_appbuttonc_s	"Salmon button color">
+<!ENTITY Ctr_appbuttonc_d	"Cyberfox (default)">
+<!ENTITY Ctr_appbuttonc_s	"Salmon">
 
 <!ENTITY Ctr_alt_newtabpalt	"New tab page: styled appearance">
 <!ENTITY ctr_aboutnewtab.customhighlight "Use custom highlight color">
