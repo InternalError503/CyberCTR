@@ -6788,7 +6788,7 @@ classicthemerestorerjs.ctr = {
 				var IsDefault = "";
 				if (this.prefs.getCharPref("abouthome") === "default"){
 					IsDefault = '\
-						html{\
+						html,body{\
 							background-image: url('+ this.prefs.getCharPref("abouthomecustomurl") +')!important;\
 						}\
 					';
