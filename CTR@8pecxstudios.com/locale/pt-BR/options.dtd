@@ -58,7 +58,7 @@
 <!ENTITY Ctr_tabwidthinfo3	"Valores abaixo de 48px causarão falhas na maioria dos casos!">
 <!ENTITY Ctr_square_edges	"Cantos superiores quadrados">
 <!ENTITY Ctr_tttitlebar		"Título da aba na barra de título &brandShortName;">
-<!ENTITY Ctr_ttnooverfl		"Remove overflow effect from long tab titles">
+<!ENTITY Ctr_ttnooverfl		"Remover o efeito de excesso de títulos longos nas abas">
 <!ENTITY Ctr_tabinsertion	"Inserir a aba relacionada depois da aba atual">
 <!ENTITY Ctr_emptytfavico	"Exibir favicon (se o site não oferecer um)">
 <!ENTITY Ctr_emptytfavico_n	"Nenhum">
@@ -478,16 +478,16 @@
 <!ENTITY ctr_abouthome.light "Light sobre: ​​estilo da página inicial">
 <!ENTITY ctr_abouthome.dark "Dark sobre: ​​estilo da página inicial">
 <!ENTITY ctr_abouthome.simplicity  "Simplicity sobre: ​​estilo da página inicial">
-<!ENTITY ctr_abouthome.links "Não há links em sobre:página inicial">
-<!ENTITY ctr_abouthome.apps "No apps on about:home page">
-<!ENTITY ctr_abouthome.logo "Nenhum logotipo em sobre:página inicial">
-<!ENTITY ctr_abouthome.icons "Não há ícones em sobre:página inicial">
-<!ENTITY ctr_abouthome.snippets "Não há trechos em sobre:página inicial">
+<!ENTITY ctr_abouthome.links "Sem links sobre:página inicial">
+<!ENTITY ctr_abouthome.apps "Nenhum aplicativo sobre:página inicial">
+<!ENTITY ctr_abouthome.logo "Nenhum logotipo sobre:página inicial">
+<!ENTITY ctr_abouthome.icons "Nenhum ícone sobre:página inicial">
+<!ENTITY ctr_abouthome.snippets "Sem trechos em sobre:página inicial">
 <!ENTITY ctr_abouthome.custombg "Usar uma imagem de fundo personalizada">
 <!ENTITY ctr_abouthome.custombgbrowse "Navegue por">
 <!ENTITY ctr_abouthome.custombgurl "Entrar com URL ou caminho de arquivo">
 <!ENTITY ctr_abouthome.custombgurlph "Imagem de Fundo url|arquivo">
-<!ENTITY ctr_abouthome.customhighlight "Use personalizada cor de destaque">
+<!ENTITY ctr_abouthome.customhighlight "Use cor de destaque personalizada">
 <!ENTITY ctr_abouthome.customhighlightcol "Alterar cor de destaque personalizada">
 <!ENTITY ctr_abouthome.custombase "Use cores de texto personalizadas">
 <!ENTITY ctr_abouthome.custombasecol "Alterar a cor do texto base">
