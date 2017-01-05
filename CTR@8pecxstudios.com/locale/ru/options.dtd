@@ -479,6 +479,7 @@
 <!ENTITY ctr_abouthome.dark "Темная страница about:home">
 <!ENTITY ctr_abouthome.simplicity  "Упрощенная страница about:home">
 <!ENTITY ctr_abouthome.links "Убрать ссылки со стартовой страницы about:home">
+<!ENTITY ctr_abouthome.apps "No apps on about:home page">
 <!ENTITY ctr_abouthome.logo "Убрать логотип со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.icons "Убрать иконки со стартовой страницы about:home">
 <!ENTITY ctr_abouthome.snippets "Убрать сниппеты со стартовой страницы about:home">

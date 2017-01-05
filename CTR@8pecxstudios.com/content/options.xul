@@ -383,6 +383,7 @@
 	<preference id="ctraddon_cbookmarkfontsize"	name="extensions.classicthemerestorer.cbookmarkfontsize"	type="int"		instantApply="true"/>	
 	<preference id="ctraddon_ctabouthome"	name="extensions.classicthemerestorer.abouthome"	type="string"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenobar"	name="extensions.classicthemerestorer.abouthomenobar"	type="bool"	instantApply="true"/>	
+	<preference id="ctraddon_ctabouthomenoappsbar"	name="extensions.classicthemerestorer.abouthomenoappsbar"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenologo"	name="extensions.classicthemerestorer.abouthomenologo"	type="bool"	instantApply="true"/>		
 	<preference id="ctraddon_ctabouthomenoicons"	name="extensions.classicthemerestorer.abouthomenoicons"	type="bool"	instantApply="true"/>
 	<preference id="ctraddon_ctabouthomenosnippets"	name="extensions.classicthemerestorer.abouthomenosnippets"	type="bool"	instantApply="true"/>	
@@ -1250,6 +1251,7 @@
 			</menupopup>
 		</menulist>
 		<checkbox label="&ctr_abouthome.links;"	preference="ctraddon_ctabouthomenobar" id="nolinks"/>
+		<checkbox label="&ctr_abouthome.apps;"	preference="ctraddon_ctabouthomenoappsbar" id="noapps"/>
 		<checkbox label="&ctr_abouthome.logo;"	preference="ctraddon_ctabouthomenologo"/>
 		<checkbox label="&ctr_abouthome.icons;"	preference="ctraddon_ctabouthomenoicons" id="noicons"/>
 		<checkbox label="&ctr_abouthome.snippets;"	preference="ctraddon_ctabouthomenosnippets" id="nosnippets"/>

@@ -467,6 +467,11 @@ classicthemerestorerjs.ctr = {
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenobar', branch.getBoolPref("abouthomenobar"));	
 		  break;
 		  
+		 //No apps on about:home page.
+		case "abouthomenoappsbar":
+				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenoappsbar', branch.getBoolPref("abouthomenoappsbar"));	
+		  break;
+		  
 		//No logo on about:home page
 		case "abouthomenologo":		  
 				classicthemerestorerjs.ctr.loadUnloadCSS('abouthomenologo', branch.getBoolPref("abouthomenologo"));	
@@ -4851,7 +4856,8 @@ classicthemerestorerjs.ctr = {
 		case "abouthomesimplicitygreen": 			manageCSS("cctr/abouthomesimplicitylinux.css");	break;
 		case "abouthomesimplicityyellow": 			manageCSS("cctr/abouthomesimplicitybeta.css");	break;
 		case "abouthomebgstretch": 							manageCSS("cctr/abouthomebgstretch.css");	break;
-		case "abouthomenobar": 							manageCSS("cctr/abouthomenobar.css");	break;		
+		case "abouthomenobar": 							manageCSS("cctr/abouthomenobar.css");	break;
+		case "abouthomenoappsbar": 							manageCSS("cctr/abouthomenoappsbar.css");	break;			
 		case "abouthomenologo": 						manageCSS("cctr/abouthomenologo.css");	break;		
 		case "abouthomenoicons": 						manageCSS("cctr/abouthomenoicons.css");	break;	
 		case "abouthomenosnippets": 					manageCSS("cctr/abouthomenosnippets.css");	break;

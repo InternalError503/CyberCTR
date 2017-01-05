@@ -370,6 +370,7 @@ pref("extensions.classicthemerestorer.aboutnewtabcustomhighlightcolor","#00adee"
 //Custom about:home style
 pref("extensions.classicthemerestorer.abouthome", "dark");
 pref("extensions.classicthemerestorer.abouthomenobar", false);
+pref("extensions.classicthemerestorer.abouthomenoappsbar", false);
 pref("extensions.classicthemerestorer.abouthomenologo", false);
 pref("extensions.classicthemerestorer.abouthomenoicons", false);
 pref("extensions.classicthemerestorer.abouthomenosnippets", false);

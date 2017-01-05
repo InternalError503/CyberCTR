@@ -479,6 +479,7 @@
 <!ENTITY ctr_abouthome.dark "Dark sobre: ​​estilo da página inicial">
 <!ENTITY ctr_abouthome.simplicity  "Simplicity sobre: ​​estilo da página inicial">
 <!ENTITY ctr_abouthome.links "Não há links em sobre:página inicial">
+<!ENTITY ctr_abouthome.apps "No apps on about:home page">
 <!ENTITY ctr_abouthome.logo "Nenhum logotipo em sobre:página inicial">
 <!ENTITY ctr_abouthome.icons "Não há ícones em sobre:página inicial">
 <!ENTITY ctr_abouthome.snippets "Não há trechos em sobre:página inicial">

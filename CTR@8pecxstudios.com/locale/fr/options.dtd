@@ -482,6 +482,7 @@
 <!ENTITY ctr_abouthome.dark    			"Page « about:home » : style foncé">
 <!ENTITY ctr_abouthome.simplicity  		"Page « about:home » : style Simplicité">
 <!ENTITY ctr_abouthome.links 			"Aucun lien sur la page about:home">
+<!ENTITY ctr_abouthome.apps "No apps on about:home page">
 <!ENTITY ctr_abouthome.logo 			"Aucun logo sur la page about:home">
 <!ENTITY ctr_abouthome.icons 			"Aucune icône sur la page about:home">
 <!ENTITY ctr_abouthome.snippets 		"Aucun extrait sur la page about:home">
