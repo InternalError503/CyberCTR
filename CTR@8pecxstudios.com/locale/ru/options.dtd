@@ -148,7 +148,7 @@
 <!ENTITY Ctr_puibut_r_sep	"Справа">
 <!ENTITY Ctr_html5warning	"Предупреждение о полноэкранном режиме в HTML5">
 <!ENTITY Ctr_oldtoplevimg	"Классический вид 'изображений доменов верхнего уровня'">
-<!ENTITY Ctr_altdlprogbar	"Alternative appearance for download progress bar">
+<!ENTITY Ctr_altdlprogbar	"Альтернативный вид полосы прогресса загрузки">
 <!ENTITY Ctr_altalertbox	"Альтернативный вид 'окна с предупреждением'">
 <!ENTITY Ctr_emptygfavico	"Заменять пустые значки избранного">
 <!ENTITY Ctr_mstatusbar		"Подвижная строка состояния">
@@ -189,8 +189,8 @@
 <!ENTITY Ctr_ctrosearchdel	"Задержка выполнения">
 <!ENTITY Ctr_search_oit		"Открывать поиск в новой вкладке">
 <!ENTITY Ctr_osearch_meoit	"Клик средней кнопкой: поиск в новой активной вкладке">
-<!ENTITY Ctr_osearch_meoit1	"Search engine">
-<!ENTITY Ctr_osearch_meoit2	"Search glass">
+<!ENTITY Ctr_osearch_meoit1	"Поисковая система">
+<!ENTITY Ctr_osearch_meoit2	"Поисковая лупа">
 <!ENTITY Ctr_osearch_iwidth	"Автоматически подгонять ширину всплывающего меню">
 <!ENTITY Ctr_osearch_cwidth	"Пользовательская ширина всплывающего меню">
 <!ENTITY Ctr_osearch_dm		"Маленький маркер">
